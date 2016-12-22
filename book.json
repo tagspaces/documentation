@@ -3,7 +3,7 @@
   "plugins": ["edit-link"],
   "pluginsConfig": {
     "edit-link": {
-      "base": "https://github.com/tagspaces/usermanual/edit/BRANCH/path/to/book",
+      "base": "https://github.com/tagspaces/documentation/edit/master",
       "label": "Edit"
     }
   }
