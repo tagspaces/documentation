@@ -1,8 +1,8 @@
 # TagSpaces User Manual
-
-#### for version 2.6.0
+for version 2.6.0
 
 ## What is TagSpaces
+...
 
 ## Products landscape
 

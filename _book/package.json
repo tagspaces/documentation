@@ -1,7 +1,7 @@
 {
   "name": "tagspaces-documentation",
   "version": "1.0.0",
-  "description": "user manual for the TagSpaces application",
+  "description": "Documentation for the TagSpaces application",
   "main": "index.js",
   "dependencies": {
     "gitbook-plugin-edit-link": "^2.0.2"
