@@ -1,4 +1,6 @@
-A TagSpaces extension allowing reading of markdown files
+# Markdown Viewer for TagSpaces
+
+A TagSpaces extension allowing opening of markdown files
 
 ## Features
 

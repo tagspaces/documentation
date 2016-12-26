@@ -1,3 +1,5 @@
+# HTML Viewer for TagSpaces
+
 A TagSpaces extension allowing opening of HTML files.
 
 ## Features

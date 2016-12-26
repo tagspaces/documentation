@@ -1,6 +1,6 @@
 {
   "gitbook": "3.2.2",
-  "plugins": ["edit-link"],
+  "plugins": ["edit-link", "anchorjs", "prism", "-highlight"],
   "pluginsConfig": {
     "edit-link": {
       "base": "https://github.com/tagspaces/documentation/edit/master",

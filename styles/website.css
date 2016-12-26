@@ -1,4 +1,19 @@
-figure img {
+video, img {
     box-shadow: 2px 2px 17px 0px rgba(0,0,0,0.75);
+    max-width: 95% !important;
     margin-left: 10px;
+    margin-right: 10px;
+}
+
+.profeature {
+    background-color: red;
+    color: white;
+    font-weight: bold;
+    font-style: normal;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.profeature:after {
+    content: 'pro';
 }

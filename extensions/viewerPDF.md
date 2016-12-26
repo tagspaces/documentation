@@ -1,3 +1,4 @@
+# PDF Viewer for TagSpaces
 
 A TagSpaces extension allowing opening, searching and navigating thought PDF files.
 

@@ -1,3 +1,5 @@
+# ImageSwiper Perspective for TagSpaces
+
 A TagSpaces extension able to display common images formats from the current folder.
 
 ## Features

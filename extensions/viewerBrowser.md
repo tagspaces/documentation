@@ -1,3 +1,4 @@
+# General Viewer for TagSpaces
 
 A TagSpaces extension allowing to open files in the embedded browser.
 

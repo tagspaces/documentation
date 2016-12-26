@@ -1,3 +1,5 @@
+# Text Viewer for TagSpaces
+
 A TagSpaces extension allowing you to open plain text files
 
 ## Features

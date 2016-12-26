@@ -58,6 +58,10 @@ In comparison to the community edition which generates thumbnails (only for PNGs
   <figcaption>Activating the thumbnails generation</figcaption>
 </figure>
 
+Here is a short video showing the thumbnail generation in action.
+
+<video controls autoplay loop src="/media/demo-tmb-generation.mp4"></video>
+
 ### <a id="advancedSearch" href="#advancedSearch">Advanced search</a>
 
 The advanced search dialog in TagSpaces PRO contains two more search features:

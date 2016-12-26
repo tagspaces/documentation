@@ -6,7 +6,7 @@
 * [Installation and Setup](installation.md)
 
   * [Windows](installation.md#windows)
-  * [OSX](installation.md#osx)
+  * [OS X](installation.md#osx)
   * [Linux](installation.md#linux)
   * [Firefox](installation.md#firefox)
   * [Chrome](installation.md#chrome)
@@ -18,19 +18,21 @@
 
   * [Home screen](userinterface.md#home)
   * [Locations](userinterface.md#locations)
-  * [Tag Library](userinterface.md#home)
+  * [Tag Library](userinterface.md#taglibrary)
   * [File Browsing](perspectives.md)
+  * [Tagging](tagging.md)
   * [Viewing Files](viewing-files.md)
   * [Creating & Editing Files](editing-files.md)
   * [Searching Files](search.md)
   * [Keybindings](keybindings.md)
+  * [Internationalization](i18n.md)
 
 ## Typical Usecases
 
 * [Managing Files](filemanagement.md)
 * [Note-taking](notetaking.md)
 * [Organizing Photos](photomanagement.md)
-* [Collect Everything](webclipping.md)
+* [Web Clipping](webclipping.md)
 * [Playing Local Media](playing-media.md)
 * [Personal Wiki](personal-wiki.md)
 * [Syncing data](syncing.md)
@@ -43,31 +45,31 @@
 
 ## Appendix Perspectives
 
-* [Grid Perspective](external/perspectiveGrid.md)
-* [List Perspective](external/perspectiveList.md)
-* [ImageSwiper Perspective](external/perspectiveImageSwiper.md)
-* [FolderFiz Perspective](external/perspectiveGraph.md)
+* [Grid Perspective](extensions/perspectiveGrid.md)
+* [List Perspective](extensions/perspectiveList.md)
+* [ImageSwiper Perspective](extensions/perspectiveImageSwiper.md)
+* [Graph Perspective](extensions/perspectiveGraph.md)
 
 ## Appendix Viewers
 
-* [Audio Video Player](external/viewerAudioVideo.md)
-* [EPUB Reader](external/viewerEPUB.md)
-* [HTML Reader](external/viewerHTML.md)
-* [Image Viewer](external/viewerImage.md)
-* [Link Opener](external/viewerURL.md)
-* [Markdown Reader](external/viewerMD.md)
-* [MHTML Reader](external/viewerMHTML.md)
-* [ODF Viewer](external/editorODF.md)
-* [PDF Viewer](external/viewerPDF.md)
-* [Text Reader](external/viewerText.md)
-* [Simple Viewer](external/viewerBrowser.md)
-* [ZIP Opener](external/viewerZIP.md)
+* [Audio Video Player](extensions/viewerAudioVideo.md)
+* [EPUB Reader](extensions/viewerEPUB.md)
+* [HTML Reader](extensions/viewerHTML.md)
+* [Image Viewer](extensions/viewerImage.md)
+* [Link Opener](extensions/viewerURL.md)
+* [Markdown Reader](extensions/viewerMD.md)
+* [MHTML Reader](extensions/viewerMHTML.md)
+* [ODF Viewer](extensions/editorODF.md)
+* [PDF Viewer](extensions/viewerPDF.md)
+* [Text Reader](extensions/viewerText.md)
+* [Simple Viewer](extensions/viewerBrowser.md)
+* [ZIP Opener](extensions/viewerZIP.md)
 
 ## Appendix Editors
 
-* [HTML Editor](external/editorHTML.md)
-* [JSON Editor](external/editorJSON.md)
-* [Text Editor](external/editorText.md)
+* [HTML Editor](extensions/editorHTML.md)
+* [JSON Editor](extensions/editorJSON.md)
+* [Text Editor](extensions/editorText.md)
 
 ## Appendix Links
 

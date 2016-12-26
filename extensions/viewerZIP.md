@@ -1,3 +1,5 @@
+# ZIP Preview for TagSpaces
+
 A TagSpaces extension allowing you to preview the content of ZIP files.
 
 ## Features

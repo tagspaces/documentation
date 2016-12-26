@@ -1,9 +1,12 @@
+# Audio Video Player for TagSpaces
+
 A TagSpaces extension allowing playing of audio and video files.
 
 ## Features
 
 * Playing audio and video files
 * Fullscreen mode
+* This extension will trigger the opening of the next file in the current folder on finishing playback, allowing you for example to listen many audio files one after another like in a regular music player.
 
 ## Used libraries
 This extension thankfully relays on the following great libraries:

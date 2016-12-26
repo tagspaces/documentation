@@ -1,3 +1,5 @@
+# EPUB Viewer for TagSpaces
+
 A TagSpaces extension allowing you to open ebooks in EPUB format.
 
 ## Features

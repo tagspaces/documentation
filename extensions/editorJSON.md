@@ -1,3 +1,5 @@
+# JSON Editor for TagSpaces
+
 A TagSpaces extension allowing viewing and editing of JSON documents.
 
 ## Features

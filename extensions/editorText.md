@@ -1,3 +1,5 @@
+# Text Editor for TagSpaces
+
 A TagSpaces extension allowing editing of text based documents.
 
 ## Features

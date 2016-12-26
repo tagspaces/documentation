@@ -1,3 +1,5 @@
+# MHTML Viewer for TagSpaces
+
 A TagSpaces extension allowing you to open MHTML and EML files.
 
 ## Features
