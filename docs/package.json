@@ -9,7 +9,8 @@
   "devDependencies": {},
   "scripts": {
     "update-ext": "./update-external.sh",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "prepare": "gitbook build . docs",
+    "serve": "gitbook serve"
   },
   "keywords": [
     "docu"

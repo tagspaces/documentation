@@ -34,7 +34,7 @@
 * [Organizing Photos](photomanagement.md)
 * [Web Clipping](webclipping.md)
 * [Playing Local Media](playing-media.md)
-* [Personal Wiki](personal-wiki.md)
+* [Personal Wiki](usecases.md#personal-wiki)
 * [Syncing data](syncing.md)
 
 ## TagSpaces PRO
