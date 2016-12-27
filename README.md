@@ -1,7 +1,16 @@
 # TagSpaces User Manual
-for version 2.6.0
+for version 2.6.0 and later
 
-## What is TagSpaces
+## Status of this document
+
+This documentation has currently a draft status
+
+## General remarks
+
+* <i class="profeature"></i> - means that the described feature is part of the TagSpaces PRO
+* ⚒ - means that the section is not ready yet and may contain unclear or not up-to-date information
+
+## What is TagSpaces ?
 ...
 
 ## Products landscape
@@ -10,7 +19,10 @@ for version 2.6.0
 * Desktop PRO version
 * Firefox webclipper addon
 * Chrome webclipper and file browser extension
-* Mobile apps
-* Package for selfhosting
+* Android app lite
+* Android app
+* IOS app (beta)
+* WebDAV based package for selfhosting
 
+## License
 

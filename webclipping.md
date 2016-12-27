@@ -2,6 +2,13 @@
 
 We offer experimental browser extension for capturing web content. These so called webscraper are available for Chrome and Firefox browsers.
 
+## TagSpaces Firefox Addon
+
+* Saving the current webpage as single files including the embedded images and styling information in pure HTML format.
+* Saving the a selected part of the current webpages as HTML file.
+* Saving a screenshot of the visible area of the current webpage as a PNG files.
+* Adding tags in the file names to the sraped files before saving
+
 ## TagSpaces Chrome Extension
 
 * Saving the current webpage as single files including the embedded images and styling information in MHTML format.
@@ -20,7 +27,7 @@ This link opens a dialog where you can set a direct keyboard shortcut, which wil
 
 So now I can conviniently save and tags any page by just clicking this shortcut combination.
 
-![web clipper in action](/media/tagspaces-web-scrapping.png)
+![web clipper in action](/media/tagspaces-web-clipping.png)
 
 ### Download location for web clippings
 
@@ -29,9 +36,3 @@ In order to be asked everytime, where you want to save the scapped web content, 
 ![enable asking where to save the files in Chrome](/media/chrome-ask-where-to-save.png)
 
 
-## TagSpaces Firefox Extension
-
-* Saving the current webpage as single files including the embedded images and styling information in pure HTML format.
-* Saving the a selected part of the current webpages as HTML file.
-* Saving a screenshot of the visible area of the current webpage as a PNG files.
-* Adding tags in the file names to the sraped files before saving

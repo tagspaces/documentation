@@ -2,46 +2,46 @@
 
 ## Getting started
 
-* [Introduction](README.md)
+* [Introduction ⚒](README.md)
 * [Installation and Setup](installation.md)
 
   * [Windows](installation.md#windows)
   * [OS X](installation.md#osx)
   * [Linux](installation.md#linux)
+  * [Android](installation.md#android)
   * [Firefox](installation.md#firefox)
   * [Chrome](installation.md#chrome)
-  * [Android](installation.md#android)
   * [Portable Mode](installation.md#portable-mode)
   * [Selfhosting TagSpaces](selfhosting.md)
 
 * [User Interface](userinterface.md)
 
-  * [Home screen](userinterface.md#home)
-  * [Locations](userinterface.md#locations)
-  * [Tag Library](userinterface.md#taglibrary)
-  * [File Browsing](perspectives.md)
-  * [Tagging](tagging.md)
-  * [Viewing Files](viewing-files.md)
-  * [Creating & Editing Files](editing-files.md)
-  * [Searching Files](search.md)
+  * [Home screen ⚒](userinterface.md#home)
+  * [Locations ⚒](userinterface.md#locations)
+  * [Tag Library ⚒](userinterface.md#taglibrary)
+  * [File Browsing ⚒](perspectives.md)
+  * [Tagging ⚒](tagging.md)
+  * [Viewing Files ⚒](viewing-files.md)
+  * [Creating & Editing Files ⚒](editing-files.md)
+  * [Searching Files ⚒](search.md)
   * [Keybindings](keybindings.md)
   * [Internationalization](i18n.md)
 
 ## Typical Usecases
 
-* [Managing Files](filemanagement.md)
-* [Note-taking](notetaking.md)
-* [Organizing Photos](photomanagement.md)
-* [Web Clipping](webclipping.md)
-* [Playing Local Media](playing-media.md)
-* [Personal Wiki](usecases.md#personal-wiki)
-* [Syncing data](syncing.md)
+* [Managing Files ⚒](filemanagement.md)
+* [Note-taking ⚒](notetaking.md)
+* [Organizing Photos ⚒](photomanagement.md)
+* [Web Clipping ⚒](webclipping.md)
+* [Playing Local Media ⚒](playing-media.md)
+* [Personal Wiki ⚒](usecases.md#personal-wiki)
+* [Syncing data ⚒](syncing.md)
 
 ## TagSpaces PRO
 
-* [Introduction](pro.md)
-* [Installation](pro.md#installation)
-* [Features](pro.md#features)
+* [Introduction ⚒](pro.md)
+* [Installation ⚒](pro.md#installation)
+* [Features ⚒](pro.md#features)
 
 ## Appendix Perspectives
 

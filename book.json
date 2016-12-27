@@ -1,6 +1,9 @@
 {
   "gitbook": "3.2.2",
   "plugins": ["edit-link", "anchorjs", "prism", "-highlight"],
+  "search": {
+    "maxIndexSize": 1000000000
+  },
   "pluginsConfig": {
     "edit-link": {
       "base": "https://github.com/tagspaces/documentation/edit/master",

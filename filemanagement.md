@@ -16,7 +16,8 @@ The user interface of the application is design to be usable on touch screens, b
 
 * Dragging tags from one file to another in the list perspective
 
-<video src="/media/tagspaces-drag-drop.mp4" autoplay="true" loop="true" poster="/media/tagspaces-drag-drop.png" class="img-responsive"></video>
+{% if output.name == "ebook" %}![tagspaces drag and drop support](/media/tagspaces-drag-drop.png){% else %}
+<video src="/media/tagspaces-drag-drop.mp4" autoplay="true" loop="true"></video>{% endif %}
 
 ## Folder operations
 
