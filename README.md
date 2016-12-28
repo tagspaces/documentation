@@ -11,7 +11,7 @@ This documentation has currently a draft status
 * ⚒ - means that the section is not ready yet and may contain unclear or not up-to-date information
 
 ## What is TagSpaces ?
-...
+TagSpaces is an open source, cross-platform, no backend, no login, no cloud personal data manager and file navigator. It helps organize your files, photos and other documents with tags on different platforms and/or devices, according to your own preferences and following your own logic, by using the same smart and friendly interface everywhere.
 
 ## Products landscape
 
@@ -24,5 +24,8 @@ This documentation has currently a draft status
 * IOS app (beta)
 * WebDAV based package for selfhosting
 
-## License
+## Contribution
+TagSpaces is an open source software, and the code of the application's core is published under the AGPL License. Almost all build-in extension are published under the MIT license. As such, the code is publicly available on GitHub and forking is particularly recommended.
+
+## License of the Documentation
 

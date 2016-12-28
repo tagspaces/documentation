@@ -16,26 +16,29 @@
 
 * [User Interface](userinterface.md)
 
-  * [Home screen ⚒](userinterface.md#home)
-  * [Locations ⚒](userinterface.md#locations)
-  * [Tag Library ⚒](userinterface.md#taglibrary)
-  * [File Browsing ⚒](perspectives.md)
-  * [Tagging ⚒](tagging.md)
+  * [Start screen ⚒](userinterface.md#home)
+  * [Locations](userinterface.md#location-manager)
+  * [Folder navigation ⚒](userinterface.md#folder-navigation)
+  * [Tag Library ⚒](userinterface.md#tag-library)
+  * [File Browsing ⚒](browsing-files.md)
   * [Viewing Files ⚒](viewing-files.md)
   * [Creating & Editing Files ⚒](editing-files.md)
+  * [Tagging ⚒](tagging.md)
   * [Searching Files ⚒](search.md)
+  * [Settings ⚒](userinterface.md#settings)
   * [Keybindings](keybindings.md)
   * [Internationalization](i18n.md)
 
-## Typical Usecases
+## Use cases and tutorials
 
 * [Managing Files ⚒](filemanagement.md)
 * [Note-taking ⚒](notetaking.md)
 * [Organizing Photos ⚒](photomanagement.md)
 * [Web Clipping ⚒](webclipping.md)
 * [Playing Local Media ⚒](playing-media.md)
-* [Personal Wiki ⚒](usecases.md#personal-wiki)
-* [Syncing data ⚒](syncing.md)
+* [Bookmark Manager ⚒](bookmark-manager.md)
+* [Personal Wiki ⚒](personal-wiki.md)
+* [Syncing data ⚒](file-syncing.md)
 
 ## TagSpaces PRO
 

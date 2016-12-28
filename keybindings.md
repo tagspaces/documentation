@@ -50,7 +50,7 @@ TagSpaces like a much of modern software also provides a range of keyboard short
 | Pause/resume playback | `control + alt + p` | `⌘ + alt + p` |
 
 
-## Changing the keybinding
+## Changing the keybindings
 
 Some of the keybingings are configurable. To change them, click on **View** menu item from the main menu and choose **Settings**. In the setting dialog, open the tab **KEY BINDINGS**.
 

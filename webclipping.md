@@ -16,7 +16,21 @@ We offer experimental browser extension for capturing web content. These so call
 * Saving a screenshot of the visible area of the current webpage as a PNG files.
 * Adding tags in the file names to the sraped files before saving
 
-### Adding keyboard shortcut to the webclipper in Chrome
+### Enabling the saving of webpages as MHTML
+TagSpaces is a great tool for MHTML file organization on many platforms, because it features an integrated MHTML viewer, but the question here is how you can save web pages as handy MHTML files directly out of the Chrome browser. Here you will find the answer of this question for the both browsers - Chrome and Chromium respectively. And no, you don't have to install the TagSpaces chrome extension to achieve this, but just to execute the following steps:
+
+1. Start the Chrome/Chromium browser
+2. Navigate to "chrome://flags"
+3. Find the entry "Save Page as MHTML"
+4. Click "enable"
+5. Restart your browser
+6. That's it, now the web pages will be saved by default as MHTML
+
+![Screenshot showing how enable mhtml saving in chrome](/media/enable--mhtml-saving-chrome.png)
+
+> **Note** After this activation you will not be able to save website in HTML anymore.
+
+### Adding keyboard shortcut to the webclipper
 At the end of the extension management page in the Chrome browser there is a link called "Keyboard shortcuts". See the red area of the screenshot below.
 
 ![open the chrome extension shortcut configuration](/media/chrome-shortcuts-config.png)

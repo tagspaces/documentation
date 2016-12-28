@@ -145,11 +145,6 @@ Technically TagSpaces PRO created a sidecar file called `tsm.json` in the hidden
     └── file4.docx
 
 
-### <a id="signedInstallers" href="#signedInstallers">Signed Installers for Windows and Mac OS X</a>
+### Pro settings
 
-Under Windows and OS X we are providing installer for TagSpaces PRO, which are signed with modern certificates.
-
-<figure>
-  <img title="screenshot showing the signed installer in Windows" src="https://www.tagspaces.org/content/v2-2/signed-windows-installer.png" class="img-responsive center-block">
-  <figcaption>The signed installer under Windows</figcaption>
-</figure>
+![settings for the pro functionality](/media/settings-tab-pro.png)

@@ -9,7 +9,7 @@ Just exchange the content of your current installation, with the content from th
 ## Installing OS X version {#osx}
 For OSX 10.9 or later you have to download the [64bit](https://www.tagspaces.org/downloads/tagspaces-osx64.zip) of the application. Then you have to double click the downloaded zip file in Finder to unpack it properly. Some users are reporting issues with unpacking the app with some 3th-party zip utils.
 
-**Note**: By default Mac OSX does not allow TagSpaces to be executed with a simple double click, because it is currently not digitally signed. To work around this, right-click the TagSpaces.app folder and choose Open, then click **Open** on the dialog that appears. You need to do this just once.
+> **Note**: By default Mac OSX does not allow TagSpaces to be executed with a simple double click, because it is currently not digitally signed. To work around this, right-click the TagSpaces.app folder and choose Open, then click **Open** on the dialog that appears. You need to do this just once.
 
 ### Updating the OS X version
 Just exchange the content of your current installation, with the content from the zip-file of a newer release. You don't have to worry about your tag library and locations since they are persisted in the users home folder.
@@ -53,10 +53,14 @@ After the installation, the TagSpaces extension can be started from the TagSpace
 ### Updating the Chrome extension
 Once we publish a newer version of the Chrome extensions on the Chrome store, it will be automatically installed on your Chrome browser within the following days.
 
-## Installing TagSpaces PRO
+## Installing TagSpaces PRO <i class="profeature"></i>
+Under Windows and OS X we are providing installer for TagSpaces PRO, which are signed with modern certificates. The following screenshot show this certificate in action during the installation under Windows.
+
+![The signed installer under Windows](/media/signed-windows-installer.png)
+
 Here are the steps needed for installing the PRO version on your system.
 
-* Save the installer file to a location on your hard/SSD drive.
+* Save the installer file to a location on your hard drive.
 * Locate the installer and double-click to start the install process.
 * The Windows installer allows you to specify a custom install location.
 
