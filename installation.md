@@ -1,5 +1,11 @@
 # Installation and Setup
 
+## New version notification
+Once a new version of the application is available, you will see a green present icon near the TagSpaces logo. Clicking on this icon will lead your to the what's new webpage on the TagSpaces website. Here you can download the new version of the application.
+
+![New version notification](/media/new-version-available.png)
+If you do not want to TagSpaces to check for the availability of new version, disable this functionality in the [settings](userinterface.html/settings)
+
 ## Installing Windows version {#windows}
 The Windows version of TagSpaces is distributed as `zip` file, which can be downloaded for [32bit](https://www.tagspaces.org/downloads/tagspaces-win32.zip) and for [64bit](https://www.tagspaces.org/downloads/tagspaces-win64.zip) versions of Windows, depending on your system. Then you have to just unzip the downloaded file in a folder of your choice somewhere on your system. In the unpacked folder you will find a file called `tagspaces.exe`, which can be executed with double click.
 
@@ -56,7 +62,7 @@ Once we publish a newer version of the Chrome extensions on the Chrome store, it
 ## Installing TagSpaces PRO <i class="profeature"></i>
 Under Windows and OS X we are providing installer for TagSpaces PRO, which are signed with modern certificates. The following screenshot show this certificate in action during the installation under Windows.
 
-![The signed installer under Windows](/media/signed-windows-installer.png)
+![Screenshot showing signed installer under Windows](/media/signed-windows-installer.png)
 
 Here are the steps needed for installing the PRO version on your system.
 

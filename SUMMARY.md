@@ -29,6 +29,8 @@
   * [Keybindings](keybindings.md)
   * [Internationalization](i18n.md)
 
+* [TagSpaces PRO ⚒](pro.md)
+
 ## Use cases and tutorials
 
 * [Managing Files ⚒](filemanagement.md)
@@ -39,12 +41,7 @@
 * [Bookmark Manager ⚒](bookmark-manager.md)
 * [Personal Wiki ⚒](personal-wiki.md)
 * [Syncing data ⚒](file-syncing.md)
-
-## TagSpaces PRO
-
-* [Introduction ⚒](pro.md)
-* [Installation ⚒](pro.md#installation)
-* [Features ⚒](pro.md#features)
+* [Sharing tag libraries](sharing-tags.md)
 
 ## Appendix Perspectives
 
@@ -53,7 +50,7 @@
 * [ImageSwiper Perspective](extensions/perspectiveImageSwiper.md)
 * [Graph Perspective](extensions/perspectiveGraph.md)
 
-## Appendix Viewers
+## Appendix File Viewers
 
 * [Audio Video Player](extensions/viewerAudioVideo.md)
 * [EPUB Reader](extensions/viewerEPUB.md)
@@ -68,7 +65,7 @@
 * [Simple Viewer](extensions/viewerBrowser.md)
 * [ZIP Opener](extensions/viewerZIP.md)
 
-## Appendix Editors
+## Appendix File Editors
 
 * [HTML Editor](extensions/editorHTML.md)
 * [JSON Editor](extensions/editorJSON.md)

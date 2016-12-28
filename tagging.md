@@ -21,11 +21,38 @@ The user interface of the application is design to be usable on touch screens, b
 
 <video src="/media/tagspaces-drag-drop.mp4" autoplay="true" loop="true" poster="/media/tagspaces-drag-drop.png" class="img-responsive"></video>
 
-## Folder Tagging {#folder-tagging}
+## <i class="profeature"></i>File Tagging based on sidecar files {#tagSidecarSaving}
+As alternative to saving the tagging information in the file names, TagSpaces PRO offers saving this kind of meta information in a sidecar files located in a hidden `.ts` folder. This option can be activated in the settings of the application as shown in the following screenshot.
+
+> **Note** Please note that by default the `.ts` folder is hidden only on OSX and Linux operating systems, on Windows folders with dot in front of their name are not hidden by default. Setting these folders as hidden on Windows can be achieved manually or with script if needed.
+
+<figure>
+  <img title="screenshot showing where to activate the saving of the tagging information in sidecar files" src="https://www.tagspaces.org/content/v2-2/activating-tags-sidecars.png" class="img-responsive center-block">
+  <figcaption>Activating the persistend of the tags in sidecar files</figcaption>
+</figure>
+
+After the activation, the application will created for every tagged file an extra file having the same file name as the source file but with the additional JSON extension. For example after tagging some files in some of your file locations you will have a similar file structure.
 
 
+    ~ location (with your files)
+    ├── subfolder
+    │   ├── .ts
+    │   │   ├── file1.jpg.json
+    │   │   └── file2.pdf.json
+    │   ├── file1.jpg
+    │   └── file2.pdf
+    ├── .ts
+    │   ├── file3.png.json
+    │   └── file4.docx.json
+    ├── file3.png
+    └── file4.docx
 
-## File Tagging based on sidecar files <i class="profeature"></i>
 
-## Transferring tag groups
+The main advantage of this solution is that the name of the files is not altered by tagging and there is theoretically no limit in amount of tags you can add to a given file. However it has the following drawback. If you move or rename tagged files in TagSpaces it will take care of the sidecar file, which will also renamed or moved in the appropriate folder. But if you move or rename this file in an external applicaiton, you have to move or rename the sidecar files by hand. The same hold true for the deleting a file from an external file manager. It will not automatically delete the sidecar file in the `.ts` folder.
+
+<span class="label label-info">Note</span> If you want to have the files located in the `.ts` folder synched with some cloud service such as Dropbox or Google Drive you have to enable the synching of hidden folders and files.
+
+## Folder Tagging {#folder-tagging} <i class="profeature"></i>
+TODO
+
 

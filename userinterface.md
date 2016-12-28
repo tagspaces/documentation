@@ -1,6 +1,7 @@
 # User Interface
 
 ## Start screen
+The following screen shows a typical start screen of TagSpaces with an opened tag library and showing a folder content with the list perspective extension.
 
 ![Start screen](media/home-screen.png)
 
@@ -10,8 +11,10 @@ The user interface of the application consists of the following major areas:
 * [Folder navigator area](#folder-navigation) - located in the left area of the user interface
 * [Tag library area](#tag-library) - located in the left area of the user interface 
 * [File browser area](browsing-files.html) - located in the center area of the application
-* [File viewer area](viewing-files.html) - if a file is opened, the file viewers is opened on the right part of the user interface
+* [File content area](viewing-files.html) - if a file is opened, the file viewers is opened on the right part of the user interface
 * [Settings dialog](#settings) - started by the gear-wheels button in the bottom left part of the user interface 
+
+![explanation of the applications user interface areas](/media/tagspaces-ui-areas.png)
 
 ## Location manager
 A **location** is a folder on your local drive, containing files and other folders. Typical locations are for example folder where you collect your photos or folders where you store your documents, ebooks or music.  
@@ -59,7 +62,7 @@ TODO
 * Explaining the context menu of a tag
 * Explaining the context menu of a tag group (sorting and other functionalities)
 
-![tag library general overview](/media/tag-library-overview.png)
+![tag library general overview](/media/tag-library.png)
 
 > **Hint:** Find out how to change the default tag background and text colors in the [settings documentation](#settings)
 

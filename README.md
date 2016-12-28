@@ -25,7 +25,8 @@ TagSpaces is an open source, cross-platform, no backend, no login, no cloud pers
 * WebDAV based package for selfhosting
 
 ## Contribution
-TagSpaces is an open source software, and the code of the application's core is published under the AGPL License. Almost all build-in extension are published under the MIT license. As such, the code is publicly available on GitHub and forking is particularly recommended.
+Enhancement of this documentation are welcomed via pull request. For the markdown syntax used for the document please refer to [gitbook markdown page](https://toolchain.gitbook.com/syntax/markdown.html)
 
-## License of the Documentation
+## Licensing notes
+TagSpaces is an open source software, and the code of the application's core is published under the AGPL License. Almost all build-in extension are published under the MIT license. As such, the code is publicly available on GitHub and forking is particularly recommended.
 

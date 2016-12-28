@@ -11,10 +11,7 @@ TagSpaces has a build in file search functionality. The difference to the classi
 
 Feature versions of the application could include a file indexing functionality for a faster and responsive search.
 
-<figure>
-  <img title="screenshot showing the advanced search menu" src="https://www.tagspaces.org/content/v2-2/advanced-search-menu.png" class="img-responsive center-block">
-  <figcaption>Screenshot of the advanced search drop down menu</figcaption>
-</figure>
+![Screenshot of the advanced search drop down menu](/media/advanced-search-menu.png)
 
 ## Limit search results
 
@@ -22,13 +19,13 @@ We have added an options in the settings to limit the maximal search results or 
 
 ![limit search results screenshot](/media/new-search-options.png)
 
-## Advanced search <i class="profeature"></i>
+## Advanced search 
 
 TagSpaces PRO search is very powerful. It offers users the opportunity to discover easier and faster the right result for them.
 
 One of the advantages of TagSpaces PRO's search are search operators. They are words that can be added to searches to help narrow down the results. You can use all of the search operators directly in the search box, without opening the advanced search dialog. Here is an example:
 
-<img alt="Advanced Search Syntax example" src="/media/search-syntax-example.png" class="img-responsive">
+![Advanced Search Syntax example]()/media/search-syntax-example.png
 
 So for the example above the search query **t:picture sport** will give you all pictures containing the word **sport**. No matter where it is located search operator in the search query and will work both placed before the search word or after.
 
@@ -49,3 +46,41 @@ Please make sure, that when you are using search operators, there is no any spac
 
 If you need more information about supported file types, please take a look at [this article](https://www.tagspaces.org/documentation/supported-file-formats/).
 
+### <i class="profeature"></i>Advanced search
+
+The advanced search dialog in TagSpaces PRO contains two more search features:
+
+### <i class="profeature"></i>Search by file type
+
+In the file type dropdown you can specify a group of files you want to search. The following file type groups are supported:
+
+* Pictures: JPG,PNG,GIF,... (query shortcut t:picture)
+* Documents: PDF,ODF,DOCX,EXL,... (query shortcut t:doc)
+* Notes: MD,TXT,HTML,... (query shortcut t:note)
+* Audio: OGG,MP3,WAV,... (query shortcut t:audio)
+* Video files (WEBM,OGV,MP4,... (query shortcut t:video)
+* Archives (ZIP,RAR,TGZ,7Z,... (query shortcut t:archive)
+
+> **Note** You can use the query shortcut for a given file type directly in the search box, without opening the advanced search dialog. So for example the search query `t:audio coldplay` will give you all audio files containing the word coldplay.
+
+### <i class="profeature"></i>Search history 
+
+For quick access TagSpaces PRO keeps a history of your last 15 search queries in a list. This list can be cleaned by selecting the last item in it called "Clear search history" in it.
+
+![Advanced search menu with activated search history and search by file types](media/advanced-search-pro.png)
+
+## <i class="profeature"></i>Text extraction and full text search <sup style="color: gray">&nbsp;ALPHA</sup>{#fullTextSearch} 
+
+After activating the text extraction checkbox in the settings, TagSpaces PRO will try to extract the text content of files you are currently browsing. This text content is saved in the hidden `.ts` folder and is considered later by the search. Since this is a early experimental feature, please don't relay only on ly on it.
+
+These file formats are currently supported:
+
+* Notes: HTML, MD, TXT (extracts the text content)
+* Office Documents: PDF, ODT, ODP, ODS, DOCX, XLSX, PPTX (extracts the text content)
+* Images: JPG (extracts Exif and IPTC informations)
+* Audios formats: MP3 (extracts id3 tags)
+* Ebooks: EPUB (extracts the text content)
+
+![Activating the text extraction functionality](/media/activating-text-extraction.png)
+
+> **Warning** Please note, that this is still a very experimental functionality which on directories with many files, may lead to freezing of the application.
