@@ -1,5 +1,7 @@
 # Collaboratively using tags and tag groups
 
+<!-- toc -->
+
 ## Introduction
 
 A common requirement for many TagSpaces users is sharing tag and tag groups across computer networks and devices. This article runs through the steps required for setting up TagSpaces in order to use a shared tag groups. It will guide you through the process of exporting the tag groups, editing them in externally and re-importing or reusing them in other installations. After understanding how TagSpaces handles tag groups you will be able to achieve the following use cases with our application:

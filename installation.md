@@ -4,7 +4,8 @@
 Once a new version of the application is available, you will see a green present icon near the TagSpaces logo. Clicking on this icon will lead your to the what's new webpage on the TagSpaces website. Here you can download the new version of the application.
 
 ![New version notification](/media/new-version-available.png)
-If you do not want to TagSpaces to check for the availability of new version, disable this functionality in the [settings](userinterface.html/settings)
+
+If you do not want to TagSpaces to check for the availability of new version, disable this functionality in the [settings](userinterface.html/#settings)
 
 ## Installing Windows version {#windows}
 The Windows version of TagSpaces is distributed as `zip` file, which can be downloaded for [32bit](https://www.tagspaces.org/downloads/tagspaces-win32.zip) and for [64bit](https://www.tagspaces.org/downloads/tagspaces-win64.zip) versions of Windows, depending on your system. Then you have to just unzip the downloaded file in a folder of your choice somewhere on your system. In the unpacked folder you will find a file called `tagspaces.exe`, which can be executed with double click.

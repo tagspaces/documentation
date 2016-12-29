@@ -21,7 +21,7 @@ The user interface of the application is design to be usable on touch screens, b
 
 <video src="/media/tagspaces-drag-drop.mp4" autoplay="true" loop="true" poster="/media/tagspaces-drag-drop.png" class="img-responsive"></video>
 
-## <i class="profeature"></i>File Tagging based on sidecar files {#tagSidecarSaving}
+## <i class="profeature">pro</i>File Tagging based on sidecar files {#tagSidecarSaving}
 As alternative to saving the tagging information in the file names, TagSpaces PRO offers saving this kind of meta information in a sidecar files located in a hidden `.ts` folder. This option can be activated in the settings of the application as shown in the following screenshot.
 
 > **Note** Please note that by default the `.ts` folder is hidden only on OSX and Linux operating systems, on Windows folders with dot in front of their name are not hidden by default. Setting these folders as hidden on Windows can be achieved manually or with script if needed.
@@ -52,7 +52,13 @@ The main advantage of this solution is that the name of the files is not altered
 
 <span class="label label-info">Note</span> If you want to have the files located in the `.ts` folder synched with some cloud service such as Dropbox or Google Drive you have to enable the synching of hidden folders and files.
 
-## Folder Tagging {#folder-tagging} <i class="profeature"></i>
+## <i class="profeature">pro</i>Folder Tagging {#folder-tagging}
+TODO
+
+## <i class="profeature">pro</i>Folder Description {#folder-description}
+TODO
+
+## <i class="profeature">pro</i>File Description {#file-description}
 TODO
 
 

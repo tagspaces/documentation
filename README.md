@@ -7,7 +7,7 @@ This documentation has currently a draft status
 
 ## General remarks
 
-* <i class="profeature"></i> - means that the described feature is part of the TagSpaces PRO
+* <i class="profeature">pro</i> - means that the described feature is part of the TagSpaces PRO
 * ⚒ - means that the section is not ready yet and may contain unclear or not up-to-date information
 
 ## What is TagSpaces ?

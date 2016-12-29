@@ -12,7 +12,7 @@ TODO add links to the main PRO features described in this documentation
 * Signed installers
 * Advanced search
 
-### <i class="profeature"></i>Generating persistent thumbnails<sup style="color: gray">&nbsp;BETA</sup> {#thumbnailsGeneration}
+### <i class="profeature">pro</i>Generating persistent thumbnails<sup style="color: gray">&nbsp;BETA</sup> {#thumbnailsGeneration}
 
 In perspectives supporting showing of file previews like [Grid](https://www.tagspaces.org/extensions/perspectiveGrid) and [ImageSwiper](https://www.tagspaces.org/extensions/perspectiveImageSwiper), TagSpaces PRO is generating thumbnails for the visible files in the perspective. Currently the application tries to generated thumbnails for the following files types:
 
@@ -32,13 +32,13 @@ Here is a short video showing the thumbnail generation in action.
 
 <video controls autoplay loop src="/media/demo-tmb-generation.mp4"></video>
 
-### <i class="profeature"></i>Deleting files to trashcan {#trashBin}
+### <i class="profeature">pro</i>Deleting files to trashcan {#trashBin}
 
 In the setting of TagSpaces you can activate a checkbox "Move deleted files or folders to trash bin". Aftet activating it, all files deleted in TagSpaces will be send to the *Trash*, *Trashbin* or *Recylce bin* depending on your operating system. From these locations, you files can be easily recovered in case of a unintended deletion.
 
 ![Activating the trash bin functionality](/media/activating-trashcan.png)
 
-### <i class="profeature"></i>Adding folders meta information {#folderMeta}
+### <i class="profeature">pro</i>Adding folders meta information {#folderMeta}
 
 TagSpaces PRO gives you the ability to add tags and a description to every folder connected to it. These information is managed in the folder properties dialog, which can be accessed as shown in the following screenshots.
 

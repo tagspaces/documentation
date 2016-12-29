@@ -1,6 +1,6 @@
 {
   "gitbook": "3.2.2",
-  "plugins": ["edit-link", "anchorjs", "prism", "-highlight"],
+  "plugins": ["edit-link", "anchorjs", "prism", "-highlight", "toc"],
   "search": {
     "maxIndexSize": 1000000000
   },

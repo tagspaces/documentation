@@ -46,11 +46,11 @@ Please make sure, that when you are using search operators, there is no any spac
 
 If you need more information about supported file types, please take a look at [this article](https://www.tagspaces.org/documentation/supported-file-formats/).
 
-### <i class="profeature"></i>Advanced search
+### <i class="profeature">pro</i>Advanced search
 
 The advanced search dialog in TagSpaces PRO contains two more search features:
 
-### <i class="profeature"></i>Search by file type
+### <i class="profeature">pro</i>Search by file type
 
 In the file type dropdown you can specify a group of files you want to search. The following file type groups are supported:
 
@@ -63,13 +63,13 @@ In the file type dropdown you can specify a group of files you want to search. T
 
 > **Note** You can use the query shortcut for a given file type directly in the search box, without opening the advanced search dialog. So for example the search query `t:audio coldplay` will give you all audio files containing the word coldplay.
 
-### <i class="profeature"></i>Search history 
+### <i class="profeature">pro</i>Search history 
 
 For quick access TagSpaces PRO keeps a history of your last 15 search queries in a list. This list can be cleaned by selecting the last item in it called "Clear search history" in it.
 
 ![Advanced search menu with activated search history and search by file types](media/advanced-search-pro.png)
 
-## <i class="profeature"></i>Text extraction and full text search <sup style="color: gray">&nbsp;ALPHA</sup>{#fullTextSearch} 
+## <i class="profeature">pro</i>Text extraction and full text search <sup style="color: gray">&nbsp;ALPHA</sup>{#fullTextSearch} 
 
 After activating the text extraction checkbox in the settings, TagSpaces PRO will try to extract the text content of files you are currently browsing. This text content is saved in the hidden `.ts` folder and is considered later by the search. Since this is a early experimental feature, please don't relay only on ly on it.
 
