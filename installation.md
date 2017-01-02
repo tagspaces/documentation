@@ -1,3 +1,7 @@
+---
+description: Here you will learn how to install and run TagSpaces
+---
+
 # Installation and Setup
 
 ## Installing Windows version {#windows}

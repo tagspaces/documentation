@@ -31,17 +31,17 @@
 
 * [TagSpaces PRO ⚒](pro.md)
 
-## Use cases and tutorials
+## Tutorials
 
-* [Managing Files ⚒](filemanagement.md)
-* [Note-taking ⚒](notetaking.md)
-* [Organizing Photos ⚒](photomanagement.md)
-* [Web Clipping ⚒](webclipping.md)
-* [Playing Local Media ⚒](playing-media.md)
-* [Bookmark Manager ⚒](bookmark-manager.md)
-* [Personal Wiki ⚒](personal-wiki.md)
-* [Syncing data ⚒](file-syncing.md)
-* [Sharing tag libraries](sharing-tags.md)
+* [Managing Files ⚒](tutorials/filemanagement.md)
+* [Note-taking ⚒](tutorials/notetaking.md)
+* [Organizing Photos ⚒](tutorials/photomanagement.md)
+* [Web Clipping ⚒](tutorials/webclipping.md)
+* [Playing Local Media ⚒](tutorials/playing-media.md)
+* [Bookmark Manager ⚒](tutorials/bookmark-manager.md)
+* [Personal Wiki ⚒](tutorials/personal-wiki.md)
+* [Syncing data ⚒](tutorials/file-syncing.md)
+* [Sharing tag libraries](tutorials/sharing-tags.md)
 
 ## Developers
 

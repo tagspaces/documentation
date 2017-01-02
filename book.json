@@ -1,5 +1,7 @@
 {
   "gitbook": "3.2.2",
+  "title": "TagSpaces Documentation",
+  "author": "TagSpaces UG (haftungbeschraenkt)",
   "plugins": ["edit-link", "anchorjs", "prism", "-highlight", "toc", "sitemap"],
   "search": {
     "maxIndexSize": 1000000000
