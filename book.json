@@ -1,6 +1,6 @@
 {
   "gitbook": "3.2.2",
-  "plugins": ["edit-link", "anchorjs", "prism", "-highlight", "toc"],
+  "plugins": ["edit-link", "anchorjs", "prism", "-highlight", "toc", "sitemap"],
   "search": {
     "maxIndexSize": 1000000000
   },
@@ -8,6 +8,9 @@
     "edit-link": {
       "base": "https://github.com/tagspaces/documentation/edit/master",
       "label": "Edit"
-    }
+    },
+    "sitemap": {
+        "hostname": "http://docs.tagspaces.org/"
+    }    
   }
 }
