@@ -5,7 +5,8 @@ A TagSpaces perspective allowing you to view your files in a list. It is optimiz
 ## Features
 
 * Browsing files in the current folder
-* Performing basic operations like renaming, moving, deleting, creating and tagging files
+* Performing basic operations like renaming, moving, deleting and tagging files
+* CSV export - the current list of files or search results can be exported in CSV format for further operation with the generated data.
 
 ## Used libraries
 This extension thankfully relays on the following great libraries:

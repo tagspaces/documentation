@@ -43,6 +43,12 @@
 * [Syncing data ⚒](file-syncing.md)
 * [Sharing tag libraries](sharing-tags.md)
 
+## Developers
+
+* [Meta file formats specification](dev/metafileformats.md)
+* [Extension development guide](dev/extension-development-guide.md)
+* [API documentation](http://docs.tagspaces.org/api)
+
 ## Appendix Perspectives
 
 * [Grid Perspective](extensions/perspectiveGrid.md)

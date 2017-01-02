@@ -1,20 +1,26 @@
 # Webclipping - collect everything online
 
-We offer experimental browser extension for capturing web content. These so called webscraper are available for Chrome and Firefox browsers.
+We offer browser extension for capturing web content. These so called web scraper or clipper are available for the Chrome and Firefox browsers.
 
 ## TagSpaces Firefox Addon
 
 * Saving the current webpage as single files including the embedded images and styling information in pure HTML format.
 * Saving the a selected part of the current webpages as HTML file.
 * Saving a screenshot of the visible area of the current webpage as a PNG files.
-* Adding tags in the file names to the sraped files before saving
+* Adding tags in the file names to the scraped files before saving
+
+TODO: Add screenshot
+
+> **Note** Saving a webpage as a HTML will save in the html code also the data and time of the clipping and the urls from which the webpage is saved. This information can be accessed later in the [HTML viewer](/extensions/viewerHTML.html#meta-data) extension while opening the file with it.
 
 ## TagSpaces Chrome Extension
 
 * Saving the current webpage as single files including the embedded images and styling information in MHTML format.
 * Saving the a selected part of the current webpages as HTML file.
 * Saving a screenshot of the visible area of the current webpage as a PNG files.
-* Adding tags in the file names to the sraped files before saving
+* Adding tags in the file names to the scraped files before saving
+
+TODO: Add screenshot
 
 ### Enabling the saving of webpages as MHTML
 TagSpaces is a great tool for MHTML file organization on many platforms, because it features an integrated MHTML viewer, but the question here is how you can save web pages as handy MHTML files directly out of the Chrome browser. Here you will find the answer of this question for the both browsers - Chrome and Chromium respectively. And no, you don't have to install the TagSpaces chrome extension to achieve this, but just to execute the following steps:
@@ -30,8 +36,8 @@ TagSpaces is a great tool for MHTML file organization on many platforms, because
 
 > **Note** After this activation you will not be able to save website in HTML anymore.
 
-### Adding keyboard shortcut to the webclipper
-At the end of the extension management page in the Chrome browser there is a link called "Keyboard shortcuts". See the red area of the screenshot below.
+### Adding keyboard shortcut to the webclipper in Chrome
+At the bottom of the extension management page in the Chrome browser you will find a link named "Keyboard shortcuts". See the red area of the screenshot below.
 
 ![open the chrome extension shortcut configuration](/media/chrome-shortcuts-config.png)
 

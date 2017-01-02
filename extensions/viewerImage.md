@@ -6,13 +6,14 @@ A TagSpaces extension allowing you to open different kinds of image formats
 
 * Opening of the following image formats: JPG, PNG, GIF, SVG, BMP, WEBP, ICO 
 * Zooming and rotating of the opened image 
-* For JPG files it features an integrated EXIF parser used for the auto rotation of the pictures 
+* For JPG files it features an integrated Exif and IPTC reader with auto rotation of photos according to the Exif information
+* Document printing
 
 ## Used libraries
 This extension thankfully relays on the following great libraries:
 
-* [exif.js](https://github.com/exif-js/exif-js) 
 * [viewer.js](https://fengyuanchen.github.io/viewerjs/)
+* [exif.js](https://github.com/exif-js/exif-js) 
 
 ## Installation
 
@@ -24,11 +25,11 @@ The source code of this extension is freely available on [github.com/tagspaces/v
 
 ## Development
 
-If you want to extend this extensions, please follow our general [extension development guide](http://tagspaces.org/documentation/extension-development-guide)
+If you want to extend this extensions, please follow our general [extension development guide](https://tagspaces.org/documentation/extension-development-guide)
 
 ## Screenshots
 
-![Screenshot of the Image Viewer as running in the Linux version of TagSpaces](http://tagspaces.org/extensions/viewerImage/viewerImage-screenshot.png)
+![Screenshot of the Image Viewer as running in the Linux version of TagSpaces](http://docs.tagspaces.org/media/extensions/viewer-image-demo.gif)
 
 ## License
 

@@ -1,6 +1,13 @@
-# Browsing File and Folder Structures
+# Browsing your Files and Folders
 
 tbd
+
+This is a list of the perspective extensions currently build in the application:
+* [Grid Perspective](extensions/perspectiveGrid.html) - presenting your files as grid of thumbnails
+* [List Perspective](extensions/perspectiveList.html) - presenting your files as list, optimized simple file management operations
+* [ImageSwiper Perspective](extensions/perspectiveImageSwiper.html) - a perspective optimized for browsing and viewing of only image file formats
+* [FolderFiz Perspective](extensions/perspectiveGraph.html) - experiment which apply some information visualization concepts on your file structures
+
 
 ## Working with the List perspective
 

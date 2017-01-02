@@ -1,4 +1,4 @@
-# Search functionalities
+# Search files
 
 ## Search based on filenames
 
