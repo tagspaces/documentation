@@ -7,6 +7,13 @@ A TagSpaces extension allowing editing of text based documents.
 * Opening and editing of text documents
 * Syntax highlighting for the following file types: h, c, clj, coffee, coldfusion, cpp, cs, css, groovy, haxe, htm, html, java, js, jsm, json, latex, less, ly, ily, lua, markdown, md, mdown","mdwn, mkd, ml, mli, pl, php, powershell, py, rb, scad, scala, scss, sh, sql, svg, textile, txt, xml
 
+![Screenshot of the editorText](https://github.com/tagspaces/documentation/raw/master/media/extensions/editor-text-lead.png)
+
+### Markdown preview
+This text editor has an extended support for editing markdown files. It offers a preview of the currently edited markdown document and a short markdown syntax documentation. The markdown preview can be started from the menu item `Markdown Preview` of extensions main menu.
+
+![Markdown preview in editorText](https://github.com/tagspaces/documentation/raw/master/media/extensions/editor-text-md-preview.png)
+
 ## Used libraries
 This extension thankfully relays on the following great libraries:
 
@@ -26,7 +33,7 @@ If you want to extend this extensions, please follow our general [extension deve
 
 ## Screenshots
 
-![Screenshot of the editorText](https://www.tagspaces.org/extensions/editorText/editorText-screenshot.png)
+
 
 ## License
 

@@ -10,7 +10,7 @@ This documentation has currently a **draft status**.
 > * ⚒ - means that the section is not ready yet and may contain unclear or not up-to-date information
 
 ## What is TagSpaces ?
-TagSpaces is an open source, cross-platform, no backend, no login, no cloud personal data manager and file navigator. It helps organize your files, photos and other documents with tags on different platforms and/or devices, according to your own preferences and following your own logic, by using the same smart and friendly interface everywhere. Here is a short introducing video:
+TagSpaces is an open source, cross-platform, no backend, no login, no cloud personal data manager and file navigator. It helps organize your files, photos and other documents with tags on different platforms and/or devices, according to your own preferences and following your own logic, by using the same smart and friendly interface everywhere. Here is a short introducing video showing TagSpaces in action:
 
 <iframe width="640" height="480" src="https://www.youtube-nocookie.com/embed/8rMo5EFAqgM?rel=0" frameborder="0" allowfullscreen></iframe>
 
@@ -30,6 +30,14 @@ As a quick introduction you can also take a look on a few slides explaining the 
 * Android app
 * IOS app (beta)
 * WebDAV based package for selfhosting
+
+## Downloads
+
+[Download TagSpaces](https://www.tagspaces.org/downloads) - Quickly find the appropriate install for your platform (Windows, Mac, Linux, Android, Firefox and Chrome).
+
+## Top Extensions
+
+tbd
 
 ## Contribution
 Enhancement of this documentation are welcomed via pull request. For the markdown syntax used for the document please refer to [gitbook markdown page](https://toolchain.gitbook.com/syntax/markdown.html)

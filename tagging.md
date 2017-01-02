@@ -21,6 +21,10 @@ The user interface of the application is design to be usable on touch screens, b
 
 <video src="/media/tagspaces-drag-drop.mp4" autoplay="true" loop="true" poster="/media/tagspaces-drag-drop.png" class="img-responsive"></video>
 
+## Tagging using keyboard shortcuts
+TODO:
+* Setting individual shortcuts for single tags
+
 ## <i class="profeature">pro</i>File Tagging based on sidecar files {#tagSidecarSaving}
 As alternative to saving the tagging information in the file names, TagSpaces PRO offers saving this kind of meta information in a sidecar files located in a hidden `.ts` folder. This option can be activated in the settings of the application as shown in the following screenshot.
 
