@@ -80,3 +80,8 @@ If you do not want to TagSpaces to check for the availability of new version, di
 
 ## Running TagSpaces in portable mode {#portable-mode}
 The Windows and Linux versions of TagSpaces can be started in the so called portable mode, allowing the use of the application from an USB-stick or other portable devices. In this mode all the configuration information such as tags, tag groups and connection to locations is stored in the folder from where the application is started and not in the home user folder on current operating systems. The portable mode can be started with the `tagspacesp.cmd` script under Windows or the `tagspacesp` under Linux. These scripts are located in the unzipped application folder. Under Linux you have eventually to make this script executable with this command `chmod +x tagspacesp`.
+
+### Updating the portable version
+In order to update a version of TagSpaces used in portable mode for example on USB stick you have just to exchange the files and directories with the new ones, coming from the installation package of the new application version.
+
+> **Important** Be careful not to delete the `tsprofile` sub folder, because it contains the information for you locations, tag groups and application settings.

@@ -1,5 +1,7 @@
 # Organize your data with tags
 
+<!-- toc -->
+
 ## Motivation
 Tagging and tags is fresh and better alternative of categorizing and grouping things.
 Tagging allows people to call thing with their own words. They don’t need to conform with keywords or categories in internet created by somebody else. Allow them to describe what they’re seeing in their own words, to imbue the experience with their own meaning. Tagging spares of your time, it creates a variety of tags in different sites and can make the searching for a specific song or a movie or a book or whatever you’re looking for much more easy and faster.
@@ -56,13 +58,13 @@ The main advantage of this solution is that the name of the files is not altered
 
 <span class="label label-info">Note</span> If you want to have the files located in the `.ts` folder synched with some cloud service such as Dropbox or Google Drive you have to enable the synching of hidden folders and files.
 
-## <i class="profeature">pro</i>Folder Tagging {#folder-tagging}
+## <i class="profeature">pro</i>Folder Tagging
 TODO
 
-## <i class="profeature">pro</i>Folder Description {#folder-description}
+## <i class="profeature">pro</i>Folder Description
 TODO
 
-## <i class="profeature">pro</i>File Description {#file-description}
+## <i class="profeature">pro</i>File Description
 TODO
 
 
