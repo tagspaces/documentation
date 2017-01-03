@@ -576,7 +576,7 @@
     
         <li class="chapter " data-level="3.3" >
             
-                <a target="_blank" href="http://docs.tagspaces.org/api">
+                <a target="_blank" href="http://docs.tagspaces.org/dev/api">
             
                     
                     API documentation
@@ -963,8 +963,15 @@
 <p>A TagSpaces extension allowing you to open MHTML and EML files.</p>
 <h2 id="features">Features</h2>
 <ul>
-<li>...</li>
+<li>Viewing of MHTML/MHT files - MHTML is <a href="https://tools.ietf.org/html/rfc2557" target="_blank">file format</a> for saving web pages with all the images and styling information in one single file. Saving in MHTML format is natively supported by <a href="http://docs.tagspaces.org/tutorials/webclipping.html#enabling-the-saving-of-webpages-as-mhtml" target="_blank">Chrome&#x2122;</a>, Internet Explorer&#x2122; and Firefox&#x2122; (with the help of the <a href="https://addons.mozilla.org/en-US/firefox/addon/mozilla-archive-format/" target="_blank">MAFF addon</a>) browsers.</li>
+<li>Viewing of EML files - EML is file format for saving emails. It is the default export email format of the Thunderbird email client. The <em>show original</em> email functionality in Gmail&#x2122; also exports the email in this format.</li>
+<li>Readabilty mode - for easy reading of the text content, with support for <em>serif</em> and <em>sans serif</em> font, different font size and background colors.</li>
+<li>Showing the creation date of the file</li>
+<li>Opening the source url of a MHTML file</li>
+<li>Finding text in the current file</li>
+<li>File printing</li>
 </ul>
+<p><img src="https://github.com/tagspaces/documentation/raw/master/media/extensions/mhtml-viewer-readabilty-mode.gif" alt="Animation of the viewerMHTML extension"></p>
 <h2 id="used-libraries">Used libraries</h2>
 <p>This extension thankfully relays on the following great project(s):</p>
 <ul>
@@ -975,9 +982,7 @@
 <h2 id="source-code">Source code</h2>
 <p>The source code of this extension is freely available on <a href="https://github.com/tagspaces/viewerMHTML/" target="_blank">github.com/tagspaces/viewerMHTML</a></p>
 <h2 id="development">Development</h2>
-<p>If you want to extend this extensions, please follow our general <a href="http://tagspaces.org/documentation/extension-development-guide" target="_blank">extension development guide</a></p>
-<h2 id="screenshots">Screenshots</h2>
-<p><img src="http://tagspaces.org/extensions/viewerMHTML/viewerMHTML-screenshot.png" alt="Screenshot of the viewerMHTML"></p>
+<p>If you want to extend this extensions, please follow our general <a href="http://docs.tagspaces.org/dev/extension-development-guide.html" target="_blank">extension development guide</a></p>
 <h2 id="license">License</h2>
 <p><a href="https://github.com/tagspaces/viewerMHTML/blob/master/LICENSE.txt" target="_blank">MIT</a></p>
 
@@ -1023,7 +1028,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"MHTML Reader","level":"5.7","depth":1,"next":{"title":"ODF Viewer","level":"5.8","depth":1,"path":"extensions/editorODF.md","ref":"extensions/editorODF.md","articles":[]},"previous":{"title":"Markdown Reader","level":"5.6","depth":1,"path":"extensions/viewerMD.md","ref":"extensions/viewerMD.md","articles":[]},"dir":"ltr"},"config":{"plugins":["edit-link","anchorjs","prism","-highlight","toc","sitemap"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"prism":{},"toc":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"sitemap":{"hostname":"http://docs.tagspaces.org/"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":"Edit","base":"https://github.com/tagspaces/documentation/edit/master"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchorjs":{}},"search":{"maxIndexSize":1000000000},"theme":"default","author":"TagSpaces UG (haftungbeschraenkt)","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"TagSpaces Documentation","gitbook":"3.2.2"},"file":{"path":"extensions/viewerMHTML.md","mtime":"2017-01-03T14:07:29.651Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-01-03T14:07:33.962Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"MHTML Reader","level":"5.7","depth":1,"next":{"title":"ODF Viewer","level":"5.8","depth":1,"path":"extensions/editorODF.md","ref":"extensions/editorODF.md","articles":[]},"previous":{"title":"Markdown Reader","level":"5.6","depth":1,"path":"extensions/viewerMD.md","ref":"extensions/viewerMD.md","articles":[]},"dir":"ltr"},"config":{"plugins":["edit-link","anchorjs","prism","-highlight","toc","sitemap"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"prism":{},"toc":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"sitemap":{"hostname":"http://docs.tagspaces.org/"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":"Edit","base":"https://github.com/tagspaces/documentation/edit/master"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchorjs":{}},"search":{"maxIndexSize":1000000000},"theme":"default","author":"TagSpaces UG (haftungbeschraenkt)","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"TagSpaces Documentation","gitbook":"3.2.2"},"file":{"path":"extensions/viewerMHTML.md","mtime":"2017-01-03T15:12:31.267Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-01-03T15:12:33.869Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

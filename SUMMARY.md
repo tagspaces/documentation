@@ -47,7 +47,7 @@
 
 * [Meta file formats specification](dev/metafileformats.md)
 * [Extension development guide](dev/extension-development-guide.md)
-* [API documentation](http://docs.tagspaces.org/api)
+* [API documentation](http://docs.tagspaces.org/dev/api)
 
 ## Appendix Perspectives
 
