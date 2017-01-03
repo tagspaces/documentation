@@ -1,7 +1,7 @@
-# Selfhosting TagSpaces
+# Self Hosting TagSpaces
 
 ## Motivation
-Almost since the very first releases of TagSpaces back in the 2013, many users did requested a server based version of TagSpaces. They wanted to use the convinient tagging workflow of TagSpaces on their self hosted ownCloud or in general WebDAV instances. So starting from today this is possible, TagSpaces can now run on servers and once installed you can access your files from anywhere.
+Almost since the very first releases of TagSpaces back in the 2013, many users did requested a server based version of TagSpaces. They wanted to use the convenient tagging workflow of TagSpaces on their self hosted ownCloud or in general WebDAV instances. So starting from today this is possible, TagSpaces can now run on servers and once installed you can access your files from anywhere.
 
 ## Download and Installation
 The current version can of the WebDAV version can be downloaded from [here](https://www.tagspaces.org/downloads/tagspaces-web.zip). 
@@ -10,7 +10,7 @@ The current version can of the WebDAV version can be downloaded from [here](http
 
 In order to use the hosted version you need a working WebDAV server. The current release was tested with success on [ownCloud](http://owncloud.org) which is based itself on the [sabre/dav](http://sabre.io) WebDAV server. On Ubuntu the installation steps are as following:
 
-- Install Apache webserver (*nginx* webserver with its webdav extension is reported alos to work)
+- Install Apache webserver (*nginx* webserver with its webdav extension is reported also to work)
 - [Install ownCloud](http://owncloud.org/install) or any other WebDAV server
 - Unzip the hosted version of TagSpaces somewhere in the www root folder of Apache. Currently the TagSpaces should be on the same host/ip and using the same port as the WebDAV server. This is so because of the XSS prevention build in the modern internet browsers.
 - Assuming ownCloud is installed in `/var/www/owncloud` and TagSpaces in `/var/www/tagspaces` you have to type something like this in your terminal:

@@ -9,7 +9,9 @@
   "devDependencies": {},
   "scripts": {
     "update-ext": "./update-external.sh",
-    "prepare": "gitbook build . docs",
+    "anigif": "gifify --colors 150 --to 19 media/input.webm -o media/result.gif",
+    "prepare": "npm run optipng && npm run update-ext && gitbook build . docs",
+    "optipng": "optipng media/*png",
     "serve": "gitbook serve"
   },
   "keywords": [

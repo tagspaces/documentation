@@ -2,3 +2,5 @@ _book
 npm-degug.log
 node_modules
 npm-debug.log
+*.webm
+*.pdf
