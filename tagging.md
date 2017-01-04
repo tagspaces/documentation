@@ -27,6 +27,30 @@ The user interface of the application is design to be usable on touch screens, b
 TODO:
 * Setting individual shortcuts for single tags
 
+## Smart tags
+
+TODO
+* General description and purpose
+* Date and time based
+* Geo location
+
+![tag library general overview](/media/smart-tags-group.png)
+
+Smart tag formats:
+* Year: 2016
+* Month: 201605
+* Date: 20160529
+* DateTime: 20160529~124532 / 20160529!124532
+* (Time: 124323)
+* Year Ranges: 2016-2018
+* Month Ranges: 201605-201701
+* Date Ranges: 20160531-20160603
+* DateTime: 20160529~124532-20160529~154500 20160529!124532-20160529!154500
+
+![date time smart tag editor](/media/tageditor-datetime.png)
+
+Geo tag
+
 ## <i class="profeature">pro</i>File Tagging based on sidecar files {#tagSidecarSaving}
 As alternative to saving the tagging information in the file names, TagSpaces PRO offers saving this kind of meta information in a sidecar files located in a hidden `.ts` folder. This option can be activated in the settings of the application as shown in the following screenshot.
 
@@ -59,12 +83,6 @@ The main advantage of this solution is that the name of the files is not altered
 <span class="label label-info">Note</span> If you want to have the files located in the `.ts` folder synched with some cloud service such as Dropbox or Google Drive you have to enable the synching of hidden folders and files.
 
 ## <i class="profeature">pro</i>Folder Tagging
-TODO
-
-## <i class="profeature">pro</i>Folder Description
-TODO
-
-## <i class="profeature">pro</i>File Description
 TODO
 
 

@@ -684,7 +684,7 @@
                 <a href="extensions/viewerHTML.html">
             
                     
-                    HTML Reader
+                    HTML Viewer
             
                 </a>
             
@@ -966,10 +966,9 @@
 <li><a href="#file-tagging-based-on-filenamefile-tagging">File Tagging based on filename{#file-tagging}</a></li>
 <li><a href="#tagging-with-drag-drop">Tagging with Drag &amp; Drop</a></li>
 <li><a href="#tagging-using-keyboard-shortcuts">Tagging using keyboard shortcuts</a></li>
+<li><a href="#smart-tags">Smart tags</a></li>
 <li><a href="#i-classprofeatureproifile-tagging-based-on-sidecar-files-tagsidecarsaving"><i class="profeature">pro</i>File Tagging based on sidecar files {#tagSidecarSaving}</a></li>
 <li><a href="#i-classprofeatureproifolder-tagging"><i class="profeature">pro</i>Folder Tagging</a></li>
-<li><a href="#i-classprofeatureproifolder-description"><i class="profeature">pro</i>Folder Description</a></li>
-<li><a href="#i-classprofeatureproifile-description"><i class="profeature">pro</i>File Description</a></li>
 </ul>
 <!-- toc stop -->
 <h2 id="motivation">Motivation</h2>
@@ -992,6 +991,28 @@ Tagging allows people to call thing with their own words. They don&#x2019;t need
 <ul>
 <li>Setting individual shortcuts for single tags</li>
 </ul>
+<h2 id="smart-tags">Smart tags</h2>
+<p>TODO</p>
+<ul>
+<li>General description and purpose</li>
+<li>Date and time based</li>
+<li>Geo location</li>
+</ul>
+<p><img src="media/smart-tags-group.png" alt="tag library general overview"></p>
+<p>Smart tag formats:</p>
+<ul>
+<li>Year: 2016</li>
+<li>Month: 201605</li>
+<li>Date: 20160529</li>
+<li>DateTime: 20160529~124532 / 20160529!124532</li>
+<li>(Time: 124323)</li>
+<li>Year Ranges: 2016-2018</li>
+<li>Month Ranges: 201605-201701</li>
+<li>Date Ranges: 20160531-20160603</li>
+<li>DateTime: 20160529~124532-20160529~154500 20160529!124532-20160529!154500</li>
+</ul>
+<p><img src="media/tageditor-datetime.png" alt="date time smart tag editor"></p>
+<p>Geo tag</p>
 <h2 id="tagSidecarSaving"><i class="profeature">pro</i>File Tagging based on sidecar files </h2>
 <p>As alternative to saving the tagging information in the file names, TagSpaces PRO offers saving this kind of meta information in a sidecar files located in a hidden <code>.ts</code> folder. This option can be activated in the settings of the application as shown in the following screenshot.</p>
 <blockquote>
@@ -1018,10 +1039,6 @@ Tagging allows people to call thing with their own words. They don&#x2019;t need
 </code></pre><p>The main advantage of this solution is that the name of the files is not altered by tagging and there is theoretically no limit in amount of tags you can add to a given file. However it has the following drawback. If you move or rename tagged files in TagSpaces it will take care of the sidecar file, which will also renamed or moved in the appropriate folder. But if you move or rename this file in an external applicaiton, you have to move or rename the sidecar files by hand. The same hold true for the deleting a file from an external file manager. It will not automatically delete the sidecar file in the <code>.ts</code> folder.</p>
 <p><span class="label label-info">Note</span> If you want to have the files located in the <code>.ts</code> folder synched with some cloud service such as Dropbox or Google Drive you have to enable the synching of hidden folders and files.</p>
 <h2 id="profolder-tagging"><i class="profeature">pro</i>Folder Tagging</h2>
-<p>TODO</p>
-<h2 id="profolder-description"><i class="profeature">pro</i>Folder Description</h2>
-<p>TODO</p>
-<h2 id="profile-description"><i class="profeature">pro</i>File Description</h2>
 <p>TODO</p>
 
                                 
@@ -1066,7 +1083,7 @@ Tagging allows people to call thing with their own words. They don&#x2019;t need
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Tagging ⚒","level":"1.3.8","depth":2,"next":{"title":"Searching Files ⚒","level":"1.3.9","depth":2,"path":"search.md","ref":"search.md","articles":[]},"previous":{"title":"Creating & Editing Files ⚒","level":"1.3.7","depth":2,"path":"editing-files.md","ref":"editing-files.md","articles":[]},"dir":"ltr"},"config":{"plugins":["edit-link","anchorjs","prism","-highlight","toc","sitemap"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"prism":{},"toc":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"sitemap":{"hostname":"http://docs.tagspaces.org/"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":"Edit","base":"https://github.com/tagspaces/documentation/edit/master"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchorjs":{}},"search":{"maxIndexSize":1000000000},"theme":"default","author":"TagSpaces UG (haftungbeschraenkt)","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"TagSpaces Documentation","gitbook":"3.2.2"},"file":{"path":"tagging.md","mtime":"2017-01-02T22:45:27.809Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-01-03T15:12:33.869Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Tagging ⚒","level":"1.3.8","depth":2,"next":{"title":"Searching Files ⚒","level":"1.3.9","depth":2,"path":"search.md","ref":"search.md","articles":[]},"previous":{"title":"Creating & Editing Files ⚒","level":"1.3.7","depth":2,"path":"editing-files.md","ref":"editing-files.md","articles":[]},"dir":"ltr"},"config":{"plugins":["edit-link","anchorjs","prism","-highlight","toc","sitemap"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"prism":{},"toc":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"sitemap":{"hostname":"http://docs.tagspaces.org/"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":"Edit","base":"https://github.com/tagspaces/documentation/edit/master"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchorjs":{}},"search":{"maxIndexSize":1000000000},"theme":"default","author":"TagSpaces UG (haftungbeschraenkt)","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"TagSpaces Documentation","gitbook":"3.2.2"},"file":{"path":"tagging.md","mtime":"2017-01-04T11:49:44.799Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-01-04T14:05:47.736Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>

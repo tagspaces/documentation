@@ -1,9 +1,11 @@
-# Playing local content with TagSpaces
+# Playing local music and videos with TagSpaces
 
 ## The audio video player
 TODO: present the key functionalities
 
-## Projecting content to Chromecast(TM)
+![global keybindings](/media/tray-menu-ubuntu.png)
+
+## Projecting content to Chromecast&trade;
 
  Since the release of the <a href="https://www.google.com/intl/en/chromecast/" title="Chromecast" target="_blank">Google's Chromecast</a> some years ago, we were really keen to find a way how to cast my local content such as music, photos and movies to a TV. This use case is currently not possible out of the box with Chromecast, but with help of  the TagSpaces Chrome extension it is very easy to achieve it.
 

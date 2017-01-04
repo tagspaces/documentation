@@ -32,11 +32,23 @@ Here is a short video showing the thumbnail generation in action.
 
 <video controls autoplay loop src="/media/demo-tmb-generation.mp4"></video>
 
+#### Configure the thumbnails size and format
+We have added the ability to configure the size and the file type of the create thumbnails. Now you can choose between `PNG` and `JPG` file types. For the thumb size you can choose between several sizes from `100` to `1000` pixel, limiting the height or width of the thumbs depending on which one is bigger.
+
+![screenshot showing the configuring of the thumbnails size and format](/media/configurable-thumbnails.png)
+
+> **Note:** For compatibility and performance reasons, when you change the thumbnail image type to `JPG`, the thumb is still saved with `PNG` extension.
+
 ### <i class="profeature">pro</i>Deleting files to trashcan {#trashBin}
 
 In the setting of TagSpaces you can activate a checkbox "Move deleted files or folders to trash bin". Aftet activating it, all files deleted in TagSpaces will be send to the *Trash*, *Trashbin* or *Recylce bin* depending on your operating system. From these locations, you files can be easily recovered in case of a unintended deletion.
 
 ![Activating the trash bin functionality](/media/activating-trashcan.png)
+
+### <i class="profeature">pro</i>Geo Tagging
+In order to use this feuature you have to utilize the smart tag `geo-tag`. When you apply it to a file, the dialog from the following screenshot will appear. Here you see a map from [openstreetmap](https://www.openstreetmap.org) and you can select geo coordinates of any location somewhere in the world.
+
+![Geotagging in TagSpaces](/media/tagspaces-geotagging.png)
 
 ### <i class="profeature">pro</i>Adding folders meta information {#folderMeta}
 
@@ -59,6 +71,10 @@ Technically TagSpaces PRO created a sidecar file called `tsm.json` in the hidden
     │   └── tsm.json
     ├── file3.png
     └── file4.docx
+
+
+### <i class="profeature">pro</i>File Description
+TODO
 
 
 ### Pro settings

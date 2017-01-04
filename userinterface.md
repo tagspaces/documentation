@@ -64,15 +64,10 @@ TODO
 
 ![tag library general overview](/media/tag-library.png)
 
+> **Hint** You can easily open the tag library by the following keyboard combination `s t`.
+
 > **Hint:** Find out how to change the default tag background and text colors in the [settings documentation](#settings)
 
-### Smart tags
-TODO
-* General description and purpose
-* Date and time based
-* Geo location
-
-![tag library general overview](/media/smart-tags-group.png)
 
 ## Settings
 The setting of the application can be opened from the button with gear-wheels in the bottom of the left area, as displayed in the following screenshot. Alternatively you can use the main menu `View > Settings`.

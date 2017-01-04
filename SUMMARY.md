@@ -60,7 +60,7 @@
 
 * [Audio Video Player](extensions/viewerAudioVideo.md)
 * [EPUB Reader](extensions/viewerEPUB.md)
-* [HTML Reader](extensions/viewerHTML.md)
+* [HTML Viewer](extensions/viewerHTML.md)
 * [Image Viewer](extensions/viewerImage.md)
 * [Link Opener](extensions/viewerURL.md)
 * [Markdown Reader](extensions/viewerMD.md)
