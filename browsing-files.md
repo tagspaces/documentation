@@ -2,6 +2,8 @@
 
 tbd
 
+## Perspectives
+
 This is a list of the perspective extensions currently build in the application:
 * [Grid Perspective](extensions/perspectiveGrid.html) - presenting your files as grid of thumbnails
 * [List Perspective](extensions/perspectiveList.html) - presenting your files as list, optimized simple file management operations

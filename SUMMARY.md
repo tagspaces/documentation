@@ -1,38 +1,32 @@
-﻿# Summary
+# Summary
 
 ## Getting started
-
 * [Introduction ⚒](README.md)
 * [Installation and Setup](installation.md)
-
-  * [Windows](installation.md#windows)
-  * [OS X](installation.md#osx)
-  * [Linux](installation.md#linux)
-  * [Android](installation.md#android)
-  * [Firefox](installation.md#firefox)
-  * [Chrome](installation.md#chrome)
-  * [Portable Mode](installation.md#portable-mode)
-  * [Selfhosting TagSpaces](selfhosting.md)
-
-* [User Interface](userinterface.md)
-
-  * [Start screen ⚒](userinterface.md#home)
-  * [Locations](userinterface.md#location-manager)
-  * [Folder navigation ⚒](userinterface.md#folder-navigation)
-  * [Tag Library ⚒](userinterface.md#tag-library)
-  * [File Browsing ⚒](browsing-files.md)
-  * [Viewing Files ⚒](viewing-files.md)
-  * [Creating & Editing Files ⚒](editing-files.md)
-  * [Tagging ⚒](tagging.md)
-  * [Searching Files ⚒](search.md)
-  * [Settings ⚒](userinterface.md#settings)
-  * [Keybindings](keybindings.md)
-  * [Internationalization](i18n.md)
-
+    * [Windows](installation.md#windows)
+    * [OS X](installation.md#osx)
+    * [Linux](installation.md#linux)
+    * [Android](installation.md#android)
+    * [Firefox](installation.md#firefox)
+    * [Chrome](installation.md#chrome)
+    * [Portable Mode](installation.md#portable-mode)
+    * [Selfhosting TagSpaces](selfhosting.md)
+* [User Interface ☭](userinterface.md)
+    * [Start screen ⚒](userinterface.md#home)
+    * [Locations](userinterface.md#location-manager)
+    * [Folder navigation ⚒](userinterface.md#folder-navigation)
+    * [Tag Library ⚒](userinterface.md#tag-library)
+    * [File Browsing ⚒](browsing-files.md)
+    * [Viewing Files ⚒](viewing-files.md)
+    * [Creating & Editing Files ⚒](editing-files.md)
+    * [Tagging ⚒](tagging.md)
+    * [Searching Files ⚒](search.md)
+    * [Settings ⚒](userinterface.md#settings)
+    * [Keybindings](keybindings.md)
+    * [Internationalization](i18n.md)
 * [TagSpaces PRO ⚒](pro.md)
 
 ## Tutorials
-
 * [Managing Files ⚒](tutorials/filemanagement.md)
 * [Note-taking ⚒](tutorials/notetaking.md)
 * [Organizing Photos ⚒](tutorials/photomanagement.md)
@@ -44,20 +38,17 @@
 * [Sharing tag libraries](tutorials/sharing-tags.md)
 
 ## Developers
-
 * [Meta file formats specification](dev/metafileformats.md)
 * [Extension development guide](dev/extension-development-guide.md)
 * [API documentation](http://docs.tagspaces.org/dev/api)
 
 ## Appendix Perspectives
-
 * [Grid Perspective](extensions/perspectiveGrid.md)
 * [List Perspective](extensions/perspectiveList.md)
 * [ImageSwiper Perspective](extensions/perspectiveImageSwiper.md)
 * [Graph Perspective](extensions/perspectiveGraph.md)
 
 ## Appendix File Viewers
-
 * [Audio Video Player](extensions/viewerAudioVideo.md)
 * [EPUB Reader](extensions/viewerEPUB.md)
 * [HTML Viewer](extensions/viewerHTML.md)
@@ -72,13 +63,11 @@
 * [ZIP Opener](extensions/viewerZIP.md)
 
 ## Appendix File Editors
-
 * [HTML Editor](extensions/editorHTML.md)
 * [JSON Editor](extensions/editorJSON.md)
 * [Text Editor](extensions/editorText.md)
 
 ## Appendix Links
-
 * [Project Homepage](https://www.tagspaces.org/)
 * [FAQ](https://www.tagspaces.org/documentation/faq/)
 * [Github Page](https://github.com/tagspaces/tagspaces/)
