@@ -2,6 +2,9 @@
 
 tbd
 
+(***ToDo: Add these sections to the main menu***)
+
+
 ## Perspectives
 
 This is a list of the perspective extensions currently build in the application:
