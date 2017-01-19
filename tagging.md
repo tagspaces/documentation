@@ -19,7 +19,7 @@ When you create a new file in TagSpaces, a time-stamp in the format of YYYMMDD~h
 
 the file was created. For example a file created on the 17th of January in 2017, at 10:30 (and 32 seconds) would be tagged with timestamp like `20170117-133032`
 
-Such timestamps make it possible to easily group files from different locations based on the time of creation. Of course this would be possible by reading the same informatin from the fioélesystem, but tagging with the timestamp allows for greater flexibility. For example you can change the timestamp to anything you like, and tagging the file will allow you to use TagSpaces's powerful grouping and orgabnising features in the same place youi manage other tags.
+Such timestamps make it possible to easily group files from different locations based on the time of creation. Of course this would be possible by reading the same information from the fioélesystem, but tagging with the timestamp allows for greater flexibility. For example you can change the timestamp to anything you like, and tagging the file will allow you to use TagSpaces's powerful grouping and organizing features in the same place you manage other tags.
 
 ```
 
