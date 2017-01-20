@@ -9,6 +9,7 @@
 <url> <loc>http://docs.tagspaces.org/editing-files.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
 <url> <loc>http://docs.tagspaces.org/tagging.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
 <url> <loc>http://docs.tagspaces.org/search.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
+<url> <loc>http://docs.tagspaces.org/settings.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
 <url> <loc>http://docs.tagspaces.org/keybindings.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
 <url> <loc>http://docs.tagspaces.org/i18n.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
 <url> <loc>http://docs.tagspaces.org/pro.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
