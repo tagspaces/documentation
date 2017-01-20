@@ -47,6 +47,10 @@ The user interface of the application is design to be usable on touch screens, b
 
 <video src="/media/tagspaces-drag-drop.mp4" autoplay="true" loop="true" poster="/media/tagspaces-drag-drop.png" class="img-responsive"></video>
 
+## Tagging using context menus
+
+*With illustratons too**
+
 ## Tagging using keyboard shortcuts
 TODO:
 * Setting individual shortcuts for single tags
