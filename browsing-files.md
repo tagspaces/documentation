@@ -147,7 +147,7 @@ The other common file management options *(Add/Remove tags, Copy/Move Files, Del
 
 An alternative way to move files into another folder is to drag its color coded file extension icon onto a folder on the **Folder navigation** widget on the left panel. When the folder lights up with a yellowish hue, just release the icon, and the file will be immediately moved into that folder.
 
-> **Hint. You can access subfolders of any folder displayed in the hierarchy, by clicking the black folder icon next to its name. For more details, refer to the [User interface -> Folder Navigation](userinterface.md#foldder-navigation) section.
+> **Hint:** You can access subfolders of any folder displayed in the hierarchy, by clicking the black folder icon next to its name. For more details, refer to the [User interface -> Folder Navigation](userinterface.md#foldder-navigation) section.
 
 ![](/media/dragging-file-to-folder.png)
 
@@ -211,7 +211,7 @@ The **FolderViz Perspective** is a collection of experimental views hat apply so
 
 **Note: FolderViz Perspective is an experimental feature, which can be *very* memory intensive on large folder structures, and can easily lock up one's computer. It is disabled by default on Android and Webdav, and will be disabled by default in all variants of the next version of TagSpaces.**
 
-FolderViz currently offers five types of views, which can be accessed from the FAB menu:
+**FolderViz Perspective** currently offers five types of views, which can be accessed from the FAB menu:
 
 
 ### MindMap View
