@@ -8,6 +8,8 @@ A TagSpaces perspective allowing you to view your files in a list. It is optimiz
 * Performing basic operations like renaming, moving, deleting and tagging files
 * CSV export - the current list of files or search results can be exported in CSV format for further operation with the generated data.
 
+![Screenshot of the perspectiveList](https://github.com/tagspaces/documentation/raw/master/media/extensions/perspective-list-lead.png)
+
 ## Used libraries
 This extension thankfully relays on the following great libraries:
 
@@ -24,10 +26,6 @@ The source code of this extension is freely available on [github.com/tagspaces/p
 ## Development
 
 If you want to extend this extensions, please follow our general [extension development guide](http://tagspaces.org/documentation/extension-development-guide)
-
-## Screenshots
-
-![Screenshot of the perspectiveList](http://tagspaces.org/extensions/perspectiveList/perspectiveList-screenshot.png)
 
 ## License
 
