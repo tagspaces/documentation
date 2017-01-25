@@ -2,7 +2,7 @@
   "gitbook": "3.2.2",
   "title": "TagSpaces Documentation",
   "author": "TagSpaces UG (haftungbeschraenkt)",
-  "plugins": ["edit-link", "anchorjs", "prism", "-highlight", "toc", "sitemap"],
+  "plugins": ["edit-link", "anchorjs", "prism", "-highlight", "toc", "sitemap", "ga"],
   "search": {
     "maxIndexSize": 1000000000
   },
@@ -10,6 +10,9 @@
     "edit-link": {
       "base": "https://github.com/tagspaces/documentation/edit/master",
       "label": "Edit"
+    },
+    "ga": {
+      "token": "UA-90842098-1"
     },
     "sitemap": {
         "hostname": "http://docs.tagspaces.org/"
