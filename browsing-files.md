@@ -9,19 +9,17 @@ Perspectives are not an integral part of TagSpaces, but exist as modular extensi
 * [List Perspective](extensions/perspectiveList.html) - Presenting your files as list, optimized for simple file management.
 
 
-* [Grid Perspective](extensions/perspectiveGrid.html) - Presenting your files as grid of thumbnails, if enabled. Unlike the List Perspective, the grid can also display folders.
+* [Grid Perspective](extensions/perspectiveGrid.html) - Presenting your files as grid of cards, with file-preview thumbnails if enabled. Unlike the List Perspective, the grid can also display folders.
 
 
-* [ImageSwiper Perspective](extensions/perspectiveImageSwiper.html) - A perspective optimized for browsing and viewing image files. Best used with photo or image folders.
+* [ImageSwiper Perspective](extensions/perspectiveImageSwiper.html) - A perspective optimized for browsing and viewing image files. Best used with folders containing photos or images.
 
 
 * [FolderViz Perspective](extensions/perspectiveGraph.html) - This is an experimental perspective which applies some information visualization concepts to presenting your folder and file structures.
 
-## Choosing a perspective
-
 ## List perspective
 
-The most common way of presenting files in a folder is in a list format. In the **List Perspective** files are represented as rows of a list, similar to the default view of most file browsing applications.
+The most common way of presenting files in a folder is in a list format, which can be found in most file-browsing applications. In the **List Perspective** files are represented as rows of a list.
 
 ![](/media/list-perspective-2.png)
 
@@ -35,7 +33,8 @@ The columns, from left to right are:
 
 * **File extension**  -  A color coded icon, representing the file type. Scroll down to [Common features -> Color coded file extensions](#color-coded-file-extensions) to learn more about this feature.
 
-    Underneath the file extension icon, there is also a checkbox, which can be used to easily select one or more files. This also means that `Ctrl or Shift + click` will **not** work for selecting multiple files in the current version of TagSpaces, although this functionality is planned for a future release.
+    The checkbox underneath the file extension icon can be used to easily select one or more files.
+    >**Hint:** This also means that `Ctrl or Shift + click` will **not** work for selecting multiple files in the current version of TagSpaces, although this functionality is planned for a future release.
 
 
 * **Title** - The file's title is the filename without the extension or any tag information. By default, TagSpaces stores tags as part of the filename. To learn more about how this is achieved, see the [Tagging](tagging.md) section.
@@ -49,7 +48,7 @@ The columns, from left to right are:
 
 * **Date modified** - The time the file had been last modified, in a format of `YYYY.MM.DD-hh:mm:ss`
 
-To change the list order, you can click the list column headers. For example if you want to sort the list alphabetically by name *(A-Z)*, click on the name. To change the direction of the sorting *(Z-A)*, click on the name again. Each header offers bidirectional sorting based on its column's contents.
+To change the list order, you can click the list column headers. For example if you want to sort the list alphabetically by name *(A-Z)*, click on the name. To change the direction of the sorting *(Z-A)*, click on the name again. Each header offers bidirectional sorting based on its column's properties.
 
 >**Hint:** Although there is currently no indicator of either the direction, or the active sorting mode, this feature will be added in a future release of TagSpaces.
 
@@ -63,7 +62,7 @@ The **Floating Action Button** (FAB) at the bottom right corner, hides a context
 * **Toggle Select All Files** will mark every file on the list as selected or unselected.
 
 
-* **Add/Remove tags**  will allow you to manage tags on selected files. (This options is only available when there is an active selection, and works on multiple files simultaneously.) To learn more about how tagging works, refer to the [Tagging -> Tagging using context menus](tagging.md/tagging-using-context-menus) section.
+* **Add/Remove tags**  will allow you to manage tags on selected files. (This options is only available when there is an active selection, and works on multiple files simultaneously.) To learn more about how tagging works, refer to the [Tagging -> Tagging using context menus](tagging.md/#tagging-using-context-menus) section.
 
 
 * **Copy/move files** will allow you to copy or move one or more selected files. (This option is only available when there is an active selection, and works on multiple files simultaneously.) Selecting this option will present you with the **Move or Copy File(s)** dialog. After specifying the target directory (which can be anywhere on the file system, even outside your connected locations), you can choose to move or copy the file(s) by pressing the corresponding button.
@@ -77,7 +76,7 @@ The **Floating Action Button** (FAB) at the bottom right corner, hides a context
 
 * **Show subfolders content** - If you don't care about folder structure, or do not know where in the hierarchy you would find a necessary file, you can turn this option on, to show every file from all subfolders recursively, starting from your current directory. The list will display all files in order, without any indication of their actual locations. This option will allow you to work with multiple files across a folder hierarchy at once.
 
-* **Export to CSV** will create a **Comma Separated Variable** from all displayed files, be it from the current folder, or from the full folder hierarchy, and save it n a folder of your choice. The generated CSV contains `path,title,size,tag1, tag2,tag3,...`, where each new line represents a separate file.
+* **Export to CSV** will create a **Comma Separated Variable** from all displayed files, be it from the current folder, or from the full folder hierarchy, and save it n a folder of your choice. The generated CSV contains `path,title,size,tag1,tag2,tag3,...`, where each new line represents a separate file.
 
 * **About** will display information about the perspective extension in a pop-up window.
 
@@ -110,7 +109,7 @@ Some options (such as *Add/Remove Tags*, *Copy/Move Files*, *Delete Files*, *Sho
 
 ![](/media/grid-sort-files.png)
 
-* **Group files** allows for grouping based on time (either stamp tags, or last modified date accessed from the file itself), or by any defined tag groups. This will allow tag groups to serve as a basis for file grouping. (To learn more about tag groups, refer to [User Interface -> Tag Library](userinterfaces.md#tag-library) section.
+* **Group files** allows for grouping based on time (either stamp tags, or last modified date accessed from the file itself), or by any defined tag groups. This will allow tag groups to also serve as a basis for file grouping, besides grouping tags themselves. (To learn more about tag groups, refer to [User Interface -> Tag Library](userinterface.md/#tag-library) section.
 
 ![](/media/grid-group-files.png)
 
@@ -132,10 +131,10 @@ The file context menu can be accessed by right-clicking a file in either perspec
 
 ![](/media/file-context-menu.png)
 
-* **Open file** This will split the main area of TagSpaces into two, and open the file in the right pane. TagSpaces offers viewers for various file types, which can be opened inside the application. To learn more bout supported types, refer to the [Viewing Files](viewing-files.md) section.
+* **Open file** will split the main area of TagSpaces into two, and open the file in the right pane. TagSpaces offers viewers for various file types, which can be opened inside the application. To learn more bout supported types, refer to the [Viewing Files](viewing-files.md) section.
 
 
-* **Open File Natively** you have the option to open files that are unsupported by TagSpaces,  in whatever application is associated with the file type in your operating system.
+* **Open File Natively** offers the option to open files that are unsupported by TagSpaces,  in whatever application is associated with the file type in your operating system.
 
 * **Open Containing folder** will open the folder containing the selected file, in the operating system's default file manager application.
 
@@ -147,7 +146,7 @@ The other common file management options *(Add/Remove tags, Copy/Move Files, Del
 
 An alternative way to move files into another folder is to drag its color coded file extension icon onto a folder on the **Folder navigation** widget on the left panel. When the folder lights up with a yellowish hue, just release the icon, and the file will be immediately moved into that folder.
 
-> **Hint:** You can access subfolders of any folder displayed in the hierarchy, by clicking the black folder icon next to its name. For more details, refer to the [User interface -> Folder Navigation](userinterface.md#foldder-navigation) section.
+> **Hint:** You can access subfolders of any folder displayed in the hierarchy, by clicking the black folder icon next to its name. For more details, refer to the [User interface -> Folder Navigation](userinterface.md#folder-navigation) section.
 
 ![](/media/dragging-file-to-folder.png)
 
@@ -236,7 +235,7 @@ The **FolderViz Perspective** is a collection of experimental views hat apply so
 
 ### TreeMap-Navi View
 
-**TreeMap Navi** is just like TreeMap, but without the hierarchy. here the squares fully use up the available User Interface, allowing for a better visual representation of relative file sizes. This can be useful for finding large files or folders.
+**TreeMap Navi** is just like TreeMap, but without the hierarchy. Here the squares fully use up the available User Interface, allowing for a better visual representation of relative file sizes. This can be useful for finding large files or folders.
 
 ![](/media/folderviz-treemap-navi.png)
 
