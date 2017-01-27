@@ -9,6 +9,8 @@ A TagSpaces extension able to display common images formats from the current fol
 * Fullscreen mode
 * Image zooming
 
+[![Screenshot of the ImageSwiper extension](https://github.com/tagspaces/documentation/raw/master/media/extensions/perspective-image-swiper-lead.png)](https://github.com/tagspaces/documentation/raw/master/media/extensions/perspective-image-swiper-demo.mp4)
+
 ## Used libraries
 This extension thankfully relays on the following great libraries:
 
@@ -25,10 +27,6 @@ The source code of this extension is freely available on [github.com/tagspaces/p
 ## Development
 
 If you want to extend this extensions, please follow our general [extension development guide](https://www.tagspaces.org/documentation/extension-development-guide)
-
-## Screenshots
-
-![Screenshot of the ImageSwiper extension](https://www.tagspaces.org/extensions/perspectiveImageSwiper/perspectiveImageSwiper-screenshot.png)
 
 ## License
 

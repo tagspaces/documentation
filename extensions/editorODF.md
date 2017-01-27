@@ -8,6 +8,8 @@ A TagSpaces extension allowing opening of [Open Document Format](http://en.wikip
 * Viewing presentation documents (ODP)
 * Viewing spreadsheet documents (ODS)
 
+![Screenshot of the editorODF](https://github.com/tagspaces/documentation/raw/master/media/extensions/editor-odf-lead.png)
+
 ## Used libraries
 This extension thankfully relays on the following great libraries:
 
@@ -24,10 +26,6 @@ The source code of this extension is freely available on [github.com/tagspaces/e
 ## Development
 
 If you want to extend this extensions, please follow our general [extension development guide](http://tagspaces.org/documentation/extension-development-guide)
-
-## Screenshots
-
-![Screenshot of the editorODF](http://tagspaces.org/extensions/editorODF/editorODF-screenshot.png)
 
 ## License
 
