@@ -9,6 +9,8 @@ A TagSpaces extension allowing editing of HTML documents.
 * Directly pasting images from the clipboard
 * Saving all the images as dataurl in the one HTML file.
 
+![Screenshot of the HTML editor running in the Linux version of TagSpaces](https://github.com/tagspaces/documentation/raw/master/docs/media/extensions/editor-html-lead.png)
+
 ## Used libraries
 This extension thankfully relays on the following great libraries:
 
@@ -25,10 +27,6 @@ The source code of this extension is freely available on [github.com/tagspaces/e
 ## Development
 
 If you want to extend this extensions, please follow our general [extension development guide](http://tagspaces.org/documentation/extension-development-guide)
-
-## Screenshots
-
-![Screenshot of the HTML editor running in the Linux version of TagSpaces](http://tagspaces.org/extensions/editorHTML/editorHTML-screenshot.png)
 
 ## License
 

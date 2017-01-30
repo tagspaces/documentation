@@ -22,7 +22,6 @@
     * [Perspectives overview](browsing-files.md#perspectives-overview)
     * [List Perspective](browsing-files.md#list-perspective)
     * [Grid Perspective](browsing-files.md#grid-perspective)
-    * [Common features](browsing-files.md#common-features)
     * [ImageSwiper Perspective](browsing-files.md#imageswiper-perspective)
     * [FolderViz Perspective](browsing-files.md#folderviz-perspective)
 * [Viewing Files ⚒](viewing-files.md)

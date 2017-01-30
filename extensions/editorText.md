@@ -31,10 +31,6 @@ The source code of this extension is freely available on [github.com/tagspaces/e
 
 If you want to extend this extensions, please follow our general [extension development guide](https://www.tagspaces.org/documentation/extension-development-guide)
 
-## Screenshots
-
-
-
 ## License
 
 [MIT](https://github.com/tagspaces/editorText/blob/master/LICENSE.txt)
