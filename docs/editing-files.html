@@ -21,6 +21,10 @@
                 
             
                 
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.css">
+                
+            
+                
                 <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
                 
             
@@ -59,7 +63,7 @@
     <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="tagging.html" />
+    <link rel="next" href="editing-files.html" />
     
     
     <link rel="prev" href="viewing-files.html" />
@@ -381,19 +385,6 @@
     
         <li class="chapter " data-level="1.4.4" data-path="browsing-files.html">
             
-                <a href="browsing-files.html#common-features">
-            
-                    
-                    Common features
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.4.5" data-path="browsing-files.html">
-            
                 <a href="browsing-files.html#imageswiper-perspective">
             
                     
@@ -405,7 +396,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.4.6" data-path="browsing-files.html">
+        <li class="chapter " data-level="1.4.5" data-path="browsing-files.html">
             
                 <a href="browsing-files.html#folderviz-perspective">
             
@@ -446,6 +437,90 @@
                 </a>
             
 
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="editing-files.html">
+            
+                <a href="editing-files.html#creating-files">
+            
+                    
+                    Creating Files
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="editing-files.html">
+            
+                <a href="editing-files.html#editing-files">
+            
+                    
+                    Editing Files
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="editing-files.html">
+            
+                <a href="editing-files.html#html-editor">
+            
+                    
+                    HTML Editor ⚒
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4" data-path="editing-files.html">
+            
+                <a href="editing-files.html#text-editor">
+            
+                    
+                    Text Editor ⚒
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.5" data-path="editing-files.html">
+            
+                <a href="editing-files.html#markdown-editor">
+            
+                    
+                    MarkDown Editor ⚒
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.6" data-path="editing-files.html">
+            
+                <a href="editing-files.html#json-editor">
+            
+                    
+                    JSON Editor ⚒
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
             
         </li>
     
@@ -1070,22 +1145,303 @@
                                 <section class="normal markdown-section">
                                 
                                 <h1 id="crating-and-editing-files-in-tagspaces">Crating and Editing files in TagSpaces</h1>
-<p>These are the editor extensions currently build in the application:</p>
+<!-- toc -->
 <ul>
-<li><a href="extensions/editorHTML.html">HTML Editor</a></li>
-<li><a href="extensions/editorJSON.html">JSON Editor</a></li>
-<li><a href="extensions/editorText.html">Text Editor</a></li>
+<li><a href="#creating-files">Creating files</a></li>
+<li><a href="#editing-files">Editing files</a><ul>
+<li><a href="#increasing-your-workspace">Increasing your workspace</a></li>
 </ul>
+</li>
+<li><a href="#html-editor">HTML Editor</a><ul>
+<li><a href="#toolbar-buttons">Toolbar Buttons</a><ul>
+<li><a href="#add-checkbox">Add Checkbox</a></li>
+<li><a href="#paragraph-style">Paragraph Style</a></li>
+<li><a href="#color">Color</a></li>
+<li><a href="#font-styles">Font Styles</a></li>
+<li><a href="#font-family">Font Family</a></li>
+<li><a href="#lists-and-alignment">Lists, and alignment</a></li>
+<li><a href="#line-height">Line Height</a></li>
+<li><a href="#insert-table">Insert Table</a></li>
+<li><a href="#insert-link-image-and-horizontal-ruler">Insert Link, Image, and Horizontal Ruler</a></li>
+<li><a href="#code-view">Code view</a></li>
+<li><a href="#help">Help</a></li>
+</ul>
+</li>
+<li><a href="#creating-todo-lists">Creating ToDo Lists</a></li>
+<li><a href="#key-bindings">Key bindings</a></li>
+</ul>
+</li>
+<li><a href="#text-editor">Text Editor</a></li>
+<li><a href="#markdown-editor">MarkDown Editor</a></li>
+<li><a href="#json-editor">JSON Editor</a></li>
+</ul>
+<!-- toc stop -->
 <h2 id="creating-files">Creating files</h2>
-<p>TODO</p>
+<p>Besides opening and previewing various file types, TagSpaces can also create new files of some text-based formats. File creation is a functionality that allows TagSpaces to become an effective note-taking application. Currently the following file formats are supported:</p>
 <ul>
-<li>Creating plain text files</li>
-<li>Creating rich text / html files</li>
-<li>Creating markdown files</li>
-<li>Creating audio files (PRO feature)</li>
+<li>Plain <strong>text files</strong> (<code>.txt</code>)</li>
 </ul>
+<ul>
+<li><strong>MarkDown files</strong> (<code>.md</code>)</li>
+</ul>
+<ul>
+<li>RichText documents (<strong>HTML files</strong>) (<code>.html</code>)</li>
+</ul>
+<ul>
+<li><i class="profeature">pro</i> In a future release, the ability to record <strong>audio files</strong> (<code>.ogg</code> or <code>.wav</code>) will be added to TagSpaces PRO. This will make it possible to create voice notes, and audio recordings.</li>
+</ul>
+<p>To create a new file in TagSpaces you have two options. You can either use the <em>File menu</em> from the <em>Main menu</em>, and choose your desired file-type (<strong>1</strong>), or press the <strong><em>+New</em></strong> Button, just above the <strong>File Browsing Area</strong> (<strong>2</strong>).</p>
+<p><img src="media/create-new-file-menu.png" alt=""></p>
+<p>Pressing the <strong><em>+New</em></strong> button will open a <em>Create New Document</em> dialogue, that offers similar options to the <em>File menu</em>, with the additional <em>Add Existing File</em> option, which will allow you to import a file into your connected location from the file system.</p>
+<p><img src="media/create-new-file-button.png" alt=""></p>
 <h2 id="editing-files">Editing files</h2>
-<p>TODO</p>
+<p>Besides opening and viewing files, TagSpaces can also edit specific file formats. Just like <a href="browsing-files.html#perspectives-overview">File Browser Perspectives</a>, and <a href="viewing-files.html#file-previewing">File Preview extensions</a>, the different types of <strong>File Editors</strong> are also <strong>modular extensions</strong>, making TagSpaces&apos; file editing capabilities extendable. Currently three editor extensions ship bundled with the application:</p>
+<ul>
+<li><a href="extensions/editorHTML.html"><strong>HTML Editor</strong></a> - <code>HTML</code> files serve a specific purpose in TagSpaces. They are treated as RichText documents, that can not only be previewed, but visually edited in a full-featured <strong>WYSIWYG editor</strong>.</li>
+</ul>
+<ul>
+<li><a href="extensions/editorText.html"><strong>Text Editor</strong></a> - This editor opens all other text-based file formats, and unknown file types alike. For <code>.txt</code> and miscellaneous files, it behaves as a simple editor, with added syntax highlighting capabilities for common programming languages and a preview for <strong>MarkDown</strong>. (<code>.md</code>)</li>
+</ul>
+<ul>
+<li><a href="extensions/editorJSON.html"><strong>JSON Editor</strong></a> - An interactive visual editor for editing and manipulating <code>JSON</code> files.</li>
+</ul>
+<p>When you press the pencil icon in the file viewer&apos;s header, the appropriate editor will automatically open, replacing the preview, and the pencil icon will become a save button.</p>
+<p><img src="media/edit-file-pencil-icon.png" alt=""></p>
+<h3 id="increasing-your-workspace">Increasing your workspace</h3>
+<p>All of the above editors, will initially open on the right pane of the main area. You can expand your workspace to be able to see and edit more of the document, in two ways</p>
+<ul>
+<li><strong>Expand</strong> the editor to fill the whole width of the TagSpaces UI, by pressing the <em>Expand</em> button, right next to the <em>Save</em> button.</li>
+</ul>
+<p><img src="media/expand_workspace_1.png" alt=""></p>
+<p><img src="media/expand_workspace_2.png" alt=""></p>
+<ul>
+<li><strong>Full screen</strong> view, (in which TagSpaces will fill the entire screen with no window decorations) can be toggled by pressing the <code>F11</code> key, or selecting <em>View -&gt; Toggle Fullscreen</em> from the <strong>Main Menu.</strong></li>
+</ul>
+<p><img src="media/toggle_fullscreen.png" alt=""></p>
+<blockquote>
+<p><strong>Hint</strong> <strong>Distraction free mode</strong> can be achieved by combining the above two. Expand your workspace to full width, then toggle fullscreen.</p>
+</blockquote>
+<h2 id="html-editor">HTML Editor</h2>
+<p><strong>HTML files</strong> are treated like RichText documents in TagSpaces. When you edit a <code>.html</code> document, the fully formatted preview of the file will be replaced by a <strong>WYSIWYG</strong> (<strong>W</strong>hat <strong>Y</strong>ou <strong>S</strong>ee <strong>I</strong>s <strong>W</strong>hat <strong>Y</strong>ou <strong>G</strong>et) HTML editor.</p>
+<p>In editor mode the HTML document will keep its formatting, but you are now able to edit the text, making the HTML editor behave like a RichText editor. On the top of the view, you will find a formatting toolbar, with with you can fully control the appearance of the document</p>
+<p><img src="media/tagspaces-html-editor.png" alt=""></p>
+<p>The formatting toolbar offers some common features, you can find in any RichText or WYSIWYG HTML editor, with some features specific to TagSpaces. The overflow menu options from the <a href="extensions/viewerHTML.html">HTML viewer</a> are not implemented in the HTML Editor.</p>
+<h3 id="toolbar-buttons">Toolbar Buttons</h3>
+<p>The toolbar buttons are grouped together based on similar behavior or functionality. The major groups are illustrated below</p>
+<p><img src="media/html-editor-toolbar.png" alt=""></p>
+<ul>
+<li><a href="#add-checkbox"><strong>Add Checkbox</strong></a> (<strong>1</strong>)</li>
+<li><a href="#paragraph-style"><strong>Paragraph Style</strong></a> (<strong>2</strong>)</li>
+<li><a href="#color"><strong>Color</strong></a> (<strong>3</strong>)</li>
+<li><a href="#font-styles"><strong>Font Styles</strong></a> (<strong>4</strong> and <strong>5</strong>)</li>
+<li><a href="#font-family"><strong>Font Family</strong></a> (<strong>6</strong>)</li>
+<li><a href="#lists-and-alignment"><strong>Lists, and Alignment</strong></a> (<strong>7</strong>)</li>
+<li><a href="#line-height"><strong>Line Height</strong></a> (<strong>8</strong>)</li>
+<li><a href="#insert-table"><strong>Insert Table</strong></a> (<strong>9</strong>)</li>
+<li><a href="#insert-link-image-and-horizontal-ruler"><strong>Insert Link, Image and Horizontal Ruler</strong></a> (<strong>10</strong>)</li>
+<li><a href="#code-view"><strong>Code View</strong></a> (<strong>11</strong>)</li>
+<li><a href="#help"><strong>Help</strong></a> (<strong>12</strong>)</li>
+</ul>
+<h4 id="add-checkbox">Add Checkbox</h4>
+<p>Pressing this button will insert an interactive, clickable checkbox into your document, which can be used to create e.g. ToDo lists. To lean more about this feature, scroll down to the <a href="#creating-todo-lists">Creating ToDo Lists</a> section.</p>
+<p><img src="media/add-checkbox-button.png" alt=""></p>
+<p><a href="#toolbar-buttons">Back to button group list</a></p>
+<h4 id="paragraph-style">Paragraph Style</h4>
+<p>This button will open a drop down menu, from which you can select a paragraph style to apply. When selecting an option, the chosen style will be applied to the entire current paragraph (where the cursor is located), without having to make a selection first. If you do select some text first, the style will only be applied to the current selection.</p>
+<p><img src="media/paragraph-styles.png" alt=""></p>
+<p>Available styles are:</p>
+<ul>
+<li><p><strong>p</strong> represents the <code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">&gt;</span></span></code> HTML tag (normal paragraph). It can also be used to remove other styles. The hotkey <code>Ctrl+0</code>is assigned to this action.</p>
+</li>
+<li><p><strong>blockquote</strong> will enclose the current paragraph into <code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>blockquote</span><span class="token punctuation">&gt;</span></span></code> tags.</p>
+</li>
+<li><p><strong>pre</strong> will enclose the current paragraph into <code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>pre</span><span class="token punctuation">&gt;</span></span></code> (preformatted text) tags.</p>
+</li>
+<li><p><strong>H1</strong> to <strong>H6</strong> mean different heading levels from <strong>1</strong> (largest) to <strong>6</strong> (smallest). Selection one of these options will enclose the entire paragraph into <code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h1</span><span class="token punctuation">&gt;</span></span></code> to <code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h6</span><span class="token punctuation">&gt;</span></span></code> tags. Hotkeys <code>Ctrl+1</code> to <code>Ctrl+6</code> can also be used to set headings, where the number reflects  the level of the desired heading.</p>
+</li>
+</ul>
+<p><a href="#toolbar-buttons">Back to button group list</a></p>
+<h4 id="color">Color</h4>
+<p>This is a compound button, which has two parts</p>
+<p><img src="media/color-button.png" alt=""></p>
+<p>The left part <strong>Recent color</strong> will apply the last used background and foreground color on the text. The applicable background and foreground colors are reflected on the button itself</p>
+<p><img src="media/colour-button-alt-background.png" alt=""></p>
+<p>The right part <strong>More Color</strong> will open a dropdown menu, from which you can choose both background and foreground colors to apply, while the default color values can be reset with their respective buttons.</p>
+<p><img src="media/color-button-dropdown.png" alt=""></p>
+<p><a href="#toolbar-buttons">Back to button group list</a></p>
+<h4 id="font-styles">Font Styles</h4>
+<p>The following groups represent font styles, that can be applied to either a selection, or as a toggle, to mark any text to be written with the given style, until the toggle is switched off.</p>
+<p><img src="media/font-styles.png" alt=""></p>
+<p><strong>Bold</strong> (<strong>1</strong>), <strong>Italic</strong> (<strong>2</strong>), and <strong>Underline</strong> (<strong>3</strong>) will mark either the selected text, or the text that follows as <strong>bold</strong>, <em>italic</em> or <u>underlined</u>, replectively. These three buttons also have hotkeys assigned. <code>Ctrl+b</code> will toggle <strong>bold</strong>, <code>Ctrl+i</code> toggles <em>italic</em>, while <code>Ctrl+u</code> toggles <u>underline</u>.</p>
+<p><strong>Superscript</strong> (<strong>4</strong>), and <strong>Subscript</strong> (<strong>5</strong>) will mark either the selection or the text that follows to be <sup>superscript</sup> or <sub>subscript</sub> respectively. <strong>Strikethrough</strong> (<strong>6</strong>) will create <del>strikethrough</del> text, and <strong>Remove Font Style</strong> (<strong>7</strong>) will remove all formatting. (This last option is only applicable to selections.)</p>
+<p>From this group, only two options have hotkeys assigned. <strong>Strikethrough</strong> can be toggled with <code>Ctrl+Shift+s</code>, while the <strong>Remove Font Style</strong> hotkey is <code>Ctrl+\</code></p>
+<p><a href="#toolbar-buttons">Back to button group list</a></p>
+<h4 id="font-family">Font Family</h4>
+<p>This is the last of the font style buttons. It can set the selection or the text that follows to a specific font family.</p>
+<p><img src="media/font-family.png" alt=""></p>
+<blockquote>
+<p><strong>Hint:</strong> The options presented here might depend on your operating system and the fonts installed</p>
+</blockquote>
+<p><a href="#toolbar-buttons">Back to button group list</a></p>
+<h4 id="lists-and-alignment">Lists, and alignment</h4>
+<p>This is a compound group, which offers different options, that all work on the currently active paragraph, as a toggle, without the need to make a selection first.</p>
+<p><img src="media/alignment-button-dropdown.png" alt=""></p>
+<p>The first two buttons offer toggles for <strong>Unordered List</strong> (<strong>1</strong>), and <strong>Ordered List</strong> (<strong>2</strong>). The last button in the group will open a dropdown menu which offers four standard alignment options <strong>Left</strong> (<strong>3</strong>), <strong>Center</strong> (<strong>4</strong>), <strong>Right</strong> (<strong>5</strong>), and <strong>Full Justify</strong> (<strong>6</strong>); and also the option to <strong>Decrease Indent</strong> (<strong>7</strong>), or <strong>Increase Indent</strong> (<strong>8</strong>).</p>
+<p>The hotkeys for these operations are:</p>
+<ul>
+<li><strong>Unordered List</strong> - <code>Ctrl+Shift+7</code></li>
+<li><strong>Ordered List</strong> - <code>Ctrl+Shift+8</code></li>
+<li><strong>Left align</strong> - <code>Ctrl+Shit+L</code></li>
+<li><strong>Center align</strong> - <code>Ctrl+Shit+E</code></li>
+<li><strong>Right align</strong> - <code>Ctrl+Shift+R</code></li>
+<li><strong>Justify full</strong> - <code>Ctrl+Shift+J</code></li>
+<li><strong>Decrease indent</strong> -<code>Ctrl+Shit+Tab</code></li>
+<li><strong>Increase indent</strong> - <code>Ctrl+Tab</code></li>
+</ul>
+<p><a href="#toolbar-buttons">Back to button group list</a></p>
+<h4 id="line-height">Line Height</h4>
+<p>Offers a dropdown menu that allows you to set the line-height of either the active paragraph or the currently selected paragraphs between <strong>1.0</strong> and <strong>3.0</strong> by increments of <strong>1.0</strong>, <strong>1.2</strong>, <strong>1.4</strong>, <strong>1.5</strong>, <strong>1.8</strong>, <strong>2.0</strong>, and <strong>3.0</strong></p>
+<p><img src="media/change-line-height.png" alt=""></p>
+<blockquote>
+<p><strong>Hint:</strong> When you make a selection, you do not need to select the entire paragraph. The selection&apos;s edges will mark active paragraphs. The line height adjustment will be performed on all full paragraphs, starting with the one inside which the selection starts, and ending with the one, inside which the selection ends.</p>
+</blockquote>
+<p><a href="#toolbar-buttons">Back to button group list</a></p>
+<h4 id="insert-table">Insert Table</h4>
+<p>This button will open a drop down graphical menu for drawing a table grid, with a maximum size of <strong>10x10</strong>, that can be easily inserted into the document</p>
+<p><img src="media/insert-table-dropdown.png" alt=""></p>
+<p><a href="#toolbar-buttons">Back to button group list</a></p>
+<h4 id="insert-link-image-and-horizontal-ruler">Insert Link, Image, and Horizontal Ruler</h4>
+<p><img src="media/insert-link-etc.png" alt=""></p>
+<p>This group has the following three buttons</p>
+<ul>
+<li><a href="#insert-link"><strong>Insert Link</strong></a> (<strong>1</strong>)</li>
+<li><a href="#insert-image"><strong>Insert Image</strong></a> (<strong>2</strong>)</li>
+<li><a href="#insert-horizontal-ruler"><strong>Insert Horizontal Ruler</strong></a> (<strong>3</strong>)</li>
+</ul>
+<h5 id="insert-link">Insert Link</h5>
+<p>The first button will open a dialog, which allows you to add a hyperlink to the text. The dialog allows for specifying the text to display, and the link to follow, when clicked, with a checkbox allowing to set the link to be opened in a new tab or window. The dialog can also be invoked by pressing <code>Ctrl+K</code></p>
+<p><img src="media/insert-link-dialog.png" alt=""></p>
+<p>If you select some text to apply the link to, before pressing the button, the selection will automatically populate the <em>Text to display</em> field. If you made no selection, you will need to specify a text to be displayed. If you leave the field empty and start typing a URL, it will automatically populate the text to display field, which you can later modify.</p>
+<p>To edit or remove links, you can just click inside the link, and use the buttons that appear on the popup.</p>
+<p><img src="media/edit-link.png" alt=""></p>
+<p>The first button (<strong>1</strong>) will allow you to edit the link, while second (<strong>2</strong>) will remove it.</p>
+<blockquote>
+<p><strong>Hint:</strong> Links can also be added to the documents by typing the URL, and pressing enter. A well formed URL will automatically turn into a link.</p>
+</blockquote>
+<h5 id="insert-image">Insert Image</h5>
+<p>The second button in the group will also open a dialog, which lets you insert a picture from either your computer, or from a URL.</p>
+<p><img src="media/insert-image-dialogue.png" alt=""></p>
+<h5 id="insert-horizontal-ruler">Insert Horizontal Ruler</h5>
+<p>The last button will insert a simple horizontal ruler, (a HTML <code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>hr</span><span class="token punctuation">/&gt;</span></span></code> tag) at the point where the cursor is currently located. The hotkey to quickly insert a horizontal ruler is <code>Ctrl+Enter</code>.</p>
+<blockquote>
+<p><strong>Hint</strong> This button does not respect paragraph endings. If you press this button at the middle of a paragraph, it will break the paragraph at that point.</p>
+</blockquote>
+<p><a href="#toolbar-buttons">Back to button group list</a></p>
+<h4 id="code-view">Code view</h4>
+<p><img src="media/code-view.png" alt=""></p>
+<p>This is a toggle to show plain HTML code on a dark background, where the formatting buttons are disabled, and you can edit the HTML code directly.</p>
+<p><img src="media/code-view-view.png" alt=""></p>
+<p>Pressing the button again, will return to the WYSIVYG mode.</p>
+<blockquote>
+<p><strong>Hint:</strong> Code highlighting for the HTML view is not currently implemented.</p>
+</blockquote>
+<p><a href="#toolbar-buttons">Back to button group list</a></p>
+<h4 id="help">Help</h4>
+<p><img src="media/help-button.png" alt=""></p>
+<p>The last button will display a summary of all the keybindings. If you prefer to use hotkeys, you will find a quick reference here.</p>
+<p><img src="media/help-view.png" alt=""></p>
+<p><a href="#toolbar-buttons">Back to button group list</a></p>
+<h3 id="creating-todo-lists">Creating ToDo Lists</h3>
+<p>The recently added feature of interactive checkboxes makes TagSpaces ideal for creating simple, yet flexible <strong>ToDo lists</strong>. Pressing the <a href="#add-checkbox"><strong>Add Checkbox Button</strong></a> button will insert a checkbox anywhere in the text.</p>
+<p>For <strong>ToDo Lists</strong>, you would ideally want the checkbox to be the very first character of a list, although you are not limited by placement. To make your list multi-level (i.e. sub-items under list items), you can use the <strong>Increase Indent</strong> feature (see <a href="#lists-and-alignment">Toolbar Buttons -&gt; Lists and Alignment</a>) on the desired line, by either pressing its button or using its hotkey (<code>Ctrl+Tab</code> to increase indent, <code>Ctrl+Shift+Tab</code> to decrease intent).</p>
+<p><img src="media/ToDoList.png" alt=""></p>
+<blockquote>
+<p><strong>Hint</strong> The interactive checkboxes only work in editor mode. When in HTML preview mode, you can see the current state of the box, but cannot change it. To make a list interactive, switch to editor mode, by pressing the little pencil icon at the top of the preview.</p>
+</blockquote>
+<h3 id="key-bindings">Key bindings</h3>
+<p>Below you can find a summary of all the hotkeys you can use in the HTML Editor</p>
+<blockquote>
+<p><strong>Hint:</strong> Mac users should use the <code>Cmd</code> key, where <code>Ctrl</code> is mentioned</p>
+</blockquote>
+<ul>
+<li><code>Ctrl+Z</code> - Undo the last command</li>
+<li><code>Ctrl+Y</code> - Redo the last command</li>
+<li><code>Tab</code> - Insert Tab</li>
+<li><code>Shift+Tab</code> - Remove tab</li>
+<li><code>Ctrl+B</code> - Set a bold style</li>
+<li><code>Ctrl+I</code> - Set an italic style</li>
+<li><code>Ctrl+U</code> - Set an underline style</li>
+<li><code>Ctrl+Shift+S</code> - Set a strikethrough style</li>
+<li><code>Ctrl+\</code> - Clear all styles</li>
+<li><code>Ctrl+Shift+L</code> - Set left align</li>
+<li><code>Ctrl+Shift+E</code> - Set center align</li>
+<li><code>Ctrl+Shift+R</code> - Set right align</li>
+<li><code>Ctrl+Shift+J</code> - Set full align</li>
+<li><code>Ctrl+Shift+7</code> - Toggle unordered list</li>
+<li><code>Ctrl+Shift+8</code> - Toggle ordered list</li>
+<li><code>Ctrl+Tab</code> - Indent on current paragraph</li>
+<li><code>Ctrl+Shift+Tab</code> - Outdent on current paragraph</li>
+<li><code>Ctrl+0</code> - Change current paragraph&apos;s style to plain paragraph (<code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">&gt;</span></span></code> tag)</li>
+<li><code>Ctrl+1</code> - Change current paragraph&apos;s style to H1</li>
+<li><code>Ctrl+2</code> - Change current paragraph&apos;s style to H2</li>
+<li><code>Ctrl+3</code> - Change current paragraph&apos;s style to H3</li>
+<li><code>Ctrl+4</code> - Change current paragraph&apos;s style to H4</li>
+<li><code>Ctrl+5</code> - Change current paragraph&apos;s style to H5</li>
+<li><code>Ctrl+6</code> - Change current paragraph&apos;s style to H6</li>
+<li><code>Ctrl+Enter</code> - Insert horizontal rule</li>
+<li><code>Ctrl+K</code> - Show Link Dialog</li>
+</ul>
+<h2 id="text-editor">Text Editor</h2>
+<p>When you edit a plain text file, or any unsupported file format that displays the edit button, the simple text editor will open.</p>
+<p><img src="media/random-text-file.png" alt=""></p>
+<p>The only extra the text editor offers is basic code highlighting for some common programming languages, and numbered lines.</p>
+<p><img src="media/code-highlighting-js.png" alt=""></p>
+<p>The text editor will keep the option to print from the plain <a href="extensions/viewerText.html">text viewer</a>.</p>
+<h2 id="markdown-editor">MarkDown Editor</h2>
+<p>When you open a MarkDown file for editing from the <a href="extensions/viewerMD.html">MarkDown Viewer</a>, it will be opened wit the same <strong>Text Editor</strong>, any plain text file would, offering inline highlighting of Markdown syntax.</p>
+<p><img src="media/markdown-syntax-highlight.png" alt=""></p>
+<p>The difference between MarkDown and plain text editors is the two additional functions in its <strong>FAB Oveflow Menu</strong>: <em>MarkDown Preview</em> (<strong>1</strong>), or <em>MarkDown Help</em> (<strong>2</strong>).</p>
+<p><img src="media/markdown-editor-overflow.png" alt=""></p>
+<p>The first option will open a popup window, presenting a formatted preview of the MarkDown file, similar to what you would see in the MarkDown viewer</p>
+<p><img src="media/markdown-preview.png" alt=""></p>
+<p>The second option will offer some basic help about MarkDown syntax and formatting</p>
+<p><img src="media/markdown-help.png" alt=""></p>
+<p>Markdown editor will also allow you to link local files and images, from within your connected location, using a path relative to your currently active folder. Clicking linked local images will open them in TagSpaces, while linked files will open in the default external application, defined by your Operating System.</p>
+<p>For example he link <code>[link text](images/picture.jpg)</code> will open a file named <code>picture.jpg</code> (located in the <code>images</code> subfolder of the folder your file is located) in TagSpaces; while <code>[link text](files/more_files/example.pdf)</code> will open the file named <code>example.pdf</code> (located in the <code>more_files</code> subfolder of the <code>files</code> folder, located in the current folder) in an external PDF viewer.</p>
+<p>To enter a relative path, you can usually use UNIX style slashes (<code>/</code>) in paths, e.g. <code>path/to/file/filename.ext</code>, as <code>node.js</code> upon which TagSpaces is built, will handle them properly even on Windows. This allows for interoperability across different Operating Systems. If you only use Windows however, you can use a backslash (<code>\</code>), e.g. <code>path\to\file\filename.ext</code>, if you prefer to, but such paths will not be understood on any other system, including Android.</p>
+<blockquote>
+<p><strong>Hint</strong> TagSpaces only understands relative paths. You cannot reference any level above your current folder, or the root of your connected location, but might only link files located in the currently active folder, or an subfolders within.</p>
+</blockquote>
+<h2 id="json-editor">JSON Editor</h2>
+<p>Editing <code>JSON</code> files will build upon the functionality you&apos;ve already seen in the <strong>JSON Preview mode</strong>.</p>
+<p><img src="media/json-editor.png" alt=""></p>
+<p>The top row of the editor will offer a basic toolbar, with some common actions such as <strong>Expand all fields</strong> (<strong>1</strong>), <strong>Collapse all fields</strong> (<strong>2</strong>), <strong>Undo</strong> and <strong>Redo</strong> (<strong>3</strong>) and a search box (<strong>4</strong>)</p>
+<p><img src="media/json-editor-toolbar.png" alt=""></p>
+<p>Each field has some useful controls that can help manipulate and rearrange <code>JSON</code> files easily.</p>
+<p><img src="media/json-editor-parts.png" alt=""></p>
+<ul>
+<li><p>On the left edge, there is a drag handle, allowing for easy movement of each row. (<strong>1</strong>)</p>
+</li>
+<li><p>Next to the drag handle there is an <strong>Action Menu Button</strong> (<strong>2</strong>), which opens the <strong>Action Menu</strong> (<strong>3</strong>), offering useful actions on each field, such as:</p>
+<ul>
+<li><p>You can choose or change the <strong>Type</strong> of the field, choosing from <em>Auto</em>, <em>Object</em>, <em>Array</em>, or <em>String</em></p>
+</li>
+<li><p>You can <strong>Insert</strong> an <em>Array</em>, <em>Object</em>, or <em>String</em> inside any field. (There is also an <em>Auto</em> mode for insertion). Inserting will place the new field <strong>before</strong> the selected field.</p>
+</li>
+<li><p>When selecting the <strong>Action menu</strong> on the last member of an <em>Object</em> or <em>Array</em>, you can also <strong>Append</strong> the same categories, which will place the new field <strong>after</strong> the last item.</p>
+</li>
+<li><p><em>Objects</em> and <em>Arrays</em> will also allow for <strong>Sorting</strong>, as either <em>Ascending or </em>Descending*</p>
+</li>
+<li><p>Finally you can <strong>Duplicate</strong> or <strong>Remove</strong> any field from the hierarchy, (apart from the root)</p>
+</li>
+</ul>
+</li>
+<li><p>To the right of the Action menu button, there is an <strong>Open/Close chevron</strong> (<strong>4</strong>), which can expand or collapse each field.</p>
+</li>
+<li><p>Finally you have the field itself, with one (<strong>5</strong>) (for arrays and objects) or two editable sections (<strong>6</strong>) (for string type), and an optional, read only information field (<strong>7</strong>), that displays the number of sub-fields, in either curly brackets <code>{ }</code> (for objects), or square brackets <code>[ ]</code> () for arrays.</p>
+</li>
+</ul>
+<p>The <strong>FAB Overflow Menu</strong> will offer to either <strong>Print</strong> the file, or display a <strong>JSON Help</strong> menu, which gives a summary of the numerous key combinations that can be used to work on JSON files even faster.</p>
 
                                 
                                 </section>
@@ -1118,7 +1474,7 @@
                 </a>
                 
                 
-                <a href="tagging.html" class="navigation navigation-next " aria-label="Next page: Tagging ⚒">
+                <a href="editing-files.html#creating-files" class="navigation navigation-next " aria-label="Next page: Creating Files">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -1129,7 +1485,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Creating & Editing Files ⚒","level":"1.6","depth":1,"next":{"title":"Tagging ⚒","level":"1.7","depth":1,"path":"tagging.md","ref":"tagging.md","articles":[]},"previous":{"title":"Viewing Files ⚒","level":"1.5","depth":1,"path":"viewing-files.md","ref":"viewing-files.md","articles":[]},"dir":"ltr"},"config":{"plugins":["edit-link","anchorjs","prism","-highlight","toc","sitemap","ga"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"prism":{},"toc":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"sitemap":{"hostname":"http://docs.tagspaces.org/"},"ga":{"configuration":"auto","token":"UA-90842098-1"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":"Edit","base":"https://github.com/tagspaces/documentation/edit/master"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchorjs":{}},"search":{"maxIndexSize":1000000000},"theme":"default","author":"TagSpaces UG (haftungbeschraenkt)","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"TagSpaces Documentation","gitbook":"3.2.2"},"file":{"path":"editing-files.md","mtime":"2016-12-29T17:00:07.280Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-01-25T23:31:42.291Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Creating & Editing Files ⚒","level":"1.6","depth":1,"next":{"title":"Creating Files","level":"1.6.1","depth":2,"anchor":"#creating-files","path":"editing-files.md","ref":"editing-files.md#creating-files","articles":[]},"previous":{"title":"Viewing Files ⚒","level":"1.5","depth":1,"path":"viewing-files.md","ref":"viewing-files.md","articles":[]},"dir":"ltr"},"config":{"plugins":["edit-link","anchorjs","prism","-highlight","toc","sitemap","ga","expandable-chapters"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"prism":{},"toc":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"sitemap":{"hostname":"http://docs.tagspaces.org/"},"ga":{"configuration":"auto","token":"UA-90842098-1"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":"Edit","base":"https://github.com/tagspaces/documentation/edit/master"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchorjs":{},"expandable-chapters":{}},"search":{"maxIndexSize":1000000000},"theme":"default","author":"TagSpaces UG (haftungbeschraenkt)","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"TagSpaces Documentation","gitbook":"3.2.2"},"file":{"path":"editing-files.md","mtime":"2017-01-30T17:14:36.112Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-01-30T17:15:48.016Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
@@ -1152,6 +1508,10 @@
     
         
         <script src="gitbook/gitbook-plugin-ga/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.js"></script>
         
     
         
