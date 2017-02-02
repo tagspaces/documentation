@@ -52,11 +52,20 @@ All of the above editors, will initially open on the right pane of the main area
 
 ![](/media/expand_workspace_2.png)
 
-* **Full screen** view, (in which TagSpaces will fill the entire screen with no window decorations) can be toggled by pressing the `F11` key, or selecting *View -> Toggle Fullscreen* from the **Main Menu.**
+### Distraction free editing
+
+To edit your documents in **distraction free mode**, click on the file extension icon, and select **Open in Fullscreen** from the dropdown menu. This will expand the editor area to fill the entire screen area, with no window decorations, or other UI elements, while any applicable **formatting toolbars** and the **Floating Action Button** will still be shown.
+
+![](/media/distraction-free-mode-menu.png)
+
+To exit Fullscreen mode, press the (X) button located at the top right.
+
+![](/media/disrtaction-free-mode.png)
+
+### Fullscreen mode for all elements
+There is an alternative **full screen** view, that is applicable to all of TagSpaces, including the file browser and any applicable menus. It can be toggled by pressing the `F11` key, or selecting *View -> Toggle Fullscreen* from the **Main Menu.**
 
 ![](/media/toggle_fullscreen.png)
-
->**Hint** **Distraction free mode** can be achieved by combining the above two. Expand your workspace to full width, then toggle fullscreen.
 
 
 ## HTML Editor
@@ -334,7 +343,9 @@ The second option will offer some basic help about MarkDown syntax and formattin
 
 ![](/media/markdown-help.png)
 
-Markdown editor will also allow you to link local files and images, from within your connected location, using a path relative to your currently active folder. Clicking linked local images will open them in TagSpaces, while linked files will open in the default external application, defined by your Operating System.
+### Linking local files and images
+
+Markdown editor will also allow you to **link local files and images**, from within your connected location, using a path, relative to your currently active folder. Clicking **linked local images** will open them in TagSpaces, while **linked files** will open in the default external application, defined by your Operating System.
 
 For example he link `[link text](images/picture.jpg)` will open a file named `picture.jpg` (located in the `images` subfolder of the folder your file is located) in TagSpaces; while `[link text](files/more_files/example.pdf)` will open the file named `example.pdf` (located in the `more_files` subfolder of the `files` folder, located in the current folder) in an external PDF viewer.
 
