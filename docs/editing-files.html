@@ -1150,6 +1150,8 @@
 <li><a href="#creating-files">Creating files</a></li>
 <li><a href="#editing-files">Editing files</a><ul>
 <li><a href="#increasing-your-workspace">Increasing your workspace</a></li>
+<li><a href="#distraction-free-editing">Distraction free editing</a></li>
+<li><a href="#fullscreen-mode-for-all-elements">Fullscreen mode for all elements</a></li>
 </ul>
 </li>
 <li><a href="#html-editor">HTML Editor</a><ul>
@@ -1172,7 +1174,10 @@
 </ul>
 </li>
 <li><a href="#text-editor">Text Editor</a></li>
-<li><a href="#markdown-editor">MarkDown Editor</a></li>
+<li><a href="#markdown-editor">MarkDown Editor</a><ul>
+<li><a href="#linking-local-files-and-images">Linking local files and images</a></li>
+</ul>
+</li>
 <li><a href="#json-editor">JSON Editor</a></li>
 </ul>
 <!-- toc stop -->
@@ -1214,13 +1219,15 @@
 </ul>
 <p><img src="media/expand_workspace_1.png" alt=""></p>
 <p><img src="media/expand_workspace_2.png" alt=""></p>
-<ul>
-<li><strong>Full screen</strong> view, (in which TagSpaces will fill the entire screen with no window decorations) can be toggled by pressing the <code>F11</code> key, or selecting <em>View -&gt; Toggle Fullscreen</em> from the <strong>Main Menu.</strong></li>
-</ul>
+<h3 id="distraction-free-editing">Distraction free editing</h3>
+<p>To edit your documents in <strong>distraction free mode</strong>, click on the file extension icon, and select <strong>Open in Fullscreen</strong> from the dropdown menu. This will expand the editor area to fill the entire screen area, with no window decorations, or other UI elements, while any applicable <strong>formatting toolbars</strong> and the <strong>Floating Action Button</strong> will still be shown.</p>
+<p><img src="media/distraction-free-mode-menu.png" alt=""></p>
+<p>To exit Fullscreen mode, press the (X) button located at the top right.</p>
+<p><img src="media/disrtaction-free-mode.png" alt="">
+<img src="media/disrtaction-free-mode.png" alt=""></p>
+<h3 id="fullscreen-mode-for-all-elements">Fullscreen mode for all elements</h3>
+<p>There is an alternative <strong>full screen</strong> view, that is applicable to all of TagSpaces, including the file browser and any applicable menus. It can be toggled by pressing the <code>F11</code> key, or selecting <em>View -&gt; Toggle Fullscreen</em> from the <strong>Main Menu.</strong></p>
 <p><img src="media/toggle_fullscreen.png" alt=""></p>
-<blockquote>
-<p><strong>Hint</strong> <strong>Distraction free mode</strong> can be achieved by combining the above two. Expand your workspace to full width, then toggle fullscreen.</p>
-</blockquote>
 <h2 id="html-editor">HTML Editor</h2>
 <p><strong>HTML files</strong> are treated like RichText documents in TagSpaces. When you edit a <code>.html</code> document, the fully formatted preview of the file will be replaced by a <strong>WYSIWYG</strong> (<strong>W</strong>hat <strong>Y</strong>ou <strong>S</strong>ee <strong>I</strong>s <strong>W</strong>hat <strong>Y</strong>ou <strong>G</strong>et) HTML editor.</p>
 <p>In editor mode the HTML document will keep its formatting, but you are now able to edit the text, making the HTML editor behave like a RichText editor. On the top of the view, you will find a formatting toolbar, with with you can fully control the appearance of the document</p>
@@ -1406,8 +1413,9 @@
 <p><img src="media/markdown-preview.png" alt=""></p>
 <p>The second option will offer some basic help about MarkDown syntax and formatting</p>
 <p><img src="media/markdown-help.png" alt=""></p>
-<p>Markdown editor will also allow you to link local files and images, from within your connected location, using a path relative to your currently active folder. Clicking linked local images will open them in TagSpaces, while linked files will open in the default external application, defined by your Operating System.</p>
-<p>For example he link <code>[link text](images/picture.jpg)</code> will open a file named <code>picture.jpg</code> (located in the <code>images</code> subfolder of the folder your file is located) in TagSpaces; while <code>[link text](files/more_files/example.pdf)</code> will open the file named <code>example.pdf</code> (located in the <code>more_files</code> subfolder of the <code>files</code> folder, located in the current folder) in an external PDF viewer.</p>
+<h3 id="linking-local-files-and-images">Linking local files and images</h3>
+<p>Markdown editor will also allow you to <strong>link local files and images</strong>, from within your connected location, using a path, relative to your currently active folder. <strong>Linked local images</strong> will be shown embedded in the current markdown preview, while <strong>linked files</strong> will open in the default external application, defined by your operating system.</p>
+<p>For example he link <code>[link text](images/picture.jpg)</code> will show the file named <code>picture.jpg</code> (located in the <code>images</code> subfolder of the folder your file is located) in the markdown viewer; while <code>[link text](files/more_files/example.pdf)</code> will open the file named <code>example.pdf</code> (located in the <code>more_files</code> subfolder of the <code>files</code> folder, located in the current folder) in an external PDF viewer.</p>
 <p>To enter a relative path, you can usually use UNIX style slashes (<code>/</code>) in paths, e.g. <code>path/to/file/filename.ext</code>, as <code>node.js</code> upon which TagSpaces is built, will handle them properly even on Windows. This allows for interoperability across different Operating Systems. If you only use Windows however, you can use a backslash (<code>\</code>), e.g. <code>path\to\file\filename.ext</code>, if you prefer to, but such paths will not be understood on any other system, including Android.</p>
 <blockquote>
 <p><strong>Hint</strong> TagSpaces only understands relative paths. You cannot reference any level above your current folder, or the root of your connected location, but might only link files located in the currently active folder, or an subfolders within.</p>
@@ -1485,7 +1493,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Creating & Editing Files","level":"1.6","depth":1,"next":{"title":"Creating Files","level":"1.6.1","depth":2,"anchor":"#creating-files","path":"editing-files.md","ref":"editing-files.md#creating-files","articles":[]},"previous":{"title":"Viewing Files ⚒","level":"1.5","depth":1,"path":"viewing-files.md","ref":"viewing-files.md","articles":[]},"dir":"ltr"},"config":{"plugins":["edit-link","anchorjs","prism","-highlight","toc","sitemap","ga","expandable-chapters"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"prism":{},"toc":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"sitemap":{"hostname":"http://docs.tagspaces.org/"},"ga":{"configuration":"auto","token":"UA-90842098-1"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":"Edit","base":"https://github.com/tagspaces/documentation/edit/master"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchorjs":{},"expandable-chapters":{}},"search":{"maxIndexSize":1000000000},"theme":"default","author":"TagSpaces UG (haftungbeschraenkt)","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"TagSpaces Documentation","gitbook":"3.2.2"},"file":{"path":"editing-files.md","mtime":"2017-01-30T17:14:36.112Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-01-30T17:23:09.985Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Creating & Editing Files","level":"1.6","depth":1,"next":{"title":"Creating Files","level":"1.6.1","depth":2,"anchor":"#creating-files","path":"editing-files.md","ref":"editing-files.md#creating-files","articles":[]},"previous":{"title":"Viewing Files ⚒","level":"1.5","depth":1,"path":"viewing-files.md","ref":"viewing-files.md","articles":[]},"dir":"ltr"},"config":{"plugins":["edit-link","anchorjs","prism","-highlight","toc","sitemap","ga","expandable-chapters"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"prism":{},"toc":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"sitemap":{"hostname":"http://docs.tagspaces.org/"},"ga":{"configuration":"auto","token":"UA-90842098-1"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":"Edit","base":"https://github.com/tagspaces/documentation/edit/master"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchorjs":{},"expandable-chapters":{}},"search":{"maxIndexSize":1000000000},"theme":"default","author":"TagSpaces UG (haftungbeschraenkt)","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"TagSpaces Documentation","gitbook":"3.2.2"},"file":{"path":"editing-files.md","mtime":"2017-02-02T22:25:39.296Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-02-02T22:27:08.577Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>

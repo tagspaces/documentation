@@ -1,5 +1,5 @@
 # TagSpaces Documentation
-for version 2.6.0 and later
+for version 2.7 and later
 
 ## Status of this document
 

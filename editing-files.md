@@ -345,9 +345,9 @@ The second option will offer some basic help about MarkDown syntax and formattin
 
 ### Linking local files and images
 
-Markdown editor will also allow you to **link local files and images**, from within your connected location, using a path, relative to your currently active folder. Clicking **linked local images** will open them in TagSpaces, while **linked files** will open in the default external application, defined by your Operating System.
+Markdown editor will also allow you to **link local files and images**, from within your connected location, using a path, relative to your currently active folder. **Linked local images** will be shown embedded in the current markdown preview, while **linked files** will open in the default external application, defined by your operating system.
 
-For example he link `[link text](images/picture.jpg)` will open a file named `picture.jpg` (located in the `images` subfolder of the folder your file is located) in TagSpaces; while `[link text](files/more_files/example.pdf)` will open the file named `example.pdf` (located in the `more_files` subfolder of the `files` folder, located in the current folder) in an external PDF viewer.
+For example he link `[link text](images/picture.jpg)` will show the file named `picture.jpg` (located in the `images` subfolder of the folder your file is located) in the markdown viewer; while `[link text](files/more_files/example.pdf)` will open the file named `example.pdf` (located in the `more_files` subfolder of the `files` folder, located in the current folder) in an external PDF viewer.
 
 To enter a relative path, you can usually use UNIX style slashes (`/`) in paths, e.g. `path/to/file/filename.ext`, as `node.js` upon which TagSpaces is built, will handle them properly even on Windows. This allows for interoperability across different Operating Systems. If you only use Windows however, you can use a backslash (`\`), e.g. `path\to\file\filename.ext`, if you prefer to, but such paths will not be understood on any other system, including Android.
 
