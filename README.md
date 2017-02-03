@@ -1,6 +1,6 @@
 # Introduction
 
-To **TagSpaces Documentation** for **version 2.6.0** and later
+To **TagSpaces Documentation** for **version 2.7.0** and later
 
 ## About TagSpaces
 
