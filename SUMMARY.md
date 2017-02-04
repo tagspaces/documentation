@@ -3,7 +3,7 @@
 ## Getting started
 * [Introduction](README.md)
     * [About TagSpaces](README.md#about-tagspaces)
-    * [About This document](README.md#about-this-document)
+    * [About this document](README.md#about-this-document)
 * [Installation and Setup](installation.md)
     * [Windows](installation.md#windows)
     * [OS X](installation.md#osx)

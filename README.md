@@ -2,7 +2,7 @@
 
 To the **Documentation** for TagSpaces products as of **version 2.7** and later
 
-## What is TagSpaces?
+## About TagSpaces
 TagSpaces is an open source, cross-platform, no backend, no login, no cloud personal data manager, and file navigator. It helps you organize your files, photos and other documents with tags on different platforms and/or devices, according to your own preferences and following your own logic, by using the same smart and friendly interface everywhere. The below short introducing video shows TagSpaces in action:
 
 <iframe width="640" height="480" style="display:block; margin: 25px auto" src="https://www.youtube-nocookie.com/embed/8rMo5EFAqgM?rel=0" frameborder="0" allowfullscreen></iframe>
@@ -13,7 +13,7 @@ The following few slides explain the basics of the project. To navigate the pres
 
 <iframe  style="display:block; margin: 25px auto" src="https://www.slideshare.net/slideshow/embed_code/33371724?rel=0" width="599" height="487"  style="border:none;" allowfullscreen> </iframe>
 
-## Products landscape
+### Products landscape
 
 * **Community desktop version** - the main, community developed edition of TagSpaces
 * **PRO desktop version** - extended solution based on the community version for advanced users
@@ -24,7 +24,7 @@ The following few slides explain the basics of the project. To navigate the pres
 * **IOS app** - an iPhone version of the app (currently in beta status)
 * **WebDAV selfhosting edition** - A package for selfhosting on top of a any webdav server such as Nextcloud or ownCloud.
 
-## Downloads
+### Downloads
 
 All versions of TagSpaces are available to download from the [Downloads Page](https://www.tagspaces.org/downloads), where you can quickly find the appropriate installer for your platform (Windows, Mac, Linux, Android, Firefox and Chrome).
 
