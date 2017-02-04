@@ -1,10 +1,8 @@
-# TagSpaces Documentation
+# Introduction
 
-To **TagSpaces Documentation** for **version 2.7** and later
+To the **Documentation** for TagSpaces products as of **version 2.7** and later
 
-## About TagSpaces
-
-### What is TagSpaces?
+## What is TagSpaces?
 TagSpaces is an open source, cross-platform, no backend, no login, no cloud personal data manager, and file navigator. It helps you organize your files, photos and other documents with tags on different platforms and/or devices, according to your own preferences and following your own logic, by using the same smart and friendly interface everywhere. The below short introducing video shows TagSpaces in action:
 
 <iframe width="640" height="480" style="display:block; margin: 25px auto" src="https://www.youtube-nocookie.com/embed/8rMo5EFAqgM?rel=0" frameborder="0" allowfullscreen></iframe>
@@ -15,24 +13,20 @@ The following few slides explain the basics of the project. To navigate the pres
 
 <iframe  style="display:block; margin: 25px auto" src="https://www.slideshare.net/slideshow/embed_code/33371724?rel=0" width="599" height="487"  style="border:none;" allowfullscreen> </iframe>
 
-### Products landscape
+## Products landscape
 
-* **Desktop version** - The main, community developed edition of TagSpaces
-* **Desktop PRO version** - Professional solutions for professional users
-* **Firefox webclipper addon** - Get web content easily
-* **Chrome webclipper and file browser extension** - TagSpaces in your browser
-* **Android app lite** - The free Android app
-* **Android app** - Paid-for app, with premium features
-* **IOS app (beta)** - TagSpaces is coming to iDevices
-* **WebDAV based package for selfhosting** - Roll your own cloud based solution
+* **Community desktop version** - the main, community developed edition of TagSpaces
+* **PRO desktop version** - extended solution based on the community version for advanced users
+* **Webclipper as Firefox addon** - a web clipper allowing the saving of whole webpages, webpage fragments and screenshot as local files
+* **Webclipper and file browser as Chtome extension** - same as the web clipper for Firefox, but including a file browser allowing you to navigate you local files and project them to a Google's Chromecast.
+* **Android app ** - an app offering most of the features from the community desktop version on a Anrdoid device
+* **Android Pro app** - extended version of the Android app offering some features of the Desktop PRO version (currently in development)
+* **IOS app** - an iPhone version of the app (currently in beta status)
+* **WebDAV selfhosting edition** - A package for selfhosting on top of a any webdav server such as Nextcloud or ownCloud.
 
-### Downloads
+## Downloads
 
 All versions of TagSpaces are available to download from the [Downloads Page](https://www.tagspaces.org/downloads), where you can quickly find the appropriate installer for your platform (Windows, Mac, Linux, Android, Firefox and Chrome).
-
-### Top Extensions ⚒
-
-*Coming soon*
 
 
 ## About this document
@@ -62,24 +56,20 @@ This documentation is built using [GitBook](https://www.gitbook.com), for a stre
 
 The navigation sidebar on the left side of this page will represent the **chapters** as expandable topics, with the **sections** listed in each expanded view.
 
-#### Illustrations
+### Illustrations
 Much effort had gone into visually illustrating the documentation, so that you can instantly find what you are looking for, or what is being described in words. Most illustrations will feature some sort of annotation. For example if a **visible element** of the User Interface is discussed, a n**eon-green rectangle around an element** will mark its location on the illustrating image.
-
-The below image illustrates the position of the navigation sidebar:
 
 ![](/media/introduction-main-screen.png)
 
 When there are multiple elements discussed in the same paragraph, the illustrations will be further annotated with numbers, like on the image below while the corresponding numbers will be included in the text, after each element was first mentioned. For example the following image illustrates the structure of the navigation sidebar, with **major parts** (**1**) showing as unselectable titles, expandable **page titles** (**2**) will hold major **section titles** (**3**), both of which are clickable. Clicking page titles will open the corresponding page, while clicking section titles will open the page and scroll down to the start of the selected section.
 
-![](/media/introduction-main-screen-2.png)
-
 >**Note to contributors:** When you annotate illustrations please use a rounded edge rectangle, with the following properties:
 * **20 px radius** for the rounded corners
-* **#XXXXX color**
+* **#1ccd9c color**
 * **3-6px line width**, depending on image size (larger images can use thicker lines)
 Additionally, please use a **28pt font size** for numbering with a basic **sans font**.
 
-#### Text markup
+### Text markup
 
 You will notice, that certain words are marked with **bold text**. These either mean names of elements, or significant notes/concepts about usage. *Italicized words* usually mark menu items, or other selectable elements, although it is not a hard and fast rule.
 
@@ -103,13 +93,14 @@ This documentation project is hosted on [GitHub](https://github.com/tagspaces/do
 
 ### Credits
 
-Most **original text and images** in this documentation were **created and edited by** [**Attila Orosz**](https://www.linkedin.com/in/attila-orosz-43832114). (Contact Attila via [email](mailto:attila.orosz@mail.com)).
+**Original text and images** in this documentation were **created and edited by**:
+ * [**Attila Orosz**](https://www.linkedin.com/in/attila-orosz-43832114) - contact Attila via [email](mailto:attila.orosz@mail.com)
+ * [**Ilian Sapundshiev**](https://ilian.me)
 
-Articles **written by** [**Ilian Sapundshiev**](https://plus.google.com/+IlianSapundshiev), published on the [TagSpaces Blog](https://www.tagspaces.org/blog/), served as the **basis upon which this documentation was built**. Fragments of the original text can still be found in the documentation, without marking the original author.
+Articles published on the [TagSpaces Blog](https://www.tagspaces.org/blog/), served as the **basis upon which this documentation was built**. Fragments of the original text can still be found in the documentation, without marking the original author.
 
-## Licensing notes
+### License of the documentation
 
-### Software Licenses
-TagSpaces is an open source software, and the code of the application's core is published under the [AGPL License](https://www.gnu.org/licenses/agpl-3.0.en.html). Almost all build-in extension are published under the [MIT license](https://opensource.org/licenses/MIT). As such, the code is publicly available on GitHub and forking is particularly recommended.
-
-### Documentation License
+<span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">TagSpaces Documentaion</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="http://tagspaces.org" property="cc:attributionName" rel="cc:attributionURL">TagSpaces Authors</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.<br />Based on a work at <a xmlns:dct="http://purl.org/dc/terms/" href="https://github.com/tagspaces/documentation" rel="dct:source">https://github.com/tagspaces/documentation</a>.
+<br>
+<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a>
