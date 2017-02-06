@@ -94,8 +94,8 @@ This documentation project is hosted on [GitHub](https://github.com/tagspaces/do
 ### Credits
 
 **Original text and images** in this documentation were **created and edited by**:
- * [**Attila Orosz**](https://www.linkedin.com/in/attila-orosz-43832114) - contact Attila via [email](mailto:attila.orosz@mail.com)
- * [**Ilian Sapundshiev**](https://www.ilian.me)
+ * [**Attila Orosz**](https://www.linkedin.com/in/attila-orosz-43832114) - main editor of the current version, you can contact him via [email](mailto:attila.orosz@mail.com).
+ * [**Ilian Sapundshiev**](https://www.ilian.me) - initiator of the TagSpaces project
 
 Articles published on the [TagSpaces Blog](https://www.tagspaces.org/blog/), served as the **basis upon which this documentation was built**. Fragments of the original text can still be found in the documentation, without marking the original author.
 

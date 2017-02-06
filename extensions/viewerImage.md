@@ -5,9 +5,13 @@ A TagSpaces extension allowing you to open different kinds of image formats
 ## Features
 
 * Opening of the following image formats: JPG, PNG, GIF, SVG, BMP, WEBP, ICO 
-* Zooming and rotating of the opened image 
+* Zooming, flipping and rotating of the current image
+* Different background colors of the viewer for better contrast
 * For JPG files it features an integrated Exif and IPTC reader with auto rotation of photos according to the Exif information
-* Document printing
+* Support image printing
+* Grayscale filter
+
+![Screenshot of the Image Viewer as running in the Linux version of TagSpaces](http://docs.tagspaces.org/media/extensions/viewer-image-demo.gif)
 
 ## Used libraries
 This extension thankfully relays on the following great libraries:
@@ -26,10 +30,6 @@ The source code of this extension is freely available on [github.com/tagspaces/v
 ## Development
 
 If you want to extend this extensions, please follow our general [extension development guide](https://tagspaces.org/documentation/extension-development-guide)
-
-## Screenshots
-
-![Screenshot of the Image Viewer as running in the Linux version of TagSpaces](http://docs.tagspaces.org/media/extensions/viewer-image-demo.gif)
 
 ## License
 
