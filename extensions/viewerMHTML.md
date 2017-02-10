@@ -18,6 +18,7 @@ A TagSpaces extension allowing you to open MHTML and EML files.
 This extension thankfully relays on the following great project(s):
 
 * [mailparser](https://github.com/andris9/mailparser)
+* [readability](https://github.com/mozilla/readability)
 
 ## Installation
 
