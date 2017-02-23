@@ -11,7 +11,7 @@ A TagSpaces extension allowing you to open different kinds of image formats
 * Support image printing
 * Grayscale filter
 
-![Screenshot of the Image Viewer as running in the Linux version of TagSpaces](http://docs.tagspaces.org/media/extensions/viewer-image-demo.gif)
+![Screenshot of the Image Viewer as running in the Linux version of TagSpaces](https://docs.tagspaces.org/media/extensions/viewer-image-demo.gif)
 
 ## Used libraries
 This extension thankfully relays on the following great libraries:
@@ -29,7 +29,7 @@ The source code of this extension is freely available on [github.com/tagspaces/v
 
 ## Development
 
-If you want to extend this extensions, please follow our general [extension development guide](https://tagspaces.org/documentation/extension-development-guide)
+If you want to extend this extensions, please follow our general [extension development guide](https://docs.tagspaces.org/dev/extension-development-guide)
 
 ## License
 

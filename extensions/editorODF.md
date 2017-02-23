@@ -25,7 +25,7 @@ The source code of this extension is freely available on [github.com/tagspaces/e
 
 ## Development
 
-If you want to extend this extensions, please follow our general [extension development guide](http://tagspaces.org/documentation/extension-development-guide)
+If you want to extend this extensions, please follow our general [extension development guide](https://docs.tagspaces.org/dev/extension-development-guide)
 
 ## License
 

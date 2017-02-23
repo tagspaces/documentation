@@ -8,7 +8,7 @@ A TagSpaces extension allowing playing of audio and video files.
 * Fullscreen mode
 * This extension will trigger the opening of the next file in the current folder on finishing playback, allowing you for example to listen many audio files one after another like in a regular music player.
 
-![Screenshot of the viewerAudioVideo](http://docs.tagspaces.org/media/extensions/viewer-audiovideo-lead.png)
+![Screenshot of the viewerAudioVideo](https://docs.tagspaces.org/media/extensions/viewer-audiovideo-lead.png)
 
 > The supported audio and video formats depend on the underlaying browser platform.
 
@@ -27,7 +27,7 @@ The source code of this extension is freely available on [github.com/tagspaces/v
 
 ## Development
 
-If you want to extend this extensions, please follow our general [extension development guide](http://tagspaces.org/documentation/extension-development-guide)
+If you want to extend this extensions, please follow our general [extension development guide](https://docs.tagspaces.org/dev/extension-development-guide)
 
 ## License
 

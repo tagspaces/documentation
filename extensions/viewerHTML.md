@@ -11,7 +11,7 @@ Here is a list of the key feutures offered by this extension.
 * Search for text in the current document
 * Reader mode
 
-![general screenshot of the html viewer extension](http://docs.tagspaces.org/media/extensions/viewer-html-lead.png)
+![general screenshot of the html viewer extension](https://docs.tagspaces.org/media/extensions/viewer-html-lead.png)
 
 ### Meta-Data
 
@@ -33,7 +33,7 @@ The source code of this extension is freely available on [github.com/tagspaces/v
 
 ## Development
 
-If you want to extend this extensions, please follow our general [extension development guide](http://docs.tagspaces.org/dev/extension-development-guide.html)
+If you want to extend this extensions, please follow our general [extension development guide](https://docs.tagspaces.org/dev/extension-development-guide)
 
 ## License
 

@@ -10,7 +10,7 @@ A TagSpaces extension allowing you to open url files created from web-browsers o
 * Opening the links from Ubuntu's `.website` files
 * With this extensions it possible to use TagSpaces as a bookmark manager with support of tagging.
 
-![Screenshot of the viewerURL](http://docs.tagspaces.org/media/extensions/viewer-url-lead.png)
+![Screenshot of the viewerURL](https://docs.tagspaces.org/media/extensions/viewer-url-lead.png)
 
 ## Installation
 
@@ -22,7 +22,7 @@ The source code of this extension is freely available on [github.com/tagspaces/v
 
 ## Development
 
-If you want to extend this extensions, please follow our general [extension development guide](http://tagspaces.org/documentation/extension-development-guide)
+If you want to extend this extensions, please follow our general [extension development guide](https://docs.tagspaces.org/dev/extension-development-guide)
 
 ## License
 

@@ -9,7 +9,7 @@ A TagSpaces extension allowing opening of markdown files
 * Finding text in the current document
 * Document printing
 
-![Screenshot of the viewerMD](http://docs.tagspaces.org/media/extensions/viewer-markdown-lead.png)
+![Screenshot of the viewerMD](https://docs.tagspaces.org/media/extensions/viewer-markdown-lead.png)
 
 ## Used libraries
 This extension thankfully relays on the following great project(s):
@@ -27,7 +27,7 @@ The source code of this extension is freely available on [github.com/tagspaces/v
 
 ## Development
 
-If you want to extend this extensions, please follow our general [extension development guide](http://tagspaces.org/documentation/extension-development-guide)
+If you want to extend this extensions, please follow our general [extension development guide](https://docs.tagspaces.org/dev/extension-development-guide)
 
 ## License
 

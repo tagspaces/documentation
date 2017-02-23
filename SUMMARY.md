@@ -84,6 +84,6 @@
 
 ## Appendix Links
 * [Project Homepage](https://www.tagspaces.org/)
-* [FAQ](https://www.tagspaces.org/documentation/faq/)
+* [FAQ](https://www.tagspaces.org/faq/)
 * [Github Page](https://github.com/tagspaces/tagspaces/)
-* [Changelog](https://github.com/tagspaces/tagspaces/releases)
+* [Changelog](https://www.tagspaces.org/whatsnew)
