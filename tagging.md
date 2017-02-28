@@ -3,10 +3,19 @@
 <!-- toc -->
 
 
-```
+## Motivation
+Tagging and tags are fresh approach to categorizing and grouping things.
+Tagging allows the user to label thing with their own words. They don’t need to conform with keywords or categories created by somebody else. Tagging allows you to describe what they’re seeing in their own words, to imbue the experience with their own meaning. Tagging saves your time in different sites and can make the searching for a specific song, movie, book, document, note, or whatever you’re looking for, much easier and faster.
 
-ToDo: Add this somewhere
-#### Default tag
+Tags are personal things. Tagging something is your emotional response and not simply a taxonomic decision. With using tags, you have the control to define things for yourself, and on the web -- not only for music, literature, games and movies, but also public websites, data repositories and consultations. Tagging is a new indirect way of control to express your mind and to name things your way -- you can call it a form of "freedom of speech", if you want to go that far. Tagging is a power to create your own genres in movies, music popular culture, or basically anywhere.
+
+## File Tagging based on filename {#file-tagging}
+
+TagSpaces supports tagging of files in a platform agnostic way. It uses the name of the file to save this kind of meta information. As an example if you want to add the tags `vacation` and `alps` to a image named `IMG-2653.jpg`, TagSpacws will simply rename it to `IMG-2653[vacation alps].jpg`. File renaming is of course very controversial decision (see our users [discussion]***NEED LINK***), with its own limitations (on some operating systems the file path length is limited to ca. 256 characters), but it allows a portable way for adding tags on every platform, be it ofline, online,m or even cloud based.
+
+![Filename tagging](media/filename-tagging.png)
+
+## Timestamp as default tag
 
 When you create a new file in TagSpaces, a time-stamp in the format of YYYMMDD~hhmmss will be automatically added as a tag, where
 
@@ -17,30 +26,13 @@ When you create a new file in TagSpaces, a time-stamp in the format of YYYMMDD~h
 * mm - the minue
 * ss - the second
 
-the file was created. For example a file created on the 17th of January in 2017, at 10:30 (and 32 seconds) would be tagged with timestamp like `20170117-133032`
+when the file was created. For example a file created on the 17th of January in 2017, at 10:30 (and 32 seconds) would be tagged with timestamp like `20170117-133032`
 
-Such timestamps make it possible to easily group files from different locations based on the time of creation. Of course this would be possible by reading the same information from the fioélesystem, but tagging with the timestamp allows for greater flexibility. For example you can change the timestamp to anything you like, and tagging the file will allow you to use TagSpaces's powerful grouping and organizing features in the same place you manage other tags.
-
-```
-
-
-
-
-## Motivation
-Tagging and tags is fresh and better alternative of categorizing and grouping things.
-Tagging allows people to call thing with their own words. They don’t need to conform with keywords or categories in internet created by somebody else. Allow them to describe what they’re seeing in their own words, to imbue the experience with their own meaning. Tagging spares of your time, it creates a variety of tags in different sites and can make the searching for a specific song or a movie or a book or whatever you’re looking for much more easy and faster.
-
-Tags are personal thing. Tagging something is your emotional response and not simply a taxonomic decision. With using tags, people have the control to define things in the web - not only for music, literature, games and movies, but also public websites, data repositories and consultations. Tagging is a new indirect way of control to express your mind and to call things your way - you can call it a "form of freedom of speech" if you want to go that far. Tagging is a power to create your own genres in movies and music for example.
-
-## File Tagging based on filename {#file-tagging}
-
-TagSpaces supports tagging of files in a multi platform way. It uses basically the name of the file to save this kind of meta information. As an example if you want to add the tags `vacation` and `alps` to a image named `IMG-2653.jpg`, the application will simply rename it to `IMG-2653[vacation alps].jpg`. File renaming is of course very controversial decision (see our users [discussion]), with its own limitations (on some operating systems the file path length is limited to ca. 256 characters), but it allows a portable way for adding tags on every platform (even cloud based).
-
-![Filename tagging](media/filename-tagging.png)
+Such timestamps make it possible to easily group files from different locations based on the time of creation. Of course this would be possible by reading the same information from the filesystem, but tagging with the timestamp allows for greater flexibility. For example you can change the timestamp to anything you like, while keeping the original creation modification date of the file, and tagging the file will allow you to use TagSpaces's powerful grouping and organizing features in the same place you manage other tags.
 
 ## Tagging with Drag & Drop
 
-The user interface of the application is design to be usable on touch screens, but for the pure desktop, we support many drag & drop operation such as:
+The user interface was designed to be usable on touch screens, but for the desktop, it also support drag & drop operation such as:
 
 * Adding tags from the tag groups to files in the list & grid perspectives and to the file viewer
 * Moving tags from one tag group to another
@@ -49,7 +41,8 @@ The user interface of the application is design to be usable on touch screens, b
 
 ## Tagging using context menus
 
-*With illustratons too**
+TODO:
+*Add illustratons too**
 
 ## Tagging using keyboard shortcuts
 TODO:
@@ -82,14 +75,14 @@ Geo tag
 ## <i class="profeature">pro</i>File Tagging based on sidecar files {#tagSidecarSaving}
 As alternative to saving the tagging information in the file names, TagSpaces PRO offers saving this kind of meta information in a sidecar files located in a hidden `.ts` folder. This option can be activated in the settings of the application as shown in the following screenshot.
 
-> **Note** Please note that by default the `.ts` folder is hidden only on OSX and Linux operating systems, on Windows folders with dot in front of their name are not hidden by default. Setting these folders as hidden on Windows can be achieved manually or with script if needed.
+> **Note** Please note that by default the `.ts` folder is hidden only on OSX and Linux operating systems, on Windows folders the preceding dot in front of the filename will not mark the file as hidden by default. Setting these folders as hidden on Windows can be achieved manually or with custom script if needed.
 
 <figure>
   <img title="screenshot showing where to activate the saving of the tagging information in sidecar files" src="https://www.tagspaces.org/content/v2-2/activating-tags-sidecars.png" class="img-responsive center-block">
   <figcaption>Activating the persistend of the tags in sidecar files</figcaption>
 </figure>
 
-After the activation, the application will created for every tagged file an extra file having the same file name as the source file but with the additional JSON extension. For example after tagging some files in some of your file locations you will have a similar file structure.
+After the activation, the application will create an extra file for every tagged file, having the same file name as the source file but with the additional JSON extension. For example after tagging some files in some of your file locations you will have a similar file structure.
 
 
     ~ location (with your files)
@@ -106,9 +99,9 @@ After the activation, the application will created for every tagged file an extr
     └── file4.docx
 
 
-The main advantage of this solution is that the name of the files is not altered by tagging and there is theoretically no limit in amount of tags you can add to a given file. However it has the following drawback. If you move or rename tagged files in TagSpaces it will take care of the sidecar file, which will also renamed or moved in the appropriate folder. But if you move or rename this file in an external applicaiton, you have to move or rename the sidecar files by hand. The same hold true for the deleting a file from an external file manager. It will not automatically delete the sidecar file in the `.ts` folder.
+The main advantage of this solution is that the name of the files is not altered by tagging and there is theoretically no limit to the amount of tags you can add to a given file. However this approach might also has its own drawbacks: If you move or rename tagged files in TagSpaces it will take care of the sidecar file, which will also be renamed or moved in the appropriate folder. But if you move, rename, or delete a file in an external applicaiton, you have to move, rename, or delete the matching sidecar file in the `.ts` folder manually.
 
-<span class="label label-info">Note</span> If you want to have the files located in the `.ts` folder synched with some cloud service such as Dropbox or Google Drive you have to enable the synching of hidden folders and files.
+>**Hint** If you want to have the files located in the `.ts` folder synched with some cloud service such as Dropbox or Google Drive, you will have to enable the synching of hidden folders and files.
 
 ## <i class="profeature">pro</i>Folder Tagging
 TODO
