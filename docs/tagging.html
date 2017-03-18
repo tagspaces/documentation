@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>Tagging ⚒ · TagSpaces Documentation</title>
+        <title>Tagging · TagSpaces Documentation</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.2">
@@ -63,7 +63,7 @@
     <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="search.html" />
+    <link rel="next" href="tagging.html" />
     
     
     <link rel="prev" href="editing-files.html" />
@@ -561,11 +561,147 @@
                 <a href="tagging.html">
             
                     
-                    Tagging ⚒
+                    Tagging
             
                 </a>
             
 
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="tagging.html">
+            
+                <a href="tagging.html#motivation">
+            
+                    
+                    Motivation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="tagging.html">
+            
+                <a href="tagging.html#file-tagging-based-on-filename">
+            
+                    
+                    File Tagging based on filename
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3" data-path="tagging.html">
+            
+                <a href="tagging.html#timestamp-as-default-tag">
+            
+                    
+                    Timestamp as default tag
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.4" data-path="tagging.html">
+            
+                <a href="tagging.html#tagging-with-drag-and-drop">
+            
+                    
+                    Tagging with Drag and Drop
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.5" data-path="tagging.html">
+            
+                <a href="tagging.html#tagging-using-context-menus">
+            
+                    
+                    Tagging using context menus
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.6" data-path="tagging.html">
+            
+                <a href="tagging.html#tagging-using-keyboard-shortcuts">
+            
+                    
+                    Tagging using keyboard shortcuts
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.7" data-path="tagging.html">
+            
+                <a href="tagging.html#smart-tags">
+            
+                    
+                    Smart tags
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.8" data-path="tagging.html">
+            
+                <a href="tagging.html#priorities-and-ratings">
+            
+                    
+                    Priorities and ratings
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.9" data-path="tagging.html">
+            
+                <a href="tagging.html#file-tagging-based-on-sidecar-files">
+            
+                    
+                    File Tagging based on sidecar files (PRO)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.10" data-path="tagging.html">
+            
+                <a href="tagging.html#folder-tagging">
+            
+                    
+                    Folder Tagging (PRO)
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
             
         </li>
     
@@ -987,7 +1123,20 @@
             
         </li>
     
-        <li class="chapter " data-level="5.10" data-path="extensions/viewerText.html">
+        <li class="chapter " data-level="5.10" data-path="extensions/viewerRTF.html">
+            
+                <a href="extensions/viewerRTF.html">
+            
+                    
+                    RTF Viewer
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.11" data-path="extensions/viewerText.html">
             
                 <a href="extensions/viewerText.html">
             
@@ -1000,7 +1149,7 @@
             
         </li>
     
-        <li class="chapter " data-level="5.11" data-path="extensions/viewerBrowser.html">
+        <li class="chapter " data-level="5.12" data-path="extensions/viewerBrowser.html">
             
                 <a href="extensions/viewerBrowser.html">
             
@@ -1013,7 +1162,7 @@
             
         </li>
     
-        <li class="chapter " data-level="5.12" data-path="extensions/viewerZIP.html">
+        <li class="chapter " data-level="5.13" data-path="extensions/viewerZIP.html">
             
                 <a href="extensions/viewerZIP.html">
             
@@ -1161,7 +1310,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href="." >Tagging ⚒</a>
+        <a href="." >Tagging</a>
     </h1>
 </div>
 
@@ -1180,83 +1329,140 @@
 <!-- toc -->
 <ul>
 <li><a href="#motivation">Motivation</a></li>
-<li><a href="#file-tagging-based-on-filename-file-tagging">File Tagging based on filename {#file-tagging}</a></li>
+<li><a href="#file-tagging-based-on-filename">File Tagging based on filename</a></li>
 <li><a href="#timestamp-as-default-tag">Timestamp as default tag</a></li>
-<li><a href="#tagging-with-drag-drop">Tagging with Drag &amp; Drop</a></li>
+<li><a href="#tagging-with-drag-and-drop">Tagging with Drag and Drop</a></li>
 <li><a href="#tagging-using-context-menus">Tagging using context menus</a></li>
 <li><a href="#tagging-using-keyboard-shortcuts">Tagging using keyboard shortcuts</a></li>
-<li><a href="#smart-tags">Smart tags</a></li>
-<li><a href="#i-classprofeatureproifile-tagging-based-on-sidecar-files-tagsidecarsaving"><i class="profeature">pro</i>File Tagging based on sidecar files {#tagSidecarSaving}</a></li>
-<li><a href="#i-classprofeatureproifolder-tagging"><i class="profeature">pro</i>Folder Tagging</a></li>
+<li><a href="#smart-tags">Smart tags</a><ul>
+<li><a href="#date-and-time-based-smart-tags">Date and time based smart tags</a></li>
+<li><a href="#i-classprofeatureproi-geo-tags"><i class="profeature">pro</i> Geo tags</a></li>
+</ul>
+</li>
+<li><a href="#priorities-and-ratings">Priorities and ratings</a><ul>
+<li><a href="#priorities">Priorities:</a></li>
+<li><a href="#start-ratings">Start ratings</a></li>
+</ul>
+</li>
+<li><a href="#i-classprofeatureproifile-tagging-based-on-sidecar-files-file-tagging-based-on-sidecar-files"><i class="profeature">pro</i>File Tagging based on sidecar files {#file-tagging-based-on-sidecar-files}</a></li>
+<li><a href="#i-classprofeatureproifolder-tagging-folder-tagging"><i class="profeature">pro</i>Folder Tagging {#folder-tagging}</a></li>
 </ul>
 <!-- toc stop -->
 <h2 id="motivation">Motivation</h2>
-<p>Tagging and tags are fresh approach to categorizing and grouping things.
-Tagging allows the user to label thing with their own words. They don&#x2019;t need to conform with keywords or categories created by somebody else. Tagging allows you to describe what they&#x2019;re seeing in their own words, to imbue the experience with their own meaning. Tagging saves your time in different sites and can make the searching for a specific song, movie, book, document, note, or whatever you&#x2019;re looking for, much easier and faster.</p>
+<p>Tagging and tags are a fresh approach to categorizing and grouping things. Tagging allows the user to label thing with their own words. They don&#x2019;t need to conform to keywords or categories created by somebody else. Tagging allows you to describe what you&#x2019;re seeing in your own words, to imbue the experience with your own meaning. Tagging saves your time, and can makes searching for a specific song, movie, book, document, note, or whatever you&#x2019;re looking for, much easier and faster.</p>
 <p>Tags are personal things. Tagging something is your emotional response and not simply a taxonomic decision. With using tags, you have the control to define things for yourself, and on the web -- not only for music, literature, games and movies, but also public websites, data repositories and consultations. Tagging is a new indirect way of control to express your mind and to name things your way -- you can call it a form of &quot;freedom of speech&quot;, if you want to go that far. Tagging is a power to create your own genres in movies, music popular culture, or basically anywhere.</p>
-<h2 id="file-tagging">File Tagging based on filename </h2>
-<p>TagSpaces supports tagging of files in a platform agnostic way. It uses the name of the file to save this kind of meta information. As an example if you want to add the tags <code>vacation</code> and <code>alps</code> to a image named <code>IMG-2653.jpg</code>, TagSpacws will simply rename it to <code>IMG-2653[vacation alps].jpg</code>. File renaming is of course very controversial decision (see our users [discussion]<strong><em>NEED LINK</em></strong>), with its own limitations (on some operating systems the file path length is limited to ca. 256 characters), but it allows a portable way for adding tags on every platform, be it ofline, online,m or even cloud based.</p>
+<h2 id="file-tagging-based-on-filename">File Tagging based on filename</h2>
+<p>TagSpaces supports tagging of files in a platform agnostic way. It uses the name of the file to save this kind of meta information. As an example if you want to add the tags <code>vacation</code> and <code>alps</code> to a image named <code>IMG-2653.jpg</code>, TagSpaces will simply rename it to <code>IMG-2653[vacation alps].jpg</code>. File renaming is of course a rather controversial decision (see our users <a href="https://tagspaces.uservoice.com/forums/213931-general/suggestions/7176956-don-t-reinvent-the-wheel-use-metadata-systems-tha" target="_blank">discussion</a>), which has its own limitations (e.g. on some operating systems the file path length is limited to ca. 256 characters), but it allows a portable way for adding tags on every platform, be it offline, online, or even cloud based.</p>
 <p><img src="media/filename-tagging.png" alt="Filename tagging"></p>
 <h2 id="timestamp-as-default-tag">Timestamp as default tag</h2>
 <p>When you create a new file in TagSpaces, a time-stamp in the format of YYYMMDD~hhmmss will be automatically added as a tag, where</p>
 <ul>
-<li>YYYY means the current year</li>
-<li>MM - the current month</li>
-<li>DD - the day</li>
-<li>hh - the hour</li>
-<li>mm - the minue</li>
-<li>ss - the second</li>
+<li><code>YYYY</code> means the current year</li>
+<li><code>MM</code> - the current month</li>
+<li><code>DD</code> - the day</li>
+<li><code>hh</code> - the hour</li>
+<li><code>mm</code> - the minute</li>
+<li><code>ss</code> - the second</li>
 </ul>
 <p>when the file was created. For example a file created on the 17th of January in 2017, at 10:30 (and 32 seconds) would be tagged with timestamp like <code>20170117-133032</code></p>
-<p>Such timestamps make it possible to easily group files from different locations based on the time of creation. Of course this would be possible by reading the same information from the filesystem, but tagging with the timestamp allows for greater flexibility. For example you can change the timestamp to anything you like, while keeping the original creation modification date of the file, and tagging the file will allow you to use TagSpaces&apos;s powerful grouping and organizing features in the same place you manage other tags.</p>
-<h2 id="tagging-with-drag--drop">Tagging with Drag &amp; Drop</h2>
-<p>The user interface was designed to be usable on touch screens, but for the desktop, it also support drag &amp; drop operation such as:</p>
+<p>Such timestamps make it possible to easily group files from different locations based on the time of creation. Of course this would be possible by reading the same information from the file system, but tagging with the timestamp allows for greater flexibility. For example you can change the timestamp to anything you like, while keeping the original creation modification date of the file, and tagging the file will allow you to use TagSpaces&apos;s powerful grouping and organizing features in the same place you manage other tags.</p>
+<h2 id="tagging-with-drag-and-drop">Tagging with Drag and Drop</h2>
+<p>The user interface was designed for touch screens, but it also supports drag &amp; drop operation for the desktop, such as:</p>
 <ul>
-<li>Adding tags from the tag groups to files in the list &amp; grid perspectives and to the file viewer</li>
+<li>Adding tags from the tag groups to files in the List and Grid perspectives and to the file viewer</li>
 <li>Moving tags from one tag group to another</li>
 </ul>
 <video src="/media/tagspaces-drag-drop.mp4" autoplay="true" loop="true" poster="/media/tagspaces-drag-drop.png" class="img-responsive"></video>
 
 <h2 id="tagging-using-context-menus">Tagging using context menus</h2>
-<p>TODO:
-<em>Add illustratons too*</em></p>
+<p>A context menu can be accessed by either clicking on the file extension icon of a single file (in List Perspective), or by right clicking a file or a selection of multiple files. From the context menu, select <em>Add/Remove Tags</em></p>
+<p><img src="media/add-remove-tag-context.png" alt=""></p>
+<p>to access a popup dialog, that allows you to manage tags on the file. This popup dialog will not display the currently active tags, but allows you to specify tags by name, offering suggestions based on tags currently in the tag library.</p>
+<p><img src="media/add-remove-tag-popup.png" alt=""></p>
+<p>The options you have here are:</p>
+<ul>
+<li><strong>Clean  tags</strong>, which will remove all tag information form the selected files</li>
+<li><strong>Remove tags</strong> will remove the specified tags from the files</li>
+<li><strong>Add tags</strong> will add the specified tags to the selected files</li>
+</ul>
+<p>The popup dialogue can also be accessed from the file preview area, by clicking the file info icon (<strong>1</strong>), and selecting <em>Tag File</em> (<strong>2</strong>)</p>
+<p><img src="media/add-remove-tag-preview.png" alt=""></p>
 <h2 id="tagging-using-keyboard-shortcuts">Tagging using keyboard shortcuts</h2>
-<p>TODO:</p>
+<p>Another quick way to tag files is to set keyboard shortcuts to often-used tags. To specify a shortcut, click on a tag in the <strong>Tag Library</strong>, and select <em>Edit Tag</em> from the context menu</p>
+<p><img src="media/edit-tag-context.png" alt=""></p>
+<p>You will then be presented with the <strong>Edit tag</strong> popup dialogue, in which you can specify the keyboard shortcut under <strong>Key Binding</strong></p>
+<p><img src="media/edit-tag-popup.png" alt="">
+Tag that has a keyboard shortcut assigned, are marked with a little keyboard icon in the tag library</p>
+<p><img src="media/edit-tag-keyboard.png" alt=""></p>
+<p>Shortcuts can be single characters, key combinations, or sequences of two or more characters.</p>
 <ul>
-<li>Setting individual shortcuts for single tags</li>
+<li>To specify a single key shortcut, type that key into the box. E.g. to set the key <code>a</code> as a shortcut for a tag, simply type the letter &apos;a&apos; and press OK.</li>
+<li>For key combinations, type all keys separated by a plus sign (<code>+</code>). E.g. to specify <code>Ctrl+Shift+a</code> (to be pressed simultaneously) as a shortcut, just type &quot;ctrl+shift+a&quot;.<blockquote>
+<p><strong>Note:</strong> For combinations to work, you do not need to use modifier keys. <code>a+g+6</code> is as valid a combination as would e.g. <code>ctrl+shit+6</code> be</p>
+</blockquote>
+</li>
+<li>To use character sequences, type each character, separated by a single whitespace. for example, when you set <code>a b c</code> as a shortcut, you would need to type the letters &apos;a&apos;, &apos;b&apos; and &apos;c&apos; after one another to tag a file. You do not need to do this quickly, as long as you do not press anything else, the sequence will be recognised. This feature can be quite useful for users, who experience difficulties pressing certain key combinations.<blockquote>
+<p><strong>Note:</strong> Modifier keys, such as <code>Ctrl</code>, <code>Shift</code>, etc, <strong>can</strong> be used in sequential combinations. Specifying e.g. <code>ctrl a</code> would make a shortcut of pressing <code>Ctrl</code> followed by <code>a</code>. pressing the keys simultaneously would not work in this case.</p>
+</blockquote>
+</li>
 </ul>
+<p>Using keyboard shortcuts can also work on multiple files. If you select more than one file, the tag bound to the key(s) or key combination you press will be applied to all of them.</p>
+<blockquote>
+<p><strong>Note:</strong> Keyboard shortcuts can <strong>not</strong> be used to remove tags, only to assign them.</p>
+</blockquote>
 <h2 id="smart-tags">Smart tags</h2>
-<p>TODO</p>
-<ul>
-<li>General description and purpose</li>
-<li>Date and time based</li>
-<li>Geo location</li>
-</ul>
+<p>Smart tags are one of the advanced tagging features of TagSpaces. Smart tags can be either <strong>date and time</strong>, or <strong>location based</strong>, and offer convenient <strong>dynamic tagging</strong> tagging, based on a range of criteria.</p>
 <p><img src="media/smart-tags-group.png" alt="tag library general overview"></p>
-<p>Smart tag formats:</p>
+<h3 id="date-and-time-based-smart-tags">Date and time based smart tags</h3>
+<p>These smart tags offer a quick and easy way to timestamp documents or files, with different levels of precision. Dragging or applying a smart tag to a file will create a tag based on the current time date. Currently the following tags and formats are available:</p>
 <ul>
-<li>Year: 2016</li>
-<li>Month: 201605</li>
-<li>Date: 20160529</li>
-<li>DateTime: 20160529~124532 / 20160529!124532</li>
-<li>(Time: 124323)</li>
-<li>Year Ranges: 2016-2018</li>
-<li>Month Ranges: 201605-201701</li>
-<li>Date Ranges: 20160531-20160603</li>
-<li>DateTime: 20160529~124532-20160529~154500 20160529!124532-20160529!154500</li>
+<li><strong>now</strong> - This tag will create a very precise timestamp (from current year, down to seconds) of the moment you have applied it, in a format of <code>YYYMMDD~HHmmss</code>, e.g. <code>20170314~145021</code></li>
+<li><strong>today</strong>, <strong>tomorrow and </strong>yesterday** will apply a timestamp with the current, the next, or the previous day&apos;s date,  in the format of <code>YYYYMMDD</code>, e.g. <code>20170314</code>.</li>
+<li><strong>month</strong> will create a timestamp of the current month, in the format of <code>YYYYMM</code>, e.g. <code>201703</code></li>
+<li><strong>year</strong> only applies the current year, in the format of <code>YYYY</code>, e.g. <code>2017</code></li>
 </ul>
-<p><img src="media/tageditor-datetime.png" alt="date time smart tag editor"></p>
-<p>Geo tag</p>
-<h2 id="tagSidecarSaving"><i class="profeature">pro</i>File Tagging based on sidecar files </h2>
+<blockquote>
+<p><strong>Note:</strong> Every newly created file will automatically have a smart tag, equivalent to <strong>now</strong>.</p>
+</blockquote>
+<p>Smart tags, once applied, can be edited, or further refined be refined to include date ranges. Clicking on a tag, ans selecting <em>Edit Tag</em> form the context menu</p>
+<p><img src="media/edit-smarttag-context.png" alt=""></p>
+<p>will bring up a popup dialogue also called <strong>Edit Tag</strong></p>
+<p><img src="media/edit-smarttag-popup.png" alt=""></p>
+<p>besides being able to easily modify date, or date/time tags on their respective tabs, you can also specify date ranges in the following formats:</p>
+<ul>
+<li><strong>Year Ranges:</strong> 2016-2018</li>
+<li><strong>Month Ranges:</strong> 201605-201701</li>
+<li><strong>Date Ranges:</strong> 20160531-20160603</li>
+<li><strong>DateTime Ranges</strong>: 20160529~124532-20160529~154500</li>
+</ul>
+<h3 id="pro-geo-tags"><i class="profeature">pro</i> Geo tags</h3>
+<p>The geo tag is a special kind of smart tag, available in TaSpaces <strong>PRO</strong>, that allows tagging files with precise geolocation coordinates. When You drag the tag &quot;geo&quot; on a file, the <strong>Edit tag</strong> popup window with the Geo Location tab will open, showing a map from OpenStreetmap. You can drop a pin anywhere, and move it around, it automatically becomes a tag in the format of <code>latitude+longitude</code>, e.g. <code>47.2792290+18.9843750</code> This tag will then be applied to the file and treated as a geo-smarttag by TagSpaces</p>
+<p><img src="media/geo-tag-dialogue.png" alt=""></p>
+<h2 id="priorities-and-ratings">Priorities and ratings</h2>
+<p>These special tags allow or better organising files by either importance or quality. You can apply priorities <code>high</code>, <code>medium</code> and <code>low</code>, and start ratings from <code>1start</code> to <code>5star</code>. Star ratings are yellow by default, whereas priorities are colour coded to easily distinguish visually.</p>
+<p><img src="media/smart-tag-colours.png" alt=""></p>
+<p>Priority and star ratings all have predefined keyboard bindings assigned to then, to that using them becomes really straightforward and fast. Currently the following key-bindings apply:</p>
+<h3 id="priorities">Priorities:</h3>
+<ul>
+<li><strong>high</strong> - <code>t h</code></li>
+<li><strong>medium</strong> - <code>t m</code></li>
+<li><strong>low</strong> - <code>t l</code></li>
+</ul>
+<h3 id="start-ratings">Start ratings</h3>
+<ul>
+<li><strong>1star</strong> - <code>t 1</code></li>
+<li><strong>2star</strong> - <code>t 2</code></li>
+<li><strong>3star</strong> - <code>t 3</code></li>
+<li><strong>4star</strong> - <code>t 4</code></li>
+<li><strong>5star</strong> - <code>t 5</code></li>
+</ul>
+<p>Users can easily extend these tags: You can simply create a new tag and add it to e.g. the priority group, give it a name a colour and a key binding, and you are all set.</p>
+<h2 id="file-tagging-based-on-sidecar-files"><i class="profeature">pro</i>File Tagging based on sidecar files </h2>
 <p>As alternative to saving the tagging information in the file names, TagSpaces PRO offers saving this kind of meta information in a sidecar files located in a hidden <code>.ts</code> folder. This option can be activated in the settings of the application as shown in the following screenshot.</p>
 <blockquote>
 <p><strong>Note</strong> Please note that by default the <code>.ts</code> folder is hidden only on OSX and Linux operating systems, on Windows folders the preceding dot in front of the filename will not mark the file as hidden by default. Setting these folders as hidden on Windows can be achieved manually or with custom script if needed.</p>
 </blockquote>
-<figure>
-  <img title="screenshot showing where to activate the saving of the tagging information in sidecar files" src="https://www.tagspaces.org/content/v2-2/activating-tags-sidecars.png" class="img-responsive center-block">
-  <figcaption>Activating the persistend of the tags in sidecar files</figcaption>
-</figure>
-
+<p><img src="https://www.tagspaces.org/content/v2-2/activating-tags-sidecars.png" alt=""></p>
 <p>After the activation, the application will create an extra file for every tagged file, having the same file name as the source file but with the additional JSON extension. For example after tagging some files in some of your file locations you will have a similar file structure.</p>
 <pre class="language-"><code>~ location (with your files)
 &#x251C;&#x2500;&#x2500; subfolder
@@ -1274,8 +1480,12 @@ Tagging allows the user to label thing with their own words. They don&#x2019;t n
 <blockquote>
 <p><strong>Hint</strong> If you want to have the files located in the <code>.ts</code> folder synched with some cloud service such as Dropbox or Google Drive, you will have to enable the synching of hidden folders and files.</p>
 </blockquote>
-<h2 id="profolder-tagging"><i class="profeature">pro</i>Folder Tagging</h2>
-<p>TODO</p>
+<h2 id="folder-tagging"><i class="profeature">pro</i>Folder Tagging </h2>
+<p>In TagSpaces <strong>PRO</strong>, it is possibly to apply tags to folders. To tag a folder, just presss the info button in the top navigation bar, next to the folder&apos;s name (<strong>1</strong>). It should open the folder properties area, where you can directly apply tags (<strong>2</strong>).</p>
+<blockquote>
+<p><strong>Note</strong> drag and drop support is not currently implemented for folder tagging, you must specify the desired tags manually.</p>
+</blockquote>
+<p><img src="media/folder-tagging.png" alt=""></p>
 
                                 
                                 </section>
@@ -1308,7 +1518,7 @@ Tagging allows the user to label thing with their own words. They don&#x2019;t n
                 </a>
                 
                 
-                <a href="search.html" class="navigation navigation-next " aria-label="Next page: Searching Files ⚒">
+                <a href="tagging.html#motivation" class="navigation navigation-next " aria-label="Next page: Motivation">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -1319,7 +1529,7 @@ Tagging allows the user to label thing with their own words. They don&#x2019;t n
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Tagging ⚒","level":"1.7","depth":1,"next":{"title":"Searching Files ⚒","level":"1.8","depth":1,"path":"search.md","ref":"search.md","articles":[]},"previous":{"title":"JSON Editor","level":"1.6.6","depth":2,"anchor":"#json-editor","path":"editing-files.md","ref":"editing-files.md#json-editor","articles":[]},"dir":"ltr"},"config":{"plugins":["edit-link","anchorjs","prism","-highlight","toc","sitemap","ga","expandable-chapters"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"prism":{},"toc":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"sitemap":{"hostname":"http://docs.tagspaces.org/"},"ga":{"configuration":"auto","token":"UA-90842098-1"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":"Edit","base":"https://github.com/tagspaces/documentation/edit/master"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchorjs":{},"expandable-chapters":{}},"search":{"maxIndexSize":1000000000},"theme":"default","author":"TagSpaces UG (haftungbeschraenkt)","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"TagSpaces Documentation","gitbook":"3.2.2"},"file":{"path":"tagging.md","mtime":"2017-03-06T15:02:52.022Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-03-11T16:10:47.177Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Tagging","level":"1.7","depth":1,"next":{"title":"Motivation","level":"1.7.1","depth":2,"anchor":"#motivation","path":"tagging.md","ref":"tagging.md#motivation","articles":[]},"previous":{"title":"JSON Editor","level":"1.6.6","depth":2,"anchor":"#json-editor","path":"editing-files.md","ref":"editing-files.md#json-editor","articles":[]},"dir":"ltr"},"config":{"plugins":["edit-link","anchorjs","prism","-highlight","toc","sitemap","ga","expandable-chapters"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"prism":{},"toc":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"sitemap":{"hostname":"http://docs.tagspaces.org/"},"ga":{"configuration":"auto","token":"UA-90842098-1"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":"Edit","base":"https://github.com/tagspaces/documentation/edit/master"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchorjs":{},"expandable-chapters":{}},"search":{"maxIndexSize":1000000000},"theme":"default","author":"TagSpaces UG (haftungbeschraenkt)","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"TagSpaces Documentation","gitbook":"3.2.2"},"file":{"path":"tagging.md","mtime":"2017-03-18T10:07:13.392Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-03-18T10:08:59.022Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>

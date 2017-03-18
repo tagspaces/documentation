@@ -13,7 +13,7 @@ A TagSpaces perspective allowing you to view your files in a list. It is optimiz
 ## Used libraries
 This extension thankfully relays on the following great libraries:
 
-* [datatables](https://www.datatables.net/)
+* no external dependencies
 
 ## Installation
 

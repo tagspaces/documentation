@@ -37,6 +37,7 @@
 <url> <loc>http://docs.tagspaces.org/extensions/viewerMHTML.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
 <url> <loc>http://docs.tagspaces.org/extensions/editorODF.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
 <url> <loc>http://docs.tagspaces.org/extensions/viewerPDF.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
+<url> <loc>http://docs.tagspaces.org/extensions/viewerRTF.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
 <url> <loc>http://docs.tagspaces.org/extensions/viewerText.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
 <url> <loc>http://docs.tagspaces.org/extensions/viewerBrowser.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
 <url> <loc>http://docs.tagspaces.org/extensions/viewerZIP.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
