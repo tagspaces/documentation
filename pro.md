@@ -39,12 +39,6 @@ We have added the ability to configure the size and the file type of the create 
 
 > **Note:** For compatibility and performance reasons, when you change the thumbnail image type to `JPG`, the thumb is still saved with `PNG` extension.
 
-### <i class="profeature">pro</i>Deleting files to trashcan {#trashBin}
-
-In the setting of TagSpaces you can activate a checkbox "Move deleted files or folders to trash bin". Aftet activating it, all files deleted in TagSpaces will be send to the *Trash*, *Trashbin* or *Recylce bin* depending on your operating system. From these locations, you files can be easily recovered in case of a unintended deletion.
-
-![Activating the trash bin functionality](/media/activating-trashcan.png)
-
 ### <i class="profeature">pro</i>Geo Tagging
 In order to use this feuature you have to utilize the smart tag `geo-tag`. When you apply it to a file, the dialog from the following screenshot will appear. Here you see a map from [openstreetmap](https://www.openstreetmap.org) and you can select geo coordinates of any location somewhere in the world.
 
@@ -52,7 +46,7 @@ In order to use this feuature you have to utilize the smart tag `geo-tag`. When 
 
 ### <i class="profeature">pro</i>Adding folders meta information {#folderMeta}
 
-TagSpaces PRO gives you the ability to add tags and a description to every folder connected to it. These information is managed in the folder properties dialog, which can be accessed as shown in the following screenshots.
+Geo Tagging can be use to add geo coordinates as a tag to any kind of files. It is usefull to connect your photos or other documents with a geo location. This can be usefull for planning you vacation or next trip. In order to use this feuature you have to use the smart tag `geo-tag`. When you apply it to a file, the dialog shown on following screenshot will appear. Here with the help of the [OpenStreetMap](https://www.openstreetmap.org) and you can select any location somewhere in the world. It's geographic coordinates will be converted to latitude and longitude, so for example the tag `-17.8114561+29.0917969` will symbolize latitude in decimal degree of *17.8114561° S* and longitude of *29.0917969° E*.
 
 ![Opening the folder properties dialog](/media/showing-folder-properties.png)
 
@@ -72,6 +66,12 @@ Technically TagSpaces PRO created a sidecar file called `tsm.json` in the hidden
     ├── file3.png
     └── file4.docx
 
+
+### <i class="profeature">pro</i>Deleting files to trashcan {#trashBin}
+
+In the setting of TagSpaces you can activate a checkbox "Move deleted files or folders to trash bin". Aftet activating it, all files deleted in TagSpaces will be send to the *Trash*, *Trashbin* or *Recylce bin* depending on your operating system. From these locations, you files can be easily recovered in case of a unintended deletion.
+
+![Activating the trash bin functionality](/media/activating-trashcan.png)
 
 ### <i class="profeature">pro</i>File Description
 TODO

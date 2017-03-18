@@ -3,7 +3,7 @@
 ## Getting started
 * [Introduction](README.md)
     * [About TagSpaces](README.md#about-tagspaces)
-    * [About This document](README.md#about-this-document)
+    * [About this document](README.md#about-this-document)
 * [Installation and Setup](installation.md)
     * [Windows](installation.md#windows)
     * [OS X](installation.md#osx)
@@ -83,6 +83,7 @@
 * [MHTML Reader](extensions/viewerMHTML.md)
 * [ODF Viewer](extensions/editorODF.md)
 * [PDF Viewer](extensions/viewerPDF.md)
+* [RTF Viewer](extensions/viewerRTF.md)
 * [Text Reader](extensions/viewerText.md)
 * [Simple Viewer](extensions/viewerBrowser.md)
 * [ZIP Opener](extensions/viewerZIP.md)
@@ -94,6 +95,6 @@
 
 ## Appendix Links
 * [Project Homepage](https://www.tagspaces.org/)
-* [FAQ](https://www.tagspaces.org/documentation/faq/)
+* [FAQ](https://www.tagspaces.org/faq/)
 * [Github Page](https://github.com/tagspaces/tagspaces/)
-* [Changelog](https://github.com/tagspaces/tagspaces/releases)
+* [Changelog](https://www.tagspaces.org/whatsnew)

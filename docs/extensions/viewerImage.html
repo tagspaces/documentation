@@ -129,7 +129,7 @@
                 <a href="../#about-this-document">
             
                     
-                    About This document
+                    About this document
             
                 </a>
             
@@ -1094,7 +1094,7 @@
     
         <li class="chapter " data-level="7.2" >
             
-                <a target="_blank" href="https://www.tagspaces.org/documentation/faq/">
+                <a target="_blank" href="https://www.tagspaces.org/faq/">
             
                     
                     FAQ
@@ -1120,7 +1120,7 @@
     
         <li class="chapter " data-level="7.4" >
             
-                <a target="_blank" href="https://github.com/tagspaces/tagspaces/releases">
+                <a target="_blank" href="https://www.tagspaces.org/whatsnew">
             
                     
                     Changelog
@@ -1181,10 +1181,13 @@
 <h2 id="features">Features</h2>
 <ul>
 <li>Opening of the following image formats: JPG, PNG, GIF, SVG, BMP, WEBP, ICO </li>
-<li>Zooming and rotating of the opened image </li>
+<li>Zooming, flipping and rotating of the current image</li>
+<li>Different background colors of the viewer for better contrast</li>
 <li>For JPG files it features an integrated Exif and IPTC reader with auto rotation of photos according to the Exif information</li>
-<li>Document printing</li>
+<li>Support image printing</li>
+<li>Grayscale filter</li>
 </ul>
+<p><img src="https://docs.tagspaces.org/media/extensions/viewer-image-demo.gif" alt="Screenshot of the Image Viewer as running in the Linux version of TagSpaces"></p>
 <h2 id="used-libraries">Used libraries</h2>
 <p>This extension thankfully relays on the following great libraries:</p>
 <ul>
@@ -1196,9 +1199,7 @@
 <h2 id="source-code">Source code</h2>
 <p>The source code of this extension is freely available on <a href="https://github.com/tagspaces/viewerImage/" target="_blank">github.com/tagspaces/viewerImage</a></p>
 <h2 id="development">Development</h2>
-<p>If you want to extend this extensions, please follow our general <a href="https://tagspaces.org/documentation/extension-development-guide" target="_blank">extension development guide</a></p>
-<h2 id="screenshots">Screenshots</h2>
-<p><img src="http://docs.tagspaces.org/media/extensions/viewer-image-demo.gif" alt="Screenshot of the Image Viewer as running in the Linux version of TagSpaces"></p>
+<p>If you want to extend this extensions, please follow our general <a href="https://docs.tagspaces.org/dev/extension-development-guide" target="_blank">extension development guide</a></p>
 <h2 id="license">License</h2>
 <p><a href="https://github.com/tagspaces/viewerImage/blob/master/LICENSE.txt" target="_blank">MIT</a></p>
 
@@ -1244,7 +1245,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Image Viewer","level":"5.4","depth":1,"next":{"title":"Link Opener","level":"5.5","depth":1,"path":"extensions/viewerURL.md","ref":"extensions/viewerURL.md","articles":[]},"previous":{"title":"HTML Viewer","level":"5.3","depth":1,"path":"extensions/viewerHTML.md","ref":"extensions/viewerHTML.md","articles":[]},"dir":"ltr"},"config":{"plugins":["edit-link","anchorjs","prism","-highlight","toc","sitemap","ga","expandable-chapters"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"prism":{},"toc":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"sitemap":{"hostname":"http://docs.tagspaces.org/"},"ga":{"configuration":"auto","token":"UA-90842098-1"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":"Edit","base":"https://github.com/tagspaces/documentation/edit/master"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchorjs":{},"expandable-chapters":{}},"search":{"maxIndexSize":1000000000},"theme":"default","author":"TagSpaces UG (haftungbeschraenkt)","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"TagSpaces Documentation","gitbook":"3.2.2"},"file":{"path":"extensions/viewerImage.md","mtime":"2017-02-04T10:47:34.062Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-02-04T10:53:40.890Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Image Viewer","level":"5.4","depth":1,"next":{"title":"Link Opener","level":"5.5","depth":1,"path":"extensions/viewerURL.md","ref":"extensions/viewerURL.md","articles":[]},"previous":{"title":"HTML Viewer","level":"5.3","depth":1,"path":"extensions/viewerHTML.md","ref":"extensions/viewerHTML.md","articles":[]},"dir":"ltr"},"config":{"plugins":["edit-link","anchorjs","prism","-highlight","toc","sitemap","ga","expandable-chapters"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"prism":{},"toc":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"sitemap":{"hostname":"http://docs.tagspaces.org/"},"ga":{"configuration":"auto","token":"UA-90842098-1"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":"Edit","base":"https://github.com/tagspaces/documentation/edit/master"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchorjs":{},"expandable-chapters":{}},"search":{"maxIndexSize":1000000000},"theme":"default","author":"TagSpaces UG (haftungbeschraenkt)","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"TagSpaces Documentation","gitbook":"3.2.2"},"file":{"path":"extensions/viewerImage.md","mtime":"2017-03-11T16:10:42.210Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-03-11T16:10:47.177Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

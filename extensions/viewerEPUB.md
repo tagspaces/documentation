@@ -4,7 +4,9 @@ A TagSpaces extension allowing you to open ebooks in EPUB format.
 
 ## Features
 
-* Open EPUB files for reading
+* Previewing ebooks in EPUB format
+
+![Screenshot of the viewerEPUB](https://docs.tagspaces.org/media/extensions/viewer-epub-lead.png)
 
 ## Used libraries
 This extension thankfully relays on the following great libraries:
@@ -21,11 +23,7 @@ The source code of this extension is freely available on [github.com/tagspaces/v
 
 ## Development
 
-If you want to extend this extensions, please follow our general [extension development guide](http://tagspaces.org/documentation/extension-development-guide)
-
-## Screenshots
-
-![Screenshot of the viewerEPUB](http://tagspaces.org/extensions/viewerEPUB/viewerEPUB-screenshot.png)
+If you want to extend this extensions, please follow our general [extension development guide](https://docs.tagspaces.org/dev/extension-development-guide)
 
 ## License
 
