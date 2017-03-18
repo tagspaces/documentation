@@ -73,6 +73,7 @@
 * [MHTML Reader](extensions/viewerMHTML.md)
 * [ODF Viewer](extensions/editorODF.md)
 * [PDF Viewer](extensions/viewerPDF.md)
+* [RTF Viewer](extensions/viewerRTF.md)
 * [Text Reader](extensions/viewerText.md)
 * [Simple Viewer](extensions/viewerBrowser.md)
 * [ZIP Opener](extensions/viewerZIP.md)

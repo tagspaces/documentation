@@ -10,6 +10,7 @@ wget https://raw.githubusercontent.com/tagspaces/viewerPDF/master/README.md -O e
 wget https://raw.githubusercontent.com/tagspaces/viewerText/master/README.md -O extensions/viewerText.md
 wget https://raw.githubusercontent.com/tagspaces/viewerBrowser/master/README.md -O extensions/viewerBrowser.md
 wget https://raw.githubusercontent.com/tagspaces/viewerZIP/master/README.md -O extensions/viewerZIP.md
+wget https://raw.githubusercontent.com/tagspaces/viewerRTF/master/README.md -O extensions/viewerRTF.md
 wget https://raw.githubusercontent.com/tagspaces/editorHTML/master/README.md -O extensions/editorHTML.md
 wget https://raw.githubusercontent.com/tagspaces/editorJSON/master/README.md -O extensions/editorJSON.md
 wget https://raw.githubusercontent.com/tagspaces/editorText/master/README.md -O extensions/editorText.md
