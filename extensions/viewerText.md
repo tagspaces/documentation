@@ -4,12 +4,13 @@ A TagSpaces extension allowing you to open plain text files
 
 ## Features
 
-* Opens plain text files
+* Displaying the content of files as plain text
+
+
+![Screenshot of the viewerText](https://docs.tagspaces.org/media/extensions/viewer-text-lead.png)
 
 ## Used libraries
-This extension thankfully relays on the following great project(s):
-
-* ...
+This extension has no external dependencies
 
 ## Installation
 
@@ -21,11 +22,7 @@ The source code of this extension is freely available on [github.com/tagspaces/v
 
 ## Development
 
-If you want to extend this extensions, please follow our general [extension development guide](http://tagspaces.org/documentation/extension-development-guide)
-
-## Screenshots
-
-![Screenshot of the viewerText](http://tagspaces.org/extensions/viewerText/viewerText-screenshot.png)
+If you want to extend this extensions, please follow our general [extension development guide](https://docs.tagspaces.org/dev/extension-development-guide)
 
 ## License
 

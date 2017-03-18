@@ -44,7 +44,7 @@ Once a newer version of the Firefox addon is approved for the Mozilla store, it 
 You can install the Chrome extension directly from the [Google Chrome Store]({{ site.linkChromeStore}}).
 
 ### Installation from the TagSpaces webpage
-An alternative way is get the extension directly from [our download page]({{ site.downloadChrome }}). If you do so, please consider the following instructions:
+An alternative way is get the extension directly from [our download page](https://www.tagspaces.org/downloads). If you do so, please consider the following instructions:
 
 * Download the extension file from the link above and save it to your computer.
 * Click the settings icon on the browser toolbar.
@@ -79,9 +79,12 @@ Once a new version of the application is available, you will see a green present
 If you do not want to TagSpaces to check for the availability of new version, disable this functionality in the [settings](userinterface.html/#settings)
 
 ## Running TagSpaces in portable mode {#portable-mode}
-The Windows and Linux versions of TagSpaces can be started in the so called portable mode, allowing the use of the application from an USB-stick or other portable devices. In this mode all the configuration information such as tags, tag groups and connection to locations is stored in the folder from where the application is started and not in the home user folder on current operating systems. The portable mode can be started with the `tagspacesp.cmd` script under Windows or the `tagspacesp` under Linux. These scripts are located in the unzipped application folder. Under Linux you have eventually to make this script executable with this command `chmod +x tagspacesp`.
+The Windows and Linux versions of TagSpaces can be started in the so called portable mode, allowing the use of the application from an USB-stick or other portable devices. In this mode all the configuration information such as tags, tag groups and connection to locations is stored in a folder called *tsprofile*. This folder is located in the from where the application is started and not in the home user folder on current operating systems. The portable mode can be started with the `tagspacesp.cmd` script under Windows or the `tagspacesp` under Linux. These scripts are located in the unzipped application folder. Under Linux you have eventually to make this script executable with this command `chmod +x tagspacesp`.
 
 ### Updating the portable version
-In order to update a version of TagSpaces used in portable mode for example on USB stick you have just to exchange the files and directories with the new ones, coming from the installation package of the new application version.
+In order to update a version of TagSpaces used in portable mode for example on USB stick you have just to exchange the files and directories with the new ones, coming from the installation package of the new application version. As mentioned before in the portable mode, the tag library and locations are stored in the *tsprofile* folder. So to upgrade to a newer version of tagspaces, we have to take special care for this folder, please follow these steps for the upgrade:
+ * Rename your existing *tagspaces* folder to e.g. *tagspaces_old*
+ * Extract the downloaded tagspaces zip-file, this will create a new *tagspaces* folder.
+ * Copy/move the *tsprofile* folder from the *tagspaces_old* folder to the newly created *tagspaces* folder.
 
-> **Important** Be careful not to delete the `tsprofile` sub folder, because it contains the information for you locations, tag groups and application settings.
+> **Important**: So once agait br careful not to delete the `tsprofile` sub folder, it contains valuable information for your portable TagSpaces instance.
