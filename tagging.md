@@ -122,7 +122,7 @@ The geo tag is a special kind of smart tag, available in TaSpaces **PRO**, that 
 
 ## Priorities and ratings
 
-These special tags allow or better organising files by either importance or quality. You can apply priorities `high`, `medium` and `low`, and start ratings from `1start` to `5star`. Star ratings are yellow by default, whereas priorities are colour coded to easily distinguish visually.
+These special tags are useful for organising files by either importance or quality. You can apply priorities `high`, `medium` and `low`, and start ratings from `1start` to `5star`. Star ratings are yellow by default, whereas priorities are colour coded to easily distinguish visually.
 
 ![](/media/smart-tag-colours.png)
 
