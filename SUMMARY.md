@@ -46,7 +46,7 @@
     * [File Tagging based on sidecar files (PRO)](tagging.md#file-tagging-based-on-sidecar-files)
     * [Folder Tagging (PRO)](tagging.md#folder-tagging)
 * [Searching Files ⚒](search.md)
-* [Settings ⚒](settings.md)
+* [Settings](settings.md)
 * [Keybindings](keybindings.md)
 * [Internationalization](i18n.md)
 * [TagSpaces PRO ⚒](pro.md)
