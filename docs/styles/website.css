@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+
+.markdown-section {
+  font-family: 'Ubuntu', sans-serif;
+}
+
 video, img {
     box-shadow: 2px 2px 15px 0px rgba(0,0,0,0.75);
     max-width: 95% !important;
