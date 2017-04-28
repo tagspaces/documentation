@@ -84,7 +84,7 @@ The toolbar buttons are grouped together based on similar behavior or functional
 
 ![](/media/html-editor-toolbar.png)
 
-* [**Add Checkbox**](#add-checkbox) (**1**)
+* [**Manage Checkboxes**](#manage-checkboxes) (**1**)
 * [**Paragraph Style**](#paragraph-style) (**2**)
 * [**Color**](#color) (**3**)
 * [**Font Styles**](#font-styles) (**4** and **5**)
@@ -97,11 +97,21 @@ The toolbar buttons are grouped together based on similar behavior or functional
 * [**Help**](#help) (**12**)
 
 
-#### Add Checkbox
+#### Manage Checkboxe
 
-Pressing this button will insert an interactive, clickable checkbox into your document, which can be used to create e.g. ToDo lists. To lean more about this feature, scroll down to the [Creating ToDo Lists](#creating-todo-lists) section.
+This is a compound button, consisting of two parts:
+* **Add checkbox** (**1**)
+* **Toggle all checkboxes** (**2**)
 
 ![](/media/add-checkbox-button.png)
+
+Pressing **Add checkbox**  will insert an interactive, clickable checkbox into your document, which can be used to create e.g. ToDo lists. To lean more about this feature, scroll down to the [Creating ToDo Lists](#creating-todo-lists) section.
+
+Pressing the **Toggle all checkboxes** button will select or deselect all the checkboxes present in the HTML document, regardless of their location
+
+> **Hint:** when some checkboxes are manually selectecd, while others are deselected, the *Toggle all checkboxes/ will check all the unchecked ones. Pressing the button again will only un-check the ones that have been checked via the button. the ones that were manually checked will remain unchanged.
+
+
 
 [Back to button group list](#toolbar-buttons)
 
