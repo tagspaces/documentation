@@ -29,7 +29,7 @@ The **location manager** is implemented as a dropdown menu, which allows you to 
 
 ![Location manager](/media/location-manager.png)
 
-In the **edit location dialog** you can update the name of the location or change the path to the root folder. You can also select here the default [**perspective**](browsing-files.html#perspectives), used with this location. For example if the  location contains mainly images and photos, you may want to open it with the  [**image-swipper perspective**](/extensions/perspectiveImageSwipper) , offering a preview of the images and easy navigation through them.
+In the **edit location dialog** you can update the name of the location or change the path to the root folder. You can also select here the default [**perspective**](browsing-files.html#perspectives), used with this location. For example if the  location contains mainly images and photos, you may want to open it with the  [**image-swiper perspective**](/extensions/perspectiveImageSwipper) , offering a preview of the images and easy navigation through them.
 
 With the *remove location* button you can remove the location permanently from TagSpaces. This operation will not affect your files, it only removes its reference from TagSpaces.
 
@@ -74,6 +74,10 @@ An alternative to the left panel folder navigation view is the interactive path 
 Clicking on a folder in the alternative navigator will open a context menu, where you can execute some basic folder operations and navigate to any subfolders located in the selected folder. This means, if you need to navigate back to a folder, using the interactive path, you should select its parent folder, and select the desired folder from the options menu.
 
 ![alternative folder navigator](/media/folder-navigation-alternative.png)
+
+### Navigating fodlers from perspectives
+
+Starting with **TagSpaces 2.8**, it is possible to navigate through folders straight from the file list or grid of the **List Perspective** and **Grid Perspective** views respectively. To learn more about this features, please refer to the [File Browsing](browsing-files.html) article.
 
 ## Tag Library
 
@@ -134,6 +138,12 @@ To create a new tag group, click on **Create Tag Group**, right underneath the t
 ![](/media/new-tag-group-dialog.png)
 
 Selecting the **Import tags** option will allow you to import predefined predefined tags, which you have previously created in TagSpaces. This option takes a `JSON` file, previously exported from (probably another instance of) TagSpaces, and imports all the tags contained within, into your system. This can be useful, when you use TagSpaces on multiple systems, or you work collaboratively with others and wish to share the same tags library. To learn more about sharing tags between systems and people, refer to the [Sharing tag libraries](/tutorials/sharing-tags.html) tutorial article.
+
+#### Restoring original tag groups
+
+Starting with **TagSpaces 2.8** you can restore tag groups to their original state by opening the *Settings* and pressing the button *Recreate Original Tag Groups* on the *General* tab.
+
+![](/media/restore_tag_groups.png)
 
 ### The tag context menu
 

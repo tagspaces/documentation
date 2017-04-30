@@ -50,8 +50,7 @@ The columns, from left to right are:
 
 To change the list order, you can click the list column headers. For example if you want to sort the list alphabetically by name *(A-Z)*, click on the name. To change the direction of the sorting *(Z-A)*, click on the name again. Each header offers bidirectional sorting based on its column's properties.
 
->**Hint:** Although there is currently no indicator of either the direction, or the active sorting mode, this feature will be added in a future release of TagSpaces.
-
+>**Hint:** A small arrow next to the name of the appropriate column, will indicate the direction of sorting, and the column to sort by.
 
 ### List overflow menu options
 
@@ -78,7 +77,19 @@ The **Floating Action Button** (FAB) at the bottom right corner, hides a context
 
 * **Export to CSV** will create a **Comma Separated Variable** from all displayed files, be it from the current folder, or from the full folder hierarchy, and save it n a folder of your choice. The generated CSV contains `path,title,size,tag1,tag2,tag3,...`, where each new line represents a separate file.
 
+* **Show/Hide Subfolders** Starting with **TagSpaces 2.8**, it is possible to list and navigate subfolders in-line with the file list.
+
 * **About** will display information about the perspective extension in a pop-up window.
+
+### Navigating folders from from the file list
+
+When you enable the option to *Show Subfolders* from the overflow menu, the list perspective will show all subfolders in the current folder, in-line with the file, on the top of the list.
+
+![](/media/list-perspective-showing-folders.png)
+
+Double-clicking a folder name will change to that folder, while single-clicking it will select the folder, the same as selecting a file.
+
+> **Note:** The right-click menu options for folders are currently the same as they are for files
 
 ## Grid perspective
 
