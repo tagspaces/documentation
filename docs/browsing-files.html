@@ -1412,7 +1412,7 @@
 </ul>
 <p>To change the list order, you can click the list column headers. For example if you want to sort the list alphabetically by name <em>(A-Z)</em>, click on the name. To change the direction of the sorting <em>(Z-A)</em>, click on the name again. Each header offers bidirectional sorting based on its column&apos;s properties.</p>
 <blockquote>
-<p><strong>Hint:</strong> Although there is currently no indicator of either the direction, or the active sorting mode, this feature will be added in a future release of TagSpaces.</p>
+<p><strong>Hint:</strong> A small arrow next to the name of the appropriate column, will indicate the direction of sorting, and the column to sort by.</p>
 </blockquote>
 <h3 id="list-overflow-menu-options">List overflow menu options</h3>
 <p>The <strong>Floating Action Button</strong> (FAB) at the bottom right corner, hides a contextual overflow menu applicable for the currently active perspective. The List perspective offers its own set of options, that will allow you to manage the list of files in certain ways.</p>
@@ -1439,9 +1439,18 @@
 </li>
 <li><p><strong>Export to CSV</strong> will create a <strong>Comma Separated Variable</strong> from all displayed files, be it from the current folder, or from the full folder hierarchy, and save it n a folder of your choice. The generated CSV contains <code>path,title,size,tag1,tag2,tag3,...</code>, where each new line represents a separate file.</p>
 </li>
+<li><p><strong>Show/Hide Subfolders</strong> Starting with <strong>TagSpaces 2.8</strong>, it is possible to list and navigate subfolders in-line with the file list.</p>
+</li>
 <li><p><strong>About</strong> will display information about the perspective extension in a pop-up window.</p>
 </li>
 </ul>
+<h3 id="navigating-folders-from-from-the-file-list">Navigating folders from from the file list</h3>
+<p>When you enable the option to <em>Show Subfolders</em> from the overflow menu, the list perspective will show all subfolders in the current folder, in-line with the file, on the top of the list.</p>
+<p><img src="media/list-perspective-showing-folders.png" alt=""></p>
+<p>Double-clicking a folder name will change to that folder, while single-clicking it will select the folder, the same as selecting a file.</p>
+<blockquote>
+<p><strong>Note:</strong> The right-click menu options for folders are currently the same as they are for files</p>
+</blockquote>
 <h2 id="grid-perspective">Grid perspective</h2>
 <p>An alternative arrangement, commonly found in file browsing applications is the grid. In TagSpaces the <strong>Grid Perspective</strong> offers a resizeable grid with thumbnail previews of certain file formats, for quick and effective browsing.</p>
 <p><img src="media/grid-perspective.png" alt=""></p>
@@ -1594,7 +1603,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"File Browsing","level":"1.4","depth":1,"next":{"title":"Perspectives overview","level":"1.4.1","depth":2,"anchor":"#perspectives-overview","path":"browsing-files.md","ref":"browsing-files.md#perspectives-overview","articles":[]},"previous":{"title":"Floatng Action Button","level":"1.3.6","depth":2,"anchor":"#floating-action-button","path":"userinterface.md","ref":"userinterface.md#floating-action-button","articles":[]},"dir":"ltr"},"config":{"plugins":["edit-link","anchorjs","prism","-highlight","toc","sitemap","ga","expandable-chapters"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"prism":{},"toc":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"sitemap":{"hostname":"http://docs.tagspaces.org/"},"ga":{"configuration":"auto","token":"UA-90842098-1"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":"Edit","base":"https://github.com/tagspaces/documentation/edit/master"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchorjs":{},"expandable-chapters":{}},"search":{"maxIndexSize":1000000000},"theme":"default","author":"TagSpaces UG (haftungbeschraenkt)","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"TagSpaces Documentation","gitbook":"3.2.2"},"file":{"path":"browsing-files.md","mtime":"2017-01-25T23:25:22.345Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-03-27T21:48:28.664Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"File Browsing","level":"1.4","depth":1,"next":{"title":"Perspectives overview","level":"1.4.1","depth":2,"anchor":"#perspectives-overview","path":"browsing-files.md","ref":"browsing-files.md#perspectives-overview","articles":[]},"previous":{"title":"Floatng Action Button","level":"1.3.6","depth":2,"anchor":"#floating-action-button","path":"userinterface.md","ref":"userinterface.md#floating-action-button","articles":[]},"dir":"ltr"},"config":{"plugins":["edit-link","anchorjs","prism","-highlight","toc","sitemap","ga","expandable-chapters"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"prism":{},"toc":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"sitemap":{"hostname":"http://docs.tagspaces.org/"},"ga":{"configuration":"auto","token":"UA-90842098-1"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":"Edit","base":"https://github.com/tagspaces/documentation/edit/master"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchorjs":{},"expandable-chapters":{}},"search":{"maxIndexSize":1000000000},"theme":"default","author":"TagSpaces UG (haftungbeschraenkt)","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"TagSpaces Documentation","gitbook":"3.2.2"},"file":{"path":"browsing-files.md","mtime":"2017-04-30T08:31:02.809Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-04-30T08:35:14.508Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>

@@ -1,6 +1,6 @@
 # Introduction
 
-To the **Documentation** for TagSpaces products as of **version 2.7** and later
+To the **Documentation** for TagSpaces products as of **version 2.8** and later
 
 ## About TagSpaces
 TagSpaces is an open source, cross-platform, no backend, no login, no cloud personal data manager, and file navigator. It helps you organize your files, photos and other documents with tags on different platforms and/or devices, according to your own preferences and following your own logic, by using the same smart and friendly interface everywhere. The below short introducing video shows TagSpaces in action:
