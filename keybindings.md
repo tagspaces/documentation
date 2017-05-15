@@ -46,7 +46,7 @@ These keybindings are available even if TagSpaces is currently not in focus, but
 | -- | -- | -- |
 | Show TagSpaces | `control + alt + w` | `⌘ + alt + w` |
 | Create new text document | `control + alt + n` | `⌘ + alt + n` |
-| Open next document | `control + alt + s` | `⌘ + alt + s` |
+| Open next document | `control + alt + d` | `⌘ + alt + d` |
 | Open previous document | `control + alt + a` | `⌘ + alt + a` |
 | Pause/resume playback | `control + alt + p` | `⌘ + alt + p` |
 
