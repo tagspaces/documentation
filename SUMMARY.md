@@ -19,7 +19,7 @@
     * [Folder navigation](userinterface.md#folder-navigation)
     * [Tag Library](userinterface.md#tag-library)
     * [File browsing and preview](userinterface.md#file-browsing-and-preview)
-    * [Floatng Action Button](userinterface.md#floating-action-button)
+    * [Floating Action Button](userinterface.md#floating-action-button)
 * [File Browsing](browsing-files.md)
     * [Perspectives overview](browsing-files.md#perspectives-overview)
     * [List Perspective](browsing-files.md#list-perspective)
