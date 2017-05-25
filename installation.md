@@ -87,4 +87,4 @@ In order to update a version of TagSpaces used in portable mode for example on U
  * Extract the downloaded tagspaces zip-file, this will create a new *tagspaces* folder.
  * Copy/move the *tsprofile* folder from the *tagspaces_old* folder to the newly created *tagspaces* folder.
 
-> **Important**: So once agait br careful not to delete the `tsprofile` sub folder, it contains valuable information for your portable TagSpaces instance.
+> **Important**: So once again be careful not to delete the `tsprofile` sub folder, it contains valuable information for your portable TagSpaces instance.
