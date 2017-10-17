@@ -184,11 +184,11 @@ The first two buttons offer toggles for **Unordered List** (**1**), and **Ordere
 The hotkeys for these operations are:
 * **Unordered List** - `Ctrl+Shift+7`
 * **Ordered List** - `Ctrl+Shift+8`
-* **Left align** - `Ctrl+Shit+L`
-* **Center align** - `Ctrl+Shit+E`
+* **Left align** - `Ctrl+Shift+L`
+* **Center align** - `Ctrl+Shift+E`
 * **Right align** - `Ctrl+Shift+R`
 * **Justify full** - `Ctrl+Shift+J`
-* **Decrease indent** -`Ctrl+Shit+Tab`
+* **Decrease indent** -`Ctrl+Shift+Tab`
 * **Increase indent** - `Ctrl+Tab`
 
 
