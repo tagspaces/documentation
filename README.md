@@ -3,7 +3,7 @@
 To the **Documentation** for TagSpaces products as of **version 2.8** and later
 
 ## About TagSpaces
-TagSpaces is an open source, cross-platform, no backend, no login, no cloud personal data manager, and file navigator. It helps you organize your files, photos and other documents with tags on different platforms and/or devices, according to your own preferences and following your own logic, by using the same smart and friendly interface everywhere. The below short introducing video shows TagSpaces in action:
+TagSpaces is an open source, cross-platform, no backend, no login, no cloud personal data manager, and file navigator. It helps you organize your files, photos and other documents with tags on different platforms and/or devices, according to your own preferences and following your own logic, by using the same smart and friendly interface everywhere. The short introductory video below shows TagSpaces in action:
 
 <iframe width="640" height="480" style="display:block; margin: 25px auto" src="https://www.youtube-nocookie.com/embed/8rMo5EFAqgM?rel=0" frameborder="0" allowfullscreen></iframe>
 
@@ -46,7 +46,7 @@ This documentation is built using [GitBook](https://www.gitbook.com), for a stre
 
 ### Subsection titles
 
-,,,will divide sections, while
+...will divide sections, while
 
 #### Smaller headings
 
@@ -57,7 +57,7 @@ This documentation is built using [GitBook](https://www.gitbook.com), for a stre
 The navigation sidebar on the left side of this page will represent the **chapters** as expandable topics, with the **sections** listed in each expanded view.
 
 ### Illustrations
-Much effort had gone into visually illustrating the documentation, so that you can instantly find what you are looking for, or what is being described in words. Most illustrations will feature some sort of annotation. For example if a **visible element** of the User Interface is discussed, a n**eon-green rectangle around an element** will mark its location on the illustrating image.
+Much effort had gone into visually illustrating the documentation, so that you can instantly find what you are looking for, or what is being described in words. Most illustrations will feature some sort of annotation. For example if a **visible element** of the User Interface is discussed, a **neon-green rectangle around an element** will mark its location on the illustrating image.
 
 ![](/media/introduction-main-screen.png)
 
