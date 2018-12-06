@@ -21,10 +21,13 @@
       "label": "Edit"
     },
     "ga": {
-      "token": "UA-90842098-1"
+      "token": "UA-90842098-1",
+      "configuration": {
+        "anonymizeIp": true
+      }
     },
     "sitemap": {
         "hostname": "http://docs.tagspaces.org/"
-    }    
+    }
   }
 }

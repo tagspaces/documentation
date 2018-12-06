@@ -13,6 +13,7 @@
     "prepare": "npm run optipng && npm run update-ext && gitbook build . docs && cd ../repo && npm run gen-jsdoc && cd ../docu",
     "optipng": "optipng media/*png",
     "serve": "gitbook serve",
+    "pdf": "gitbook pdf ./ ./tagspaces-manual[v2].pdf",
     "deploy": "aero deploy"
   },
   "keywords": [

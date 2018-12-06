@@ -3,6 +3,5 @@ npm-degug.log
 node_modules
 npm-debug.log
 *.webm
-*.pdf
 aero-debug.log
 aero-deploy.tar.gz
