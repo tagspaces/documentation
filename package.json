@@ -24,5 +24,8 @@
     "url": "git+https://github.com/tagspaces/documentation.git"
   },
   "author": "TagSpaces UG (haftungsbeschränkt)",
-  "license": ""
+  "license": "",
+  "devEngines": {
+    "node": "<7.x"
+  }
 }
