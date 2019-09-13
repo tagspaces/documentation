@@ -17,11 +17,15 @@ So let's assume you want share the tag groups with the names "TagGroups for Shar
 
 ## Exporting the existing tag groups
 
-After adding all the needed tags and specifying their colors you are now ready to export them. You have just to go to the settings of the application by clicking the "gears" button as seen on the screenshot above. In settings dialog you have to go to the first tab called "general" and then you have to scroll down until you see a button called "Export Tag Groups as JSON".
+After adding all the needed tags and specifying their colors you are now ready to export them. Just click the three dot menu on top right area of the tag library and select "Export Tag Library".
 
 ![exporting the tag library](/media/taggroups-export.png)
 
-After clicking on this button, a file saving dialog will appear, asking you to select a location where to save the file with the exported tag groups. This is files a called "tsm[20160807~131454].json", where the date/time stamp in the tags reflects the date and the time of the export. More on the export file format can be found in the [file format specification](/documentation/metafileformats#taggroupsexport).
+In the following screen you can select which tag group you want to export.
+
+![selecting tag groups for export](/media/taglibary-export-select-taggroups.png)
+
+After clicking on the export button, a file saving dialog will appear, asking you to select a location where to save the file with the exported tag groups. This is files a called "tsm[20160807~131454].json", where the date/time stamp in the tags reflects the date and the time of the export. More on the export file format can be found in the [file format specification](/documentation/metafileformats#taggroupsexport).
 
 ## Editing and cleaning up the exported library (optional step)
 This step can be skipped if you do not need to make changes to the exported tags, otherwise you have to open the json file in some text or json editor and do the changes manually. TagSpaces has a powerful build in json editor, with which you can edit the exported json files. We assume here that we want to share only the two previously mentioned tag groups "TagGroups for Sharing 1" and "TagGroups for Sharing 2". So we will open this file with the json editor in TagSpaces and delete the unneeded tag groups or adjust some tag names. To achieve this you have to open json file with TagSpaces and click on the edit button as shown in the following screenshot.
@@ -45,20 +49,21 @@ There are two main ways for distributing the exported tags, which will be discus
 ### Direct import in the tag library
 In tag area of TagSpaces you will find a button, which once clicked will trigger the tags import functionality of the application.
 
-![importing the json export file](/media/importing-taggroups.png)
+![importing the json export file](/media/taglibrary-import.png)
 
 After selecting the file and clicking the "open" button, a dialogs will appear asking you to choose the json files, which should be imported. This dialog is shown on the next screenshot.
 
-![importing the json export file](/media/tags-import-dialog.png)
+![importing the json export file](/media/taglibrary-import-selection.png)
 
 This method has the drawback that once imported in another TagSpaces installation, these tags are disconnected from the source tag library, so any changed done in the source application, will **not** be reflected in the instance where the tags were imported.
 
+<!--
 ### Loading the exported tags load on opening a location
 On opening of a specific location TagSpaces is trying to open a file called `tsm.json` in the `.ts` subfolder of this location. The `tms.json` file can contain tag groups, which will be loaded in the tags area on opening the location and also it can contain tags with which the current location directory is tagged. In order to display the tag groups from this file a checkbox in setting shown in the next screenshot should be activated.
 
 ![importing the json export file](/media/activate-tsm-loading.png)
 
-So a simple way for distributing you tag library is to rename the exported file into `tsm.json` and put it in the `.ts` folder of a given location. Once this folder is synced with some cloud service like Dropbox or Google Drive the file will be distributed to all other TagSpaces installation using this location. So then if you open this location on some other device the exported tag groups will be loaded in this other TagSpaces installation. This method has the advantage to share one common file with the tag groups to all other clients, so if you change it on one of these clients, the used sync service will distribute it to rest of the clients, so all of the collaborators will work with the latest version your tag groups. The same hold true if you put this files on a network drive, which is then connected to many TagSpaces installation on different computers.
+So a simple way for distributing you tag library is to rename the exported file into `tsm.json` and put it in the `.ts` folder of a given location. Once this folder is synced with some cloud service like Dropbox or Google Drive the file will be distributed to all other TagSpaces installation using this location. So then if you open this location on some other device the exported tag groups will be loaded in this other TagSpaces installation. This method has the advantage to share one common file with the tag groups to all other clients, so if you change it on one of these clients, the used sync service will distribute it to rest of the clients, so all of the collaborators will work with the latest version your tag groups. The same hold true if you put this files on a network drive, which is then connected to many TagSpaces installation on different computers. -->
 
 ## Closing remarks
-Currently you can not use any of the described methods for transfering **smart tags**, because they relay on a tighter integration in core of the application.
+Currently you can not use any of the described methods for transferring **smart tags**, because they relay on a tighter integration in core of the application.

@@ -1,41 +1,35 @@
 # Introduction
 
-To the **Documentation** for TagSpaces products as of **version 2.9**.
-
-**Documentation** for TagSpaces **version 3.0** is currently in creation.
-
+This is the documentation for TagSpaces products as of **version 3**.
 
 ## About TagSpaces
-TagSpaces is an open source, cross-platform, no backend, no login, no cloud personal data manager, and file navigator. It helps you organize your files, photos and other documents with tags on different platforms and/or devices, according to your own preferences and following your own logic, by using the same smart and friendly interface everywhere. The short introductory video below shows TagSpaces in action:
+TagSpaces is an open source, cross-platform, no backend, no login, personal data manager, and file navigator. It helps you organize your files, photos and other documents with tags on different platforms and/or devices, according to your own preferences and following your own logic, by using the same smart and friendly interface everywhere. The short introductory video below shows TagSpaces in action:
 
-<iframe width="640" height="480" style="display:block; margin: 25px auto" src="https://www.youtube-nocookie.com/embed/8rMo5EFAqgM?rel=0" frameborder="0" allowfullscreen></iframe>
+<iframe width="100%" height="500" style="display:block; margin: 25px auto" src="https://www.youtube-nocookie.com/embed/8rMo5EFAqgM?rel=0" frameborder="0" allowfullscreen></iframe>
 
 Check out the [TagSpaces YouTube channel](https://www.youtube.com/channel/UCzfSaeg-7mpt96UI97zwbfQ) for more TagSpaces related videos.
 
 The following few slides explain the basics of the project. To navigate the presentation use the blue arrow keys or click on it and use the arrow key on your keyboard.
 
-<iframe  style="display:block; margin: 25px auto" src="https://www.slideshare.net/slideshow/embed_code/33371724?rel=0" width="599" height="487"  style="border:none;" allowfullscreen> </iframe>
+<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vQEVye_m0Su6d0_jcUmmnqNVzt2cnXVB8CcejLr8k6fGH5_TIV4YC5QNbxyNBNoVdwRFu42Zor7ni1g/embed?start=true&loop=true&delayms=5000" frameborder="0" width="100%" style="min-height: 665px" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
 
 ### Products landscape
 
 * **Community desktop version** - the main, community developed edition of TagSpaces
 * **PRO desktop version** - extended solution based on the community version for advanced users
-* **Webclipper as Firefox addon** - a web clipper allowing the saving of whole webpages, webpage fragments and screenshot as local files
-* **Webclipper and file browser as Chtome extension** - same as the web clipper for Firefox, but including a file browser allowing you to navigate you local files and project them to a Google's Chromecast.
-* **Android app ** - an app offering most of the features from the community desktop version on a Anrdoid device
-* **Android Pro app** - extended version of the Android app offering some features of the Desktop PRO version (currently in development)
-* **IOS app** - an iPhone version of the app (currently in beta status)
-* **WebDAV selfhosting edition** - A package for selfhosting on top of a any webdav server such as Nextcloud or ownCloud.
+* **Web Clipper as Firefox addon** - a web clipper allowing the saving of whole webpages, webpage fragments and screenshot as local files
+* **Web Clipper as Chrome extension** - same as the web clipper for Firefox, but including a file browser allowing you to navigate you local files and project them to a Google's Chromecast.
+* **Android app ** - an app offering most of the features from the community desktop version on a Android device (currently in development)
+<!-- * **Android Pro app** - extended version of the Android app offering some features of the Desktop PRO version (currently in development) -->
+* **Web self hosting edition** - A package for self hosting on top of a any WebDAV server such as Nextcloud or ownCloud.
 
 ### Downloads
 
 All versions of TagSpaces are available to download from the [Downloads Page](https://www.tagspaces.org/downloads), where you can quickly find the appropriate installer for your platform (Windows, Mac, Linux, Android, Firefox and Chrome).
 
-
 ## About this document
 
 >**Hint:** This documentation has currently a **WIP status**. The articles in this documents are being rapidly updated, with new information added regularly.
-
 
 ### The structure of this documentation
 

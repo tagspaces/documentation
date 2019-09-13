@@ -8,14 +8,7 @@ Perspectives are not an integral part of TagSpaces, but exist as modular extensi
 
 * [List Perspective](extensions/perspectiveList.html) - Presenting your files as list, optimized for simple file management.
 
-
-* [Grid Perspective](extensions/perspectiveGrid.html) - Presenting your files as grid of cards, with file-preview thumbnails if enabled. Unlike the List Perspective, the grid can also display folders.
-
-
-* [ImageSwiper Perspective](extensions/perspectiveImageSwiper.html) - A perspective optimized for browsing and viewing image files. Best used with folders containing photos or images.
-
-
-* [FolderViz Perspective](extensions/perspectiveGraph.html) - This is an experimental perspective which applies some information visualization concepts to presenting your folder and file structures.
+* [FolderViz Perspective (Discontinued)](extensions/perspectiveGraph.html) - This is an experimental perspective which applies some information visualization concepts to presenting your folder and file structures.
 
 ## List perspective
 
@@ -181,7 +174,7 @@ This feature can also be turned off. To disable it, go to the *General* tab of *
 > **Hint:** There are plans to make the colors for the extensions configurable in a future release.
 
 
-## ImageSwiper perspective
+<!-- ## ImageSwiper perspective
 
 The **ImageSwiper Perspective** will turn any folder that contains images, into a picture gallery. This perspective only displays image files, and simply ignores all other files in the folder, therefore this perspective is only suitable for folders that contain mainly images.
 
@@ -208,49 +201,44 @@ Upon hovering the mouse over the image, various controls appear. In the upper-ri
 
 ![](/media/image-swiper-controls.png)
 
-> **Hint:** As its name indicates, the ImageSwiper Perspective fully supports (left or right) swipe gestures for navigation in the preview mode, on devices that allow for this. You can also drag the images with the mouse pointer, to imitate the swipe gesture on devices that are not touch enabled.
-
-### Generating live thumbnails for photos
-
-In the Grid and ImageSwiper perspectives TagSpaces generates thumbnails for JPG and PNG files on the fly. These small image previews are not persisted on your system, so every time you open a folder they will be regenerated. TagSpaces generates thumbnails only for image files which are currently visible in the application.
-
+> **Hint:** As its name indicates, the ImageSwiper Perspective fully supports (left or right) swipe gestures for navigation in the preview mode, on devices that allow for this. You can also drag the images with the mouse pointer, to imitate the swipe gesture on devices that are not touch enabled. -->
 
 ## FolderViz Perspective
 
+> **Note**: This perspective is not available in version 3 of TagSpaces.
+
 The **FolderViz Perspective** is a collection of experimental views hat apply some information visualization concepts to representing your files and folders. While the primary aim of FolderViz perspective is to showcase TagSpaces' capabilities to developers, some of the options might offer some useful features to the end users.
 
-**Note: FolderViz Perspective is an experimental feature, which can be *very* memory intensive on large folder structures, and can easily lock up one's computer. It is disabled by default on Android and Webdav, and will be disabled by default in all variants of the next version of TagSpaces.**
-
-**FolderViz Perspective** currently offers five types of views, which can be accessed from the FAB menu:
+**FolderViz Perspective** was offering five types of views, which were accessible from the FAB menu:
 
 
-### MindMap View
+### MindMap View (discontinued)
 
 **MindMap** will display all folders and subfolders contained within the current directory, in an expandable tree-node format. There are plans to extend this view in the future with an inverted graph of tags so you can navigate your tagged files, with the help of the tag group three instead of the folder tree, and drag and drop files from one branch of tag tree to some other branch, which will automatically re-tag them.
 
 ![](/media/folderviz-mindmap.png)
 
-### Tree View
+### Tree View (discontinued)
 
 **Tree** will display a fully expanded tree, similar to **MindMap**, only not interactive. It can be useful to visualize folder hierarchy, but this view can have performance issues with large directory structures.
 
 ![](/media/folderviz-tree-view.png)
 
 
-### TreeMap View
+### TreeMap View (discontinued)
 
 **TreeMap** offers a representation of all files and folders, where the size of the squares correspond to file sizes, relative to the root and each other, while the structure of the squares represents folder hierarchy.
 
 ![](/media/folderviz-treemap.png)
 
 
-### TreeMap-Navi View
+### TreeMap-Navi View (discontinued)
 
 **TreeMap Navi** is just like TreeMap, but without the hierarchy. Here the squares fully use up the available User Interface, allowing for a better visual representation of relative file sizes. This can be useful for finding large files or folders.
 
 ![](/media/folderviz-treemap-navi.png)
 
-### Bilevel Partition
+### Bilevel Partition (discontinued)
 
 **Bilevel Partition** is the most experimental and least functional of all views, basically a test to push the capabilities of folder and file visualization. While it might produce some interesting looking results, it will most certainly be removed from a future release of TagSpaces.
 

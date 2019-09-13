@@ -58,7 +58,7 @@ The popup dialogue can also be accessed from the file preview area, by clicking 
 
 ![](media/add-remove-tag-preview.png)
 
-## Tagging using keyboard shortcuts
+<!-- ## Tagging using keyboard shortcuts
 Another quick way to tag files is to set keyboard shortcuts to often-used tags. To specify a shortcut, click on a tag in the **Tag Library**, and select *Edit Tag* from the context menu
 
 ![](media/edit-tag-context.png)
@@ -79,7 +79,7 @@ Shortcuts can be single characters, key combinations, or sequences of two or mor
 
 Using keyboard shortcuts can also work on multiple files. If you select more than one file, the tag bound to the key(s) or key combination you press will be applied to all of them.
 
->**Note:** Keyboard shortcuts can **not** be used to remove tags, only to assign them.
+>**Note:** Keyboard shortcuts can **not** be used to remove tags, only to assign them. -->
 
 
 ## Smart tags
@@ -126,7 +126,7 @@ These special tags are useful for organising files by either importance or quali
 
 ![](/media/smart-tag-colours.png)
 
-Priority and star ratings all have predefined keyboard bindings assigned to then, to that using them becomes really straightforward and fast. Currently the following key-bindings apply:
+<!-- Priority and star ratings all have predefined keyboard bindings assigned to then, to that using them becomes really straightforward and fast. Currently the following key-bindings apply:
 
 ### Priorities:
 * **high** - `t h`
@@ -138,10 +138,9 @@ Priority and star ratings all have predefined keyboard bindings assigned to then
 * **2star** - `t 2`
 * **3star** - `t 3`
 * **4star** - `t 4`
-* **5star** - `t 5`
+* **5star** - `t 5` -->
 
 Users can easily extend these tags: You can simply create a new tag and add it to e.g. the priority group, give it a name a colour and a key binding, and you are all set.
-
 
 ## <i class="profeature">pro</i>File Tagging based on sidecar files {#file-tagging-based-on-sidecar-files}
 
@@ -172,10 +171,8 @@ The main advantage of this solution is that the name of the files is not altered
 
 >**Hint** If you want to have the files located in the `.ts` folder synched with some cloud service such as Dropbox or Google Drive, you will have to enable the synching of hidden folders and files.
 
-## <i class="profeature">pro</i>Folder Tagging {#folder-tagging}
+## Folder Tagging {#folder-tagging}
 
-In TagSpaces **PRO**, it is possibly to apply tags to folders. To tag a folder, just presss the info button in the top navigation bar, next to the folder's name (**1**). It should open the folder properties area, where you can directly apply tags (**2**).
-
-> **Note** drag and drop support is not currently implemented for folder tagging, you must specify the desired tags manually.
+It is possibly to apply tags to folders. Folders can be tagged in the same way as files, by drag and drop or with tagging dialog.
 
 ![](/media/folder-tagging.png)

@@ -5,13 +5,13 @@
 The application supports previewing of many file types without the need of external viewer. It comes with the following viewer extensions:
 
 * [Audio Video Player](extensions/viewerAudioVideo.html)
-* [EPUB Reader](extensions/viewerEPUB.html)
+<!-- * [EPUB Reader](extensions/viewerEPUB.html)-->
 * [HTML Reader](extensions/viewerHTML.html)
 * [Image Viewer](extensions/viewerImage.html)
 * [Link Opener](extensions/viewerURL.html)
 * [Markdown Reader](extensions/viewerMD.html)
 * [MHTML Reader](extensions/viewerMHTML.html)
-* [ODF Viewer](extensions/editorODF.html)
+<!--* [ODF Viewer](extensions/editorODF.html)-->
 * [PDF Viewer](extensions/viewerPDF.html)
 * [Text Reader](extensions/viewerText.html)
 * [Simple Viewer](extensions/viewerBrowser.html)

@@ -3,16 +3,16 @@
 ## Getting started
 * [Introduction](README.md)
     * [About TagSpaces](README.md#about-tagspaces)
-    * [About this document](README.md#about-this-document)
+    * [About This Document](README.md#about-this-document)
 * [Installation and Setup](installation.md)
     * [Windows](installation.md#windows)
-    * [OS X](installation.md#osx)
+    * [MacOS](installation.md#osx)
     * [Linux](installation.md#linux)
     * [Android](installation.md#android)
     * [Firefox](installation.md#firefox)
     * [Chrome](installation.md#chrome)
     * [Portable Mode](installation.md#portable-mode)
-    * [Selfhosting TagSpaces](selfhosting.md)
+    * [Selfhosted Version](selfhosting.md)
 * [User Interface](userinterface.md)
     * [Start screen](userinterface.md#start-screen)
     * [Locations](userinterface.md#location-manager)
@@ -20,11 +20,9 @@
     * [Tag Library](userinterface.md#tag-library)
     * [File browsing and preview](userinterface.md#file-browsing-and-preview)
     * [Floating Action Button](userinterface.md#floating-action-button)
-* [File Browsing](browsing-files.md)
-    * [Perspectives overview](browsing-files.md#perspectives-overview)
-    * [List Perspective](browsing-files.md#list-perspective)
-    * [Grid Perspective](browsing-files.md#grid-perspective)
-    * [ImageSwiper Perspective](browsing-files.md#imageswiper-perspective)
+* [Browsing Files](browsing-files.md)
+    * [Overview](browsing-files.md#perspectives-overview)
+    * [List Perspective ⚒](browsing-files.md#list-perspective)
     * [FolderViz Perspective](browsing-files.md#folderviz-perspective)
 * [Viewing Files ⚒](viewing-files.md)
 * [Creating & Editing Files](editing-files.md)
@@ -44,20 +42,20 @@
     * [Smart tags](tagging.md#smart-tags)
     * [Priorities and ratings](tagging.md#priorities-and-ratings)
     * [File Tagging based on sidecar files (PRO)](tagging.md#file-tagging-based-on-sidecar-files)
-    * [Folder Tagging (PRO)](tagging.md#folder-tagging)
+    * [Folder Tagging](tagging.md#folder-tagging)
 * [Searching Files ⚒](search.md)
 * [Settings](settings.md)
 * [Keybindings](keybindings.md)
 * [Internationalization](i18n.md)
 * [TagSpaces PRO ⚒](pro.md)
 
-## Tutorials
+## Common use cases
 * [Managing Files ⚒](tutorials/filemanagement.md)
 * [Note-taking ⚒](tutorials/notetaking.md)
 * [Organizing Photos ⚒](tutorials/photomanagement.md)
-* [Web Clipping ⚒](tutorials/webclipping.md)
+* [Web Clipping](tutorials/webclipping.md)
 * [Playing Local Media ⚒](tutorials/playing-media.md)
-* [Bookmark Manager ⚒](tutorials/bookmark-manager.md)
+* [Bookmark Manager](tutorials/bookmark-manager.md)
 * [Personal Wiki ⚒](tutorials/personal-wiki.md)
 * [Syncing data ⚒](tutorials/file-syncing.md)
 * [Sharing tag libraries](tutorials/sharing-tags.md)
@@ -65,19 +63,18 @@
 ## Developers
 * [Meta file formats specification](dev/metafileformats.md)
 * [Extension development guide](dev/extension-development-guide.md)
-* [API documentation](http://docs.tagspaces.org/dev/api)
 
 ## Appendix Extensions
 
-* Perspectives
+<!-- * Perspectives
     * [Grid Perspective](extensions/perspectiveGrid.md)
     * [List Perspective](extensions/perspectiveList.md)
     * [ImageSwiper Perspective](extensions/perspectiveImageSwiper.md)
-    * [Graph Perspective](extensions/perspectiveGraph.md)
+    * [Graph Perspective](extensions/perspectiveGraph.md) -->
 
 * File Viewers
     * [Audio Video Player](extensions/viewerAudioVideo.md)
-    * [EPUB Reader](extensions/viewerEPUB.md)
+    <!-- * [EPUB Reader](extensions/viewerEPUB.md) -->
     * [HTML Viewer](extensions/viewerHTML.md)
     * [Image Viewer](extensions/viewerImage.md)
     * [Link Opener](extensions/viewerURL.md)
