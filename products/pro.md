@@ -1,10 +1,10 @@
 # TagSpaces PRO
 
+Please refer to the [product section](https://www.tagspaces.org/products/pro) on the TagSpaces website
+
+<!--
 ## Introduction
 TODO
-
-## Community vs PRO comparison
-TODO (take if from the website)
 
 ## Features  {#features}
 TODO add links to the main PRO features described in this documentation
@@ -80,3 +80,4 @@ TODO
 ### Pro settings
 
 ![settings for the pro functionality](/media/settings-tab-pro.png)
+-->

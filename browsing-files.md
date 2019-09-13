@@ -1,4 +1,4 @@
-# Browsing Your Files
+# Browsing Files and Folders
 
 When you navigate to a folder in your active location, the files contained in the selected folder will be displayed on the main file browsing area of the user interface. TagSpaces offers flexible views to display your files. These views are called **perspectives**.
 
@@ -6,11 +6,11 @@ When you navigate to a folder in your active location, the files contained in th
 
 Perspectives are not an integral part of TagSpaces, but exist as modular extensions. This modular approach allows for more flexibility, easier development, and customizability of each separate perspective. By default, there are four perspective extensions included in TagSpaces, which are:
 
-* [List Perspective](extensions/perspectiveList.html) - Presenting your files as list, optimized for simple file management.
+* [Default Perspective](#default-perspective) - Presenting your files as list, optimized for simple file management.
 
-* [FolderViz Perspective (Discontinued)](extensions/perspectiveGraph.html) - This is an experimental perspective which applies some information visualization concepts to presenting your folder and file structures.
+* [FolderViz Perspective (Discontinued)](#folderviz-perspective) - This is an experimental perspective which applies some information visualization concepts to presenting your folder and file structures.
 
-## List perspective
+## Default perspective
 
 The most common way of presenting files in a folder is in a list format, which can be found in most file-browsing applications. In the **List Perspective** files are represented as rows of a list.
 
@@ -84,7 +84,7 @@ Double-clicking a folder name will change to that folder, while single-clicking 
 
 > **Note:** The right-click menu options for folders are currently the same as they are for files
 
-## Grid perspective
+### Grid view
 
 An alternative arrangement, commonly found in file browsing applications is the grid. In TagSpaces the **Grid Perspective** offers a resizeable grid with thumbnail previews of certain file formats, for quick and effective browsing.
 

@@ -1,6 +1,69 @@
-# Search files
+# Searching for files and folders
 
-## Search based on filenames
+TagSpaces has an integrated file and folder search functionality. The difference to the classic Desktop Search software is that the search is performed only in the currently opened location or folder. The search is based on a **index**, which is created immediately after the user opens a given location and has the following functionality:
+
+* The search query in the free version consists of two components. The first one is just a simple free text which searched in the index. The second component is a list of tags. At least one of the tags should be assigned to a given file or folder in order to be included in the search results.
+* The search algorithm considers with different weight the following fields from the index.
+  - The file or folder name
+  - The tags assigned to the file or folder
+  - The description added to the file or the folder
+  - The file or folder path
+  - The content of txt, md and html, if the full text search is activated for the current location (TagSpaces PRO only)
+* The search algorithm has a build-in fuzziness, meaning that if the free text search query contains a misspelled word, TagSpaces will try to find files and folder with the best ques.
+* The tag search is strict, without fuzziness, if you are not sure about the exact name of a tag, write in the free text query.
+* The search is case insensitive.
+* The user can switch to the search area by clicking the Ctrl+3 / Cmd+3 key combination (configurable in the Setting).
+
+## Basic search
+In order to provide a boolean search support for tags, the search user interface for tags was split in three input fields:
+* Must contain all of the tags - all of the tags listed here should be attached to the files or directories (**logical AND search**)
+* At least one tag - any file or folder which contains one of the specified here tags will be included (**logical OR search**)
+* None of these tags - entries which have one the tags listed here will be excluded from the search results (**negative search**)
+
+<figure>
+  <img title="Short video showing searching for tags in action" src="https://www.tagspaces.org/content/v3-x/advanced-tag-search.gif" class="img-responsive center-block">
+  <figcaption>Short video showing searching for tags in action</figcaption>
+</figure>
+
+> **Note:** After opening of a certain location, the application starts to index in background all the files and folders from this location recursively. During the indexing time the search is not available to the user, but all other functionalities are accessible. Opening of location containing more the 100000 files could lead to performance issues, during the index or later by search.
+
+### <i class="profeature">pro</i>Advanced search
+
+In addition to the searching by files name and by tag, the search in the PRO versions supports the following features on top:
+
+#### <i class="profeature">pro</i>Search by type
+
+In the file type dropdown you can specify types of the files you want to search. The following groups are supported:
+
+* Pictures and Photos: JPG, PNG, GIF, etc.
+* Documents: PDF, ODF, DOCX, EXL, etc.
+* Notes: MD, TXT, HTML, etc.
+* Audio files: OGG, MP3, WAV, etc.
+* Video files: WEBM, OGV, MP4, etc.
+* Archives: ZIP, RAR, TGZ, 7Z, etc.
+* Bookmarks: URL, LNK, etc.
+* eBook EPUB, MOBI, AZW, PRC, etc.
+
+In addition to that we offer some special filters:
+* Folders - showing only folder
+* Files - showing only files
+* Untagged files or folders - showing only files and folders witch are not tagged
+
+<figure>
+  <img title="Screenshot of the advanced search options" src="https://www.tagspaces.org/content/v3-x/tagspaces-search-type.png" class="img-responsive center-block">
+  <figcaption>Screenshot of the advanced search options</figcaption>
+</figure>
+
+#### <i class="profeature">pro</i>Search by file size
+
+#### <i class="profeature">pro</i>Search by last modified date
+
+#### <i class="profeature">pro</i>Search by time period
+
+#### <i class="profeature">pro</i>Search by GPS coordinates
+
+
+<!-- ## Search based on filenames
 
 TagSpaces has a build in file search functionality. The difference to the classic Desktop Search software is the search is performed only in the currently opened location, since we for now do not index the files. The search has currently the following features:
 
@@ -19,7 +82,7 @@ We have added an options in the settings to limit the maximal search results or 
 
 ![limit search results screenshot](/media/new-search-options.png)
 
-## Advanced search 
+## Advanced search
 
 TagSpaces PRO search is very powerful. It offers users the opportunity to discover easier and faster the right result for them.
 
@@ -63,13 +126,13 @@ In the file type dropdown you can specify a group of files you want to search. T
 
 > **Note** You can use the query shortcut for a given file type directly in the search box, without opening the advanced search dialog. So for example the search query `t:audio coldplay` will give you all audio files containing the word coldplay.
 
-### <i class="profeature">pro</i>Search history 
+### <i class="profeature">pro</i>Search history
 
 For quick access TagSpaces PRO keeps a history of your last 15 search queries in a list. This list can be cleaned by selecting the last item in it called "Clear search history" in it.
 
 ![Advanced search menu with activated search history and search by file types](media/advanced-search-pro.png)
 
-## <i class="profeature">pro</i>Text extraction and full text search <sup style="color: gray">&nbsp;ALPHA</sup>{#fullTextSearch} 
+## <i class="profeature">pro</i>Text extraction and full text search <sup style="color: gray">&nbsp;ALPHA</sup>{#fullTextSearch}
 
 After activating the text extraction checkbox in the settings, TagSpaces PRO will try to extract the text content of files you are currently browsing. This text content is saved in the hidden `.ts` folder and is considered later by the search. Since this is a early experimental feature, please don't relay only on ly on it.
 
@@ -84,3 +147,4 @@ These file formats are currently supported:
 ![Activating the text extraction functionality](/media/activating-text-extraction.png)
 
 > **Warning** Please note, that this is still a very experimental functionality which on directories with many files, may lead to freezing of the application.
+-->

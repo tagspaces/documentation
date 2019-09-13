@@ -53,7 +53,7 @@ Folder navigation is simple and intuitive. You will be presented with a grid-lis
 > **Hint:** A neat trick, that allows for a lot more advanced navigation is to list the subfolders of any folder higher up on the path, allowing you to navigate straight there. To list the subfolders of any item, click on the black folder icon, next to a folder's name.
 
 
-### Folder context menu
+<!-- ### Folder context menu
 
 Clicking on the *overflow* button besides folder list items, will open up a context menu, with directory operations. From here you can reload folder contents, rename or delete the folder, Add a new subfolder, or open it in your operating system's default file manager.
 
@@ -74,8 +74,9 @@ An alternative to the left panel folder navigation view is the interactive path 
 Clicking on a folder in the alternative navigator will open a context menu, where you can execute some basic folder operations and navigate to any subfolders located in the selected folder. This means, if you need to navigate back to a folder, using the interactive path, you should select its parent folder, and select the desired folder from the options menu.
 
 ![alternative folder navigator](/media/folder-navigation-alternative.png)
+-->
 
-### Navigating fodlers from perspectives
+### Navigating folders from perspectives
 
 Starting with **TagSpaces 2.8**, it is possible to navigate through folders straight from the file list or grid of the **List Perspective** and **Grid Perspective** views respectively. To learn more about this features, please refer to the [File Browsing](browsing-files.html) article.
 

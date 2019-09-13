@@ -1,6 +1,8 @@
 # Introduction
 
-This is the documentation for TagSpaces products as of **version 3**.
+This is the first draft of documentation for TagSpaces products as of **version 3**. Please note, that there are still many places where we show content and screenshot from the old version 2 of the app.
+
+> **Warning:** This documentation has clearly a work in progress status!
 
 ## About TagSpaces
 TagSpaces is an open source, cross-platform, no backend, no login, personal data manager, and file navigator. It helps you organize your files, photos and other documents with tags on different platforms and/or devices, according to your own preferences and following your own logic, by using the same smart and friendly interface everywhere. The short introductory video below shows TagSpaces in action:
@@ -18,7 +20,7 @@ The following few slides explain the basics of the project. To navigate the pres
 * **Community desktop version** - the main, community developed edition of TagSpaces
 * **PRO desktop version** - extended solution based on the community version for advanced users
 * **Web Clipper as Firefox addon** - a web clipper allowing the saving of whole webpages, webpage fragments and screenshot as local files
-* **Web Clipper as Chrome extension** - same as the web clipper for Firefox, but including a file browser allowing you to navigate you local files and project them to a Google's Chromecast.
+* **Web Clipper as Chrome extension** - same as the web clipper for Firefox
 * **Android app ** - an app offering most of the features from the community desktop version on a Android device (currently in development)
 <!-- * **Android Pro app** - extended version of the Android app offering some features of the Desktop PRO version (currently in development) -->
 * **Web self hosting edition** - A package for self hosting on top of a any WebDAV server such as Nextcloud or ownCloud.
@@ -91,7 +93,7 @@ This documentation project is hosted on [GitHub](https://github.com/tagspaces/do
 ### Credits
 
 **Original text and images** in this documentation were **created and edited by**:
- * [**Attila Orosz**](https://www.linkedin.com/in/attila-orosz-43832114) - main editor of the current version, you can contact him via [email](mailto:attila.orosz@mail.com).
+ * [**Attila Orosz**](https://www.linkedin.com/in/attila-orosz-43832114) - main editor of the documentation for version 2 of the product, you can contact him via [email](mailto:attila.orosz@mail.com).
  * [**Ilian Sapundshiev**](https://www.ilian.me) - initiator of the TagSpaces project
 
 Articles published on the [TagSpaces Blog](https://www.tagspaces.org/blog/), served as the **basis upon which this documentation was built**. Fragments of the original text can still be found in the documentation, without marking the original author.
