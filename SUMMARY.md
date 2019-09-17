@@ -22,7 +22,7 @@
     * [Keybindings](ui/keybindings.md)
     * [Settings ⚒](ui/settings.md)
     * [Internationalization](ui/i18n.md)
-* Browsing Files
+* Browsing Files ⚒
     * [Overview](browsing-files.md#perspectives-overview)
     * [Default Perspective ⚒](browsing-files.md#list-perspective)
     * [FolderViz Perspective](browsing-files.md#folderviz-perspective)
@@ -49,24 +49,13 @@
 * [Searching Files & Folders](search.md)
     * [Basic search](search.md#basic-search)
     * [Advanced search (PRO)](search.md#proadvanced-search)
-* Commercial Products
-    * [TagSpaces PRO](products/pro.md)
-    * [TagSpaces Enterprise](products/enterprise.md)
 
-## Common use cases
-* [Managing Files ⚒](tutorials/filemanagement.md)
-* [Note-taking ⚒](tutorials/notetaking.md)
-* [Organizing Photos ⚒](tutorials/photomanagement.md)
+## Tutorials
 * [Web Clipping](tutorials/webclipping.md)
-* [Playing Local Media ⚒](tutorials/playing-media.md)
-* [Bookmark Manager](tutorials/bookmark-manager.md)
-* [Personal Wiki ⚒](tutorials/personal-wiki.md)
 * [Syncing data ⚒](tutorials/file-syncing.md)
 * [Sharing tag libraries](tutorials/sharing-tags.md)
-* [Setup Enterprise Edition ⚒](tutorials/enterprise-edition-setup.md)
+* [Cloud Locations in PRO ⚒](tutorials/s3-bucket-locations.md)
 * [Setup Web Edition](tutorials/web-edition-setup.md)
-
-## Developers
 * [Meta file formats specification](dev/metafileformats.md)
 * [Extension development guide](dev/extension-development-guide.md)
 

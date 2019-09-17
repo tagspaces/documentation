@@ -140,17 +140,10 @@ To create a new tag group, click on **Create Tag Group**, right underneath the t
 
 Selecting the **Import tags** option will allow you to import predefined predefined tags, which you have previously created in TagSpaces. This option takes a `JSON` file, previously exported from (probably another instance of) TagSpaces, and imports all the tags contained within, into your system. This can be useful, when you use TagSpaces on multiple systems, or you work collaboratively with others and wish to share the same tags library. To learn more about sharing tags between systems and people, refer to the [Sharing tag libraries](/tutorials/sharing-tags.html) tutorial article.
 
-#### Restoring original tag groups
-
-Starting with **TagSpaces 2.8** you can restore tag groups to their original state by opening the *Settings* and pressing the button *Recreate Original Tag Groups* on the *General* tab.
-
-![](/media/restore_tag_groups.png)
-
 ### The tag context menu
 
 Each tag also offers its own context menu, accessible by clicking or right clicking on the tag. The displayed context menu will be slightly different depending on whether you've accessed it from the left panel tag library, or form a tag that is already added to a file. When accessed from the left panel, you will be presented with four options:
 
-* **Tag selected files**  -  which will allow you to apply a tag to any number of files selected, at once
 * **Show Files With This Tag**  -  is essentially a tag filter you can apply, so that only files that have the selected tag applied to them, will show.
 * **Edit tag**  -  will let you change the tag's name, or background color and text color, and key bindings.
 * **Delete tag**  -  will remove the tag form the library
@@ -187,6 +180,7 @@ The file browsing area normally takes up he majority of the user interface. This
 
 When a file is opened, the main UI area splits into two, the rightmost page becoming the **file preview area**. TagSpaces is capable of natively displaying different file types, from markdown, through HTML and docx, to PDF, epub, or images files. To learn more about all the viewable and editable files, and tagSpaces's full file handling capacity, navigate to the [Viewing Files section](viewing-files.html)
 
-## Floating Action Button
+<!-- ## Floating Action Button
 
 At let lower right corner of the interface, you will find a **Floating Action Button** (or FAB), first introduced in Google's material design specification. The FAB you find TagSpaces slightly differs from he original material idea, inasmuch as it does not only allow a single action to be performed, but rather houses an overflow menu, which opens a contextually aware dialog. What the dialog offers depends on what is currently open, or what view the focus is on. The various menu options of the FAB overflow menu will be discussed in more detail, where relevant.
+-->

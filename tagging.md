@@ -2,17 +2,47 @@
 
 <!-- toc -->
 
-
 ## Motivation
 Tagging and tags are a fresh approach to categorizing and grouping things. Tagging allows the user to label thing with their own words. They don’t need to conform to keywords or categories created by somebody else. Tagging allows you to describe what you’re seeing in your own words, to imbue the experience with your own meaning. Tagging saves your time, and can makes searching for a specific song, movie, book, document, note, or whatever you’re looking for, much easier and faster.
 
 Tags are personal things. Tagging something is your emotional response and not simply a taxonomic decision. With using tags, you have the control to define things for yourself, and on the web -- not only for music, literature, games and movies, but also public websites, data repositories and consultations. Tagging is a new indirect way of control to express your mind and to name things your way -- you can call it a form of "freedom of speech", if you want to go that far. Tagging is a power to create your own genres in movies, music popular culture, or basically anywhere.
 
-## File Tagging based on filename
+Key functionality in TagSpaces is the ability to add tags to files and folders. In comparison to similar product, **TagSpaces does not use a central database for storing the tags** but rather offers to alternative ways for saving this meta information, which are described in the following sections.
 
-TagSpaces supports tagging of files in a platform agnostic way. It uses the name of the file to save this kind of meta information. As an example if you want to add the tags `vacation` and `alps` to a image named `IMG-2653.jpg`, TagSpaces will simply rename it to `IMG-2653[vacation alps].jpg`. File renaming is of course a rather controversial decision (see our users [discussion](https://tagspaces.uservoice.com/forums/213931-general/suggestions/7176956-don-t-reinvent-the-wheel-use-metadata-systems-tha)), which has its own limitations (e.g. on some operating systems the file path length is limited to ca. 256 characters), but it allows a portable way for adding tags on every platform, be it offline, online, or even cloud based.
+## Tagging based on filenames
+TagSpaces supports tagging of files in a cross platform way. It uses basically the name of the file to save this kind of meta information. As an example if you want to add the tags `vacation` and `alps` to a image named `IMG-2653.jpg`, the application will simply rename it to `IMG-2653[vacation alps].jpg`. File renaming is of course very controversial solution, with its own limitations (on some operating systems the file path length is limited to ca. 256 characters). Once embedded in the name of file, the tag stick there and can be removed only by file renaming. **This makes the tagging "durable" and portable**. The tags embedded in the name of a file "survives" synchronization across cloud platforms such as Dropbox and Google Drive and can be read by TagSpaces or any other file searching software on Windows, Mac OS, Linux or Android.
 
 ![Filename tagging](media/filename-tagging.png)
+
+## Tagging with sidecar files
+As alternative to saving the tags in the file names, TagSpaces offers saving this kind of data in a sidecar files located in a hidden `.ts` folder. This method is used for adding tags to folders and can be used for adding tags to files. The activation of this kind tagging for files, can be done in the settings of the application as shown in the following screenshot.
+
+> **Note:** Please note that by default the `.ts` folder is hidden only on OSX and Linux operating systems, on Windows folders with dot in front of their name are not hidden by default. Starting with version 3.0, TagSpaces makes hidden the `.ts` folder under Windows automatically.
+
+<figure>
+  <img title="screenshot showing where to activate the saving of the tagging information in sidecar files" src="/media/tagspaces-sidecartagging-activation.png" class="img-responsive center-block">
+  <figcaption>Activating the persisting of tags for files in sidecar files</figcaption>
+</figure>
+
+After the activation, the application will created for every tagged file an extra file having the same file name as the source file, but with a additional JSON extension. For example after tagging some files in some of your file locations you will have a similar file structure.
+
+    ~ location (with your files)
+    ├── subfolder
+    │   ├── .ts
+    │   │   ├── file1.jpg.json
+    │   │   └── file2.pdf.json
+    │   ├── file1.jpg
+    │   └── file2.pdf
+    ├── .ts
+    │   ├── file3.png.json
+    │   └── file4.docx.json
+    ├── file3.png
+    └── file4.docx
+
+The main advantage of this solution is that the name of the files is not changed after tagging and there is theoretically no limit in the  number of tags you can add to a given file. If you move or rename tagged files in TagSpaces it will take care of the sidecar file, which will also renamed or moved in the appropriate folder. But if you move or rename this file in an external file manager, you have to move or rename the sidecar files by hand. The same hold true for the deleting a file from an external application. It will not automatically delete the sidecar file in the `.ts` folder. These drawbacks makes the tagging with sidecars less robust and future proof.
+
+> **Note:** If you want to have the files located in the `.ts` folder synched with some cloud service such as Dropbox or Google Drive you have to enable the synching of hidden folders and files.
+
 
 ## Timestamp as default tag
 
@@ -114,7 +144,7 @@ besides being able to easily modify date, or date/time tags on their respective 
 * **Date Ranges:** 20160531-20160603
 * **DateTime Ranges**: 20160529~124532-20160529~154500
 
-### <i class="profeature">pro</i> Geo tags
+### <i class="profeature">pro</i> Geo location tagging
 
 The geo tag is a special kind of smart tag, available in TaSpaces **PRO**, that allows tagging files with precise geolocation coordinates. When You drag the tag "geo" on a file, the **Edit tag** popup window with the Geo Location tab will open, showing a map from OpenStreetmap. You can drop a pin anywhere, and move it around, it automatically becomes a tag in the format of `latitude+longitude`, e.g. `47.2792290+18.9843750` This tag will then be applied to the file and treated as a geo-smarttag by TagSpaces
 
@@ -141,38 +171,3 @@ These special tags are useful for organising files by either importance or quali
 * **5star** - `t 5` -->
 
 Users can easily extend these tags: You can simply create a new tag and add it to e.g. the priority group, give it a name a colour and a key binding, and you are all set.
-
-## <i class="profeature">pro</i>File Tagging based on sidecar files {#file-tagging-based-on-sidecar-files}
-
-As alternative to saving the tagging information in the file names, TagSpaces PRO offers saving this kind of meta information in a sidecar files located in a hidden `.ts` folder. This option can be activated in the settings of the application as shown in the following screenshot.
-
-> **Note** Please note that by default the `.ts` folder is hidden only on OSX and Linux operating systems, on Windows folders the preceding dot in front of the filename will not mark the file as hidden by default. Setting these folders as hidden on Windows can be achieved manually or with custom script if needed.
-
-![](https://www.tagspaces.org/content/v2-2/activating-tags-sidecars.png)
-
-After the activation, the application will create an extra file for every tagged file, having the same file name as the source file but with the additional JSON extension. For example after tagging some files in some of your file locations you will have a similar file structure.
-
-
-    ~ location (with your files)
-    ├── subfolder
-    │   ├── .ts
-    │   │   ├── file1.jpg.json
-    │   │   └── file2.pdf.json
-    │   ├── file1.jpg
-    │   └── file2.pdf
-    ├── .ts
-    │   ├── file3.png.json
-    │   └── file4.docx.json
-    ├── file3.png
-    └── file4.docx
-
-
-The main advantage of this solution is that the name of the files is not altered by tagging and there is theoretically no limit to the amount of tags you can add to a given file. However this approach might also has its own drawbacks: If you move or rename tagged files in TagSpaces it will take care of the sidecar file, which will also be renamed or moved in the appropriate folder. But if you move, rename, or delete a file in an external applicaiton, you have to move, rename, or delete the matching sidecar file in the `.ts` folder manually.
-
->**Hint** If you want to have the files located in the `.ts` folder synched with some cloud service such as Dropbox or Google Drive, you will have to enable the synching of hidden folders and files.
-
-## Folder Tagging {#folder-tagging}
-
-It is possibly to apply tags to folders. Folders can be tagged in the same way as files, by drag and drop or with tagging dialog.
-
-![](/media/folder-tagging.png)
