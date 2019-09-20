@@ -13,7 +13,7 @@
     "prepare": "npm run update-ext && gitbook build . docs",
     "prepare-extended": "npm run optipng && npm run update-ext && gitbook build . docs",
     "optipng": "optipng media/*png",
-    "serve": "gitbook serve",
+    "start": "gitbook serve",
     "pdf": "gitbook pdf ./ ./tagspaces-manual[v3].pdf",
     "deploy": "aero deploy"
   },

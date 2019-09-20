@@ -2,7 +2,7 @@
 
 To access the settings dialogue, just click on the gears icon at the bottom of the left side panel
 
-![](media/main-settings-image.png)
+![](/media/main-settings-image.png)
 
 The dialogue has five tabs, which will be described in order:
 
@@ -10,7 +10,7 @@ The dialogue has five tabs, which will be described in order:
 
 Most of the TagSpaces' common settings can be accessed from this tab.
 
-![](media/general-full.png)
+![Setting - General Tab](/media/general-full.png)
 
 * **Interface language (1)** - TagSpaces has been translated to a variety languages. Choose your preference here
 * **Show files/directories with a dot(.) in front of the name (2)** - This will allow the browsing of hidden files in UNIX-like systems (Linux, OSX, BSD, etc.)
@@ -32,11 +32,7 @@ The following feature are still considered **experimental**, change them at your
 * **Tag delimiter (15)** - By default, TagSpaces used a `space` to mark tag boundaries (learn more [here](tagging.md)).  Here you can change this to another character.
 * **Prefix for the tag container (16)** - By default, TagSpaces does not use a prefix to show that the next part of the filename contains tags (learn more [here](tagging.md)). here you can change that behaviour.
 
-## <i class="profeature">pro</i>Pro features {#pro-features}
-
-This tab is only available in TagSpaces PRO, allowing users to control PRO specific features.
-
-![](media/pro-full.png)
+<!-- ## <i class="profeature">pro</i>Pro features {#pro-features}
 
 The available options are:
 
@@ -45,10 +41,10 @@ The available options are:
 * **Enable the use of a hidden folder(.ts) for storing meta data and thumbnails** and  **Use sidecar files in the hidden folders for saving meta data (e.g. tags) (3)** - When used together, these two options will allow the users to store metadata like tags, separately from files themseélves. Useful, when filenames cannot be changed.
 * **Enable thumbnails generation (4)** - will generate and store persistent thumbnails of image and file previews with the set parameters, allowing for faster navigation in any perspective that might use hem (e.g. **Grid Perspective**)
 
-
 The following feature is still considered **experimental**, change it at your own risk:
 
 * **Enable text extraction from files** will enable deep search functionality, to find keywords in file contents. This option can considerably slow down search performance!
+
 
 ## Perspectives
 
@@ -56,13 +52,14 @@ Here you can set up which perspectives should be shown in the perspectives dropd
 
 >**Note:** To learn more about Perspectives, refer to the [**File browsing**](browsing-files.md) section
 
-![](media/perspectives.png)
+![](/media/perspectives.png)
+-->
 
 ## File types
 
 Here you can choose which viewer, and editor to launch for each supported file type.
 
-![](media/file-types-full.png)
+![](/media/file-types-full.png)
 
 When you click on a file type's viewer dropdown, you will be offered a list of all installed viewer plugins (**1**).
 
@@ -72,17 +69,16 @@ When you click on a file type's editor dropdown, you will be offered a list of a
 
 >**Note:** To learn more about file previews, refer to the [**Editing Files**](editing-files.md) section.
 
-To add a formerly unrecognised extension, just use the *+Add New File Extension* button **3**).
-
+To add a formerly unrecognized extension, just use the *+Add New File Extension* button **3**).
 
 ## Key bindings
 
 Under the key bindings tab, you can view and edit all the available key bindings, excluding those assigned to tags.
 
-![](media/key-bindings-1.png)
+![](/media/key-bindings-1.png)
 
 Pressing the instructions button (**1**) will open a short overview of the syntax to write your own key bindings.
 
-![](media/key-bindings-2.png)
+![](/media/key-bindings-2.png)
 
 >**Note:** To learn more about tag-specific key bindings, refer to the [Tagging](/tagging.md#tagging-using-keyboard-shortcuts) section.

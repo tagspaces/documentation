@@ -1211,20 +1211,77 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="cloud-locations-in-tagspaces-pro">Cloud Locations in TagSpaces PRO</h1>
-<h2 id="setup-a-bucket-in-aws-s3">Setup a bucket in AWS S3</h2>
-<ul>
-<li>Create a private S3 bucket</li>
-<li>Set the CORS setting if needed</li>
-<li>Create a user for accessing this bucket in AWS IAM</li>
-<li>Install AWS CLI</li>
-<li><p>Upload the data</p>
-<p>  aws s3 sync local-bucket s3://your-bucket-name</p>
-</li>
-</ul>
+                                <h1 id="cloud-locations-in-tagspaces-pro-based-on-aws-s3">Cloud Locations in TagSpaces PRO based on AWS S3</h1>
+<h2 id="motivation">Motivation</h2>
+<p>TagSpaces PRO provides the ability to connect AWS S3 compatible buckets as locations. This offers many new capabilities and use cases.</p>
+<h2 id="create-a-bucket-in-aws-s3">Create a bucket in AWS S3</h2>
+<p>In order to create a AWS S3 bucket you have to go the Amazon Web Services <a href="https://aws.amazon.com/" target="_blank">website</a> and register an account there. Once you are register and logged in go the services section and choose from there the S3, as shown in the next screenshot</p>
+<p><img src="../media/aws/aws-s3-start.png" alt="Choose AWS S3"></p>
+<p>And then in order to create a new bucket choose the <em>Create Bucket</em> button.</p>
+<p><img src="../media/aws/aws-s3-create.png" alt="Create S3 bucket"></p>
+<p>On the next screen you can choose the name of the bucket and the AWS region for the hosting. Be careful by choosing the name of the bucket, because a later rename is not possible.</p>
+<p><img src="../media/aws/aws-s3-create-name.png" alt="Create S3 bucket, choose name and region"></p>
+<p>Activating the encryption is an optional, but recommended step.</p>
+<blockquote>
+<p>Note that this is a server side and not an end to end encryption.</p>
+</blockquote>
+<p><img src="../media/aws/aws-s3-create-encryption.png" alt="Create S3 bucket encryption"></p>
+<p>Leave the default setting for access.</p>
+<p><img src="../media/aws/aws-s3-create-access.png" alt="Create S3 bucket access settings"></p>
+<p>Review the settings and click the <em>Create bucket</em> button.</p>
+<p><img src="../media/aws/aws-s3-create-overview.png" alt="Review S3 bucket"></p>
+<p>Once you have successfully created the bucket you should see the following screen.</p>
+<p><img src="../media/aws/aws-s3-create-success.png" alt="Create S3 bucket success"></p>
+<h2 id="set-the-cors-setting-of-the-bucket">Set the CORS setting of the bucket</h2>
+<p>This is an optional step, needed only if you want to access the bucket from TagSpaces Enterprise edition.</p>
+<p><img src="../media/aws/aws-s3-cors.png" alt="Create S3 bucket"></p>
+<p>The XML config, can be copied from the section bellow.</p>
+<pre class="language-"><code><span class="token prolog">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;</span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>CORSConfiguration</span> <span class="token attr-name">xmlns</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>http://s3.amazonaws.com/doc/2006-03-01/<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>CORSRule</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>AllowedOrigin</span><span class="token punctuation">&gt;</span></span>*<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>AllowedOrigin</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>AllowedMethod</span><span class="token punctuation">&gt;</span></span>GET<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>AllowedMethod</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>AllowedMethod</span><span class="token punctuation">&gt;</span></span>HEAD<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>AllowedMethod</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>AllowedMethod</span><span class="token punctuation">&gt;</span></span>PUT<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>AllowedMethod</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>AllowedMethod</span><span class="token punctuation">&gt;</span></span>DELETE<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>AllowedMethod</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>MaxAgeSeconds</span><span class="token punctuation">&gt;</span></span>3000<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>MaxAgeSeconds</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>AllowedHeader</span><span class="token punctuation">&gt;</span></span>*<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>AllowedHeader</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>CORSRule</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>CORSConfiguration</span><span class="token punctuation">&gt;</span></span>
+</code></pre><blockquote>
+<p>You can remove the <em>PUT</em> and <em>DELETE</em> lines, if you want to disable the writing and deleting operation from TagSpaces Enterprise.</p>
+<p>It is recommended to put in the <em>AllowedOrigin</em> line, the domain from which you will access this bucket. E.g.: <a href="https://example.com" target="_blank">https://example.com</a></p>
+</blockquote>
+<h2 id="create-user-for-the-access-of-the-bucket">Create user for the access of the bucket.</h2>
+<p>Accessing the bucket with your account is not recommended.
+Create a user for accessing this bucket in AWS IAM</p>
+<h2 id="upload-files-to-your-bucket">Upload files to your bucket</h2>
+<p>The easies way to upload files to your bucket is to use the build upload functionality, as seen in the next screenshot. But first you should create a folder in the bucket, which will serve as a root folder. You can name if for example <em>rootfolder</em>.</p>
+<p><img src="../media/aws/aws-s3-create-rootfolder.png" alt="Create S3 bucket root folder"></p>
+<p>Now you can upload files using the web interface.</p>
+<p><img src="../media/aws/aws-s3-upload.png" alt="Create S3 bucket"></p>
+<p>Alternatively you can use the AWS CLI (command line tools), with the following command.</p>
+<pre class="language-"><code>aws s3 sync local-bucket-folder s3://your-bucket-name/rootfolder
+</code></pre><p>This will sync all files and folder from your local folder called <em>local-bucket-folder</em> to the subfolder with the name <em>rootfolder</em> in the bucket your bucket <em>your-bucket-name</em></p>
+<p>You can find out how what is <em>AWS CLI</em> and how to install it for your operating system from this <a href="https://docs.aws.amazon.com/en_pv/cli/latest/userguide/cli-chap-welcome.html" target="_blank">link</a>.</p>
 <h2 id="create-s3-location-in-tagspaces-pro">Create S3 location in TagSpaces PRO</h2>
-<h2 id="setup-web-portal-hosting-bucket">Setup web portal hosting bucket</h2>
-<h2 id="hosting-the-web-portal-on-a-webserver">Hosting the web portal on a webserver</h2>
+<p>Start TagSpace and click on the <strong>Connect a location</strong> button from the locations section. Then you should select the <em>AES S3 Object Store</em> radion button, as shown in the following screenshot.</p>
+<p><img src="../media/aws/tagspaces-create-s3-location.png" alt="Create S3 location"></p>
+<p>Here you should enter the following parameters:</p>
+<ul>
+<li><strong>Location Name</strong> - this is a free text with which you will refer your location in this TagSpaces installation</li>
+<li><strong>Location Path</strong> - is the name of the root folder from the location we have previously create</li>
+<li><strong>Access Key</strong> - is the key of the IAM user</li>
+<li><strong>Secret Access Key</strong> - is the secret key of the IAM user</li>
+<li><strong>Bucket Name</strong> - self explaining ...</li>
+<li><strong>Region</strong> - is the region of hosting for your bucket</li>
+</ul>
+<p>Once you click <strong>OK</strong> the location will be create and its content should be listed in TagSpaces.</p>
+<p>There are some advanced settings with can be useful for S3 locations.</p>
+<ul>
+<li><strong>Open this location in read-only mode</strong> - this will switch the UI interface of TagSpaces in readonly mode. It is particularly useful for location to which the IAM user has only read-only access.</li>
+<li><strong>Switch to manual index creation with persistend index</strong> - this option will disable the indexing of the location on its opening. Instead it will try to load the previously create index file. This is useful for large locations with many files, where the initial indexing could take a lot of time.</li>
+</ul>
 
                                 
                                 </section>
@@ -1268,7 +1325,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Cloud Locations in PRO ⚒","level":"2.4","depth":1,"next":{"title":"Setup Web Edition","level":"2.5","depth":1,"path":"tutorials/web-edition-setup.md","ref":"tutorials/web-edition-setup.md","articles":[]},"previous":{"title":"Sharing tag libraries","level":"2.3","depth":1,"path":"tutorials/sharing-tags.md","ref":"tutorials/sharing-tags.md","articles":[]},"dir":"ltr"},"config":{"plugins":["edit-link","anchorjs","prism","-highlight","toc","sitemap","ga","expandable-chapters"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"prism":{},"toc":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"sitemap":{"hostname":"http://docs.tagspaces.org/"},"ga":{"configuration":{"anonymizeIp":true},"token":"UA-90842098-1"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":"Edit","base":"https://github.com/tagspaces/documentation/edit/master"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchorjs":{},"expandable-chapters":{}},"search":{"maxIndexSize":1000000000},"theme":"default","author":"TagSpaces UG (haftungbeschraenkt)","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"TagSpaces Documentation","gitbook":"3.2.2"},"file":{"path":"tutorials/s3-bucket-locations.md","mtime":"2019-09-17T10:20:58.562Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2019-09-17T10:24:35.113Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Cloud Locations in PRO ⚒","level":"2.4","depth":1,"next":{"title":"Setup Web Edition","level":"2.5","depth":1,"path":"tutorials/web-edition-setup.md","ref":"tutorials/web-edition-setup.md","articles":[]},"previous":{"title":"Sharing tag libraries","level":"2.3","depth":1,"path":"tutorials/sharing-tags.md","ref":"tutorials/sharing-tags.md","articles":[]},"dir":"ltr"},"config":{"plugins":["edit-link","anchorjs","prism","-highlight","toc","sitemap","ga","expandable-chapters"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"prism":{},"toc":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"sitemap":{"hostname":"https://docs.tagspaces.org/"},"ga":{"configuration":{"anonymizeIp":true},"token":"UA-90842098-1"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":"Edit","base":"https://github.com/tagspaces/documentation/edit/master"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchorjs":{},"expandable-chapters":{}},"search":{"maxIndexSize":1000000000},"theme":"default","author":"TagSpaces UG (haftungbeschraenkt)","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"TagSpaces Documentation","gitbook":"3.2.2"},"file":{"path":"tutorials/s3-bucket-locations.md","mtime":"2019-09-20T15:06:35.033Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2019-09-20T15:14:32.992Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

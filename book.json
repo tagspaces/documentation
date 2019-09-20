@@ -27,7 +27,7 @@
       }
     },
     "sitemap": {
-        "hostname": "http://docs.tagspaces.org/"
+        "hostname": "https://docs.tagspaces.org/"
     }
   }
 }

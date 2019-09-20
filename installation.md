@@ -5,7 +5,7 @@ description: Here you will learn how to install and run TagSpaces
 # Installation and Setup
 
 ## Installing Windows version {#windows}
-The Windows version of TagSpaces is distributed as `zip` file, which can be downloaded for [32bit](https://www.tagspaces.org/downloads/tagspaces-win32.zip) and for [64bit](https://www.tagspaces.org/downloads/tagspaces-win64.zip) versions of Windows, depending on your system. Then you have to just unzip the downloaded file in a folder of your choice somewhere on your system. In the unpacked folder you will find a file called `tagspaces.exe`, which can be executed with double click.
+The Windows version of TagSpaces is distributed as `zip` file, which can be downloaded for [64bit](https://www.tagspaces.org/downloads/tagspaces-win64.zip) versions of Windows, depending on your system. Then you have to just unzip the downloaded file in a folder of your choice somewhere on your system. In the unpacked folder you will find a file called `tagspaces.exe`, which can be executed with double click.
 
 ### Updating the Windows version
 Just exchange the content of your current installation, with the content from the zip-file of a newer release. You don't have to worry about your tag library and locations since they are persisted in the users home folder.
@@ -19,7 +19,7 @@ For macOS 10.10 or later you have to download the [64bit](https://www.tagspaces.
 Just exchange the content of your current installation, with the content from the zip-file of a newer release. You don't have to worry about your tag library and locations since they are persisted in the users home folder.
 
 ## Installing Linux version {#linux}
-The Linux version of TagSpaces is distributed as `tar.gz` file, which can be downloaded for [32bit](https://www.tagspaces.org/downloads/tagspaces-linux32.tar.gz) and for [64bit](https://www.tagspaces.org/downloads/tagspaces-linux64.tar.gz) Linux versions, depending on your system. Then you have to just unpack the downloaded file in a folder of your choice somewhere on your system. In the unpacked folder you will find a file called `tagspaces`, which can be executed with double click or in a terminal. We also offer 64bit [deb](https://www.tagspaces.org/downloads/tagspaces-amd64.deb) and [rpm](https://www.tagspaces.org/downloads/tagspaces-amd64.rpm) packges for respectively Debian and Red Hat based distributions.
+The Linux version of TagSpaces is distributed as `tar.gz` file, which can be downloaded for [64bit](https://www.tagspaces.org/downloads/tagspaces-linux64.tar.gz) Linux versions, depending on your system. Then you have to just unpack the downloaded file in a folder of your choice somewhere on your system. In the unpacked folder you will find a file called `tagspaces`, which can be executed with double click or in a terminal. We also offer 64bit [deb](https://www.tagspaces.org/downloads/tagspaces-amd64.deb) package for Debian/Ubuntu based distributions.
 
 ### Updating the Linux version
 Just exchange the content of your current installation, with the content from the tar.gz-file of a newer release. You don't have to worry about your tag library and locations since they are persisted in the users home folder.
@@ -28,7 +28,7 @@ Just exchange the content of your current installation, with the content from th
 You can install the Android app directly from the [Google Play Store](https://play.google.com/store/apps/details?id=org.tagspaces.androidle).
 
 ### Updating the Android app
-Once we publish a newer version of the Androi app, it will be automatically installed on your mobile device within the following days.
+Once we publish a newer version of the Android app, it will be automatically installed on your mobile device within the following days.
 
 ## Installing the Firefox Addon {#firefox}
 Download the [Add-on for Firefox](https://addons.mozilla.org/en-us/firefox/addon/tagspaces/). Open the **Add-on tab** in Firefox from the main menu and then click on the **Add-on** puzzle icon, or simply type `ctrl+shift+a` or `command+shift+a`. In the opened new tab, go to the settings dropdown on the left of the search field and select **Install Add-on From File...**. Then choose the downloaded file and follow the instructions.
