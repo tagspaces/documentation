@@ -35,8 +35,8 @@ Once you have successfully created the bucket you should see the following scree
 
 ![Create S3 bucket success](/media/aws/aws-s3-create-success.png)
 
-## Set the CORS setting of the bucket
-This is an optional step, needed only if you want to access the bucket from TagSpaces Enterprise edition.
+## Set the CORS settings of the bucket
+This is an optional step, needed only if you want to access the bucket from [TagSpaces Enterprise](https://www.tagspaces.org/products/enterprise/) edition.
 
 ![Create S3 bucket](/media/aws/aws-s3-cors.png)
 
@@ -61,11 +61,87 @@ The XML config, can be copied from the section bellow.
 
 > It is recommended to put in the *AllowedOrigin* line, the domain from which you will access this bucket. E.g.: https://example.com
 
-## Create user for the access of the bucket.
-Accessing the bucket with your account is not recommended.
-Create a user for accessing this bucket in AWS IAM
+## Create user for accessing the bucket.
+Accessing the bucket with the credentials from your main account is not recommended. That's in this section we will guide through the process of user creation in the AWS IAM service. After successfully creating the user here, you will be able to use it for accessing the bucket from TagSpaces.
 
-## Upload files to your bucket
+As first step the [AWS IAM](https://console.aws.amazon.com/iam/) service should be opened.
+![Open IAM service](/media/aws/aws-iam-start.png)
+
+Here you can click on the **Users** section, ash shown in the screenshot.
+![IAM service overview](/media/aws/aws-iam-overview.png)
+
+Then you have to click on the **Add user** button, in order to start the user creation process.
+![IAM create user](/media/aws/aws-iam-create-user.png)
+
+And enter the **name** and select the type of access for this user. In order to use this user for API call, you have to enable the **Programmatic access**.
+![Set user name in IAM](/media/aws/aws-iam-user-name.png)
+
+In the next steps you have to set the permission for this user, by creating a custom policy. Please select the **Attach existing policies directly** and then click on the **Create policy** button.
+![Set user policy in IAM](/media/aws/aws-iam-user-policy.png)
+
+In newly opened browser tab with the policy editor, click on the JSON section.
+![Create user policy in IAM](/media/aws/aws-iam-policy-creation.png)
+
+There you can enter and adjust your policies. The following JSON snipped, is a policy for a user who can just list and retrieve object (read-only user) from the **your-bucket-name** bucket. You should adjust the name of the bucket to suite your setup.
+
+Policy for read-only user:
+
+    {
+        "Version": "2012-10-17",
+        "Statement": [
+            {
+                "Sid": "VisualEditor0",
+                "Effect": "Allow",
+                "Action": [
+                    "s3:ListBucket",
+                    "s3:GetObject"
+                ],
+                "Resource": [
+                    "arn:aws:s3:::your-bucket-name",
+                    "arn:aws:s3:::your-bucket-name/*"
+                ]
+            },
+            {
+                "Sid": "VisualEditor1",
+                "Effect": "Allow",
+                "Action": "s3:GetAccountPublicAccessBlock",
+                "Resource": "*"
+            }
+        ]
+    }
+
+Policy for user with write access:
+
+
+    {
+        "Version": "2012-10-17",
+        "Statement": [
+            {
+                "Sid": "VisualEditor0",
+                "Effect": "Allow",
+                "Action": [
+                    "s3:ListBucket",
+                    "s3:GetObject"
+                ],
+                "Resource": [
+                    "arn:aws:s3:::your-bucket-name",
+                    "arn:aws:s3:::your-bucket-name/*"
+                    TBD
+                ]
+            },
+            {
+                "Sid": "VisualEditor1",
+                "Effect": "Allow",
+                "Action": "s3:GetAccountPublicAccessBlock",
+                "Resource": "*"
+            }
+        ]
+    }
+
+Once you are ready and have attached the newly created policy to you user, you can finalize the process. On the last screen you will see the **access key ID** and the **secret access key** of the just created user.
+![User creation success IAM](/media/aws/aws-iam-user-success.png)
+
+## Upload files to the bucket
 The easies way to upload files to your bucket is to use the build upload functionality, as seen in the next screenshot. But first you should create a folder in the bucket, which will serve as a root folder. You can name if for example *rootfolder*.
 
 ![Create S3 bucket root folder](/media/aws/aws-s3-create-rootfolder.png)
@@ -82,7 +158,7 @@ This will sync all files and folder from your local folder called *local-bucket-
 
 You can find out how what is *AWS CLI* and how to install it for your operating system from this [link](https://docs.aws.amazon.com/en_pv/cli/latest/userguide/cli-chap-welcome.html).
 
-## Create S3 location in TagSpaces PRO
+## Create cloud location in TagSpaces PRO
 
 Start TagSpace and click on the **Connect a location** button from the locations section. Then you should select the *AES S3 Object Store* radion button, as shown in the following screenshot.
 

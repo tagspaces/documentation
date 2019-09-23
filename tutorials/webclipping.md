@@ -1,4 +1,4 @@
-# Webclipping - collect everything online
+# Web clipping - collect everything online
 
 ## Introduction
 
@@ -41,7 +41,7 @@ In addition to that we offers some features for more advanced use cases such as 
 
 The browser extensions are a practical additions to the desktop applications of TagSpaces, allowing a seamless way to collect locally and organize data from the web.
 
-## <a id="chromeHacks">Fine tunning for Chrome</a>
+## <a id="chromeHacks">Chrome Fine-tuning</a>
 Here you will find some tips and trick for using the TagSpaces extension in the Chrome browser.
 
 ### Enabling the saving of webpages as MHTML
@@ -58,7 +58,7 @@ TagSpaces is a great tool for MHTML file organization on many platforms, because
 
 > **Note** After this activation you will not be able to save website in HTML anymore.
 
-### Adding keyboard shortcut to the webclipper in Chrome
+### Adding keyboard shortcut to the web clipper in Chrome
 At the bottom of the extension management page in the Chrome browser you will find a link named "Keyboard shortcuts". See the red area of the screenshot below.
 
 ![open the chrome extension shortcut configuration](/media/chrome-shortcuts-config.png)
@@ -67,7 +67,7 @@ This link opens a dialog where you can set a direct keyboard shortcut, which wil
 
 ![setting ctrl+s as keyboard shortcut for the web clipper](/media/chrome-set-extension-shortcut.png)
 
-So now I can conviniently save and tags any page by just clicking this shortcut combination.
+So now I can conveniently save and tags any page by just clicking this shortcut combination.
 
 ![web clipper in action](/media/tagspaces-web-clipping.png)
 

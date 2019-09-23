@@ -27,7 +27,7 @@
     * [Default Perspective ⚒](browsing-files.md#list-perspective)
     * [FolderViz Perspective](browsing-files.md#folderviz-perspective)
 * Viewing Files
-    * [File preview ⚒](viewing-files.md#file-previewing)
+    * [File preview ⚒](viewing-files.md#file-preview)
     * [Printing files ⚒](viewing-files.md#printing-files)
 * Creating & Editing Files ⚒
     * [Creating Files](editing-files.md#creating-files)
@@ -52,9 +52,17 @@
 
 ## Tutorials
 * [Web Clipping](tutorials/webclipping.md)
+    * [Basic Features](tutorials/webclipping.md#basic-features)
+    * [Advanced Features](tutorials/webclipping.md#advanced-features)
+    * [Chrome Fine-tuning](tutorials/webclipping.md#chrome-fine-tuning)
 * [Syncing data ⚒](tutorials/file-syncing.md)
 * [Sharing tag libraries](tutorials/sharing-tags.md)
-* [Cloud Locations in PRO ⚒](tutorials/s3-bucket-locations.md)
+* [Cloud Locations in PRO](tutorials/s3-bucket-locations.md)
+    * [Create a S3 bucket](tutorials/s3-bucket-locations.md#create-a-bucket-in-aws-s3)
+    * [Set CORS settings](tutorials/s3-bucket-locations.md#set-the-cors-settings-of-the-bucket)
+    * [Create user](tutorials/s3-bucket-locations.md#create-user-for-accessing-the-bucket)
+    * [Upload files](tutorials/s3-bucket-locations.md#upload-files-to-the-bucket)
+    * [Create cloud location in TS](tutorials/s3-bucket-locations.md#create-cloud-location-in-tagspaces-pro)
 * [Setup Web Edition](tutorials/web-edition-setup.md)
 * [Meta file formats specification](dev/metafileformats.md)
 * [Extension development guide](dev/extension-development-guide.md)
