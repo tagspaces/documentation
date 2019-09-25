@@ -1407,7 +1407,7 @@
         }
     ]
 }
-</code></pre><p>Policy for user with write access:</p>
+</code></pre><p>Policy for user with admin/write access:</p>
 <pre class="language-"><code>{
     &quot;Version&quot;: &quot;2012-10-17&quot;,
     &quot;Statement&quot;: [
@@ -1415,8 +1415,37 @@
             &quot;Sid&quot;: &quot;VisualEditor0&quot;,
             &quot;Effect&quot;: &quot;Allow&quot;,
             &quot;Action&quot;: [
+                &quot;s3:ReplicateObject&quot;,
+                &quot;s3:GetObjectAcl&quot;,
+                &quot;s3:GetObjectVersionAcl&quot;,
+                &quot;s3:PutObjectTagging&quot;,
+                &quot;s3:DeleteObject&quot;,
+                &quot;s3:GetBucketWebsite&quot;,
+                &quot;s3:GetBucketNotification&quot;,
+                &quot;s3:GetReplicationConfiguration&quot;,
+                &quot;s3:ListMultipartUploadParts&quot;,
+                &quot;s3:PutObject&quot;,
+                &quot;s3:GetObject&quot;,
+                &quot;s3:RestoreObject&quot;,
                 &quot;s3:ListBucket&quot;,
-                &quot;s3:GetObject&quot;
+                &quot;s3:GetBucketPolicy&quot;,
+                &quot;s3:GetObjectVersionTorrent&quot;,
+                &quot;s3:AbortMultipartUpload&quot;,
+                &quot;s3:GetBucketRequestPayment&quot;,
+                &quot;s3:GetObjectTagging&quot;,
+                &quot;s3:GetMetricsConfiguration&quot;,
+                &quot;s3:PutObjectAcl&quot;,
+                &quot;s3:GetBucketPublicAccessBlock&quot;,
+                &quot;s3:ListBucketMultipartUploads&quot;,
+                &quot;s3:PutObjectVersionTagging&quot;,
+                &quot;s3:GetBucketVersioning&quot;,
+                &quot;s3:GetBucketAcl&quot;,
+                &quot;s3:PutInventoryConfiguration&quot;,
+                &quot;s3:GetObjectTorrent&quot;,
+                &quot;s3:GetBucketCORS&quot;,
+                &quot;s3:GetBucketLocation&quot;,
+                &quot;s3:ReplicateDelete&quot;,
+                &quot;s3:GetObjectVersion&quot;
             ],
             &quot;Resource&quot;: [
                 &quot;arn:aws:s3:::your-bucket-name&quot;,
@@ -1432,7 +1461,10 @@
         }
     ]
 }
-</code></pre><p>Once you are ready and have attached the newly created policy to you user, you can finalize the process. On the last screen you will see the <strong>access key ID</strong> and the <strong>secret access key</strong> of the just created user.
+</code></pre><blockquote>
+<p>Note: The list of the action is only a suggestion, the action can be significantly reduced, to just these which are really needed for your setup.</p>
+</blockquote>
+<p>Once you are ready and have attached the newly created policy to the user, you can finalize the process. On the last screen you will see the <strong>access key ID</strong> and the <strong>secret access key</strong> of the just created user.
 <img src="../media/aws/aws-iam-user-success.png" alt="User creation success IAM"></p>
 <h2 id="upload-files-to-the-bucket">Upload files to the bucket</h2>
 <p>The easies way to upload files to your bucket is to use the build upload functionality, as seen in the next screenshot. But first you should create a folder in the bucket, which will serve as a root folder. You can name if for example <em>rootfolder</em>.</p>
@@ -1504,7 +1536,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Cloud Locations in PRO","level":"2.4","depth":1,"next":{"title":"Create a S3 bucket","level":"2.4.1","depth":2,"anchor":"#create-a-bucket-in-aws-s3","path":"tutorials/s3-bucket-locations.md","ref":"tutorials/s3-bucket-locations.md#create-a-bucket-in-aws-s3","articles":[]},"previous":{"title":"Sharing tag libraries","level":"2.3","depth":1,"path":"tutorials/sharing-tags.md","ref":"tutorials/sharing-tags.md","articles":[]},"dir":"ltr"},"config":{"plugins":["edit-link","anchorjs","prism","-highlight","toc","sitemap","ga","expandable-chapters"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"prism":{},"toc":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"sitemap":{"hostname":"https://docs.tagspaces.org/"},"ga":{"configuration":{"anonymizeIp":true},"token":"UA-90842098-1"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":"Edit","base":"https://github.com/tagspaces/documentation/edit/master"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchorjs":{},"expandable-chapters":{}},"search":{"maxIndexSize":1000000000},"theme":"default","author":"TagSpaces UG (haftungbeschraenkt)","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"TagSpaces Documentation","gitbook":"3.2.2"},"file":{"path":"tutorials/s3-bucket-locations.md","mtime":"2019-09-23T13:18:15.088Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2019-09-23T13:20:14.798Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Cloud Locations in PRO","level":"2.4","depth":1,"next":{"title":"Create a S3 bucket","level":"2.4.1","depth":2,"anchor":"#create-a-bucket-in-aws-s3","path":"tutorials/s3-bucket-locations.md","ref":"tutorials/s3-bucket-locations.md#create-a-bucket-in-aws-s3","articles":[]},"previous":{"title":"Sharing tag libraries","level":"2.3","depth":1,"path":"tutorials/sharing-tags.md","ref":"tutorials/sharing-tags.md","articles":[]},"dir":"ltr"},"config":{"plugins":["edit-link","anchorjs","prism","-highlight","toc","sitemap","ga","expandable-chapters"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"prism":{},"toc":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"sitemap":{"hostname":"https://docs.tagspaces.org/"},"ga":{"configuration":{"anonymizeIp":true},"token":"UA-90842098-1"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":"Edit","base":"https://github.com/tagspaces/documentation/edit/master"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchorjs":{},"expandable-chapters":{}},"search":{"maxIndexSize":1000000000},"theme":"default","author":"TagSpaces UG (haftungbeschraenkt)","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"TagSpaces Documentation","gitbook":"3.2.2"},"file":{"path":"tutorials/s3-bucket-locations.md","mtime":"2019-09-25T13:42:26.816Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2019-09-25T13:45:04.252Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

@@ -110,7 +110,7 @@ Policy for read-only user:
         ]
     }
 
-Policy for user with write access:
+Policy for user with admin/write access:
 
 
     {
@@ -120,8 +120,37 @@ Policy for user with write access:
                 "Sid": "VisualEditor0",
                 "Effect": "Allow",
                 "Action": [
+                    "s3:ReplicateObject",
+                    "s3:GetObjectAcl",
+                    "s3:GetObjectVersionAcl",
+                    "s3:PutObjectTagging",
+                    "s3:DeleteObject",
+                    "s3:GetBucketWebsite",
+                    "s3:GetBucketNotification",
+                    "s3:GetReplicationConfiguration",
+                    "s3:ListMultipartUploadParts",
+                    "s3:PutObject",
+                    "s3:GetObject",
+                    "s3:RestoreObject",
                     "s3:ListBucket",
-                    "s3:GetObject"
+                    "s3:GetBucketPolicy",
+                    "s3:GetObjectVersionTorrent",
+                    "s3:AbortMultipartUpload",
+                    "s3:GetBucketRequestPayment",
+                    "s3:GetObjectTagging",
+                    "s3:GetMetricsConfiguration",
+                    "s3:PutObjectAcl",
+                    "s3:GetBucketPublicAccessBlock",
+                    "s3:ListBucketMultipartUploads",
+                    "s3:PutObjectVersionTagging",
+                    "s3:GetBucketVersioning",
+                    "s3:GetBucketAcl",
+                    "s3:PutInventoryConfiguration",
+                    "s3:GetObjectTorrent",
+                    "s3:GetBucketCORS",
+                    "s3:GetBucketLocation",
+                    "s3:ReplicateDelete",
+                    "s3:GetObjectVersion"
                 ],
                 "Resource": [
                     "arn:aws:s3:::your-bucket-name",
@@ -138,7 +167,9 @@ Policy for user with write access:
         ]
     }
 
-Once you are ready and have attached the newly created policy to you user, you can finalize the process. On the last screen you will see the **access key ID** and the **secret access key** of the just created user.
+> Note: The list of the action is only a suggestion, the action can be significantly reduced, to just these which are really needed for your setup.
+
+Once you are ready and have attached the newly created policy to the user, you can finalize the process. On the last screen you will see the **access key ID** and the **secret access key** of the just created user.
 ![User creation success IAM](/media/aws/aws-iam-user-success.png)
 
 ## Upload files to the bucket
