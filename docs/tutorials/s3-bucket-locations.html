@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>Cloud Locations in PRO · TagSpaces Documentation</title>
+        <title>Connect AWS S3 buckets in Pro · TagSpaces Documentation</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.2">
@@ -865,7 +865,7 @@
                 <a href="s3-bucket-locations.html">
             
                     
-                    Cloud Locations in PRO
+                    Connect AWS S3 buckets in Pro
             
                 </a>
             
@@ -931,7 +931,7 @@
                 <a href="s3-bucket-locations.html#create-cloud-location-in-tagspaces-pro">
             
                     
-                    Create cloud location in TS
+                    Connect cloud locations
             
                 </a>
             
@@ -986,7 +986,7 @@
 
     
         
-        <li class="header">Appendix Extensions</li>
+        <li class="header">TagSpaces Extensions</li>
         
         
     
@@ -1312,7 +1312,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >Cloud Locations in PRO</a>
+        <a href=".." >Connect AWS S3 buckets in Pro</a>
     </h1>
 </div>
 
@@ -1473,10 +1473,10 @@
 <p><img src="../media/aws/aws-s3-upload.png" alt="Create S3 bucket"></p>
 <p>Alternatively you can use the AWS CLI (command line tools), with the following command.</p>
 <pre class="language-"><code>aws s3 sync local-bucket-folder s3://your-bucket-name/rootfolder
-</code></pre><p>This will sync all files and folder from your local folder called <em>local-bucket-folder</em> to the subfolder with the name <em>rootfolder</em> in the bucket your bucket <em>your-bucket-name</em></p>
+</code></pre><p>This will sync all files and folder from your local folder called <em>local-bucket-folder</em> to the sub folder with the name <em>rootfolder</em> in the bucket your bucket <em>your-bucket-name</em></p>
 <p>You can find out how what is <em>AWS CLI</em> and how to install it for your operating system from this <a href="https://docs.aws.amazon.com/en_pv/cli/latest/userguide/cli-chap-welcome.html" target="_blank">link</a>.</p>
 <h2 id="create-cloud-location-in-tagspaces-pro">Create cloud location in TagSpaces PRO</h2>
-<p>Start TagSpace and click on the <strong>Connect a location</strong> button from the locations section. Then you should select the <em>AES S3 Object Store</em> radion button, as shown in the following screenshot.</p>
+<p>Start TagSpaces and click on the <strong>Connect a location</strong> button from the locations section. Then you should select the <em>AES S3 Object Store</em> radio button, as shown in the following screenshot.</p>
 <p><img src="../media/aws/tagspaces-create-s3-location.png" alt="Create S3 location"></p>
 <p>Here you should enter the following parameters:</p>
 <ul>
@@ -1491,7 +1491,7 @@
 <p>There are some advanced settings with can be useful for S3 locations.</p>
 <ul>
 <li><strong>Open this location in read-only mode</strong> - this will switch the UI interface of TagSpaces in readonly mode. It is particularly useful for location to which the IAM user has only read-only access.</li>
-<li><strong>Switch to manual index creation with persistend index</strong> - this option will disable the indexing of the location on its opening. Instead it will try to load the previously create index file. This is useful for large locations with many files, where the initial indexing could take a lot of time.</li>
+<li><strong>Switch to manual index creation with persistent index</strong> - this option will disable the indexing of the location on its opening. Instead it will try to load the previously create index file. This is useful for large locations with many files, where the initial indexing could take a lot of time.</li>
 </ul>
 
                                 
@@ -1536,7 +1536,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Cloud Locations in PRO","level":"2.4","depth":1,"next":{"title":"Create a S3 bucket","level":"2.4.1","depth":2,"anchor":"#create-a-bucket-in-aws-s3","path":"tutorials/s3-bucket-locations.md","ref":"tutorials/s3-bucket-locations.md#create-a-bucket-in-aws-s3","articles":[]},"previous":{"title":"Sharing tag libraries","level":"2.3","depth":1,"path":"tutorials/sharing-tags.md","ref":"tutorials/sharing-tags.md","articles":[]},"dir":"ltr"},"config":{"plugins":["edit-link","anchorjs","prism","-highlight","toc","sitemap","ga","expandable-chapters"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"prism":{},"toc":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"sitemap":{"hostname":"https://docs.tagspaces.org/"},"ga":{"configuration":{"anonymizeIp":true},"token":"UA-90842098-1"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":"Edit","base":"https://github.com/tagspaces/documentation/edit/master"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchorjs":{},"expandable-chapters":{}},"search":{"maxIndexSize":1000000000},"theme":"default","author":"TagSpaces UG (haftungbeschraenkt)","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"TagSpaces Documentation","gitbook":"3.2.2"},"file":{"path":"tutorials/s3-bucket-locations.md","mtime":"2019-09-25T13:42:26.816Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2019-09-25T13:45:04.252Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Connect AWS S3 buckets in Pro","level":"2.4","depth":1,"next":{"title":"Create a S3 bucket","level":"2.4.1","depth":2,"anchor":"#create-a-bucket-in-aws-s3","path":"tutorials/s3-bucket-locations.md","ref":"tutorials/s3-bucket-locations.md#create-a-bucket-in-aws-s3","articles":[]},"previous":{"title":"Sharing tag libraries","level":"2.3","depth":1,"path":"tutorials/sharing-tags.md","ref":"tutorials/sharing-tags.md","articles":[]},"dir":"ltr"},"config":{"plugins":["edit-link","anchorjs","prism","-highlight","toc","sitemap","ga","expandable-chapters"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"prism":{},"toc":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"sitemap":{"hostname":"https://docs.tagspaces.org/"},"ga":{"configuration":{"anonymizeIp":true},"token":"UA-90842098-1"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":"Edit","base":"https://github.com/tagspaces/documentation/edit/master"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchorjs":{},"expandable-chapters":{}},"search":{"maxIndexSize":1000000000},"theme":"default","author":"TagSpaces UG (haftungbeschraenkt)","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"TagSpaces Documentation","gitbook":"3.2.2"},"file":{"path":"tutorials/s3-bucket-locations.md","mtime":"2019-09-26T13:08:23.198Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2019-09-26T13:13:29.336Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

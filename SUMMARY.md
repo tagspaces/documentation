@@ -57,23 +57,17 @@
     * [Chrome Fine-tuning](tutorials/webclipping.md#chrome-fine-tuning)
 * [Syncing data ⚒](tutorials/file-syncing.md)
 * [Sharing tag libraries](tutorials/sharing-tags.md)
-* [Cloud Locations in PRO](tutorials/s3-bucket-locations.md)
+* [Connect AWS S3 buckets in Pro](tutorials/s3-bucket-locations.md)
     * [Create a S3 bucket](tutorials/s3-bucket-locations.md#create-a-bucket-in-aws-s3)
     * [Set CORS settings](tutorials/s3-bucket-locations.md#set-the-cors-settings-of-the-bucket)
     * [Create user](tutorials/s3-bucket-locations.md#create-user-for-accessing-the-bucket)
     * [Upload files](tutorials/s3-bucket-locations.md#upload-files-to-the-bucket)
-    * [Create cloud location in TS](tutorials/s3-bucket-locations.md#create-cloud-location-in-tagspaces-pro)
+    * [Connect cloud locations](tutorials/s3-bucket-locations.md#create-cloud-location-in-tagspaces-pro)
 * [Setup Web Edition](tutorials/web-edition-setup.md)
 * [Meta file formats specification](dev/metafileformats.md)
 * [Extension development guide](dev/extension-development-guide.md)
 
-## Appendix Extensions
-
-<!-- * Perspectives
-    * [Grid Perspective](extensions/perspectiveGrid.md)
-    * [List Perspective](extensions/perspectiveList.md)
-    * [ImageSwiper Perspective](extensions/perspectiveImageSwiper.md)
-    * [Graph Perspective](extensions/perspectiveGraph.md) -->
+## TagSpaces Extensions
 
 * File Viewers
     * [Audio Video Player](extensions/viewerAudioVideo.md)

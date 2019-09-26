@@ -185,13 +185,13 @@ Alternatively you can use the AWS CLI (command line tools), with the following c
 
     aws s3 sync local-bucket-folder s3://your-bucket-name/rootfolder
 
-This will sync all files and folder from your local folder called *local-bucket-folder* to the subfolder with the name *rootfolder* in the bucket your bucket *your-bucket-name*
+This will sync all files and folder from your local folder called *local-bucket-folder* to the sub folder with the name *rootfolder* in the bucket your bucket *your-bucket-name*
 
 You can find out how what is *AWS CLI* and how to install it for your operating system from this [link](https://docs.aws.amazon.com/en_pv/cli/latest/userguide/cli-chap-welcome.html).
 
 ## Create cloud location in TagSpaces PRO
 
-Start TagSpace and click on the **Connect a location** button from the locations section. Then you should select the *AES S3 Object Store* radion button, as shown in the following screenshot.
+Start TagSpaces and click on the **Connect a location** button from the locations section. Then you should select the *AES S3 Object Store* radio button, as shown in the following screenshot.
 
 ![Create S3 location](/media/aws/tagspaces-create-s3-location.png)
 
@@ -209,5 +209,5 @@ Once you click **OK** the location will be create and its content should be list
 There are some advanced settings with can be useful for S3 locations.
 
 * **Open this location in read-only mode** - this will switch the UI interface of TagSpaces in readonly mode. It is particularly useful for location to which the IAM user has only read-only access.
-* **Switch to manual index creation with persistend index** - this option will disable the indexing of the location on its opening. Instead it will try to load the previously create index file. This is useful for large locations with many files, where the initial indexing could take a lot of time.
+* **Switch to manual index creation with persistent index** - this option will disable the indexing of the location on its opening. Instead it will try to load the previously create index file. This is useful for large locations with many files, where the initial indexing could take a lot of time.
 
