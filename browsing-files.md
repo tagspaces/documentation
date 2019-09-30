@@ -4,15 +4,15 @@ When you navigate to a folder in your active location, the files contained in th
 
 ## Perspectives overview
 
-Perspectives are not an integral part of TagSpaces, but exist as modular extensions. This modular approach allows for more flexibility, easier development, and customizability of each separate perspective. By default, there are four perspective extensions included in TagSpaces, which are:
+Perspectives are not an integral part of TagSpaces, but exist as modular extensions. This modular approach allows for more flexibility, easier development, and customizability of each separate perspective. TagSpaces is delivered by default with one perspective. Other perspective can be added on demand in the Enterprise version of the product. In this document we will describe the following perspectives:
 
-* [Default Perspective](#default-perspective) - Presenting your files as list, optimized for simple file management.
+* [Default Perspective](#default-perspective) - Presenting your files as list and in grid.
 
 * [FolderViz Perspective (Discontinued)](#folderviz-perspective) - This is an experimental perspective which applies some information visualization concepts to presenting your folder and file structures.
 
 ## Default perspective
 
-The most common way of presenting files in a folder is in a list format, which can be found in most file-browsing applications. In the **List Perspective** files are represented as rows of a list.
+The most common way of presenting files in a folder is in a list and grid formats, both formats are supported in the default perspective.
 
 ![](/media/list-perspective-2.png)
 
@@ -159,8 +159,6 @@ An alternative way to move files into another folder is to drag its color coded 
 Besides dragging files from the **File Browser Area** to a subfolder, TagSpaces allows you to add files and folders to a listed **Location** by dragging and dropping it from the operating system, or any other file browsing application.
 
 To do this, just grab a file icon with your mouse, and drag it to TagSpaces' file browsing area.
-
->**Hint:** This feature also works in the ImageSwiper perspective
 
 ![](/media/drop-files-into-tagspaces.png)
 

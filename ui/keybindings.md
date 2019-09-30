@@ -51,15 +51,5 @@ These keybindings are available even if TagSpaces is currently not in focus, but
 | Pause/resume playback | `control + alt + p` | `⌘ + alt + p` |
 
 
-## Changing the keybindings
+> **Changing the keybindings**: Most of the keybindings are configurable. To change them, open the **Settings**. In the settings dialog, open the tab **KEY BINDINGS**. Learn more in the [settings](/ui/settings.html/#key-bindings) part of the documentation.
 
-Most of the keybindings are configurable. To change them, Open the **Settings**. In the setting dialog, open the tab **KEY BINDINGS**.
-
-![TagSpaces options](/media/tagspaces-key-bindings.png)
-
-Here you can see all the keyboard shortcuts by default in TagSpaces, and what actions they perform. You also have the ability to change keyboard shortcuts by clicking on the field in which they were written. Before changing any of the binding, please read the following short instructions:
-
-* For modifier keys you can use `shift`, `ctrl`, `alt`, `option`, `meta`, `command` and `mod`. The last one is special modifier allowing us to refer to the control and command key on Windows/Linux and macOS operating systems respectively.
-* Other special keys are `backspace`, `tab`, `enter`, `return`, `capslock`, `esc`, `escape`, `space`, `pageup`, `pagedown`, `end`, `home`, `left`, `up`, `right`, `down`, `ins` and `del`.
-* Any other key you should be able to reference by name like `a`, `/`, `$`, `*`, `=`.
-* You can assign many keys to a single operation, simply by separating them by `,`.

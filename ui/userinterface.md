@@ -4,10 +4,10 @@
 
 TagSpaces opens up as a single-window application that tries to make the best use of any space available, be it large wide screens, or small mobile displays. The user interface, devised along the guidelines of Google's material design specifications, is very adaptable. The application will look the same, regardless of the operating system, or platform it runs under.
 
-This streamlined experience offers familiarity and an ease to use the application across platforms, while you will need to familiarize yourself with its extensive features only once. The following screen shows a typical start screen of TagSpaces with an open tag library, and showing a folder's content with the [**list perspective**](/extensions/perspectiveList.html) extension.
+This streamlined experience offers familiarity and an ease to use the application across platforms, while you will need to familiarize yourself with its extensive features only once. The following screen shows a typical start screen of TagSpaces with the list of the available locations on left, and content of the currently opened folder with the default perspective in center of the application.
 
 
-![Start screen](media/home-screen.png)
+![Start screen](/media/home-screen.png)
 
 The user interface of the application consists of the following main areas:
 
@@ -33,7 +33,7 @@ In the **edit location dialog** you can update the name of the location or chang
 
 With the *remove location* button you can remove the location permanently from TagSpaces. This operation will not affect your files, it only removes its reference from TagSpaces.
 
-![Location properties](/media/location-properties.png)
+![Edit location properties](/media/location-edit-properties.png)
 
 ### Startup location
 By default TagSpaces opens the last opened location on startup. You can change this behavior by first enabling on the option *Use default location in the as a startup location* in the general tab of the settings, then turning on the **Startup location** switch in the properties dialog of a desired startup location. The selected location will then open by default on every start of the application. The current startup location is marked by a different color in the location dropdown list.

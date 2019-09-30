@@ -20,7 +20,7 @@
     * [Tag Library ⚒](ui/userinterface.md#tag-library)
     * [File browsing and preview ⚒](ui/userinterface.md#file-browsing-and-preview)
     * [Keybindings](ui/keybindings.md)
-    * [Settings ⚒](ui/settings.md)
+    * [Settings](ui/settings.md)
     * [Internationalization](ui/i18n.md)
 * Browsing Files ⚒
     * [Overview](browsing-files.md#perspectives-overview)
@@ -46,7 +46,7 @@
     * [Priorities and ratings](tagging.md#priorities-and-ratings)
     * [File Tagging based on sidecar files](tagging.md#file-tagging-based-on-sidecar-files)
     * [Folder Tagging](tagging.md#folder-tagging)
-* [Searching Files & Folders](search.md)
+* [Searching](search.md)
     * [Basic search](search.md#basic-search)
     * [Advanced search (PRO)](search.md#proadvanced-search)
 
