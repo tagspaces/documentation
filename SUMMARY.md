@@ -13,10 +13,9 @@
     * [Chrome](installation.md#chrome)
     * [Portable Mode](installation.md#portable-mode)
     * [Selfhosted Version](selfhosting.md)
-* User Interface
-    * [Start screen ⚒](ui/userinterface.md#start-screen)
-    * [Locations ⚒](ui/userinterface.md#location-manager)
-    * [Folder navigation ⚒](ui/userinterface.md#folder-navigation)
+* [User Interface](ui/userinterface.md)
+    * [Start screen](ui/userinterface.md#start-screen)
+    * [Locations](ui/userinterface.md#locations)
     * [Tag Library ⚒](ui/userinterface.md#tag-library)
     * [File browsing and preview ⚒](ui/userinterface.md#file-browsing-and-preview)
     * [Keybindings](ui/keybindings.md)

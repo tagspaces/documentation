@@ -11,46 +11,77 @@ This streamlined experience offers familiarity and an ease to use the applicatio
 
 The user interface of the application consists of the following main areas:
 
-* [Location management dropdown](#location-manager) - located below the TagSpaces logo
-* [Folder navigator area](#folder-navigation) - located at the leftmost area of the user interface
+* [Location management](#location-manager) - located below the TagSpaces logo
+* [Folder navigator](#folder-navigation) - located at the leftmost area of the user interface
 * [Tag library area](#tag-library) - located at the leftmost area of the user interface (replaces the folder navigator, when active)
 * [File browser area](browsing-files.html) - located in the main area of the user interface
 * [File content area](viewing-files.html) - if a file is opened, the main area splits into two panes. The file viewer will occupy the right pane, while the left will be preserved for the file browser.
-* [Floating action button](#floating-action-button)  - A contextually aware action button to access different available actions
 
 ![explanation of the applications user interface areas](/media/tagspaces-ui-areas.png)
 
-## Location manager
-A **location** is a folder on your local file system, which will serve as a root for listing subfolders, files and documents. Typical locations are for example the folder where you collect your photos or folders where you store your documents, ebooks or music.
+## Locations
+A **location** is a folder on your local file system, which will serve as a root for listing sub folders, files and documents. Typical locations are for example the folder where you collect your photos or folders where you store documents, ebooks or music.
 
-> **Hint:** Do not choose very large directories such as your *home folder* as a location root folder, as this may lead to performance issues.
+> **Hint:** Do not choose very large directories such as your *home folder* as a location root folder, as this may lead to performance issues. The reason for this is that TagSpaces is indexing the whole location every time you open it and the indexing can just take time if the location contains many files. On modern computers with SSD harddrives having a location with up to 60000 files is usually not a problem. The current upper limit for files indexed in a locations is 200000.
 
-The **location manager** is implemented as a dropdown menu, which allows you to switch very quickly between different locations. Once opened, you will see a list of the currently connected locations. Here you can select any location, or access its properties, by clicking the pencil icon next to its name. You can add new locations, by clicking on the **Connect new location** button.
+The **location manager** is can be opened by clicking the case button (1) from the vertical navigation, or by pressing the *CTRL+1* key combination. Once opened, you will see a list of the currently configured locations. Here you can open any location by clicking its name. You can add new locations, by clicking on the **Connect new location** button (2). This button will open the *Connect a Location* dialog, which is very similar to the [*Edit Location*](#regular-locations) dialog. The torch icon (3) indicates **Startup Location**, which is the location loaded automatically on the application start.
+
+Clicking second time on a location name, will trigger the loading of the sub directories in this locations, once loaded this folder will be listed in the **folder navigation area** (5)
 
 ![Location manager](/media/location-manager.png)
 
-In the **edit location dialog** you can update the name of the location or change the path to the root folder. You can also select here the default [**perspective**](browsing-files.html#perspectives), used with this location. For example if the  location contains mainly images and photos, you may want to open it with the  [**image-swiper perspective**](/extensions/perspectiveImageSwipper) , offering a preview of the images and easy navigation through them.
+The location with the cloud icon (6) in front of its name is located in the AWS S3 compatible cloud storage. See [cloud locations](#cloud-locations) for more details.
 
-With the *remove location* button you can remove the location permanently from TagSpaces. This operation will not affect your files, it only removes its reference from TagSpaces.
+The location with the light green background color (4) is the **currently opened location**. The 3-dot button located on the most right part of every location in the location manager will open the **context menu** for this location. This menu contains the following menu entries:
 
-![Edit location properties](/media/location-edit-properties.png)
+* *Edit Location* - will open the [*Edit Location*](#regular-locations) dialog where you can change the location properties such as name or path.
+* *Refresh Location Index* - will trigger the indexing process manually, this menu entry is visible only for the currently opened location
+* *Move up* - will move the location visually up in the location manager
+* *Move down* - will move the location visually down in the location manager
+* *Remove location* - will remove the location permanently from the app. This operation will not affect your files, it only removes its reference in TagSpaces.
+* *Show in File Manager* - will open the path in your file system to which this location point in the default file manager of your operating system
+* *Close Location* - will simply close this location if it is currently opened.
 
-### Startup location
-By default TagSpaces opens the last opened location on startup. You can change this behavior by first enabling on the option *Use default location in the as a startup location* in the general tab of the settings, then turning on the **Startup location** switch in the properties dialog of a desired startup location. The selected location will then open by default on every start of the application. The current startup location is marked by a different color in the location dropdown list.
 
-## Folder navigation
+### Location types
 
-To open the folder navigation view on the left pane, you need to click the folder icon, in the middle of the view-chooser widget at the bottom of the left panel.
+In TagSpaces there two type of locations, regular (local) and cloud based (AWS S3 Object Storage). The type can be selected in the create and edit location dialogs.
 
-![Folder navigator](/media/folder-navigation.png)
+<!-- You can also select here the default [**perspective**](browsing-files.html#perspectives), used with this location. For example if the  location contains mainly images and photos, you may want to open it with the  [**image-swiper perspective**](/extensions/perspectiveImageSwipper) , offering a preview of the images and easy navigation through them. -->
 
-### How to use navigation
+#### Regular Locations
+Regular locations are pointing to a folder located on your local computer. This could be also a folder where you sync locally your Dropbox files or a folder from a connected network drive.
 
-Folder navigation is simple and intuitive. You will be presented with a grid-list of all the subfolders found in your location root. Clicking one of these will navigate to that folder. The current folder will now be represented as a new list item **(1)** underneath the top level folder **(2)**, with any subfolders listed as a grid at the bottom **(3)**. To navigate back, you can either click the *go to previous folder* button on the grid **(4)**, or click on a folder higher up in the list.
+> **Note:** Be careful with connected huge folder located on network drive, depending on the speed of the network, this could lead to performance issues.
 
-![](media/file-browser-parts.png)
+![Edit properties of a regular location](/media/edit-regular-location-dialog.png)
 
-> **Hint:** A neat trick, that allows for a lot more advanced navigation is to list the subfolders of any folder higher up on the path, allowing you to navigate straight there. To list the subfolders of any item, click on the black folder icon, next to a folder's name.
+The regular locations have the following properties:
+
+* *Location name* - this is the name of location as displayed in the location manager
+* *Location path* - the path from your computer, to which this location points
+* *Startup location* - turning this switch on will make the location load automatically on application start. You can set only one location to be a startup one.
+* *Open this location in read-only mode* <i class="profeature">pro</i> - switches the interface of TagSpaces to read-only mode
+* *Enable full text search for TXT, MD and HTML files* <i class="profeature">pro</i> - activates the indexing of the content of text, markdown and HTML files.
+* *Switch to manual index creation with persisted search index* <i class="profeature">pro</i> - disables the automatic indexing of a location on its opening. The application will try to open a previously created index located in a file *tsi.json* from the *.ts* folder of the location. This is useful on locations with many files, where the content does not change very often.
+* *Watch for external changes in this location* <i class="profeature">pro</i> - once switched on TagSpaces will watch the folder to which the location points and all its sub folders for changes and reflect them in the application.
+
+#### Cloud Locations
+These location are pointing to AWS S3 compatible stores (also known as buckets) located in the Internet.
+
+> <i class="profeature">pro</i> Cloud locations are available only in the [Pro](https://www.tagspaces.org/products/pro) and [Enterprise](https://www.tagspaces.org/products/enterprise) editions of TagSpaces.
+
+![Edit properties of a cloud location](/media/edit-cloud-location-dialog.png)
+
+In addition to the regular locations, the cloud locations have the following properties:
+
+* *Location Path* - the path in the bucket to which this location points
+* *Access Key* - the access key of a user, who has the rights to open this bucket
+* *Secret Access Key* - the secret access key of the user
+* *Bucket Name* - the name of the bucket to which this location points
+* *Region* - the AWS region, where the bucket is hosted. The dropdown is located on the right from the bucket name.
+
+> Note: *Watch for external changes in this location* is disabled because it is not available for cloud locations.
 
 
 <!-- ### Folder context menu
@@ -75,10 +106,6 @@ Clicking on a folder in the alternative navigator will open a context menu, wher
 
 ![alternative folder navigator](/media/folder-navigation-alternative.png)
 -->
-
-### Navigating folders from perspectives
-
-Starting with **TagSpaces 2.8**, it is possible to navigate through folders straight from the file list or grid of the **List Perspective** and **Grid Perspective** views respectively. To learn more about this features, please refer to the [File Browsing](browsing-files.html) article.
 
 ## Tag Library
 
