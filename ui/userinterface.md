@@ -180,6 +180,12 @@ The file browsing area normally takes up he majority of the user interface. This
 
 When a file is opened, the main UI area splits into two, the rightmost page becoming the **file preview area**. TagSpaces is capable of natively displaying different file types, from markdown, through HTML and docx, to PDF, epub, or images files. To learn more about all the viewable and editable files, and tagSpaces's full file handling capacity, navigate to the [Viewing Files section](viewing-files.html)
 
+## Fullscreen mode for all elements
+There is an alternative **full screen** view, that is applicable to all of TagSpaces, including the file browser and any applicable menus. It can be toggled by pressing the `F11` key, or selecting *View -> Toggle Fullscreen* from the **Main Menu.**
+
+![](/media/toggle_fullscreen.png)
+
+
 <!-- ## Floating Action Button
 
 At let lower right corner of the interface, you will find a **Floating Action Button** (or FAB), first introduced in Google's material design specification. The FAB you find TagSpaces slightly differs from he original material idea, inasmuch as it does not only allow a single action to be performed, but rather houses an overflow menu, which opens a contextually aware dialog. What the dialog offers depends on what is currently open, or what view the focus is on. The various menu options of the FAB overflow menu will be discussed in more detail, where relevant.

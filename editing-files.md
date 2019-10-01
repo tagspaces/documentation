@@ -4,27 +4,25 @@
 
 ## Creating files
 
-Besides opening and previewing various file types, TagSpaces can also create new files of some text-based formats. File creation is a functionality that allows TagSpaces to become an effective note-taking application. Currently the following file formats are supported:
+Besides opening and previewing various file types, TagSpaces can also create new files of some text-based formats. File creation is a functionality that allows TagSpaces to become an effective note-taking application.
 
-* Plain **text files** (`.txt`)
+To create a new file in TagSpaces you have many options. The easiest one is from the button with plus icon, which almost always visible in the application
 
+![create new file with the plus button](/media/create-new-plusbutton.png)
 
-* **MarkDown files** (`.md`)
+On the desktop version of the app you can also use the *File menu* from the *Main menu*. If the main menu is not visible you can open it by pressing the ALT keyboard key.
 
+![create new file from main menu](/media/create-new-file-menu.png)
 
-* RichText documents (**HTML files**) (`.html`)
+The triggering of the file creation action will open a *Create New Document* dialogue, where you can adjust the file name of the file, which will be create in area (1). In are (2) you can enter the text context of the file, you can copy and paste plain text, markdown or even HTML content here. This area could be left also empty allowing you enter content later. In a area (3) you should specify the type of the text content. Currently the following file formats are supported:
 
+* **Plain text** - files created with this format will have the `.txt` file extension
+* **MarkDown** - files created with this format will have the `.md` file extension. Learn more about the markdown format [here](https://en.wikipedia.org/wiki/Markdown)
+* **Rich Text** - files created with this format will have the `.html` file extension.
 
-* <i class="profeature">pro</i> In a future release, the ability to record **audio files** (`.ogg` or `.wav`) will be added to TagSpaces PRO. This will make it possible to create voice notes, and audio recordings.
+![screenshot showing the create file dialog](/media/create-file-dialog.png)
 
-
-To create a new file in TagSpaces you have two options. You can either use the *File menu* from the *Main menu*, and choose your desired file-type (**1**), or press the ***+New*** Button, just above the **File Browsing Area** (**2**).
-
-![](/media/create-new-file-menu.png)
-
-Pressing the ***+New*** button will open a *Create New Document* dialogue, that offers similar options to the *File menu*, with the additional *Add Existing File* option, which will allow you to import a file into your connected location from the file system.
-
-![](/media/create-new-file-button.png)
+In the last section (4), you can specify where the file should be create. The initial path here is taken automatically from the currently opened folder.
 
 ## Editing files
 
@@ -38,35 +36,26 @@ Besides opening and viewing files, TagSpaces can also edit specific file formats
 
 * [**JSON Editor**](extensions/editorJSON.html) - An interactive visual editor for editing and manipulating `JSON` files.
 
-When you press the pencil icon in the file viewer's header, the appropriate editor will automatically open, replacing the preview, and the pencil icon will become a save button.
+If the file format of the currently opened files is supported for editing the **EDIT button** will appear in the top right corner of the application. Clicking on this button will activate the edit mode for this file.
 
-![](/media/edit-file-pencil-icon.png)
+![Screenshot showing how start editing of a file](/media/start-file-editing.png)
+
+Once in the edit mode the **edit button** will disappear and on its place two new buttons will be visible. Pressing on button (1) will save the current changes. This can be done in the most cases also with the **CTRL+S** key combination. Pressing the button (2) will activate the preview mode by leaving the edit mode. If the changes were not saved, the app will ask you to save them.
+
+![Screenshot showing how start editing of a file](/media/save-preview-changes.png)
 
 ### Increasing your workspace
 
-All of the above editors, will initially open on the right pane of the main area. You can expand your workspace to be able to see and edit more of the document, in two ways
+All of the above editors, will initially open on the right pane of the main area. You can expand your workspace to be able to see and edit more of the document, in two ways:
 
-* **Expand** the editor to fill the whole width of the TagSpaces UI, by pressing the *Expand* button, right next to the *Save* button.
+* **Expand** the editor to fill the whole width of the TagSpaces UI, by pressing the **Expand button** (2) as shown in the next screenshot.
+* Pressing the **Fullscreen button** (1) will open only the area of the editor in full screen mode. To exit fullscreen mode, press the (X) button located at the top right or just press the **ESC** key on your keyboard.
 
-![](/media/expand_workspace_1.png)
-
-![](/media/expand_workspace_2.png)
+![Screenshot showing the distraction free edit mode](/media/distraction-free-editing.png)
 
 ### Distraction free editing
 
-To edit your documents in **distraction free mode**, click on the file extension icon, and select **Open in Fullscreen** from the dropdown menu. This will expand the editor area to fill the entire screen area, with no window decorations, or other UI elements, while any applicable **formatting toolbars** and the **Floating Action Button** will still be shown.
-
-![](/media/distraction-free-mode-menu.png)
-
-To exit Fullscreen mode, press the (X) button located at the top right.
-
-![](/media/disrtaction-free-mode.png)
-
-### Fullscreen mode for all elements
-There is an alternative **full screen** view, that is applicable to all of TagSpaces, including the file browser and any applicable menus. It can be toggled by pressing the `F11` key, or selecting *View -> Toggle Fullscreen* from the **Main Menu.**
-
-![](/media/toggle_fullscreen.png)
-
+By using the fullscreen button you can edit documents in the so called **distraction free mode**. This will expand the editor area to fill the entire screen area, with no window decorations, or other UI elements, while any applicable **formatting toolbars** and the **Floating Action Button** will still be shown.
 
 ## HTML Editor
 
@@ -97,7 +86,7 @@ The toolbar buttons are grouped together based on similar behavior or functional
 * [**Help**](#help) (**12**)
 
 
-#### Manage Checkboxe
+#### Manage Checkboxes
 
 This is a compound button, consisting of two parts:
 * **Add checkbox** (**1**)

@@ -50,6 +50,5 @@ These keybindings are available even if TagSpaces is currently not in focus, but
 | Open previous document | `control + alt + a` | `⌘ + alt + a` |
 | Pause/resume playback | `control + alt + p` | `⌘ + alt + p` |
 
-
-> **Changing the keybindings**: Most of the keybindings are configurable. To change them, open the **Settings**. In the settings dialog, open the tab **KEY BINDINGS**. Learn more in the [settings](/ui/settings.html/#key-bindings) part of the documentation.
-
+## Configuring the keybindings
+Most of the keybindings integrated in TagSpaces are configurable. To change them, open the **Settings**. In the settings dialog, open the tab **KEY BINDINGS**. Learn more in the [settings](/ui/settings.html#key-bindings) part of the documentation.
