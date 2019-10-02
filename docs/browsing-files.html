@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>Browsing Files · TagSpaces Documentation</title>
+        <title>Browsing Files in Perspectives · TagSpaces Documentation</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.2">
@@ -310,7 +310,7 @@
                 <a href="ui/userinterface.html#tag-library">
             
                     
-                    Tag Library ⚒
+                    Tag Library
             
                 </a>
             
@@ -320,10 +320,10 @@
     
         <li class="chapter " data-level="1.3.4" data-path="ui/userinterface.html">
             
-                <a href="ui/userinterface.html#file-browsing-and-preview">
+                <a href="ui/userinterface.html#browsing-area">
             
                     
-                    File browsing and preview ⚒
+                    Browsing area ⚒
             
                 </a>
             
@@ -331,7 +331,46 @@
             
         </li>
     
-        <li class="chapter " data-level="1.3.5" data-path="ui/keybindings.html">
+        <li class="chapter " data-level="1.3.5" data-path="ui/userinterface.html">
+            
+                <a href="ui/userinterface.html#preview-and-properties-area">
+            
+                    
+                    Preview and properties area ⚒
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="ui/userinterface.html">
+            
+                <a href="ui/userinterface.html#zoomable-user-interface">
+            
+                    
+                    Zoomable User Interface
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7" data-path="ui/userinterface.html">
+            
+                <a href="ui/userinterface.html#full-screen-mode">
+            
+                    
+                    Full screen mode
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.8" data-path="ui/keybindings.html">
             
                 <a href="ui/keybindings.html">
             
@@ -344,7 +383,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.3.6" data-path="ui/settings.html">
+        <li class="chapter " data-level="1.3.9" data-path="ui/settings.html">
             
                 <a href="ui/settings.html">
             
@@ -357,7 +396,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.3.7" data-path="ui/i18n.html">
+        <li class="chapter " data-level="1.3.10" data-path="ui/i18n.html">
             
                 <a href="ui/i18n.html">
             
@@ -380,7 +419,7 @@
                 <a href="browsing-files.html">
             
                     
-                    Browsing Files
+                    Browsing Files in Perspectives
             
                 </a>
             
@@ -465,7 +504,7 @@
                 <a href="viewing-files.html#printing-files">
             
                     
-                    Printing files ⚒
+                    Printing files
             
                 </a>
             
@@ -1299,7 +1338,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href="." >Browsing Files</a>
+        <a href="." >Browsing Files in Perspectives</a>
     </h1>
 </div>
 
@@ -1315,6 +1354,34 @@
                                 <section class="normal markdown-section">
                                 
                                 <h1 id="browsing-files-and-folders">Browsing Files and Folders</h1>
+<!-- toc -->
+<ul>
+<li><a href="#perspectives-overview">Perspectives overview</a></li>
+<li><a href="#default-perspective">Default perspective</a><ul>
+<li><a href="#list-overflow-menu-options">List overflow menu options</a></li>
+<li><a href="#navigating-folders-from-from-the-file-list">Navigating folders from from the file list</a></li>
+<li><a href="#grid-view">Grid view</a></li>
+<li><a href="#grid-overflow-menu-options">Grid overflow menu options</a></li>
+<li><a href="#common-features">Common features</a><ul>
+<li><a href="#file-context-menu">File context menu</a></li>
+<li><a href="#folder-context-menu">Folder context menu</a></li>
+<li><a href="#drag-to-move-within-tagspaces">Drag to move within TagSpaces</a></li>
+<li><a href="#importing-files-with-drag-and-drop">Importing files with drag and drop</a></li>
+<li><a href="#color-coded-file-extensions">Color coded file extensions</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#folder-visualization-perspective">Folder Visualization Perspective</a><ul>
+<li><a href="#mindmap-view-(discontinued">MindMap View (discontinued)</a>)</li>
+<li><a href="#tree-view-(discontinued">Tree View (discontinued)</a>)</li>
+<li><a href="#treemap-view-(discontinued">TreeMap View (discontinued)</a>)</li>
+<li><a href="#treemap-navi-view-(discontinued">TreeMap-Navi View (discontinued)</a>)</li>
+<li><a href="#bilevel-partition-(discontinued">Bilevel Partition (discontinued)</a>)</li>
+</ul>
+</li>
+</ul>
+<!-- tocstop -->
 <p>When you navigate to a folder in your active location, the files contained in the selected folder will be displayed on the main file browsing area of the user interface. TagSpaces offers flexible views to display your files. These views are called <strong>perspectives</strong>.</p>
 <h2 id="perspectives-overview">Perspectives overview</h2>
 <p>Perspectives are not an integral part of TagSpaces, but exist as modular extensions. This modular approach allows for more flexibility, easier development, and customizability of each separate perspective. TagSpaces is delivered by default with one perspective. Other perspective can be added on demand in the Enterprise version of the product. In this document we will describe the following perspectives:</p>
@@ -1413,76 +1480,61 @@
 <li><strong>Group files</strong> allows for grouping based on time (either stamp tags, or last modified date accessed from the file itself), or by any defined tag groups. This will allow tag groups to also serve as a basis for file grouping, besides grouping tags themselves. (To learn more about tag groups, refer to <a href="userinterface.md#tag-library">User Interface -&gt; Tag Library</a> section.</li>
 </ul>
 <p><img src="media/grid-group-files.png" alt=""></p>
-<ul>
-<li><p><strong>Show subfolders</strong> will allow you to display folders as part of the grid, in addition to files. It enables a more intuitive way for navigating through folders, which is common in file managers found in most modern operating systems. It has been implemented as an experimental feature in the grid perspective, and as such, it is is not yet enabled by the default.</p>
-<blockquote>
-<p><strong>Hint:</strong> The List perspective will also receive this functionality in the future.</p>
-</blockquote>
-</li>
-</ul>
-<p><img src="media/grid-show-subfolders.png" alt="subfolder support in the grid perspective"></p>
-<h2 id="common-features">Common features</h2>
+<h3 id="common-features">Common features</h3>
 <p>Besides the very specific functionality and features List and Grid perspectives offer, there are some common characteristics that are uniform across the two.</p>
-<h3 id="file-context-menu">File context menu</h3>
+<h4 id="file-context-menu">File context menu</h4>
 <p>The file context menu can be accessed by right-clicking a file in either perspective. It will offer some common file management options.</p>
-<p><img src="media/file-context-menu.png" alt=""></p>
+<p><img src="media/file-context-menu.png" alt="the context menu of a file"></p>
 <ul>
-<li><strong>Open file</strong> will split the main area of TagSpaces into two, and open the file in the right pane. TagSpaces offers viewers for various file types, which can be opened inside the application. To learn more bout supported types, refer to the <a href="viewing-files.html">Viewing Files</a> section.</li>
+<li><p><strong>Open file</strong> will split the main area of TagSpaces into two, and open the file in the right pane. TagSpaces offers viewers for various file types, which can be opened inside the application. To learn more bout supported types, refer to the <a href="viewing-files.html">Viewing Files</a> section.</p>
+</li>
+<li><p><strong>Open File Natively</strong> will open the file in whatever application is associated with the file type in your operating system.</p>
+</li>
+<li><p><strong>Show in File Manager</strong> will show this file in the default file manager of your operating system</p>
+</li>
+<li><p><strong>Add / Remove Tags</strong> will open a dialog where you can add or remove multiple tag to this file.</p>
+</li>
+<li><p><strong>Rename File</strong> will open the file rename dialog, where you can change the name of the file.</p>
+</li>
+<li><p><strong>Move / Copy File</strong> will open a dialog, where you can choose where this file should be moved or copied</p>
+</li>
+<li><p><strong>Delete</strong> will open a dialog, where you can confirm the deletion the file</p>
+</li>
 </ul>
+<h4 id="folder-context-menu">Folder context menu</h4>
+<p>The folder context menu can be accessed by right-clicking on a folder the perspective. It will offer some common folder management options.</p>
+<p><img src="media/folder-context-menu.png" alt="The context menu of a folder"></p>
 <ul>
-<li><p><strong>Open File Natively</strong> offers the option to open files that are unsupported by TagSpaces,  in whatever application is associated with the file type in your operating system.</p>
+<li><p><strong>Open Directory</strong> will navigate to the selected directory.</p>
 </li>
-<li><p><strong>Open Containing folder</strong> will open the folder containing the selected file, in the operating system&apos;s default file manager application.</p>
+<li><p><strong>Rename directory</strong> will open the directory rename dialog, where you can change the name of the folder.</p>
+</li>
+<li><p><strong>Delete directory</strong> will open a dialog, where you can confirm the deletion the directory</p>
+</li>
+<li><p><strong>Show in File Manager</strong> will open this directory in the default file manager of your operating system</p>
+</li>
+<li><p><strong>Extract Content</strong> will start the extraction of special data such as <em>geo-locations</em> from the files in this folder</p>
+</li>
+<li><p><strong>Directory Properties</strong> will open the properties of this folder in the preview area (most right panel) of the application</p>
 </li>
 </ul>
-<p>The other common file management options <em>(Add/Remove tags, Copy/Move Files, Delete Files, Show Subfolder Content)</em> are identical to what you can find in the perspectives&apos; overflow menu.</p>
-<h3 id="drag-to-move-file">Drag to move file</h3>
 <h4 id="drag-to-move-within-tagspaces">Drag to move within TagSpaces</h4>
-<p>An alternative way to move files into another folder is to drag its color coded file extension icon onto a folder on the <strong>Folder navigation</strong> widget on the left panel. When the folder lights up with a yellowish hue, just release the icon, and the file will be immediately moved into that folder.</p>
+<p>An alternative way to move files into another folder is to drag it icon onto a folder on the <strong>Folder navigation</strong> area on the left panel. When the folder lights up with a greenish hue, just release the dragged item, and the file will be immediately moved into that folder.</p>
 <blockquote>
-<p><strong>Hint:</strong> You can access subfolders of any folder displayed in the hierarchy, by clicking the black folder icon next to its name. For more details, refer to the <a href="userinterface.md#folder-navigation">User interface -&gt; Folder Navigation</a> section.</p>
+<p><strong>Hint:</strong> You can access subfolders of any folder displayed in the hierarchy, by clicking the black folder icon next to its name.</p>
 </blockquote>
-<p><img src="media/dragging-file-to-folder.png" alt=""></p>
-<h4 id="drag-from-outside-and-drop-into-tagspaces">Drag from outside, and drop into TagSpaces</h4>
-<p>Besides dragging files from the <strong>File Browser Area</strong> to a subfolder, TagSpaces allows you to add files and folders to a listed <strong>Location</strong> by dragging and dropping it from the operating system, or any other file browsing application.</p>
-<p>To do this, just grab a file icon with your mouse, and drag it to TagSpaces&apos; file browsing area.</p>
-<p><img src="media/drop-files-into-tagspaces.png" alt=""></p>
-<h3 id="color-coded-file-extensions">Color coded file extensions</h3>
+<p><img src="media/drop-files-to-folder.png" alt=""></p>
+<h4 id="importing-files-with-drag-and-drop">Importing files with drag and drop</h4>
+<p>Besides dragging files from the <strong>File Browser Area</strong> to a sub folder, TagSpaces allows you to add files the currently opened folder  by dragging and dropping it from the operating system, or its default file management application.</p>
+<p>To do this, just grab a file icon with your mouse, and drag it to TagSpaces&apos; application.</p>
+<p><img src="media/drag-file-into-tagspaces.png" alt="Importing files with drag and drop"></p>
+<h4 id="color-coded-file-extensions">Color coded file extensions</h4>
 <p>In the grid and list perspectives, color coded file extensions are supported, allowing for a better visual recognition of the file type. For the most common file extensions, custom colors have been defined, to be displayed on the extension buttons found on the file rows or cards.</p>
 <p><img src="media/color-coded-file-extensions-list.png" alt="color codes file extensions in the list perspective"></p>
-<p>This feature can also be turned off. To disable it, go to the <em>General</em> tab of <em>Settings</em> and turn off the <em>Enable colored file type extensions</em> checkbox.</p>
 <blockquote>
-<p><strong>Hint:</strong> There are plans to make the colors for the extensions configurable in a future release.</p>
+<p><strong>Hint:</strong> The colors of the supported file types can configured in the <a href="ui/settings.html#file-types"><strong>File Types</strong></a> of application settings dialog.</p>
 </blockquote>
-<!-- ## ImageSwiper perspective
-
-The **ImageSwiper Perspective** will turn any folder that contains images, into a picture gallery. This perspective only displays image files, and simply ignores all other files in the folder, therefore this perspective is only suitable for folders that contain mainly images.
-
-> **Hint:** For now, the thumbnail size of the images displayed in the gallery is fixed.
-
-![](/media/image-swiper-perspective.png)
-
-### ImageSwiper overflow menu
-
-The overflow menu offers two options:
-
-* **Change gallery background** will allow you to choose between *white*, *black* and *sepia* colored background for the image gallery.
-
-
-* **About** will display information about the extension.
-
-### Displaying images
-
-Whereas image files opened in the List or Grid perspectives will open the file in the right panel (learn more about viewing files in the [Viewing Files](viewing-files.md) section), the **ImageSwiper Perspective** will open images in a classic light-table style preview, that takes up all of the applications interface.
-
-![](/media/image-swiper-preview.png)
-
-Upon hovering the mouse over the image, various controls appear. In the upper-right corner, you will find a position indicator, stating the number of the image, out of a total number of images found in the folder (**1**). To the left and right of the image are navigation controls to swipe left to navigate to the previous image (**2**), and right, to navigate to the next image (**3**). In the upper-right corner, you will find a button to zoom in or out (**4**), display the image preview in full-screen mode (**5**), and close the preview (**6**) to return to the gallery.
-
-![](/media/image-swiper-controls.png)
-
-> **Hint:** As its name indicates, the ImageSwiper Perspective fully supports (left or right) swipe gestures for navigation in the preview mode, on devices that allow for this. You can also drag the images with the mouse pointer, to imitate the swipe gesture on devices that are not touch enabled. -->
-<h2 id="folderviz-perspective">FolderViz Perspective</h2>
+<h2 id="folder-visualization-perspective">Folder Visualization Perspective</h2>
 <blockquote>
 <p><strong>Note</strong>: This perspective is not available in version 3 of TagSpaces.</p>
 </blockquote>
@@ -1546,7 +1598,7 @@ Upon hovering the mouse over the image, various controls appear. In the upper-ri
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Browsing Files","level":"1.4","depth":1,"next":{"title":"Overview","level":"1.4.1","depth":2,"anchor":"#perspectives-overview","path":"browsing-files.md","ref":"browsing-files.md#perspectives-overview","articles":[]},"previous":{"title":"Internationalization","level":"1.3.7","depth":2,"path":"ui/i18n.md","ref":"ui/i18n.md","articles":[]},"dir":"ltr"},"config":{"plugins":["edit-link","anchorjs","prism","-highlight","toc","sitemap","ga","expandable-chapters"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"prism":{},"toc":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"sitemap":{"hostname":"https://docs.tagspaces.org/"},"ga":{"configuration":{"anonymizeIp":true},"token":"UA-90842098-1"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":"Edit","base":"https://github.com/tagspaces/documentation/edit/master"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchorjs":{},"expandable-chapters":{}},"search":{"maxIndexSize":1000000000},"theme":"default","author":"TagSpaces UG (haftungbeschraenkt)","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"TagSpaces Documentation","gitbook":"3.2.2"},"file":{"path":"browsing-files.md","mtime":"2019-09-30T13:45:00.094Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2019-10-01T15:28:19.156Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Browsing Files in Perspectives","level":"1.4","depth":1,"next":{"title":"Overview","level":"1.4.1","depth":2,"anchor":"#perspectives-overview","path":"browsing-files.md","ref":"browsing-files.md#perspectives-overview","articles":[]},"previous":{"title":"Internationalization","level":"1.3.10","depth":2,"path":"ui/i18n.md","ref":"ui/i18n.md","articles":[]},"dir":"ltr"},"config":{"plugins":["edit-link","anchorjs","prism","-highlight","toc","sitemap","ga","expandable-chapters"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"prism":{},"toc":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"sitemap":{"hostname":"https://docs.tagspaces.org/"},"ga":{"configuration":{"anonymizeIp":true},"token":"UA-90842098-1"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":"Edit","base":"https://github.com/tagspaces/documentation/edit/master"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchorjs":{},"expandable-chapters":{}},"search":{"maxIndexSize":1000000000},"theme":"default","author":"TagSpaces UG (haftungbeschraenkt)","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"TagSpaces Documentation","gitbook":"3.2.2"},"file":{"path":"browsing-files.md","mtime":"2019-10-02T11:36:12.579Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2019-10-02T14:08:30.236Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>

@@ -1,5 +1,7 @@
 # Browsing Files and Folders
 
+<!-- toc -->
+
 When you navigate to a folder in your active location, the files contained in the selected folder will be displayed on the main file browsing area of the user interface. TagSpaces offers flexible views to display your files. These views are called **perspectives**.
 
 ## Perspectives overview
@@ -118,90 +120,74 @@ Some options (such as *Add/Remove Tags*, *Copy/Move Files*, *Delete Files*, *Sho
 ![](/media/grid-group-files.png)
 
 
-* **Show subfolders** will allow you to display folders as part of the grid, in addition to files. It enables a more intuitive way for navigating through folders, which is common in file managers found in most modern operating systems. It has been implemented as an experimental feature in the grid perspective, and as such, it is is not yet enabled by the default.
-
-    >**Hint:** The List perspective will also receive this functionality in the future.
-
-![subfolder support in the grid perspective](media/grid-show-subfolders.png)
-
-
-## Common features
+### Common features
 
 Besides the very specific functionality and features List and Grid perspectives offer, there are some common characteristics that are uniform across the two.
 
-### File context menu
+#### File context menu
 
 The file context menu can be accessed by right-clicking a file in either perspective. It will offer some common file management options.
 
-![](/media/file-context-menu.png)
+![the context menu of a file](/media/file-context-menu.png)
 
 * **Open file** will split the main area of TagSpaces into two, and open the file in the right pane. TagSpaces offers viewers for various file types, which can be opened inside the application. To learn more bout supported types, refer to the [Viewing Files](viewing-files.md) section.
 
+* **Open File Natively** will open the file in whatever application is associated with the file type in your operating system.
 
-* **Open File Natively** offers the option to open files that are unsupported by TagSpaces,  in whatever application is associated with the file type in your operating system.
+* **Show in File Manager** will show this file in the default file manager of your operating system
 
-* **Open Containing folder** will open the folder containing the selected file, in the operating system's default file manager application.
+* **Add / Remove Tags** will open a dialog where you can add or remove multiple tag to this file.
 
-The other common file management options *(Add/Remove tags, Copy/Move Files, Delete Files, Show Subfolder Content)* are identical to what you can find in the perspectives' overflow menu.
+* **Rename File** will open the file rename dialog, where you can change the name of the file.
 
-### Drag to move file
+* **Move / Copy File** will open a dialog, where you can choose where this file should be moved or copied
+
+* **Delete** will open a dialog, where you can confirm the deletion the file
+
+
+#### Folder context menu
+
+The folder context menu can be accessed by right-clicking on a folder the perspective. It will offer some common folder management options.
+
+![The context menu of a folder](/media/folder-context-menu.png)
+
+* **Open Directory** will navigate to the selected directory.
+
+* **Rename directory** will open the directory rename dialog, where you can change the name of the folder.
+
+* **Delete directory** will open a dialog, where you can confirm the deletion the directory
+
+* **Show in File Manager** will open this directory in the default file manager of your operating system
+
+* **Extract Content** will start the extraction of special data such as *geo-locations* from the files in this folder
+
+* **Directory Properties** will open the properties of this folder in the preview area (most right panel) of the application
 
 #### Drag to move within TagSpaces
 
-An alternative way to move files into another folder is to drag its color coded file extension icon onto a folder on the **Folder navigation** widget on the left panel. When the folder lights up with a yellowish hue, just release the icon, and the file will be immediately moved into that folder.
+An alternative way to move files into another folder is to drag it icon onto a folder on the **Folder navigation** area on the left panel. When the folder lights up with a greenish hue, just release the dragged item, and the file will be immediately moved into that folder.
 
-> **Hint:** You can access subfolders of any folder displayed in the hierarchy, by clicking the black folder icon next to its name. For more details, refer to the [User interface -> Folder Navigation](userinterface.md#folder-navigation) section.
+> **Hint:** You can access subfolders of any folder displayed in the hierarchy, by clicking the black folder icon next to its name.
 
-![](/media/dragging-file-to-folder.png)
+![](/media/drop-files-to-folder.png)
 
-#### Drag from outside, and drop into TagSpaces
+#### Importing files with drag and drop
 
-Besides dragging files from the **File Browser Area** to a subfolder, TagSpaces allows you to add files and folders to a listed **Location** by dragging and dropping it from the operating system, or any other file browsing application.
+Besides dragging files from the **File Browser Area** to a sub folder, TagSpaces allows you to add files the currently opened folder  by dragging and dropping it from the operating system, or its default file management application.
 
-To do this, just grab a file icon with your mouse, and drag it to TagSpaces' file browsing area.
+To do this, just grab a file icon with your mouse, and drag it to TagSpaces' application.
 
-![](/media/drop-files-into-tagspaces.png)
+![Importing files with drag and drop](/media/drag-file-into-tagspaces.png)
 
-### Color coded file extensions
+#### Color coded file extensions
 In the grid and list perspectives, color coded file extensions are supported, allowing for a better visual recognition of the file type. For the most common file extensions, custom colors have been defined, to be displayed on the extension buttons found on the file rows or cards.
 
 ![color codes file extensions in the list perspective](/media/color-coded-file-extensions-list.png)
 
-This feature can also be turned off. To disable it, go to the *General* tab of *Settings* and turn off the *Enable colored file type extensions* checkbox.
-
-> **Hint:** There are plans to make the colors for the extensions configurable in a future release.
+> **Hint:** The colors of the supported file types can configured in the [**File Types**](/ui/settings.html#file-types) of application settings dialog.
 
 
-<!-- ## ImageSwiper perspective
-
-The **ImageSwiper Perspective** will turn any folder that contains images, into a picture gallery. This perspective only displays image files, and simply ignores all other files in the folder, therefore this perspective is only suitable for folders that contain mainly images.
-
-> **Hint:** For now, the thumbnail size of the images displayed in the gallery is fixed.
-
-![](/media/image-swiper-perspective.png)
-
-### ImageSwiper overflow menu
-
-The overflow menu offers two options:
-
-* **Change gallery background** will allow you to choose between *white*, *black* and *sepia* colored background for the image gallery.
-
-
-* **About** will display information about the extension.
-
-### Displaying images
-
-Whereas image files opened in the List or Grid perspectives will open the file in the right panel (learn more about viewing files in the [Viewing Files](viewing-files.md) section), the **ImageSwiper Perspective** will open images in a classic light-table style preview, that takes up all of the applications interface.
-
-![](/media/image-swiper-preview.png)
-
-Upon hovering the mouse over the image, various controls appear. In the upper-right corner, you will find a position indicator, stating the number of the image, out of a total number of images found in the folder (**1**). To the left and right of the image are navigation controls to swipe left to navigate to the previous image (**2**), and right, to navigate to the next image (**3**). In the upper-right corner, you will find a button to zoom in or out (**4**), display the image preview in full-screen mode (**5**), and close the preview (**6**) to return to the gallery.
-
-![](/media/image-swiper-controls.png)
-
-> **Hint:** As its name indicates, the ImageSwiper Perspective fully supports (left or right) swipe gestures for navigation in the preview mode, on devices that allow for this. You can also drag the images with the mouse pointer, to imitate the swipe gesture on devices that are not touch enabled. -->
-
-## FolderViz Perspective
+## Folder Visualization Perspective
 
 > **Note**: This perspective is not available in version 3 of TagSpaces.
 

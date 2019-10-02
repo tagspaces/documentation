@@ -6,12 +6,12 @@
 
 A common requirement for many TagSpaces users is sharing tag and tag groups across computer networks and devices. This article runs through the steps required for setting up TagSpaces in order to use a shared tag groups. It will guide you through the process of exporting the tag groups, editing them in externally and re-importing or reusing them in other installations. After understanding how TagSpaces handles tag groups you will be able to achieve the following use cases with our application:
 
-* Sharing tag groups with other TagSpaces users on a shared network drive or shared dropbox / google drive / synchting accounts.
+* Sharing tag groups with other TagSpaces users on a shared network drive or shared Dropbox / Google Drive / Syncthing accounts.
 * Using the same tag groups in other installation of the application on platforms such as Android
 
-But before we start, let's define some terms from the TagSpaces jargon. **Tag Library** is a collection of tag groups, which can be opened by clicking on the button located in the bottom left cornet of the application. A **Tag Group** is a collection of tags. For clarification you can see the screenshot bellow.
+But before we start, let's define some terms from the TagSpaces jargon. **Tag Library** is a collection of tag groups, which can be opened by clicking on the button located in the bottom left cornet of the application. A **Tag Group** is a collection of tags (3). For clarification you can see the screenshot bellow.
 
-![the tag library](/media/tag-library.png)
+![the tag library](/media/tag-library-overview.png)
 
 So let's assume you want share the tag groups with the names "TagGroups for Sharing 1" and "TagGroups for Sharing 2" with your colleague which is also using TagSpaces in order to have a common base for tagging on collaborative projects. As a preparation steps you can define these tag groups and put the needed tags in there, with the desired names and colors. Of course you can change them later, but at this point is much easier as you can use the TagSpaces user interface.
 

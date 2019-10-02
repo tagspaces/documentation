@@ -1,4 +1,4 @@
-# Organize your data with tags
+# Organizing your files and folders with tags
 
 <!-- toc -->
 
@@ -115,6 +115,9 @@ Using keyboard shortcuts can also work on multiple files. If you select more tha
 ## Smart tags
 
 Smart tags are one of the advanced tagging features of TagSpaces. Smart tags can be either **date and time**, or **location based**, and offer convenient **dynamic tagging** tagging, based on a range of criteria.
+
+* **Time and date tags** are timestamps textual representations, such as *now*, *today*, *tomorrow*, etc. Applying one of these tags to a file will add a timestamp, corresponding to your choice of smart tag. A timestamp has the format of `YYYMMDD~hhmmss`. Tagging a file with e.g. *now* would apply the full timestamp down to the second, while tagging e.g. *month* would tag it with a subset like `YYYYMM`. Smart tags have a distinguishing blue background, which they only retain in the tag library.
+* <i class="profeature">pro</i> Applying a **geo tag**, an additional feature in TagSpaces PRO, opens up a dialog with an interactive map, where you can drop a pin. The geo-location (longitude and latitude coordinates), will be added to the selected file as a tag.
 
 ![tag library general overview](/media/smart-tags-group.png)
 

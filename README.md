@@ -11,7 +11,7 @@ TagSpaces is an open source, cross-platform, no backend, no login, personal data
 
 Check out the [TagSpaces YouTube channel](https://www.youtube.com/channel/UCzfSaeg-7mpt96UI97zwbfQ) for more TagSpaces related videos.
 
-The following few slides explain the basics of the project. To navigate the presentation use the blue arrow keys or click on it and use the arrow key on your keyboard.
+The following few slides explain the basics of the project. To navigate the presentation use the arrow keys or click on it and use the arrow key on your keyboard.
 
 <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vQEVye_m0Su6d0_jcUmmnqNVzt2cnXVB8CcejLr8k6fGH5_TIV4YC5QNbxyNBNoVdwRFu42Zor7ni1g/embed?start=true&loop=true&delayms=5000" frameborder="0" width="100%" style="min-height: 665px" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
 
@@ -81,14 +81,13 @@ Bulleted lists will be used to
 
 There are currently two types of symbols, apart from the usual text formatting and annotations, that you can find on these pages:
 
- * <i class="profeature">pro</i> - means that the described feature is part of the TagSpaces PRO
+ * <i class="profeature">pro</i> - means that the described feature is part of the TagSpaces Pro and Enterprise editions.
  * ⚒ - means that the section is not ready yet and may contain unclear, or not up-to-date information, or sections might be missing entirely.
 
 ### Contribution
 This documentation project is hosted on [GitHub](https://github.com/tagspaces/documentation), and uses the [GitBook format](https://www.gitbook.com/). Enhancement, or corrections are welcome via pull requests. For the markdown syntax used for the document please refer to the [GitBook markdown page](https://toolchain.gitbook.com/syntax/markdown.html)
 
 >**Note:** If you are planning to contribute, please do focus on articles marked with the ⚒ symbols (marking **work in progress**) initially.
-
 
 ### Credits
 

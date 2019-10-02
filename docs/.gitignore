@@ -5,3 +5,5 @@ npm-debug.log
 *.webm
 aero-debug.log
 aero-deploy.tar.gz
+.ts/
+/../.ts

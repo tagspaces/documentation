@@ -47,7 +47,9 @@ When you click on a file type's editor dropdown, you will be offered a list of a
 
 >**Note:** To learn more about file previews, refer to the [**Editing Files**](/editing-files.md) section.
 
-To add a formerly unrecognized extension, just use the *+Add New File Extension* button (**3**).
+Clicking on the colored area (**3**) in the most right part of every files type will open a color selection dialog where you can adjust the color of the current file type.
+
+To add a formerly unrecognized extension, just use the **Add New File Type** button (**4**).
 
 ## Key bindings
 

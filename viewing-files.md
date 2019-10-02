@@ -25,6 +25,11 @@ TagSpaces is designed with extensibility in mind so any other kind of file viewe
 
 ![settings tab file types](media/settings-tab-file-types.png)
 
+<!-- ## Floating Action Button
+
+At let lower right corner of the interface, you will find a **Floating Action Button** (or FAB), first introduced in Google's material design specification. The FAB you find TagSpaces slightly differs from he original material idea, inasmuch as it does not only allow a single action to be performed, but rather houses an overflow menu, which opens a contextually aware dialog. What the dialog offers depends on what is currently open, or what view the focus is on. The various menu options of the FAB overflow menu will be discussed in more detail, where relevant.
+-->
+
 ## Printing files
 The majority of the viewer extensions has tha ability to print the opened files, thanks to the build in print functionality. In the following short video, you can see how you can start the printing.
 

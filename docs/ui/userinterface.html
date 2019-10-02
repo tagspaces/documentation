@@ -310,7 +310,7 @@
                 <a href="userinterface.html#tag-library">
             
                     
-                    Tag Library ⚒
+                    Tag Library
             
                 </a>
             
@@ -320,10 +320,10 @@
     
         <li class="chapter " data-level="1.3.4" data-path="userinterface.html">
             
-                <a href="userinterface.html#file-browsing-and-preview">
+                <a href="userinterface.html#browsing-area">
             
                     
-                    File browsing and preview ⚒
+                    Browsing area ⚒
             
                 </a>
             
@@ -331,7 +331,46 @@
             
         </li>
     
-        <li class="chapter " data-level="1.3.5" data-path="keybindings.html">
+        <li class="chapter " data-level="1.3.5" data-path="userinterface.html">
+            
+                <a href="userinterface.html#preview-and-properties-area">
+            
+                    
+                    Preview and properties area ⚒
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="userinterface.html">
+            
+                <a href="userinterface.html#zoomable-user-interface">
+            
+                    
+                    Zoomable User Interface
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7" data-path="userinterface.html">
+            
+                <a href="userinterface.html#full-screen-mode">
+            
+                    
+                    Full screen mode
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.8" data-path="keybindings.html">
             
                 <a href="keybindings.html">
             
@@ -344,7 +383,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.3.6" data-path="settings.html">
+        <li class="chapter " data-level="1.3.9" data-path="settings.html">
             
                 <a href="settings.html">
             
@@ -357,7 +396,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.3.7" data-path="i18n.html">
+        <li class="chapter " data-level="1.3.10" data-path="i18n.html">
             
                 <a href="i18n.html">
             
@@ -380,7 +419,7 @@
                 <a href="../browsing-files.html">
             
                     
-                    Browsing Files
+                    Browsing Files in Perspectives
             
                 </a>
             
@@ -465,7 +504,7 @@
                 <a href="../viewing-files.html#printing-files">
             
                     
-                    Printing files ⚒
+                    Printing files
             
                 </a>
             
@@ -1315,6 +1354,31 @@
                                 <section class="normal markdown-section">
                                 
                                 <h1 id="user-interface">User Interface</h1>
+<!-- toc -->
+<ul>
+<li><a href="#start-screen">Start screen</a></li>
+<li><a href="#locations">Locations</a><ul>
+<li><a href="#location-types">Location types</a><ul>
+<li><a href="#regular-locations">Regular Locations</a></li>
+<li><a href="#cloud-locations">Cloud Locations</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#tag-library">Tag Library</a><ul>
+<li><a href="#tags">Tags</a></li>
+<li><a href="#tag-groups">Tag groups</a></li>
+<li><a href="#tag-library-context-menu">Tag library context menu</a></li>
+<li><a href="#tag-group-context-menu">Tag group context menu</a></li>
+<li><a href="#tag-context-menu">Tag context menu</a></li>
+</ul>
+</li>
+<li><a href="#browsing-area">Browsing Area</a></li>
+<li><a href="#preview-and-properties-area">Preview and properties area</a></li>
+<li><a href="#zoomable-user-interface">Zoomable user interface</a></li>
+<li><a href="#full-screen-mode">Full screen mode</a></li>
+</ul>
+<!-- tocstop -->
 <h2 id="start-screen">Start screen</h2>
 <p>TagSpaces opens up as a single-window application that tries to make the best use of any space available, be it large wide screens, or small mobile displays. The user interface, devised along the guidelines of Google&apos;s material design specifications, is very adaptable. The application will look the same, regardless of the operating system, or platform it runs under.</p>
 <p>This streamlined experience offers familiarity and an ease to use the application across platforms, while you will need to familiarize yourself with its extensive features only once. The following screen shows a typical start screen of TagSpaces with the list of the available locations on left, and content of the currently opened folder with the default perspective in center of the application.</p>
@@ -1383,35 +1447,11 @@
 <blockquote>
 <p>Note: <em>Watch for external changes in this location</em> is disabled because it is not available for cloud locations.</p>
 </blockquote>
-<!-- ### Folder context menu
-
-Clicking on the *overflow* button besides folder list items, will open up a context menu, with directory operations. From here you can reload folder contents, rename or delete the folder, Add a new subfolder, or open it in your operating system's default file manager.
-
-#### <i class="profeature">pro</i> Updating thumbnails and folder properties
-
-TagSpaces PRO offers two more options in the context menu:
-
-* **Update thumbnails** will refresh the thumbnail cache. TagSpaces generates non-persistent image thumbnails by default. To fully access the powerful thumbnail generating capabilities of TagSpaces PRO, you must first enable this feature from the *PRO* tab of the *Options dialog*. Once enabled, TagSpaces PRO will generate persistent thumbnail images of other files types as well, such as `PDF`, `docx`, `epub`, etc. These thumbnails offer a quick preview of the file's contents when browsing in [**Grid perspective**](/extensions/perspectiveGrid.html)
-
-* **Directory properties** will open a a dialog, that allows you to view (but not modify) the folder path, add or edit a description and tags of the directory. To use this feature, you will need to switch on *Enable the use of a hidden folder(.ts) for storing meta data and thumbnails*  on the *PRO* tab of the options dialog.
-
->**Hint:** Generating thumbnails, or adding meta information to a folder will not alter the folder or its contents, only place a hidden subdirectory in it, containing the thumbnails and a `JSON` file with the meta information.
-
-
-### Alternative folder navigation
-An alternative to the left panel folder navigation view is the interactive path on top of the file browsing area. In case you have closed the left panel of the application or you are on a mobile or other small screen device, this might be a more convenient way to navigate a folder structure.
-
-Clicking on a folder in the alternative navigator will open a context menu, where you can execute some basic folder operations and navigate to any subfolders located in the selected folder. This means, if you need to navigate back to a folder, using the interactive path, you should select its parent folder, and select the desired folder from the options menu.
-
-![alternative folder navigator](/media/folder-navigation-alternative.png)
--->
 <h2 id="tag-library">Tag Library</h2>
-<p>To open the <strong>tag library</strong> view on the left pane, you need to click the tag icon, on the left of the view-chooser widget at the bottom of the left panel.</p>
-<blockquote>
-<p><strong>Hint</strong> You can easily open the tag library by the following keyboard combination <code>s t</code> (Press the keys <code>s</code>, then <code>t</code> in quick succession.) The shortcut stands for &quot;show tags&quot;. The key combination <code>s f</code> will change back to folder navigation (&quot;show folders&quot;)</p>
-</blockquote>
-<p><img src="../media/tag-library-overview.png" alt=""></p>
-<h3 id="tags-in-tagspaces">Tags in TagSpaces</h3>
+<p>The tag library is the place where you can manage and organize the tags with which you can tag your files and folders. To open it, you need to click the button with the tag icon (1), in the vertical navigation placed on the most left part of the application.</p>
+<p><img src="../media/tag-library-overview.png" alt="clarification picture for the tag library user interface"></p>
+<p>The tag library has its own <a href="#tag-library-context-menu">context menu</a>, which can be started by clicking the three dot icon on right of (2). The area marked with (3) represents a single <a href="#tag-groups">tag group</a>. On the top of (3) there is a three dot icon which will open the <a href="#tag-group-context-menu">context menu</a> of this tag group. (4) show a collapse tag group. Every tag group can be collapsed by clicking on the arrow icon in front of the tag group&apos;s name. (5) shows a special tag group used for automatically collecting new tags used in the application. (6) shows a sing tag. Every tag has its own three dot icon, which will open its <a href="#tag-context-menu">context menu</a></p>
+<h3 id="tags">Tags</h3>
 <p>The primary purpose of TagSpaces, is tagging files and organizing them. <strong>Tags</strong> are organic and integral parts of TagSpaces. By default, tags are stored as part of the filename, which makes them easily transferable between file and operating systems, without any need to synchronize databases, or do any extra work. A file can organically hold its own tags, as long as changing the filename is permittable.</p>
 <blockquote>
 <p><i class="profeature">pro</i> <strong>Hint</strong> In TagSpaces PRO, you have the option to use a hidden file (a so called sidecar file) to store tags related information. This can be useful when you are not able, or not allowed to change filenames, such as with a development project, or working collaboratively on shared documents.</p>
@@ -1423,82 +1463,106 @@ Clicking on a folder in the alternative navigator will open a context menu, wher
 <h3 id="tag-groups">Tag groups</h3>
 <p>Tags are organized into <strong>tag groups</strong>, which are basically categories for tags with similar purpose and/or characteristics. Tag groups make it easier to navigate, select and manage tags in the system. TagSpaces comes with a few pre-defined tag groups, which you can freely modify, delete, or expand upon. The default tag groups are:</p>
 <ul>
+<li><strong>Smart tags</strong> include various date based tags and geo location tagging. Learn more about smart tags in the <a href="../tagging.html#smart-tags">tagging section</a></li>
 <li><strong>Common Tags</strong>: This group contains two predefined tags, <em>book</em>, and <em>paper</em>. This can give you a general idea of the intended purpose of the group.</li>
-</ul>
-<ul>
 <li><strong>Getting Things Done</strong>: Another useful category that can enhance your productivity, is an implementation of the <a href="https://en.wikipedia.org/wiki/Getting_Things_Done" target="_blank">GTD time management method</a>. Predefined tags here are <em>done</em>, <em>next</em>, <em>maybe</em> and <em>waiting</em>.</li>
-</ul>
-<ul>
-<li><p><strong>Smart tags</strong> include various date based tags and geo-tagging.</p>
-<ul>
-<li><strong>Time and date tags</strong> are timestamps textual representations, such as <em>now</em>, <em>today</em>, <em>tomorrow</em>, etc. Applying one of these tags to a file will add a timestamp, corresponding to your choice of smart tag. A timestamp has the format of <code>YYYMMDD~hhmmss</code>. Tagging a file with e.g. <em>now</em> would apply the full timestamp down to the second, while tagging e.g. <em>month</em> would tag it with a subset like <code>YYYYMM</code>. Smart tags have a distinguishing blue background, which they only retain in the tag library.</li>
-<li><p><i class="profeature">pro</i> Applying a <strong>geo tag</strong>, an additional feature in TagSpaces PRO, opens up a dialog with an interactive map, where you can drop a pin. The geo-location (longitude and latitude coordinates), will be added to the selected file as a tag.</p>
-<p><img src="media/geo-tagging-dialog.png" alt=""></p>
-</li>
-</ul>
-</li>
-</ul>
-<ul>
 <li><strong>Priorities</strong> are exactly what they seem. These are color coded tags that will be easily identifiable by a simple glance. The three predefined priority tags are:<ul>
 <li><em>high</em> - dark orange background</li>
 <li><em>medium</em> - orange background</li>
 <li><em>low</em> - lime background</li>
 </ul>
 </li>
-</ul>
-<ul>
 <li><strong>Ratings</strong> are predefined star-rating tags with an identifiable yellow background. As the <code>*</code> (asterix) character is considered a &apos;wildcard&apos; on most file systems (meaning you cannot use it in filenames), giving a star rating as a filename-based tag would be somewhat difficult. With the yellow &quot;rating&quot; tags this problem can be easily solved, so your files can be organized in a rating-based system.</li>
-</ul>
-<ul>
-<li><strong>Collected Tags</strong> is a group for all other tags you have given to your files that do not belong to any other group. This includes the actual timestamps placed on a file by applying smart tags.</li>
+<li><strong>Collected Tags</strong> is a group for all other tags you have given to your files or folders that do not belong to any other group. This tag group is created automatically after the option for collecting tags is activated in tab <em>General</em> of the application settings.</li>
 </ul>
 <blockquote>
-<p><strong>Hint:</strong> when you delete the <em>Collected Tags</em> tag group, it will be automatically recreated as soon as you add a new tag. This will however remove all uncategorized tags form the tag library, making any such tags that are already added to files, orphaned.</p>
+<p><strong>Hint:</strong> All the tag groups except the smart tag are optional and can be removed from the tag library if they are note needed.</p>
 </blockquote>
-<p>Tag groups can be expanded or closed, for a more uncluttered interface, by clicking on the tag-group&apos;s name. A little badge-icon next to the tag group&apos;s name shows the number of tags contained in that group. This can be useful, when the tag group is closed.</p>
-<p><img src="../media/tag-groups-closed.png" alt=""></p>
-<h3 id="create-or-import-tag-groups">Create or import tag groups</h3>
+<h3 id="tag-library-context-menu">Tag library context menu</h3>
+<p>This menu contains the following three menu items:</p>
+<ul>
+<li><strong>Create Tag Group</strong> - Opens the dialog for creating tag groups</li>
+<li><strong>Import Tag Library</strong> - Start the process for importing tag groups in TagSpaces. Lear more in the <a href="../tutorials/sharing-tags.html#distributing-the-library">tag sharing tutorial</a></li>
+<li><strong>Export Tag Library</strong> - Start the process for exporting tag groups from TagSpaces. Lear more in the <a href="../tutorials/sharing-tags.html#exporting-the-existing-tag-groups">tag sharing tutorial</a></li>
+</ul>
+<p><img src="../media/taglibrary-context-menu.png" alt="screenshot of the context menu of the tag library"></p>
 <p>To create a new tag group, click on <strong>Create Tag Group</strong>, right underneath the tag groups. This will bring up a dialog, that will allow you to specify a name for your tag group, and the color of tags that belong to that group. color coding tags groups can help to easily distinguish between tags belonging to the same group, or otherwise share common characteristics. You can also specify the text color for the tags, which can be useful when choosing a lighter or darker background, so that the name can contrast.</p>
-<p><img src="../media/new-tag-group-dialog.png" alt=""></p>
-<p>Selecting the <strong>Import tags</strong> option will allow you to import predefined predefined tags, which you have previously created in TagSpaces. This option takes a <code>JSON</code> file, previously exported from (probably another instance of) TagSpaces, and imports all the tags contained within, into your system. This can be useful, when you use TagSpaces on multiple systems, or you work collaboratively with others and wish to share the same tags library. To learn more about sharing tags between systems and people, refer to the <a href="../tutorials/sharing-tags.html">Sharing tag libraries</a> tutorial article.</p>
-<h3 id="the-tag-context-menu">The tag context menu</h3>
-<p>Each tag also offers its own context menu, accessible by clicking or right clicking on the tag. The displayed context menu will be slightly different depending on whether you&apos;ve accessed it from the left panel tag library, or form a tag that is already added to a file. When accessed from the left panel, you will be presented with four options:</p>
+<p><img src="../media/new-tag-group-dialog.png" alt="screenshot of the dialog for creating new tag groups"></p>
+<p>Selecting the <strong>Import tag library</strong> and <strong>Export tag library</strong> options will allow you to import/export predefined tags, which you have previously created in TagSpaces. This option takes a <code>JSON</code> file, previously exported from (probably another instance of) TagSpaces, and imports all the tags contained within, into your system. This can be useful, when you use TagSpaces on multiple systems, or you work collaboratively with others and wish to share the same tags library. To learn more about sharing tags between systems and people, refer to the <a href="../tutorials/sharing-tags.html">Sharing tag libraries</a> tutorial article.</p>
+<h3 id="tag-group-context-menu">Tag group context menu</h3>
+<p>Tag groups have their own context menu, accessible by clicking the three dot icon next to the tag group&apos;s name. The context menu offers the following options and operations:</p>
 <ul>
-<li><strong>Show Files With This Tag</strong>  -  is essentially a tag filter you can apply, so that only files that have the selected tag applied to them, will show.</li>
-<li><strong>Edit tag</strong>  -  will let you change the tag&apos;s name, or background color and text color, and key bindings.</li>
-<li><strong>Delete tag</strong>  -  will remove the tag form the library</li>
+<li><strong>Add tags</strong> - This will open a very simple dialog, allowing to add new tags to the group. You can add more than one tag at once, separating them with commas, like <code>tag1,tag2,tag3,tag4</code></li>
+<li><strong>Edit Tag Group</strong> - will let you change the tag group&apos;s name, the default tag background, and tag text colors.</li>
+<li><strong>Move Tag Group Up</strong> and <strong>Move tag Group Down</strong> - will allow you to change the tag group&apos;s position among other groups.</li>
+<li><strong>Sort Tag Group</strong> - will sort all tags inside the group alphabetically. Useful after having manually added a number of tags.</li>
+<li><strong>Delete Tag group</strong> - will remove the tag group from the library, with all the tags contained within.</li>
+<li><strong>Collect Tags From Current Location <i class="profeature">pro</i></strong> - will collect all the tags used in the current location in the selected tag group.</li>
 </ul>
-<p><img src="../media/tag-operations-dialog.png" alt=""></p>
-<p><strong>Hint:</strong> You can add key-bindings to any tag. Key bindings are essentially a key combination that allows you to quickly mark a file with the tag in question. just select the file, press the key combination, and the file will be marked.</p>
-<p>Key-bindings can be either key combinations, like e.g. <code>ctrl+a</code>, which mean you should press these keys simultaneously; or repeated keystrokes, like <code>e t</code>, which means you should press these keys in quick succession. Tags that have key bindings will be marked with a little keyboard icon (&#x2328;) in th tag library.</p>
-<p>When accessing a tag&apos;s context menu from the <strong>file browsing area</strong> (the main area of the User Interface), any modifications will only apply to the tag on the selected file, and <strong>not</strong> to the tag as contained in the tag library. This context menu will still allow you to filter, edit, or remove the tag, and also offer to change its position among the other tags applied to the selected file, moving it left or right.</p>
-<p><img src="../media/tag-operations-dialog-2.png" alt=""></p>
-<blockquote>
-<p><strong>Hint:</strong> Editing the name of a tag deleting one from the library tags will only affect the library itself. If the same tag had had already been applied to a file, the tag on that file will remain intact. But if you change the color of a tag in the library, it will be reflected on the files marked with that tag as well. This is because of the way TagSpaces handles tags, that essentially become an organic part of the filename.  To learn more about how tagging works, please refer to <a href="tagging.html#file-tagging-based-on-filename">File tagging based on filename</a> under the Tagging section.</p>
-</blockquote>
-<h3 id="the-tag-group-context-menu">The tag group context menu</h3>
-<p>Tag groups have their own context menu, accessible by clicking the overflow icon next to the tag group&apos;s name. The context menu offers the following options and operations:</p>
-<ul>
-<li><strong>Add tags</strong> - This will open a very simple dialog, allowing to add new tags to the group. You can add more than one tag at once, separating them with commas, like <code>tag1, tag2, tag3, tag4</code></li>
-<li><strong>Move Tag Group Up</strong> and <strong>Move tag Group Down</strong> will allow you to change the tag group&apos;s position among other groups.</li>
-<li><strong>Edit tag Group</strong> will let you change the tag group&apos;s name, the default tag background, and tag text colors.</li>
-<li><strong>Sort Tag group</strong> will sort all tags inside the group alphabetically. Useful after having manually added a number of tags.</li>
-<li><strong>Delete tag group</strong> - will remove the tag group from the library, with all the tags contained within.</li>
-</ul>
-<p><img src="../media/tag-group-context-menu.png" alt=""></p>
+<p><img src="../media/tag-group-context-menu.png" alt="the context menu ot tag group"></p>
 <blockquote>
 <p><strong>Hint:</strong> Learn more about how to change the default tag background and text colors in the <a href="#settings">settings documentation</a> section below.</p>
 </blockquote>
-<h2 id="file-browsing-and-preview">File browsing and preview</h2>
-<p>The file browsing area normally takes up he majority of the user interface. This is where all files from the currently active folder are displayed, either as a list, grid, or folder tree, depending on the active <a href="browsing-files.html#Perspectives"><strong>perspective</strong></a>. To learn more about the all file browsing features, navigate to the <a href="browsing-files.html">File Browsing Section</a>.</p>
-<p>When a file is opened, the main UI area splits into two, the rightmost page becoming the <strong>file preview area</strong>. TagSpaces is capable of natively displaying different file types, from markdown, through HTML and docx, to PDF, epub, or images files. To learn more about all the viewable and editable files, and tagSpaces&apos;s full file handling capacity, navigate to the <a href="viewing-files.html">Viewing Files section</a></p>
-<h2 id="fullscreen-mode-for-all-elements">Fullscreen mode for all elements</h2>
-<p>There is an alternative <strong>full screen</strong> view, that is applicable to all of TagSpaces, including the file browser and any applicable menus. It can be toggled by pressing the <code>F11</code> key, or selecting <em>View -&gt; Toggle Fullscreen</em> from the <strong>Main Menu.</strong></p>
-<p><img src="../media/toggle_fullscreen.png" alt=""></p>
-<!-- ## Floating Action Button
+<h3 id="tag-context-menu">Tag context menu</h3>
+<p>Each tag also offers its own context menu, accessible by clicking or right clicking on the tag. The displayed context menu will be slightly different depending on whether you&apos;ve accessed it from the left panel tag library, or form a tag that is already added to a file. When accessed from the left panel, you will be presented with four options:</p>
+<ul>
+<li><strong>Show Files With This Tag</strong>  -  is essentially a tag filter you can apply, so that only files that have the selected tag applied to them, will show.</li>
+<li><strong>Edit tag</strong>  -  will let you change the tag&apos;s name, or background color and text color.</li>
+<li><strong>Delete tag</strong>  -  will remove the tag from the tag group and the tag library. It will not remove it from any file or folder.</li>
+</ul>
+<p><img src="../media/tag-operations-dialog.png" alt="the context menu of a tag in the tag library"></p>
+<p>Accessing the tag context menu from the browsing area in the default perspective will show similar menu, containing the following items:</p>
+<ul>
+<li><strong>Show Files With This Tag</strong>  -  is a tag filter you can apply, so that only files that have the selected tag applied to them, will show.</li>
+<li><strong>Edit tag</strong>  -  will let you change the tag&apos;s name</li>
+<li><strong>Remove tag</strong>  -  will remove the tag from the file or the folder on which the tags is assigned.</li>
+</ul>
+<!-- **Hint:** You can add key-bindings to any tag. Key bindings are essentially a key combination that allows you to quickly mark a file with the tag in question. just select the file, press the key combination, and the file will be marked.
 
-At let lower right corner of the interface, you will find a **Floating Action Button** (or FAB), first introduced in Google's material design specification. The FAB you find TagSpaces slightly differs from he original material idea, inasmuch as it does not only allow a single action to be performed, but rather houses an overflow menu, which opens a contextually aware dialog. What the dialog offers depends on what is currently open, or what view the focus is on. The various menu options of the FAB overflow menu will be discussed in more detail, where relevant.
--->
+Key-bindings can be either key combinations, like e.g. `ctrl+a`, which mean you should press these keys simultaneously; or repeated keystrokes, like `e t`, which means you should press these keys in quick succession. Tags that have key bindings will be marked with a little keyboard icon (⌨) in th tag library.
+
+When accessing a tag's context menu from the **file browsing area** (the main area of the User Interface), any modifications will only apply to the tag on the selected file, and **not** to the tag as contained in the tag library. This context menu will still allow you to filter, edit, or remove the tag, and also offer to change its position among the other tags applied to the selected file, moving it left or right.
+
+![](/media/tag-operations-dialog-2.png) -->
+<blockquote>
+<p><strong>Hint:</strong> Editing the name of a tag deleting one from the library tags will only affect the library itself. If the same tag had had already been applied to a file, the tag on that file will remain intact. But if you change the color of a tag in the library, it will be reflected on the files marked with that tag as well. This is because of the way TagSpaces handles tags, that essentially become an organic part of the filename.  To learn more about how tagging works, please refer to <a href="tagging.html#file-tagging-based-on-filename">File tagging based on filename</a> under the Tagging section.</p>
+</blockquote>
+<h2 id="browsing-area">Browsing Area</h2>
+<p>The file browsing area normally takes up he majority of the user interface. This is where all files from the currently active folder are displayed, either as a list, grid, or folder tree, depending on the active <a href="browsing-files.html#Perspectives"><strong>perspective</strong></a>. To learn more about the all file browsing features, navigate to the <a href="../browsing-files.html">File Browsing Section</a>.</p>
+<p><img src="../media/browsing-area.png" alt=""></p>
+<p>Clicking on the three dot icon above (4) will open the context menu for the current directory, which contains the following menu items:</p>
+<ul>
+<li><strong>Open Parent Directory</strong> -</li>
+<li><strong>Reload Directory</strong> -</li>
+<li><strong>Rename Directory</strong> -</li>
+<li><strong>Delete Directory</strong> -</li>
+<li><strong>Show in File Manager</strong> -</li>
+<li><strong>New Subdirectory</strong> -</li>
+<li><strong>New File / Note</strong> -</li>
+<li><strong>Add Existing File</strong> -</li>
+<li><strong>Extract Content</strong> -</li>
+<li><strong>Directory Properties</strong> -</li>
+</ul>
+<h2 id="preview-and-properties-area">Preview and properties area</h2>
+<p>When a file is opened, the main UI area splits into two, the rightmost page becoming the <strong>Preview area</strong>. TagSpaces is capable of natively displaying different file types, from markdown, through HTML and docx, to PDF or various image files. To learn more about all the viewable and editable files, and TagSpaces&apos; full file handling capacity, navigate to the <a href="../viewing-files.html">Viewing Files section</a> and <a href="../editing-files.html">Editing Files section</a> respectively.</p>
+<p><img src="../media/preview-area.png" alt=""></p>
+<p><img src="../media/properties-area.png" alt=""></p>
+<h2 id="zoomable-user-interface">Zoomable user interface</h2>
+<p>The user interface of the application zoomable, this allows you to adjust the zoom scale according to your screen resolution and display size. In the desktop you can access the zoom functionality from the <strong>View</strong> in the <strong>Main Menu</strong>. Here you will find zoom in, zoom out functionality and also the possibility to restore the initial zoom factor with <strong>Actual size</strong> menu item.</p>
+<p>In the following screenshot you will see the menu options from the <strong>View</strong> sub menu and also TagSpaces with zoomed in interface.</p>
+<p><img src="../media/zoomable-ui-menu.png" alt="Zoom menu items"></p>
+<p>And here you will see TagSpaces with zoomed out interface.</p>
+<p><img src="../media/zoomed-out.png" alt="Zoomed out interface"></p>
+<blockquote>
+<p><strong>Hint</strong>: If the application is running in a browser, please use the integrated in the browser zooming capabilities.</p>
+</blockquote>
+<h2 id="full-screen-mode">Full screen mode</h2>
+<p>The desktop application can run in a full screen mode, which can be toggled by pressing the <code>F11</code> key, or selecting <em>View -&gt; Toggle Fullscreen</em> from the <strong>Main Menu.</strong></p>
+<p><img src="../media/toggle_fullscreen.png" alt=""></p>
+<blockquote>
+<p><strong>Hint</strong>: If the application is running in a browser, please use the integrated in the browser full screen mode capabilities.</p>
+</blockquote>
+
                                 
                                 </section>
                             
@@ -1541,7 +1605,7 @@ At let lower right corner of the interface, you will find a **Floating Action Bu
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"User Interface","level":"1.3","depth":1,"next":{"title":"Start screen","level":"1.3.1","depth":2,"anchor":"#start-screen","path":"ui/userinterface.md","ref":"ui/userinterface.md#start-screen","articles":[]},"previous":{"title":"Selfhosted Version","level":"1.2.8","depth":2,"path":"selfhosting.md","ref":"selfhosting.md","articles":[]},"dir":"ltr"},"config":{"plugins":["edit-link","anchorjs","prism","-highlight","toc","sitemap","ga","expandable-chapters"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"prism":{},"toc":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"sitemap":{"hostname":"https://docs.tagspaces.org/"},"ga":{"configuration":{"anonymizeIp":true},"token":"UA-90842098-1"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":"Edit","base":"https://github.com/tagspaces/documentation/edit/master"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchorjs":{},"expandable-chapters":{}},"search":{"maxIndexSize":1000000000},"theme":"default","author":"TagSpaces UG (haftungbeschraenkt)","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"TagSpaces Documentation","gitbook":"3.2.2"},"file":{"path":"ui/userinterface.md","mtime":"2019-10-01T15:21:12.712Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2019-10-01T15:28:19.156Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"User Interface","level":"1.3","depth":1,"next":{"title":"Start screen","level":"1.3.1","depth":2,"anchor":"#start-screen","path":"ui/userinterface.md","ref":"ui/userinterface.md#start-screen","articles":[]},"previous":{"title":"Selfhosted Version","level":"1.2.8","depth":2,"path":"selfhosting.md","ref":"selfhosting.md","articles":[]},"dir":"ltr"},"config":{"plugins":["edit-link","anchorjs","prism","-highlight","toc","sitemap","ga","expandable-chapters"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"prism":{},"toc":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"sitemap":{"hostname":"https://docs.tagspaces.org/"},"ga":{"configuration":{"anonymizeIp":true},"token":"UA-90842098-1"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":"Edit","base":"https://github.com/tagspaces/documentation/edit/master"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchorjs":{},"expandable-chapters":{}},"search":{"maxIndexSize":1000000000},"theme":"default","author":"TagSpaces UG (haftungbeschraenkt)","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"TagSpaces Documentation","gitbook":"3.2.2"},"file":{"path":"ui/userinterface.md","mtime":"2019-10-02T14:05:17.012Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2019-10-02T14:08:30.236Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
