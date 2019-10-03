@@ -144,7 +144,4 @@ These file formats are currently supported:
 * Audios formats: MP3 (extracts id3 tags)
 * Ebooks: EPUB (extracts the text content)
 
-![Activating the text extraction functionality](/media/activating-text-extraction.png)
-
-> **Warning** Please note, that this is still a very experimental functionality which on directories with many files, may lead to freezing of the application.
 -->
