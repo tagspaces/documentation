@@ -31,7 +31,12 @@ All versions of TagSpaces are available to download from the [Downloads Page](ht
 
 ## About this document
 
->**Hint:** This documentation has currently a **WIP status**. The articles in this documents are being rapidly updated, with new information added regularly.
+>**Hint:** This documentation has currently a **WIP status**. The articles in this documents are being updated on a regular base.
+
+You can download version of the documentation as PDF files:
+
+* Documentation of TagSpaces Version 3 as [PDF](/tagspaces-manual[v3].pdf)
+* Documentation of TagSpaces Version 2 as [PDF](/tagspaces-manual[v2].pdf)
 
 ### The structure of this documentation
 

@@ -11,7 +11,7 @@
     "update-ext": "./update-external.sh",
     "anigif": "gifify --colors 150 --to 19 media/input.webm -o media/result.gif",
     "prepare": "yarn update-ext && gitbook build . docs",
-    "prepare-extended": "yarn optipng && yarn update-ext && gitbook build . docs",
+    "prepare-extended": "yarn optipng && yarn update-ext && gitbook build . docs && yarn pdf",
     "optipng": "optipng media/*png",
     "start": "gitbook serve",
     "pdf": "gitbook pdf ./ ./tagspaces-manual[v3].pdf",

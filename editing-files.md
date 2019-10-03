@@ -1,4 +1,4 @@
-# Crating and Editing files in TagSpaces
+# Crating and editing files in TagSpaces
 
 <!-- toc -->
 
