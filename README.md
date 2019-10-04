@@ -35,8 +35,8 @@ All versions of TagSpaces are available to download from the [Downloads Page](ht
 
 You can download version of the documentation as PDF files:
 
-* Documentation of TagSpaces Version 3 as [PDF](/tagspaces-manual[v3].pdf)
-* Documentation of TagSpaces Version 2 as [PDF](/tagspaces-manual[v2].pdf)
+* Documentation for TagSpaces v3 as [PDF](/downloads/tagspaces-manual[v3].pdf)
+* Documentation for TagSpaces v2 as [PDF](/downloads/tagspaces-manual[v2].pdf)
 
 ### The structure of this documentation
 

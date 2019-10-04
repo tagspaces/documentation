@@ -14,11 +14,11 @@ This streamlined experience offers familiarity and an ease to use the applicatio
 
 The user interface of the application consists of the following main areas:
 
-* [Location management](#location-manager) - located below the TagSpaces logo
-* [Folder navigator](#folder-navigation) - located at the leftmost area of the user interface
-* [Tag library area](#tag-library) - located at the leftmost area of the user interface (replaces the folder navigator, when active)
-* [File browser area](browsing-files.html) - located in the main area of the user interface
-* [File content area](viewing-files.html) - if a file is opened, the main area splits into two panes. The file viewer will occupy the right pane, while the left will be preserved for the file browser.
+* [Location manager](/ui/locations.html) - located below the TagSpaces logo
+<!-- * [Folder navigator](#folder-navigation) - located at the leftmost area of the user interface-->
+* [Tag library](/ui/taglibrary.html) - located at the leftmost area of the user interface (replaces the location manager, when active)
+* [File browser area](/browsing-files.html) - located in the main area of the user interface
+* [File content area](/viewing-files.html) - if a file is opened, the main area splits into two panes. The file viewer will occupy the right pane, while the left will be preserved for the file browser.
 
 ![explanation of the applications user interface areas](/media/tagspaces-ui-areas.png)
 
