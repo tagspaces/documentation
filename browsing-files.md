@@ -1,5 +1,6 @@
 # Browsing Files and Folders
 
+**Content**
 <!-- toc -->
 
 When you navigate to a folder in your active location, the files contained in the selected folder will be displayed on the main file browsing area of the user interface. TagSpaces offers flexible views to display your files. These views are called **perspectives**.

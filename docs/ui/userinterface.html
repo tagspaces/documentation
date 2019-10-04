@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>User Interface · TagSpaces Documentation</title>
+        <title>User Interface Introduction · TagSpaces Documentation</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.2">
@@ -102,7 +102,7 @@
                 <a href="../">
             
                     
-                    Introduction
+                    About
             
                 </a>
             
@@ -116,7 +116,7 @@
                 <a href="../#about-tagspaces">
             
                     
-                    About TagSpaces
+                    TagSpaces Products
             
                 </a>
             
@@ -129,7 +129,7 @@
                 <a href="../#about-this-document">
             
                     
-                    About This Document
+                    This Document
             
                 </a>
             
@@ -270,7 +270,7 @@
                 <a href="userinterface.html">
             
                     
-                    User Interface
+                    User Interface Introduction
             
                 </a>
             
@@ -297,7 +297,7 @@
                 <a href="userinterface.html#browsing-area">
             
                     
-                    Browsing area ⚒
+                    Browsing area
             
                 </a>
             
@@ -310,7 +310,7 @@
                 <a href="userinterface.html#preview-area">
             
                     
-                    Preview area ⚒
+                    Preview area
             
                 </a>
             
@@ -323,7 +323,7 @@
                 <a href="userinterface.html#file-properties-area">
             
                     
-                    File properties area ⚒
+                    File properties area
             
                 </a>
             
@@ -336,7 +336,7 @@
                 <a href="userinterface.html#folder-properties-area">
             
                     
-                    Folder properties area ⚒
+                    Folder properties area
             
                 </a>
             
@@ -345,6 +345,19 @@
         </li>
     
         <li class="chapter " data-level="1.3.6" data-path="userinterface.html">
+            
+                <a href="userinterface.html#dark-mode">
+            
+                    
+                    Dark mode and Themes
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7" data-path="userinterface.html">
             
                 <a href="userinterface.html#zoomable-user-interface">
             
@@ -357,7 +370,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.3.7" data-path="userinterface.html">
+        <li class="chapter " data-level="1.3.8" data-path="userinterface.html">
             
                 <a href="userinterface.html#full-screen-mode">
             
@@ -370,7 +383,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.3.8" data-path="locations.html">
+        <li class="chapter " data-level="1.3.9" data-path="locations.html">
             
                 <a href="locations.html">
             
@@ -383,7 +396,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.3.9" data-path="taglibrary.html">
+        <li class="chapter " data-level="1.3.10" data-path="taglibrary.html">
             
                 <a href="taglibrary.html">
             
@@ -396,7 +409,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.3.10" data-path="keybindings.html">
+        <li class="chapter " data-level="1.3.11" data-path="keybindings.html">
             
                 <a href="keybindings.html">
             
@@ -409,7 +422,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.3.11" data-path="settings.html">
+        <li class="chapter " data-level="1.3.12" data-path="settings.html">
             
                 <a href="settings.html">
             
@@ -422,7 +435,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.3.12" data-path="i18n.html">
+        <li class="chapter " data-level="1.3.13" data-path="i18n.html">
             
                 <a href="i18n.html">
             
@@ -1396,7 +1409,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >User Interface</a>
+        <a href=".." >User Interface Introduction</a>
     </h1>
 </div>
 
@@ -1412,13 +1425,19 @@
                                 <section class="normal markdown-section">
                                 
                                 <h1 id="user-interface">User Interface</h1>
+<p><strong>Content</strong></p>
 <!-- toc -->
 <ul>
 <li><a href="#start-screen">Start screen</a></li>
-<li><a href="#browsing-area">Browsing Area</a></li>
+<li><a href="#vertical-toolbar">Vertical toolbar</a></li>
+<li><a href="#browsing-area">Browsing Area</a><ul>
+<li><a href="#folder-context-menu">Folder context menu</a></li>
+</ul>
+</li>
 <li><a href="#preview-area">Preview area</a></li>
 <li><a href="#file-properties-area">File properties area</a></li>
 <li><a href="#folder-properties-area">Folder properties area</a></li>
+<li><a href="#dark-mode">Dark mode</a></li>
 <li><a href="#zoomable-user-interface">Zoomable user interface</a></li>
 <li><a href="#full-screen-mode">Full screen mode</a></li>
 </ul>
@@ -1436,10 +1455,20 @@
 <li><a href="viewing-files.html">File content area</a> - if a file is opened, the main area splits into two panes. The file viewer will occupy the right pane, while the left will be preserved for the file browser.</li>
 </ul>
 <p><img src="../media/tagspaces-ui-areas.png" alt="explanation of the applications user interface areas"></p>
+<h2 id="vertical-toolbar">Vertical toolbar</h2>
+<p>New in version 3 of the app is the vertical toolbar located in the most left part of the application. The toolbar is designed to be alway visible. Here you can quickly access the creation of a new file, switch between the location manager, tag library and the search panels, open the app setting or enable the <a href="#dark-mode">dark mode</a>.</p>
+<p><img src="../media/navigation-v3.png" alt="Area on the left of the app"></p>
 <h2 id="browsing-area">Browsing Area</h2>
-<p>The file browsing area normally takes up he majority of the user interface. This is where all files from the currently active folder are displayed, either as a list, grid, or folder tree, depending on the active <a href="browsing-files.html#Perspectives"><strong>perspective</strong></a>. To learn more about the all file browsing features, navigate to the <a href="../browsing-files.html">File Browsing Section</a>.</p>
-<p><img src="../media/browsing-area.png" alt=""></p>
-<p>Clicking on the three dot icon above (4) will open the context menu for the current directory, which contains the following menu items:</p>
+<p>The file browsing area normally takes up he majority of the user interface. This is where all files from the currently active folder are displayed, either as a list, grid, or folder tree, depending on the active <a href="browsing-files.html#Perspectives"><strong>perspective</strong></a>. To learn more about the all file browsing features, navigate to the <a href="../browsing-files.html">Browsing Section</a>.</p>
+<p><img src="../media/browsing-area.png" alt="Screenshot showing the file browsing area"></p>
+<p>In the top left corner of the browsing area is placed a button with a briefcase icon <strong>(1)</strong> which open a dropdown showing a list of all <a href="locations.html">locations</a>. From this dropdown you can quickly switch to another location.</p>
+<blockquote>
+<p><strong>Hint <i class="profeature">pro</i>:</strong> If you are currently using a cloud based location, the the icon of the button for changing the location <strong>(1)</strong> will be a cloud, in other cases the icon will be the briefcase.</p>
+</blockquote>
+<p>The number above <strong>(2)</strong> shows the count of the files and folders in the current folder. If the file browsing area shows search results, then this number will represent the count of the found items.</p>
+<p>The area above number <strong>(3)</strong> shows the name of the current folder, its parent folder name and name of the parent&apos;s parent folder in reversed order. The folder names are separated by slashes (/). The parent folders are shown only if the these folders are in the current location. Clicking on the name parent folders will navigate to them.</p>
+<h3 id="folder-context-menu">Folder context menu</h3>
+<p>Clicking on the name of the current folder or on the three dot icon above <strong>(4)</strong> will open the context menu for the current directory, which contains the following menu items:</p>
 <ul>
 <li><strong>Open Parent Directory</strong> - Open the parent folder in the browsing area, only if the parent folder is located inside the current location</li>
 <li><strong>Reload Directory</strong> - Reloads the content of the current folder</li>
@@ -1454,11 +1483,49 @@
 </ul>
 <h2 id="preview-area">Preview area</h2>
 <p>When a file is opened, the main UI area splits into two, the rightmost page becoming the <strong>Preview area</strong>. TagSpaces is capable of natively displaying different file types, from markdown, through HTML and docx, to PDF or various image files. To learn more about all the viewable and editable files, and TagSpaces&apos; full file handling capacity, navigate to the <a href="../viewing-files.html">Viewing Files section</a> and <a href="../editing-files.html">Editing Files section</a> respectively.</p>
+<p>The following screenshot show a JPG file (photo) with name <em>IMG_0180</em> <strong>(1)</strong> opened in the preview area. Here the preview area uses the full width of the application windows. This can be achieved by clicking on button <strong>(5)</strong> from the preview toolbar. The preview area can be closed by clicking the button with <strong>X</strong> icon located on the right to <strong>(2)</strong></p>
 <p><img src="../media/preview-area.png" alt=""></p>
+<p>The file preview toolbar offer some actions, some of them are described bellow:</p>
+<ul>
+<li><strong>(3) Properties</strong> - Toggles the <a href="#file-properties-area">file properties area</a>. This can be acchieved also by clicking on the file name or the file extension located on the left of <strong>(1)</strong></li>
+<li><strong>(4) Full screen</strong> - Opens the file preview in full screen. You can leave the full screen mode by clicking the ESC key of you keyboard or the by clicking the round green x-button which will appear in the top right corner of the screen.</li>
+<li><strong>(5) Full width</strong> - Toggles the file preview in the full width of the application windows, by hiding the file browsing and areas in left panel of the app.</li>
+<li><strong>(6) Open externally</strong> - Opens the current file in the default application of your operating system.</li>
+<li><strong>(7) Download</strong> - If you are running the web version of TagSpaces, this button will start the downloading of the file, on the desktop versions the button will open file save dialog allowing you to make copy of it somewhere else on the file system (e.g. your Desktop)</li>
+<li><strong>(8) Reload</strong> - Will reload the file in the file preview area</li>
+<li><strong>(9) Delete</strong> - Will open a dialog, where you can confirm the deletion of the file.</li>
+<li><strong>(10) Previous/Next</strong> - With the arrow button located above <strong>(10)</strong> you can open the previous or the next file from the current folder (or search results) in the preview area.</li>
+</ul>
 <h2 id="file-properties-area">File properties area</h2>
-<p><img src="../media/file-properties-area.png" alt=""></p>
+<p>Clicking the button with the <strong>i</strong> icon will open and respectively close the file properties area. Here you will find details about the currently opened files such as:</p>
+<p><img src="../media/file-properties-area.png" alt="Picture showing the folder properties area"></p>
+<ul>
+<li><strong>(1) - Name</strong> - Shows the complete name of the file with its file extension. Clicking the <strong>RENAME</strong> button located above (1) with switch the area to edit box, where you can change the name of the file.</li>
+<li><strong>(2) - Tags</strong> - Show the tags added to this file. Clicking on this area will open a dropdown where you can choose additional tags which will be assigned to this file.</li>
+<li><strong>(3) - Description <i class="profeature">pro</i></strong> - Shows the description assigned to the current file. Clicking on the <strong>EDIT</strong> will turn the description area in a edit box, where you can adjust the description of this file. Plain text and markdown formats are supported.</li>
+<li><strong>(4) - Date modified</strong> - Shows the date and the time when the file was last modified.</li>
+<li><strong>(5) - Size</strong> - Shows the size of the current file. Hovering the field will show the size in bytes.</li>
+<li><strong>(6) - Path</strong> - Shows the complete path of the file. Clicking on the <strong>MOVE</strong> button, will open a dialog, where you can move or copy the existing file to a new path.</li>
+<li><strong>(7) - Thumbnail <i class="profeature">pro</i></strong> - This area shows the current thumbnail of the file. Clicking on the <strong>CHANGE THUMBNAIL</strong> button will open a dialog, where can choose a new thumbnail for the file. The application supports adding a custom thumbnail to every file type.</li>
+</ul>
+<blockquote>
+<p>Hint: The description field of files and folders supports basic <a href="https://en.wikipedia.org/wiki/Markdown" target="_blank"><strong>markdown syntax</strong></a>.</p>
+</blockquote>
 <h2 id="folder-properties-area">Folder properties area</h2>
-<p><img src="../media/folder-properties-area.png" alt=""></p>
+<p>The folder properties is very similar to the file properties area. It can be opened and closed in the same way by the button with the <strong>i</strong> icon.</p>
+<p><img src="../media/folder-properties-area.png" alt="Picture showing the folder properties area"></p>
+<ul>
+<li><strong>(1) - Name</strong> - Shows the complete name of the folder. Clicking the <strong>RENAME</strong> button located above (1) with switch the area to edit box, where you can change the name of the folder.</li>
+<li><strong>(2) - Tags</strong> - Show the tags added to this folder. Clicking on this area will open a dropdown where you can choose additional tags which will be assigned to this folder.</li>
+<li><strong>(3) - Description <i class="profeature">pro</i></strong> - Shows the description assigned to the current folder. Clicking on the <strong>EDIT</strong> will turn the description area in a edit box, where you can adjust the description of this folder. Plain text and markdown formats are supported.</li>
+<li><strong>(4) - Date modified</strong> - Show the date and the time when this folder was last modified.</li>
+<li><strong>(5) - Color <i class="profeature">pro</i></strong> - Shows the color which is assigned to this folder. Clicking in the color area (5) will open a dialog for changing the color of the folder.</li>
+<li><strong>(6) - Path</strong> - Shows the complete path of the folder.</li>
+<li><strong>(7) - Thumbnail <i class="profeature">pro</i></strong> - This area shows the current thumbnail of the folder. Clicking on the <strong>CHANGE THUMBNAIL</strong> button will open a dialog, where can choose a new thumbnail for the folder.</li>
+</ul>
+<h2 id="dark-mode">Dark mode</h2>
+<p>Version 3 of TagSpaces supports user interface themes. The community version is delivered with a light (which is the default one) and a dark theme. The themes can be switched with just one click on the button, which is emphasized on the following screenshot.</p>
+<p><img src="../media/themes-switch.jpg" alt="Picture showing the app in the light and the dark theme"></p>
 <h2 id="zoomable-user-interface">Zoomable user interface</h2>
 <p>The user interface of the application zoomable, this allows you to adjust the zoom scale according to your screen resolution and display size. In the desktop you can access the zoom functionality from the <strong>View</strong> in the <strong>Main Menu</strong>. Here you will find zoom in, zoom out functionality and also the possibility to restore the initial zoom factor with <strong>Actual size</strong> menu item.</p>
 <p>In the following screenshot you will see the menu options from the <strong>View</strong> sub menu and also TagSpaces with zoomed in interface.</p>
@@ -1517,7 +1584,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"User Interface","level":"1.3","depth":1,"next":{"title":"Start screen","level":"1.3.1","depth":2,"anchor":"#start-screen","path":"ui/userinterface.md","ref":"ui/userinterface.md#start-screen","articles":[]},"previous":{"title":"Selfhosted Version","level":"1.2.8","depth":2,"path":"selfhosting.md","ref":"selfhosting.md","articles":[]},"dir":"ltr"},"config":{"plugins":["edit-link","anchorjs","prism","-highlight","toc","sitemap","ga","expandable-chapters"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"prism":{},"toc":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"sitemap":{"hostname":"https://docs.tagspaces.org/"},"ga":{"configuration":{"anonymizeIp":true},"token":"UA-90842098-1"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":"Edit","base":"https://github.com/tagspaces/documentation/edit/master"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchorjs":{},"expandable-chapters":{}},"search":{"maxIndexSize":1000000000},"theme":"default","author":"TagSpaces UG (haftungbeschraenkt)","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"TagSpaces Documentation","gitbook":"3.2.2"},"file":{"path":"ui/userinterface.md","mtime":"2019-10-03T15:18:20.950Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2019-10-03T15:29:40.797Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"User Interface Introduction","level":"1.3","depth":1,"next":{"title":"Start screen","level":"1.3.1","depth":2,"anchor":"#start-screen","path":"ui/userinterface.md","ref":"ui/userinterface.md#start-screen","articles":[]},"previous":{"title":"Selfhosted Version","level":"1.2.8","depth":2,"path":"selfhosting.md","ref":"selfhosting.md","articles":[]},"dir":"ltr"},"config":{"plugins":["edit-link","anchorjs","prism","-highlight","toc","sitemap","ga","expandable-chapters"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"prism":{},"toc":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"sitemap":{"hostname":"https://docs.tagspaces.org/"},"ga":{"configuration":{"anonymizeIp":true},"token":"UA-90842098-1"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":"Edit","base":"https://github.com/tagspaces/documentation/edit/master"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchorjs":{},"expandable-chapters":{}},"search":{"maxIndexSize":1000000000},"theme":"default","author":"TagSpaces UG (haftungbeschraenkt)","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"TagSpaces Documentation","gitbook":"3.2.2"},"file":{"path":"ui/userinterface.md","mtime":"2019-10-04T12:39:50.719Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2019-10-04T12:46:58.378Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

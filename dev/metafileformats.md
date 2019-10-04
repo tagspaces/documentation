@@ -1,5 +1,6 @@
 # Specification of the meta file formats
 
+**Content**
 <!-- toc -->
 
 In comparison to many other tools, TagSpaces uses external text files for saving the meta information for folders and files, instead of a database. Here you will find the specification of the formats used by these files and also some other useful information concerning these files.

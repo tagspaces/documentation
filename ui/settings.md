@@ -1,5 +1,8 @@
 # Settings
 
+**Content**
+<!-- toc -->
+
 To access the settings dialogue, just click on the gears icon at the bottom left part of the app.
 
 ![](/media/open-settings.png)

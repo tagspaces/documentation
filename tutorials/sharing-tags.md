@@ -1,5 +1,6 @@
 # Collaboratively using tags and tag groups
 
+**Content**
 <!-- toc -->
 
 ## Introduction

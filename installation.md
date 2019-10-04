@@ -1,8 +1,7 @@
----
-description: Here you will learn how to install and run TagSpaces
----
-
 # Installation and Setup
+
+**Content**
+<!-- toc -->
 
 ## Installing Windows version {#windows}
 The Windows version of TagSpaces is distributed as `zip` file, which can be downloaded for [64bit](https://www.tagspaces.org/downloads/tagspaces-win64.zip) versions of Windows, depending on your system. Then you have to just unzip the downloaded file in a folder of your choice somewhere on your system. In the unpacked folder you will find a file called `tagspaces.exe`, which can be executed with double click.
@@ -57,7 +56,7 @@ After the installation, the TagSpaces extension can be started from the TagSpace
 ### Updating the Chrome extension
 Once we publish a newer version of the Chrome extensions on the Chrome store, it will be automatically installed on your Chrome browser within the following days.
 
-## Installing TagSpaces PRO <i class="profeature"></i>
+## Installing TagSpaces PRO
 For Windows we are providing installers for TagSpaces PRO, which are signed with modern software certificates. The following screenshot show this certificate in action during the installation under Windows.
 
 ![Screenshot showing signed installer under Windows](/media/signed-windows-installer.png)

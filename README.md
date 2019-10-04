@@ -21,7 +21,7 @@ The following few slides explain the basics of the project. To navigate the pres
 * **PRO desktop version** - extended solution based on the community version for advanced users
 * **Web Clipper as Firefox addon** - a web clipper allowing the saving of whole webpages, webpage fragments and screenshot as local files
 * **Web Clipper as Chrome extension** - same as the web clipper for Firefox
-* **Android app ** - an app offering most of the features from the community desktop version on a Android device (currently in development)
+* **Android app** - an app offering most of the features from the community desktop version on a Android device (currently in development)
 <!-- * **Android Pro app** - extended version of the Android app offering some features of the Desktop PRO version (currently in development) -->
 * **Web self hosting edition** - A package for self hosting on top of a any WebDAV server such as Nextcloud or ownCloud.
 
