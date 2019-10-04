@@ -7,20 +7,21 @@
 
 TagSpaces opens up as a single-window application that tries to make the best use of any space available, be it large wide screens, or small mobile displays. The user interface, devised along the guidelines of Google's material design specifications, is very adaptable. The application will look the same, regardless of the operating system, or platform it runs under.
 
+![Start screen](/media/home-screen.png)
+
 This streamlined experience offers familiarity and an ease to use the application across platforms, while you will need to familiarize yourself with its extensive features only once. The following screen shows a typical start screen of TagSpaces with the list of the available locations on left, and content of the currently opened folder with the default perspective in center of the application.
 
-
-![Start screen](/media/home-screen.png)
+![explanation of the applications user interface areas](/media/main-ui-areas.png)
 
 The user interface of the application consists of the following main areas:
 
-* [Location manager](/ui/locations.html) - located below the TagSpaces logo
-<!-- * [Folder navigator](#folder-navigation) - located at the leftmost area of the user interface-->
-* [Tag library](/ui/taglibrary.html) - located at the leftmost area of the user interface (replaces the location manager, when active)
-* [File browser area](/browsing-files.html) - located in the main area of the user interface
-* [File content area](/viewing-files.html) - if a file is opened, the main area splits into two panes. The file viewer will occupy the right pane, while the left will be preserved for the file browser.
-
-![explanation of the applications user interface areas](/media/tagspaces-ui-areas.png)
+* **(1) - [Vertical toolbar](#vertical-toolbar)** - Is always visible and provides quick access to main parts of the application
+* **(2) - [Location manager](/ui/locations.html) / [Tag Library](/ui/taglibrary.html) / [Search](/search.html) areas** - Here you can manage the connected locations, the tag library or search for file and folders.
+* **(3) - [Navigation](#browsing-area)** - Here you can switch the location or quickly navigate to parent folders.
+* **(4) - [Browsing area](/browsing-files.html)** - This section is occupied by the so called **perspective** used for browsing files and folders.
+* **(5) - [Common actions area](#properties-area)** - Here you can access common actions for the currently opened file or folder.
+* **(6) - [File / Folder properties](#file-properties-area)** - Here you will find some properties for the currently opened file or folder.
+* **(7) - [Preview area](#preview-area)** - In this area you can preview and/or edit the current file.
 
 ## Vertical toolbar
 
@@ -28,6 +29,7 @@ New in version 3 of the app is the vertical toolbar located in the most left par
 
 ![Area on the left of the app](/media/navigation-v3.png)
 
+> **Hint:** Clicking a second time on the icons for the location manager, the tag library or the search area will close the whole area contain these sections. This could be useful if you want to have more space for file browsing or previewing.
 
 ## Browsing Area
 The file browsing area normally takes up he majority of the user interface. This is where all files from the currently active folder are displayed, either as a list, grid, or folder tree, depending on the active [**perspective**](browsing-files.html#Perspectives). To learn more about the all file browsing features, navigate to the [Browsing Section](/browsing-files.html).
