@@ -1,6 +1,6 @@
 # Locations
 
-**Content**
+**Table of Contents**
 <!-- toc -->
 
 A **location** is a folder on your local file system, which will serve as a root for listing sub folders, files and documents. Typical locations are for example the folder where you collect your photos or folders where you store documents, ebooks or music.

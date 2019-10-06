@@ -1,6 +1,6 @@
 # Crating and editing files in TagSpaces
 
-**Content**
+**Table of Contents**
 <!-- toc -->
 
 ## Creating files

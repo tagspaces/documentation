@@ -1,6 +1,6 @@
 # Installation and Setup
 
-**Content**
+**Table of Contents**
 <!-- toc -->
 
 ## Installing Windows version {#windows}

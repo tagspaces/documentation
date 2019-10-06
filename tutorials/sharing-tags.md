@@ -1,6 +1,6 @@
 # Collaboratively using tags and tag groups
 
-**Content**
+**Table of Contents**
 <!-- toc -->
 
 ## Introduction

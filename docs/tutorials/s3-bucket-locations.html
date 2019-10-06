@@ -63,7 +63,7 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="s3-bucket-locations.html" />
+    <link rel="next" href="web-edition-setup.html" />
     
     
     <link rel="prev" href="sharing-tags.html" />
@@ -129,7 +129,7 @@
                 <a href="../#about-this-document">
             
                     
-                    This Document
+                    This Documentation
             
                 </a>
             
@@ -485,7 +485,7 @@
                 <a href="../browsing-files.html#default-perspective">
             
                     
-                    Default Perspective ⚒
+                    Default Perspective
             
                 </a>
             
@@ -968,77 +968,6 @@
             
 
             
-            <ul class="articles">
-                
-    
-        <li class="chapter " data-level="2.4.1" data-path="s3-bucket-locations.html">
-            
-                <a href="s3-bucket-locations.html#create-a-bucket-in-aws-s3">
-            
-                    
-                    Create a S3 bucket
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="2.4.2" data-path="s3-bucket-locations.html">
-            
-                <a href="s3-bucket-locations.html#set-the-cors-settings-of-the-bucket">
-            
-                    
-                    Set CORS settings
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="2.4.3" data-path="s3-bucket-locations.html">
-            
-                <a href="s3-bucket-locations.html#create-user-for-accessing-the-bucket">
-            
-                    
-                    Create user
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="2.4.4" data-path="s3-bucket-locations.html">
-            
-                <a href="s3-bucket-locations.html#upload-files-to-the-bucket">
-            
-                    
-                    Upload files
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="2.4.5" data-path="s3-bucket-locations.html">
-            
-                <a href="s3-bucket-locations.html#create-cloud-location-in-tagspaces-pro">
-            
-                    
-                    Connect cloud locations
-            
-                </a>
-            
-
-            
-        </li>
-    
-
-            </ul>
-            
         </li>
     
         <li class="chapter " data-level="2.5" data-path="web-edition-setup.html">
@@ -1425,9 +1354,20 @@
                                 <section class="normal markdown-section">
                                 
                                 <h1 id="cloud-locations-in-tagspaces-pro-based-on-aws-s3">Cloud Locations in TagSpaces PRO based on AWS S3</h1>
+<p><strong>Table of Contents</strong></p>
+<!-- toc -->
+<ul>
+<li><a href="#motivation">Motivation</a></li>
+<li><a href="#step-1---create-a-bucket-in-aws-s3">Step 1 - Create a bucket in AWS S3</a></li>
+<li><a href="#step-2---set-the-cors-settings-of-the-bucket">Step 2 - Set the CORS settings of the bucket</a></li>
+<li><a href="#step-3---create-user-for-accessing-the-bucket.">Step 3 - Create user for accessing the bucket.</a></li>
+<li><a href="#step-4---upload-files-to-the-bucket">Step 4 - Upload files to the bucket</a></li>
+<li><a href="#step-5---create-cloud-location-in-tagspaces-pro">Step 5 - Create cloud location in TagSpaces PRO</a></li>
+</ul>
+<!-- tocstop -->
 <h2 id="motivation">Motivation</h2>
 <p>TagSpaces PRO provides the ability to connect AWS S3 compatible buckets as locations. This offers many new capabilities and use cases.</p>
-<h2 id="create-a-bucket-in-aws-s3">Create a bucket in AWS S3</h2>
+<h2 id="step-1---create-a-bucket-in-aws-s3">Step 1 - Create a bucket in AWS S3</h2>
 <p>In order to create a AWS S3 bucket you have to go the Amazon Web Services <a href="https://aws.amazon.com/" target="_blank">website</a> and register an account there. Once you are register and logged in go the services section and choose from there the S3, as shown in the next screenshot</p>
 <p><img src="../media/aws/aws-s3-start.png" alt="Choose AWS S3"></p>
 <p>And then in order to create a new bucket choose the <em>Create Bucket</em> button.</p>
@@ -1445,7 +1385,7 @@
 <p><img src="../media/aws/aws-s3-create-overview.png" alt="Review S3 bucket"></p>
 <p>Once you have successfully created the bucket you should see the following screen.</p>
 <p><img src="../media/aws/aws-s3-create-success.png" alt="Create S3 bucket success"></p>
-<h2 id="set-the-cors-settings-of-the-bucket">Set the CORS settings of the bucket</h2>
+<h2 id="step-2---set-the-cors-settings-of-the-bucket">Step 2 - Set the CORS settings of the bucket</h2>
 <p>This is an optional step, needed only if you want to access the bucket from <a href="https://www.tagspaces.org/products/enterprise/" target="_blank">TagSpaces Enterprise</a> edition.</p>
 <p><img src="../media/aws/aws-s3-cors.png" alt="Create S3 bucket"></p>
 <p>The XML config, can be copied from the section bellow.</p>
@@ -1465,7 +1405,7 @@
 <p>You can remove the <em>PUT</em> and <em>DELETE</em> lines, if you want to disable the writing and deleting operation from TagSpaces Enterprise.</p>
 <p>It is recommended to put in the <em>AllowedOrigin</em> line, the domain from which you will access this bucket. E.g.: <a href="https://example.com" target="_blank">https://example.com</a></p>
 </blockquote>
-<h2 id="create-user-for-accessing-the-bucket">Create user for accessing the bucket.</h2>
+<h2 id="step-3---create-user-for-accessing-the-bucket">Step 3 - Create user for accessing the bucket.</h2>
 <p>Accessing the bucket with the credentials from your main account is not recommended. That&apos;s in this section we will guide through the process of user creation in the AWS IAM service. After successfully creating the user here, you will be able to use it for accessing the bucket from TagSpaces.</p>
 <p>As first step the <a href="https://console.aws.amazon.com/iam/" target="_blank">AWS IAM</a> service should be opened.
 <img src="../media/aws/aws-iam-start.png" alt="Open IAM service"></p>
@@ -1563,7 +1503,7 @@
 </blockquote>
 <p>Once you are ready and have attached the newly created policy to the user, you can finalize the process. On the last screen you will see the <strong>access key ID</strong> and the <strong>secret access key</strong> of the just created user.
 <img src="../media/aws/aws-iam-user-success.png" alt="User creation success IAM"></p>
-<h2 id="upload-files-to-the-bucket">Upload files to the bucket</h2>
+<h2 id="step-4---upload-files-to-the-bucket">Step 4 - Upload files to the bucket</h2>
 <p>The easies way to upload files to your bucket is to use the build upload functionality, as seen in the next screenshot. But first you should create a folder in the bucket, which will serve as a root folder. You can name if for example <em>rootfolder</em>.</p>
 <p><img src="../media/aws/aws-s3-create-rootfolder.png" alt="Create S3 bucket root folder"></p>
 <p>Now you can upload files using the web interface.</p>
@@ -1572,7 +1512,7 @@
 <pre class="language-"><code>aws s3 sync local-bucket-folder s3://your-bucket-name/rootfolder
 </code></pre><p>This will sync all files and folder from your local folder called <em>local-bucket-folder</em> to the sub folder with the name <em>rootfolder</em> in the bucket your bucket <em>your-bucket-name</em></p>
 <p>You can find out how what is <em>AWS CLI</em> and how to install it for your operating system from this <a href="https://docs.aws.amazon.com/en_pv/cli/latest/userguide/cli-chap-welcome.html" target="_blank">link</a>.</p>
-<h2 id="create-cloud-location-in-tagspaces-pro">Create cloud location in TagSpaces PRO</h2>
+<h2 id="step-5---create-cloud-location-in-tagspaces-pro">Step 5 - Create cloud location in TagSpaces PRO</h2>
 <p>Start TagSpaces and click on the <strong>Connect a location</strong> button from the locations section. Then you should select the <em>AES S3 Object Store</em> radio button, as shown in the following screenshot.</p>
 <p><img src="../media/aws/tagspaces-create-s3-location.png" alt="Create S3 location"></p>
 <p>Here you should enter the following parameters:</p>
@@ -1622,7 +1562,7 @@
                 </a>
                 
                 
-                <a href="s3-bucket-locations.html#create-a-bucket-in-aws-s3" class="navigation navigation-next " aria-label="Next page: Create a S3 bucket">
+                <a href="web-edition-setup.html" class="navigation navigation-next " aria-label="Next page: Setup Web Edition">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -1633,7 +1573,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Connect AWS S3 buckets in Pro","level":"2.4","depth":1,"next":{"title":"Create a S3 bucket","level":"2.4.1","depth":2,"anchor":"#create-a-bucket-in-aws-s3","path":"tutorials/s3-bucket-locations.md","ref":"tutorials/s3-bucket-locations.md#create-a-bucket-in-aws-s3","articles":[]},"previous":{"title":"Distributing tag groups","level":"2.3.2","depth":2,"anchor":"#distributing-the-library","path":"tutorials/sharing-tags.md","ref":"tutorials/sharing-tags.md#distributing-the-library","articles":[]},"dir":"ltr"},"config":{"plugins":["edit-link","anchorjs","prism","-highlight","toc","sitemap","ga","expandable-chapters"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"prism":{},"toc":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"sitemap":{"hostname":"https://docs.tagspaces.org/"},"ga":{"configuration":{"anonymizeIp":true},"token":"UA-90842098-1"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":"Edit","base":"https://github.com/tagspaces/documentation/edit/master"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchorjs":{},"expandable-chapters":{}},"search":{"maxIndexSize":1000000000},"theme":"default","author":"TagSpaces UG (haftungbeschraenkt)","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"TagSpaces Documentation","gitbook":"3.2.2"},"file":{"path":"tutorials/s3-bucket-locations.md","mtime":"2019-10-03T15:35:50.089Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2019-10-04T15:42:23.299Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Connect AWS S3 buckets in Pro","level":"2.4","depth":1,"next":{"title":"Setup Web Edition","level":"2.5","depth":1,"path":"tutorials/web-edition-setup.md","ref":"tutorials/web-edition-setup.md","articles":[]},"previous":{"title":"Distributing tag groups","level":"2.3.2","depth":2,"anchor":"#distributing-the-library","path":"tutorials/sharing-tags.md","ref":"tutorials/sharing-tags.md#distributing-the-library","articles":[]},"dir":"ltr"},"config":{"plugins":["edit-link","anchorjs","prism","-highlight","toc","sitemap","ga","expandable-chapters"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"prism":{},"toc":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"sitemap":{"hostname":"https://docs.tagspaces.org/"},"ga":{"configuration":{"anonymizeIp":true},"token":"UA-90842098-1"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":"Edit","base":"https://github.com/tagspaces/documentation/edit/master"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchorjs":{},"expandable-chapters":{}},"search":{"maxIndexSize":1000000000},"theme":"default","author":"TagSpaces UG (haftungbeschraenkt)","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"TagSpaces Documentation","gitbook":"3.2.2"},"file":{"path":"tutorials/s3-bucket-locations.md","mtime":"2019-10-06T12:35:49.648Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2019-10-06T21:39:17.751Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

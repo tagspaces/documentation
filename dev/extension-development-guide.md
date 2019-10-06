@@ -1,6 +1,6 @@
 # Extension development guide
 
-**Content**
+**Table of Contents**
 <!-- toc -->
 
 This is an initial version of a guide intended to clarify the process of extension development for TagSpaces.

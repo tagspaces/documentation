@@ -1,6 +1,6 @@
 # User Interface
 
-**Content**
+**Table of Contents**
 <!-- toc -->
 
 ## Start screen
@@ -15,13 +15,13 @@ This streamlined experience offers familiarity and an ease to use the applicatio
 
 The user interface of the application consists of the following main areas:
 
-* **(1) - [Vertical toolbar](#vertical-toolbar)** - Is always visible and provides quick access to main parts of the application
-* **(2) - [Location manager](/ui/locations.html) / [Tag Library](/ui/taglibrary.html) / [Search](/search.html) areas** - Here you can manage the connected locations, the tag library or search for file and folders.
-* **(3) - [Navigation](#browsing-area)** - Here you can switch the location or quickly navigate to parent folders.
-* **(4) - [Browsing area](/browsing-files.html)** - This section is occupied by the so called **perspective** used for browsing files and folders.
-* **(5) - [Common actions area](#properties-area)** - Here you can access common actions for the currently opened file or folder.
-* **(6) - [File / Folder properties](#file-properties-area)** - Here you will find some properties for the currently opened file or folder.
-* **(7) - [Preview area](#preview-area)** - In this area you can preview and/or edit the current file.
+* **(1) [Vertical toolbar](#vertical-toolbar)** - Is always visible and provides quick access to main parts of the application
+* **(2) [Location manager](/ui/locations.html) / [Tag Library](/ui/taglibrary.html) / [Search](/search.html) areas** - Here you can manage the connected locations, the tag library or search for file and folders.
+* **(3) [Navigation](#browsing-area)** - Here you can switch the location or quickly navigate to parent folders.
+* **(4) [Browsing area](/browsing-files.html)** - This section is occupied by the so called **perspective** used for browsing files and folders.
+* **(5) [Common actions area](#properties-area)** - Here you can access common actions for the currently opened file or folder.
+* **(6) [File / Folder properties](#file-properties-area)** - Here you will find some properties for the currently opened file or folder.
+* **(7) [Preview area](#preview-area)** - In this area you can preview and/or edit the current file.
 
 ## Vertical toolbar
 
@@ -82,13 +82,13 @@ Clicking the button with the **i** icon will open and respectively close the fil
 
 ![Picture showing the folder properties area](/media/file-properties-area.png)
 
-* **(1) - Name** - Shows the complete name of the file with its file extension. Clicking the **RENAME** button located above (1) with switch the area to edit box, where you can change the name of the file.
-* **(2) - Tags** - Show the tags added to this file. Clicking on this area will open a dropdown where you can choose additional tags which will be assigned to this file.
-* **(3) - Description <i class="profeature">pro</i>** - Shows the description assigned to the current file. Clicking on the **EDIT** will turn the description area in a edit box, where you can adjust the description of this file. Plain text and markdown formats are supported.
-* **(4) - Date modified** - Shows the date and the time when the file was last modified.
-* **(5) - Size** - Shows the size of the current file. Hovering the field will show the size in bytes.
-* **(6) - Path** - Shows the complete path of the file. Clicking on the **MOVE** button, will open a dialog, where you can move or copy the existing file to a new path.
-* **(7) - Thumbnail <i class="profeature">pro</i>** - This area shows the current thumbnail of the file. Clicking on the **CHANGE THUMBNAIL** button will open a dialog, where can choose a new thumbnail for the file. The application supports adding a custom thumbnail to every file type.
+* **(1) Name** - Shows the complete name of the file with its file extension. Clicking the **RENAME** button located above (1) with switch the area to edit box, where you can change the name of the file.
+* **(2) Tags** - Show the tags added to this file. Clicking on this area will open a dropdown where you can choose additional tags which will be assigned to this file.
+* **(3) Description <i class="profeature">pro</i>** - Shows the description assigned to the current file. Clicking on the **EDIT** will turn the description area in a edit box, where you can adjust the description of this file. Plain text and markdown formats are supported.
+* **(4) Date modified** - Shows the date and the time when the file was last modified.
+* **(5) Size** - Shows the size of the current file. Hovering the field will show the size in bytes.
+* **(6) Path** - Shows the complete path of the file. Clicking on the **MOVE** button, will open a dialog, where you can move or copy the existing file to a new path.
+* **(7) Thumbnail <i class="profeature">pro</i>** - This area shows the current thumbnail of the file. Clicking on the **CHANGE THUMBNAIL** button will open a dialog, where can choose a new thumbnail for the file. The application supports adding a custom thumbnail to every file type.
 
 > Hint: The description field of files and folders supports basic [**markdown syntax**](https://en.wikipedia.org/wiki/Markdown).
 
@@ -98,19 +98,18 @@ The folder properties is very similar to the file properties area. It can be ope
 
 ![Picture showing the folder properties area](/media/folder-properties-area.png)
 
-* **(1) - Name** - Shows the complete name of the folder. Clicking the **RENAME** button located above (1) with switch the area to edit box, where you can change the name of the folder.
-* **(2) - Tags** - Show the tags added to this folder. Clicking on this area will open a dropdown where you can choose additional tags which will be assigned to this folder.
-* **(3) - Description <i class="profeature">pro</i>** - Shows the description assigned to the current folder. Clicking on the **EDIT** will turn the description area in a edit box, where you can adjust the description of this folder. Plain text and markdown formats are supported.
-* **(4) - Date modified** - Show the date and the time when this folder was last modified.
-* **(5) - Color <i class="profeature">pro</i>** - Shows the color which is assigned to this folder. Clicking in the color area (5) will open a dialog for changing the color of the folder.
-* **(6) - Path** - Shows the complete path of the folder.
-* **(7) - Thumbnail <i class="profeature">pro</i>** - This area shows the current thumbnail of the folder. Clicking on the **CHANGE THUMBNAIL** button will open a dialog, where can choose a new thumbnail for the folder.
+* **(1) Name** - Shows the complete name of the folder. Clicking the **RENAME** button located above (1) with switch the area to edit box, where you can change the name of the folder.
+* **(2) Tags** - Show the tags added to this folder. Clicking on this area will open a dropdown where you can choose additional tags which will be assigned to this folder.
+* **(3) Description <i class="profeature">pro</i>** - Shows the description assigned to the current folder. Clicking on the **EDIT** will turn the description area in a edit box, where you can adjust the description of this folder. Plain text and markdown formats are supported.
+* **(4) Date modified** - Show the date and the time when this folder was last modified.
+* **(5) Color <i class="profeature">pro</i>** - Shows the color which is assigned to this folder. Clicking in the color area (5) will open a dialog for changing the color of the folder.
+* **(6) Path** - Shows the complete path of the folder.
+* **(7) Thumbnail <i class="profeature">pro</i>** - This area shows the current thumbnail of the folder. Clicking on the **CHANGE THUMBNAIL** button will open a dialog, where can choose a new thumbnail for the folder.
 
 ## Dark mode
 Version 3 of TagSpaces supports user interface themes. The community version is delivered with a light (which is the default one) and a dark theme. The themes can be switched with just one click on the button, which is emphasized on the following screenshot.
 
 ![Picture showing the app in the light and the dark theme](/media/themes-switch.jpg)
-
 
 ## Zoomable user interface
 The user interface of the application zoomable, this allows you to adjust the zoom scale according to your screen resolution and display size. In the desktop you can access the zoom functionality from the **View** in the **Main Menu**. Here you will find zoom in, zoom out functionality and also the possibility to restore the initial zoom factor with **Actual size** menu item.

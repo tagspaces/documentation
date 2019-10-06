@@ -1,10 +1,13 @@
 # Cloud Locations in TagSpaces PRO based on AWS S3
 
+**Table of Contents**
+<!-- toc -->
+
 ## Motivation
 
 TagSpaces PRO provides the ability to connect AWS S3 compatible buckets as locations. This offers many new capabilities and use cases.
 
-## Create a bucket in AWS S3
+## Step 1 - Create a bucket in AWS S3
 In order to create a AWS S3 bucket you have to go the Amazon Web Services [website](https://aws.amazon.com/) and register an account there. Once you are register and logged in go the services section and choose from there the S3, as shown in the next screenshot
 
 ![Choose AWS S3](/media/aws/aws-s3-start.png)
@@ -35,7 +38,7 @@ Once you have successfully created the bucket you should see the following scree
 
 ![Create S3 bucket success](/media/aws/aws-s3-create-success.png)
 
-## Set the CORS settings of the bucket
+## Step 2 - Set the CORS settings of the bucket
 This is an optional step, needed only if you want to access the bucket from [TagSpaces Enterprise](https://www.tagspaces.org/products/enterprise/) edition.
 
 ![Create S3 bucket](/media/aws/aws-s3-cors.png)
@@ -61,7 +64,7 @@ The XML config, can be copied from the section bellow.
 
 > It is recommended to put in the *AllowedOrigin* line, the domain from which you will access this bucket. E.g.: https://example.com
 
-## Create user for accessing the bucket.
+## Step 3 - Create user for accessing the bucket.
 Accessing the bucket with the credentials from your main account is not recommended. That's in this section we will guide through the process of user creation in the AWS IAM service. After successfully creating the user here, you will be able to use it for accessing the bucket from TagSpaces.
 
 As first step the [AWS IAM](https://console.aws.amazon.com/iam/) service should be opened.
@@ -172,7 +175,7 @@ Policy for user with admin/write access:
 Once you are ready and have attached the newly created policy to the user, you can finalize the process. On the last screen you will see the **access key ID** and the **secret access key** of the just created user.
 ![User creation success IAM](/media/aws/aws-iam-user-success.png)
 
-## Upload files to the bucket
+## Step 4 - Upload files to the bucket
 The easies way to upload files to your bucket is to use the build upload functionality, as seen in the next screenshot. But first you should create a folder in the bucket, which will serve as a root folder. You can name if for example *rootfolder*.
 
 ![Create S3 bucket root folder](/media/aws/aws-s3-create-rootfolder.png)
@@ -189,7 +192,7 @@ This will sync all files and folder from your local folder called *local-bucket-
 
 You can find out how what is *AWS CLI* and how to install it for your operating system from this [link](https://docs.aws.amazon.com/en_pv/cli/latest/userguide/cli-chap-welcome.html).
 
-## Create cloud location in TagSpaces PRO
+## Step 5 - Create cloud location in TagSpaces PRO
 
 Start TagSpaces and click on the **Connect a location** button from the locations section. Then you should select the *AES S3 Object Store* radio button, as shown in the following screenshot.
 

@@ -129,7 +129,7 @@
                 <a href="./#about-this-document">
             
                     
-                    This Document
+                    This Documentation
             
                 </a>
             
@@ -485,7 +485,7 @@
                 <a href="browsing-files.html#default-perspective">
             
                     
-                    Default Perspective ⚒
+                    Default Perspective
             
                 </a>
             
@@ -968,77 +968,6 @@
             
 
             
-            <ul class="articles">
-                
-    
-        <li class="chapter " data-level="2.4.1" data-path="tutorials/s3-bucket-locations.html">
-            
-                <a href="tutorials/s3-bucket-locations.html#create-a-bucket-in-aws-s3">
-            
-                    
-                    Create a S3 bucket
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="2.4.2" data-path="tutorials/s3-bucket-locations.html">
-            
-                <a href="tutorials/s3-bucket-locations.html#set-the-cors-settings-of-the-bucket">
-            
-                    
-                    Set CORS settings
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="2.4.3" data-path="tutorials/s3-bucket-locations.html">
-            
-                <a href="tutorials/s3-bucket-locations.html#create-user-for-accessing-the-bucket">
-            
-                    
-                    Create user
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="2.4.4" data-path="tutorials/s3-bucket-locations.html">
-            
-                <a href="tutorials/s3-bucket-locations.html#upload-files-to-the-bucket">
-            
-                    
-                    Upload files
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="2.4.5" data-path="tutorials/s3-bucket-locations.html">
-            
-                <a href="tutorials/s3-bucket-locations.html#create-cloud-location-in-tagspaces-pro">
-            
-                    
-                    Connect cloud locations
-            
-                </a>
-            
-
-            
-        </li>
-    
-
-            </ul>
-            
         </li>
     
         <li class="chapter " data-level="2.5" data-path="tutorials/web-edition-setup.html">
@@ -1425,16 +1354,19 @@
                                 <section class="normal markdown-section">
                                 
                                 <h1 id="browsing-files-and-folders">Browsing Files and Folders</h1>
-<p><strong>Content</strong></p>
+<p><strong>Table of Contents</strong></p>
 <!-- toc -->
 <ul>
 <li><a href="#perspectives-overview">Perspectives overview</a></li>
 <li><a href="#default-perspective">Default perspective</a><ul>
-<li><a href="#list-overflow-menu-options">List overflow menu options</a></li>
-<li><a href="#navigating-folders-from-from-the-file-list">Navigating folders from from the file list</a></li>
-<li><a href="#grid-view">Grid view</a></li>
-<li><a href="#grid-overflow-menu-options">Grid overflow menu options</a></li>
-<li><a href="#common-features">Common features</a><ul>
+<li><a href="#main-toolbar">Main Toolbar</a></li>
+<li><a href="#grid-view">Grid view</a><ul>
+<li><a href="#file-card">File Card</a></li>
+<li><a href="#folder-card">Folder Card</a></li>
+</ul>
+</li>
+<li><a href="#list-view">List view</a></li>
+<li><a href="#selecting-files">Selecting files</a></li>
 <li><a href="#file-context-menu">File context menu</a></li>
 <li><a href="#folder-context-menu">Folder context menu</a></li>
 <li><a href="#drag-to-move-within-tagspaces">Drag to move within TagSpaces</a></li>
@@ -1442,14 +1374,12 @@
 <li><a href="#color-coded-file-extensions">Color coded file extensions</a></li>
 </ul>
 </li>
-</ul>
-</li>
-<li><a href="#folder-visualization-perspective">Folder Visualization Perspective</a><ul>
-<li><a href="#mindmap-view-(discontinued">MindMap View (discontinued)</a>)</li>
-<li><a href="#tree-view-(discontinued">Tree View (discontinued)</a>)</li>
-<li><a href="#treemap-view-(discontinued">TreeMap View (discontinued)</a>)</li>
-<li><a href="#treemap-navi-view-(discontinued">TreeMap-Navi View (discontinued)</a>)</li>
-<li><a href="#bilevel-partition-(discontinued">Bilevel Partition (discontinued)</a>)</li>
+<li><a href="#folder-visualization-perspective---discontinued-%7B#folderviz-perspective%7D">Folder Visualization Perspective - discontinued {#folderviz-perspective}</a><ul>
+<li><a href="#mindmap-view">MindMap View</a></li>
+<li><a href="#tree-view">Tree View</a></li>
+<li><a href="#treemap-view">TreeMap View</a></li>
+<li><a href="#treemap-navi-view">TreeMap-Navi View</a></li>
+<li><a href="#bilevel-partition">Bilevel Partition</a></li>
 </ul>
 </li>
 </ul>
@@ -1458,173 +1388,193 @@
 <h2 id="perspectives-overview">Perspectives overview</h2>
 <p>Perspectives are not an integral part of TagSpaces, but exist as modular extensions. This modular approach allows for more flexibility, easier development, and customizability of each separate perspective. TagSpaces is delivered by default with one perspective. Other perspective can be added on demand in the Enterprise version of the product. In this document we will describe the following perspectives:</p>
 <ul>
-<li><p><a href="#default-perspective">Default Perspective</a> - Presenting your files as list and in grid.</p>
+<li><p><a href="#default-perspective">Default Perspective</a> - Presenting your files as list and in grid, suitable for tagging and file management.</p>
 </li>
 <li><p><a href="#folderviz-perspective">FolderViz Perspective (Discontinued)</a> - This is an experimental perspective which applies some information visualization concepts to presenting your folder and file structures.</p>
 </li>
 </ul>
 <h2 id="default-perspective">Default perspective</h2>
-<p>The most common way of presenting files in a folder is in a list and grid formats, both formats are supported in the default perspective.</p>
-<p><img src="media/list-perspective-2.png" alt=""></p>
-<p>Each row of the list consists of columns, which give specific information about the files. The column names can be found in the header row, at the top of the list.</p>
-<p><img src="media/list-perspective-column-headers.png" alt=""></p>
-<p>The columns, from left to right are:</p>
+<p>This perspective is optimized for general browsing through file and folder structures while supporting some common file management operations such as:</p>
 <ul>
-<li><p><strong>File extension</strong>  -  A color coded icon, representing the file type. Scroll down to <a href="#color-coded-file-extensions">Common features -&gt; Color coded file extensions</a> to learn more about this feature.</p>
-<p>  The checkbox underneath the file extension icon can be used to easily select one or more files.</p>
+<li>Tagging file and folders</li>
+<li>Renaming file and folders</li>
+<li>Deleting file and folders</li>
+<li>Copying files</li>
+<li>Moving files</li>
+</ul>
+<p>The most common way of presenting files in a folder is in grid and list views. Both views are supported in the build-in <em>default perspective</em>. In the following screenshot you can see the grid view.</p>
+<p><img src="media/default-perspective-grid-view.png" alt="screenshot of the default perspective of the app"></p>
 <blockquote>
-<p><strong>Hint:</strong> This also means that <code>Ctrl or Shift + click</code> will <strong>not</strong> work for selecting multiple files in the current version of TagSpaces, although this functionality is planned for a future release.</p>
+<p><strong>Hint:</strong> The violet colored rectangle shows the area in TagSpaces which is typically occupied by the perspectives.</p>
 </blockquote>
+<h3 id="main-toolbar">Main Toolbar</h3>
+<p>The toolbar of the perspective is located in the top part of the perspective&apos;s, see the rectangle from the previous screenshot. The toolbar includes the following buttons and sub menus.</p>
+<ul>
+<li><p><strong>(1) Toggles File Selection</strong> - will mark every <em>file</em> in the perspective as selected or unselected.</p>
+</li>
+<li><p><strong>(2) Open parent folder</strong> - will navigate to the parent folder of the current folder, if it is part of the current location. This action can be achieved also by using the <strong>BACKSPACE</strong> key of the keyboard.</p>
+</li>
+<li><p><strong>(3) Switches the views</strong> - toggles between the <a href="#grid-view">grid</a> and <a href="#list-view">list</a> views of this perspective.</p>
+</li>
+<li><p><strong>(4) Add/Remove tags</strong>  will allow you to manage tags on selected files. (This options is only available when there is an active selection, and works on multiple files simultaneously.) To learn more about how tagging works, refer to the <a href="tagging.html#tagging-using-context-menus">Tagging -&gt; Tagging using context menus</a> section.</p>
+</li>
+<li><p><strong>(5) Copy/move files</strong> will allow you to copy or move the currently selected files. This option is only available when there is an active selection, and works on multiple files simultaneously. Selecting this option will present you with the <strong>Move or Copy File(s)</strong> dialog. After specifying the target directory (which can be anywhere on the file system, even outside your connected locations), you can choose to move or copy the file(s) by pressing the corresponding button.</p>
 </li>
 </ul>
+<p><img src="media/copy-move-files-dialog.png" alt="Screenshot of the dialog for moving or copying of multiple files"></p>
 <ul>
-<li><strong>Title</strong> - The file&apos;s title is the filename without the extension or any tag information. By default, TagSpaces stores tags as part of the filename. To learn more about how this is achieved, see the <a href="tagging.html">Tagging</a> section.</li>
-</ul>
+<li><p><strong>(6) Delete files</strong> - will open a dialog where you can confirm the deletion of the selected files.</p>
+</li>
+<li><p><strong>(7) Sort files</strong> - open a menu with following options. There is an arrow in front of one these options, it indicates how the files and folders in the perspective are sorted.</p>
 <ul>
-<li><strong>Tags</strong> - All the tags that are applied to the file will appear here, with the right background and font color. To learn more about tag colors, refer to the <a href="userinterface.md#tag-library">User interface -&gt; Tag Library</a> section.</li>
+<li><strong>Title</strong> - will sort the file alphabetically by name.</li>
+<li><strong>Size</strong> - will sort the files by their size.</li>
+<li><strong>Date Modified</strong> - will sort the files by the date of the last modification.</li>
+<li><strong>First Tag</strong> - will sort the files alphabetically by the title of their first tag.</li>
+<li><strong>File Ext.</strong> - will sort the files alphabetically by their file extension.</li>
+<li><strong>Random</strong> - will sort the files in a random way. This could be useful if TagSpaces is used as music player and you want to hear audio tracks in a random order.</li>
 </ul>
-<ul>
-<li><strong>Size</strong> - This is the file size in a human readable format.</li>
+</li>
 </ul>
-<ul>
-<li><strong>Date modified</strong> - The time the file had been last modified, in a format of <code>YYYY.MM.DD-hh:mm:ss</code></li>
-</ul>
-<p>To change the list order, you can click the list column headers. For example if you want to sort the list alphabetically by name <em>(A-Z)</em>, click on the name. To change the direction of the sorting <em>(Z-A)</em>, click on the name again. Each header offers bidirectional sorting based on its column&apos;s properties.</p>
 <blockquote>
-<p><strong>Hint:</strong> A small arrow next to the name of the appropriate column, will indicate the direction of sorting, and the column to sort by.</p>
+<p><strong>Hint:</strong> Clicking a second time on same sorting option will reverse the sort order. By sorting option <strong>random</strong> this will lead to a new randomization of the file order.</p>
+<p><strong>Hint:</strong> Sort order is preserved after navigation to a new folder.</p>
 </blockquote>
-<h3 id="list-overflow-menu-options">List overflow menu options</h3>
-<p>The <strong>Floating Action Button</strong> (FAB) at the bottom right corner, hides a contextual overflow menu applicable for the currently active perspective. The List perspective offers its own set of options, that will allow you to manage the list of files in certain ways.</p>
-<p><img src="media/list-perspective-overflow.png" alt=""></p>
 <ul>
-<li><strong>Toggle Select All Files</strong> will mark every file on the list as selected or unselected.</li>
+<li><strong>(8) More options</strong> - will open a sub menu where you can choose among the following options:<ul>
+<li><strong>Show/Hide Subfolders</strong> - Toggles the visibility of folders in the perspective</li>
+<li><strong>Toggle thumbnail modes</strong> - Toggles between the two modes(cover and contain) of displaying thumbnails, see <a href="#grid-view">bellow</a> for more details.</li>
+<li><strong>Compact mode</strong> - A condensed display mode, where the area representing a file or folder takes a smaller place the default mode. Some of the information available in the following modes may be hidden here.</li>
+<li><strong>Default mode</strong> - The default display mode.</li>
+<li><strong>Large mode</strong> - A display mode, where the area representing a file or folder takes a larger place the default mode.</li>
+<li><strong>Single click opens file internally</strong> - Single click or tap on a file will open it in the applications</li>
+<li><strong>Single click opens file externally</strong> - Single click or tap on a file will open it in the default external application for your operating system.</li>
+<li><strong>Single click selects only</strong> - Single click or tab on a file will just select it, without opening it.</li>
 </ul>
-<ul>
-<li><strong>Add/Remove tags</strong>  will allow you to manage tags on selected files. (This options is only available when there is an active selection, and works on multiple files simultaneously.) To learn more about how tagging works, refer to the <a href="tagging.html#tagging-using-context-menus">Tagging -&gt; Tagging using context menus</a> section.</li>
+</li>
 </ul>
-<ul>
-<li><strong>Copy/move files</strong> will allow you to copy or move one or more selected files. (This option is only available when there is an active selection, and works on multiple files simultaneously.) Selecting this option will present you with the <strong>Move or Copy File(s)</strong> dialog. After specifying the target directory (which can be anywhere on the file system, even outside your connected locations), you can choose to move or copy the file(s) by pressing the corresponding button.</li>
-</ul>
-<p><img src="media/copy-move-files-dialog.png" alt=""></p>
-<ul>
-<li><p><strong>Delete files</strong> will allow you to delete the file(s) selected. (This option is only available when there is an active selection, and works on multiple files simultaneously).</p>
 <blockquote>
-<p><i class="profeature">pro</i> <strong>Hint</strong>: TagSpaces PRO offers an option to move deleted items to trash bin instead of deleting them permanently. To learn more about how to activate this feature, refer to the <a href="settings.md#pro-features">Settings -&gt; PRO features</a> section.</p>
+<p><strong>Hint:</strong> Double click on a file will always open it in the preview area. Double click on a folder will navigate to this folder.</p>
 </blockquote>
-</li>
-</ul>
-<ul>
-<li><p><strong>Show subfolders content</strong> - If you don&apos;t care about folder structure, or do not know where in the hierarchy you would find a necessary file, you can turn this option on, to show every file from all subfolders recursively, starting from your current directory. The list will display all files in order, without any indication of their actual locations. This option will allow you to work with multiple files across a folder hierarchy at once.</p>
-</li>
-<li><p><strong>Export to CSV</strong> will create a <strong>Comma Separated Variable</strong> from all displayed files, be it from the current folder, or from the full folder hierarchy, and save it n a folder of your choice. The generated CSV contains <code>path,title,size,tag1,tag2,tag3,...</code>, where each new line represents a separate file.</p>
-</li>
-<li><p><strong>Show/Hide Subfolders</strong> Starting with <strong>TagSpaces 2.8</strong>, it is possible to list and navigate subfolders in-line with the file list.</p>
-</li>
-<li><p><strong>About</strong> will display information about the perspective extension in a pop-up window.</p>
-</li>
-</ul>
-<h3 id="navigating-folders-from-from-the-file-list">Navigating folders from from the file list</h3>
-<p>When you enable the option to <em>Show Subfolders</em> from the overflow menu, the list perspective will show all subfolders in the current folder, in-line with the file, on the top of the list.</p>
-<p><img src="media/list-perspective-showing-folders.png" alt=""></p>
-<p>Double-clicking a folder name will change to that folder, while single-clicking it will select the folder, the same as selecting a file.</p>
-<blockquote>
-<p><strong>Note:</strong> The right-click menu options for folders are currently the same as they are for files</p>
-</blockquote>
+<!-- * **Show sub folders content** - If you don't care about folder structure, or do not know where in the hierarchy you would find a necessary file, you can turn this option on, to show every file from all subfolders recursively, starting from your current directory. The list will display all files in order, without any indication of their actual locations. This option will allow you to work with multiple files across a folder hierarchy at once.
+* **Export to CSV** will create a **Comma Separated Variable** from all displayed files, be it from the current folder, or from the full folder hierarchy, and save it n a folder of your choice. The generated CSV contains `path,title,size,tag1,tag2,tag3,...`, where each new line represents a separate file.
+* **About** will display information about the perspective extension in a pop-up window. -->
 <h3 id="grid-view">Grid view</h3>
-<p>An alternative arrangement, commonly found in file browsing applications is the grid. In TagSpaces the <strong>Grid Perspective</strong> offers a resizeable grid with thumbnail previews of certain file formats, for quick and effective browsing.</p>
-<p><img src="media/grid-perspective.png" alt=""></p>
-<p>Each card on the grid has three main components. The main body of the card shows a thumbnail preview of the file (if available), the bottom area displays the filename, the color coded icon in the top left corner represents the file extension, with a checkbox for selecting the file. Underneath the file extension icon, the applicable tags are displayed. In this view, there is no information given about file sizes, or last modified dates.</p>
-<p><img src="media/grid-perspective-card.png" alt=""></p>
-<p>The file extension, and the tags are dimmed on the cards by default, which might render them unreadable, when there is a file preview available. To improve readability, hover your mouse over the extension, or the tags to make them more opaque.</p>
-<p><img src="media/grid-perspective-card-2.png" alt=""></p>
-<h3 id="grid-overflow-menu-options">Grid overflow menu options</h3>
-<p>Just like the List perspective, the grid also offers a specific set of options, found in the overflow menu, which can be accessed by pressing the FAB.</p>
-<p><img src="media/grid-overflow-menu.png" alt=""></p>
-<p>Some options (such as <em>Add/Remove Tags</em>, <em>Copy/Move Files</em>, <em>Delete Files</em>, <em>Show Subfolder Content</em>, and <em>About</em>) are identical to those of the List Perspective. The <strong>Grid Perspective</strong> specific specific options, which allow you to interact with the view are:</p>
+<p>A common arrangement found in file browsing applications is the grid. The grid view offers a resizable grid with thumbnail previews of certain file formats, for quick and effective browsing. The files and folder are represented by user interface element called cards.</p>
+<p>The following screenshot shows the grid view in its <strong>compact mode</strong>. The thumbnails are in the so called <strong>cover</strong> mode, covering the whole area defined for the thumbnail. In order to achieve this effect this mode will more likely cut some of the border areas of the thumbnail&apos;s image.
+<img src="media/grid-perspective.png" alt=""></p>
+<p>The next screenshot shows the grid view in its <strong>large mode</strong>. The thumbnails here are in the <strong>contain</strong> mode, which displays the whole thumbnail in the thumbnail area of the card, eventually causing transparent bars to appear on the left and right side of the thumb image.
+<img src="media/grid-view-large-mode.png" alt=""></p>
+<blockquote>
+<p><strong>Hint:</strong> Switching the thumbnail mode is triggered by the <strong>Toggle thumbnails mode</strong> menu item of the more options menu from the <a href="#main-toolbar">perspective&apos;s toolbar</a>.</p>
+</blockquote>
+<h4 id="file-card">File Card</h4>
+<p>Each card on the grid can represent the following information. In area <strong>(1)</strong> the tags added to this file will appear. If the file has a description it will be displayed in section <strong>(2)</strong>. Behind the number <strong>(1)</strong> and <strong>(2)</strong> a thumbnail of the file (if available) will be displayed. In <strong>(3)</strong> you will find the title of the file. Title is the part of the file name without the file extension. In section <strong>(4)</strong> you will find the file extension with appropriate color defined in the <a href="ui/settings.html#file-types">File types tab</a> from the settings. Bellow number <strong>(5)</strong> the amount of time elapsed since the last time the file was modified will be displayed. Hovering this area with the mouse pointer will show a tooltip with exact date and time of the file modification. Bellow number <strong>(6)</strong> the size of the file can be found. Hovering this are will display the file size in bytes.</p>
+<p><img src="media/grid-perspective-file-card.png" alt=""></p>
+<blockquote>
+<p>Hint: The tags are dimmed on the cards by default, which might render them unreadable, when there is a file preview available. To improve readability, hover your mouse over the extension, or the tags to make them more opaque.</p>
+<p><strong>Note <i class="profeature">pro</i>:</strong> Defining descriptions for file is feature available in the Pro and the Enterprise versions of the app.</p>
+</blockquote>
+<h4 id="folder-card">Folder Card</h4>
+<p>The folder card show basically similar information as the file card. In area <strong>(1)</strong> the tags added to this folder will appear. If the folder has a description it will be displayed in section <strong>(2)</strong>. Behind the number <strong>(1)</strong> and <strong>(2)</strong> a thumbnail of the folder will be displayed. In <strong>(3)</strong> you will find the name of the folder. Instead on the file extension in section <strong>(4)</strong> a folder icon will be shown. If the folder has a <a href="ui/userinterface.html#folder-properties-area">custom color</a> it is also visible on the card behind number <strong>(3)</strong> and <strong>(4)</strong>.</p>
+<p><img src="media/grid-perspective-folder-card.png" alt=""></p>
+<blockquote>
+<p><strong>Note <i class="profeature">pro</i>:</strong> Defining descriptions and thumbnails for folders are features available in the Pro and the Enterprise versions of the app.</p>
+</blockquote>
+<h3 id="list-view">List view</h3>
+<p>The list view is a classic way to represent list of items such folders and files. It also features the three representation modes: compact, default and large.</p>
+<p><img src="media/list-perspective.png" alt=""></p>
+<p>The following information can be found on every row representing a file on this view:</p>
 <ul>
-<li><strong>Change card size</strong> - by pressing the <em>plus</em> <span class="inline_image"><img src="media/plus-button.png" alt=""></span> and <em>minus</em> <span class="inline_image"><img src="media/minus-button.png" alt=""></span> buttons, you can change the size of the cards displayed on the grid.</li>
+<li><p><strong>File extension</strong>  -  A color coded icon, representing the file type. Scroll down to <a href="#color-coded-file-extensions">Color coded file extensions</a> to learn more about this feature.</p>
+</li>
+<li><p><strong>Folder icon</strong> - On rows representing folders instead of the file extension a folder icon is displayed.</p>
+</li>
+<li><p><strong>Title</strong> - The file&apos;s title is the filename without the extension or any tag information.</p>
+</li>
+<li><p><strong>Description</strong> - If the file/folder have a description it will be displayed also here.</p>
+</li>
+<li><p><strong>Tags</strong> - All the tags that are applied to the file will appear here, with the right background and font color. To learn more about tag colors, refer to the <a href="ui/taglibrary.html">Tag Library</a> section.</p>
+</li>
+<li><p><strong>Size</strong> - This is the file size in a human readable format.</p>
+</li>
+<li><p><strong>Date modified</strong> - The time the file had been last modified.</p>
+</li>
 </ul>
-<ul>
-<li><strong>Sort Files</strong> will present you with different options to sort files by.</li>
-</ul>
-<p><img src="media/grid-sort-files.png" alt=""></p>
-<ul>
-<li><strong>Group files</strong> allows for grouping based on time (either stamp tags, or last modified date accessed from the file itself), or by any defined tag groups. This will allow tag groups to also serve as a basis for file grouping, besides grouping tags themselves. (To learn more about tag groups, refer to <a href="userinterface.md#tag-library">User Interface -&gt; Tag Library</a> section.</li>
-</ul>
-<p><img src="media/grid-group-files.png" alt=""></p>
-<h3 id="common-features">Common features</h3>
-<p>Besides the very specific functionality and features List and Grid perspectives offer, there are some common characteristics that are uniform across the two.</p>
-<h4 id="file-context-menu">File context menu</h4>
+<h3 id="selecting-files">Selecting files</h3>
+<p>File in the perspective can be selected by holding the CTRL key and clicking on the file or the folder. You can select a range of files by holding the SHIFT key, clicking on a <em>file 1</em> and then clicking on <em>file 2</em>. This way make all file between <em>file 1</em> and <em>file 2</em> to be selected.</p>
+<p>To select or deselect all the listed files, you can use the first button from the perspective&apos;s toolbar.</p>
+<h3 id="file-context-menu">File context menu</h3>
 <p>The file context menu can be accessed by right-clicking a file in either perspective. It will offer some common file management options.</p>
 <p><img src="media/file-context-menu.png" alt="the context menu of a file"></p>
 <ul>
-<li><p><strong>Open file</strong> will split the main area of TagSpaces into two, and open the file in the right pane. TagSpaces offers viewers for various file types, which can be opened inside the application. To learn more bout supported types, refer to the <a href="viewing-files.html">Viewing Files</a> section.</p>
+<li><p><strong>Open file</strong> - will split the main area of TagSpaces into two, and open the file in the right pane. TagSpaces offers viewers for various file types, which can be opened inside the application. To learn more bout supported types, refer to the <a href="viewing-files.html">Viewing Files</a> section.</p>
 </li>
-<li><p><strong>Open File Natively</strong> will open the file in whatever application is associated with the file type in your operating system.</p>
+<li><p><strong>Open File Natively</strong> - will open the file in whatever application is associated with the file type in your operating system.</p>
 </li>
-<li><p><strong>Show in File Manager</strong> will show this file in the default file manager of your operating system</p>
+<li><p><strong>Show in File Manager</strong> - will show this file in the default file manager of your operating system</p>
 </li>
-<li><p><strong>Add / Remove Tags</strong> will open a dialog where you can add or remove multiple tag to this file.</p>
+<li><p><strong>Add / Remove Tags</strong> - will open a dialog where you can add or remove multiple tag to this file.</p>
 </li>
-<li><p><strong>Rename File</strong> will open the file rename dialog, where you can change the name of the file.</p>
+<li><p><strong>Rename File</strong> - will open the file rename dialog, where you can change the name of the file.</p>
 </li>
-<li><p><strong>Move / Copy File</strong> will open a dialog, where you can choose where this file should be moved or copied</p>
+<li><p><strong>Move / Copy File</strong> - will open a dialog, where you can choose where this file should be moved or copied</p>
 </li>
-<li><p><strong>Delete</strong> will open a dialog, where you can confirm the deletion the file</p>
+<li><p><strong>Delete</strong> - will open a dialog, where you can confirm the deletion the file</p>
 </li>
 </ul>
-<h4 id="folder-context-menu">Folder context menu</h4>
+<h3 id="folder-context-menu">Folder context menu</h3>
 <p>The folder context menu can be accessed by right-clicking on a folder the perspective. It will offer some common folder management options.</p>
 <p><img src="media/folder-context-menu.png" alt="The context menu of a folder"></p>
 <ul>
-<li><p><strong>Open Directory</strong> will navigate to the selected directory.</p>
+<li><p><strong>Open Directory</strong> - will navigate to the selected directory.</p>
 </li>
-<li><p><strong>Rename directory</strong> will open the directory rename dialog, where you can change the name of the folder.</p>
+<li><p><strong>Rename directory</strong> - will open the directory rename dialog, where you can change the name of the folder.</p>
 </li>
-<li><p><strong>Delete directory</strong> will open a dialog, where you can confirm the deletion the directory</p>
+<li><p><strong>Delete directory</strong> - will open a dialog, where you can confirm the deletion the directory</p>
 </li>
-<li><p><strong>Show in File Manager</strong> will open this directory in the default file manager of your operating system</p>
+<li><p><strong>Show in File Manager</strong> - will open this directory in the default file manager of your operating system</p>
 </li>
-<li><p><strong>Extract Content</strong> will start the extraction of special data such as <em>geo-locations</em> from the files in this folder</p>
+<li><p><strong>Extract Content</strong> - will start the extraction of special data such as <em>geo-locations</em> from the files in this folder</p>
 </li>
-<li><p><strong>Directory Properties</strong> will open the properties of this folder in the preview area (most right panel) of the application</p>
+<li><p><strong>Directory Properties</strong> - will open the properties of this folder in the preview area (most right panel) of the application</p>
 </li>
 </ul>
-<h4 id="drag-to-move-within-tagspaces">Drag to move within TagSpaces</h4>
+<h3 id="drag-to-move-within-tagspaces">Drag to move within TagSpaces</h3>
 <p>An alternative way to move files into another folder is to drag it icon onto a folder on the <strong>Folder navigation</strong> area on the left panel. When the folder lights up with a greenish hue, just release the dragged item, and the file will be immediately moved into that folder.</p>
 <blockquote>
-<p><strong>Hint:</strong> You can access subfolders of any folder displayed in the hierarchy, by clicking the black folder icon next to its name.</p>
+<p><strong>Hint:</strong> You can access sub folders of any folder displayed in the hierarchy, by clicking the black folder icon next to its name.</p>
 </blockquote>
 <p><img src="media/drop-files-to-folder.png" alt=""></p>
-<h4 id="importing-files-with-drag-and-drop">Importing files with drag and drop</h4>
+<h3 id="importing-files-with-drag-and-drop">Importing files with drag and drop</h3>
 <p>Besides dragging files from the <strong>File Browser Area</strong> to a sub folder, TagSpaces allows you to add files the currently opened folder  by dragging and dropping it from the operating system, or its default file management application.</p>
 <p>To do this, just grab a file icon with your mouse, and drag it to TagSpaces&apos; application.</p>
 <p><img src="media/drag-file-into-tagspaces.png" alt="Importing files with drag and drop"></p>
-<h4 id="color-coded-file-extensions">Color coded file extensions</h4>
+<h3 id="color-coded-file-extensions">Color coded file extensions</h3>
 <p>In the grid and list perspectives, color coded file extensions are supported, allowing for a better visual recognition of the file type. For the most common file extensions, custom colors have been defined, to be displayed on the extension buttons found on the file rows or cards.</p>
 <p><img src="media/color-coded-file-extensions-list.png" alt="color codes file extensions in the list perspective"></p>
 <blockquote>
 <p><strong>Hint:</strong> The colors of the supported file types can configured in the <a href="ui/settings.html#file-types"><strong>File Types</strong></a> of application settings dialog.</p>
 </blockquote>
-<h2 id="folder-visualization-perspective">Folder Visualization Perspective</h2>
+<h2 id="folderviz-perspective">Folder Visualization Perspective - discontinued </h2>
 <blockquote>
 <p><strong>Note</strong>: This perspective is not available in version 3 of TagSpaces.</p>
 </blockquote>
 <p>The <strong>FolderViz Perspective</strong> is a collection of experimental views hat apply some information visualization concepts to representing your files and folders. While the primary aim of FolderViz perspective is to showcase TagSpaces&apos; capabilities to developers, some of the options might offer some useful features to the end users.</p>
 <p><strong>FolderViz Perspective</strong> was offering five types of views, which were accessible from the FAB menu:</p>
-<h3 id="mindmap-view-discontinued">MindMap View (discontinued)</h3>
+<h3 id="mindmap-view">MindMap View</h3>
 <p><strong>MindMap</strong> will display all folders and subfolders contained within the current directory, in an expandable tree-node format. There are plans to extend this view in the future with an inverted graph of tags so you can navigate your tagged files, with the help of the tag group three instead of the folder tree, and drag and drop files from one branch of tag tree to some other branch, which will automatically re-tag them.</p>
 <p><img src="media/folderviz-mindmap.png" alt=""></p>
-<h3 id="tree-view-discontinued">Tree View (discontinued)</h3>
+<h3 id="tree-view">Tree View</h3>
 <p><strong>Tree</strong> will display a fully expanded tree, similar to <strong>MindMap</strong>, only not interactive. It can be useful to visualize folder hierarchy, but this view can have performance issues with large directory structures.</p>
 <p><img src="media/folderviz-tree-view.png" alt=""></p>
-<h3 id="treemap-view-discontinued">TreeMap View (discontinued)</h3>
+<h3 id="treemap-view">TreeMap View</h3>
 <p><strong>TreeMap</strong> offers a representation of all files and folders, where the size of the squares correspond to file sizes, relative to the root and each other, while the structure of the squares represents folder hierarchy.</p>
 <p><img src="media/folderviz-treemap.png" alt=""></p>
-<h3 id="treemap-navi-view-discontinued">TreeMap-Navi View (discontinued)</h3>
+<h3 id="treemap-navi-view">TreeMap-Navi View</h3>
 <p><strong>TreeMap Navi</strong> is just like TreeMap, but without the hierarchy. Here the squares fully use up the available User Interface, allowing for a better visual representation of relative file sizes. This can be useful for finding large files or folders.</p>
 <p><img src="media/folderviz-treemap-navi.png" alt=""></p>
-<h3 id="bilevel-partition-discontinued">Bilevel Partition (discontinued)</h3>
+<h3 id="bilevel-partition">Bilevel Partition</h3>
 <p><strong>Bilevel Partition</strong> is the most experimental and least functional of all views, basically a test to push the capabilities of folder and file visualization. While it might produce some interesting looking results, it will most certainly be removed from a future release of TagSpaces.</p>
 <p><img src="media/bilevel-partition.png" alt=""></p>
 
@@ -1670,7 +1620,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Browsing Files in Perspectives","level":"1.4","depth":1,"next":{"title":"Overview","level":"1.4.1","depth":2,"anchor":"#perspectives-overview","path":"browsing-files.md","ref":"browsing-files.md#perspectives-overview","articles":[]},"previous":{"title":"Internationalization","level":"1.3.13","depth":2,"path":"ui/i18n.md","ref":"ui/i18n.md","articles":[]},"dir":"ltr"},"config":{"plugins":["edit-link","anchorjs","prism","-highlight","toc","sitemap","ga","expandable-chapters"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"prism":{},"toc":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"sitemap":{"hostname":"https://docs.tagspaces.org/"},"ga":{"configuration":{"anonymizeIp":true},"token":"UA-90842098-1"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":"Edit","base":"https://github.com/tagspaces/documentation/edit/master"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchorjs":{},"expandable-chapters":{}},"search":{"maxIndexSize":1000000000},"theme":"default","author":"TagSpaces UG (haftungbeschraenkt)","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"TagSpaces Documentation","gitbook":"3.2.2"},"file":{"path":"browsing-files.md","mtime":"2019-10-04T12:22:59.739Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2019-10-04T15:42:23.299Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Browsing Files in Perspectives","level":"1.4","depth":1,"next":{"title":"Overview","level":"1.4.1","depth":2,"anchor":"#perspectives-overview","path":"browsing-files.md","ref":"browsing-files.md#perspectives-overview","articles":[]},"previous":{"title":"Internationalization","level":"1.3.13","depth":2,"path":"ui/i18n.md","ref":"ui/i18n.md","articles":[]},"dir":"ltr"},"config":{"plugins":["edit-link","anchorjs","prism","-highlight","toc","sitemap","ga","expandable-chapters"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"prism":{},"toc":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"sitemap":{"hostname":"https://docs.tagspaces.org/"},"ga":{"configuration":{"anonymizeIp":true},"token":"UA-90842098-1"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":"Edit","base":"https://github.com/tagspaces/documentation/edit/master"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchorjs":{},"expandable-chapters":{}},"search":{"maxIndexSize":1000000000},"theme":"default","author":"TagSpaces UG (haftungbeschraenkt)","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"TagSpaces Documentation","gitbook":"3.2.2"},"file":{"path":"browsing-files.md","mtime":"2019-10-06T21:34:59.690Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2019-10-06T21:39:17.751Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>

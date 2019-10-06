@@ -1,6 +1,6 @@
 # Settings
 
-**Content**
+**Table of Contents**
 <!-- toc -->
 
 To access the settings dialogue, just click on the gears icon at the bottom left part of the app.

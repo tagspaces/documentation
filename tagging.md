@@ -1,5 +1,6 @@
 # Organizing your files and folders with tags
 
+**Table of Contents**
 <!-- toc -->
 
 ## Motivation

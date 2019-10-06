@@ -81,7 +81,6 @@ Bulleted lists will be used to
 * Improve **readability**
 * Make it **easier to find** what you are looking for.
 
-
 ### Document symbols
 
 There are currently two types of symbols, apart from the usual text formatting and annotations, that you can find on these pages:
@@ -97,8 +96,8 @@ This documentation project is hosted on [GitHub](https://github.com/tagspaces/do
 ### Credits
 
 **Original text and images** in this documentation were **created and edited by**:
- * [**Attila Orosz**](https://www.linkedin.com/in/attila-orosz-43832114) - main editor of the documentation for version 2 of the product, you can contact him via [email](mailto:attila.orosz@mail.com).
  * [**Ilian Sapundshiev**](https://www.ilian.me) - initiator of the TagSpaces project
+ * [**Attila Orosz**](https://www.linkedin.com/in/attila-orosz-43832114) - main editor of the documentation for version 2 of the product, he can be reached via [email](mailto:attila.orosz@mail.com).
 
 Articles published on the [TagSpaces Blog](https://www.tagspaces.org/blog/), served as the **basis upon which this documentation was built**. Fragments of the original text can still be found in the documentation, without marking the original author.
 

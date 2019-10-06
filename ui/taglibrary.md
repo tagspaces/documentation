@@ -1,6 +1,6 @@
 # Tag Library
 
-**Content**
+**Table of Contents**
 <!-- toc -->
 
 The tag library is the place where you can manage and organize the tags with which you can tag your files and folders. To open it, you need to click the button with the tag icon (1), in the vertical navigation placed on the most left part of the application.
