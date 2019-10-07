@@ -5,11 +5,7 @@ This is the first draft of documentation for TagSpaces products as of **version 
 > **Warning:** This documentation is in <b>work in progress</b> status!
 
 ## About TagSpaces
-TagSpaces is an open source, cross-platform, no backend, no login, personal data manager, and file navigator. It helps you organize your files, photos and other documents with tags on different platforms and/or devices, according to your own preferences and following your own logic, by using the same smart and friendly interface everywhere. The short introductory video below shows TagSpaces in action:
-
-<iframe width="100%" height="500" style="display:block; margin: 25px auto" src="https://www.youtube-nocookie.com/embed/8rMo5EFAqgM?rel=0" frameborder="0" allowfullscreen></iframe>
-
-Check out the [TagSpaces YouTube channel](https://www.youtube.com/channel/UCzfSaeg-7mpt96UI97zwbfQ) for more TagSpaces related videos.
+TagSpaces is an open source, cross-platform, no backend, no login, personal data manager, and file navigator. It helps you organize your files, photos and other documents with tags on different platforms and/or devices, according to your own preferences and following your own logic, by using the same smart and friendly interface everywhere.
 
 The following few slides explain the basics of the project. To navigate the presentation use the arrow keys or click on it and use the arrow key on your keyboard.
 
@@ -28,6 +24,14 @@ The following few slides explain the basics of the project. To navigate the pres
 ### Downloads
 
 All versions of TagSpaces are available to download from the [Downloads Page](https://www.tagspaces.org/downloads), where you can quickly find the appropriate installer for your platform (Windows, Mac, Linux, Android, Firefox and Chrome).
+
+### Videos
+The short introductory video below shows TagSpaces in action:
+
+<iframe width="100%" height="500" style="display:block; margin: 25px auto" src="https://www.youtube-nocookie.com/embed/8rMo5EFAqgM?rel=0" frameborder="0" allowfullscreen></iframe>
+
+Check out the [TagSpaces YouTube channel](https://www.youtube.com/channel/UCzfSaeg-7mpt96UI97zwbfQ) for more TagSpaces related videos.
+
 
 ## About this document
 

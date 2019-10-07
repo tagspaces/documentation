@@ -1,6 +1,6 @@
 # Summary
 
-## Product Documentation
+## TagSpaces Documentation
 * [About](README.md)
     * [TagSpaces Products](README.md#about-tagspaces)
     * [This Documentation](README.md#about-this-document)
@@ -34,7 +34,7 @@
 * [Viewing Files](viewing-files.md)
     * [File preview ⚒](viewing-files.md#file-preview)
     * [Printing files](viewing-files.md#printing-files)
-* [Creating & editing Files](editing-files.md)
+* [Creating & editing files](editing-files.md)
     * [Creating files](editing-files.md#creating-files)
     * [Editing files](editing-files.md#editing-files)
     * [Editing HTML files](editing-files.md#html-editor)
