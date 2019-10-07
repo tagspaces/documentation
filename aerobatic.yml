@@ -3,5 +3,9 @@ deploy:
   ignore: []
   directory: /docs
 plugins:
+  - name: custom-errors
+    options:
+      errors:
+        404: 404.html
   - name: webpage
 
