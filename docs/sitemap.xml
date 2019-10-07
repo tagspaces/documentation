@@ -36,5 +36,6 @@
 <url> <loc>https://docs.tagspaces.org/extensions/editorHTML.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
 <url> <loc>https://docs.tagspaces.org/extensions/editorJSON.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
 <url> <loc>https://docs.tagspaces.org/extensions/editorText.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
+<url> <loc>https://docs.tagspaces.org/error404.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
 <url> <loc>https://docs.tagspaces.org/GLOSSARY.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
 </urlset>

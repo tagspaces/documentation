@@ -6,6 +6,6 @@ plugins:
   - name: custom-errors
     options:
       errors:
-        404: 404/index.html
+        404: error404.html
   - name: webpage
 
