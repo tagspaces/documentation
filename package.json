@@ -14,7 +14,7 @@
     "prepare-full": "yarn optipng && yarn update-ext && gitbook build . docs && yarn pdf",
     "optipng": "optipng media/*png",
     "start": "gitbook serve",
-    "pdf": "gitbook pdf ./ ./downloads/tagspaces-manual[v3].pdf",
+    "pdf": "gitbook pdf ./ ./downloads/tagspaces-manual-v3.pdf",
     "deploy": "aero deploy"
   },
   "keywords": [
