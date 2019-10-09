@@ -1,11 +1,11 @@
 # Introduction
 
-This is the first draft of documentation for TagSpaces products as of **version 3**. Please note, that there are still many places where we show content and screenshot from the old version 2 of the app.
+This is the documentation for the TagSpaces products as of **version 3**.
 
-> **Warning:** This documentation is in <b>work in progress</b> status!
+> **Note:** This documentation is in <b>work in progress</b> status.
 
 ## About TagSpaces
-TagSpaces is an open source, cross-platform, no backend, no login, personal data manager, and file navigator. It helps you organize your files, photos and other documents with tags on different platforms and/or devices, according to your own preferences and following your own logic, by using the same smart and friendly interface everywhere.
+TagSpaces is an open source, cross-platform, no backend, no login, file manager, organizer and browser. It helps you organize your files, photos and other documents with tags on different platforms and/or devices, according to your own preferences and following your own logic, by using the same smart and friendly interface everywhere.
 
 The following few slides explain the basics of the project. To navigate the presentation use the arrow keys or click on it and use the arrow key on your keyboard.
 
@@ -39,8 +39,8 @@ Check out the [TagSpaces YouTube channel](https://www.youtube.com/channel/UCzfSa
 
 You can download version of the documentation as PDF files:
 
-* Documentation for TagSpaces v3 as [PDF](/downloads/tagspaces-manual[v3].pdf)
-* Documentation for TagSpaces v2 as [PDF](/downloads/tagspaces-manual[v2].pdf)
+* Documentation for TagSpaces v3 as [PDF](/downloads/tagspaces-manual-v3.pdf)
+* Documentation for TagSpaces v2 as [PDF](/downloads/tagspaces-manual-v2.pdf)
 
 ### The structure of this documentation
 
