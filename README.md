@@ -23,7 +23,7 @@ The following few slides explain the basics of the project. To navigate the pres
 
 ### Downloads
 
-All versions of TagSpaces are available to download from the [Downloads Page](https://www.tagspaces.org/downloads), where you can quickly find the appropriate installer for your platform (Windows, Mac, Linux, Android, Firefox and Chrome).
+All versions of TagSpaces are available to download from the [Downloads Page](https://www.tagspaces.org/downloads/), where you can quickly find the appropriate installer for your platform (Windows, Mac, Linux, Android, Firefox and Chrome).
 
 ### Videos
 The short introductory video below shows TagSpaces in action:

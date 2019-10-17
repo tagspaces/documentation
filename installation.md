@@ -43,7 +43,7 @@ Once a newer version of the Firefox addon is approved for the Mozilla store, it 
 You can install the Chrome extension directly from the [Google Chrome Store]({{ site.linkChromeStore}}).
 
 ### Installation from the TagSpaces webpage
-An alternative way is get the extension directly from [our download page](https://www.tagspaces.org/downloads). If you do so, please consider the following instructions:
+An alternative way is get the extension directly from [our download page](https://www.tagspaces.org/downloads/). If you do so, please consider the following instructions:
 
 * Download the extension file from the link above and save it to your computer.
 * Click the settings icon on the browser toolbar.

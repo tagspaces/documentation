@@ -107,7 +107,7 @@ Please make sure, that when you are using search operators, there is no any spac
 | t:video | Search only for video with the following extensions for example: *WEBM*, *OGV*, *MP4* and etc.<br>Short search example: **t:video clip** |
 | t:archive | Search only for archives with the following extensions for example: *ZIP*, *RAR*, *7Z* and etc.<br>Short search example: **t:archive arch** |
 
-If you need more information about supported file types, please take a look at [this article](https://www.tagspaces.org/documentation/supported-file-formats/).
+If you need more information about supported file types, please take a look at [this article](https://www.tagspaces.org/supported-file-formats/).
 
 ### <i class="profeature">pro</i>Advanced search
 
