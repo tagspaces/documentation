@@ -75,7 +75,7 @@ Once a new version of the application is available, you will see a green present
 
 ![New version notification](/media/new-version-available.png)
 
-If you do not want to TagSpaces to check for the availability of new version, disable this functionality in the [settings](userinterface.html/#settings)
+If you do not want to TagSpaces to check for the availability of new version, disable this functionality in the [settings](ui/settings)
 
 ## Running TagSpaces in portable mode {#portable-mode}
 The Windows and Linux versions of TagSpaces can be started in the so called portable mode, allowing the use of the application from an USB-stick or other portable devices. In this mode all the configuration information such as tags, tag groups and connection to locations is stored in a folder called *tsprofile*. This folder is located in the from where the application is started and not in the home user folder on current operating systems. The portable mode can be started with the `tagspacesp.cmd` script under Windows or the `tagspacesp` under Linux. These scripts are located in the unzipped application folder. Under Linux you have eventually to make this script executable with this command `chmod +x tagspacesp`.

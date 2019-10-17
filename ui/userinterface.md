@@ -16,9 +16,9 @@ This streamlined experience offers familiarity and an ease to use the applicatio
 The user interface of the application consists of the following main areas:
 
 * **(1) [Vertical toolbar](#vertical-toolbar)** - Is always visible and provides quick access to main parts of the application
-* **(2) [Location manager](/ui/locations.html) / [Tag Library](/ui/taglibrary.html) / [Search](/search.html) areas** - Here you can manage the connected locations, the tag library or search for file and folders.
+* **(2) [Location manager](/ui/locations.md) / [Tag Library](/ui/taglibrary.md) / [Search](/search.md) areas** - Here you can manage the connected locations, the tag library or search for file and folders.
 * **(3) [Navigation](#browsing-area)** - Here you can switch the location or quickly navigate to parent folders.
-* **(4) [Browsing area](/browsing-files.html)** - This section is occupied by the so called **perspective** used for browsing files and folders.
+* **(4) [Browsing area](/browsing-files.md)** - This section is occupied by the so called **perspective** used for browsing files and folders.
 * **(5) [Common actions area](#properties-area)** - Here you can access common actions for the currently opened file or folder.
 * **(6) [File / Folder properties](#file-properties-area)** - Here you will find some properties for the currently opened file or folder.
 * **(7) [Preview area](#preview-area)** - In this area you can preview and/or edit the current file.

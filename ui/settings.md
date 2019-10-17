@@ -17,7 +17,7 @@ Most of the TagSpaces' common settings can be accessed from this tab.
 
 * **Interface language** - TagSpaces has been translated to a variety languages. Choose your preference here
 * **Theme selector** - Here the user interface theme can be selected.
-* **Check for new version on startup** - You will be notified if a new version if available
+* **Check for new version on startup** - You will be notified when a new version is available.
 * **Use sidecar files for tagging** - once activated, tags assigned to files will not be embedded in their file names, but in so called sidecar files, located in hidden .ts sub folder of the folder where the current file is located.
 * **Enable thumbnails generation** - will generate and store persistent thumbnails in the hidden .ts sub folder of the folder where current file is located.
 * **Default tag background color** - Allows you to change to default background color of any newly created tags. Existing tags will not be affected.

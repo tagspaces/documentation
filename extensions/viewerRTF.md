@@ -2,9 +2,6 @@
 
 A TagSpaces extension allowing opening of RTF files.
 
-## Features
-Here is a list of the key feutures offered by this extension.
-
 ## Used libraries
 This extension thankfully relays on the following great libraries:
 
@@ -12,7 +9,7 @@ This extension thankfully relays on the following great libraries:
 
 ## Installation
 
-This extensions is packaged with any new version of TagSpaces
+This extensions is packaged by default with TagSpaces
 
 ## Source code
 
@@ -20,8 +17,8 @@ The source code of this extension is freely available on [github.com/tagspaces/v
 
 ## Development
 
-If you want to extend this extensions, please follow our general [extension development guide](http://docs.tagspaces.org/dev/extension-development-guide.html)
+If you want to extend this extensions, please follow our general [extension development guide](https://docs.tagspaces.org/dev/extension-development-guide)
 
 ## License
 
-[MIT](https://github.com/tagspaces/viewerRTF/blob/master/LICENSE.txt)
+[MIT](https://github.com/tagspaces/viewerRTF/blob/master/LICENSE)

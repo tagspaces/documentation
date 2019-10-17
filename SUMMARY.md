@@ -100,5 +100,5 @@
 * [FAQ](https://www.tagspaces.org/faq/)
 * [Github Page](https://github.com/tagspaces/tagspaces/)
 * [Error page](/error404.md)
-* [Changelog](https://www.tagspaces.org/whatsnew)
+* [Changelog](https://www.tagspaces.org/whatsnew/)
 
