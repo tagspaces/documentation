@@ -111,8 +111,8 @@ Version 3 of TagSpaces supports user interface themes. The community version is 
 
 ![Picture showing the app in the light and the dark theme](/media/themes-switch.jpg)
 
-## Zoomable user interface
-The user interface of the application zoomable, this allows you to adjust the zoom scale according to your screen resolution and display size. In the desktop you can access the zoom functionality from the **View** in the **Main Menu**. Here you will find zoom in, zoom out functionality and also the possibility to restore the initial zoom factor with **Actual size** menu item.
+## Scalable user interface
+The user interface of the application scalable, this allows you to adjust the zooming factor according to your preference, screen resolution or display size. In the desktop you can access the zoom functionality from the **View** in the **Main Menu**. Here you will find zoom in, zoom out functionality and also the possibility to restore the initial zoom factor with **Actual size** menu item.
 
 In the following screenshot you will see the menu options from the **View** sub menu and also TagSpaces with zoomed in interface.
 

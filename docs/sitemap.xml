@@ -10,6 +10,10 @@
 <url> <loc>https://docs.tagspaces.org/ui/settings.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
 <url> <loc>https://docs.tagspaces.org/ui/i18n.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
 <url> <loc>https://docs.tagspaces.org/browsing-files.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
+<url> <loc>https://docs.tagspaces.org/perspectives/grid.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
+<url> <loc>https://docs.tagspaces.org/perspectives/gallery.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
+<url> <loc>https://docs.tagspaces.org/perspectives/mapique.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
+<url> <loc>https://docs.tagspaces.org/perspectives/folderviz.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
 <url> <loc>https://docs.tagspaces.org/viewing-files.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
 <url> <loc>https://docs.tagspaces.org/editing-files.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
 <url> <loc>https://docs.tagspaces.org/tagging.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
