@@ -5,7 +5,6 @@ wget https://raw.githubusercontent.com/tagspaces/viewerImage/master/README.md -O
 wget https://raw.githubusercontent.com/tagspaces/viewerURL/master/README.md -O extensions/viewerURL.md
 wget https://raw.githubusercontent.com/tagspaces/viewerMD/master/README.md -O extensions/viewerMD.md
 wget https://raw.githubusercontent.com/tagspaces/viewerMHTML/master/README.md -O extensions/viewerMHTML.md
-wget https://raw.githubusercontent.com/tagspaces/editorODF/master/README.md -O extensions/editorODF.md
 wget https://raw.githubusercontent.com/tagspaces/viewerPDF/master/README.md -O extensions/viewerPDF.md
 wget https://raw.githubusercontent.com/tagspaces/viewerText/master/README.md -O extensions/viewerText.md
 wget https://raw.githubusercontent.com/tagspaces/viewerBrowser/master/README.md -O extensions/viewerBrowser.md
@@ -14,7 +13,7 @@ wget https://raw.githubusercontent.com/tagspaces/viewerRTF/master/README.md -O e
 wget https://raw.githubusercontent.com/tagspaces/editorHTML/master/README.md -O extensions/editorHTML.md
 wget https://raw.githubusercontent.com/tagspaces/editorJSON/master/README.md -O extensions/editorJSON.md
 wget https://raw.githubusercontent.com/tagspaces/editorText/master/README.md -O extensions/editorText.md
-wget https://raw.githubusercontent.com/tagspaces/perspectiveGrid/master/README.md -O extensions/perspectiveGrid.md
-wget https://raw.githubusercontent.com/tagspaces/perspectiveList/master/README.md -O extensions/perspectiveList.md
-wget https://raw.githubusercontent.com/tagspaces/perspectiveImageSwiper/master/README.md -O extensions/perspectiveImageSwiper.md
-wget https://raw.githubusercontent.com/tagspaces/perspectiveGraph/master/README.md -O extensions/perspectiveGraph.md
+# wget https://raw.githubusercontent.com/tagspaces/perspectiveGrid/master/README.md -O extensions/perspectiveGrid.md
+# wget https://raw.githubusercontent.com/tagspaces/perspectiveList/master/README.md -O extensions/perspectiveList.md
+# wget https://raw.githubusercontent.com/tagspaces/perspectiveImageSwiper/master/README.md -O extensions/perspectiveImageSwiper.md
+# wget https://raw.githubusercontent.com/tagspaces/perspectiveGraph/master/README.md -O extensions/perspectiveGraph.md

@@ -85,7 +85,6 @@
     * [Link Opener](extensions/viewerURL.md)
     * [Markdown Reader](extensions/viewerMD.md)
     * [MHTML Reader](extensions/viewerMHTML.md)
-    * [ODF Viewer](extensions/editorODF.md)
     * [PDF Viewer](extensions/viewerPDF.md)
     * [RTF Viewer](extensions/viewerRTF.md)
     * [Text Reader](extensions/viewerText.md)
