@@ -15,3 +15,9 @@ video, img {
     margin-right: 5px;
 }
 
+figcaption {
+    text-align: center;
+    margin-top: -10px;
+    margin-bottom: 20px;
+    font-style: italic;
+}
