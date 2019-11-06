@@ -1,4 +1,4 @@
-# Mapique perspective (available in v3.3)
+# Mapique perspective
 
 **Table of Contents**
 <!-- toc -->
@@ -13,6 +13,8 @@ Here are some idea for which this perspective can be used.
 * Place any file and document on a map
 * Add private annotations to a map 
 * ... (please share your use case with us)
+
+> <i class="profeature">pro</i> The perspective is available only in the PRO and the Enterprise versions of the product.
 
 ## Supported Maps
 The default map shown by opening of this perspective is provided by [OpenStreetMap](https://www.openstreetmap.org/)

@@ -4,7 +4,9 @@
 <!-- toc -->
 
 ## Motivation
-This perspective offers basic image gallery functionality, like previewing the images from the current folder, a presentation mode and a full screen view.
+This perspective offers basic image gallery functionality, like previewing the images from the current folder, a presentation mode and a full screen view. 
+
+ > <i class="profeature">pro</i> The perspective is available only in the PRO and the Enterprise versions of the product.
 
 ## User interface
 From the main toolbar of this perspective the user can access the following functionalities:
