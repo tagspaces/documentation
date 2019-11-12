@@ -6,7 +6,7 @@
 ## Motivation
 This perspective can be useful for visualizing files and folder tagged with geo location tags on map.
 
-Here are some idea for which this perspective can be used.
+Here are some ideas for which this perspective can be used.
 * Saving favorite places, privately
 * Planning trips and places to visit
 * Showing pictures taken on trips

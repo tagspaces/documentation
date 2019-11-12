@@ -8,7 +8,7 @@ TagSpaces has an integrated file and folder search functionality. The difference
   - The tags assigned to the file or folder
   - The description added to the file or the folder
   - The file or folder path
-  - The content of txt, md and html, if the full text search is activated for the current location (TagSpaces PRO only)
+  - <i class="profeature">pro</i> The content of txt, md and html, if the full text search is activated for the current location
 * The search algorithm has a build-in fuzziness, meaning that if the free text search query contains a misspelled word, TagSpaces will try to find files and folder with the best ques.
 * The tag search is strict, without fuzziness, if you are not sure about the exact name of a tag, write in the free text query.
 * The search is case insensitive.
@@ -27,13 +27,25 @@ In order to provide a boolean search support for tags, the search user interface
 
 > **Note:** After opening of a certain location, the application starts to index in background all the files and folders from this location recursively. During the indexing time the search is not available to the user, but all other functionalities are accessible. Opening of location containing more the 100000 files could lead to performance issues, during the index or later by search.
 
-### <i class="profeature">pro</i>Advanced search
 
-In addition to the searching by files name and by tag, the search in the PRO versions supports the following features on top:
+### Limiting the search results
+By default, TagSpaces is limiting the amount of the found search results to 1000 files. This limitation is also valid for the maximum files, which can be displayed in a single folder. The reason for adding such limitation is the fact that pagination is not typical for file managers and for now we do not want to add such. In tab general of the Settings there is a field where you can increase or decrease this limit. See the next screenshot.
 
-#### <i class="profeature">pro</i>Search by type
+<figure>
+  <img title="Screenshot of the advanced search options" src="/media/adjust-search-limit.png" class="img-responsive center-block">
+  <figcaption>Adjust number of shown / found items in the perspeectives</figcaption>
+</figure>
 
-In the file type dropdown you can specify types of the files you want to search. The following groups are supported:
+## <i class="profeature">pro</i>Advanced search
+The search options described in this section are available only in the Pro and Enterprise editions of TagSpaces. In addition to the searching by files name and by tag, the advanced search supports the following filter criteria:
+
+<figure>
+  <img title="Screenshot showing the advanced search options" src="/media/tagspaces-advanced-search.png" class="img-responsive center-block">
+  <figcaption>Screenshot showing the advanced search options</figcaption>
+</figure>
+
+### Search by type
+In the file type dropdown you can specify types of the files you want to search. The file types are grouped in the following sections:
 
 * Pictures and Photos: JPG, PNG, GIF, etc.
 * Documents: PDF, ODF, DOCX, EXL, etc.
@@ -44,24 +56,74 @@ In the file type dropdown you can specify types of the files you want to search.
 * Bookmarks: URL, LNK, etc.
 * eBook EPUB, MOBI, AZW, PRC, etc.
 
-In addition to that we offer some special filters:
-* Folders - showing only folder
-* Files - showing only files
-* Untagged files or folders - showing only files and folders witch are not tagged
+In addition to that there are some special filters:
+* Folders - selecting this options will limit the search to only folders
+* Files - selecting this option will limit the search to only files
+* Untagged files or folders - this options will show only files and folders witch are not tagged
 
 <figure>
-  <img title="Screenshot of the advanced search options" src="https://www.tagspaces.org/content/v3-x/tagspaces-search-type.png" class="img-responsive center-block">
-  <figcaption>Screenshot of the advanced search options</figcaption>
+  <img title="Search by file type" src="/media/tagspaces-search-by-type.png" class="img-responsive center-block">
+  <figcaption>Search by file type</figcaption>
 </figure>
 
-#### <i class="profeature">pro</i>Search by file size
+### Search by file size
+In this dropdown you can filter for files by their size. The following options are supported:
+* Empty - will filter files with zero size
+* Tiny - will filter files smaller than 10KB
+* Very small - will filter files smaller than 100KB
+* Small - will filter files smaller than 1MB
+* Medium - will filter files smaller than 50MB
+* Large - will filter files smaller than 1GB
+* Huge - will filter files bigger that 1GB
 
-#### <i class="profeature">pro</i>Search by last modified date
+<figure>
+  <img title="Search by size" src="/media/tagspaces-search-by-size.png" class="img-responsive center-block">
+  <figcaption>Options for searching by size</figcaption>
+</figure>
 
-#### <i class="profeature">pro</i>Search by time period
+### Search by last modified date
+Here you can specify in which period the files you are search should have been modified. This filter supports the following options:
+* Today - will show files and folders modified today
+* Yesterday - will show results modified yesterday
+* Past 7 days - will show results modified in the last 7 days
+* Past 30 days - will shows results modified in the last 30 days
+* Past 6 months - will show files and folders modified in the last 6 months from today
+* Past year - will show files and folders modified in the last 12 months from today
+* More than one year - will show files and folder older than one year
 
-#### <i class="profeature">pro</i>Search by GPS coordinates
+<figure>
+  <img title="Search by last modified date and time" src="/media/tagspaces-search-by-last-modified-date.png" class="img-responsive center-block">
+  <figcaption>Options for searching by last modified date</figcaption>
+</figure>
 
+### Search by time period
+This filter is still work in progress.
+
+### Search by GPS coordinates
+This filter is still work in progress.
+
+### Full text search for TXT, MD and HTML
+After activating the full text search with the checkbox in the properties of a given location (see next screenshot), TagSpaces will try to extract and index the text content of supported file formats. 
+
+<!--This text content is saved in the hidden `.ts` folder and is considered later by the search. Since this is a early experimental feature, please don't relay only on ly on it.-->
+
+These file formats are currently supported:
+
+* HTML - files in HTML format, used for notes in rich text format
+* MD - markdown files
+* TXT - plain text files 
+
+<!-- * Office Documents: PDF, ODT, ODP, ODS, DOCX, XLSX, PPTX (extracts the text content)
+* Images: JPG (extracts Exif and IPTC informations)
+* Audios formats: MP3 (extracts id3 tags)
+* Ebooks: EPUB (extracts the text content) -->
+
+<figure>
+  <img title="Search by last modified date and time" src="/media/tagspaces-enabling-fulltext-indexing.png" class="img-responsive center-block">
+  <figcaption>Options for searching by last modified date</figcaption>
+</figure>
+
+> **Note:** This feature is still in beta state and could lead to performance issues if you are dealing with many and/or big text files.
 
 <!-- ## Search based on filenames
 
@@ -72,19 +134,7 @@ TagSpaces has a build in file search functionality. The difference to the classi
 * If you want to find all files tagged with a certain tag, you can add the `+` character in front of the tag name. This way occurrences of this word somewhere else in the file name or content will be ignored. <span class="label label-info">Example:</span> If you want to find all files from the current folder tagged with the tag `tag1` you have to enter `+tag1` in the search input box.
 * The name of the parent directory of a given file is also considered by the search algorithm. So for example if you are searching for photos from you vacation in USA and the folder where these files are located contains the word USA (e.g. '20160301 vacation usa 70D'), then the search will list all the files located directly in this folder.
 
-Feature versions of the application could include a file indexing functionality for a faster and responsive search.
-
-![Screenshot of the advanced search drop down menu](/media/advanced-search-menu.png)
-
-## Limit search results
-
-We have added an options in the settings to limit the maximal search results or files to be shown in the current perspective. With this version of TagSpaces we changed the default behaviour of the search and now the applications searches automatically in the subfolder of the current folder recursively. This of course may lead on big directory tree to performances issues. That's why have build in a switch in the options where you can disable this functionality.
-
-![limit search results screenshot](/media/new-search-options.png)
-
 ## Advanced search
-
-TagSpaces PRO search is very powerful. It offers users the opportunity to discover easier and faster the right result for them.
 
 One of the advantages of TagSpaces PRO's search are search operators. They are words that can be added to searches to help narrow down the results. You can use all of the search operators directly in the search box, without opening the advanced search dialog. Here is an example:
 
@@ -109,14 +159,6 @@ Please make sure, that when you are using search operators, there is no any spac
 
 If you need more information about supported file types, please take a look at [this article](https://www.tagspaces.org/supported-file-formats/).
 
-### <i class="profeature">pro</i>Advanced search
-
-The advanced search dialog in TagSpaces PRO contains two more search features:
-
-### <i class="profeature">pro</i>Search by file type
-
-In the file type dropdown you can specify a group of files you want to search. The following file type groups are supported:
-
 * Pictures: JPG,PNG,GIF,... (query shortcut t:picture)
 * Documents: PDF,ODF,DOCX,EXL,... (query shortcut t:doc)
 * Notes: MD,TXT,HTML,... (query shortcut t:note)
@@ -126,22 +168,6 @@ In the file type dropdown you can specify a group of files you want to search. T
 
 > **Note** You can use the query shortcut for a given file type directly in the search box, without opening the advanced search dialog. So for example the search query `t:audio coldplay` will give you all audio files containing the word coldplay.
 
-### <i class="profeature">pro</i>Search history
-
+### Search history
 For quick access TagSpaces PRO keeps a history of your last 15 search queries in a list. This list can be cleaned by selecting the last item in it called "Clear search history" in it.
-
-![Advanced search menu with activated search history and search by file types](media/advanced-search-pro.png)
-
-## <i class="profeature">pro</i>Text extraction and full text search <sup style="color: gray">&nbsp;ALPHA</sup>{#fullTextSearch}
-
-After activating the text extraction checkbox in the settings, TagSpaces PRO will try to extract the text content of files you are currently browsing. This text content is saved in the hidden `.ts` folder and is considered later by the search. Since this is a early experimental feature, please don't relay only on ly on it.
-
-These file formats are currently supported:
-
-* Notes: HTML, MD, TXT (extracts the text content)
-* Office Documents: PDF, ODT, ODP, ODS, DOCX, XLSX, PPTX (extracts the text content)
-* Images: JPG (extracts Exif and IPTC informations)
-* Audios formats: MP3 (extracts id3 tags)
-* Ebooks: EPUB (extracts the text content)
-
 -->
