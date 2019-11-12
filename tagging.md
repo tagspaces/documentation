@@ -73,11 +73,11 @@ The user interface was designed for touch screens, but it also supports drag & d
 
 A context menu can be accessed by either clicking on the file extension icon of a single file (in List Perspective), or by right clicking a file or a selection of multiple files. From the context menu, select *Add/Remove Tags*
 
-![](media/add-remove-tag-context.png)
+![](/media/tagspaces-tagging-default-perspective.png)
 
 to access a popup dialog, that allows you to manage tags on the file. This popup dialog will not display the currently active tags, but allows you to specify tags by name, offering suggestions based on tags currently in the tag library.
 
-![](media/add-remove-tag-popup.png)
+![](/media/tagspaces-tagging-dialog.png)
 
 The options you have here are:
 
