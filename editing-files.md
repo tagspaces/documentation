@@ -29,13 +29,13 @@ In the last section (4), you can specify where the file should be create. The in
 
 Besides opening and viewing files, TagSpaces can also edit specific file formats. Just like [File Browser Perspectives](browsing-files.md/#perspectives-overview), and [File Preview extensions](viewing-files.md/#file-previewing), the different types of **File Editors** are also **modular extensions**, making TagSpaces' file editing capabilities extendable. Currently three editor extensions ship bundled with the application:
 
-* [**HTML Editor**](extensions/editorHTML.html) - `HTML` files serve a specific purpose in TagSpaces. They are treated as RichText documents, that can not only be previewed, but visually edited in a full-featured **WYSIWYG editor**.
+* [**HTML Editor**](/extensions/editorHTML.md) - `HTML` files serve a specific purpose in TagSpaces. They are treated as RichText documents, that can not only be previewed, but visually edited in a full-featured **WYSIWYG editor**.
 
 
-* [**Text Editor**](extensions/editorText.html) - This editor opens all other text-based file formats, and unknown file types alike. For `.txt` and miscellaneous files, it behaves as a simple editor, with added syntax highlighting capabilities for common programming languages and a preview for **MarkDown**. (`.md`)
+* [**Text Editor**](/extensions/editorText.md) - This editor opens all other text-based file formats, and unknown file types alike. For `.txt` and miscellaneous files, it behaves as a simple editor, with added syntax highlighting capabilities for common programming languages and a preview for **MarkDown**. (`.md`)
 
 
-* [**JSON Editor**](extensions/editorJSON.html) - An interactive visual editor for editing and manipulating `JSON` files.
+* [**JSON Editor**](/extensions/editorJSON.md) - An interactive visual editor for editing and manipulating `JSON` files.
 
 If the file format of the currently opened files is supported for editing the **EDIT button** will appear in the top right corner of the application. Clicking on this button will activate the edit mode for this file.
 

@@ -30,8 +30,8 @@
 * [Browsing Files in Perspectives](browsing-files.md)
     * [Overview](browsing-files.md)
     * [Grid Perspective](perspectives/grid.md)
-    * [Gallery Perspective ⚒](perspectives/gallery.md)
-    * [Mapique Perspective ⚒](perspectives/mapique.md)            
+    * [Gallery Perspective](perspectives/gallery.md)
+    * [Mapique Perspective](perspectives/mapique.md)            
     * [FolderViz Perspective](perspectives/folderviz.md)
 * [Viewing Files](viewing-files.md)
     * [File preview ⚒](viewing-files.md#file-preview)
@@ -55,7 +55,7 @@
     * [Folder Tagging ⚒](tagging.md#folder-tagging)
 * [Searching](search.md)
     * [Basic search](search.md#basic-search)
-    * [Advanced search (PRO)](search.md#proadvanced-search)
+    * [Advanced search](search.md#proadvanced-search)
 
 ## Tutorials
 * [Web Clipping](tutorials/webclipping.md)

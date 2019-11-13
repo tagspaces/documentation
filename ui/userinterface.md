@@ -32,11 +32,11 @@ New in version 3 of the app is the vertical toolbar located in the most left par
 > **Hint:** Clicking a second time on the icons for the location manager, the tag library or the search area will close the whole area contain these sections. This could be useful if you want to have more space for file browsing or previewing.
 
 ## Browsing Area
-The file browsing area normally takes up he majority of the user interface. This is where all files from the currently active folder are displayed, either as a list, grid, or folder tree, depending on the active [**perspective**](browsing-files.html#Perspectives). To learn more about the all file browsing features, navigate to the [Browsing Section](/browsing-files.html).
+The file browsing area normally takes up he majority of the user interface. This is where all files from the currently active folder are displayed, either as a list, grid, or folder tree, depending on the active [**perspective**](browsing-files.md#Perspectives). To learn more about the all file browsing features, navigate to the [Browsing Section](/browsing-files).
 
 ![Screenshot showing the file browsing area](/media/browsing-area.png)
 
-In the top left corner of the browsing area is placed a button with a briefcase icon **(1)** which open a dropdown showing a list of all [locations](/ui/locations.html). From this dropdown you can quickly switch to another location.
+In the top left corner of the browsing area is placed a button with a briefcase icon **(1)** which open a dropdown showing a list of all [locations](/ui/locations.md). From this dropdown you can quickly switch to another location.
 
 > **Hint <i class="profeature">pro</i>:** If you are currently using a cloud based location, the the icon of the button for changing the location **(1)** will be a cloud, in other cases the icon will be the briefcase.
 
@@ -53,13 +53,13 @@ Clicking on the name of the current folder or on the three dot icon above **(4)*
 * **Delete Directory** - Open a dialog where you can confirm the deletion of the folder
 * **Show in File Manager** - Opens the folder in the default file manager of the operating system
 * **New Subdirectory** - Opens the folder create dialog, where you can enter the name of the new sub folder
-* **New File / Note** - Open the dialog for [creating new](/editing-files.html#creating-files) files / notes
+* **New File / Note** - Open the dialog for [creating new](/editing-files.md#creating-files) files / notes
 * **Add Existing File** - Opens a file choose where you can select a file from your local files system, which will be added to your current folder in TagSpaces.
 * **Extract Content** - Starts a data extraction process, where you can retrieve some additional meta information from the files in the current folder.
 * **Directory Properties** - Opens the folder properties area
 
 ## Preview area
-When a file is opened, the main UI area splits into two, the rightmost page becoming the **Preview area**. TagSpaces is capable of natively displaying different file types, from markdown, through HTML and docx, to PDF or various image files. To learn more about all the viewable and editable files, and TagSpaces' full file handling capacity, navigate to the [Viewing Files section](/viewing-files.html) and [Editing Files section](/editing-files.html) respectively.
+When a file is opened, the main UI area splits into two, the rightmost page becoming the **Preview area**. TagSpaces is capable of natively displaying different file types, from markdown, through HTML and docx, to PDF or various image files. To learn more about all the viewable and editable files, and TagSpaces' full file handling capacity, navigate to the [Viewing Files section](/viewing-files) and [Editing Files section](/editing-files) respectively.
 
 The following screenshot show a JPG file (photo) with name *IMG_0180* **(1)** opened in the preview area. Here the preview area uses the full width of the application windows. This can be achieved by clicking on button **(5)** from the preview toolbar. The preview area can be closed by clicking the button with **X** icon located on the right to **(2)**
 
@@ -67,7 +67,7 @@ The following screenshot show a JPG file (photo) with name *IMG_0180* **(1)** op
 
 The file preview toolbar offer some actions, some of them are described bellow:
 
-* **(3) Properties** - Toggles the [file properties area](#file-properties-area). This can be acchieved also by clicking on the file name or the file extension located on the left of **(1)**
+* **(3) Properties** - Toggles the [file properties area](#file-properties-area). This can be achieved also by clicking on the file name or the file extension located on the left of **(1)**
 * **(4) Full screen** - Opens the file preview in full screen. You can leave the full screen mode by clicking the ESC key of you keyboard or the by clicking the round green x-button which will appear in the top right corner of the screen.
 * **(5) Full width** - Toggles the file preview in the full width of the application windows, by hiding the file browsing and areas in left panel of the app.
 * **(6) Open externally** - Opens the current file in the default application of your operating system.

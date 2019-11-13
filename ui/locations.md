@@ -30,7 +30,7 @@ The location with the light green background color (4) is the **currently opened
 
 In TagSpaces there two type of locations, regular (local) and cloud based (AWS S3 Object Storage). The type can be selected in the create and edit location dialogs.
 
-<!-- You can also select here the default [**perspective**](browsing-files.html#perspectives), used with this location. For example if the  location contains mainly images and photos, you may want to open it with the  [**image-swiper perspective**](/extensions/perspectiveImageSwipper) , offering a preview of the images and easy navigation through them. -->
+<!-- You can also select here the default [**perspective**](browsing-files.md#perspectives), used with this location. For example if the  location contains mainly images and photos, you may want to open it with the  [**image-swiper perspective**](/extensions/perspectiveImageSwipper.md) , offering a preview of the images and easy navigation through them. -->
 
 ### Regular Locations
 Regular locations are pointing to a folder located on your local computer. This could be also a folder where you sync locally your Dropbox files or a folder from a connected network drive.

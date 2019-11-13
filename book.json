@@ -13,7 +13,7 @@
     "expandable-chapters"
   ],
   "search": {
-    "maxIndexSize": 1000000000
+    "maxIndexSize": 1000000
   },
   "pluginsConfig": {
     "edit-link": {

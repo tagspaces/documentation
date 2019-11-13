@@ -17,13 +17,13 @@ The primary purpose of TagSpaces, is tagging files and organizing them. **Tags**
 
 Tags can be anything, form descriptive labels, to categories, ratings, priorities, or dates, timestamps, and smart tags.
 
-> **Hint:** To learn more about the powerful tag management features TagSpaces offers, read the [Tagging section](tagging.html)
+> **Hint:** To learn more about the powerful tag management features TagSpaces offers, read the [Tagging section](/tagging.md)
 
 ## Tag groups
 
 Tags are organized into **tag groups**, which are basically categories for tags with similar purpose and/or characteristics. Tag groups make it easier to navigate, select and manage tags in the system. TagSpaces comes with a few pre-defined tag groups, which you can freely modify, delete, or expand upon. The default tag groups are:
 
-* **Smart tags** include various date based tags and geo location tagging. Learn more about smart tags in the [tagging section](/tagging.html#smart-tags)
+* **Smart tags** include various date based tags and geo location tagging. Learn more about smart tags in the [tagging section](/tagging.md#smart-tags)
 * **Common Tags**: This group contains two predefined tags, *book*, and *paper*. This can give you a general idea of the intended purpose of the group.
 * **Getting Things Done**: Another useful category that can enhance your productivity, is an implementation of the [GTD time management method](https://en.wikipedia.org/wiki/Getting_Things_Done). Predefined tags here are *done*, *next*, *maybe* and *waiting*.
 * **Priorities** are exactly what they seem. These are color coded tags that will be easily identifiable by a simple glance. The three predefined priority tags are:
@@ -39,8 +39,8 @@ Tags are organized into **tag groups**, which are basically categories for tags 
 This menu contains the following three menu items:
 
 * **Create Tag Group** - Opens the dialog for creating tag groups
-* **Import Tag Library** - Start the process for importing tag groups in TagSpaces. Lear more in the [tag sharing tutorial](/tutorials/sharing-tags.html#distributing-the-library)
-* **Export Tag Library** - Start the process for exporting tag groups from TagSpaces. Lear more in the [tag sharing tutorial](/tutorials/sharing-tags.html#exporting-the-existing-tag-groups)
+* **Import Tag Library** - Start the process for importing tag groups in TagSpaces. Lear more in the [tag sharing tutorial](/tutorials/sharing-tags.md#distributing-the-library)
+* **Export Tag Library** - Start the process for exporting tag groups from TagSpaces. Lear more in the [tag sharing tutorial](/tutorials/sharing-tags.md#exporting-the-existing-tag-groups)
 
 ![screenshot of the context menu of the tag library](/media/taglibrary-context-menu.png)
 
@@ -48,7 +48,7 @@ To create a new tag group, click on **Create Tag Group**, right underneath the t
 
 ![screenshot of the dialog for creating new tag groups](/media/new-tag-group-dialog.png)
 
-Selecting the **Import tag library** and **Export tag library** options will allow you to import/export predefined tags, which you have previously created in TagSpaces. This option takes a `JSON` file, previously exported from (probably another instance of) TagSpaces, and imports all the tags contained within, into your system. This can be useful, when you use TagSpaces on multiple systems, or you work collaboratively with others and wish to share the same tags library. To learn more about sharing tags between systems and people, refer to the [Sharing tag libraries](/tutorials/sharing-tags.html) tutorial article.
+Selecting the **Import tag library** and **Export tag library** options will allow you to import/export predefined tags, which you have previously created in TagSpaces. This option takes a `JSON` file, previously exported from (probably another instance of) TagSpaces, and imports all the tags contained within, into your system. This can be useful, when you use TagSpaces on multiple systems, or you work collaboratively with others and wish to share the same tags library. To learn more about sharing tags between systems and people, refer to the [Sharing tag libraries](/tutorials/sharing-tags) tutorial article.
 
 ## Tag group context menu
 Tag groups have their own context menu, accessible by clicking the three dot icon next to the tag group's name. The context menu offers the following options and operations:
@@ -87,4 +87,4 @@ When accessing a tag's context menu from the **file browsing area** (the main ar
 
 ![](/media/tag-operations-dialog-2.png) -->
 
-> **Hint:** Editing the name of a tag deleting one from the library tags will only affect the library itself. If the same tag had had already been applied to a file, the tag on that file will remain intact. But if you change the color of a tag in the library, it will be reflected on the files marked with that tag as well. This is because of the way TagSpaces handles tags, that essentially become an organic part of the filename.  To learn more about how tagging works, please refer to [File tagging based on filename](tagging.html#file-tagging-based-on-filename) under the Tagging section.
+> **Hint:** Editing the name of a tag deleting one from the library tags will only affect the library itself. If the same tag had had already been applied to a file, the tag on that file will remain intact. But if you change the color of a tag in the library, it will be reflected on the files marked with that tag as well. This is because of the way TagSpaces handles tags, that essentially become an organic part of the filename.  To learn more about how tagging works, please refer to [File tagging based on filename](/tagging.md#file-tagging-based-on-filename) under the Tagging section.

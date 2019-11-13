@@ -25,7 +25,7 @@ The toolbar of the perspective is located in the top part of the perspective's, 
 
 * **(3) Switches the views** - toggles between the [grid](#grid-view) and [list](#list-view) views of this perspective.
 
-* **(4) Add/Remove tags**  will allow you to manage tags on selected files. (This options is only available when there is an active selection, and works on multiple files simultaneously.) To learn more about how tagging works, refer to the [Tagging -> Tagging using context menus](tagging.md/#tagging-using-context-menus) section.
+* **(4) Add/Remove tags**  will allow you to manage tags on selected files. (This options is only available when there is an active selection, and works on multiple files simultaneously.) To learn more about how tagging works, refer to the [Tagging -> Tagging using context menus](/tagging.md/#tagging-using-context-menus) section.
 
 * **(5) Copy/move files** will allow you to copy or move the currently selected files. This option is only available when there is an active selection, and works on multiple files simultaneously. Selecting this option will present you with the **Move or Copy File(s)** dialog. After specifying the target directory (which can be anywhere on the file system, even outside your connected locations), you can choose to move or copy the file(s) by pressing the corresponding button.
 
@@ -73,7 +73,7 @@ The next screenshot shows the grid view in its **large mode**. The thumbnails he
 > **Hint:** Switching the thumbnail mode is triggered by the **Toggle thumbnails mode** menu item of the more options menu from the [perspective's toolbar](#main-toolbar).
 
 ### File Card
-Each card on the grid can represent the following information. In area **(1)** the tags added to this file will appear. If the file has a description it will be displayed in section **(2)**. Behind the number **(1)** and **(2)** a thumbnail of the file (if available) will be displayed. In **(3)** you will find the title of the file. Title is the part of the file name without the file extension. In section **(4)** you will find the file extension with appropriate color defined in the [File types tab](/ui/settings.html#file-types) from the settings. Bellow number **(5)** the amount of time elapsed since the last time the file was modified will be displayed. Hovering this area with the mouse pointer will show a tooltip with exact date and time of the file modification. Bellow number **(6)** the size of the file can be found. Hovering this are will display the file size in bytes.
+Each card on the grid can represent the following information. In area **(1)** the tags added to this file will appear. If the file has a description it will be displayed in section **(2)**. Behind the number **(1)** and **(2)** a thumbnail of the file (if available) will be displayed. In **(3)** you will find the title of the file. Title is the part of the file name without the file extension. In section **(4)** you will find the file extension with appropriate color defined in the [File types tab](/ui/settings#file-types) from the settings. Bellow number **(5)** the amount of time elapsed since the last time the file was modified will be displayed. Hovering this area with the mouse pointer will show a tooltip with exact date and time of the file modification. Bellow number **(6)** the size of the file can be found. Hovering this are will display the file size in bytes.
 
 ![](/media/grid-perspective-file-card.png)
 
@@ -82,7 +82,7 @@ Each card on the grid can represent the following information. In area **(1)** t
 > **Note <i class="profeature">pro</i>:** Defining descriptions for file is feature available in the Pro and the Enterprise versions of the app.
 
 ### Folder Card
-The folder card show basically similar information as the file card. In area **(1)** the tags added to this folder will appear. If the folder has a description it will be displayed in section **(2)**. Behind the number **(1)** and **(2)** a thumbnail of the folder will be displayed. In **(3)** you will find the name of the folder. Instead on the file extension in section **(4)** a folder icon will be shown. If the folder has a [custom color](/ui/userinterface.html#folder-properties-area) it is also visible on the card behind number **(3)** and **(4)**.
+The folder card show basically similar information as the file card. In area **(1)** the tags added to this folder will appear. If the folder has a description it will be displayed in section **(2)**. Behind the number **(1)** and **(2)** a thumbnail of the folder will be displayed. In **(3)** you will find the name of the folder. Instead on the file extension in section **(4)** a folder icon will be shown. If the folder has a [custom color](/ui/userinterface#folder-properties-area) it is also visible on the card behind number **(3)** and **(4)**.
 
 ![](/media/grid-perspective-folder-card.png)
 
@@ -103,7 +103,7 @@ The following information can be found on every row representing a file on this 
 
 * **Description** - If the file/folder have a description it will be displayed also here.
 
-* **Tags** - All the tags that are applied to the file will appear here, with the right background and font color. To learn more about tag colors, refer to the [Tag Library](ui/taglibrary.html) section.
+* **Tags** - All the tags that are applied to the file will appear here, with the right background and font color. To learn more about tag colors, refer to the [Tag Library](ui/taglibrary) section.
 
 * **Size** - This is the file size in a human readable format.
 
@@ -120,7 +120,7 @@ The file context menu can be accessed by right-clicking a file in either perspec
 
 ![the context menu of a file](/media/file-context-menu.png)
 
-* **Open file** - will split the main area of TagSpaces into two, and open the file in the right pane. TagSpaces offers viewers for various file types, which can be opened inside the application. To learn more bout supported types, refer to the [Viewing Files](viewing-files.md) section.
+* **Open file** - will split the main area of TagSpaces into two, and open the file in the right pane. TagSpaces offers viewers for various file types, which can be opened inside the application. To learn more bout supported types, refer to the [Viewing Files](/viewing-files.md) section.
 
 * **Open File Natively** - will open the file in whatever application is associated with the file type in your operating system.
 

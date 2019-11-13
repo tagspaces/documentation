@@ -22,7 +22,7 @@ Most of the TagSpaces' common settings can be accessed from this tab.
 * **Enable thumbnails generation** - will generate and store persistent thumbnails in the hidden .ts sub folder of the folder where current file is located.
 * **Default tag background color** - Allows you to change to default background color of any newly created tags. Existing tags will not be affected.
 * **Default tag text color**- Allows you to change to default text color of any newly created tags. Existing tags will not be affected.
-* **Move deleted files or folders to trash bin** - will allow you to recover deleted files later, from the trash/recycle bin of your operating system.
+* **Move deleted files or folders to trash bin** - After activating it, all files deleted in TagSpaces will be send to the Trash, Trashbin or Recylcebin depending on your operating system. From these locations, you files can be easily recovered in case of a unintended deletion.
 * **Show files/directories with a dot(.) in front of the name** - This will allow the browsing of hidden files in UNIX-like systems (Linux, macOS, BSD, etc.)
 * **Max search results** - This is the limit of the maximum files and folders, which can be shown in the perspectives and respectively the maximum count of search results.
 
