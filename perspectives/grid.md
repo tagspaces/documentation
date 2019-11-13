@@ -103,7 +103,7 @@ The following information can be found on every row representing a file on this 
 
 * **Description** - If the file/folder have a description it will be displayed also here.
 
-* **Tags** - All the tags that are applied to the file will appear here, with the right background and font color. To learn more about tag colors, refer to the [Tag Library](ui/taglibrary) section.
+* **Tags** - All the tags that are applied to the file will appear here, with the right background and font color. To learn more about tag colors, refer to the [Tag Library](/ui/taglibrary) section.
 
 * **Size** - This is the file size in a human readable format.
 

@@ -27,7 +27,6 @@ In order to provide a boolean search support for tags, the search user interface
 
 > **Note:** After opening of a certain location, the application starts to index in background all the files and folders from this location recursively. During the indexing time the search is not available to the user, but all other functionalities are accessible. Opening of location containing more the 100000 files could lead to performance issues, during the index or later by search.
 
-
 ### Limiting the search results
 By default, TagSpaces is limiting the amount of the found search results to 1000 files. This limitation is also valid for the maximum files, which can be displayed in a single folder. The reason for adding such limitation is the fact that pagination is not typical for file managers and for now we do not want to add such. In tab general of the Settings there is a field where you can increase or decrease this limit. See the next screenshot.
 
@@ -82,7 +81,7 @@ In this dropdown you can filter for files by their size. The following options a
 </figure>
 
 ### Search by last modified date
-Here you can specify in which period the files you are search should have been modified. This filter supports the following options:
+Here you can specify in which period the files you are searching should have been modified. This filter supports the following options:
 * Today - will show files and folders modified today
 * Yesterday - will show results modified yesterday
 * Past 7 days - will show results modified in the last 7 days

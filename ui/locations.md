@@ -65,3 +65,5 @@ In addition to the regular locations, the cloud locations have the following pro
 * *Region* - the AWS region, where the bucket is hosted. The dropdown is located on the right from the bucket name.
 
 > Note: *Watch for external changes in this location* is disabled because it is not available for cloud locations.
+
+In our tutorial section you can find a [complete manual](/tutorials/s3-bucket-locations.md) on how to create a new AWS S3 bucket and connect it as location in TagSpaces.
