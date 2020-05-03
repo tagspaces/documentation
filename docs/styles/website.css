@@ -1,42 +1,47 @@
-@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+@import url("https://fonts.googleapis.com/css?family=Ubuntu");
 
 .markdown-section {
-  font-family: 'Ubuntu', sans-serif;
+  font-family: "Ubuntu", sans-serif;
 }
 
-video, img {
-    box-shadow: 2px 2px 15px 0px rgba(0,0,0,0.75);
-    max-width: 95% !important;
-    margin-left: auto;
-    margin-right: auto;
-    display:block;
-    margin-top:25px;
-    margin-bottom:25px;
+video,
+img {
+  box-shadow: 2px 2px 15px 0px rgba(0, 0, 0, 0.75);
+  max-width: 95% !important;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  margin-top: 25px;
+  margin-bottom: 25px;
 }
 
 .profeature {
-    background-color: #1DD19F;
-    color: white;
-    font-weight: bold;
-    font-style: normal;
-    padding-left: 5px;
-    padding-right: 5px;
-    margin-right: 5px;
+  background-color: #1dd19f;
+  color: white;
+  font-weight: bold;
+  font-style: normal;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin-right: 5px;
 }
 
 .inline_image img {
-    box-shadow: none !important;
-    margin-left: 5px;
-    margin-right: 5px;
-    display:inline;
-    max-height: 40px;
-    margin-top: 0;
-    margin-bottom: 0;
+  box-shadow: none !important;
+  margin-left: 5px;
+  margin-right: 5px;
+  display: inline;
+  max-height: 40px;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 figcaption {
-    text-align: center;
-    margin-top: -10px;
-    margin-bottom: 20px;
-    font-style: italic;
+  text-align: center;
+  margin-top: -10px;
+  margin-bottom: 20px;
+  font-style: italic;
+}
+
+#book-search-input {
+  display: none;
 }
