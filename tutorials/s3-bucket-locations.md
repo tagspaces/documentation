@@ -1,6 +1,7 @@
 # Cloud Locations in TagSpaces PRO based on AWS S3
 
 **Table of Contents**
+
 <!-- toc -->
 
 ## Motivation
@@ -8,11 +9,12 @@
 TagSpaces PRO provides the ability to connect AWS S3 compatible buckets as locations. This offers many new capabilities and use cases.
 
 ## Step 1 - Create a bucket in AWS S3
+
 In order to create a AWS S3 bucket you have to go the Amazon Web Services [website](https://aws.amazon.com/) and register an account there. Once you are register and logged in go the services section and choose from there the S3, as shown in the next screenshot
 
 ![Choose AWS S3](/media/aws/aws-s3-start.png)
 
-And then in order to create a new bucket choose the *Create Bucket* button.
+And then in order to create a new bucket choose the _Create Bucket_ button.
 
 ![Create S3 bucket](/media/aws/aws-s3-create.png)
 
@@ -30,7 +32,7 @@ Leave the default setting for access.
 
 ![Create S3 bucket access settings](/media/aws/aws-s3-create-access.png)
 
-Review the settings and click the *Create bucket* button.
+Review the settings and click the _Create bucket_ button.
 
 ![Review S3 bucket](/media/aws/aws-s3-create-overview.png)
 
@@ -39,12 +41,12 @@ Once you have successfully created the bucket you should see the following scree
 ![Create S3 bucket success](/media/aws/aws-s3-create-success.png)
 
 ## Step 2 - Set the CORS settings of the bucket
+
 This is an optional step, needed only if you want to access the bucket from [TagSpaces Enterprise](https://www.tagspaces.org/products/enterprise/) edition.
 
 ![Create S3 bucket](/media/aws/aws-s3-cors.png)
 
 The XML config, can be copied from the section bellow.
-
 
     <?xml version="1.0" encoding="UTF-8"?>
     <CORSConfiguration xmlns="http://s3.amazonaws.com/doc/2006-03-01/">
@@ -59,12 +61,12 @@ The XML config, can be copied from the section bellow.
     </CORSRule>
     </CORSConfiguration>
 
+> You can remove the _PUT_ and _DELETE_ lines, if you want to disable the writing and deleting operation from TagSpaces Enterprise.
 
-> You can remove the *PUT* and *DELETE* lines, if you want to disable the writing and deleting operation from TagSpaces Enterprise.
-
-> It is recommended to put in the *AllowedOrigin* line, the domain from which you will access this bucket. E.g.: https://example.com
+> It is recommended to put in the _AllowedOrigin_ line, the domain from which you will access this bucket. E.g.: https://example.com
 
 ## Step 3 - Create user for accessing the bucket.
+
 Accessing the bucket with the credentials from your main account is not recommended. That's in this section we will guide through the process of user creation in the AWS IAM service. After successfully creating the user here, you will be able to use it for accessing the bucket from TagSpaces.
 
 As first step the [AWS IAM](https://console.aws.amazon.com/iam/) service should be opened.
@@ -115,7 +117,6 @@ Policy for read-only user:
 
 Policy for user with admin/write access:
 
-
     {
         "Version": "2012-10-17",
         "Statement": [
@@ -158,7 +159,6 @@ Policy for user with admin/write access:
                 "Resource": [
                     "arn:aws:s3:::your-bucket-name",
                     "arn:aws:s3:::your-bucket-name/*"
-                    TBD
                 ]
             },
             {
@@ -170,13 +170,14 @@ Policy for user with admin/write access:
         ]
     }
 
-> Note: The list of the action is only a suggestion, the action can be significantly reduced, to just these which are really needed for your setup.
+> Note: The list of allowed actions is only a suggestion, the actions can be significantly reduced, to just those which are really needed for your use case.
 
 Once you are ready and have attached the newly created policy to the user, you can finalize the process. On the last screen you will see the **access key ID** and the **secret access key** of the just created user.
 ![User creation success IAM](/media/aws/aws-iam-user-success.png)
 
 ## Step 4 - Upload files to the bucket
-The easies way to upload files to your bucket is to use the build upload functionality, as seen in the next screenshot. But first you should create a folder in the bucket, which will serve as a root folder. You can name if for example *rootfolder*.
+
+The easies way to upload files to your bucket is to use the build upload functionality, as seen in the next screenshot. But first you should create a folder in the bucket, which will serve as a root folder. You can name if for example _rootfolder_.
 
 ![Create S3 bucket root folder](/media/aws/aws-s3-create-rootfolder.png)
 
@@ -188,29 +189,28 @@ Alternatively you can use the AWS CLI (command line tools), with the following c
 
     aws s3 sync local-bucket-folder s3://your-bucket-name/rootfolder
 
-This will sync all files and folder from your local folder called *local-bucket-folder* to the sub folder with the name *rootfolder* in the bucket your bucket *your-bucket-name*
+This will sync all files and folder from your local folder called _local-bucket-folder_ to the sub folder with the name _rootfolder_ in the bucket your bucket _your-bucket-name_
 
-You can find out how what is *AWS CLI* and how to install it for your operating system from this [link](https://docs.aws.amazon.com/en_pv/cli/latest/userguide/cli-chap-welcome.html).
+You can find out how what is _AWS CLI_ and how to install it for your operating system from this [link](https://docs.aws.amazon.com/en_pv/cli/latest/userguide/cli-chap-welcome.html).
 
 ## Step 5 - Create cloud location in TagSpaces PRO
 
-Start TagSpaces and click on the **Connect a location** button from the locations section. Then you should select the *AES S3 Object Store* radio button, as shown in the following screenshot.
+Start TagSpaces and click on the **Connect a location** button from the locations section. Then you should select the _AES S3 Object Store_ radio button, as shown in the following screenshot.
 
 ![Create S3 location](/media/aws/tagspaces-create-s3-location.png)
 
 Here you should enter the following parameters:
 
-* **Location Name** - this is a free text with which you will refer your location in this TagSpaces installation
-* **Location Path** - is the name of the root folder from the location we have previously create
-* **Access Key** - is the key of the IAM user
-* **Secret Access Key** - is the secret key of the IAM user
-* **Bucket Name** - self explaining ...
-* **Region** - is the region of hosting for your bucket
+- **Location Name** - this is a free text with which you will refer your location in this TagSpaces installation
+- **Location Path** - is the name of the root folder from the location we have previously create
+- **Access Key** - is the key of the IAM user
+- **Secret Access Key** - is the secret key of the IAM user
+- **Bucket Name** - self explaining ...
+- **Region** - is the region of hosting for your bucket
 
 Once you click **OK** the location will be create and its content should be listed in TagSpaces.
 
 There are some advanced settings with can be useful for S3 locations.
 
-* **Open this location in read-only mode** - this will switch the UI interface of TagSpaces in readonly mode. It is particularly useful for location to which the IAM user has only read-only access.
-* **Switch to manual index creation with persistent index** - this option will disable the indexing of the location on its opening. Instead it will try to load the previously create index file. This is useful for large locations with many files, where the initial indexing could take a lot of time.
-
+- **Open this location in read-only mode** - this will switch the UI interface of TagSpaces in readonly mode. It is particularly useful for location to which the IAM user has only read-only access.
+- **Switch to manual index creation with persistent index** - this option will disable the indexing of the location on its opening. Instead it will try to load the previously create index file. This is useful for large locations with many files, where the initial indexing could take a lot of time.
