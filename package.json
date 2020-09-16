@@ -1,32 +1,42 @@
 {
-  "name": "tagspaces-documentation",
-  "version": "1.0.0",
-  "description": "Documentation for the TagSpaces application",
-  "main": "index.js",
-  "dependencies": {
-    "gitbook-plugin-edit-link": "^2.0.2"
-  },
-  "devDependencies": {},
+  "name": "tagspaces",
+  "version": "0.0.0",
+  "private": true,
   "scripts": {
+    "docusaurus": "docusaurus",
+    "start": "docusaurus start",
+    "build": "docusaurus build",
+    "swizzle": "docusaurus swizzle",
+    "deploy": "docusaurus deploy",
+    "serve": "docusaurus serve",
+    "gen-pdf": "npx docusaurus-pdf from-build-config",
     "update-ext": "./update-external.sh",
     "anigif": "gifify --colors 150 --to 19 media/input.webm -o media/result.gif",
-    "prepare": "yarn update-ext && gitbook build . docs",
-    "prepare-full": "yarn optipng && yarn update-ext && gitbook build . docs && yarn pdf",
+    "prepare": "yarn optipng && yarn update-ext && yarn build",
     "optipng": "optipng media/*png",
-    "start": "gitbook serve",
-    "pdf": "gitbook pdf ./ ./downloads/tagspaces-manual-v3.pdf",
     "deploy": "aero deploy"
   },
-  "keywords": [
-    "docu"
-  ],
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/tagspaces/documentation.git"
+  "dependencies": {
+    "@docusaurus/core": "2.0.0-alpha.64",
+    "@docusaurus/preset-bootstrap": "^2.0.0-alpha.51",
+    "@docusaurus/preset-classic": "2.0.0-alpha.64",
+    "@mdx-js/react": "^1.5.8",
+    "clsx": "^1.1.1",
+    "docusaurus-lunr-search": "^2.1.7",
+    "docusaurus-pdf": "^1.2.0",
+    "react": "^16.8.4",
+    "react-dom": "^16.8.4"
   },
-  "author": "TagSpaces UG (haftungsbeschränkt)",
-  "license": "",
-  "devEngines": {
-    "node": "<7.x"
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 }

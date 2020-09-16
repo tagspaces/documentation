@@ -1,4 +1,6 @@
 _book
+build
+.docusaurus
 npm-degug.log
 node_modules
 npm-debug.log
