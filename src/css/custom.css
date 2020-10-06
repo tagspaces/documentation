@@ -42,6 +42,10 @@ article img {
   margin-bottom: 25px;
 }
 
+h1 {
+  font-size: 2.5em !important;
+}
+
 profeature {
   background-color: #1dd19f;
   color: white;

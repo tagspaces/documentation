@@ -54,7 +54,7 @@ module.exports = {
       },
       "selfhosting",
     ],
-    "User Interface": [
+    "Get started": [
       "ui/userinterface",
       "ui/locations",
       {

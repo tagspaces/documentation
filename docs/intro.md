@@ -60,7 +60,7 @@ TagSpaces is an open source, cross-platform, no backend, no login, file manager,
 
 The short introductory video below shows TagSpaces in action:
 
-<iframe width="100%" height="500" src="https://www.youtube-nocookie.com/embed/8rMo5EFAqgM?rel=0" frameBorder="0" allowFullScreen></iframe>
+<iframe width="100%" height="500" src="https://www.youtube-nocookie.com/embed/KUO1zvavYMw?rel=0" frameBorder="0" allowFullScreen></iframe>
 
 Check out the [TagSpaces YouTube channel](https://www.youtube.com/channel/UCzfSaeg-7mpt96UI97zwbfQ) for more TagSpaces related videos.
 
