@@ -44,9 +44,37 @@ The Linux version of TagSpaces is distributed as `tar.gz` file, which can be dow
 
 ## Installation on Android
 
-You can install the Android app directly from the [Google Play Store](https://play.google.com/store/apps/details?id=org.tagspaces.androidle).
+### From our web site
 
+A recent **BETA** version of the Android app is available as a [APK file](https://www.tagspaces.org/downloads/tagspaces-android-beta.apk) in download section of our web site.
+
+In order to install the APK file you have to perform the following steps on your Android phone.
+
+- Go to Settings.
+- Open the Security & privacy option.
+- Scroll down and find 'install from unknown apps'. If it's not there, try under 'more'.
+- You should be presented with a list of apps. Find your browser for example Firefox or Chrome.
+- Tap on it and then choose **'Allow from this source'**.
+
+If the above steps doesn't work for you, try the following:
+
+- Go to Settings.
+- Open Apps & Notifications and then select configure apps.
+- Scroll down. Find and tap advanced options or special app access.
+- Scroll to the bottom of the special app access menu, where you can find the **"Install unknown apps"** option
+- Find your browser, tap on it and select **'Allow from this source'**.
+
+Once these steps are done you can download and install with the previously configured browser the app from our [download section](https://www.tagspaces.org/downloads)
+
+> **Risks of installing apps outside the Play Store** - Installing an app outside of Google Play sore is risky as you may be subjecting your phone to viruses that come along with these apps, so please be very careful and check your download sources.
+
+### From Google Play
+
+You can still install the our old version 2.x of Android app from the [Google Play Store](https://play.google.com/store/apps/details?id=org.tagspaces.androidle). It is very outdate but it still works.
+
+<!--
 > **Updating the Android app:** Once we publish a newer version of the Android app, it will be automatically installed on your mobile device within the following days.
+-->
 
 ## Installing the Firefox Browser Extension
 
