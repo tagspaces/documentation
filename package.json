@@ -17,12 +17,12 @@
     "deploy": "aero deploy"
   },
   "dependencies": {
-    "@docusaurus/core": "2.0.0-alpha.65",
-    "@docusaurus/preset-bootstrap": "^2.0.0-alpha.51",
-    "@docusaurus/preset-classic": "2.0.0-alpha.65",
+    "@docusaurus/core": "2.0.0-alpha.69",
+    "@docusaurus/preset-bootstrap": "^2.0.0-alpha.69",
+    "@docusaurus/preset-classic": "2.0.0-alpha.69",
     "@mdx-js/react": "^1.5.8",
     "clsx": "^1.1.1",
-    "docusaurus-lunr-search": "^2.1.7",
+    "docusaurus-lunr-search": "2.1.0",
     "docusaurus-pdf": "^1.2.0",
     "react": "^16.8.4",
     "react-dom": "^16.8.4"

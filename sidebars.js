@@ -47,6 +47,7 @@ module.exports = {
         label: "TagSpaces Pro",
         href: "/installation/#installing-tagspaces-pro",
       },
+      "dev/external-config",
       {
         type: "link",
         label: "Running in portable mode",
