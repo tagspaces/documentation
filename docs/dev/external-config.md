@@ -158,6 +158,13 @@ Possible values: 'none', 'taglibrary', 'search', 'locations'
 Possible values: true, false
 Default value: true
 
+### Show welcome panel
+
+    window.ExtShowWelcomePanel = true
+
+Possible values: true, false
+Default value: true
+
 ### Choose startup theme
 
     window.ExtTheme = 'dark';
