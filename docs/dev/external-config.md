@@ -82,7 +82,7 @@ window.ExtLocations = [
 
 The editing of the locations can be disabled with the following property: **ExtLocationsReadOnly**
 
-    window.ExtLocationsReadOnly = true;
+> Note: This switch is not supported anymore. Now as soon as you have externally configured locations they are automatically read-only.
 
 ## Configuring custom tag library
 
@@ -165,6 +165,13 @@ Default value: true
 Possible values: true, false
 Default value: true
 
+### Show smart tags
+
+    window.ExtShowSmartTags = true
+
+Possible values: true, false
+Default value: true
+
 ### Choose startup theme
 
     window.ExtTheme = 'dark';
@@ -237,8 +244,6 @@ Here you will find the whole configuration file, so it can be easily copied and 
 window.ExtLogoURL = "https://www.tagspaces.org/content/text-logo.svg";
 
 window.ExtIsFirstRun = false;
-
-window.ExtLocationsReadOnly = false;
 
 window.ExtDefaultPerspective = "gallery";
 
