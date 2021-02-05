@@ -44,20 +44,16 @@ This is an optional step, needed only if you want to access the bucket from [Tag
 
 ![Create S3 bucket](/media/aws/aws-s3-cors.png)
 
-The XML config, can be copied from the section bellow.
+The JSON config, can be copied from the section bellow.
 
-    <?xml version="1.0" encoding="UTF-8"?>
-    <CORSConfiguration xmlns="http://s3.amazonaws.com/doc/2006-03-01/">
-    <CORSRule>
-        <AllowedOrigin>*</AllowedOrigin>
-        <AllowedMethod>GET</AllowedMethod>
-        <AllowedMethod>HEAD</AllowedMethod>
-        <AllowedMethod>PUT</AllowedMethod>
-        <AllowedMethod>DELETE</AllowedMethod>
-        <MaxAgeSeconds>3000</MaxAgeSeconds>
-        <AllowedHeader>*</AllowedHeader>
-    </CORSRule>
-    </CORSConfiguration>
+    [
+        {
+        "AllowedHeaders": ["*"],
+        "AllowedMethods": ["GET", "PUT", "POST", "HEAD", "DELETE"],
+        "AllowedOrigins": ["*"],
+        "ExposeHeaders": []
+       }
+    ]
 
 > You can remove the _PUT_ and _DELETE_ lines, if you want to disable the writing and deleting operation from TagSpaces Enterprise.
 
