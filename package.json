@@ -12,17 +12,17 @@
     "gen-pdf": "npx docusaurus-pdf from-build-config",
     "update-ext": "./update-external.sh",
     "anigif": "gifify --colors 150 --to 19 media/input.webm -o media/result.gif",
-    "prepare": "yarn optipng && yarn update-ext && yarn build",
+    "prepare1": "yarn optipng && yarn update-ext && yarn build",
     "optipng": "optipng media/*png",
     "deploy": "aero deploy"
   },
   "dependencies": {
-    "@docusaurus/core": "2.0.0-alpha.69",
-    "@docusaurus/preset-bootstrap": "^2.0.0-alpha.69",
-    "@docusaurus/preset-classic": "2.0.0-alpha.69",
+    "@docusaurus/core": "2.0.0-alpha.70",
+    "@docusaurus/preset-bootstrap": "^2.0.0-alpha.70",
+    "@docusaurus/preset-classic": "2.0.0-alpha.70",
     "@mdx-js/react": "^1.5.8",
     "clsx": "^1.1.1",
-    "docusaurus-lunr-search": "2.1.0",
+    "docusaurus-lunr-search": "2.1.10",
     "docusaurus-pdf": "^1.2.0",
     "react": "^16.8.4",
     "react-dom": "^16.8.4"

@@ -9,31 +9,34 @@ import React, { useRef, useCallback } from "react";
 import classnames from "classnames";
 import { useHistory } from "@docusaurus/router";
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
-const Search = props => {
+const Search = (props) => {
   const initialized = useRef(false);
   const searchBarRef = useRef(null);
   const history = useHistory();
   const { siteConfig = {} } = useDocusaurusContext();
   const { baseUrl } = siteConfig;
   const initAlgolia = (searchDocs, searchIndex, DocSearch) => {
-      new DocSearch({
-        searchDocs,
-        searchIndex,
-        inputSelector: "#search_input_react",
-        // Override algolia's default selection event, allowing us to do client-side
-        // navigation and avoiding a full page refresh.
-        handleSelected: (_input, _event, suggestion) => {
-          const url = baseUrl + suggestion.url;
-          // Use an anchor tag to parse the absolute url into a relative url
-          // Alternatively, we can use new URL(suggestion.url) but its not supported in IE
-          const a = document.createElement("a");
-          a.href = url;
-          // Algolia use closest parent element id #__docusaurus when a h1 page title does not have an id
-          // So, we can safely remove it. See https://github.com/facebook/docusaurus/issues/1828 for more details.
+    if (searchDocs.length === 0) {
+      return;
+    }
+    new DocSearch({
+      searchDocs,
+      searchIndex,
+      inputSelector: "#search_input_react",
+      // Override algolia's default selection event, allowing us to do client-side
+      // navigation and avoiding a full page refresh.
+      handleSelected: (_input, _event, suggestion) => {
+        const url = baseUrl + suggestion.url;
+        // Use an anchor tag to parse the absolute url into a relative url
+        // Alternatively, we can use new URL(suggestion.url) but its not supported in IE
+        const a = document.createElement("a");
+        a.href = url;
+        // Algolia use closest parent element id #__docusaurus when a h1 page title does not have an id
+        // So, we can safely remove it. See https://github.com/facebook/docusaurus/issues/1828 for more details.
 
-          history.push(url);
-        }
-      });
+        history.push(url);
+      },
+    });
   };
 
   const getSearchDoc = () =>
@@ -52,7 +55,7 @@ const Search = props => {
         getSearchDoc(),
         getLunrIndex(),
         import("./lib/DocSearch"),
-        import("./algolia.css")
+        import("./algolia.css"),
       ]).then(([searchDocs, searchIndex, { default: DocSearch }]) => {
         initAlgolia(searchDocs, searchIndex, DocSearch);
       });
@@ -61,7 +64,7 @@ const Search = props => {
   };
 
   const toggleSearchIconClick = useCallback(
-    e => {
+    (e) => {
       if (!searchBarRef.current.contains(e.target)) {
         searchBarRef.current.focus();
       }
@@ -77,7 +80,7 @@ const Search = props => {
         aria-label="expand searchbar"
         role="button"
         className={classnames("search-icon", {
-          "search-icon-hidden": props.isSearchBarExpanded
+          "search-icon-hidden": props.isSearchBarExpanded,
         })}
         onClick={toggleSearchIconClick}
         onKeyDown={toggleSearchIconClick}
