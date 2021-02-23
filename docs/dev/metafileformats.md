@@ -92,7 +92,7 @@ The meta information is saved in JSON format, which has the following format:
     }
 ```
 
-## Exported tags description format
+## Format of the tag library export
 
 All tag groups and tags can be exported from the settings of the application, as shown in the next screenshot.
 
@@ -153,3 +153,7 @@ The meta information is persisted in JSON format, which has the following format
 ```
 
 > **Note** In the JSON examples above, you will find sometimes a description after the these characters `//`. Please note that this is not part of the format and is used only for clarification purposes.
+
+## Format of the locations export
+
+WIP

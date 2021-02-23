@@ -44,9 +44,15 @@ The Linux version of TagSpaces is distributed as `tar.gz` file, which can be dow
 
 ## Installation on Android
 
+### From Google Play
+
+You can install the Android app from the [Google Play Store](https://play.google.com/store/apps/details?id=org.tagspaces.mobile).
+
+> **Updating the Android app:** Once we publish a newer version of the Android app, it will be automatically installed on your mobile device within the following days.
+
 ### From our web site
 
-A recent **BETA** version of the Android app is available as a [APK file](https://www.tagspaces.org/downloads/tagspaces-android-beta.apk) in download section of our web site.
+A version of the Android app is available as a [APK file](https://www.tagspaces.org/downloads/tagspaces-android.apk) in download section of our web site.
 
 In order to install the APK file you have to perform the following steps on your Android phone.
 
@@ -67,14 +73,6 @@ If the above steps doesn't work for you, try the following:
 Once these steps are done you can download and install with the previously configured browser the app from our [download section](https://www.tagspaces.org/downloads)
 
 > **Risks of installing apps outside the Play Store** - Installing an app outside of Google Play sore is risky as you may be subjecting your phone to viruses that come along with these apps, so please be very careful and check your download sources.
-
-### From Google Play
-
-You can still install the our old version 2.x of Android app from the [Google Play Store](https://play.google.com/store/apps/details?id=org.tagspaces.androidle). It is very outdate but it still works.
-
-<!--
-> **Updating the Android app:** Once we publish a newer version of the Android app, it will be automatically installed on your mobile device within the following days.
--->
 
 ## Installing the Firefox Browser Extension
 

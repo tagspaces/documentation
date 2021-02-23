@@ -1,3 +1,6 @@
+const path = require("path");
+const baseUrl = process.env.BASE_URL || "/";
+
 module.exports = {
   title: "TagSpaces Docs",
   tagline: "Documentation for TagSpaces",
@@ -7,13 +10,94 @@ module.exports = {
   favicon: "img/favicon.ico",
   organizationName: "tagspaces", // Usually your GitHub org/user name.
   projectName: "tagspaces", // Usually your repo name.
-  plugins: [require.resolve("docusaurus-lunr-search")],
+  themes: ["@docusaurus/theme-live-codeblock"],
+  plugins: [
+    require.resolve("docusaurus-lunr-search"),
+    [
+      "@docusaurus/plugin-client-redirects",
+      {
+        fromExtensions: ["html"],
+        redirects: [
+          {
+            from: ["/docs/support", "/docs/next/support"],
+            to: "/",
+          },
+        ],
+      },
+    ],
+    [
+      "@docusaurus/plugin-ideal-image",
+      {
+        quality: 70,
+        max: 1030, // max resized image's size.
+        min: 640, // min resized image's size. if original is lower, use that size.
+        steps: 2, // the max number of images generated between min and max (inclusive)
+      },
+    ],
+    // [
+    //   "@docusaurus/plugin-pwa",
+    //   {
+    //     debug: false,
+    //     offlineModeActivationStrategies: ["appInstalled", "queryString"],
+    //     // swRegister: false,
+    //     swCustom: path.resolve(__dirname, "src/sw.js"),
+    //     pwaHead: [
+    //       {
+    //         tagName: "link",
+    //         rel: "icon",
+    //         href: "img/docusaurus.png",
+    //       },
+    //       {
+    //         tagName: "link",
+    //         rel: "manifest",
+    //         href: `${baseUrl}manifest.json`,
+    //       },
+    //       {
+    //         tagName: "meta",
+    //         name: "theme-color",
+    //         content: "rgb(37, 194, 160)",
+    //       },
+    //       {
+    //         tagName: "meta",
+    //         name: "apple-mobile-web-app-capable",
+    //         content: "yes",
+    //       },
+    //       {
+    //         tagName: "meta",
+    //         name: "apple-mobile-web-app-status-bar-style",
+    //         content: "#000",
+    //       },
+    //       {
+    //         tagName: "link",
+    //         rel: "apple-touch-icon",
+    //         href: "img/docusaurus.png",
+    //       },
+    //       {
+    //         tagName: "link",
+    //         rel: "mask-icon",
+    //         href: "img/docusaurus.svg",
+    //         color: "rgb(62, 204, 94)",
+    //       },
+    //       {
+    //         tagName: "meta",
+    //         name: "msapplication-TileImage",
+    //         content: "img/docusaurus.png",
+    //       },
+    //       {
+    //         tagName: "meta",
+    //         name: "msapplication-TileColor",
+    //         content: "#000",
+    //       },
+    //     ],
+    //   },
+    // ],
+  ],
   themeConfig: {
     navbar: {
-      title: "TagSpaces Docs",
+      // title: "TagSpaces Docs",
       logo: {
         alt: "TagSpaces Logo",
-        src: "img/logo.svg",
+        src: "img/tagspaces-docs-logo.svg",
       },
       items: [
         // {
@@ -33,6 +117,16 @@ module.exports = {
           position: "right",
         },
       ],
+    },
+    announcementBar: {
+      id: "supportus",
+      content:
+        '⭐️ If you like TagSpaces, give it a star on <a target="_blank" rel="noopener noreferrer" href="https://github.com/tagspaces/tagspaces">GitHub</a>! ⭐️',
+    },
+    prism: {
+      defaultLanguage: "javascript",
+      theme: require("prism-react-renderer/themes/github"),
+      darkTheme: require("prism-react-renderer/themes/dracula"),
     },
     footer: {
       style: "dark",

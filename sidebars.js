@@ -10,7 +10,7 @@ module.exports = {
       "aboutdocs",
       // "writehelp",
     ],
-    "Download & Setup": [
+    "Download and Setup": [
       "installation",
       {
         type: "link",
@@ -47,15 +47,14 @@ module.exports = {
         label: "TagSpaces Pro",
         href: "/installation/#installing-tagspaces-pro",
       },
-      "dev/external-config",
       {
         type: "link",
         label: "Running in portable mode",
         href: "/installation/#running-in-portable-mode",
       },
-      "selfhosting",
+      "tutorials/web-edition-setup",
     ],
-    "Get started": [
+    "Get Started": [
       "ui/userinterface",
       "ui/locations",
       {
@@ -75,7 +74,7 @@ module.exports = {
       "ui/settings",
       "ui/i18n",
     ],
-    "File Browsing in Perspectives": [
+    "Browse Files": [
       "browsing-files",
       "perspectives/grid",
       "perspectives/gallery",
@@ -83,7 +82,7 @@ module.exports = {
       "perspectives/folderviz",
       // "perspectives/treeviz",
     ],
-    "Tagging Files & Folders": [
+    "Tag Files and Folders": [
       "tagging",
       {
         type: "link",
@@ -126,7 +125,7 @@ module.exports = {
         href: "/tagging#geo-tagging",
       },
     ],
-    Searching: [
+    "Search Functionality": [
       "search",
       {
         type: "link",
@@ -144,7 +143,7 @@ module.exports = {
         href: "/search#global-search",
       },
     ],
-    "Viewing Preview & Print": [
+    "View and Print Files": [
       "viewing-files",
       {
         type: "link",
@@ -156,8 +155,24 @@ module.exports = {
         label: "File Printing",
         href: "/viewing-files#printing-files",
       },
+      {
+        "Viewer Extensions": [
+          "extensions/viewerAudioVideo",
+          "extensions/viewerBrowser",
+          "extensions/viewerEPUB",
+          "extensions/viewerHTML",
+          "extensions/viewerImage",
+          "extensions/viewerMD",
+          "extensions/viewerMHTML",
+          "extensions/viewerPDF",
+          "extensions/viewerRTF",
+          "extensions/viewerText",
+          "extensions/viewerURL",
+          "extensions/viewerZIP",
+        ],
+      },
     ],
-    "Creating & Editing Files": [
+    "Create and Edit Files": [
       "creating-files",
       {
         type: "link",
@@ -165,38 +180,24 @@ module.exports = {
         href: "/creating-files#importing-files",
       },
       "editing-files",
-      // - [HTML editing](editing-files.md#html-editor)
-      // - [Plain text editing](editing-files.md#text-editor)
-      // - [MarkDown editing](editing-files.md#markdown-editor)
-      // - [JSON editing](editing-files.md#json-editor)
+      {
+        "Editor Extensions": [
+          "extensions/editorHTML",
+          "extensions/editorText",
+          "extensions/editorJSON",
+        ],
+      },
     ],
-    "File Viewer Extensions": [
-      "extensions/viewerAudioVideo",
-      "extensions/viewerBrowser",
-      "extensions/viewerEPUB",
-      "extensions/viewerHTML",
-      "extensions/viewerImage",
-      "extensions/viewerMD",
-      "extensions/viewerMHTML",
-      "extensions/viewerPDF",
-      "extensions/viewerRTF",
-      "extensions/viewerText",
-      "extensions/viewerURL",
-      "extensions/viewerZIP",
-    ],
-    "File Editor Extensions": [
-      "extensions/editorHTML",
-      "extensions/editorJSON",
-      "extensions/editorText",
-    ],
+    "Advanced Functionalities": ["dev/metafileformats", "dev/external-config"],
     Tutorials: [
       "tutorials/webclipping",
       "tutorials/file-syncing",
       "tutorials/sharing-tags",
       "tutorials/s3-bucket-locations",
-      "tutorials/web-edition-setup",
-      "dev/metafileformats",
+      "tutorials/minio-buckets-on-qnap",
       "dev/extension-development-guide",
+      "selfhosting",
+      "tutorials/sabre-dav-setup",
     ],
   },
 };

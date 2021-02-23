@@ -1,5 +1,5 @@
 ---
-title: Self Hosting TagSpaces
+title: Setup Self-hosted TagSpaces based on WebDAV
 ---
 
 :::caution

@@ -10,7 +10,9 @@ This document will describe how to deploy TagSpaces Pro and Enterprise with pred
 
 For exchanging the application logo the **ExtLogoURL** parameter should be used. A valid values can be an URL:
 
-    window.ExtLogoURL = 'https://www.tagspaces.org/content/text-logo.svg';
+```jsx title="add logo"
+window.ExtLogoURL = "https://www.tagspaces.org/content/text-logo.svg";
+```
 
 or a relative path the file containing the logo:
 
@@ -38,7 +40,7 @@ With this feature TagSpaces can be deployed with a set of predefined location, w
 
 This an example for connecting an AWS S3 bucket as location:
 
-```js {2}
+```js title="extconfig.js"
 window.ExtLocations = [
   // an array containing one or many locations
   {
