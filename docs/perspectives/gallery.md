@@ -15,7 +15,7 @@ From the main toolbar of this perspective the user can access the following func
 > **Note:** This perspective can only be activated in folder which contains images and photos in the following file formats: JPG, PNG, GIF, BMP, SVG or WEBP.
 
 <figure>
-  <img title="" src="/media/tagspaces-gallery-overview.jpg" class="img-responsive center-block" />
+  <img title="" src="/media/tagspaces-gallery-overview.jpg" className="img-responsive center-block" />
   <figcaption>Showing the regular view of the gallery perspective</figcaption>
 </figure>
 

@@ -22,15 +22,15 @@ Here are some ideas for which this perspective can be used.
 The default map shown by opening of this perspective is provided by [OpenStreetMap](https://www.openstreetmap.org/)
 
 <figure>
-  <img title="" src="/media/tagspaces-mapique-openstreetmap.png" class="img-responsive center-block" />
+  <img title="" src="/media/tagspaces-mapique-openstreetmap.png" className="img-responsive center-block" />
   <figcaption>Showing geo tagged files on the default map from openstreetmap.org</figcaption>
 </figure>
 
 An optional topological map is provided by [OpenTopoMap](https://opentopomap.org/) and looks as in the following screenshot.
 
 <figure>
-  <img title="" src="/media/tagspaces-mapique-topo.png" class="img-responsive center-block" />
-  <figcaption class="img-responsive center-block">Showing geo tagged files on a topographical map</figcaption>
+  <img title="" src="/media/tagspaces-mapique-topo.png" className="img-responsive center-block" />
+  <figcaption className="img-responsive center-block">Showing geo tagged files on a topographical map</figcaption>
 </figure>
 
 ## User interface
@@ -45,8 +45,8 @@ From the main toolbar of this perspective the user can access the following func
 Clicking in the popup of a file on the map will open it the file previewing area of TagSpaces, where you add or change the file description, rename the file or choose another thumbnail, please see the following screenshot for comparison.
 
 <figure>
-  <img title="" src="/media/tagspaces-mapique-file-properties.png" class="img-responsive center-block" />
-  <figcaption class="img-responsive center-block">Showing the file properties in the mapique perspective</figcaption>
+  <img title="" src="/media/tagspaces-mapique-file-properties.png" className="img-responsive center-block" />
+  <figcaption className="img-responsive center-block">Showing the file properties in the mapique perspective</figcaption>
 </figure>
 
 ## Navigating Tagged Folders
@@ -54,7 +54,7 @@ Clicking in the popup of a file on the map will open it the file previewing area
 Since TagSpaces supports tagging of folders, you can geo tag your folders and turning them this way displayable in the mapique perspective. On the following screenshot you can see that folders have a dedicated icon, so they can differentiated from the files. Clicking on a folder icon will open a small popup, which when clicked will navigate to the selected folder.
 
 <figure>
-  <img title="" src="/media/tagspaces-mapique-folders.png" class="img-responsive center-block" />
+  <img title="" src="/media/tagspaces-mapique-folders.png" className="img-responsive center-block" />
   <figcaption>Showing geo tagged files on topographical map</figcaption>
 </figure>
 

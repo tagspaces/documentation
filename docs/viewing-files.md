@@ -30,8 +30,8 @@ TagSpaces is designed with extensibility in mind so any other kind of file viewe
 
 The following table lists the supported files types for viewing and editing of files in TagSpaces.
 
-<div class="table-responsive">
-<table class="table table-striped">
+<div className="table-responsive">
+<table className="table table-striped">
   <thead>
     <th>File type extension</th>
     <th>Windows, Mac OS &amp; Linux desktop apps</th>

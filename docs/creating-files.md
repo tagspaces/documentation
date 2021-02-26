@@ -69,7 +69,7 @@ In the menu which will appear, choose the _Add existing file_ options.
 
 And finally, files can be imported also by simple dragging one from your desktop or the default file manager of your operating system and drop it in the app.
 
-<video src="/media/tagspaces-drag-drop.mp4" autoplay="true" loop="true" poster="/media/tagspaces-drag-drop.png" class="img-responsive"></video>
+<video src="/media/tagspaces-drag-drop.mp4" autoplay="true" loop="true" poster="/media/tagspaces-drag-drop.png" className="img-responsive"></video>
 
 ### Importing files on mobile devices
 

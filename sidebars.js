@@ -79,6 +79,7 @@ module.exports = {
       "perspectives/grid",
       "perspectives/gallery",
       "perspectives/mapique",
+      "perspectives/kanban",
       "perspectives/folderviz",
       // "perspectives/treeviz",
     ],
@@ -139,6 +140,11 @@ module.exports = {
       },
       {
         type: "link",
+        label: "Full-Text Search",
+        href: "/search#full-text-search",
+      },
+      {
+        type: "link",
         label: "Global Search",
         href: "/search#global-search",
       },
@@ -188,7 +194,30 @@ module.exports = {
         ],
       },
     ],
-    "Advanced Functionalities": ["dev/metafileformats", "dev/external-config"],
+    // "Annotating Files & Folders": [
+    //   "annotations#",
+    // ],
+    "Advanced Functionalities": [
+      "annotations",
+      // {
+      //   type: "link",
+      //   label: "File & Folder Descriptions",
+      //   href: "/annotations",
+      // },
+      {
+        type: "link",
+        label: "Custom Folder Colors",
+        href: "/annotations/#customFolderColor",
+      },
+      "thumbnails",
+      {
+        type: "link",
+        label: "Custom Thumbnails",
+        href: "/thumbnails/#customThumbnails",
+      },
+      "dev/metafileformats",
+      "dev/external-config",
+    ],
     Tutorials: [
       "tutorials/webclipping",
       "tutorials/file-syncing",

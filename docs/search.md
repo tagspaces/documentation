@@ -22,7 +22,7 @@ The search algorithm has a build-in fuzziness, meaning that if the search query 
 - The search is case insensitive.
 
 <figure>
-  <img title="basic search in TagSpaces" src="/media/basic-search.png" class="img-responsive center-block" />
+  <img title="basic search in TagSpaces" src="/media/basic-search.png" className="img-responsive center-block" />
   <figcaption>Basic search in TagSpaces</figcaption>
 </figure>
 
@@ -41,7 +41,7 @@ In order to provide a boolean search support for tags, the search user interface
 - None of these tags - entries which have one the tags listed here will be excluded from the search results (**negative search**)
 
 <figure>
-  <img title="Short video showing searching for tags in action" src="https://www.tagspaces.org/content/v3-x/advanced-tag-search.gif" class="img-responsive center-block" />
+  <img title="Short video showing searching for tags in action" src="https://www.tagspaces.org/content/v3-x/advanced-tag-search.gif" className="img-responsive center-block" />
   <figcaption>Short video showing searching for tags in action</figcaption>
 </figure>
 
@@ -59,7 +59,7 @@ If you decide to disable the automatic indexing, you should do this step manuall
 - All indexes can be update at once from the search menu with the option "Update all location indexes"
 
  <figure>
-  <img title="Updating indexes for all locations" src="/media/update-all-indexes.png" class="img-responsive center-block" />
+  <img title="Updating indexes for all locations" src="/media/update-all-indexes.png" className="img-responsive center-block" />
   <figcaption>Updating indexes for all locations </figcaption>
 </figure>
 
@@ -68,7 +68,7 @@ If you decide to disable the automatic indexing, you should do this step manuall
 By default, TagSpaces is limiting the amount of the found search results to 1000 files. This limitation is also valid for the maximum files, which can be displayed in a single folder. The reason for adding such limitation is the fact that pagination is not typical for file managers and for now we do not want to add such. In tab general of the Settings there is a field where you can increase or decrease this limit. See the next screenshot.
 
 <figure>
-  <img title="Screenshot of the advanced search options" src="/media/adjust-search-limit.png" class="img-responsive center-block" />
+  <img title="Screenshot of the advanced search options" src="/media/adjust-search-limit.png" className="img-responsive center-block" />
   <figcaption>Adjust number of shown / found items in the perspeectives</figcaption>
 </figure>
 
@@ -77,7 +77,7 @@ By default, TagSpaces is limiting the amount of the found search results to 1000
 The search options described in this section are available only in the Pro and Enterprise editions of TagSpaces. In addition to the searching by files name and by tag, the advanced search supports the following filter criteria:
 
 <figure>
-  <img title="Screenshot showing the advanced search options" src="/media/tagspaces-advanced-search.png" class="img-responsive center-block" />
+  <img title="Screenshot showing the advanced search options" src="/media/tagspaces-advanced-search.png" className="img-responsive center-block" />
   <figcaption>Screenshot showing the advanced search options</figcaption>
 </figure>
 
@@ -101,7 +101,7 @@ In addition to that there are some special filters:
 - Untagged files or folders - this options will show only files and folders witch are not tagged
 
 <figure>
-  <img title="Search by file type" src="/media/tagspaces-search-by-type.png" class="img-responsive center-block" />
+  <img title="Search by file type" src="/media/tagspaces-search-by-type.png" className="img-responsive center-block" />
   <figcaption>Search by file type</figcaption>
 </figure>
 
@@ -118,7 +118,7 @@ In this dropdown you can filter for files by their size. The following options a
 - Huge - will filter files bigger that 1GB
 
 <figure>
-  <img title="Search by size" src="/media/tagspaces-search-by-size.png" class="img-responsive center-block" />
+  <img title="Search by size" src="/media/tagspaces-search-by-size.png" className="img-responsive center-block" />
   <figcaption>Options for searching by size</figcaption>
 </figure>
 
@@ -135,7 +135,7 @@ Here you can specify in which period the files you are searching should have bee
 - More than one year - will show files and folder older than one year
 
 <figure>
-  <img title="Search by last modified date and time" src="/media/tagspaces-search-by-last-modified-date.png" class="img-responsive center-block" />
+  <img title="Search by last modified date and time" src="/media/tagspaces-search-by-last-modified-date.png" className="img-responsive center-block" />
   <figcaption>Options for searching by last modified date</figcaption>
 </figure>
 
@@ -147,9 +147,11 @@ This filter is still work in progress.
 
 This filter is still work in progress.
 
-### Full text search for TXT, MD and HTML
+## Full text search <profeature />
 
-After activating the full text search with the checkbox in the properties of a given location (see next screenshot), TagSpaces will try to extract and index the text content of supported file formats.
+TagSpaces PRO supports full text search for text (.TXT), markdown (.MD) and html (.HTML) files. You can activate this feature for every location individually in the "Edit Location" dialog, as seen in the following screenshot. After the activating of this feature (see next screenshot), during the indexing of a given location, the application will try to extract the text content of the supported files and create a keyword list with will be considered later by the search algorithm.
+
+> **Note:** On locations with many big text files, activating this features may slow down the performance of the application, so be careful on which location you are activating it.
 
 <!--This text content is saved in the hidden `.ts` folder and is considered later by the search. Since this is a early experimental feature, please don't relay only on ly on it.-->
 
@@ -165,7 +167,7 @@ These file formats are currently supported:
 * Ebooks: EPUB (extracts the text content) -->
 
 <figure>
-  <img title="Search by last modified date and time" src="/media/tagspaces-enabling-fulltext-indexing.png" class="img-responsive center-block" />
+  <img title="Search by last modified date and time" src="/media/tagspaces-enabling-fulltext-indexing.png" className="img-responsive center-block" />
   <figcaption>Options for searching by last modified date</figcaption>
 </figure>
 
@@ -176,7 +178,7 @@ These file formats are currently supported:
 Starting with version 3.5, TagSpaces Pro offers searching in all locations. We call this feature "Global search". It works on local and remote S3 based locations. The feature can be activated by clicking the _Global_-button in the search area, as seen in the following screenshot.
 
 <figure>
-  <img title="Global search in TagSpaces" src="/media/global-search.png" class="img-responsive center-block" />
+  <img title="Global search in TagSpaces" src="/media/global-search.png" className="img-responsive center-block" />
   <figcaption>Search globally in all locations</figcaption>
 </figure>
 

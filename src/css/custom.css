@@ -4,6 +4,12 @@
  * bundles Infima by default. Infima is a CSS framework designed to
  * work well for content-centric websites.
  */
+@import url("https://fonts.googleapis.com/css?family=Ubuntu");
+
+body {
+  font-family: "Ubuntu", Geneva, Arial, Helvetica, sans-serif;
+  font-size: 12pt;
+}
 
 /* You can override the default Infima variables here. */
 :root {

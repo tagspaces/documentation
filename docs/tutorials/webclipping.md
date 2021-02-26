@@ -20,7 +20,7 @@ The browser extensions are available for [Chrome](https://chrome.google.com/webs
 Before the creation of any file, the user has the ability to change the title of file and to add tags to its file name.
 
 <figure>
-  <img title="A screenshot showing the web clipper in action" src="/media/tagspaces-webclipper.png" class="img-responsive center-block" />
+  <img title="A screenshot showing the web clipper in action" src="/media/tagspaces-webclipper.png" className="img-responsive center-block" />
   <figcaption>A screenshot showing the web clipper in action</figcaption>
 </figure>
 
@@ -37,7 +37,7 @@ In addition to that we offers some features for more advanced use cases such as 
 - By saving of a screenshot from the current web page, the web clipper adds as tags the domain of this web page, the current date and tag "screenshot". This makes the search later for such screenshot much easier in TagSpaces and other application.
 
 <figure>
-  <img title="A screenshot showing the extracted geo location as plus code" src="/media/tagspaces-webclipper-olc.png" class="img-responsive center-block" />
+  <img title="A screenshot showing the extracted geo location as plus code" src="/media/tagspaces-webclipper-olc.png" className="img-responsive center-block" />
   <figcaption>A screenshot showing the extracted geo location as plus code</figcaption>
 </figure>
 
