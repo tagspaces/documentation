@@ -14,6 +14,8 @@ Perspectives are not an integral part of TagSpaces, but exist as modular extensi
 
 - [Mapique Perspective](/perspectives/mapique) <profeature /> - showing geo-tagged files and folder and folders on a map. This extension is available in the Pro and Enterprise packages
 
+- [Kanban Perspective](/perspectives/kanban) <profeature /> - show your files as tasks in a Kanban board, representing the sub folders as columns in the board
+
 - [FolderViz Perspective](/perspectives/folderviz) - this is an experimental perspective which applies some information visualization concepts to presenting your folder and file structures.
 
 ## Switching perspectives
