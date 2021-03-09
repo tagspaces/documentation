@@ -34,7 +34,21 @@ For macOS 10.10 or later you have to download the [64bit](https://www.tagspaces.
 By default macOS does not allow TagSpaces to be executed with a simple double click, because it is currently not digitally signed. To work around this, right-click the TagSpaces.app folder and choose Open, then click **Open** on the dialog that appears. You need to do this just once.
 :::
 
+:::tip
+Alternative: `xattr -d com.apple.quarantine /Applications/TagSpaces.app`
+:::
+
 > **Updating the macOS version:** Just exchange the content of your current installation, with the content from the zip-file of a newer release. You don't have to worry about your tag library and locations since they are persisted in the users home folder.
+
+<!-- 1) Go to macOS System Preferences > Security & Privacy > General and make sure that the option for "Allow apps downloaded from" is set to "App Store and identified developers."
+
+https://support.postbox-inc.com/hc/article_attachments/360055876114/macOS-security-privacy-general.png
+
+App can’t be opened because Apple cannot check it for malicious software
+
+2) Download TagSpaces from Firefox or Chrome, not Safari.
+
+3) After you copy TagSpaces to the applications folder, right-click the TagSpaces icon and select "Open". -->
 
 ## Installation on Linux
 

@@ -219,7 +219,7 @@ module.exports = {
       "dev/external-config",
     ],
     Tutorials: [
-      "tutorials/webclipping",
+      "web-clipper",
       "tutorials/file-syncing",
       "tutorials/sharing-tags",
       "tutorials/s3-bucket-locations",

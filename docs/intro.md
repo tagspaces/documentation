@@ -75,4 +75,4 @@ Native APIs (for example for file access) are:
 
 - Desktop versions for Windows, macOS and Linux based on Electron
 - Mobile versions for Android and iOS based on Cordova
-- Web versions based on webDAV, AWS S3
+- Web versions for managing files in object storages like AWS S3

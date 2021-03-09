@@ -7,4 +7,7 @@ plugins:
     options:
       errors:
         404: 404.html
+  - name: redirect
+    options:
+      /tutorials/webclipping: /web-clipper        
   - name: webpage
