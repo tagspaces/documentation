@@ -23,25 +23,25 @@ This file should be located in a folder called `.ts` located in the folder, wher
 
 The meta information is saved in JSON format, which has the following format:
 
-```js {2}
+```js
+{
+  "tags": [  // A set containing the tags
     {
-      "tags": [  // A set containing the tags
-        {
-          "title": "tag1", // The name of the tag
-          "type": "sidecar", // The type of the tag
-          "style": "color: #ffffff !important; background-color: #FFCC24 !important;" // CSS used for styling of the tag
-        },
-        {
-          "title": "tag2",
-          "type": "sidecar",
-          "style": "color: #ffffff !important; background-color: #FFCC24 !important;"
-        }
-      ],
-      "appVersionCreated": "2.4.1", // optional element, containing the version of tha app, created this file
-      "appName": "TagSpaces", // optional element, containing the name of the app, created this files
-      "appVersionUpdated": "2.4.1", // optional element, containing the version of the app, which last changed the file
-      "lastUpdated": "2016-06-24T12:22:38.560Z" // optional element
+      "title": "tag1", // The name of the tag
+      "type": "sidecar", // The type of the tag
+      "style": "color: #ffffff !important; background-color: #FFCC24 !important;" // CSS used for styling of the tag
+    },
+    {
+      "title": "tag2",
+      "type": "sidecar",
+      "style": "color: #ffffff !important; background-color: #FFCC24 !important;"
     }
+  ],
+  "appVersionCreated": "2.4.1", // optional element, containing the version of tha app, created this file
+  "appName": "TagSpaces", // optional element, containing the name of the app, created this files
+  "appVersionUpdated": "2.4.1", // optional element, containing the version of the app, which last changed the file
+  "lastUpdated": "2016-06-24T12:22:38.560Z" // optional element
+}
 ```
 
 ## Folder meta description format
@@ -61,35 +61,35 @@ In the PRO version of the application you can add tags and description to every 
 
 The meta information is saved in JSON format, which has the following format:
 
-```js {2}
+```js
+{
+  "appName": "TagSpaces", // optional element, containing the name of the app, created this files
+  "tags": [ // the tags with which the folder is tagged
     {
-      "appName": "TagSpaces", // optional element, containing the name of the app, created this files
-      "tags": [ // the tags with which the folder is tagged
+      "title": "tag1",
+      "type": "plain"
+    }
+  ],
+  "tagGroups": [ // optional list used when the folder is selected as a location in TagSpaces, it contains the tag groups specific to the location, which are imported in the tagging area after loading this location
+    {
+      "title": "TagGroup Name",
+      "key": "29814",
+      "expanded": true, // if false the tag group will be shown closed, hiding all the contained tags
+      "children": [ // the list containing the tags of the tag group
         {
-          "title": "tag1",
-          "type": "plain"
-        }
-      ],
-      "tagGroups": [ // optional list used when the folder is selected as a location in TagSpaces, it contains the tag groups specific to the location, which are imported in the tagging area after loading this location
-        {
-          "title": "TagGroup Name",
-          "key": "29814",
-          "expanded": true, // if false the tag group will be shown closed, hiding all the contained tags
-          "children": [ // the list containing the tags of the tag group
-            {
-              "type": "plain", // the type of the tag
-              "title": "tag1", // the name of the tag
-              "description": "tag1", // not supported element
-              "icon": "", // the name of the icon class from font-awesome
-              "style": "" // css styling information for the tag
-            },
-          ]
+          "type": "plain", // the type of the tag
+          "title": "tag1", // the name of the tag
+          "description": "tag1", // not supported element
+          "icon": "", // the name of the icon class from font-awesome
+          "style": "" // css styling information for the tag
         },
       ]
-      "appVersionUpdated": "2.4.1", // optional element, containing the version of tha app, created this file
-      "lastUpdated": "2016-04-05T17:12:02.237Z", // the late date and time, when the file was updated
-      "description:": "Some folder description '\n' can be used for adding a new line"
-    }
+    },
+  ]
+  "appVersionUpdated": "2.4.1", // optional element, containing the version of tha app, created this file
+  "lastUpdated": "2016-04-05T17:12:02.237Z", // the late date and time, when the file was updated
+  "description:": "Some folder description '\n' can be used for adding a new line"
+}
 ```
 
 ## Format of the tag library export
@@ -101,55 +101,55 @@ All tag groups and tags can be exported from the settings of the application, as
 The meta information is persisted in JSON format, which has the following format:
 
 ```js
+{
+  "appName": "TagSpaces",
+  "appVersion": "2.4",
+  "appBuild": "2",
+  "settingsVersion": 2,
+  "tagGroups": [ // A list of all tag groups exported from the application
     {
-      "appName": "TagSpaces",
-      "appVersion": "2.4",
-      "appBuild": "2",
-      "settingsVersion": 2,
-      "tagGroups": [ // A list of all tag groups exported from the application
+      "title": "Common Tags", // the name of the tag group
+      "isFolder": "true",
+      "key": "OTB", // the key of the tag group
+      "expanded": "true", // if false the tag group will be shown closed, hiding all the contained tags
+      "children": [ the list containing the tags of the tag group
         {
-          "title": "Common Tags", // the name of the tag group
-          "isFolder": "true",
-          "key": "OTB", // the key of the tag group
-          "expanded": "true", // if false the tag group will be shown closed, hiding all the contained tags
-          "children": [ the list containing the tags of the tag group
-            {
-              "type": "plain", // the type of the tag
-              "title": "book", // the name of the tag
-              "description": "tag1", // not supported element
-              "icon": "", // the name of the icon class from font-awesome
-              "style": "" // css styling information for the tag
-            },
-            {
-              "title": "paper",
-              "type": "plain",
-              "description": "paper",
-              "icon": "",
-              "style": ""
-            }
-          ],
+          "type": "plain", // the type of the tag
+          "title": "book", // the name of the tag
+          "description": "tag1", // not supported element
+          "icon": "", // the name of the icon class from font-awesome
+          "style": "" // css styling information for the tag
         },
         {
-          "title": "Getting Things Done",
-          "isFolder": "true",
-          "key": "GTD",
-          "expanded": "true",
-          "children": [...] // tags removed
-        },
-        {
-          "title": "Smart Tags",
-          "key": "SMR",
-          "expanded": true,
-          "children": [...] // tags removed
-        },
-        {
-          "title": "Priorities",
-          "key": "PRI",
-          "expanded": true,
-          "children": [...] // tags removed
+          "title": "paper",
+          "type": "plain",
+          "description": "paper",
+          "icon": "",
+          "style": ""
         }
-      ]
+      ],
+    },
+    {
+      "title": "Getting Things Done",
+      "isFolder": "true",
+      "key": "GTD",
+      "expanded": "true",
+      "children": [...] // tags removed
+    },
+    {
+      "title": "Smart Tags",
+      "key": "SMR",
+      "expanded": true,
+      "children": [...] // tags removed
+    },
+    {
+      "title": "Priorities",
+      "key": "PRI",
+      "expanded": true,
+      "children": [...] // tags removed
     }
+  ]
+}
 ```
 
 > **Note** In the JSON examples above, you will find sometimes a description after the these characters `//`. Please note that this is not part of the format and is used only for clarification purposes.

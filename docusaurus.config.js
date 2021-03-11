@@ -6,11 +6,10 @@ module.exports = {
   tagline: "Documentation for TagSpaces",
   url: "https://tagspaces.org",
   baseUrl: "/",
-  onBrokenLinks: "throw",
+  onBrokenLinks: "warn",
   favicon: "img/favicon.ico",
   organizationName: "tagspaces", // Usually your GitHub org/user name.
   projectName: "tagspaces", // Usually your repo name.
-  themes: ["@docusaurus/theme-live-codeblock"],
   plugins: [
     require.resolve("docusaurus-lunr-search"),
     [
@@ -179,7 +178,7 @@ module.exports = {
   scripts: [
     {
       src: "https://plausible.io/js/plausible.js",
-      "data-domain": "tagspaces.org",
+      "data-domain": "docs.tagspaces.org",
       async: true,
       defer: true,
     },
@@ -199,6 +198,11 @@ module.exports = {
         // },
         theme: {
           customCss: require.resolve("./src/css/custom.css"),
+        },
+        sitemap: {
+          changefreq: "weekly",
+          priority: 0.5,
+          trailingSlash: true,
         },
       },
     ],
