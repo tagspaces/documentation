@@ -122,7 +122,7 @@ This option can be activated manually for every location individually in the loc
 
 ### Manual indexing
 
-For locations containing many files, it may make sense to disable the [automatic indexing](/products/community/#desktopSearch) taking place on the opening of this location. You can activate this options for every location individually on its creation or on its properties screen as seen in the previous screenshot. The properties dialog is accessible from the context menu of any location. Enabling this options will speed up the loading of the location, especially on network based locations (W/LAN or S3 object stores). Instead of the indexing, the application will try to load a previously generated index file `tsi.json` located in the root folder of the location.
+For locations containing many files, it may make sense to disable the automatic indexing taking place on the opening of this location. You can activate this options for every location individually on its creation or on its properties screen as seen in the previous screenshot. The properties dialog is accessible from the context menu of any location. Enabling this options will speed up the loading of the location, especially on network based locations (W/LAN or S3 object stores). Instead of the indexing, the application will try to load a previously generated index file `tsi.json` located in the root folder of the location.
 If you do not have such persisted index file, you can create one manually with the command "Refresh Location Index" from the location context menu, as seen on the following screenshot.
 
 <figure>

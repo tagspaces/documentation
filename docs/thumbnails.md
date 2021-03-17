@@ -12,9 +12,9 @@ The free version of TagSpaces supports thumbnail generation only for image files
 
 - Images: PNG, JPG, BMP, GIF, SVG, WEBP, TIFF
 - Videos: WEBM, OGV, MP4, M4V
-- Notes: HTML (uses the embedded screenshot, if created with the TagSpaces [Web Clipper](/products/webclipper/)
+- Notes: HTML (uses the embedded screenshot, if created with the TagSpaces [Web Clipper](/web-clipper/)
 - Text files: TXT, MD, source code files (uses the first lines found in the files)
-- Bookmarks: URL (uses the embedded screenshot, if created with the TagSpaces [Web Clipper](/products/webclipper/))
+- Bookmarks: URL (uses the embedded screenshot, if created with the TagSpaces [Web Clipper](/web-clipper/))
 - Ebooks: EPUB (uses the integrated ebook cover image)
 - Archives: ZIP (uses the first found image in the archive)
 - Portable Documents: PDF

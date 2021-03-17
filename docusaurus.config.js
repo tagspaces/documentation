@@ -4,7 +4,7 @@ const baseUrl = process.env.BASE_URL || "/";
 module.exports = {
   title: "TagSpaces Docs",
   tagline: "Documentation for TagSpaces",
-  url: "https://tagspaces.org",
+  url: "https://docs.tagspaces.org",
   baseUrl: "/",
   onBrokenLinks: "warn",
   favicon: "img/favicon.ico",
@@ -12,18 +12,18 @@ module.exports = {
   projectName: "tagspaces", // Usually your repo name.
   plugins: [
     require.resolve("docusaurus-lunr-search"),
-    [
-      "@docusaurus/plugin-client-redirects",
-      {
-        fromExtensions: ["html"],
-        redirects: [
-          {
-            from: ["/docs/support", "/docs/next/support"],
-            to: "/",
-          },
-        ],
-      },
-    ],
+    // [
+    //   "@docusaurus/plugin-client-redirects",
+    //   {
+    //     // fromExtensions: ["html"],
+    //     redirects: [
+    //       {
+    //         from: ["/docs/support", "/docs/next/support"],
+    //         to: "/",
+    //       },
+    //     ],
+    //   },
+    // ],
     [
       "@docusaurus/plugin-ideal-image",
       {
@@ -88,23 +88,23 @@ module.exports = {
           items: [
             {
               label: "Overview",
-              href: "https://www.tagspaces.org/products",
+              href: "https://www.tagspaces.org/products/",
             },
             {
               label: "Community",
-              href: "https://www.tagspaces.org/products/community",
+              href: "https://www.tagspaces.org/products/lite/",
             },
             {
               label: "Pro",
-              href: "https://www.tagspaces.org/products/pro",
+              href: "https://www.tagspaces.org/products/pro/",
             },
             {
               label: "Enterprise",
-              href: "https://www.tagspaces.org/products/enterprise",
+              href: "https://www.tagspaces.org/products/enterprise/",
             },
             {
               label: "Demo",
-              href: "https://www.tagspaces.org/demo",
+              href: "https://www.tagspaces.org/demo/",
             },
           ],
         },
@@ -113,19 +113,19 @@ module.exports = {
           items: [
             {
               label: "About",
-              href: "https://www.tagspaces.org/about",
+              href: "https://www.tagspaces.org/about/",
             },
             {
               label: "Press and Media",
-              href: "https://www.tagspaces.org/press",
+              href: "https://www.tagspaces.org/press/",
             },
             {
               label: "Imprint",
-              href: "https://www.tagspaces.org/about/imprint",
+              href: "https://www.tagspaces.org/about/imprint/",
             },
             {
               label: "Privacy Policy",
-              href: "https://www.tagspaces.org/about/privacy",
+              href: "https://www.tagspaces.org/about/privacy/",
             },
           ],
         },
@@ -155,7 +155,7 @@ module.exports = {
           items: [
             {
               label: "Blog",
-              href: "https://www.tagspaces.org/blog",
+              href: "https://www.tagspaces.org/blog/",
             },
             {
               label: "Twitter",
@@ -202,7 +202,7 @@ module.exports = {
         sitemap: {
           changefreq: "weekly",
           priority: 0.5,
-          trailingSlash: true,
+          // trailingSlash: true,
         },
       },
     ],
