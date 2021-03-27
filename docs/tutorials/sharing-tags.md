@@ -31,11 +31,11 @@ After clicking on the export button, a file saving dialog will appear, asking yo
 
 This step can be skipped if you do not need to make changes to the exported tags, otherwise you have to open the json file in some text or json editor and do the changes manually. TagSpaces has a powerful build in json editor, with which you can edit the exported json files. We assume here that we want to share only the two previously mentioned tag groups "TagGroups for Sharing 1" and "TagGroups for Sharing 2". So we will open this file with the json editor in TagSpaces and delete the unneeded tag groups or adjust some tag names. To achieve this you have to open json file with TagSpaces and click on the edit button as shown in the following screenshot.
 
-![view tsm json export file](/media/tsm-json-view.png)
+![view tsm json export file](sharing-tags/tsm-json-view.png)
 
 Then you can navigate to the tag groups element and make some changes there, see the next screenshot for clarification. Following our initial intention, we have to delete all the tag groups located above the "TagGroups for Sharing 1". You can use the menu of the tag groups elements for achieving this steps. Don't forget to click in the save button in order to persist your changes.
 
-![edit tms json export file](/media/tsm-json-edit.png)
+![edit tms json export file](sharing-tags/tsm-json-edit.png)
 
 Some other possible operation in the export file are:
 

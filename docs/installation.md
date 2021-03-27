@@ -34,6 +34,8 @@ For macOS 10.10 or later you have to download the [64bit](https://www.tagspaces.
 By default macOS does not allow TagSpaces to be executed with a simple double click, because it is currently not digitally signed. To work around this, right-click the TagSpaces.app folder and choose Open, then click **Open** on the dialog that appears. You need to do this just once.
 :::
 
+![Install confirmation macOS](/media/mac-install-confirmation.jpg)
+
 :::tip
 Alternative: `xattr -d com.apple.quarantine /Applications/TagSpaces.app`
 :::

@@ -34,6 +34,16 @@ The property **ExtDisplayMode** can be used for switching between the desktop an
 
 Possible values are 'mobile' and 'desktop'.
 
+## Setting the file tagging mode of the app
+
+The property **ExtUseSidecarsForFileTagging** can be used for switching between using the file rename method and using sidecar files for saving the tagging information.
+
+    window.ExtUseSidecarsForFileTagging = false;
+
+Possible values are 'true' and 'false'.
+
+> **Note:** If the parameter is specified then this setting could not be changed in the TagSpaces settings dialog anymore. The user can only see which file tagging method is activated (renaming files or using sidecar files)
+
 ## Configuring custom locations
 
 With this feature TagSpaces can be deployed with a set of predefined location, which could point to local folder or object store buckets hosted for example on AWS S3. The configuration property responsible for this feature is called **ExtLocations**.
@@ -47,23 +57,25 @@ window.ExtLocations = [
     uuid: "10565f09-c7fd-2333-fc67-a75db27rt5ba", // an inique id of the location
     type: "1", // 1 defines the locations a cloud based
     name: "The name of the cloud location", // the name of the location
-    paths: ["demo"], // the path to sub folder in the location
+    path: "demo", // the path to sub folder in the location
     accessKeyId: "your_access_key", // the access key of the user
     secretAccessKey: "your_secret_key", // the secret case of the user
     bucketName: "demo-bucket", // the name of the S3 bucket
     region: "eu-central-1", // the AWS region
+    endpointURL: "https://nas34r:3000/minio", // optional property allowing the specify the cloud end-point directly
+    isNotEditable: true, // disable the opening of the location properties and export
     isDefault: true, // if true this location will be loaded by the application start
     isReadOnly: true, // if true the user interface of the application turns to read-only mode
     persistIndex: false, // if true the search index will be persisted and loaded by default on location opening
     fullTextIndex: false, // activated the full-text search for TXT, MD and HTML files
-    watchForChanges: false, // activates the watching for changed files in the current location
+    watchForChanges: false, // activates the watching for changed files in the current location, (feature is not working on cloud locations)
   },
 ];
 ```
 
 The following snipped is an example for connecting a local folder as location:
 
-```js {2}
+```js
 window.ExtLocations = [
   // an array containing one or many locations
   {
@@ -92,7 +104,7 @@ With this feature TagSpaces can be deployed with a set of predefined tags distri
 
 The following code snipped shows how to define one tag group containing one tag as a predefined tag library
 
-```js {2}
+```js
 window.ExtTagLibrary = [
   // an array containing one or many tag groups
   {
@@ -128,7 +140,7 @@ window.ExtTagLibrary = [
 
 Explanation which part of the code should be copied.
 
-```js {2}
+```js
     {
     	"appName": "TagSpaces",
     	"appVersion": "3.1.5",
@@ -140,12 +152,6 @@ Explanation which part of the code should be copied.
 ```
 
 ## User interface tweaks
-
-### Open app with predefined perspective
-
-    window.ExtDefaultPerspective = 'gallery';
-
-Possible values as of version 3.3.x are 'default', 'gallery', 'mapique'
 
 ### Show vertical panel on startup
 
@@ -230,6 +236,12 @@ Possible value: any css color
 
 Default value: <span style={{color: '#ff9abe'}}>'#ff9abe'</span>
 
+### Open app with predefined perspective
+
+    window.ExtDefaultPerspective = 'gallery';
+
+Possible values as of version 3.3.x are 'default', 'gallery', 'mapique'
+
 ## Modifying packages
 
 - Unzip the packaged
@@ -247,8 +259,6 @@ window.ExtLogoURL = "https://www.tagspaces.org/content/text-logo.svg";
 
 window.ExtIsFirstRun = false;
 
-window.ExtDefaultPerspective = "gallery";
-
 window.ExtTheme = "dark";
 
 window.ExtLocations = [
@@ -256,7 +266,7 @@ window.ExtLocations = [
     uuid: "10565f09-c7fd-2333-fc67-a75db27rt5ba",
     type: "1",
     name: "The name of the cloud location",
-    paths: ["demo"],
+    path: "demo",
     accessKeyId: "your_access_key",
     secretAccessKey: "your_secret_key",
     bucketName: "demo-bucket",
@@ -271,7 +281,7 @@ window.ExtLocations = [
     uuid: "53453458-c7fd-2333-fc67-a75db27rt5ba",
     type: "0",
     name: "The name of the local location",
-    paths: ["/var/mnt/data/"],
+    path: "/var/mnt/data/",
     isDefault: true,
     isReadOnly: true,
     persistIndex: false,
