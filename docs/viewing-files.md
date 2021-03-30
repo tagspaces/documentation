@@ -35,7 +35,7 @@ The following table lists the supported files types for viewing and editing of f
   <thead>
     <th>File type extension</th>
     <th>Windows, Mac OS &amp; Linux desktop apps</th>
-    <th>Self hosting version</th>
+    <th title="Pro and Enterprise">Web versions</th>
     <th>Android app</th>
   </thead>
   <tr>
