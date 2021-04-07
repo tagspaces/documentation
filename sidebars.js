@@ -223,7 +223,7 @@ module.exports = {
       "tutorials/file-syncing",
       "tutorials/sharing-tags",
       "tutorials/s3-bucket-locations",
-      "tutorials/setup-minio-bucket-qnap",
+      "tutorials/setup-minio-bucket-nas",
       "dev/extension-development-guide",
       "selfhosting",
       "tutorials/sabre-dav-setup",
