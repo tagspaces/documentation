@@ -1,10 +1,10 @@
 ---
-title: Installation overview
+title: Installing TagSpaces
 ---
 
 Here you will learn how to install TagSpaces on different operating systems.
 
-## Download TagSpaces
+## Getting the application
 
 The community version of TagSpaces can be downloaded for Windows, macOS and Linux from the official [download page](https://www.tagspaces.org/downloads)
 
@@ -12,17 +12,33 @@ The community version of TagSpaces can be downloaded for Windows, macOS and Linu
 
 The community versions of TagSpaces are available for download from the official [Downloads Page](https://www.tagspaces.org/downloads/), where you can quickly find the appropriate installer for your operating system (Windows, macOS, Linux, Android, Firefox and Chrome).
 
-## New Version Notification
+:::tip
+**Download the newest PRO release:** PRO customers have to use the downloads links provided in purchase confirmation email. Those links will lead always to the latest available PRO version.
+:::
 
-Once a new version of the application is available, you will see a green present icon near the TagSpaces logo. Clicking on this icon will lead your to the what's new webpage on the TagSpaces website. Here you can download the new version of the application.
+### New Version Notification
+
+Once a new version of the application is available, you will see the following notification in the lower left corner of the app. Clicking on the "GET NOW" button will lead you to the download page of the TagSpaces' website, where the latest community version can be downloaded. Pro users should use the links in the order confirmation email in order to get the latest version.
 
 ![New version notification](/media/new-version-available.png)
 
-If you do not want to TagSpaces to check for the availability of new version, disable this functionality in the [settings](ui/settings)
+> Note: If you do not want TagSpaces to check automatically for the new versions, disable this functionality in the [settings](ui/settings).
+
+<!-- ## Installing TagSpaces PRO
+
+Here are the steps needed for installing the PRO version on your system.
+
+- Save the installer file to a location on your hard drive.
+- Locate the installer and double-click to start the install process.
+- The Windows installer allows you to specify a custom install location. -->
 
 ## Installation on Windows
 
-The Windows version of TagSpaces is distributed as `zip` file, which can be downloaded for [64bit](https://www.tagspaces.org/downloads/tagspaces-win64.zip) versions of Windows, depending on your system. Then you have to just unzip the downloaded file in a folder of your choice somewhere on your system. In the unpacked folder you will find a file called `tagspaces.exe`, which can be executed with double click.
+The Windows version of TagSpaces is distributed as a `exe` file which can be directly executed to start the installation and a `zip` archive file. The last have be to unzipped in a folder somewhere on your system. In the unpacked folder you will find a file called `tagspaces.exe`, which can be executed with double click.
+
+The installer program for Windows is signed with modern software certificates. The following screenshot shows ther certificate in action during the installation under Windows. Here you can see that the installation program is created by TagSpaces UG (haftungsbeschränkt), which is the company behind TagSpaces.
+
+![Screenshot showing signed installer under Windows](/media/signed-windows-installer.png)
 
 > **Updating the Windows version:** Just exchange the content of your current installation, with the content from the zip-file of a newer release. You don't have to worry about your tag library and locations since they are persisted in the users home folder.
 
@@ -62,7 +78,7 @@ The Linux version of TagSpaces is distributed as `tar.gz` file, which can be dow
 
 ### From Google Play
 
-You can install the Android app from the [Google Play Store](https://play.google.com/store/apps/details?id=org.tagspaces.mobile).
+You can install the Android app from the [Google Play Store](https://play.google.com/store/apps/details?id=org.tagspaces.mobileapp).
 
 > **Updating the Android app:** Once we publish a newer version of the Android app, it will be automatically installed on your mobile device within the following days.
 
@@ -104,7 +120,7 @@ Once installed the add-on can be started from the TagSpaces icon in the right up
 
 You can install the Chrome extension directly from the [Google Chrome Store](https://chrome.google.com/webstore/detail/tagspaces-web-clipper/ldalmgifdlgpiiadeccbcjojljeanhjk).
 
-### Installation from the TagSpaces webpage
+<!-- ### Installation from the TagSpaces webpage
 
 An alternative way is get the extension directly from [our download page](https://www.tagspaces.org/downloads/). If you do so, please consider the following instructions:
 
@@ -114,23 +130,9 @@ An alternative way is get the extension directly from [our download page](https:
 - Locate the extension file on your computer and drag the file onto the Extensions page.
 - Review the list of permissions in the dialog that appears and click **Install**.
 
-After the installation, the TagSpaces extension can be started from the TagSpaces icon in the right upper corner of the browser.
+After the installation, the TagSpaces extension can be started from the TagSpaces icon in the right upper corner of the browser. -->
 
 > **Updating the Chrome extension:** Once we publish a newer version of the Chrome extensions on the Chrome store, it will be automatically installed on your Chrome browser within the following days.
-
-## Installing TagSpaces PRO
-
-For Windows we are providing installers for TagSpaces PRO, which are signed with modern software certificates. The following screenshot show this certificate in action during the installation under Windows.
-
-![Screenshot showing signed installer under Windows](/media/signed-windows-installer.png)
-
-Here are the steps needed for installing the PRO version on your system.
-
-- Save the installer file to a location on your hard drive.
-- Locate the installer and double-click to start the install process.
-- The Windows installer allows you to specify a custom install location.
-
-> **Updating the PRO version:** Just run the installer from a newer version of TagSpaces. It will automatically update your installation.
 
 ## Running in portable mode
 

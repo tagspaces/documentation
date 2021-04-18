@@ -14,22 +14,22 @@ module.exports = {
       "installation",
       {
         type: "link",
-        label: "Windows",
+        label: "Windows Desktop App",
         href: "/installation#installation-on-windows",
       },
       {
         type: "link",
-        label: "macOS",
+        label: "macOS Desktop App",
         href: "/installation#installation-on-macos",
       },
       {
         type: "link",
-        label: "Linux",
+        label: "Linux Desktop App",
         href: "/installation#installation-on-linux",
       },
       {
         type: "link",
-        label: "Android",
+        label: "Android App",
         href: "/installation#installation-on-android",
       },
       {
@@ -42,17 +42,17 @@ module.exports = {
         label: "Chrome Browser Extension",
         href: "/installation#installing-the-chrome-browser-extension",
       },
-      {
-        type: "link",
-        label: "TagSpaces Pro",
-        href: "/installation#installing-tagspaces-pro",
-      },
+      // {
+      //   type: "link",
+      //   label: "TagSpaces Pro",
+      //   href: "/installation#installing-tagspaces-pro",
+      // },
       {
         type: "link",
         label: "Running in portable mode",
         href: "/installation#running-in-portable-mode",
       },
-      "tutorials/web-edition-setup",
+      "tutorials/setup-tagspaces-pro-web",
     ],
     "Get Started": [
       "ui/userinterface",

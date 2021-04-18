@@ -1,8 +1,6 @@
 ---
-title: Setup TagSpaces Web ⚒
+title: Setup TagSpaces Web (deprecated)
 ---
-
-WIP
 
 ## User Management
 

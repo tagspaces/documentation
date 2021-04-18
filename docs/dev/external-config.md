@@ -10,13 +10,15 @@ This document will describe how to deploy TagSpaces Pro and Enterprise with pred
 
 For exchanging the application logo the **ExtLogoURL** parameter should be used. A valid values can be an URL:
 
-```jsx title="Add custom logo"
+```js title="Add custom logo"
 window.ExtLogoURL = "https://www.tagspaces.org/content/text-logo.svg";
 ```
 
 or a relative path the file containing the logo:
 
-    window.ExtLogoURL = 'custom-logo.png';
+```js
+window.ExtLogoURL = "custom-logo.png";
+```
 
 Valid file formats are JPG, GIF, PNG and SVG. The maximum height of the logo should 50px.
 
@@ -98,13 +100,15 @@ The editing of the locations can be disabled with the following property: **ExtL
 
 > Note: This switch is not supported anymore. Now as soon as you have externally configured locations they are automatically read-only.
 
-## Allow saving location's configuration in the browser
+## Saving locations in the browser
 
-With this property use can force the app to store the configuration for the locations in the browser's local storage. In the desktop app this is enabled by default, but on the web based version it is turned off.
+Turning on this property will force the app to store the configuration for the locations in the browser's local storage. In the desktop app this is enabled by default, but on the web based version it is turned off.
 
     window.ExtSaveLocationsInBrowser = true
 
-> Note: The use of this property is not recommended since saving access keys and secret access keys in the local storage of the browser is not a good practice from the security point of view. But there are some use-cases where this is useful.
+:::tip
+The use of this property is not recommended since saving access and secret access keys in the local storage of the browser is not a good practice from the security point of view. But there are some use-cases where this is useful and make sense.
+:::
 
 ## Configuring custom tag library
 
@@ -149,14 +153,14 @@ window.ExtTagLibrary = [
 Explanation which part of the code should be copied.
 
 ```js
-    {
-    	"appName": "TagSpaces",
-    	"appVersion": "3.1.5",
-    	"settingsVersion": 3,
-    	"tagGroups": [
-    		// Copy everything from here to window.ExtTagLibrary = [ here ]
-    	]
-    }
+{
+  "appName": "TagSpaces",
+  "appVersion": "3.1.5",
+  "settingsVersion": 3,
+  "tagGroups": [
+    // Copy everything from here to window.ExtTagLibrary = [ here ]
+  ]
+}
 ```
 
 ## User interface tweaks
