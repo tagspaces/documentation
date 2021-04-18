@@ -98,6 +98,14 @@ The editing of the locations can be disabled with the following property: **ExtL
 
 > Note: This switch is not supported anymore. Now as soon as you have externally configured locations they are automatically read-only.
 
+## Allow saving location's configuration in the browser
+
+With this property use can force the app to store the configuration for the locations in the browser's local storage. In the desktop app this is enabled by default, but on the web based version it is turned off.
+
+    window.ExtSaveLocationsInBrowser = true
+
+> Note: The use of this property is not recommended since saving access keys and secret access keys in the local storage of the browser is not a good practice from the security point of view. But there are some use-cases where this is useful.
+
 ## Configuring custom tag library
 
 With this feature TagSpaces can be deployed with a set of predefined tags distributed in tag groups. The configuration property responsible for this feature is called **ExtTagLibrary**.
