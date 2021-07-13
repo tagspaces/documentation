@@ -42,6 +42,8 @@ The installer program for Windows is signed with modern software certificates. T
 
 > **Updating the Windows version:** Just exchange the content of your current installation, with the content from the zip-file of a newer release. You don't have to worry about your tag library and locations since they are persisted in the users home folder.
 
+Just in case you need this, the **profile** folder under Windows is located here: `C:\Users\Your_User_Name\AppData\Roaming\TagSpaces`
+
 ## Installation on macOS
 
 For macOS 10.10 or later you have to download the [64bit](https://www.tagspaces.org/downloads/tagspaces-osx64.zip) of the application. Then you have to double click the downloaded zip file in Finder to unpack it properly. Some users are reporting issues with unpacking the app with some 3th-party zip utils.

@@ -8,13 +8,31 @@ This article will guide through the setting up of a self hosted object storage b
 
 > Work in progress
 
-The easies way to run it is with the container app, which run Docker in background.
+The easies way to run it is with the container app, which run Docker in background. This can be done by opening a ssh-shell to your NAS and executing the following command:
 
-Make sure Minio docker is started automatically after restarting of your NAS system
+    $ docker run -d \
+        --restart=always \
+        -p 9000:9000 \
+        --name qnap-s3-minio \
+        -e MINIO_ROOT_USER=your_minio_user_name \
+        -e MINIO_ROOT_PASSWORD=some_very_secret_key \
+        -v /share/DataS3:/data \
+        minio/minio server /data
+
+
+Notes:
+* --restart=always ,ake sure Minio docker image is started automatically after restarting your NAS system
+* -p 9000:9000/tcp will expose MinIO server on both network interfaces (port 9000 tcp)
+* MINIO_ROOT_USER and MINIO_ROOT_PASSWORD must be changed for production
+* /share/DataS3 is local directory on QNAP NAS
+* /data is the folder which is mapped to /share/DataS3 and which is later server by the minio
+* minio/minio is Docker image available at Docker Hub
+
 
 ## Setup Minio on Synology NAS
 
-> Work in progress, should be similar to setting up the QNAP NAS
+![MinIO's login screen](tagspaces-web-nas/minio-login-screen.png)
+
 
 ### Check if Minio is installed correctly
 

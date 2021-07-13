@@ -74,7 +74,7 @@ module.exports = {
       "ui/settings",
       "ui/i18n",
     ],
-    "Browse Files": [
+    "Browse Files in Perspectives": [
       "browsing-files",
       "perspectives/grid",
       "perspectives/gallery",

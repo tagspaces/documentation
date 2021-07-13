@@ -2,11 +2,11 @@
 title: Gallery Perspective
 ---
 
-## Motivation
+import { ProFeature, EntFeature } from '../../src/components/CommonBlocks'
 
-This perspective offers basic image gallery functionality, like previewing the images from the current folder, a presentation mode and a full screen view.
+<ProFeature />
 
-> <profeature /> The perspective is available only in the PRO and the Enterprise versions of the product.
+This perspective offers basic image gallery functionality, like previewing the images from the current folder, a presentation mode in a full screen view.
 
 ## User interface
 

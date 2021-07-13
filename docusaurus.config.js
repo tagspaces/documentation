@@ -10,6 +10,10 @@ module.exports = {
   favicon: "img/favicon.ico",
   organizationName: "tagspaces", // Usually your GitHub org/user name.
   projectName: "tagspaces", // Usually your repo name.
+  i18n: {
+    defaultLocale: "en",
+    locales: ["en"],
+  },
   plugins: [
     require.resolve("docusaurus-lunr-search"),
     // [
@@ -24,15 +28,15 @@ module.exports = {
     //     ],
     //   },
     // ],
-    [
-      "@docusaurus/plugin-ideal-image",
-      {
-        quality: 70,
-        max: 1030, // max resized image's size.
-        min: 640, // min resized image's size. if original is lower, use that size.
-        steps: 2, // the max number of images generated between min and max (inclusive)
-      },
-    ],
+    // [
+    //   "@docusaurus/plugin-ideal-image",
+    //   {
+    //     quality: 70,
+    //     max: 1030, // max resized image's size.
+    //     min: 640, // min resized image's size. if original is lower, use that size.
+    //     steps: 2, // the max number of images generated between min and max (inclusive)
+    //   },
+    // ],
   ],
   themeConfig: {
     navbar: {

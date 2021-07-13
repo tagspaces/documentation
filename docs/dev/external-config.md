@@ -4,7 +4,7 @@ title: External Configuration
 
 ## Introduction
 
-This document will describe how to deploy TagSpaces Pro and Enterprise with predefined configuration such as custom logo and color, tag library or locations.
+This document will describe how to deploy TagSpaces Pro and Enterprise with predefined configuration such as custom logo and color, tag library or locations. The settings discussed here should be saved in a file called **extconfig.js**, placed in the folder where the application is hosted.
 
 ## Configuring a custom logo
 
