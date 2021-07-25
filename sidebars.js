@@ -148,6 +148,11 @@ module.exports = {
         label: "Global Search",
         href: "/search#global-search",
       },
+      {
+        type: "link",
+        label: "Saved Search Queries",
+        href: "/search#saved-search-queries",
+      },
     ],
     "View and Print Files": [
       "viewing-files",

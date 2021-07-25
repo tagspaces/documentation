@@ -3,9 +3,7 @@ slug: /
 title: TagSpaces Intro
 ---
 
-Welcome to the documentation of the TagSpaces products as of **version 3**.
-
-> **Note:** This documentation is in <b>work in progress</b> status.
+Welcome to the documentation of the TagSpaces products.
 
 TagSpaces is an open source, cross-platform, no backend, no login, file manager, organizer and browser. It helps you organize your files, photos and other documents with tags on different platforms and/or devices, according to your own preferences and following your own logic, by using the same smart and friendly interface everywhere.
 
@@ -39,12 +37,12 @@ TagSpaces is an open source, cross-platform, no backend, no login, file manager,
 
 ## Products landscape
 
-- **Community desktop version** - the main, community developed edition of TagSpaces
-- **PRO desktop version** - extended solution based on the community version for advanced users
+- **Community Desktop version** - the main, community developed edition of TagSpaces
+- **PRO Desktop version** - extended solution based on the community version for advanced users
+- **PRO Web version** - A package for self hosting on your NAS or other web infrastructure connecting object storage
 - **Web Clipper as Firefox addon** - a web clipper allowing the saving of whole webpages, webpage fragments and screenshot as local files
 - **Web Clipper as Chrome extension** - same as the web clipper for Firefox
-- **Android app** - an app offering most of the features from the community desktop version on a Android device (currently in development)
-<!--- **Web self hosting edition** - A package for self hosting on top of a any WebDAV server such as Nextcloud or ownCloud.-->
+- **Android app** - a mobile app offering most of the features from the community desktop version on Android devices
 
 ## Common Use Cases
 
@@ -68,11 +66,13 @@ Check out the [TagSpaces YouTube channel](https://www.youtube.com/channel/UCzfSa
 
 Frontend based on:
 
-- JavaScript / React / Redux
-- HTML / CSS / React Material UI
+- JavaScript / HTML / CSS
+- React / Redux / [Material UI](https://material-ui.com/)
 
-Native APIs (for example for file access) are:
+Native APIs e.g. for file access are based accordingly:
 
-- Desktop versions for Windows, macOS and Linux based on Electron
-- Mobile versions for Android and iOS based on Cordova
-- Web versions for managing files in object storages like AWS S3
+- Desktop versions for Windows, macOS and Linux based on [Electron](https://www.electronjs.org/)
+- Mobile versions for Android based on [Cordova](https://cordova.apache.org/)
+- Web versions for managing files in object storages based on [AWS SDK for JavaScript](https://aws.amazon.com/sdk-for-javascript/)
+
+> **Note:** This documentation is in <b>work in progress</b> status.

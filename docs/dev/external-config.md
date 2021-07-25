@@ -54,7 +54,7 @@ This an example for connecting an AWS S3 bucket as location:
 
 ```js title="extconfig.js"
 window.ExtLocations = [
-  // an array containing one or many locations
+  // a list containing one or many locations
   {
     uuid: "10565f09-c7fd-2333-fc67-a75db27rt5ba", // an inique id of the location
     type: "1", // 1 defines the locations a cloud based
@@ -71,6 +71,9 @@ window.ExtLocations = [
     persistIndex: false, // if true the search index will be persisted and loaded by default on location opening
     fullTextIndex: false, // activated the full-text search for TXT, MD and HTML files
     watchForChanges: false, // activates the watching for changed files in the current location, (feature is not working on cloud locations)
+    maxIndexAge: 600000 // time in milliseconds (10 minutes x 60 secs per minute x 1000 milliseconds per second) for which the index is valid
+    persistTagsInSidecarFile: true // specifies the way files are tagged in this location
+    ignorePatternPaths: ["**/node_modules/**"], // list of path strings to ignore while indexing
   },
 ];
 ```
@@ -94,13 +97,13 @@ window.ExtLocations = [
 ];
 ```
 
-## Disable the editing of the locations
+### Disable the editing of the locations (deprecated)
 
 The editing of the locations can be disabled with the following property: **ExtLocationsReadOnly**
 
 > Note: This switch is not supported anymore. Now as soon as you have externally configured locations they are automatically read-only.
 
-## Saving locations in the browser
+### Saving locations in the browser
 
 Turning on this property will force the app to store the configuration for the locations in the browser's local storage. In the desktop app this is enabled by default, but on the web based version it is turned off.
 
@@ -127,7 +130,6 @@ window.ExtTagLibrary = [
     children: [
       // an array containing one or many tags
       {
-        id: "ff47282f-a7cc-474c-951f-4636d60c0529", // an unique id of the tag
         type: "plain", // the type of tag, just leave it plain
         title: "book", // the name of the tag
         description: "", // a optional description for a tag
@@ -163,9 +165,77 @@ Explanation which part of the code should be copied.
 }
 ```
 
+## Configuring custom search queries
+
+Starting from version 3.10 TagSpaces Pro can be pre-configured with predefined search queries.
+
+```js
+window.ExtSearches = [
+  // a list of search queries
+  {
+    uuid: "2123", // unique identifier
+    title: "Some query name", // name of the search
+    textQuery: "", // some free text query
+    fileTypes: "", // possible values
+    tagsAND: [
+      // all of these tags should be attached to an entry
+      {
+        type: "sidecar",
+        title: "tag1",
+      },
+      {
+        type: "sidecar",
+        title: "tag2",
+      },
+    ],
+    tagsOR: [], // at least one of those tags should be attached to an entry
+    tagsNOT: [
+      // none of these tags should be attached to an entry
+      {
+        type: "sidecar",
+        title: "tag3",
+      },
+    ],
+    lastModified: "",
+    fileSize: "",
+    searchBoxing: "location", // other possible values are 'folder' or 'global'
+    searchType: "fussy", // other possible values are 'semistrict' or 'strict'
+    forceIndexing: true, // re-index the current location before performing the search
+    currentDirectory: "/home/username/Documents",
+    fileTypes: ["md", "mdown", "txt", "html"], // a list of file extensions
+    lastModified: "past7Days", // TBD
+    fileSize: "sizeVerySmall", // TBD
+    tagTimePeriodFrom: 1622505600000, // TBD
+    tagTimePeriodTo: 1625090399999, // TBD
+    maxSearchResults: 100, // max number of search result
+    showUnixHiddenEntries: true, // TBD
+  },
+];
+```
+
+## Configuring custom map tile servers
+
+From version 3.10 TagSpaces can be pre-configured with custom map tile servers. The OpenStreetMap compatible tile servers can be even self hosted allowing you to work with maps without the need to be connect to the Internet.
+
+```js
+window.ExtMapTileServers = [
+  // a list of one or more external map tile server with their attributes
+  {
+    uuid: "qer4123412ew", // an unique id of the map tile server
+    name: "Stamen Watercolor",
+    serverURL:
+      "https://stamen-tiles.a.ssl.fastly.net/watercolor/{z}/{x}/{y}.jpg",
+    serverInfo:
+      "Map tiles by Stamen Design - http://stamen.com, under CC BY 3.0. Data by OpenStreetMap, under CC BY SA.",
+  },
+];
+```
+
+> Note: Some example map tile servers can be found in the [OpenStreetMap Wiki](https://wiki.openstreetmap.org/wiki/Tile_servers). Please consider the terms of usage of any given map service provider!
+
 ## User interface tweaks
 
-### Show vertical panel on startup
+### Show vertical panel on startup (deprecated)
 
     window.ExtDefaultVerticalPanel = 'none';
 

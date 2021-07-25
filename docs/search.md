@@ -147,9 +147,9 @@ This filter is still work in progress.
 
 This filter is still work in progress.
 
-## Full text search <profeature />
+## Full text search
 
-TagSpaces PRO supports full text search for text (.TXT), markdown (.MD) and html (.HTML) files. You can activate this feature for every location individually in the "Edit Location" dialog, as seen in the following screenshot. After the activating of this feature (see next screenshot), during the indexing of a given location, the application will try to extract the text content of the supported files and create a keyword list with will be considered later by the search algorithm.
+<profeature /> TagSpaces PRO supports full text search for text (.TXT), markdown (.MD) and html (.HTML) files. You can activate this feature for every location individually in the "Edit Location" dialog, as seen in the following screenshot. After the activating of this feature (see next screenshot), during the indexing of a given location, the application will try to extract the text content of the supported files and create a keyword list with will be considered later by the search algorithm.
 
 > **Note:** On locations with many big text files, activating this features may slow down the performance of the application, so be careful on which location you are activating it.
 
@@ -173,9 +173,9 @@ These file formats are currently supported:
 
 > **Note:** This feature is still in beta state and could lead to performance issues if you are dealing with many and/or big text files.
 
-## Global search <profeature />
+## Global search
 
-Starting with version 3.5, TagSpaces Pro offers searching in all locations. We call this feature "Global search". It works on local and remote S3 based locations. The feature can be activated by clicking the _Global_-button in the search area, as seen in the following screenshot.
+<profeature /> Starting with version 3.5, TagSpaces Pro offers searching in all locations. We call this feature "Global search". It works on local and remote S3 based locations. The feature can be activated by clicking the _Global_-button in the search area, as seen in the following screenshot.
 
 <figure>
   <img title="Global search in TagSpaces" src="/media/global-search.png" className="img-responsive center-block" />
@@ -188,8 +188,13 @@ All other search related settings should work as known from the single location 
 
 > Note: _Global search_ should be considered as a feature in Beta status. There could be some edge cases which are not functioning correctly. Please share any glitches with us, we will try to fix them.
 
-## Saved searches <profeature />
+## Saved search queries
 
+<profeature />
+
+In version 3.10 we added a basic possibilities for saving search queries for later use.
+
+![export search queries](/media/import-export-searches.png)
 Work in progress
 
 <!-- Advanced search v2.x / Search query language

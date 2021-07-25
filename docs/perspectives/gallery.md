@@ -8,11 +8,11 @@ import { ProFeature, EntFeature } from '../../src/components/CommonBlocks'
 
 This perspective offers basic image gallery functionality, like previewing the images from the current folder, a presentation mode in a full screen view.
 
+> **Note:** This perspective can only be activated in folder which contains images and photos in the following file formats: JPG, PNG, GIF, BMP, SVG or WEBP.
+
 ## User interface
 
 From the main toolbar of this perspective the user can access the following functionalities:
-
-> **Note:** This perspective can only be activated in folder which contains images and photos in the following file formats: JPG, PNG, GIF, BMP, SVG or WEBP.
 
 <figure>
   <img title="" src="/media/tagspaces-gallery-overview.jpg" className="img-responsive center-block" />
