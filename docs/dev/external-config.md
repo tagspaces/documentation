@@ -20,7 +20,9 @@ or a relative path the file containing the logo:
 window.ExtLogoURL = "custom-logo.png";
 ```
 
-Valid file formats are JPG, GIF, PNG and SVG. The maximum height of the logo should 50px.
+:::tip
+Images with up to **250 px** width and up to **50 px** height suits best in the user interface of the application. Valid image file formats are JPG, GIF, PNG and SVG.
+:::
 
 ## Disabling the onboarding dialog and the license confirmation
 
@@ -199,7 +201,7 @@ window.ExtSearches = [
     lastModified: "",
     fileSize: "",
     searchBoxing: "location", // other possible values are 'folder' or 'global'
-    searchType: "fussy", // other possible values are 'semistrict' or 'strict'
+    searchType: "fuzzy", // other possible values are 'semistrict' or 'strict'
     forceIndexing: true, // re-index the current location before performing the search
     currentDirectory: "/home/username/Documents",
     fileTypes: ["md", "mdown", "txt", "html"], // a list of file extensions
@@ -232,6 +234,12 @@ window.ExtMapTileServers = [
 ```
 
 > Note: Some example map tile servers can be found in the [OpenStreetMap Wiki](https://wiki.openstreetmap.org/wiki/Tile_servers). Please consider the terms of usage of any given map service provider!
+
+## Configuring the format of the geo tags
+
+    window.ExtDefaultVerticalPanel = 'pluscodes';
+
+Possible values: 'pluscodes', 'mgrs'
 
 ## User interface tweaks
 

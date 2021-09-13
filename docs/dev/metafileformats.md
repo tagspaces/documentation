@@ -260,7 +260,7 @@ Version 3.10 offers the possibility to export previously saved search queries.
         }
       ],
       "searchBoxing": "location",
-      "searchType": "fussy",
+      "searchType": "fuzzy",
       "fileTypes": ["md", "mdown", "txt", "html"],
       "lastModified": "past7Days",
       "fileSize": "sizeVerySmall",
