@@ -31,7 +31,7 @@ The only extra the text editor offers is basic code highlighting for some common
 
 ![](/media/code-highlighting-js.png)
 
-The text editor will keep the option to print from the plain [text viewer](/extensions/viewerText.md).
+The text editor will keep the option to print from the plain [text viewer](/extensions/text-viewer.md).
 
 ### MarkDown Editor
 

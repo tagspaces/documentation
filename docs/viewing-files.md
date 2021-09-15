@@ -6,17 +6,18 @@ title: Viewing Files
 
 The application supports previewing of many file types without the need of external viewer. It comes with the following viewer extensions:
 
-- [Audio Video Player](extensions/viewerAudioVideo.md)
-<!-- * [EPUB Reader](extensions/viewerEPUB.md)-->
-- [HTML Reader](extensions/viewerHTML.md)
-- [Image Viewer](extensions/viewerImage.md)
-- [Link Opener](extensions/viewerURL.md)
-- [Markdown Reader](extensions/viewerMD.md)
-- [MHTML Reader](extensions/viewerMHTML.md)
-- [PDF Viewer](extensions/viewerPDF.md)
-- [Text Reader](extensions/viewerText.md)
-- [Simple Viewer](extensions/viewerBrowser.md)
-- [ZIP Opener](extensions/viewerZIP.md)
+- [Media Player](extensions/media-player.md)
+<!-- * [EPUB Reader](extensions/epub-viewer.md)-->
+- [HTML Reader](extensions/html-viewer.md)
+- [Image Viewer](extensions/image-viewer.md)
+- [Link Opener](extensions/url-viewer.md)
+- [Markdown Reader](extensions/md-viewer.md)
+- [MHTML Reader](extensions/mhtml-viewer.md)
+- [PDF Viewer](extensions/pdf-viewer.md)
+- [Text Reader](extensions/text-viewer.md)
+- [Document Viewer](extensions/document-viewer.md)
+- [Spreadsheet Viewer](extensions/spreadsheet-viewer.md)
+- [ZIP Opener](extensions/archive-viewer.md)
 
 TagSpaces is designed with extensibility in mind so any other kind of file viewers can be easily developed and integrated.
 

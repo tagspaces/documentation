@@ -29,7 +29,7 @@ In editor mode the HTML document will keep its formatting, but you are now able 
 
 ![](/media/tagspaces-html-editor.png)
 
-The formatting toolbar offers some common features, you can find in any RichText or WYSIWYG HTML editor, with some features specific to TagSpaces. The overflow menu options from the [HTML viewer](/extensions/viewerHTML.md) are not implemented in the HTML Editor.
+The formatting toolbar offers some common features, you can find in any RichText or WYSIWYG HTML editor, with some features specific to TagSpaces. The overflow menu options from the [HTML viewer](/extensions/html-viewer.md) are not implemented in the HTML Editor.
 
 ### Toolbar Buttons
 
