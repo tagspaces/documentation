@@ -184,11 +184,11 @@ module.exports = {
       "creating-files",
       {
         type: "link",
-        label: "Importing Files",
+        label: "Import Files",
         href: "/creating-files#importing-files",
       },
-      "editing-files",
       "share-files",
+      "editing-files",
       "extensions/md-editor",
       "extensions/html-editor",
       "extensions/text-editor",

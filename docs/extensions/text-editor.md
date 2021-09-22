@@ -35,7 +35,7 @@ The text editor will keep the option to print from the plain [text viewer](/exte
 
 ### MarkDown Editor
 
-When you open a MarkDown file for editing from the [MarkDown Viewer](/extensions/viewerMD.md), it will be opened wit the same **Text Editor**, any plain text file would, offering inline highlighting of Markdown syntax.
+When you open a MarkDown file for editing from the [MarkDown Viewer](/extensions/md-viewer.md), it will be opened wit the same **Text Editor**, any plain text file would, offering inline highlighting of Markdown syntax.
 
 ![](/media/markdown-syntax-highlight.png)
 

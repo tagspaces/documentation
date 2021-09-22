@@ -1,5 +1,5 @@
 ---
-title: Creating Files
+title: Create Files
 ---
 
 Besides opening and previewing various file types, TagSpaces can also create new files of some text-based formats. File creation is a functionality that allows TagSpaces to become an effective note-taking application.

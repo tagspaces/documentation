@@ -1,5 +1,5 @@
 ---
-title: Viewing Files
+title: Preview Files
 ---
 
 ## File preview
@@ -21,7 +21,7 @@ The application supports previewing of many file types without the need of exter
 
 TagSpaces is designed with extensibility in mind so any other kind of file viewers can be easily developed and integrated.
 
-> **Source code browser and editor** The text editor supports source code highlighting for many common programming languages. This in combination with the build in [JSON editor](/extensions/editorJSON.md) makes the application a good source code navigator with basic editing capabilities. The intention here is not to makes TagSpaces your next IDE, but rather to give your quick overview of source code repositories.
+> **Source code browser and editor** The text editor supports source code highlighting for many common programming languages. This in combination with the build in [JSON editor](/extensions/json-editor.md) makes the application a good source code navigator with basic editing capabilities. The intention here is not to makes TagSpaces your next IDE, but rather to give your quick overview of source code repositories.
 
 ### Assigning file viewer to file extensions
 
