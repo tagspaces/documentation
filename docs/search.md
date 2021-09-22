@@ -16,10 +16,13 @@ The search query in the basic search consists of two components. The first one i
 - The name of the parent directory of a given file is also considered by the search algorithm. So for example if you are searching for photos from you vacation in USA and the folder where these files are located contains the word USA (e.g. '20160301 vacation usa 70D'), then the search will list all the files located directly in this folder.
 - The content of TXT, MD and HTML, if the full text search is activated for the current location. The full text search for these files is a <profeature /> feature.
 
-The search algorithm has a build-in fuzziness, meaning that if the search query contains a misspelled word, TagSpaces will try to find files and folder with the best guessed similar names.
+The search query consists of two components. The first one is just a simple free text which searched in the index. The second component is a list of tags. If you want a find entries tagged with given tag place `+` in front of it. Placing `-` will exclude entries with this tag.
 
-- The tag search is strict, without fuzziness, if you are not sure about the exact name of a tag, write in the free text query.
-- The search is case insensitive.
+There are three type of searching:
+
+- **Fuzzy** - it will deliver broader search results, tolerating typos in the search query
+- **Strict** - it will deliver exact search results
+- **Semi-strict** - it is same as strict but case insensitive
 
 <figure>
   <img title="basic search in TagSpaces" src="/media/basic-search.png" className="img-responsive center-block" />

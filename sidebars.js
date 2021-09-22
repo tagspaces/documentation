@@ -74,15 +74,6 @@ module.exports = {
       "ui/settings",
       "ui/i18n",
     ],
-    "Browse Files in Perspectives": [
-      "browsing-files",
-      "perspectives/grid",
-      "perspectives/gallery",
-      "perspectives/mapique",
-      "perspectives/kanban",
-      "perspectives/folderviz",
-      // "perspectives/treeviz",
-    ],
     "Tag Files and Folders": [
       "tagging",
       {
@@ -154,6 +145,15 @@ module.exports = {
         href: "/search#saved-search-queries",
       },
     ],
+    "Browse Files in Perspectives": [
+      "browsing-files",
+      "perspectives/grid",
+      "perspectives/gallery",
+      "perspectives/mapique",
+      "perspectives/kanban",
+      "perspectives/folderviz",
+      // "perspectives/treeviz",
+    ],
     "View and Print Files": [
       "viewing-files",
       {
@@ -180,7 +180,7 @@ module.exports = {
       "extensions/url-viewer",
       "extensions/archive-viewer",
     ],
-    "Create and Edit Files": [
+    "Create, Edit and Share Files": [
       "creating-files",
       {
         type: "link",
@@ -188,6 +188,7 @@ module.exports = {
         href: "/creating-files#importing-files",
       },
       "editing-files",
+      "share-files",
       "extensions/md-editor",
       "extensions/html-editor",
       "extensions/text-editor",

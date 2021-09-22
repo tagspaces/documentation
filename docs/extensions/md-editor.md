@@ -4,7 +4,13 @@ A TagSpaces extension allowing viewing and editing of markdown files.
 
 ## Features
 
-![Screenshot of the markdown editor](https://www.tagspaces.org/content/v3-11/milkdown-editor.png)
+<video
+src="https://www.tagspaces.org/content/v3-11/markdown-editor-demo.mp4"
+autoPlay
+loop
+controls
+className="img-responsive center-block img-shadow img-rounded"
+/>
 
 ## Used libraries
 
