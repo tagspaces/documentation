@@ -1,10 +1,10 @@
 ---
-title: Minio buckets hosted NAS ⚒
+title: MinIO buckets hosted NAS ⚒
 ---
 
-This article will guide through the setting up of a self hosted object storage based on MinIO for Synalogy and QNAP based NAS systems. Then we will show you how to setup the TagSpaces PRO Web on a web server and connect it to the MinIO server.
+This article will guide through the setting up of a self hosted object storage based on MinIO for Synology and QNAP based NAS systems. Then we will show you how to setup the TagSpaces PRO Web on a web server and connect it to the MinIO server.
 
-## Setup Minio on QNAP NAS
+## Setup MinIO on QNAP NAS
 
 > Work in progress
 
@@ -19,22 +19,20 @@ The easies way to run it is with the container app, which run Docker in backgrou
         -v /share/DataS3:/data \
         minio/minio server /data
 
-
 Notes:
-* --restart=always ,ake sure Minio docker image is started automatically after restarting your NAS system
-* -p 9000:9000/tcp will expose MinIO server on both network interfaces (port 9000 tcp)
-* MINIO_ROOT_USER and MINIO_ROOT_PASSWORD must be changed for production
-* /share/DataS3 is local directory on QNAP NAS
-* /data is the folder which is mapped to /share/DataS3 and which is later server by the minio
-* minio/minio is Docker image available at Docker Hub
 
+- --restart=always ,ake sure Minio docker image is started automatically after restarting your NAS system
+- -p 9000:9000/tcp will expose MinIO server on both network interfaces (port 9000 tcp)
+- MINIO_ROOT_USER and MINIO_ROOT_PASSWORD must be changed for production
+- /share/DataS3 is local directory on QNAP NAS
+- /data is the folder which is mapped to /share/DataS3 and which is later server by the minio
+- minio/minio is Docker image available at Docker Hub
 
-## Setup Minio on Synology NAS
+## Setup MinIO on Synology NAS
 
 ![MinIO's login screen](tagspaces-web-nas/minio-login-screen.png)
 
-
-### Check if Minio is installed correctly
+### Check if MinIO is installed correctly
 
 Open a web browser and navigate to the URL where the MinIO is hosted.
 
