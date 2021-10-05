@@ -108,7 +108,7 @@ module.exports = {
             },
             {
               label: "Demo",
-              href: "https://www.tagspaces.org/demo/",
+              href: "https://demo.tagspaces.com/",
             },
           ],
         },

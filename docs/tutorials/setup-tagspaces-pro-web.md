@@ -10,7 +10,7 @@ This tutorials explains you how to setup the "App Hosting" area located in the u
 
 ![Deployment architecture of TagSpaces Web Pro](https://www.tagspaces.org/diagrams/tagspaces-pro-web-software-architecture.png)
 
-## Download and unzip
+## Download and unpack
 
 The package can be downloaded from the link available in the email you will receive from our payment provider after purchasing the product.
 
@@ -151,3 +151,11 @@ total 1476
     1129 Sep 17 10:29 sw.js
  1305364 Sep 16  2019 third-party.txt
 ```
+
+## Updating the web app installation
+
+When a new version of the app is available, you just need to unzip the content and replace the files in the `www` folder of the webserver. So if the this folder is mounted in you manager, you have to delete the files selected in the following screenshot and place the new files from the archive there.
+
+![File to replace by upgrade](../tutorials/tagspaces-web-nas/files-to-replace-by-upgrade.png)
+
+> Note: You should not delete `extconfig.js` if you using one for configuring TagSpaces. Be careful not to delete also special folders such as `Recently-Snapshot` or `@Recycle` if you are hosting the app on a NAS system.
