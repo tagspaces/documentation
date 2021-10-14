@@ -7,7 +7,7 @@
     "start": "docusaurus start",
     "build": "docusaurus build",
     "swizzle": "docusaurus swizzle",
-    "deploy": "docusaurus build && aero deploy",
+    "deploy-aero-old": "docusaurus build && aero deploy",
     "serve": "docusaurus serve",
     "gen-pdf": "npx docusaurus-pdf from-build-config",
     "update-ext": "./update-external.sh",

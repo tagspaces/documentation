@@ -17,20 +17,20 @@ The exact URL of the official MinIO docker is: [`https://hub.docker.com/r/minio/
 
 ## Setup MinIO on a NAS with Docker
 
-> Work in progress
-
 The easies way to run it is with the container app, which run Docker in background. This can be done by opening a SSH-connection to your NAS and executing the following command:
 
-    sudo docker run -d \
-        --restart=always \
-        -p 9000:9000 \
-        -p 9001:9001 \
-        --name qnap-s3-minio-console \
-        -e MINIO_ROOT_USER=username \
-        -e MINIO_ROOT_PASSWORD=password \
-        -v /share/DataS3:/data \
-        minio/minio server /data \
-        --console-address :9001
+```bash
+sudo docker run -d \
+    --restart=always \
+    -p 9000:9000 \
+    -p 9001:9001 \
+    --name qnap-s3-minio-console \
+    -e MINIO_ROOT_USER=username \
+    -e MINIO_ROOT_PASSWORD=password \
+    -v /share/DataS3:/data \
+    minio/minio server /data \
+    --console-address :9001
+```
 
 Explanation of the parameters:
 
@@ -80,7 +80,7 @@ So as first step I will go to the **IAM Policies** section and will create a new
 
 ![Setup minio location in TagSpaces](tagspaces-web-nas/minio-iam-policies.png)
 
-The easiest way to define such policy is to paste the following code in the JSON editor of the policy. Both elements in the resource section are needed. The policy is named `PhotosRO`.
+The easiest way to define such policy is to paste the following code in the JSON editor of the policy. Both elements in the `Resource` section of included bellow JSON are needed. The policy is named `PhotosRO`.
 
 ```json title="Policy with read only access to the 'Photos' bucket."
 {
