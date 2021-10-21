@@ -25,7 +25,7 @@ In the last section (4), you can specify where the file should be create. The in
 
 - **Create Note** - will create a HTML which can contain rich text content, with _.html_ file extension.
 - **Create MarkDown File** - will create a [markdown](https://en.wikipedia.org/wiki/Markdown), with _.md_ file extension.
-- **Create Text Fuke** - will create a plain text file, with _.txt_ file extension.
+- **Create Text File** - will create a plain text file, with _.txt_ file extension.
 - **Add File** - will give you the possibility to import a single file in the app. See more in the [importing files](#importing-files) section.
 
 ![screenshot showing the create new content dialog](/media/tagspaces-create-content-dialog.png)
