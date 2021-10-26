@@ -24,7 +24,7 @@ sudo docker run -d \
     --restart=always \
     -p 9000:9000 \
     -p 9001:9001 \
-    --name qnap-s3-minio-console \
+    --name minio-container-name \
     -e MINIO_ROOT_USER=username \
     -e MINIO_ROOT_PASSWORD=password \
     -v /share/DataS3:/data \
@@ -37,7 +37,7 @@ Explanation of the parameters:
 - `--restart=always` - makes sure Minio docker image is started automatically after restarting your NAS system
 - `-p 9000:9000` will expose MinIO server on both network interfaces (port 9000)
 - `-p 9001:9001` will open another port for the MinIO console
-- `-name qnap-s3-minio` is the name of the docker container, this name will appear later in the docker software of your NAS
+- `-name minio-container-name` is the name of the docker container, this name will appear later in the docker software of your NAS
 - `MINIO_ROOT_USER` and `MINIO_ROOT_PASSWORD` - are the username and password of the MinIO admin user, which have to be changed to something else for your production system
 - `/share/DataS3` is local directory on NAS
 - `/data` is the folder which is mapped to /share/DataS3 and which is exposed by MinIO
