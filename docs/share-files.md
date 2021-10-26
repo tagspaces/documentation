@@ -1,3 +1,7 @@
+---
+title: Share files
+---
+
 import { ProFeature, EntFeature, CenteredImage, CenteredVideo } from '../src/components/CommonBlocks';
 
 # Share files

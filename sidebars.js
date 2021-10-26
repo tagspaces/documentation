@@ -79,42 +79,42 @@ module.exports = {
       {
         type: "link",
         label: "File tagging based on filename",
-        href: "/tagging#file-tagging-based-on-filenames",
+        href: "/tagging/#file-tagging-based-on-filenames",
       },
       {
         type: "link",
         label: "File tagging with sidecar file",
-        href: "/tagging#file-tagging-with-sidecar-file",
+        href: "/tagging/#file-tagging-with-sidecar-file",
       },
       {
         type: "link",
         label: "Folder tagging with sidecar file",
-        href: "/tagging#folder-tagging-with-sidecar-file",
+        href: "/tagging/#folder-tagging-with-sidecar-file",
       },
       {
         type: "link",
         label: "Tagging using context menus ⚒",
-        href: "/tagging#tagging-using-context-menus",
+        href: "/tagging/#tagging-using-context-menus",
       },
       {
         type: "link",
         label: "Tagging with drag and drop ⚒",
-        href: "/tagging#tagging-with-drag-and-drop",
+        href: "/tagging/#tagging-with-drag-and-drop",
       },
       {
         type: "link",
         label: "Smart tags ⚒",
-        href: "/tagging#smart-tags",
+        href: "/tagging/#smart-tags",
       },
       {
         type: "link",
         label: "Custom timestamp tagging ⚒",
-        href: "/tagging#custom-timestamp-tagging",
+        href: "/tagging/#custom-timestamp-tagging",
       },
       {
         type: "link",
         label: "Geo-tagging ⚒",
-        href: "/tagging#geo-tagging",
+        href: "/tagging/#geo-tagging",
       },
     ],
     "Search Functionality": [
@@ -122,27 +122,27 @@ module.exports = {
       {
         type: "link",
         label: "Basic Search",
-        href: "/search#basic-search",
+        href: "/search/#basic-search",
       },
       {
         type: "link",
         label: "Advanced Search",
-        href: "/search#advanced-search",
+        href: "/search/#advanced-search",
       },
       {
         type: "link",
         label: "Full-Text Search",
-        href: "/search#full-text-search",
+        href: "/search/#full-text-search",
       },
       {
         type: "link",
         label: "Global Search",
-        href: "/search#global-search",
+        href: "/search/#global-search",
       },
       {
         type: "link",
         label: "Saved Search Queries",
-        href: "/search#saved-search-queries",
+        href: "/search/#saved-search-queries",
       },
     ],
     "Browse Files in Perspectives": [
@@ -159,12 +159,12 @@ module.exports = {
       {
         type: "link",
         label: "Supported File Formats",
-        href: "/viewing-files#supported-file-formats",
+        href: "/viewing-files/#supported-file-formats",
       },
       {
         type: "link",
         label: "File Printing",
-        href: "/viewing-files#printing-files",
+        href: "/viewing-files/#printing-files",
       },
       "extensions/media-player",
       "extensions/epub-viewer",
@@ -185,7 +185,7 @@ module.exports = {
       {
         type: "link",
         label: "Import Files",
-        href: "/creating-files#importing-files",
+        href: "/creating-files/#importing-files",
       },
       "share-files",
       "editing-files",
@@ -207,13 +207,13 @@ module.exports = {
       {
         type: "link",
         label: "Custom Folder Colors",
-        href: "/annotations#customFolderColor",
+        href: "/annotations/#customFolderColor",
       },
       "thumbnails",
       {
         type: "link",
         label: "Custom Thumbnails",
-        href: "/thumbnails#customThumbnails",
+        href: "/thumbnails/#customThumbnails",
       },
       "dev/metafileformats",
       "dev/external-config",
