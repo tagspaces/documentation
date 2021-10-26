@@ -51,7 +51,7 @@ The JSON config, can be copied from the section bellow.
         "AllowedHeaders": ["*"],
         "AllowedMethods": ["GET", "PUT", "POST", "HEAD", "DELETE"],
         "AllowedOrigins": ["*"],
-        "ExposeHeaders": []
+        "ExposeHeaders": ["ETag"]
        }
     ]
 
