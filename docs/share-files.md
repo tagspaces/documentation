@@ -2,7 +2,7 @@
 title: Share files
 ---
 
-import { ProFeature, EntFeature, CenteredImage, CenteredVideo } from '../src/components/CommonBlocks';
+import { ProFeature, EntFeature, CenteredImage, CenteredVideo } from '@site/src/components/CommonBlocks';
 
 # Share files
 

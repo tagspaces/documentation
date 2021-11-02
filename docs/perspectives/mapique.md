@@ -2,9 +2,9 @@
 title: Mapique Perspective
 ---
 
-import { ProFeature, EntFeature } from '../../src/components/CommonBlocks'
+import { ProFeature, EntFeature } from '@site/src/components/CommonBlocks'
 
-<ProFeature /> 
+<ProFeature />
 
 This perspective can be useful for visualizing geo-tagged files and folders.
 
@@ -15,8 +15,6 @@ Here are some ideas for which this perspective can be used.
 - Showing pictures taken on trips
 - Place any file and document on a map
 - Add private annotations to a map
-
-
 
 ## Supported Maps
 

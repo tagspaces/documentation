@@ -2,7 +2,7 @@
 title: Kanban Perspective
 ---
 
-import { ProFeature, CenteredImage, CenteredVideo } from '../../src/components/CommonBlocks';
+import { ProFeature, CenteredImage, CenteredVideo } from '@site/src/components/CommonBlocks';
 
 <ProFeature />
 

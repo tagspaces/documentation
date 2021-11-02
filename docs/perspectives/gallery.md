@@ -2,7 +2,7 @@
 title: Gallery Perspective
 ---
 
-import { ProFeature, EntFeature } from '../../src/components/CommonBlocks'
+import { ProFeature, EntFeature } from '@site/src/components/CommonBlocks'
 
 <ProFeature />
 
