@@ -93,28 +93,28 @@ module.exports = {
       },
       {
         type: "link",
-        label: "Tagging using context menus ⚒",
+        label: "Tagging using context menus",
         href: "/tagging/#tagging-using-context-menus",
       },
       {
         type: "link",
-        label: "Tagging with drag and drop ⚒",
+        label: "Tagging with drag and drop",
         href: "/tagging/#tagging-with-drag-and-drop",
       },
       {
         type: "link",
-        label: "Smart tags ⚒",
+        label: "Smart tags",
         href: "/tagging/#smart-tags",
       },
       {
         type: "link",
-        label: "Custom timestamp tagging ⚒",
-        href: "/tagging/#custom-timestamp-tagging",
+        label: "Custom timestamp tagging",
+        href: "/tagging/#custom-timestamp-tagging-",
       },
       {
         type: "link",
-        label: "Geo-tagging ⚒",
-        href: "/tagging/#geo-tagging",
+        label: "Geo-tagging",
+        href: "/tagging/#geo-tagging-",
       },
     ],
     "Search Functionality": [
