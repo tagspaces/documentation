@@ -6,11 +6,7 @@ Here you will learn how to install TagSpaces on different operating systems.
 
 ## Getting the application
 
-The community version of TagSpaces can be downloaded for Windows, macOS and Linux from the official [download page](https://www.tagspaces.org/downloads)
-
-### Downloads
-
-The community versions of TagSpaces are available for download from the official [Downloads Page](https://www.tagspaces.org/downloads/), where you can quickly find the appropriate installer for your operating system (Windows, macOS, Linux, Android, Firefox and Chrome).
+The free versions of TagSpaces are available for download from the [Downloads Section](https://www.tagspaces.org/downloads/) or the TagSpaces web site. Here you can quickly find the appropriate installer for your operating system (Windows, macOS, Linux, Android, Firefox and Chrome).
 
 :::tip
 **Download the newest PRO release:** PRO customers have to use the downloads links provided in purchase confirmation email. Those links will lead always to the latest available PRO version.
@@ -34,9 +30,9 @@ Here are the steps needed for installing the PRO version on your system.
 
 ## Installation on Windows
 
-The Windows version of TagSpaces is distributed as a `exe` file which can be directly executed to start the installation and a `zip` archive file. The last have be to unzipped in a folder somewhere on your system. In the unpacked folder you will find a file called `tagspaces.exe`, which can be executed with double click.
+The Windows version of TagSpaces is distributed as a `exe`-installer, which can be directly executed to start the installation and a `zip`-archive file. The last have be to unzipped in a folder somewhere on your system. In the unpacked folder you will find a file called `tagspaces.exe`, which can be executed with double click.
 
-The installer program for Windows is signed with modern software certificates. The following screenshot shows ther certificate in action during the installation under Windows. Here you can see that the installation program is created by TagSpaces UG (haftungsbeschränkt), which is the company behind TagSpaces.
+The installer program for Windows is signed with modern software certificates. The following screenshot shows the certificate in action during the installation under Windows. Here you can see that the installation program is created by TagSpaces UG (haftungsbeschränkt), which is the company behind TagSpaces.
 
 ![Screenshot showing signed installer under Windows](/media/signed-windows-installer.png)
 
@@ -46,7 +42,7 @@ Just in case you need this, the **profile** folder under Windows is located here
 
 ## Installation on macOS
 
-For macOS 10.10 or later you have to download the [64bit](https://www.tagspaces.org/downloads/tagspaces-osx64.zip) of the application. Then you have to double click the downloaded zip file in Finder to unpack it properly. Some users are reporting issues with unpacking the app with some 3th-party zip utils.
+For macOS you have to [download](https://www.tagspaces.org/downloads/) 64bit versions of the application for Intel or Apple Silicon(arm) based processor. Then you have to double click the downloaded zip file in Finder to unpack it properly. Some users are reporting issues with unpacking the app with some 3th-party zip utils.
 
 :::tip
 By default macOS does not allow TagSpaces to be executed with a simple double click, because it is currently not digitally signed. To work around this, right-click the TagSpaces.app folder and choose Open, then click **Open** on the dialog that appears. You need to do this just once.
@@ -72,9 +68,21 @@ App can’t be opened because Apple cannot check it for malicious software
 
 ## Installation on Linux
 
-The Linux version of TagSpaces is distributed as `tar.gz` file, which can be downloaded for [64bit](https://www.tagspaces.org/downloads/tagspaces-linux64.tar.gz) Linux versions, depending on your system. Then you have to just unpack the downloaded file in a folder of your choice somewhere on your system. In the unpacked folder you will find a file called `tagspaces`, which can be executed with double click or in a terminal. We also offer 64bit [deb](https://www.tagspaces.org/downloads/tagspaces-amd64.deb) package for Debian/Ubuntu based distributions.
+The Linux version of TagSpaces is distributed as an `tar.gz`-archive file, `appimage`-file and `deb`-file for Debian based Linux distributions such as Ubuntu. All versions can be downloaded [here](https://www.tagspaces.org/downloads/).
 
-> **Updating the Linux version:** Just exchange the content of your current installation, with the content from the tar.gz-file of a newer release. You don't have to worry about your tag library and locations since they are persisted in the users home folder.
+After downloading the `tar.gz` file, you have to unpack it in a folder on your system. In the unpacked folder you will find a file called `tagspaces`, which can be executed with double click or in a terminal.
+
+The `deb`-package have to be double clicked in otder to be installed. You can use also this command for the installation:
+
+    sudo dpkg -i tagspaces-linux-amd64-x.x.x.deb
+
+The `appimage`-file have to be made executable first with this command:
+
+    chmod +x tagspaces-linux-x86_64-x.x.x.AppImage
+
+And then it can be just started with a double click.
+
+> **Updating the Linux version:** For the `tar.gz`-package, just exchange the content of your current installation, with the content from the tar.gz-file of a newer release. You don't have to worry about your tag library and locations since they are persisted in the users home folder. The distribution variant can be simply re-installed over the last available version.
 
 ## Installation on Android
 
@@ -86,7 +94,7 @@ You can install the Android app from the [Google Play Store](https://play.google
 
 ### From our web site
 
-A version of the Android app is available as a [APK file](https://www.tagspaces.org/downloads/tagspaces-android.apk) in download section of our web site.
+A version of the Android app is available as an [APK file](https://github.com/tagspaces/tagspaces/releases/latest) in download section of our web site.
 
 In order to install the APK file you have to perform the following steps on your Android phone.
 

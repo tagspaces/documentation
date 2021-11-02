@@ -12,7 +12,7 @@ Almost since the very first releases of TagSpaces back in the 2013, many users d
 
 ## Download and Installation
 
-The current version can of the WebDAV version can be downloaded from [here](https://www.tagspaces.org/downloads/tagspaces-web.zip).
+The current version can of the WebDAV version can be downloaded from [here](https://github.com/tagspaces/tagspaces/releases).
 
 > **Note** Please handle the current status of the implementation is a technology preview, which in our opinion is still not suitable for production use on Internet.
 
