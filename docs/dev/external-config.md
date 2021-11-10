@@ -169,7 +169,7 @@ Explanation which part of the code should be copied.
 
 ## Configuring custom search queries
 
-Starting from version 3.10 TagSpaces Pro can be pre-configured with predefined search queries.
+TagSpaces Pro can be pre-configured with predefined search queries.
 
 ```js
 window.ExtSearches = [
@@ -182,11 +182,9 @@ window.ExtSearches = [
     tagsAND: [
       // all of these tags should be attached to an entry
       {
-        type: "sidecar",
         title: "tag1",
       },
       {
-        type: "sidecar",
         title: "tag2",
       },
     ],
@@ -194,7 +192,6 @@ window.ExtSearches = [
     tagsNOT: [
       // none of these tags should be attached to an entry
       {
-        type: "sidecar",
         title: "tag3",
       },
     ],

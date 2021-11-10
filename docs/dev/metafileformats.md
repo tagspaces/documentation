@@ -222,14 +222,14 @@ The locations can be exported from one TagSpaces Pro installation and imported i
 
 <profeature />
 
-Version 3.10 offers the possibility to export previously saved search queries.
+TagSpaces Pro offers the possibility to export previously saved search queries. And later import them in another TagSpaces Pro installation.
 
 ![export search queries](/media/import-export-searches.png)
 
 ```json title="Example files with exported search queries in JSON format"
 {
   "appName": "TagSpaces",
-  "appVersion": "3.11.3",
+  "appVersion": "4.0.6",
   "searches": [
     {
       "uuid": "b6a6eb2a-3e84-4c93-bc31-42b8980d9d94",
@@ -237,37 +237,28 @@ Version 3.10 offers the possibility to export previously saved search queries.
       "textQuery": "testquery",
       "tagsAND": [
         {
-          "type": "sidecar",
-          "title": "1920",
-          "color": "#cca6acff",
-          "textcolor": "white"
+          "title": "1920"
         }
       ],
       "tagsOR": [
         {
-          "type": "plain",
-          "title": "5star",
-          "color": "#ffcc24",
-          "textcolor": "#ffffff"
+          "title": "5star"
         }
       ],
       "tagsNOT": [
         {
-          "type": "plain",
-          "title": "article",
-          "color": "#008000",
-          "textcolor": "#ffffff"
+          "title": "article"
         }
       ],
-      "searchBoxing": "location",
-      "searchType": "fuzzy",
-      "fileTypes": ["md", "mdown", "txt", "html"],
+      "searchBoxing": "location", // "location", "folder" or "global"
+      "searchType": "fuzzy", // "fuzzy", "strict" or "semistrict"
+      "fileTypes": ["md", "mdown", "txt", "html"], // file extension you need can be added here
       "lastModified": "past7Days",
       "fileSize": "sizeVerySmall",
       "tagTimePeriodFrom": 1622505600000,
       "tagTimePeriodTo": 1625090399999,
       "maxSearchResults": 1000,
-      "forceIndexing": false
+      "forceIndexing": false // true or false
     }
   ]
 }
