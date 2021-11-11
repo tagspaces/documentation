@@ -187,16 +187,13 @@ module.exports = {
         label: "Import Files",
         href: "/creating-files/#importing-files",
       },
-      "share-files",
       "editing-files",
       "extensions/md-editor",
       "extensions/html-editor",
       "extensions/text-editor",
       "extensions/json-editor",
     ],
-    // "Annotating Files & Folders": [
-    //   "annotations#",
-    // ],
+    "Sharing and Linking": ["sharing", "linking"],
     "Advanced Functionalities": [
       "annotations",
       // {
