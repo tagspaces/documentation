@@ -3,10 +3,18 @@ title: Linking files, folders and locations
 ---
 
 import { ProFeature, CenteredImage, CenteredVideo } from '@site/src/components/CommonBlocks';
+import Video from '@site/src/components/VideoYT';
 
 <ProFeature />
 
 One long awaited functionality is the ability to create links between files managed in TagSpaces, so you can navigate from one file to another. This is possible in version 4, you can use the description field of any file or folder to create links to other files and folders. If you are using markdown for your notes you can place the same kind of links in content of the file.
+
+<Video
+    youtubeId="3F2YUKd6rDc"
+    title="Using file and folder linking functionality in TagSpaces"
+    posterUrl="/media/videoposters/linking-files-and-folders.jpg"
+    height={550}
+  />
 
 The context menu of every file and folder in the default perspective now have the menu entry **Copy Sharing Link**, which will generate the sharing link and copy it to the clipboard. This link can be used for creating links to this file inside TagSpaces.
 

@@ -1,15 +1,10 @@
 import React, { useState, useEffect } from "react";
-import ExecutionEnvironment from "@docusaurus/ExecutionEnvironment";
 
-const Video = (props) => {
+const VideoYT = (props) => {
   const [videoStarted, startVideo] = useState(false);
 
   const showVideo = () => {
     startVideo(true);
-    if (ExecutionEnvironment.canUseDOM && window.plausible) {
-      // const event = url + "#" + currentVersion;
-      window.plausible(props.trackingId || props.youtubeId);
-    }
   };
 
   return (
@@ -21,6 +16,7 @@ const Video = (props) => {
             borderRadius: 7,
             width: "100%",
             height: props.height || 600,
+            marginBottom: 20,
           }}
           src={
             "https://www.youtube-nocookie.com/embed/" +
@@ -34,18 +30,23 @@ const Video = (props) => {
       ) : (
         <div
           onClick={showVideo}
-          title={props.title}
+          title={"Click to play YouTube video: " + props.title}
           className="text--center"
-          style={{ position: "relative", borderRadius: 7 }}
+          style={{ position: "relative", borderRadius: 7, marginBottom: 20 }}
         >
-          <img src={props.posterUrl} className="img-shadow" alt={props.title} style={{ borderRadius: 7 }} />
+          <img
+            src={props.posterUrl}
+            className="img-shadow"
+            alt={props.title}
+            style={{ borderRadius: 7 }}
+          />
           <svg
             className="playButton"
             style={{
               boxSizing: "border-box",
               width: "100%",
-              height: props.height || 600,
-              padding: "40px calc(45% - 70px)",
+              height: "100%",
+              padding: "20px calc(45% - 70px)",
               position: "absolute",
               top: 0,
               left: 0,
@@ -57,7 +58,14 @@ const Video = (props) => {
             viewBox="0 0 200 200"
             alt="Play video"
           >
-            <circle cx="100" cy="100" r="90" fill="none" strokeWidth="15" stroke="#eaeaea" />
+            <circle
+              cx="100"
+              cy="100"
+              r="90"
+              fill="none"
+              strokeWidth="15"
+              stroke="#eaeaea"
+            />
             <polygon points="70, 55 70, 145 145, 100" fill="#eaeaea" />
           </svg>
         </div>
@@ -66,4 +74,4 @@ const Video = (props) => {
   );
 };
 
-export default Video;
+export default VideoYT;

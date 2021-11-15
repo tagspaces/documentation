@@ -7,7 +7,7 @@ import Modal from "@material-ui/core/Modal";
 import DialogContent from "@material-ui/core/DialogContent";
 import IconButton from "@material-ui/core/IconButton";
 import CloseIcon from "@material-ui/icons/Close";
-import Video from "./Video";
+import VideoYT from "./VideoYT";
 
 export function FeatureList({ data, featureId }) {
   // var(--ifm-color-secondary-darker)
@@ -335,7 +335,7 @@ export function FeatureBlock(props) {
     const { visualCaption, trackingId, youtubeId, posterUrl } =
       features[featureId];
     customElement = (
-      <Video
+      <VideoYT
         trackingId={trackingId || trackingId}
         title={visualCaption || visualCaption}
         youtubeId={youtubeId}

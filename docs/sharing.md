@@ -1,5 +1,5 @@
 ---
-title: Share file and folders
+title: Share files and folders
 ---
 
 import { ProFeature, EntFeature, CenteredImage, CenteredVideo } from '@site/src/components/CommonBlocks';
