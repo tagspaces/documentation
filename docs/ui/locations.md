@@ -2,6 +2,8 @@
 title: Locations
 ---
 
+import VideoYT from '@site/src/components/VideoYT';
+
 A **location** is a folder on your local file system, which will serve as a root for listing sub folders, files and documents. Typical locations are for example the folder where you collect your photos or folders where you store documents, ebooks or music.
 
 > **Hint:** Do not choose very large directories such as your _home folder_ as a location root folder, as this may lead to performance issues. The reason for this is that TagSpaces is indexing the whole location every time you open it and the indexing can just take time if the location contains many files. On modern computers with SSD harddrives having a location with up to 60000 files is usually not a problem. The current upper limit for files indexed in a locations is 200000.
@@ -142,3 +144,12 @@ In the content menu of every tag group in the PRO version, there is an entry cal
 ### Custom location IDs
 
 Work in progress
+
+### Export and Import location's configuration
+
+<VideoYT
+youtubeId="LmjUM1BS-wQ"
+title="Using file and folder linking functionality in TagSpaces"
+posterUrl="/media/videoposters/import-export-locations.jpg"
+height={550}
+/>

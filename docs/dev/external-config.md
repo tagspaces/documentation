@@ -167,6 +167,10 @@ Explanation which part of the code should be copied.
 }
 ```
 
+:::tip
+As soon as tags are defined in the `extconfig.js`, the tag library will rendered read-only in the application, so the user will not able to add, change or delete tags there.
+:::
+
 ## Configuring custom search queries
 
 TagSpaces Pro can be pre-configured with predefined search queries.
