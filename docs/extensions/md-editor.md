@@ -1,16 +1,46 @@
+import { CenteredImage, CenteredVideo } from '@site/src/components/CommonBlocks';
+
 # Markdown Editor
 
-A TagSpaces extension allowing viewing and editing of markdown files.
+A TagSpaces extension allowing viewing and editing of Markdown files.
 
 ## Features
 
-<video
-src="https://www.tagspaces.org/content/v3-11/markdown-editor-demo.mp4"
-autoPlay
-loop
-controls
-className="img-responsive center-block img-shadow img-rounded"
-/>
+- [x] **WYSIWYG** Markdown editing
+- [x] embedding images, also as data URLs
+- [x] support for emojis 🍒
+- [x] support for tables
+- [x] simple text _formatting_ and headers
+- [x] copy and paste markdown text
+- [x] support math expressions like: ![math expression](/media/inline-math-expression.png)
+
+The following video will present some of the features:
+
+<CenteredVideo
+    caption="Markdown editor - feature overview"
+    src="https://www.tagspaces.org/content/v3-11/markdown-editor-demo.mp4"
+    posterUrl="/content/videos/mermaid-diagrams.png"
+    autoPlay={true}
+    showCaption
+  />
+
+> **TIP**: Just type `/` on a new line to get a menu showing all available markdown elements such as headings, bullet lists, images, quotes or tables.
+
+### Diagrams
+
+The editor supports presenting and editing of [mermaid](https://mermaid-js.github.io/mermaid/) based diagrams:
+
+<CenteredVideo
+    caption="Mermaid based diagrams in the markdown editor"
+    src="/media/extensions/editor-md-mermaid-diagrams.mp4"
+    posterUrl="/media/extensions/editor-md-mermaid-diagrams.png"
+    autoPlay={false}
+    showCaption
+  />
+
+## Live Demo
+
+You can test it live [here](https://demo.tagspaces.com/int.html?tslid=10ades09-c7fd-zt33-fc67-a75db43rt4gz&tsdpath=demo%2FNote-Taking&tsepath=demo%2FNote-Taking%2Fcomplex-markdown-note.md).
 
 ## Used libraries
 

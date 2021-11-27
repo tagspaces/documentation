@@ -65,10 +65,17 @@ module.exports = {
         },
       ],
     },
+    // announcementBar: {
+    //   id: "supportus",
+    //   content:
+    //     '⭐️ If you like TagSpaces, give it a star on <a target="_blank" rel="noopener noreferrer" href="https://github.com/tagspaces/tagspaces">GitHub</a>! ⭐️',
+    // },
     announcementBar: {
-      id: "supportus",
+      id: "blackfriday",
+      backgroundColor: "black",
+      textColor: "white",
       content:
-        '⭐️ If you like TagSpaces, give it a star on <a target="_blank" rel="noopener noreferrer" href="https://github.com/tagspaces/tagspaces">GitHub</a>! ⭐️',
+        '⭐️ BLACK WEEKS - 50% off for <b>TagSpaces Pro</b> <a href="https://www.tagspaces.org/products">available here</a>! ⭐️',
     },
     prism: {
       defaultLanguage: "javascript",
