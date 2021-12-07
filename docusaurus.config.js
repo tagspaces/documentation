@@ -74,8 +74,7 @@ module.exports = {
       id: "blackfriday",
       backgroundColor: "black",
       textColor: "white",
-      content:
-        '⭐️ BLACK WEEKS - 50% off for <b>TagSpaces Pro</b> <a href="https://www.tagspaces.org/products">available here</a>! ⭐️',
+      content: '🎁 Christmas Sale: 10% off <a href="https://www.tagspaces.org/products/">TagSpaces Pro</a>! 🎁',
     },
     prism: {
       defaultLanguage: "javascript",
