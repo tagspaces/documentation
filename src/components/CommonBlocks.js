@@ -1,12 +1,12 @@
 import React from "react";
 import useBaseUrl from "@docusaurus/useBaseUrl";
 import Link from "@docusaurus/Link";
-import { makeStyles } from "@material-ui/core/styles";
-import MUTooltip from "@material-ui/core/Tooltip";
-import Modal from "@material-ui/core/Modal";
-import DialogContent from "@material-ui/core/DialogContent";
-import IconButton from "@material-ui/core/IconButton";
-import CloseIcon from "@material-ui/icons/Close";
+import { makeStyles } from "@mui/styles";
+import MUTooltip from "@mui/material/Tooltip";
+import Modal from "@mui/material/Modal";
+import DialogContent from "@mui/material/DialogContent";
+import IconButton from "@mui/material/IconButton";
+import CloseIcon from "@mui/icons-material/Close";
 import VideoYT from "./VideoYT";
 
 export function FeatureList({ data, featureId }) {
@@ -108,7 +108,7 @@ export function ProFeature() {
       title={
         <>
           This feature is available in the{" "}
-          <a href="/products/pro/">Pro version</a>.
+          <a href="https://www.tagspaces.org/products/pro/">Pro version</a>.
         </>
       }
     >
