@@ -169,7 +169,7 @@ besides being able to easily modify date, or date/time tags on their respective 
 - **Year Ranges:** 2016-2018
 - **Month Ranges:** 201605-201701
 - **Date Ranges:** 20160531-20160603
-- **DateTime Ranges**: 20160529~124532-20160529~154500
+- **DateTime Ranges**: 20160529T124532-20160529T154500
 
 <!-- ## Tagging using keyboard shortcuts
 Another quick way to tag files is to set keyboard shortcuts to often-used tags. To specify a shortcut, click on a tag in the **Tag Library**, and select *Edit Tag* from the context menu
