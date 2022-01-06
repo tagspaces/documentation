@@ -75,7 +75,7 @@ module.exports = {
       backgroundColor: "black",
       textColor: "white",
       content:
-        'Lifetime 20% off for <a href="https://www.tagspaces.org/products/">TagSpaces Pro</a>!',
+        '20% off for <a href="https://www.tagspaces.org/products/">TagSpaces Pro</a> only in January!',
     },
     prism: {
       defaultLanguage: "javascript",
