@@ -71,10 +71,11 @@ module.exports = {
     //     '⭐️ If you like TagSpaces, give it a star on <a target="_blank" rel="noopener noreferrer" href="https://github.com/tagspaces/tagspaces">GitHub</a>! ⭐️',
     // },
     announcementBar: {
-      id: "blackfriday",
+      id: "newyearssale",
       backgroundColor: "black",
       textColor: "white",
-      content: '🎁 Christmas Sale: 10% off <a href="https://www.tagspaces.org/products/">TagSpaces Pro</a>! 🎁',
+      content:
+        'Lifetime 20% off for <a href="https://www.tagspaces.org/products/">TagSpaces Pro</a>!',
     },
     prism: {
       defaultLanguage: "javascript",
