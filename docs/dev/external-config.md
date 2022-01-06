@@ -238,7 +238,7 @@ window.ExtMapTileServers = [
 
 ## Configuring the format of the geo tags
 
-    window.ExtDefaultVerticalPanel = 'pluscodes';
+    window.ExtGeoTaggingFormat = 'pluscodes';
 
 Possible values: 'pluscodes', 'mgrs'
 

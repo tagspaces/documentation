@@ -7,7 +7,6 @@
     "start": "docusaurus start",
     "build": "docusaurus build",
     "swizzle": "docusaurus swizzle",
-    "deploy-aero-old": "docusaurus build && aero deploy",
     "serve": "docusaurus serve",
     "gen-pdf": "npx docusaurus-pdf from-build-config",
     "update-ext": "./update-external.sh",
@@ -17,10 +16,10 @@
     "clear": "docusaurus clear"
   },
   "dependencies": {
-    "@docusaurus/core": "^2.0.0-beta.9",
-    "@docusaurus/plugin-client-redirects": "^2.0.0-beta.9",
-    "@docusaurus/plugin-pwa": "^2.0.0-beta.9",
-    "@docusaurus/preset-classic": "^2.0.0-beta.9",
+    "@docusaurus/core": "^2.0.0-beta.14",
+    "@docusaurus/plugin-client-redirects": "^2.0.0-beta.14",
+    "@docusaurus/plugin-pwa": "^2.0.0-beta.14",
+    "@docusaurus/preset-classic": "^2.0.0-beta.14",
     "@emotion/react": "^11.7.0",
     "@emotion/styled": "^11.6.0",
     "@mdx-js/react": "^1.6.21",
