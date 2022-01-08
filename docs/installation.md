@@ -159,3 +159,12 @@ In order to update a version of TagSpaces used in portable mode for example on U
 :::tip
 Important: Be careful not to delete the `tsprofile` sub folder, it contains valuable information for your portable TagSpaces instance.
 :::
+
+### Portable mode with the AppImage package under Linux
+
+With the AppImage package, there is another way to have the application run in portable mode. AppImages is an application distribution format allowing to run apps on various Linux distribution. This package format supports its own [portable mode](https://docs.appimage.org/user-guide/portable-mode.html), which can be activated by creating an empty folder with the same name as your AppImage file but having `.config` at the end. This folder should be placed in the same folder as the AppImage files like this:
+
+    tagspaces-linux-x86_64-4.1.3.AppImage
+    tagspaces-linux-x86_64-4.1.3.AppImage.config
+
+Starting now the AppImage will places the whole config information in the .config folder and will not use the default config folder in the user's home folder. This allows to place the app for example on a USB-stick and run it on another PC with the same configuration.

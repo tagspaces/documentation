@@ -5,7 +5,7 @@ title: Annotating files and folders
 In addition to the tagging, in the TagSpaces PRO you have the ability to annotate every file or folder with a description. This is useful in particular if you want to add some more textual content to given a file or folder. This description information is managed in the properties area of every entry, and can be opened by clicking on the i-button, marked with **(1)** on the following screenshot.
 
 <figure>
-  <img alt="file and folder properties interfaces" src="https://www.tagspaces.org/content/v3-x/tagspaces-file-description.png" class="img-responsive center-block" />
+  <img alt="file and folder properties interfaces" src="/media/tagspaces-file-description.png" class="img-responsive center-block" />
   <figcaption>Screenshot showing file with added description</figcaption>
 </figure>
 
@@ -56,6 +56,6 @@ For adding the description to a given folder, TagSpaces PRO creates a sidecar fi
 With this feature every folder opened in TagSpaces can have its own background color. In addition to tagging you can use colors to mark folders used for particular use case or area of work. For example you can differentiate your personal folders from your work folders with color or you can mark folders containing sensitive or important information.
 
 <figure>
-  <img alt="Folder colors in action" src="https://www.tagspaces.org/content/v3-x/tagspaces-folder-colors.gif" class="img-responsive center-block" />
+  <img alt="Folder colors in action" src="/media/tagspaces-folder-colors.gif" class="img-responsive center-block" />
   <figcaption>Folder colors in action</figcaption>
 </figure>

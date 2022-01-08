@@ -14,7 +14,6 @@ This streamlined experience offers familiarity and an ease to use the applicatio
 
 The user interface of the application consists of the following main areas:
 
-- **(1) [Vertical toolbar](#vertical-toolbar)** - Is always visible and provides quick access to main parts of the application
 - **(2) [Location manager](/ui/locations.md) / [Tag Library](/ui/taglibrary.md) / [Search](/search.md) areas** - Here you can manage the connected locations, the tag library or search for file and folders.
 - **(3) [Navigation](#browsing-area)** - Here you can switch the location or quickly navigate to parent folders.
 - **(4) [Browsing area](/browsing-files.md)** - This section is occupied by the so called **perspective** used for browsing files and folders.
@@ -22,13 +21,13 @@ The user interface of the application consists of the following main areas:
 - **(6) [File / Folder properties](#file-properties-area)** - Here you will find some properties for the currently opened file or folder.
 - **(7) [Preview area](#preview-area)** - In this area you can preview and/or edit the current file.
 
-## Vertical toolbar
+<!-- ## Vertical toolbar
 
 New in version 3 of the app is the vertical toolbar located in the most left part of the application. The toolbar is designed to be alway visible. Here you can quickly access the creation of a new file, switch between the location manager, tag library and the search panels, open the app setting or enable the [dark mode](#dark-mode).
 
 ![Area on the left of the app](/media/navigation-v3.png)
 
-> **Hint:** Clicking a second time on the icons for the location manager, the tag library or the search area will close the whole area contain these sections. This could be useful if you want to have more space for file browsing or previewing.
+> **Hint:** Clicking a second time on the icons for the location manager, the tag library or the search area will close the whole area contain these sections. This could be useful if you want to have more space for file browsing or previewing. -->
 
 ## Browsing Area
 

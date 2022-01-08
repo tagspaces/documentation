@@ -38,23 +38,30 @@ Regular locations are pointing to a folder located on your local computer. This 
 
 > **Note:** Be careful with connected huge folder located on network drive, depending on the speed of the network, this could lead to performance issues.
 
-![Edit properties of a regular location](/media/edit-regular-location-dialog.png)
+![Properties of a location pointing to a local folder](/media/local-location-properties.png)
 
 The regular locations have the following properties:
 
 - _Location name_ - this is the name of location as displayed in the location manager
 - _Location path_ - the path from your computer, to which this location points
 - _Startup location_ - turning this switch on will make the location load automatically on application start. You can set only one location to be a startup one.
-- _Open this location in read-only mode_ <profeature /> - switches the interface of TagSpaces to read-only mode
 - _Enable full text search for TXT, MD and HTML files_ <profeature /> - activates the indexing of the content of text, markdown and HTML files.
-- _Switch to manual index creation with persisted search index_ <profeature /> - disables the automatic indexing of a location on its opening. The application will try to open a previously created index located in a file _tsi.json_ from the _.ts_ folder of the location. This is useful on locations with many files, where the content does not change very often.
 - _Watch for external changes in this location_ <profeature /> - once switched on TagSpaces will watch the folder to which the location points and all its sub folders for changes and reflect them in the application.
+
+Clicking on the `Advanced Mode` button will extend the dialog and it will look like this.
+
+![Advanced properties of a location pointing to a local folder](/media/local-location-properties-advanced.png)
+
+The extended dialog will have in addition the following properties:
+
+- _Switch to manual index creation with persisted search index_ <profeature /> - disables the automatic indexing of a location on its opening. The application will try to open a previously created index located in a file _tsi.json_ from the _.ts_ folder of the location. This is useful on locations with many files, where the content does not change very often.
+- _Open this location in read-only mode_ <profeature /> - switches the interface of TagSpaces to read-only mode
 
 ## Cloud Locations
 
 These location are pointing to AWS S3 compatible stores (also known as buckets) located in the Internet.
 
-> <profeature /> Cloud locations are available only in the <a href="https://www.tagspaces.org/products/pro">Pro</a> and <a href="https://www.tagspaces.org/products/enterprise">Enterprise</a> editions of TagSpaces.
+> <profeature /> Cloud locations are available only in the <a href="https://www.tagspaces.org/products/pro/">Pro</a> and <a href="https://www.tagspaces.org/products/enterprise/">Enterprise</a> editions of TagSpaces.
 
 ![Edit properties of a cloud location](/media/edit-cloud-location-dialog.png)
 
@@ -77,8 +84,8 @@ With this feature TagSpaces PRO is going into direction of supporting the Cloud 
 You can recognize object storage location by the cloud icon in front of their name, as seen in the next screenshot.
 
 <figure>
-  <img alt="Screenshot showing configuration of a AWS S3 hosted location" src="https://www.tagspaces.org/content/v3-x/tagspaces-s3-locations.png" class="img-responsive center-block" />
-  <figcaption>Screenshot showing configuration of a AWS S3 hosted location</figcaption>
+  <img alt="Screenshot showing configuration of a AWS S3 hosted location" src="/media/tagspaces-s3-locations.png" class="img-responsive center-block" />
+  <figcaption>Configuration of a location hosted in the Cloud (Wasabi)</figcaption>
 </figure>
 
 In order to connect such location you will need to know the **bucket name**, the **access key**, the **secret access key** and the **data center location** for the particular bucket. If you have a location with a deep folder structure you can also specify the internal path to the files you want to manage in this location.
@@ -128,16 +135,16 @@ For locations containing many files, it may make sense to disable the automatic 
 If you do not have such persisted index file, you can create one manually with the command "Refresh Location Index" from the location context menu, as seen on the following screenshot.
 
 <figure>
-  <img alt="Starting the manual index generation for given location" src="https://www.tagspaces.org/content/v3-x/tagspaces-manual-indexing.png" class="img-responsive center-block" />
+  <img alt="Starting the manual index generation for given location" src="/media/tagspaces-manual-indexing.png" class="img-responsive center-block" />
   <figcaption>Starting the manual index generation for given location</figcaption>
 </figure>
 
 ### Tag extraction from location
 
-In the content menu of every tag group in the PRO version, there is an entry called "Collect Tags From Current Location", which does exactly this. It analyses the index of the current location and identifies tags with unique names, which are then added to the tag group from which the operation was started.
+<profeature /> In the content menu of every tag group in the PRO version, there is an entry called "Collect Tags From Current Location", which does exactly this. It analyses the index of the current location and identifies tags with unique names, which are then added to the tag group from which the operation was started.
 
 <figure>
-  <img alt="Starting the tag extraction" src="https://www.tagspaces.org/content/v3-x/tagspaces-tag-extraction.png" class="img-responsive center-block" />
+  <img alt="Starting the tag extraction" src="/media/tagspaces-tag-extraction.png" class="img-responsive center-block" />
   <figcaption>Starting the tag extraction</figcaption>
 </figure>
 

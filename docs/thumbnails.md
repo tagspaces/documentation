@@ -21,14 +21,14 @@ The free version of TagSpaces supports thumbnail generation only for image files
 - Office Documents: ODT, ODP, ODS, DOCX, XLSX, PPTX (uses the embedded preview image if available)
 
 <figure>
-  <img alt="Showing generated thumbnails in TagSpaces" src="https://www.tagspaces.org/content/v3-x/tagspaces-thumbnails.png" className="img-responsive center-block" />
+  <img alt="Showing generated thumbnails in TagSpaces" src="/media/tagspaces-thumbnails.png" className="img-responsive center-block" />
   <figcaption>Showing generated thumbnails in TagSpaces</figcaption>
 </figure>
 
 The generated thumbnails are persisted in the `.ts` folder located in every folder you browse. This feature significantly accelerates the browsing of folders containing many files. The thumbnail generation can be activated or deactivated in the application settings.
 
 <figure>
-  <img alt="screenshot showing where to activate the thumbnail generation" src="https://www.tagspaces.org/content/v3-x/tagspaces-thumbnail-generation.png" className="img-responsive center-block" />
+  <img alt="screenshot showing where to activate the thumbnail generation" src="/media/tagspaces-thumbnail-generation.png" className="img-responsive center-block" />
   <figcaption>Activating the thumbnails generation in the settings</figcaption>
 </figure>
 
