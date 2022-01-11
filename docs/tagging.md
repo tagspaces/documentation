@@ -122,16 +122,16 @@ Users can easily extend these tags: You can simply create a new tag and add it t
 
 ## Smart tags
 
-Smart tags are one of the advanced tagging features of TagSpaces. Smart tags can be either **date and time**, or **location based**, and offer convenient **dynamic tagging** tagging, based on a range of criteria.
-
-- **Time and date tags** are timestamps textual representations, such as _now_, _today_, _tomorrow_, etc. Applying one of these tags to a file will add a timestamp, corresponding to your choice of smart tag. A timestamp has the format of `YYYMMDD~hhmmss`. Tagging a file with e.g. _now_ would apply the full timestamp down to the second, while tagging e.g. _month_ would tag it with a subset like `YYYYMM`. Smart tags have a distinguishing blue background, which they only retain in the tag library.
-- <profeature /> Applying a **geo tag**, an additional feature in TagSpaces PRO, opens up a dialog with an interactive map, where you can drop a pin. The geo-location (longitude and latitude coordinates), will be added to the selected file as a tag.
+Smart tags are one of the advanced features of TagSpaces. These tags can be either **date and time**, or **location based**, and offer convenient **dynamic tagging** , based on a range of criteria.
 
 ![tag library general overview](/media/smart-tags-group.png)
 
+- **Date and time tags** are timestamps textual representations, such as _now_, _today_, _tomorrow_, etc. Applying one of these tags to a file will add a timestamp, corresponding to your choice of smart tag. Tagging a file with e.g. _now_ would apply the full timestamp down to the second, while tagging e.g. _month_ would tag it with a subset like `YYYYMM`. Smart tags have a distinguishing blue background, which they only retain in the tag library.
+- <profeature /> Applying a geo tag, opens up a dialog with an interactive map, where you can drop a pin. The geo-location (longitude and latitude coordinates), will be added to the selected file as a tag.
+
 These smart tags offer a quick and easy way to timestamp documents or files, with different levels of precision. Dragging or applying a smart tag to a file will create a tag based on the current time date. Currently the following tags and formats are available:
 
-- **now** - This tag will create a very precise timestamp (from current year, down to seconds) of the moment you have applied it, in a format of `YYYMMDD~HHmmss`, e.g. `20170314~145021`
+- **now** - This tag will create a very precise timestamp (from current year, down to seconds) of the moment you have applied it. The format of the timestamp is `YYYMMDDThhmmss`, so `20220111T143022` will stay for 14:30:22 on the 11th of January 2022. The used format is compatible with the [ISO8601 standard](https://en.wikipedia.org/wiki/ISO_8601).
 - **today**, **tomorrow and **yesterday\*\* will apply a timestamp with the current, the next, or the previous day's date, in the format of `YYYYMMDD`, e.g. `20170314`.
 - **month** will create a timestamp of the current month, in the format of `YYYYMM`, e.g. `201703`
 - **year** only applies the current year, in the format of `YYYY`, e.g. `2017`

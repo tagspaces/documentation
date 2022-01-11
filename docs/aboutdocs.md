@@ -2,14 +2,14 @@
 title: About this Documentation
 ---
 
-> **Hint:** This documentation has currently a **WIP status**. The articles in this documents are being updated on a regular base.
+This documentation has currently a **WIP status**. The articles are being updated on a regular base.
 
-You can download version of the documentation as PDF files:
+<!-- You can download version of the documentation as PDF files:
 
 - Documentation for TagSpaces v3 as [PDF](/pdf/tagspaces-manual-v3.pdf)
-- Documentation for TagSpaces v2 as [PDF](/pdf/tagspaces-manual-v2.pdf)
+- Documentation for TagSpaces v2 as [PDF](/pdf/tagspaces-manual-v2.pdf) -->
 
-## The structure of this documentation
+## Documentation structure
 
 This documentation is built using [Docusaurus](https://docusaurus.io/), for a streamlined and simple user experience. Each **page** will concern a particular topic, giving **detailed and illustrated explanations** and **instructions** about it. Every page is broken down to different level headings.
 

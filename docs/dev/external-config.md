@@ -277,23 +277,13 @@ Default value: true
 
 Possible values: 'dark', 'light'
 
+### Open app with predefined perspective
+
+    window.ExtDefaultPerspective = 'gallery';
+
+Possible values as of version 3.3.x are 'default', 'gallery', 'mapique'
+
 ## Custom color for the default themes
-
-### Set custom sidebar color
-
-    window.ExtSidebarColor = '#2C001E'
-
-Possible value: any css color
-
-Default value: <span style={{color: '#2C001E'}}>'#2C001E'</span>
-
-### Set custom sidebar selection color
-
-    window.ExtSidebarSelectionColor = '#880E4F'
-
-Possible value: any css color
-
-Default value: <span style={{color: '#880E4F'}}>'#880E4F'</span>
 
 ### Set custom light color for the light theme
 
@@ -327,11 +317,21 @@ Possible value: any css color
 
 Default value: <span style={{color: '#ff9abe'}}>'#ff9abe'</span>
 
-### Open app with predefined perspective
+### Set custom sidebar color (obsolete since v4)
 
-    window.ExtDefaultPerspective = 'gallery';
+    window.ExtSidebarColor = '#2C001E'
 
-Possible values as of version 3.3.x are 'default', 'gallery', 'mapique'
+Possible value: any css color
+
+Default value: <span style={{color: '#2C001E'}}>'#2C001E'</span>
+
+### Set custom sidebar selection color (obsolete since v4)
+
+    window.ExtSidebarSelectionColor = '#880E4F'
+
+Possible value: any css color
+
+Default value: <span style={{color: '#880E4F'}}>'#880E4F'</span>
 
 ## Modifying packages
 

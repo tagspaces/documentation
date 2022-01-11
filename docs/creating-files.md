@@ -2,19 +2,17 @@
 title: Create Files
 ---
 
+import { ProFeature, CenteredImage, CenteredVideo } from '@site/src/components/CommonBlocks';
+
 Besides opening and previewing various file types, TagSpaces can also create new files of some text-based formats. File creation is a functionality that allows TagSpaces to become an effective note-taking application.
 
-To create a new file in TagSpaces you have many options. The easiest one is from the button with plus icon, which almost always visible in the application
+To create a new file in TagSpaces you have many options. The easiest one is from the button with plus icon, which almost always visible in the application.
 
 ![create new file with the plus button](/media/create-new-plusbutton.png)
 
 On the desktop version of the app you can also use the _File menu_ from the _Main menu_. If the main menu is not visible you can open it by pressing the ALT keyboard key.
 
 ![create new file from main menu](/media/create-new-file-menu.png)
-
-In mobile mode the file creation dialog can be started from the plus button marked in the next screenshot.
-
-![create new file in mobile mode](/media/tagspaces-mobile-open-create-dialog.png)
 
 The triggering of the file creation action will open a _Create new content_ dialog, where you can choose one of the following actions:
 
@@ -32,18 +30,19 @@ In the last section (4), you can specify where the file should be create. The in
 
 The name of the create files will be _note[20191113~164613].md_ (or .html or .txt). Learn more for the timestamp tag in next section.
 
-## Timestamp as default tag
+### Timestamp as default tag
 
-When you create a new file in TagSpaces, a time-stamp in the format of YYYMMDD~hhmmss will be automatically added as a tag, where
+When you create a new file in TagSpaces, a time-stamp in the format of `YYYMMDDThhmmss` will be automatically added as a tag, where
 
 - `YYYY` means the current year
 - `MM` - the current month
 - `DD` - the day
+- `T` - is just a delimiter between the date and the time
 - `hh` - the hour
 - `mm` - the minute
 - `ss` - the second
 
-when the file was created. For example a file created on the 17th of January in 2017, at 10:30 (and 32 seconds) would be tagged with timestamp like `20170117-133032`.
+when the file was created. For example a file created on the 17th of January in 2017, at 10:30 (and 32 seconds) would be tagged with timestamp like `20170117T133032`.
 
 Using these timestamp-tags ensures the uniqueness of the automatically generated file name of the file created by the app.
 
@@ -51,28 +50,57 @@ Using these timestamp-tags ensures the uniqueness of the automatically generated
 
 ## Importing files
 
-In TagSpaces files can be imported in many ways. After a successful import the imported file should be copied in the current folder from the current location.
-
-### Import from the create content dialog
-
-See how this dialogs looks like in the [creating files](#creating-files) section.
+In TagSpaces files can be imported in many ways. After a successful import the imported file will be copied in the currently opened folder.
 
 ### Import from the folder menu
 
-The importing of a file can be initiated also from the folder menu, which can be opened by clicking on the area marked in the next screenshot.
+The importing of a file can be initiated also from the folder menu, located in the top right corner of the application.
 
 ![screenshot showing how to open the folder menu](/media/tagspaces-open-folder-context-menu.png)
 
-In the menu which will appear, choose the _Add existing file_ options.
+Choose the **Add files** to open the file chooser of your operating system. There you can select which files you want to import.
+
+#### Importing files on mobile devices
+
+On mobile devices, tapping on the **Add files** menu will show a dialog from which can choose various source for files. On the following screenshot from an **Android** operating system, you see the following options:
+
+- Camera - this will open the _Camera app_, where you can take a picture, which can be imported in the current location.
+- Camcoder - here you can taka directly a video, which can be imported in the app.
+- Voice Recorder - this will start the _Voice Recorded app_, where you can record an audio note to import.
+- Files - this will open the _Files app_, where you can select files to import.
+
+Depending on your Android devices and the installed apps, this dialog can look differently and show more or less options.
+
+<CenteredImage
+    caption="Importing files on mobile devices"
+    src="/media/tagspaces-mobile-import.jpg"
+    showCaption
+    maxWidth="300px"
+  />
+
+On **iOS** you have the options to take a picture with the _Camera app_ or select one or more files from the _Files app_
+
+:::note
+<ProFeature /> If the current folder is located on an object storage like AWS S3 the import functionality will trigger the upload of the selected file to the S3 bucket.
+:::
+
+### Import from the create content dialog
+
+In the [dialog](#) for creating files on the last place is the _Add files_ action button. The functionality of this button is the same described in the previous section.
 
 ### Import with drag and drop from the desktop
 
-And finally, files can be imported also by simple dragging one from your desktop or the default file manager of your operating system and drop it in the app.
+Files can be imported also by simple dragging one or more files from your desktop or your default file manager and drop it over the app.
 
-<video src="/media/tagspaces-drag-drop.mp4" autoplay="true" loop="true" poster="/media/tagspaces-drag-drop.png" className="img-responsive"></video>
+<CenteredVideo
+    caption="Importing files with drag and drop from the desktop"
+    src="/media/import-files-with-dnd.mp4"
+    posterUrl="/media/import-files-with-dnd.jpg"
+    maxWidth="100%"
+    autoPlay
+    showCaption
+  />
 
-### Importing files on mobile devices
-
-TBD
-
-![importing on mobile devices](/media/tagspaces-mobile-import.jpg)
+:::note
+<ProFeature /> If the current folder is located on an object storage like AWS S3 the dropping of the file will trigger the upload of this files to the S3 bucket.
+:::
