@@ -81,7 +81,7 @@ Depending on your Android devices and the installed apps, this dialog can look d
 On **iOS** you have the options to take a picture with the _Camera app_ or select one or more files from the _Files app_
 
 :::note
-<ProFeature /> If the current folder is located on an object storage like AWS S3 the import functionality will trigger the upload of the selected file to the S3 bucket.
+<ProFeature /> If the current folder is located on an object storage like AWS S3, the import functionality will trigger the upload of the selected file to the S3 bucket.
 :::
 
 ### Import from the create content dialog
@@ -102,5 +102,5 @@ Files can be imported also by simple dragging one or more files from your deskto
   />
 
 :::note
-<ProFeature /> If the current folder is located on an object storage like AWS S3 the dropping of the file will trigger the upload of this files to the S3 bucket.
+<ProFeature /> If the current folder is located on an object storage like AWS S3, the dropping of the file will trigger its upload to the S3 bucket.
 :::
