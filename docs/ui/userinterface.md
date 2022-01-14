@@ -127,7 +127,9 @@ And here you will see TagSpaces with zoomed out interface.
 
 ![Zoomed out interface](/media/zoomed-out.png)
 
-> **Hint**: If the application is running in a browser, please use the integrated in the browser zooming capabilities.
+:::tip
+If the application is running in a browser, please use the integrated in the browser zooming capabilities.
+:::
 
 ## Full screen mode
 
@@ -135,4 +137,6 @@ The desktop application can run in a full screen mode, which can be toggled by p
 
 ![](/media/toggle_fullscreen.png)
 
-> **Hint**: If the application is running in a browser, please use the integrated in the browser full screen mode capabilities.
+:::tip
+If the application is running in a browser, please use the integrated in the browser full screen mode capabilities.
+:::

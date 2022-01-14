@@ -1,5 +1,5 @@
 ---
-title: Keybindings
+title: Key Bindings
 ---
 
 Keyboard shortcuts are combinations of two or more keys that you can use to perform a specific task that would typically require more than one mouse click. They are very useful and can make it easier to work with your software, saving you time and effort as you work with TagSpaces and other applications.
@@ -12,15 +12,14 @@ TagSpaces like a much of modern software also provides a range of keyboard short
 
 ### General
 
-| Action                          | Key binding on Windows/Linux | Key binding on macOS |
-| ------------------------------- | ---------------------------- | -------------------- |
-| Show Keybinding Help            | `F1`                         | `F1`                 |
-| Fullscreen mode                 | `F11`                        | `F11`                |
-| Show developer tools            | `F10`                        | `F10`                |
-| Show location manager           | `control + 1`                | `⌘ + 1`              |
-| Show tag library                | `control + 2`                | `⌘ + 2`              |
-| Show search panel               | `control + 3`                | `⌘ + 3`              |
-| Show search panel (alternative) | `control + f`                | `⌘ + f`              |
+| Action                | Key binding on Windows/Linux | Key binding on macOS |
+| --------------------- | ---------------------------- | -------------------- |
+| Show Keybinding Help  | `F1`                         | `F1`                 |
+| Fullscreen mode       | `F11`                        | `F11`                |
+| Show developer tools  | `F10`                        | `F10`                |
+| Show location manager | `control + 1`                | `⌘ + 1`              |
+| Show tag library      | `control + 2`                | `⌘ + 2`              |
+| Show search panel     | `control + f`                | `⌘ + f`              |
 
 ### Working with documents
 

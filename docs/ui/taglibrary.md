@@ -2,7 +2,7 @@
 title: Tag Library
 ---
 
-import { ProFeature } from '@site/src/components/CommonBlocks';
+import { ProFeature, CenteredImage } from '@site/src/components/CommonBlocks';
 
 The tag library is the place where you can manage and organize the tags with which you can tag your files and folders. To open it, you need to click the button with the tag icon (1), in the vertical navigation placed on the most left part of the application.
 
@@ -99,4 +99,25 @@ When accessing a tag's context menu from the **file browsing area** (the main ar
 
 ## Location tags
 
-TBD
+<ProFeature />
+
+Location tag groups and tags are very useful for sharing tags with other users who are working together on files located on a shared/synced folder. This way they see and can work with the same tags.
+
+To activate this feature, you have to open the advanced tab of the settings and click on the checkbox marked on the following screenshot.
+
+<CenteredImage
+    caption="Activating location tags in the settings"
+    src="/media/activation-location-tags.png"
+    showCaption
+  />
+
+After the activation, a new dropdown called Store Tag Group in will appear in the dialog for creating tag groups.
+
+<CenteredImage
+    caption="Creating location based tag group"
+    src="/media/creating-location-taggroup.png"
+    maxWidth="600px"
+    showCaption
+  />
+
+Technically, the tags in this tag group will be saved in a file located in the .ts folder of the current location. This way, these tags will "travel" with the location by copying the location's folder to a new place, USB stick or just syncing it with Dropbox.

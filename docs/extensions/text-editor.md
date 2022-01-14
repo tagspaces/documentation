@@ -59,7 +59,9 @@ For example he link `[link text](images/picture.jpg)` will show the file named `
 
 To enter a relative path, you can usually use UNIX style slashes (`/`) in paths, e.g. `path/to/file/filename.ext`, as `node.js` upon which TagSpaces is built, will handle them properly even on Windows. This allows for interoperability across different Operating Systems. If you only use Windows however, you can use a backslash (`\`), e.g. `path\to\file\filename.ext`, if you prefer to, but such paths will not be understood on any other system, including Android.
 
-> **Hint** TagSpaces only understands relative paths. You cannot reference any level above your current folder, or the root of your connected location, but might only link files located in the currently active folder, or an subfolders within.
+:::info
+TagSpaces only understands relative paths. You cannot reference any level above your current folder, or the root of your connected location, but might only link files located in the currently active folder, or an sub folders within.
+:::
 
 ## Source code
 

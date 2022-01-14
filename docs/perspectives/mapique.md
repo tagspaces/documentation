@@ -2,7 +2,7 @@
 title: Mapique Perspective
 ---
 
-import { ProFeature, EntFeature, CenteredImage } from '@site/src/components/CommonBlocks'
+import { ProFeature, EntFeature, CenteredImage, CenteredVideo } from '@site/src/components/CommonBlocks'
 
 <ProFeature />
 
@@ -56,12 +56,22 @@ Clicking in the popup of a file on the map will open it the file previewing area
 
 ## Navigating Tagged Folders
 
-Since TagSpaces supports tagging of folders, you can geo tag your folders and turning them this way displayable in the mapique perspective. On the following screenshot you can see that folders have a dedicated icon, so they can differentiated from the files. Clicking on a folder icon will open a small popup, which when clicked will navigate to the selected folder.
+Since TagSpaces supports tagging of folders, you can geo tag your folders and turning them this way displayable in the Mapique perspective. On the following screenshot you can see that folders have a dedicated icon, so they can differentiated from the files. Clicking on a folder icon will open a small popup, which when clicked will navigate to the selected folder.
 
-<CenteredImage
+In general, not all folders have a geo tag but the Mapique perspective shows only files and folder which have such tags. This is kind of problematic if you are trying to navigate through a tree of folders. That's why we have added a new button in the main toolbar of the Mapique perspective, which turning an overlay containing all sub folders of the current folder on and off. Once turned on, the user can seamlessly navigate deep in a folder tree (even if there are not geo tags). The following video shows how this works.
+
+<!-- <CenteredImage
     caption="Showing geo tagged files on topographical map"
     src="/media/tagspaces-mapique-folders.png"
     maxWidth1="550px"
+    showCaption
+  /> -->
+
+<CenteredVideo
+    caption="Navigating folders in the Mapique perspective"
+    src="https://www.tagspaces.org/content/v3-11/mapique-folders.mp4"
+    posterUrl="https://www.tagspaces.org/content/v3-11/mapique-folders.png"
+    maxWidth="100%"
     showCaption
   />
 

@@ -199,7 +199,9 @@ The second button in the group will also open a dialog, which lets you insert a 
 
 The last button will insert a simple horizontal ruler, (a HTML `<hr/>` tag) at the point where the cursor is currently located. The hotkey to quickly insert a horizontal ruler is `Ctrl+Enter`.
 
-> **Hint** This button does not respect paragraph endings. If you press this button at the middle of a paragraph, it will break the paragraph at that point.
+:::caution
+This button does not respect paragraph endings. If you press this button at the middle of a paragraph, it will break the paragraph at that point.
+:::
 
 [Back to button group list](#toolbar-buttons)
 
@@ -213,7 +215,9 @@ This is a toggle to show plain HTML code on a dark background, where the formatt
 
 Pressing the button again, will return to the WYSIVYG mode.
 
-> **Hint:** Code highlighting for the HTML view is not currently implemented.
+:::info
+Code highlighting for the HTML view is not currently implemented.
+:::
 
 [Back to button group list](#toolbar-buttons)
 
@@ -235,7 +239,9 @@ For **ToDo Lists**, you would ideally want the checkbox to be the very first cha
 
 ![](/media/ToDoList.png)
 
-> **Hint** The interactive checkboxes only work in editor mode. When in HTML preview mode, you can see the current state of the box, but cannot change it. To make a list interactive, switch to editor mode, by pressing the little pencil icon at the top of the preview.
+:::tip
+The interactive checkboxes only work in editor mode. When in HTML preview mode, you can see the current state of the box, but cannot change it. To make a list interactive, switch to editor mode, by pressing the little pencil icon at the top of the preview.
+:::
 
 ### Key bindings
 

@@ -25,12 +25,12 @@ module.exports = {
       },
       {
         type: "link",
-        label: "Firefox Browser Extension",
+        label: "Firefox Extension",
         href: "/installation#installing-the-firefox-browser-extension",
       },
       {
         type: "link",
-        label: "Chrome Browser Extension",
+        label: "Chrome Extension",
         href: "/installation#installing-the-chrome-browser-extension",
       },
       // {
@@ -40,7 +40,7 @@ module.exports = {
       // },
       {
         type: "link",
-        label: "Running in portable mode",
+        label: "Portable mode",
         href: "/installation#running-in-portable-mode",
       },
       "tutorials/setup-tagspaces-pro-web",
@@ -50,8 +50,8 @@ module.exports = {
       "ui/locations",
       {
         type: "link",
-        label: "Cloud Locations",
-        href: "/ui/locations#cloud-locations",
+        label: "S3 Locations",
+        href: "/ui/locations/#cloud-locations",
       },
       "ui/taglibrary",
       // "ui/userinterface#browsing-area)
