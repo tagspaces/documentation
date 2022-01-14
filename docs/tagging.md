@@ -2,6 +2,8 @@
 title: Organizing files and folders with tags
 ---
 
+import { ProFeature, CenteredImage } from '@site/src/components/CommonBlocks';
+
 ## Why tagging?
 
 Tagging and tags are a fresh approach to categorizing and grouping things. Tagging allows the user to label thing with their own words. They don’t need to conform to keywords or categories created by somebody else. Tagging allows you to describe what you’re seeing in your own words, to imbue the experience with your own meaning. Tagging saves your time, and can makes searching for a specific song, movie, book, document, note, or whatever you’re looking for, much easier and faster.
@@ -22,13 +24,16 @@ TagSpaces supports tagging of files in a cross platform way. It uses basically t
 
 As alternative to saving the tags in the file names, TagSpaces offers saving this kind of data in a sidecar files located in a hidden `.ts` folder. The activation of this kind tagging for files, can be done in the settings of the application as shown in the following screenshot.
 
-<!-- > **Note:** Please note that by default the `.ts` folder is hidden only on MacOS and Linux operating systems, on Windows folders with dot in front of their name are not hidden by default. Starting with version 3.0, TagSpaces makes hidden the `.ts` folder under Windows automatically.
--->
+:::info
+Please note that by default the `.ts` folder is hidden only on MacOS and Linux operating systems, on Windows folders with dot in front of their name are not hidden by default.
+:::
 
-<figure>
-  <img title="screenshot showing where to activate the saving of the tagging information in sidecar files" src="/media/tagspaces-sidecartagging-activation.png" className="img-responsive center-block" />
-  <figcaption>Activating the persisting of tags for files in sidecar files</figcaption>
-</figure>
+<CenteredImage
+    caption="Activating the persisting of tags for files in sidecar files"
+    src="/media/tagspaces-sidecartagging-activation.png"
+    maxWidth="500px"
+    showCaption
+  />
 
 After the activation, the application will created for every tagged file an extra file having the same file name as the source file, but with a additional JSON extension. For example after tagging some files in some of your file locations you will have a similar file structure.
 
@@ -47,7 +52,9 @@ After the activation, the application will created for every tagged file an extr
 
 The main advantage of this solution is that the name of the files is not changed after tagging and there is theoretically no limit in the number of tags you can add to a given file. If you move or rename tagged files in TagSpaces it will take care of the sidecar file, which will also renamed or moved in the appropriate folder. But if you move or rename this file in an external file manager, you have to move or rename the sidecar files by hand. The same hold true for the deleting a file from an external application. It will not automatically delete the sidecar file in the `.ts` folder. These drawbacks makes the tagging with sidecars less robust and future proof.
 
-> **Note:** If you want to have the files located in the `.ts` folder synched with some cloud service such as Dropbox or Google Drive you have to enable the synching of hidden folders and files.
+:::tip
+If you want to have the files located in the `.ts` folder synched with some cloud service such as Dropbox or Google Drive you have to enable the synching of hidden folders and files.
+:::
 
 ## Folder tagging with sidecar file
 
@@ -63,7 +70,9 @@ Tags added to folders in TagSpaces are save always in the co called sidecar file
     │   └── file4.docx.json
     └── file4.docx
 
-> **Note:** If you want to have the files located in the `.ts` folder synched with some cloud service such as Dropbox or Google Drive you have to enable the synching of hidden folders and files.
+:::tip
+If you want to have the files located in the `.ts` folder synched with some cloud service such as Dropbox or Google Drive you have to enable the synching of hidden folders and files.
+:::
 
 ## Tagging using context menus
 
@@ -127,7 +136,7 @@ Smart tags are one of the advanced features of TagSpaces. These tags can be eith
 ![tag library general overview](/media/smart-tags-group.png)
 
 - **Date and time tags** are timestamps textual representations, such as _now_, _today_, _tomorrow_, etc. Applying one of these tags to a file will add a timestamp, corresponding to your choice of smart tag. Tagging a file with e.g. _now_ would apply the full timestamp down to the second, while tagging e.g. _month_ would tag it with a subset like `YYYYMM`. Smart tags have a distinguishing blue background, which they only retain in the tag library.
-- <profeature /> Applying a geo tag, opens up a dialog with an interactive map, where you can drop a pin. The geo-location (longitude and latitude coordinates), will be added to the selected file as a tag.
+- <ProFeature /> Applying a geo tag, opens up a dialog with an interactive map, where you can drop a pin. The geo-location (longitude and latitude coordinates), will be added to the selected file as a tag.
 
 These smart tags offer a quick and easy way to timestamp documents or files, with different levels of precision. Dragging or applying a smart tag to a file will create a tag based on the current time date. Currently the following tags and formats are available:
 
@@ -136,15 +145,21 @@ These smart tags offer a quick and easy way to timestamp documents or files, wit
 - **month** will create a timestamp of the current month, in the format of `YYYYMM`, e.g. `201703`
 - **year** only applies the current year, in the format of `YYYY`, e.g. `2017`
 
-> **Note:** Every newly created file will automatically have a smart tag, equivalent to **now**.
+:::info
+Every newly created file will automatically have a smart tag, equivalent to **now**.
+:::
 
-### Custom timestamp tagging <profeature />
+### Custom timestamp tagging
+
+<ProFeature />
 
 With the help of the `custom-date` smart tag, the user can add any date and time as a tag to any file or folder.
 
 <iframe width="100%" height="500" src="https://www.youtube-nocookie.com/embed/DVHioQhpyYM?rel=0" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
 
-### Geo tagging <profeature />
+### Geo tagging
+
+<ProFeature />
 
 Geo Tagging can be use to add geo coordinates as a tag to any kind of files. It is useful to connect your photos or other documents with a geo location. This can be used for planning you vacation or next trip. In order to use this feature you have to use the smart tag `geo-location`. When you apply it to a file, the dialog shown on following screenshot will appear. Here with the help of the [OpenStreetMap](https://www.openstreetmap.org) and you can select any location somewhere in the world. The geographic coordinates (latitude and longitude) of this location will be converted in the [plus codes](https://plus.codes/) format, which is a for codding geo coordinates with smaller amount of characters.
 
@@ -152,7 +167,9 @@ Geo Tagging can be use to add geo coordinates as a tag to any kind of files. It 
 
 <!-- The geo tag is a special kind of smart tag, available in TaSpaces **PRO**, that allows tagging files with precise geolocation coordinates. When You drag the tag "geo" on a file, the **Edit tag** popup window with the Geo Location tab will open, showing a map from OpenStreetmap. You can drop a pin anywhere, and move it around, it automatically becomes a tag in the format of `latitude+longitude`, e.g. `47.2792290+18.9843750` This tag will then be applied to the file and treated as a geo-smarttag by TagSpaces -->
 
-### Editing smart tags <profeature />
+### Editing smart tags
+
+<ProFeature />
 
 Smart tags, once applied, can be edited, or further refined be refined to include date ranges. Clicking on a tag, ans selecting _Edit Tag_ form the context menu
 
@@ -186,10 +203,10 @@ Tag that has a keyboard shortcut assigned, are marked with a little keyboard ico
 Shortcuts can be single characters, key combinations, or sequences of two or more characters.
 * To specify a single key shortcut, type that key into the box. E.g. to set the key `a` as a shortcut for a tag, simply type the letter 'a' and press OK.
 * For key combinations, type all keys separated by a plus sign (`+`). E.g. to specify `Ctrl+Shift+a` (to be pressed simultaneously) as a shortcut, just type "ctrl+shift+a".
-    > **Note:** For combinations to work, you do not need to use modifier keys. `a+g+6` is as valid a combination as would e.g. `ctrl+shift+6` be
+    > For combinations to work, you do not need to use modifier keys. `a+g+6` is as valid a combination as would e.g. `ctrl+shift+6` be
 * To use character sequences, type each character, separated by a single whitespace. for example, when you set `a b c` as a shortcut, you would need to type the letters 'a', 'b' and 'c' after one another to tag a file. You do not need to do this quickly, as long as you do not press anything else, the sequence will be recognised. This feature can be quite useful for users, who experience difficulties pressing certain key combinations.
-    >**Note:** Modifier keys, such as `Ctrl`, `Shift`, etc, **can** be used in sequential combinations. Specifying e.g. `ctrl a` would make a shortcut of pressing `Ctrl` followed by `a`. pressing the keys simultaneously would not work in this case.
+    > Modifier keys, such as `Ctrl`, `Shift`, etc, **can** be used in sequential combinations. Specifying e.g. `ctrl a` would make a shortcut of pressing `Ctrl` followed by `a`. pressing the keys simultaneously would not work in this case.
 
 Using keyboard shortcuts can also work on multiple files. If you select more than one file, the tag bound to the key(s) or key combination you press will be applied to all of them.
 
->**Note:** Keyboard shortcuts can **not** be used to remove tags, only to assign them. -->
+> Keyboard shortcuts can **not** be used to remove tags, only to assign them. -->

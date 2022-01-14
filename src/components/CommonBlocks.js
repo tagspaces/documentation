@@ -112,7 +112,18 @@ export function ProFeature() {
         </>
       }
     >
-      <profeature />
+      <span
+        style={{
+          backgroundColor: "#1dd19f",
+          color: "white",
+          fontWeight: "bold",
+          fontStyle: "normal",
+          paddingLeft: 5,
+          paddingRight: 5,
+        }}
+      >
+        PRO
+      </span>
     </MUTooltip>
   );
 }

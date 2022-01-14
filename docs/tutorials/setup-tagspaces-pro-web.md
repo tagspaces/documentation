@@ -158,4 +158,6 @@ When a new version of the app is available, you just need to unzip the content a
 
 ![File to replace by upgrade](../tutorials/tagspaces-web-nas/files-to-replace-by-upgrade.png)
 
-> Note: You should not delete `extconfig.js` if you using one for configuring TagSpaces. Be careful not to delete also special folders such as `Recently-Snapshot` or `@Recycle` if you are hosting the app on a NAS system.
+:::caution
+You should not delete `extconfig.js` if you using one for configuring TagSpaces. Be careful not to delete also special folders such as `Recently-Snapshot` or `@Recycle` if you are hosting the app on a NAS system.
+:::

@@ -164,7 +164,9 @@ Policy for user with admin/write access:
         ]
     }
 
-> Note: The list of allowed actions is only a suggestion, the actions can be significantly reduced, to just those which are really needed for your use case.
+:::caution
+The list of allowed actions is only a suggestion, the actions can be significantly reduced, to just those which are really needed for your use case.
+:::
 
 Once you are ready and have attached the newly created policy to the user, you can finalize the process. On the last screen you will see the **access key ID** and the **secret access key** of the just created user.
 ![User creation success IAM](/media/aws/aws-iam-user-success.png)

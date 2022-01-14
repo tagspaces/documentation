@@ -3,6 +3,7 @@ title: Locations
 ---
 
 import VideoYT from '@site/src/components/VideoYT';
+import { ProFeature, CenteredImage } from '@site/src/components/CommonBlocks';
 
 A **location** is a folder on your local file system, which will serve as a root for listing sub folders, files and documents. Typical locations are for example the folder where you collect your photos or folders where you store documents, ebooks or music.
 
@@ -36,7 +37,9 @@ In TagSpaces there two type of locations, regular (local) and cloud based (AWS S
 
 Regular locations are pointing to a folder located on your local computer. This could be also a folder where you sync locally your Dropbox files or a folder from a connected network drive.
 
-> **Note:** Be careful with connected huge folder located on network drive, depending on the speed of the network, this could lead to performance issues.
+:::caution
+Be careful with connected huge folder located on network drive, depending on the speed of the network, this could lead to performance issues.
+:::
 
 ![Properties of a location pointing to a local folder](/media/local-location-properties.png)
 
@@ -45,8 +48,8 @@ The regular locations have the following properties:
 - _Location name_ - this is the name of location as displayed in the location manager
 - _Location path_ - the path from your computer, to which this location points
 - _Startup location_ - turning this switch on will make the location load automatically on application start. You can set only one location to be a startup one.
-- _Enable full text search for TXT, MD and HTML files_ <profeature /> - activates the indexing of the content of text, markdown and HTML files.
-- _Watch for external changes in this location_ <profeature /> - once switched on TagSpaces will watch the folder to which the location points and all its sub folders for changes and reflect them in the application.
+- _Enable full text search for TXT, MD and HTML files_ <ProFeature /> - activates the indexing of the content of text, markdown and HTML files.
+- _Watch for external changes in this location_ <ProFeature /> - once switched on TagSpaces will watch the folder to which the location points and all its sub folders for changes and reflect them in the application.
 
 Clicking on the `Advanced Mode` button will extend the dialog and it will look like this.
 
@@ -54,14 +57,14 @@ Clicking on the `Advanced Mode` button will extend the dialog and it will look l
 
 The extended dialog will have in addition the following properties:
 
-- _Switch to manual index creation with persisted search index_ <profeature /> - disables the automatic indexing of a location on its opening. The application will try to open a previously created index located in a file _tsi.json_ from the _.ts_ folder of the location. This is useful on locations with many files, where the content does not change very often.
-- _Open this location in read-only mode_ <profeature /> - switches the interface of TagSpaces to read-only mode
+- _Switch to manual index creation with persisted search index_ <ProFeature /> - disables the automatic indexing of a location on its opening. The application will try to open a previously created index located in a file _tsi.json_ from the _.ts_ folder of the location. This is useful on locations with many files, where the content does not change very often.
+- _Open this location in read-only mode_ <ProFeature /> - switches the interface of TagSpaces to read-only mode
 
 ## Cloud Locations
 
-These location are pointing to AWS S3 compatible stores (also known as buckets) located in the Internet.
+<ProFeature />
 
-> <profeature /> Cloud locations are available only in the <a href="https://www.tagspaces.org/products/pro/">Pro</a> and <a href="https://www.tagspaces.org/products/enterprise/">Enterprise</a> editions of TagSpaces.
+These location are pointing to AWS S3 compatible stores (also known as buckets) located in the Internet.
 
 ![Edit properties of a cloud location](/media/edit-cloud-location-dialog.png)
 
@@ -73,7 +76,9 @@ In addition to the regular locations, the cloud locations have the following pro
 - _Bucket Name_ - the name of the bucket to which this location points
 - _Region_ - the AWS region, where the bucket is hosted. The dropdown is located on the right from the bucket name.
 
-> Note: _Watch for external changes in this location_ is disabled because it is not available for cloud locations.
+:::caution
+"Watch for external changes in this location" is disabled because it is not available for cloud locations.
+:::
 
 In our tutorial section you can find a [complete manual](/tutorials/s3-bucket-locations.md) on how to create a new AWS S3 bucket and connect it as location in TagSpaces.
 
@@ -83,19 +88,21 @@ With this feature TagSpaces PRO is going into direction of supporting the Cloud 
 
 You can recognize object storage location by the cloud icon in front of their name, as seen in the next screenshot.
 
-<figure>
-  <img alt="Screenshot showing configuration of a AWS S3 hosted location" src="/media/tagspaces-s3-locations.png" class="img-responsive center-block" />
-  <figcaption>Configuration of a location hosted in the Cloud (Wasabi)</figcaption>
-</figure>
+<CenteredImage
+    caption="Configuration of a location hosted in the Cloud (Wasabi)"
+    src="/media/tagspaces-s3-locations.png"
+    showCaption
+  />
 
 In order to connect such location you will need to know the **bucket name**, the **access key**, the **secret access key** and the **data center location** for the particular bucket. If you have a location with a deep folder structure you can also specify the internal path to the files you want to manage in this location.
 
 > **Tutorial:** For detailed instructions on how to connect an AWS S3 location to TagSpaces, read this [tutorial](/tutorials/s3-bucket-locations) from the documentation.
 
-<figure>
-  <img alt="A bucket in AWS S3" src="https://www.tagspaces.org/content/v3-x/aws-s3-bucket.png" class="img-responsive center-block" />
-  <figcaption>A screenshot of a bucket in AWS S3</figcaption>
-</figure>
+<CenteredImage
+    caption="Screenshot of a bucket in AWS S3"
+    src="https://www.tagspaces.org/content/v3-x/aws-s3-bucket.png"
+    showCaption
+  />
 
 Comparing to user interfaces provided by AWS visible on the previous screenshot, TagSpaces gives you the following features on top:
 
@@ -107,12 +114,15 @@ Comparing to user interfaces provided by AWS visible on the previous screenshot,
 
 Using this feature you are creating basically a Dropbox or an Evernote replacement, where you have the full control on your files and data.
 
-> **Note:** If your bucket contains many files and the initial opening with indexing takes a lot of time you can make use of the enabling the [manual indexing](#manualIndex) for this location.
+<!-- :::tip
+If your bucket contains many files and the initial opening with indexing takes a lot of time you can make use of the enabling the [manual indexing](#manualIndex) for this location.
+::: -->
 
-<figure>
-  <img alt="Software architecture for connecting cloud locations" src="https://www.tagspaces.org/content/v3-x/tagspaces-pro-cloud-architecture.png" class="img-responsive center-block" />
-  <figcaption>Software architecture for connecting cloud locations</figcaption>
-</figure>
+<CenteredImage
+    caption="Software architecture for connecting cloud locations"
+    src="https://www.tagspaces.org/content/v3-x/tagspaces-pro-cloud-architecture.png"
+    showCaption
+  />
 
 ## Advanced Features
 
@@ -120,39 +130,51 @@ Using this feature you are creating basically a Dropbox or an Evernote replaceme
 
 This features is useful, when you have locations placed on a network drive or pointing to a folder synced with for example Dropbox, where changes to these folders happens in background while TagSpaces is running. This can happen if you work collaboratively with someone on a network or your Dropbox syncs files from other devices. In such cases TagSpaces monitors the folder pointed by the location with all its sub-folders for changes, such as **file creations**, **deletions** or **renames** and reflects these changes in the user interface of the app.
 
-<figure>
-  <img alt="Location with activated watcher and enabled manual indexing" src="https://www.tagspaces.org/content/v3-x/tagspaces-advanced-location-options.png" class="img-responsive center-block" />
-  <figcaption>Location with activated watcher and enabled manual indexing</figcaption>
-</figure>
+<CenteredImage
+    caption="Location with activated watcher and enabled manual indexing"
+    src="https://www.tagspaces.org/content/v3-x/tagspaces-advanced-location-options.png"
+    maxWidth="600px"
+    showCaption
+  />
 
 This option can be activated manually for every location individually in the location properties dialog, as displayed in the screenshot.
 
-> **Note:** This feature is not available on locations pointing to a S3 compatible object storage.
+:::caution
+This feature is not available on locations pointing to an object storage (e.g. AWS S3, Wasabi, Minio).
+:::
 
 ### Manual indexing
 
 For locations containing many files, it may make sense to disable the automatic indexing taking place on the opening of this location. You can activate this options for every location individually on its creation or on its properties screen as seen in the previous screenshot. The properties dialog is accessible from the context menu of any location. Enabling this options will speed up the loading of the location, especially on network based locations (W/LAN or S3 object stores). Instead of the indexing, the application will try to load a previously generated index file `tsi.json` located in the root folder of the location.
 If you do not have such persisted index file, you can create one manually with the command "Refresh Location Index" from the location context menu, as seen on the following screenshot.
 
-<figure>
-  <img alt="Starting the manual index generation for given location" src="/media/tagspaces-manual-indexing.png" class="img-responsive center-block" />
-  <figcaption>Starting the manual index generation for given location</figcaption>
-</figure>
+<CenteredImage
+    caption="Starting the manual index generation for given location"
+    src="/media/tagspaces-manual-indexing.png"
+    maxWidth="650px"
+    showCaption
+  />
 
 ### Tag extraction from location
 
-<profeature /> In the content menu of every tag group in the PRO version, there is an entry called "Collect Tags From Current Location", which does exactly this. It analyses the index of the current location and identifies tags with unique names, which are then added to the tag group from which the operation was started.
+<ProFeature />
 
-<figure>
-  <img alt="Starting the tag extraction" src="/media/tagspaces-tag-extraction.png" class="img-responsive center-block" />
-  <figcaption>Starting the tag extraction</figcaption>
-</figure>
+In the content menu of every tag group in the PRO version, there is an entry called "Collect Tags From Current Location", which does exactly this. It analyses the index of the current location and identifies tags with unique names, which are then added to the tag group from which the operation was started.
+
+<CenteredImage
+    caption="Starting the tag extraction"
+    src="/media/tagspaces-tag-extraction.png"
+    maxWidth="650px"
+    showCaption
+  />
 
 ### Custom location IDs
 
 Work in progress
 
 ### Export and Import location's configuration
+
+<ProFeature />
 
 <VideoYT
 youtubeId="LmjUM1BS-wQ"

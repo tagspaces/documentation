@@ -2,27 +2,34 @@
 title: Annotating files and folders
 ---
 
+import { ProFeature, CenteredImage } from '@site/src/components/CommonBlocks';
+
+<ProFeature />
 In addition to the tagging, in the TagSpaces PRO you have the ability to annotate every file or folder with a description. This is useful in particular if you want to add some more textual content to given a file or folder. This description information is managed in the properties area of every entry, and can be opened by clicking on the i-button, marked with **(1)** on the following screenshot.
 
-<figure>
-  <img alt="file and folder properties interfaces" src="/media/tagspaces-file-description.png" class="img-responsive center-block" />
-  <figcaption>Screenshot showing file with added description</figcaption>
-</figure>
+<CenteredImage
+    caption="Screenshot showing file with added description"
+    src="/media/tagspaces-file-description.png"
+    showCaption
+  />
 
 The properties area reveals the following information:
 
-- Name - the name of the current file or folder, click on the rename button will make the name editable
-- Tags - shows all the tags (sidecar and file name based) of the current entry. You can add new tags by selecting them from the dropdown menu or drag &amp; drop them here from the tag library. Removing tag is possible with the (x) button placed on every tag.
-- Description - shows the description of the current file or folder if available
-- Path - showing the path of the file or folder, clicking the move button will allow you to move this file
-- Date modified - shows the last modified data and time of the entry
-- Size - shows the size if the current file in byes, it is displayed only for files
+- **Name** - the name of the current file or folder, click on the rename button will make the name editable
+- **Tags** - shows all the tags (sidecar and file name based) of the current entry. You can add new tags by selecting them from the dropdown menu or drag &amp; drop them here from the tag library. Removing tag is possible with the (x) button placed on every tag.
+- **Description** - shows the description of the current file or folder if available
+- **Path** - showing the path of the file or folder, clicking the move button will allow you to move this file
+- **Date modified** - shows the date and time of the last modification of the current entry
+- **Size** - shows the size if the current file in byes, it is displayed only for files
+- **Thumbnail** - shows the thumbnail of the entry if available
 
-The file and folder descriptions which is marked with **(2)** on the previous screenshot, can be edited by clicking the edit button or just clicking directly on the description area. The descriptions text can contain [markdown](https://en.wikipedia.org/wiki/Markdown) allowing you to add basic formatting, links and lists to the content.
+The file and folder descriptions which is marked with **(2)** on the previous screenshot, can be edited by clicking the edit button or just clicking directly on the description area. The descriptions text can contain [Markdown](https://en.wikipedia.org/wiki/Markdown) allowing you to add basic formatting, links and lists to the content.
 
 The descriptions is indexed by the search algorithm and considered in the search results. If a given file or folder has a descriptions, the first few words from it a displayed in the grid perspective, as marked with **(3)** on the previous screenshot.
 
-> **Hint:** Editing file and folders descriptions is available in TagSpaces PRO. The community edition supports only displaying existing descriptions for both files and directories.
+:::tip
+Editing file and folders descriptions is available in TagSpaces PRO. The lite version supports only displaying existing descriptions for both files and folders.
+:::
 
 ### File description
 
@@ -51,11 +58,12 @@ For adding the description to a given folder, TagSpaces PRO creates a sidecar fi
     ├── file3.png
     └── file4.docx
 
-### <a id="customFolderColor" href="#customFolderColor">Custom folder colors</a>
+### Custom folder color
 
 With this feature every folder opened in TagSpaces can have its own background color. In addition to tagging you can use colors to mark folders used for particular use case or area of work. For example you can differentiate your personal folders from your work folders with color or you can mark folders containing sensitive or important information.
 
-<figure>
-  <img alt="Folder colors in action" src="/media/tagspaces-folder-colors.gif" class="img-responsive center-block" />
-  <figcaption>Folder colors in action</figcaption>
-</figure>
+<CenteredImage
+    caption="Short video showing how to set color to a folder"
+    src="/media/tagspaces-folder-colors.gif"
+    showCaption
+  />

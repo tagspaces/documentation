@@ -35,7 +35,9 @@ sudo chown -R your_www_group:your_www_user tagspaces
 - A dialog for credentials entering will appear. Enter here your ownCloud username and password.
 - That's all, you can now browse your files in TagSpaces.
 
-> Note: If the dialog prompting for the user credentials does not appear and you have running Nextcloud/ownCloud in some other browser tab, you have to logout there and reload the tab running TagSpaces.
+:::tip
+If the dialog prompting for the user credentials does not appear and you have running Nextcloud/ownCloud in some other browser tab, you have to logout there and reload the tab running TagSpaces.
+:::
 
 ![screenshot of tagspaces showing the hosted edition](/media/tagspaces-webdav-edition.png)
 

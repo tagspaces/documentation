@@ -75,4 +75,6 @@ Native APIs e.g. for file access are based accordingly:
 - Mobile versions for Android based on [Cordova](https://cordova.apache.org/)
 - Web versions for managing files in object storages based on [AWS SDK for JavaScript](https://aws.amazon.com/sdk-for-javascript/)
 
-> **Note:** This documentation is in <b>work in progress</b> status.
+:::caution
+This documentation is a <b>work in progress</b>.
+:::

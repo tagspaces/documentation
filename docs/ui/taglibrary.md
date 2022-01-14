@@ -2,21 +2,27 @@
 title: Tag Library
 ---
 
+import { ProFeature } from '@site/src/components/CommonBlocks';
+
 The tag library is the place where you can manage and organize the tags with which you can tag your files and folders. To open it, you need to click the button with the tag icon (1), in the vertical navigation placed on the most left part of the application.
 
 ![clarification picture for the tag library user interface](/media/tag-library-overview.png)
 
-The tag library has its own [context menu](#tag-library-context-menu), which can be started by clicking the three dot icon on right of (2). The area marked with (3) represents a single [tag group](#tag-groups). On the top of (3) there is a three dot icon which will open the [context menu](#tag-group-context-menu) of this tag group. (4) show a collapse tag group. Every tag group can be collapsed by clicking on the arrow icon in front of the tag group's name. (5) shows a special tag group used for automatically collecting new tags used in the application. (6) shows a sing tag. Every tag has its own three dot icon, which will open its [context menu](#tag-context-menu)
+The tag library has its own [context menu](#tag-library-context-menu), which can be started by clicking the three dot icon on right of (2). The area marked with (3) represents a single [tag group](#tag-groups). On the top of (3) there is a three dot icon which will open the [context menu](#tag-group-context-menu) of this tag group. (4) show a collapse tag group. Every tag group can be collapsed by clicking on the arrow icon in front of the tag group's name. (5) shows a special tag group used for automatically collecting new tags used in the application. (6) shows a single tag. Every tag has its own three dot icon, which will open its [context menu](#tag-context-menu)
 
 ## Tags
 
 The primary purpose of TagSpaces, is tagging files and organizing them. **Tags** are organic and integral parts of TagSpaces. By default, tags are stored as part of the filename, which makes them easily transferable between file and operating systems, without any need to synchronize databases, or do any extra work. A file can organically hold its own tags, as long as changing the filename is permittable.
 
-> <i class = "profeature">pro</i> **Hint** In TagSpaces PRO, you have the option to use a hidden file (a so called sidecar file) to store tags related information. This can be useful when you are not able, or not allowed to change filenames, such as with a development project, or working collaboratively on shared documents.
+:::tip
+You have the option to use a hidden file (a so called sidecar file) to store tag related information. This can be useful when you are not able, or not allowed to change filenames, such as with a development project, or working collaboratively on shared documents.
+:::
 
 Tags can be anything, form descriptive labels, to categories, ratings, priorities, or dates, timestamps, and smart tags.
 
-> **Hint:** To learn more about the powerful tag management features TagSpaces offers, read the [Tagging section](/tagging.md)
+:::tip
+To learn more about the powerful tag management features TagSpaces offers, read the [Tagging section](/tagging.md)
+:::
 
 ## Tag groups
 
@@ -59,7 +65,7 @@ Tag groups have their own context menu, accessible by clicking the three dot ico
 - **Move Tag Group Up** and **Move tag Group Down** - will allow you to change the tag group's position among other groups.
 - **Sort Tag Group** - will sort all tags inside the group alphabetically. Useful after having manually added a number of tags.
 - **Delete Tag group** - will remove the tag group from the library, with all the tags contained within.
-- **Collect Tags From Current Location** <profeature /> - will collect all the tags used in the current location in the selected tag group.
+- **Collect Tags From Current Location** <ProFeature /> - will collect all the tags used in the current location in the selected tag group.
 
 ![the context menu ot tag group](/media/tag-group-context-menu.png)
 
@@ -90,3 +96,7 @@ When accessing a tag's context menu from the **file browsing area** (the main ar
 ![](/media/tag-operations-dialog-2.png) -->
 
 > **Hint:** Editing the name of a tag deleting one from the library tags will only affect the library itself. If the same tag had had already been applied to a file, the tag on that file will remain intact. But if you change the color of a tag in the library, it will be reflected on the files marked with that tag as well. This is because of the way TagSpaces handles tags, that essentially become an organic part of the filename. To learn more about how tagging works, please refer to [File tagging based on filename](/tagging.md#file-tagging-based-on-filename) under the Tagging section.
+
+## Location tags
+
+TBD

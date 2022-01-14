@@ -2,7 +2,7 @@
 title: Perspectives Overview
 ---
 
-import { ProFeature, CenteredImage, CenteredVideo } from '@site/src/components/CommonBlocks';
+import { ProFeature, CenteredImage } from '@site/src/components/CommonBlocks';
 
 When you navigate to a folder in your active location, the files contained in the selected folder will be displayed on the main file browsing area of the user interface. TagSpaces offers flexible views to display your files. We call these views **perspectives**.
 

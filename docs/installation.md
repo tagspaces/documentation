@@ -18,7 +18,9 @@ Once a new version of the application is available, you will see the following n
 
 ![New version notification](/media/new-version-available.png)
 
-> Note: If you do not want TagSpaces to check automatically for the new versions, disable this functionality in the [settings](ui/settings).
+:::tip
+If you do not want TagSpaces to check automatically for the new versions, disable this functionality in the [settings](ui/settings).
+:::
 
 <!-- ## Installing TagSpaces PRO
 

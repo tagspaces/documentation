@@ -14,4 +14,6 @@ In this perspective the app shows the sub folders of the current folder as colum
     showCaption
   />
 
-> **Note:** The development of this perspective is not finalized yet, so the documentation is also work in progress.
+:::caution
+The development of this perspective is not finalized yet, so the documentation is also work in progress.
+:::

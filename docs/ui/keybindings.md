@@ -1,5 +1,5 @@
 ---
-title: Default Keybindings
+title: Keybindings
 ---
 
 Keyboard shortcuts are combinations of two or more keys that you can use to perform a specific task that would typically require more than one mouse click. They are very useful and can make it easier to work with your software, saving you time and effort as you work with TagSpaces and other applications.

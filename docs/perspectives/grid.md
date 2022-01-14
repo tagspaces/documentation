@@ -3,6 +3,8 @@ title: Grid Perspective (default)
 sidebar_label: Grid Perspective
 ---
 
+import { ProFeature } from '@site/src/components/CommonBlocks';
+
 This perspective is optimized for general browsing through file and folder structures while supporting some common file management operations such as:
 
 - Tagging file and folders
@@ -83,7 +85,7 @@ Each card on the grid can represent the following information. In area **(1)** t
 
 > Hint: The tags are dimmed on the cards by default, which might render them unreadable, when there is a file preview available. To improve readability, hover your mouse over the extension, or the tags to make them more opaque.
 
-> **Note <profeature />:** Defining descriptions for file is feature available in the Pro and the Enterprise versions of the app.
+> **<ProFeature /> -** Defining descriptions for file is feature available in the Pro and the Enterprise versions of the app.
 
 ### Folder Card
 
@@ -91,7 +93,7 @@ The folder card show basically similar information as the file card. In area **(
 
 ![](/media/grid-perspective-folder-card.png)
 
-> **Note <profeature />:** Defining descriptions and thumbnails for folders are features available in the Pro and the Enterprise versions of the app.
+> **<ProFeature /> -** Defining descriptions and thumbnails for folders are features available in the Pro and the Enterprise versions of the app.
 
 ## List view
 

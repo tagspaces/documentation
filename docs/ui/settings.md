@@ -1,16 +1,18 @@
 ---
-title: Settings
+title: App Settings
 ---
 
-To access the settings dialogue, just click on the gears icon at the bottom left part of the app.
+import { ProFeature } from '@site/src/components/CommonBlocks';
 
-![](/media/open-settings.png)
+To access the settings dialog, just click on the gears icon at the bottom left part of the app.
 
-The dialogue has three tabs, which will be described in order:
+![Access the settings of the app](/media/open-settings.png)
+
+The settings dialog has four tabs, which will be described bellow.
 
 ## General
 
-Most of the TagSpaces' common settings can be accessed from this tab.
+Most of the TagSpaces' common settings can be accessed from the General tab.
 
 ![Setting - General Tab](/media/settings-tab-general.png)
 
@@ -39,15 +41,19 @@ Most of the TagSpaces' common settings can be accessed from this tab.
 
 Here you can choose which viewer and editor to launch for each supported file type.
 
-![](/media/settings-tab-file-types.png)
+![Adjusting the file associations](/media/settings-tab-file-types.png)
 
 When you click on a file type's viewer dropdown, you will be offered a list of all installed viewer plugins (**1**).
 
-> **Note:** To learn more about file previews, refer to the [**Viewing Files**](/viewing-files.md) section.
+:::tip
+To learn more about file previews, refer to the [**Viewing Files**](/viewing-files.md) section.
+:::
 
 When you click on a file type's editor dropdown, you will be offered a list of all installed editor plugins (**2**).
 
-> **Note:** To learn more about file previews, refer to the [**Editing Files**](/editing-files.md) section.
+:::tip
+To learn more about file previews, refer to the [**Editing Files**](/editing-files.md) section.
+:::
 
 Clicking on the colored area (**3**) in the most right part of every files type will open a color selection dialog where you can adjust the color of the current file type.
 
@@ -59,7 +65,7 @@ Under the key bindings tab, you can view and edit all the available key bindings
 
 Most of the keybindings are configurable. To change them, Open the **Settings**. In the setting dialog, open the tab **KEY BINDINGS**.
 
-![TagSpaces key bindings options](/media/tagspaces-settings-key-bindings.png)
+![Changing the key bindings](/media/tagspaces-settings-key-bindings.png)
 
 Here you can see all the keyboard shortcuts by default in TagSpaces, and what actions they perform. You also have the ability to change keyboard shortcuts by clicking on the field in which they were written. Before changing any of the binding, please read the following short instructions:
 
@@ -68,4 +74,30 @@ Here you can see all the keyboard shortcuts by default in TagSpaces, and what ac
 - Any other key you should be able to reference by name like `a`, `/`, `$`, `*`, `=`.
 - You can assign many keys to a single operation, simply by separating them by `,`.
 
-> **Note:** To learn more about the key bindings, refer to the [this section](/ui/keybindings) of the documentation.
+:::tip
+To learn more about the key bindings, refer to the [this section](/ui/keybindings) of the documentation.
+:::
+
+## Advanced
+
+In this area we have collected settings which are relevant for some advanced use cases.
+
+![Advanced settings area](/media/tagspaces-settings-advanced.png)
+
+- **Enable mobile mode** - switches the app in mobile mode, which can be useful on small screens or app window sizes
+- **Enable generating thumbnails and search index in a separate process** - since v4 the app generates thumbnails and search index in a separate process, here you can disable it and use the main app for that. This will have a negative impact on the performance
+- **Show warning on opening files externally** - showing a warning on opening files with external programs is a way to prevent you executing potentially malicious files (e.g. opening an .exe file on Windows will execute it)
+- **Enable location tags** - <ProFeature /> enabling this will give the options to store tag groups outside in the location itself (out of the tag library). Learn more [here](/ui/taglibrary/#location-tags).
+- **Geo tagging format** - <ProFeature /> here you have the ability to choose the geo tagging format. The apps offers the following formats
+  - PlusCode - is geo codding [format](https://en.wikipedia.org/wiki/Open_Location_Code) offering a short text representation so geo coordinate with latitude: `47.741687` and longitude `7.342313` will be encoded in `8FV9P8RR+MW`.
+  - MGRS - is another geo codding [format](https://en.wikipedia.org/wiki/Military_Grid_Reference_System), where the geo tags looks like this `4QFJ12345678`.
+- **Map tile servers** - <ProFeature /> TagSpaces uses OpenStreetMap based maps to represent maps in the geotagging capabilities of the application. Here you add custom OpenStreetMap compatible map tile server. On the [OpenStreetMap wiki](https://wiki.openstreetmap.org/wiki/Tile_servers) there is a list of common map server. With this functionality you can also add your own map tile server, in case you want to have completely Internet independent geo-tagging system.
+
+:::caution
+Please respect the policies and the terms of usage of any given map service provider!
+:::
+
+Beside this in the advanced setting tab you will find two buttons:
+
+- **Restore default settings** - which restores the initial settings of the app, including connected location and tag library, so be careful before confirming. You can also export the locations and the tag library and then import them after a reset.
+- **Reload application** - this will just reload the application, similar to hitting the reload button in a browser.

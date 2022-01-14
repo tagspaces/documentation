@@ -1,15 +1,6 @@
 module.exports = {
   someSidebar1: {
-    Introduction: [
-      "intro",
-      // {
-      //   type: "link",
-      //   label: "About TagSpaces",
-      //   href: "/#about-tagspaces",
-      // },
-      "aboutdocs",
-      // "writehelp",
-    ],
+    Introduction: ["intro", "aboutdocs"],
     "Download and Setup": [
       "installation",
       {
@@ -71,7 +62,6 @@ module.exports = {
       // "ui/userinterface#zoomable-user-interface)
       // "ui/userinterface#full-screen-mode)
       "ui/keybindings",
-      "ui/settings",
       "ui/i18n",
     ],
     "Tag Files and Folders": [
@@ -193,7 +183,35 @@ module.exports = {
       "extensions/text-editor",
       "extensions/json-editor",
     ],
-    "Sharing and Linking": ["sharing", "linking"],
+    "Share and Link Files": ["sharing", "linking"],
+    Settings: [
+      "ui/settings",
+      // {
+      //   type: "link",
+      //   label: "Access the settings",
+      //   href: "/ui/settings/",
+      // },
+      {
+        type: "link",
+        label: "General",
+        href: "/ui/settings/#general",
+      },
+      {
+        type: "link",
+        label: "File Types",
+        href: "/ui/settings/#file-types",
+      },
+      {
+        type: "link",
+        label: "Key Bindings",
+        href: "/ui/settings/#key-bindings",
+      },
+      {
+        type: "link",
+        label: "Advanced",
+        href: "/ui/settings/#advanced",
+      },
+    ],
     "Advanced Functionalities": [
       "annotations",
       // {
@@ -203,14 +221,14 @@ module.exports = {
       // },
       {
         type: "link",
-        label: "Custom Folder Colors",
-        href: "/annotations/#customFolderColor",
+        label: "Custom Folder Color",
+        href: "/annotations/#custom-folder-color",
       },
       "thumbnails",
       {
         type: "link",
-        label: "Custom Thumbnails",
-        href: "/thumbnails/#customThumbnails",
+        label: "Custom Thumbnail",
+        href: "/thumbnails/#custom-thumbnail",
       },
       "dev/metafileformats",
       "dev/external-config",

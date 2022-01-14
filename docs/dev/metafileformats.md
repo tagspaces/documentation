@@ -2,6 +2,8 @@
 title: Specification of the meta file formats
 ---
 
+import { ProFeature } from '@site/src/components/CommonBlocks';
+
 In comparison to many other tools, TagSpaces uses external text files for saving the meta information for folders and files, instead of a database. Here you will find the specification of the formats used by these files and also some other useful information concerning these files.
 
 ## File meta description format
@@ -154,7 +156,7 @@ The meta information is persisted in JSON format, which has the following format
 
 ## Format of the location export
 
-<profeature />
+<ProFeature />
 
 The locations can be exported from one TagSpaces Pro installation and imported in another. The format of the exported file is presented in this section. The example bellow specified one local and two location pointing object storages. The second one is AWS S3 object storage, while the third one is pointing to MinIO server.
 
@@ -220,7 +222,7 @@ The locations can be exported from one TagSpaces Pro installation and imported i
 
 ## Format of the exported search queries
 
-<profeature />
+<ProFeature />
 
 TagSpaces Pro offers the possibility to export previously saved search queries. And later import them in another TagSpaces Pro installation.
 
@@ -266,7 +268,7 @@ TagSpaces Pro offers the possibility to export previously saved search queries. 
 
 ## Format of the location specific tag groups
 
-<profeature />
+<ProFeature />
 
 Since version 3.11 TagSpaces supports tags which are specific for a given location. The tags resides in a file called `tsl.json`, which should be located in the `.ts` folder of the current location.
 

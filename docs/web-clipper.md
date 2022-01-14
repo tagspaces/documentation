@@ -2,6 +2,8 @@
 title: Web clipping - collect everything online
 ---
 
+import { ProFeature, CenteredImage } from '@site/src/components/CommonBlocks';
+
 ## Introduction
 
 In order to provide an easy way to collect web content such as web pages, articles, PDF-documents, bookmarks, places and screenshots, we have created the TagSpaces Web Clipper browser extension.
@@ -19,10 +21,12 @@ The browser extensions are available for [Chrome](https://chrome.google.com/webs
 
 Before the creation of any file, the user has the ability to change the title of file and to add tags to its file name.
 
-<figure>
-  <img title="A screenshot showing the web clipper in action" src="/media/tagspaces-webclipper.png" className="img-responsive center-block" />
-  <figcaption>A screenshot showing the web clipper in action</figcaption>
-</figure>
+<CenteredImage
+    caption="A screenshot showing the web clipper in action"
+    src="/media/tagspaces-webclipper.png"
+    maxWidth="550px"
+    showCaption
+  />
 
 The basic functionalities are completely decoupled from the desktop application of TagSpaces and so they can be used with any other application supporting HTML, MHTML, PNG, PDF or URL files.
 
@@ -36,10 +40,11 @@ In addition to that we offers some features for more advanced use cases such as 
 - The extension can create the geo tag in [Open Location Code](https://github.com/google/open-location-code) or OLC for short used as [plus codes](https://plus.codes/) in Google Maps for example. The plus codes have the advantage that they represent the geo coordinates in a much simpler and readable way.
 - By saving of a screenshot from the current web page, the web clipper adds as tags the domain of this web page, the current date and tag "screenshot". This makes the search later for such screenshot much easier in TagSpaces and other application.
 
-<figure>
-  <img title="A screenshot showing the extracted geo location as plus code" src="/media/tagspaces-webclipper-olc.png" className="img-responsive center-block" />
-  <figcaption>A screenshot showing the extracted geo location as plus code</figcaption>
-</figure>
+<CenteredImage
+    caption="A screenshot showing the extracted geo location as Plus Code"
+    src="/media/tagspaces-webclipper-olc.png"
+    showCaption
+  />
 
 The browser extensions are a practical additions to the desktop applications of TagSpaces, allowing a seamless way to collect locally and organize data from the web.
 

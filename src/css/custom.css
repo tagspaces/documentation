@@ -52,15 +52,3 @@ article img {
 h1 {
   font-size: 2.5em !important;
 }
-
-profeature {
-  background-color: #1dd19f;
-  color: white;
-  font-weight: bold;
-  font-style: normal;
-  padding-left: 5px;
-  padding-right: 5px;
-}
-profeature::after {
-  content: "PRO";
-}

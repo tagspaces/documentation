@@ -2,6 +2,8 @@
 title: User Interface Areas
 ---
 
+import { ProFeature } from '@site/src/components/CommonBlocks';
+
 ## Start screen
 
 TagSpaces opens up as a single-window application that tries to make the best use of any space available, be it large wide screens, or small mobile displays. The user interface, devised along the guidelines of Google's material design specifications, is very adaptable. The application will look the same, regardless of the operating system, or platform it runs under.
@@ -37,7 +39,7 @@ The file browsing area normally takes up he majority of the user interface. This
 
 In the top left corner of the browsing area is placed a button with a briefcase icon **(1)** which open a dropdown showing a list of all [locations](/ui/locations.md). From this dropdown you can quickly switch to another location.
 
-> **Hint <profeature />:** If you are currently using a cloud based location, the the icon of the button for changing the location **(1)** will be a cloud, in other cases the icon will be the briefcase.
+> **Hint <ProFeature /> :** If you are currently using a cloud based location, the the icon of the button for changing the location **(1)** will be a cloud, in other cases the icon will be the briefcase.
 
 The number above **(2)** shows the count of the files and folders in the current folder. If the file browsing area shows search results, then this number will represent the count of the found items.
 
@@ -85,11 +87,11 @@ Clicking the button with the **i** icon will open and respectively close the fil
 
 - **(1) Name** - Shows the complete name of the file with its file extension. Clicking the **RENAME** button located above (1) with switch the area to edit box, where you can change the name of the file.
 - **(2) Tags** - Show the tags added to this file. Clicking on this area will open a dropdown where you can choose additional tags which will be assigned to this file.
-- **(3) Description** <profeature /> - Shows the description assigned to the current file. Clicking on the **EDIT** will turn the description area in a edit box, where you can adjust the description of this file. Plain text and markdown formats are supported.
+- **(3) Description** <ProFeature /> - Shows the description assigned to the current file. Clicking on the **EDIT** will turn the description area in a edit box, where you can adjust the description of this file. Plain text and markdown formats are supported.
 - **(4) Date modified** - Shows the date and the time when the file was last modified.
 - **(5) Size** - Shows the size of the current file. Hovering the field will show the size in bytes.
 - **(6) Path** - Shows the complete path of the file. Clicking on the **MOVE** button, will open a dialog, where you can move or copy the existing file to a new path.
-- **(7) Thumbnail** <profeature /> - This area shows the current thumbnail of the file. Clicking on the **CHANGE THUMBNAIL** button will open a dialog, where can choose a new thumbnail for the file. The application supports adding a custom thumbnail to every file type.
+- **(7) Thumbnail** <ProFeature /> - This area shows the current thumbnail of the file. Clicking on the **CHANGE THUMBNAIL** button will open a dialog, where can choose a new thumbnail for the file. The application supports adding a custom thumbnail to every file type.
 
 > Hint: The description field of files and folders supports basic [**markdown syntax**](https://en.wikipedia.org/wiki/Markdown).
 
@@ -101,11 +103,11 @@ The folder properties is very similar to the file properties area. It can be ope
 
 - **(1) Name** - Shows the complete name of the folder. Clicking the **RENAME** button located above (1) with switch the area to edit box, where you can change the name of the folder.
 - **(2) Tags** - Show the tags added to this folder. Clicking on this area will open a dropdown where you can choose additional tags which will be assigned to this folder.
-- **(3) Description** <profeature /> - Shows the description assigned to the current folder. Clicking on the **EDIT** will turn the description area in a edit box, where you can adjust the description of this folder. Plain text and markdown formats are supported.
+- **(3) Description** <ProFeature /> - Shows the description assigned to the current folder. Clicking on the **EDIT** will turn the description area in a edit box, where you can adjust the description of this folder. Plain text and markdown formats are supported.
 - **(4) Date modified** - Show the date and the time when this folder was last modified.
-- **(5) Color** <profeature /> - Shows the color which is assigned to this folder. Clicking in the color area (5) will open a dialog for changing the color of the folder.
+- **(5) Color** <ProFeature /> - Shows the color which is assigned to this folder. Clicking in the color area (5) will open a dialog for changing the color of the folder.
 - **(6) Path** - Shows the complete path of the folder.
-- **(7) Thumbnail** <profeature /> - This area shows the current thumbnail of the folder. Clicking on the **CHANGE THUMBNAIL** button will open a dialog, where can choose a new thumbnail for the folder.
+- **(7) Thumbnail** <ProFeature /> - This area shows the current thumbnail of the folder. Clicking on the **CHANGE THUMBNAIL** button will open a dialog, where can choose a new thumbnail for the folder.
 
 ## Dark mode
 

@@ -3,7 +3,7 @@ title: Linking files, folders and locations
 ---
 
 import { ProFeature, CenteredImage, CenteredVideo } from '@site/src/components/CommonBlocks';
-import Video from '@site/src/components/VideoYT';
+import VideoYT from '@site/src/components/VideoYT';
 
 <ProFeature />
 

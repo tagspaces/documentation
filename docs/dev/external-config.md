@@ -46,7 +46,9 @@ The property **ExtUseSidecarsForFileTagging** can be used for switching between 
 
 Possible values are 'true' and 'false'.
 
-> **Note:** If the parameter is specified then this setting could not be changed in the TagSpaces settings dialog anymore. The user can only see which file tagging method is activated (renaming files or using sidecar files)
+:::tip
+If the parameter is specified then this setting could not be changed in the TagSpaces settings dialog anymore. The user can only see which file tagging method is activated (renaming files or using sidecar files)
+:::
 
 ## Configuring custom locations
 
@@ -103,7 +105,9 @@ window.ExtLocations = [
 
 The editing of the locations can be disabled with the following property: **ExtLocationsReadOnly**
 
-> Note: This switch is not supported anymore. Now as soon as you have externally configured locations they are automatically read-only.
+:::tip
+This switch is not supported anymore. Now as soon as you have externally configured locations they are automatically read-only.
+:::
 
 ### Saving locations in the browser
 
@@ -234,7 +238,9 @@ window.ExtMapTileServers = [
 ];
 ```
 
-> Note: Some example map tile servers can be found in the [OpenStreetMap Wiki](https://wiki.openstreetmap.org/wiki/Tile_servers). Please consider the terms of usage of any given map service provider!
+:::tip
+Some example map tile servers can be found in the [OpenStreetMap Wiki](https://wiki.openstreetmap.org/wiki/Tile_servers). Please consider the terms of usage of any given map service provider!
+:::
 
 ## Configuring the format of the geo tags
 

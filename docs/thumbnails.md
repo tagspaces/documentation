@@ -2,7 +2,8 @@
 title: Thumbnail Generation
 ---
 
-import { ProFeature } from '@site/src/components/CommonBlocks';
+import VideoYT from '@site/src/components/VideoYT';
+import { ProFeature, CenteredImage, CenteredVideo } from '@site/src/components/CommonBlocks';
 
 When the user opens a given folder, the application scans its content and tries to generate mini previews of file content automatically. These mini previews are known also als thumbnails.
 
@@ -18,21 +19,31 @@ The free version of TagSpaces supports thumbnail generation only for image and v
 - Documents: PDF
 - Office Documents: ODT, ODP, ODS, DOCX, XLSX, PPTX (uses the embedded preview image if available)
 
-<figure>
-  <img alt="Showing generated thumbnails in TagSpaces" src="/media/tagspaces-thumbnails.png" className="img-responsive center-block" />
-  <figcaption>Showing generated thumbnails in TagSpaces</figcaption>
-</figure>
+<CenteredImage
+    caption="Showing generated thumbnails in TagSpaces"
+    src="/media/tagspaces-thumbnails.png"
+    showCaption
+  />
 
 The generated thumbnails are persisted in the `.ts` folder located in every folder you browse. This feature significantly accelerates the browsing of folders containing many files. The thumbnail generation can be activated or deactivated in the application settings.
 
-<figure>
-  <img alt="screenshot showing where to activate the thumbnail generation" src="/media/tagspaces-thumbnail-generation.png" className="img-responsive center-block" />
-  <figcaption>Activating the thumbnails generation in the settings</figcaption>
-</figure>
+<CenteredImage
+    caption="Activating the thumbnails generation in the settings"
+    src="/media/tagspaces-thumbnail-generation.png"
+    showCaption
+  />
 
-## <a id="customThumbnails" href="#customThumbnails">Custom thumbnails for files and folders</a>
+## Custom thumbnails
 
-<ProFeature /> TagSpaces Pro offers the ability to manually set and change the thumbnail of every file type and folder. The following video show how to set a custom image as a thumbnail to any folder used in TagSpaces.
+<ProFeature /> 
+TagSpaces Pro offers the ability to manually set and change the thumbnail of **any file type and folder**. The following video show how to set a custom image as a thumbnail to any folder used in TagSpaces.
+
+<!-- <VideoYT
+    youtubeId="ZgnRRO1zdGc"
+    title="Video showing hot manually add thumnbail to a folder"
+    posterUrlBak="/media/videoposters/linking-files-and-folders.jpg"
+    height={550}
+  /> -->
 
 <iframe width="100%" height="500" src="https://www.youtube-nocookie.com/embed/ZgnRRO1zdGc?rel=0" frameBorder="0" allow="autoplay; encrypted-media; picture-in-picture" allowFullScreen></iframe>
 

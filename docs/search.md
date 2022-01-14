@@ -2,6 +2,8 @@
 title: Search Overview
 ---
 
+import { ProFeature, CenteredImage } from '@site/src/components/CommonBlocks';
+
 In order to compete with other desktop search applications, TagSpaces offers a variety of search related features, which are described in this section.
 
 The user can switch to the search area by clicking the `Ctrl+3` / `Cmd+3` key combination (configurable in the Setting). For the desktop app there is also a global key combination for opening TagSpaces in search mode. Just press `Ctrl+Shift+f` / `Cmd+Shift+f` to get there.
@@ -14,7 +16,7 @@ The search query in the basic search consists of two components. The first one i
 - The tags assigned to the file or folder
 - The description added to the file or the folder
 - The name of the parent directory of a given file is also considered by the search algorithm. So for example if you are searching for photos from you vacation in USA and the folder where these files are located contains the word USA (e.g. '20160301 vacation usa 70D'), then the search will list all the files located directly in this folder.
-- The content of TXT, MD and HTML, if the full text search is activated for the current location. The full text search for these files is a <profeature /> feature.
+- The content of TXT, MD and HTML, if the full text search is activated for the current location. The full text search for these files is a <ProFeature /> feature.
 
 The search query consists of two components. The first one is just a simple free text which searched in the index. The second component is a list of tags. If you want a find entries tagged with given tag place `+` in front of it. Placing `-` will exclude entries with this tag.
 
@@ -24,16 +26,18 @@ There are three type of searching:
 - **Strict** - it will deliver exact search results
 - **Semi-strict** - it is same as strict but case insensitive
 
-<figure>
-  <img title="basic search in TagSpaces" src="/media/basic-search.png" className="img-responsive center-block" />
-  <figcaption>Basic search in TagSpaces</figcaption>
-</figure>
+<CenteredImage
+    caption="Basic search in TagSpaces"
+    src="/media/basic-search.png"
+    maxWidth="300px"
+    showCaption
+  />
 
 The search functionality can be targeted to deliver result for the following scopes:
 
 - **(1) Current location**, which is the default scope
 - **(2) Current folder** including all sub-folders, which in the case of the root folder in a locations is the same as the first scope
-- **(3) All locations** <profeature />. You can find out more in the [Global Search](#proglobal-search) section of the documentation.
+- **(3) All locations** <ProFeature />. You can find out more in the [Global Search](#proglobal-search) section of the documentation.
 
 ### Searching for tags
 
@@ -43,46 +47,56 @@ In order to provide a boolean search support for tags, the search user interface
 - At least one tag - any file or folder which contains one of the specified here tags will be included (**logical OR search**)
 - None of these tags - entries which have one the tags listed here will be excluded from the search results (**negative search**)
 
-<figure>
-  <img title="Short video showing searching for tags in action" src="https://www.tagspaces.org/content/v3-x/advanced-tag-search.gif" className="img-responsive center-block" />
-  <figcaption>Short video showing searching for tags in action</figcaption>
-</figure>
+<CenteredImage
+    caption="Short video showing searching for tagged files"
+    src="https://www.tagspaces.org/content/v3-x/advanced-tag-search.gif"
+    maxWidth1="550px"
+    showCaption
+  />
 
-> **Note:** After opening of a certain location, the application starts to index in background all the files and folders from this location recursively. During the indexing time the search is not available to the user, but all other functionalities are accessible. Opening of location containing more the 100000 files could lead to performance issues, during the index or later by search.
+<!--  After opening of a certain location, the application starts to index in background all the files and folders from this location recursively. During the indexing time the search is not available to the user, but all other functionalities are accessible. Opening of location containing more the 100000 files could lead to performance issues, during the index or later by search. -->
 
 ### Indexing
 
 TagSpaces has an integrated file and folder search functionality based on an **index**, which is created immediately after the user opens a given location. The indexing process may take some resources on opening the location, but delivers later accurate and up to date search results.
 
-> Note: If your location contains a huge amount of files (> 20000) it is recommended to split it in two or more location or to [disable the indexing](/ui/locations#regular-locations) on location start (which is a <profeature /> feature). Disabling the indexing at start may also be useful for location based in a networks like on NAS systems or AWS S3 buckets.
+<!--  If your location contains a huge amount of files (> 20000) it is recommended to split it in two or more location or to [disable the indexing](/ui/locations#regular-locations) on location start (which is a <ProFeature /> feature). Disabling the indexing at start may also be useful for location based in a networks like on NAS systems or AWS S3 buckets. -->
 
 If you decide to disable the automatic indexing, you should do this step manually on regular based in order to have a working and accurate search functionality. The index can be updated in the following ways:
 
 - In the menu of every location in the location manager there is an item called "Refresh Location Index"
 - All indexes can be update at once from the search menu with the option "Update all location indexes"
 
- <figure>
-  <img title="Updating indexes for all locations" src="/media/update-all-indexes.png" className="img-responsive center-block" />
-  <figcaption>Updating indexes for all locations </figcaption>
-</figure>
+<CenteredImage
+    caption="Updating indexes for all locations"
+    src="/media/update-all-indexes.png"
+    maxWidth1="550px"
+    showCaption
+  />
 
 ### Limiting the search results
 
 By default, TagSpaces is limiting the amount of the found search results to 1000 files. This limitation is also valid for the maximum files, which can be displayed in a single folder. The reason for adding such limitation is the fact that pagination is not typical for file managers and for now we do not want to add such. In tab general of the Settings there is a field where you can increase or decrease this limit. See the next screenshot.
 
-<figure>
-  <img title="Screenshot of the advanced search options" src="/media/adjust-search-limit.png" className="img-responsive center-block" />
-  <figcaption>Adjust number of shown / found items in the perspeectives</figcaption>
-</figure>
+<CenteredImage
+    caption="Adjust number of shown / found items in the perspectives"
+    src="/media/adjust-search-limit.png"
+    maxWidth="650px"
+    showCaption
+  />
 
-## Advanced search <profeature />
+## Advanced search
+
+<ProFeature />
 
 The search options described in this section are available only in the Pro and Enterprise editions of TagSpaces. In addition to the searching by files name and by tag, the advanced search supports the following filter criteria:
 
-<figure>
-  <img title="Screenshot showing the advanced search options" src="/media/tagspaces-advanced-search.png" className="img-responsive center-block" />
-  <figcaption>Screenshot showing the advanced search options</figcaption>
-</figure>
+<CenteredImage
+    caption="Screenshot showing the advanced search options"
+    src="/media/tagspaces-advanced-search.png"
+    maxWidth="300px"
+    showCaption
+  />
 
 ### Search by type
 
@@ -103,10 +117,12 @@ In addition to that there are some special filters:
 - Files - selecting this option will limit the search to only files
 - Untagged files or folders - this options will show only files and folders witch are not tagged
 
-<figure>
-  <img title="Search by file type" src="/media/tagspaces-search-by-type.png" className="img-responsive center-block" />
-  <figcaption>Search by file type</figcaption>
-</figure>
+<CenteredImage
+    caption="Search by file type"
+    src="/media/tagspaces-search-by-type.png"
+    maxWidth="300px"
+    showCaption
+  />
 
 ### Search by file size
 
@@ -120,10 +136,12 @@ In this dropdown you can filter for files by their size. The following options a
 - Large - will filter files smaller than 1GB
 - Huge - will filter files bigger that 1GB
 
-<figure>
-  <img title="Search by size" src="/media/tagspaces-search-by-size.png" className="img-responsive center-block" />
-  <figcaption>Options for searching by size</figcaption>
-</figure>
+<CenteredImage
+    caption="Options for searching by size"
+    src="/media/tagspaces-search-by-size.png"
+    maxWidth="300px"
+    showCaption
+  />
 
 ### Search by last modified date
 
@@ -137,10 +155,12 @@ Here you can specify in which period the files you are searching should have bee
 - Past year - will show files and folders modified in the last 12 months from today
 - More than one year - will show files and folder older than one year
 
-<figure>
-  <img title="Search by last modified date and time" src="/media/tagspaces-search-by-last-modified-date.png" className="img-responsive center-block" />
-  <figcaption>Options for searching by last modified date</figcaption>
-</figure>
+<CenteredImage
+    caption="Options for searching by last modified date"
+    src="/media/tagspaces-search-by-last-modified-date.png"
+    maxWidth="300px"
+    showCaption
+  />
 
 ### Search by time period
 
@@ -152,9 +172,11 @@ This filter is still work in progress.
 
 ## Full text search
 
-<profeature /> TagSpaces PRO supports full text search for text (.TXT), markdown (.MD) and html (.HTML) files. You can activate this feature for every location individually in the "Edit Location" dialog, as seen in the following screenshot. After the activating of this feature (see next screenshot), during the indexing of a given location, the application will try to extract the text content of the supported files and create a keyword list with will be considered later by the search algorithm.
+<ProFeature /> TagSpaces PRO supports full text search for text (.TXT), markdown (.MD) and html (.HTML) files. You can activate this feature for every location individually in the "Edit Location" dialog, as seen in the following screenshot. After the activating of this feature (see next screenshot), during the indexing of a given location, the application will try to extract the text content of the supported files and create a keyword list with will be considered later by the search algorithm.
 
-> **Note:** On locations with many big text files, activating this features may slow down the performance of the application, so be careful on which location you are activating it.
+:::caution
+On locations with many big text files, activating this features may slow down the performance of the application, so be careful on which location you are activating it.
+:::
 
 <!--This text content is saved in the hidden `.ts` folder and is considered later by the search. Since this is a early experimental feature, please don't relay only on ly on it.-->
 
@@ -169,31 +191,40 @@ These file formats are currently supported:
 * Audios formats: MP3 (extracts id3 tags)
 * Ebooks: EPUB (extracts the text content) -->
 
-<figure>
-  <img title="Search by last modified date and time" src="/media/tagspaces-enabling-fulltext-indexing.png" className="img-responsive center-block" />
-  <figcaption>Options for searching by last modified date</figcaption>
-</figure>
+<CenteredImage
+    caption="Options for searching by last modified date"
+    src="/media/tagspaces-enabling-fulltext-indexing.png"
+    maxWidth="650px"
+    showCaption
+  />
 
-> **Note:** This feature is still in beta state and could lead to performance issues if you are dealing with many and/or big text files.
+:::caution
+This feature is still in beta state and could lead to performance issues if you are dealing with many and/or big text files.
+:::
 
 ## Global search
 
-<profeature /> Starting with version 3.5, TagSpaces Pro offers searching in all locations. We call this feature "Global search". It works on local and remote S3 based locations. The feature can be activated by clicking the _Global_-button in the search area, as seen in the following screenshot.
+<ProFeature />
+Starting with version 3.5, TagSpaces Pro offers searching in all locations. We call this feature "Global search". It works on local and remote S3 based locations. The feature can be activated by clicking the _Global_-button in the search area, as seen in the following screenshot.
 
-<figure>
-  <img title="Global search in TagSpaces" src="/media/global-search.png" className="img-responsive center-block" />
-  <figcaption>Search globally in all locations</figcaption>
-</figure>
+<CenteredImage
+    caption="Activating the global search"
+    src="/media/global-search.png"
+    maxWidth="300px"
+    showCaption
+  />
 
 Once in _Global search_-mode you will see one additional search options called "Force re-indexing all locations". Activating this checkbox will force TagSpaces to create a new index for every location before in searches in it. This options will deliver most accurate search result but can take more time, especially re-indexing remote locations or locations containing many files.
 
 All other search related settings should work as known from the single location search. The [search result limit](#limiting-the-search-results) is applying here, so once reached TagSpaces will stop the search and will no go in the remaining un-searched locations.
 
-> Note: _Global search_ should be considered as a feature in Beta status. There could be some edge cases which are not functioning correctly. Please share any glitches with us, we will try to fix them.
+:::caution
+**Global search** should be considered as a feature in **Beta** status. There could be some edge cases which are not functioning correctly. Please share any glitches with us, we will try to fix them.
+:::
 
 ## Saved search queries
 
-<profeature />
+<ProFeature />
 
 In version 3.10 we added a basic possibilities for saving search queries for later use.
 

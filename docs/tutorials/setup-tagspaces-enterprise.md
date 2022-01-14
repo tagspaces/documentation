@@ -6,6 +6,7 @@ title: Setup TagSpaces Enterprise
 ## Introduction
 
 Overview
+
 <!-- ![Amplify SW architecture]() -->
 
 - User management - Cognito
@@ -27,8 +28,8 @@ GitHub username and access key will be provided by the TagSpaces team
 
 1. Clone TagSpaces Repository `yarn ts-clone`.
 2. Init amplify project in a cloud `amplify init`.
-   * Environment name - this could be something like this: your-project-prod or your-company-name-dev
-   * Group name - e.g.: project-name-group1, this is the id and the tenant used in the configuration of the dynamoDB bellow.
+   - Environment name - this could be something like this: your-project-prod or your-company-name-dev
+   - Group name - e.g.: project-name-group1, this is the id and the tenant used in the configuration of the dynamoDB bellow.
 3. Publish it `yarn amppublish` - this will make `amplify push` create storage and functions && `amplify publish` Zipping artifacts and deploy it to the cloud.
 
 Amplify cli will create user files S3 bucket and you can find the bucket name in generated tagspaces/app/aws-exports.js -> "aws_user_files_s3_bucket": "tsdatastorage165054-dev"
@@ -129,7 +130,9 @@ Describe isNotEditable
 }
 ```
 
-> Note: You can find the `group` which have been configured in the file `team-provider-info.json` located in the folder `./amplify/backend/`
+:::tip
+You can find the `group` which have been configured in the file `team-provider-info.json` located in the folder `./amplify/backend/`
+:::
 
 ## Upgrading to a newer release of the TagSpaces Enterprise
 
@@ -141,12 +144,12 @@ yarn run v1.22.10
 $ cd tagspaces && git pull && cd extensions/tagspacespro && git pull && cd ../../..
 Already up to date.
 Username for 'https://github.com/tagspaces/tagspacespro': tagspaces-amp
-Password for 'https://tagspaces-amp@github.com/tagspaces/tagspacespro': 
+Password for 'https://tagspaces-amp@github.com/tagspaces/tagspacespro':
 ....
 Done in 10.71s.
 ```
 
-Then you should execute `yarn amppublish` in order to deploy the changes in the amplify service. This command will call internally amplify publish, which will trigger the build of the TagSpaces Enterprise. 
+Then you should execute `yarn amppublish` in order to deploy the changes in the amplify service. This command will call internally amplify publish, which will trigger the build of the TagSpaces Enterprise.
 
 ```bash
 TagSpacesDev:~/environment/tagspaces-amplify (eu-west-2) $ yarn amppublish
@@ -177,6 +180,7 @@ Current Environment: dev
 ```
 
 ## Upgrading the version of the tagspaces-aws layer
+
 The tagspaces-aws layer provides a lambda function for creating and updating the index used for the search and a separate lambda function for creating thumbnails from image files.
 
 ```

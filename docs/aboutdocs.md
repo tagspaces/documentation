@@ -2,6 +2,8 @@
 title: About this Documentation
 ---
 
+import { ProFeature } from '@site/src/components/CommonBlocks';
+
 This documentation has currently a **WIP status**. The articles are being updated on a regular base.
 
 <!-- You can download version of the documentation as PDF files:
@@ -43,7 +45,7 @@ Bulleted lists will be used to
 
 There are currently two types of symbols, apart from the usual text formatting and annotations, that you can find on these pages:
 
-- <profeature /> - means that the described feature is part of the TagSpaces Pro and Enterprise editions.
+- <ProFeature /> - means that the described feature is part of the TagSpaces Pro and Enterprise editions.
 - ⚒ - means that the section is not ready yet and may contain unclear, or not up-to-date information, or sections might be missing entirely.
 
 ## Contribution
