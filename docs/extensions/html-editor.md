@@ -62,7 +62,9 @@ Pressing **Add checkbox** will insert an interactive, clickable checkbox into yo
 
 Pressing the **Toggle all checkboxes** button will select or deselect all the checkboxes present in the HTML document, regardless of their location
 
-> **Hint:** when some checkboxes are manually selectecd, while others are deselected, the \*Toggle all checkboxes/ will check all the unchecked ones. Pressing the button again will only un-check the ones that have been checked via the button. the ones that were manually checked will remain unchanged.
+:::tip
+When some checkboxes are manually selected, while others are deselected, the **Toggle all checkboxes** will check all the unchecked ones. Pressing the button again will only un-check the ones that have been checked via the button. the ones that were manually checked will remain unchanged.
+:::
 
 [Back to button group list](#toolbar-buttons)
 
@@ -120,7 +122,9 @@ This is the last of the font style buttons. It can set the selection or the text
 
 ![](/media/font-family.png)
 
-> **Hint:** The options presented here might depend on your operating system and the fonts installed
+:::tip
+The options presented here might depend on your operating system and the fonts installed.
+:::
 
 [Back to button group list](#toolbar-buttons)
 
@@ -151,7 +155,9 @@ Offers a dropdown menu that allows you to set the line-height of either the acti
 
 ![](/media/change-line-height.png)
 
-> **Hint:** When you make a selection, you do not need to select the entire paragraph. The selection's edges will mark active paragraphs. The line height adjustment will be performed on all full paragraphs, starting with the one inside which the selection starts, and ending with the one, inside which the selection ends.
+:::tip
+When you make a selection, you do not need to select the entire paragraph. The selection's edges will mark active paragraphs. The line height adjustment will be performed on all full paragraphs, starting with the one inside which the selection starts, and ending with the one, inside which the selection ends.
+:::
 
 [Back to button group list](#toolbar-buttons)
 
@@ -187,7 +193,9 @@ To edit or remove links, you can just click inside the link, and use the buttons
 
 The first button (**1**) will allow you to edit the link, while second (**2**) will remove it.
 
-> **Hint:** Links can also be added to the documents by typing the URL, and pressing enter. A well formed URL will automatically turn into a link.
+:::tip
+Links can also be added to the documents by typing the URL, and pressing enter. A well formed URL will automatically turn into a link.
+:::
 
 ##### Insert Image
 
@@ -247,7 +255,9 @@ The interactive checkboxes only work in editor mode. When in HTML preview mode, 
 
 Below you can find a summary of all the hotkeys you can use in the HTML Editor
 
-> **Hint:** Mac users should use the `Cmd` key, where `Ctrl` is mentioned
+:::tip
+Mac users should use the `Cmd` key, where `Ctrl` is mentioned
+:::
 
 - `Ctrl+Z` - Undo the last command
 - `Ctrl+Y` - Redo the last command
@@ -278,11 +288,11 @@ Below you can find a summary of all the hotkeys you can use in the HTML Editor
 
 ## Source code
 
-The source code of this extension is freely available on [GitHub](https://github.com/tagspaces/tagspaces-extensions/tree/main/html-editor)
+The source code of this extension is freely available on [GitHub](https://github.com/tagspaces/tagspaces-extensions/tree/main/html-editor).
 
 ## Development
 
-If you want to extend this extensions, please follow our general [extension development guide](/dev/extension-development-guide)
+If you want to extend this extensions, please follow our general [extension development guide](/dev/extension-development-guide).
 
 ## License
 

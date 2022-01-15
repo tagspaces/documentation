@@ -17,7 +17,9 @@ The most common way of presenting files in a folder is in grid and list views. B
 
 ![screenshot of the default perspective of the app](/media/default-perspective-grid-view.png)
 
-> **Hint:** The violet colored rectangle shows the area in TagSpaces which is typically occupied by the perspectives.
+:::info
+The violet colored rectangle shows the area in TagSpaces which is typically occupied by the perspectives.
+:::
 
 ## Main Toolbar
 
@@ -45,9 +47,13 @@ The toolbar of the perspective is located in the top part of the perspective's, 
   - **File Ext.** - will sort the files alphabetically by their file extension.
   - **Random** - will sort the files in a random way. This could be useful if TagSpaces is used as music player and you want to hear audio tracks in a random order.
 
-> **Hint:** Clicking a second time on same sorting option will reverse the sort order. By sorting option **random** this will lead to a new randomization of the file order.
+:::tip
+Clicking a second time on same sorting option will reverse the sort order. By sorting option **random** this will lead to a new randomization of the file order.
+:::
 
-> **Hint:** Sort order is preserved after navigation to a new folder.
+:::info
+Sort order is preserved after navigation to a new folder.
+:::
 
 - **(8) More options** - will open a sub menu where you can choose among the following options:
   - **Show/Hide Subfolders** - Toggles the visibility of folders in the perspective
@@ -59,7 +65,9 @@ The toolbar of the perspective is located in the top part of the perspective's, 
   - **Single click opens file externally** - Single click or tap on a file will open it in the default external application for your operating system.
   - **Single click selects only** - Single click or tab on a file will just select it, without opening it.
 
-> **Hint:** Double click on a file will always open it in the preview area. Double click on a folder will navigate to this folder.
+:::info
+Double click on a file will always open it in the preview area. Double click on a folder will navigate to this folder.
+:::
 
 <!-- * **Show sub folders content** - If you don't care about folder structure, or do not know where in the hierarchy you would find a necessary file, you can turn this option on, to show every file from all subfolders recursively, starting from your current directory. The list will display all files in order, without any indication of their actual locations. This option will allow you to work with multiple files across a folder hierarchy at once.
 * **Export to CSV** will create a **Comma Separated Variable** from all displayed files, be it from the current folder, or from the full folder hierarchy, and save it n a folder of your choice. The generated CSV contains `path,title,size,tag1,tag2,tag3,...`, where each new line represents a separate file.
@@ -75,7 +83,9 @@ The following screenshot shows the grid view in its **compact mode**. The thumbn
 The next screenshot shows the grid view in its **large mode**. The thumbnails here are in the **contain** mode, which displays the whole thumbnail in the thumbnail area of the card, eventually causing transparent bars to appear on the left and right side of the thumb image.
 ![](/media/grid-view-large-mode.png)
 
-> **Hint:** Switching the thumbnail mode is triggered by the **Toggle thumbnails mode** menu item of the more options menu from the [perspective's toolbar](#main-toolbar).
+:::info
+Switching the thumbnail mode is triggered by the **Toggle thumbnails mode** menu item of the more options menu from the [perspective's toolbar](#main-toolbar).
+:::
 
 ### File Card
 
@@ -83,9 +93,7 @@ Each card on the grid can represent the following information. In area **(1)** t
 
 ![](/media/grid-perspective-file-card.png)
 
-> Hint: The tags are dimmed on the cards by default, which might render them unreadable, when there is a file preview available. To improve readability, hover your mouse over the extension, or the tags to make them more opaque.
-
-> **<ProFeature /> -** Defining descriptions for file is feature available in the Pro and the Enterprise versions of the app.
+<ProFeature /> - Defining descriptions for file is feature available in the Pro and the Enterprise versions of the app.
 
 ### Folder Card
 
@@ -93,7 +101,7 @@ The folder card show basically similar information as the file card. In area **(
 
 ![](/media/grid-perspective-folder-card.png)
 
-> **<ProFeature /> -** Defining descriptions and thumbnails for folders are features available in the Pro and the Enterprise versions of the app.
+<ProFeature /> - Defining descriptions and thumbnails for folders are features available in the Pro and the Enterprise versions of the app.
 
 ## List view
 
@@ -165,7 +173,9 @@ The folder context menu can be accessed by right-clicking on a folder the perspe
 
 An alternative way to move files into another folder is to drag it icon onto a folder on the **Folder navigation** area on the left panel. When the folder lights up with a greenish hue, just release the dragged item, and the file will be immediately moved into that folder.
 
-> **Hint:** You can access sub folders of any folder displayed in the hierarchy, by clicking the black folder icon next to its name.
+:::tip
+You can access sub folders of any folder displayed in the hierarchy, by clicking the folder icon next to its name.
+:::
 
 ![](/media/drop-files-to-folder.png)
 
@@ -183,4 +193,6 @@ In the grid and list perspectives, color coded file extensions are supported, al
 
 ![color codes file extensions in the list perspective](/media/color-coded-file-extensions-list.png)
 
-> **Hint:** The colors of the supported file types can configured in the [**File Types**](/ui/settings#file-types) of application settings dialog.
+:::info
+The colors of the supported file types can configured in the [**File Types**](/ui/settings/#file-types) of application settings dialog.
+:::

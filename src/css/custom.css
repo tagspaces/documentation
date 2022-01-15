@@ -47,6 +47,7 @@ article img {
   display: block;
   margin-top: 25px;
   margin-bottom: 25px;
+  border-radius: 7px;
 }
 
 h1 {

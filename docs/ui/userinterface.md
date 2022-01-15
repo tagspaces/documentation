@@ -29,7 +29,7 @@ New in version 3 of the app is the vertical toolbar located in the most left par
 
 ![Area on the left of the app](/media/navigation-v3.png)
 
-> **Hint:** Clicking a second time on the icons for the location manager, the tag library or the search area will close the whole area contain these sections. This could be useful if you want to have more space for file browsing or previewing. -->
+> Clicking a second time on the icons for the location manager, the tag library or the search area will close the whole area contain these sections. This could be useful if you want to have more space for file browsing or previewing. -->
 
 ## Browsing Area
 
@@ -39,7 +39,9 @@ The file browsing area normally takes up he majority of the user interface. This
 
 In the top left corner of the browsing area is placed a button with a briefcase icon **(1)** which open a dropdown showing a list of all [locations](/ui/locations.md). From this dropdown you can quickly switch to another location.
 
-> **Hint <ProFeature /> :** If you are currently using a cloud based location, the the icon of the button for changing the location **(1)** will be a cloud, in other cases the icon will be the briefcase.
+:::tip
+<ProFeature /> If you are currently using a cloud based location, the the icon of the button for changing the location **(1)** will be a cloud, in other cases the icon will be the briefcase.
+:::
 
 The number above **(2)** shows the count of the files and folders in the current folder. If the file browsing area shows search results, then this number will represent the count of the found items.
 
@@ -93,7 +95,9 @@ Clicking the button with the **i** icon will open and respectively close the fil
 - **(6) Path** - Shows the complete path of the file. Clicking on the **MOVE** button, will open a dialog, where you can move or copy the existing file to a new path.
 - **(7) Thumbnail** <ProFeature /> - This area shows the current thumbnail of the file. Clicking on the **CHANGE THUMBNAIL** button will open a dialog, where can choose a new thumbnail for the file. The application supports adding a custom thumbnail to every file type.
 
-> Hint: The description field of files and folders supports basic [**markdown syntax**](https://en.wikipedia.org/wiki/Markdown).
+:::tip
+The description field of files and folders supports basic [**markdown syntax**](https://en.wikipedia.org/wiki/Markdown).
+:::
 
 ## Folder properties area
 

@@ -38,7 +38,9 @@ Tags are organized into **tag groups**, which are basically categories for tags 
 - **Ratings** are predefined star-rating tags with an identifiable yellow background. As the `*` (asterix) character is considered a 'wildcard' on most file systems (meaning you cannot use it in filenames), giving a star rating as a filename-based tag would be somewhat difficult. With the yellow "rating" tags this problem can be easily solved, so your files can be organized in a rating-based system.
 - **Collected Tags** is a group for all other tags you have given to your files or folders that do not belong to any other group. This tag group is created automatically after the option for collecting tags is activated in tab _General_ of the application settings.
 
-> **Hint:** All the tag groups except the smart tag are optional and can be removed from the tag library if they are note needed.
+:::tip
+All the tag groups except the smart tag are optional and can be removed from the tag library if they are note needed.
+:::
 
 ## Tag library context menu
 
@@ -69,7 +71,9 @@ Tag groups have their own context menu, accessible by clicking the three dot ico
 
 ![the context menu ot tag group](/media/tag-group-context-menu.png)
 
-> **Hint:** Learn more about how to change the default tag background and text colors in the [settings documentation](#settings) section below.
+:::info
+Learn more about how to change the default tag background and text colors in the [settings](/ui/settings/#general).
+:::
 
 ## Tag context menu
 
@@ -87,7 +91,7 @@ Accessing the tag context menu from the browsing area in the default perspective
 - **Edit tag** - will let you change the tag's name
 - **Remove tag** - will remove the tag from the file or the folder on which the tags is assigned.
 
-<!-- **Hint:** You can add key-bindings to any tag. Key bindings are essentially a key combination that allows you to quickly mark a file with the tag in question. just select the file, press the key combination, and the file will be marked.
+<!-- > You can add key-bindings to any tag. Key bindings are essentially a key combination that allows you to quickly mark a file with the tag in question. just select the file, press the key combination, and the file will be marked.
 
 Key-bindings can be either key combinations, like e.g. `ctrl+a`, which mean you should press these keys simultaneously; or repeated keystrokes, like `e t`, which means you should press these keys in quick succession. Tags that have key bindings will be marked with a little keyboard icon (⌨) in th tag library.
 
@@ -95,7 +99,9 @@ When accessing a tag's context menu from the **file browsing area** (the main ar
 
 ![](/media/tag-operations-dialog-2.png) -->
 
-> **Hint:** Editing the name of a tag deleting one from the library tags will only affect the library itself. If the same tag had had already been applied to a file, the tag on that file will remain intact. But if you change the color of a tag in the library, it will be reflected on the files marked with that tag as well. This is because of the way TagSpaces handles tags, that essentially become an organic part of the filename. To learn more about how tagging works, please refer to [File tagging based on filename](/tagging.md#file-tagging-based-on-filename) under the Tagging section.
+:::info
+Editing the name of a tag deleting one from the library tags will only affect the library itself. If the same tag had had already been applied to a file, the tag on that file will remain intact. But if you change the color of a tag in the library, it will be reflected on the files marked with that tag as well. This is because of the way TagSpaces handles tags, that essentially become an organic part of the filename. To learn more about how tagging works, please refer to [File tagging based on filename](/tagging.md#file-tagging-based-on-filenames) under the Tagging section.
+:::
 
 ## Location tags
 

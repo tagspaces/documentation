@@ -148,8 +148,8 @@ export function CenteredImage(props) {
         alt={caption}
         src={src}
         loading="lazy"
-        style={{ width: "100%", maxWidth: maxWidth }}
-        className="img-responsive img-rounded center-block"
+        style={{ width: "100%", maxWidth: maxWidth, borderRadius: 7 }}
+        className="img-responsive center-block"
       />
       {showCaption && (
         <figcaption style={{ fontSize: "small" }}>{caption}</figcaption>
@@ -182,7 +182,7 @@ export function FullScreenImage(props) {
         loading="lazy"
         src={src}
         style={{ width: "100%", maxWidth, marginTop: 30 }}
-        className="img-shadow img-rounded"
+        className="img-shadow"
       />
       {showCaption && (
         <figcaption style={{ fontSize: "small" }}>{caption}</figcaption>
@@ -203,7 +203,7 @@ export function FullScreenImage(props) {
           width: "100%",
           maxWidth,
         }}
-        className="img-shadow img-rounded"
+        className="img-shadow"
         alt={caption}
       />
     </div>
@@ -268,7 +268,7 @@ export function FullScreenImage(props) {
           <img
             // title="Click to close"
             src={src}
-            className="img-rounded"
+            // className="img-rounded"
             style={{
               maxHeight: "90%",
               maxWidth: "90%",
@@ -300,7 +300,7 @@ export function CenteredVideo(props) {
         autoPlay={autoPlay}
         loop
         controls
-        className="img-responsive center-block img-shadow img-rounded"
+        className="img-responsive center-block img-shadow"
         style={{ width: "100%", maxWidth }}
       ></video>
       {showCaption && (
