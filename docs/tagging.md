@@ -167,6 +167,12 @@ Geo Tagging can be use to add geo coordinates as a tag to any kind of files. It 
 
 <!-- The geo tag is a special kind of smart tag, available in TaSpaces **PRO**, that allows tagging files with precise geolocation coordinates. When You drag the tag "geo" on a file, the **Edit tag** popup window with the Geo Location tab will open, showing a map from OpenStreetmap. You can drop a pin anywhere, and move it around, it automatically becomes a tag in the format of `latitude+longitude`, e.g. `47.2792290+18.9843750` This tag will then be applied to the file and treated as a geo-smarttag by TagSpaces -->
 
+<br />
+<br />
+In geo tagging dialog you can enter the latitude and longitude directly without the need of the map. To enable this you have to click on the advanced button in the dialog as shown in the following screenshot.
+
+![Enter latitude and longitude as geo tags](/media/geo-tagging-lat-lon.png)
+
 ### Editing smart tags
 
 <ProFeature />

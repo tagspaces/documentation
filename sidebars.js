@@ -33,11 +33,6 @@ module.exports = {
         label: "Chrome Extension",
         href: "/installation#installing-the-chrome-browser-extension",
       },
-      // {
-      //   type: "link",
-      //   label: "TagSpaces Pro",
-      //   href: "/installation#installing-tagspaces-pro",
-      // },
       {
         type: "link",
         label: "Portable mode",
@@ -50,8 +45,8 @@ module.exports = {
       "ui/locations",
       {
         type: "link",
-        label: "S3 Locations",
-        href: "/ui/locations/#cloud-locations",
+        label: "Object storage Locations (S3)",
+        href: "/ui/locations/#object-storage-locations",
       },
       "ui/taglibrary",
       // "ui/userinterface#browsing-area)
@@ -99,12 +94,12 @@ module.exports = {
       {
         type: "link",
         label: "Custom timestamp tagging",
-        href: "/tagging/#custom-timestamp-tagging-",
+        href: "/tagging/#custom-timestamp-tagging",
       },
       {
         type: "link",
         label: "Geo-tagging",
-        href: "/tagging/#geo-tagging-",
+        href: "/tagging/#geo-tagging",
       },
     ],
     "Search Functionality": [
@@ -142,9 +137,8 @@ module.exports = {
       "perspectives/mapique",
       "perspectives/kanban",
       "perspectives/folderviz",
-      // "perspectives/treeviz",
     ],
-    "View and Print Files": [
+    "Preview and Print Files": [
       "viewing-files",
       {
         type: "link",
@@ -153,7 +147,7 @@ module.exports = {
       },
       {
         type: "link",
-        label: "File Printing",
+        label: "Print files",
         href: "/viewing-files/#printing-files",
       },
       "extensions/media-player",
@@ -186,11 +180,6 @@ module.exports = {
     "Share and Link Files": ["sharing", "linking"],
     Settings: [
       "ui/settings",
-      // {
-      //   type: "link",
-      //   label: "Access the settings",
-      //   href: "/ui/settings/",
-      // },
       {
         type: "link",
         label: "General",
@@ -214,11 +203,6 @@ module.exports = {
     ],
     "Advanced Functionalities": [
       "annotations",
-      // {
-      //   type: "link",
-      //   label: "File & Folder Descriptions",
-      //   href: "/annotations",
-      // },
       {
         type: "link",
         label: "Custom Folder Color",

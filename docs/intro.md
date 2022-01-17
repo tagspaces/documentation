@@ -1,6 +1,6 @@
 ---
 slug: /
-title: TagSpaces Intro
+title: What is TagSpaces
 ---
 
 Welcome to the documentation of the TagSpaces products.
@@ -56,17 +56,19 @@ TagSpaces is an open source, cross-platform, no backend, no login, file manager,
 
 ## Videos
 
-The short introductory video below shows TagSpaces in action:
+This short introductory video shows TagSpaces in action:
 
-<iframe width="100%" height="500" src="https://www.youtube-nocookie.com/embed/KUO1zvavYMw?rel=0" frameBorder="0" allowFullScreen></iframe>
+<iframe width="100%" height="500" src="https://www.youtube-nocookie.com/embed/Xjwxq4c0RBQ?rel=0" frameBorder="0" allowFullScreen></iframe>
 
-Check out the [TagSpaces YouTube channel](https://www.youtube.com/channel/UCzfSaeg-7mpt96UI97zwbfQ) for more TagSpaces related videos.
+### Youtube channel
+
+We have [YouTube channel](https://www.youtube.com/channel/UCzfSaeg-7mpt96UI97zwbfQ) where publish videos related to the application.
 
 ## Technology Stack
 
-Frontend based on:
+Front-end of the application is based on:
 
-- JavaScript / HTML / CSS
+- JavaScript / Typescript / HTML / CSS
 - React / Redux / [Material UI](https://material-ui.com/)
 
 Native APIs e.g. for file access are based accordingly:
@@ -75,6 +77,8 @@ Native APIs e.g. for file access are based accordingly:
 - Mobile versions for Android based on [Cordova](https://cordova.apache.org/)
 - Web versions for managing files in object storages based on [AWS SDK for JavaScript](https://aws.amazon.com/sdk-for-javascript/)
 
+---
+
 :::caution
-This documentation is a <b>work in progress</b>.
+This documentation is a **work in progress**.
 :::

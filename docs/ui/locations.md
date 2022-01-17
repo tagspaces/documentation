@@ -17,7 +17,7 @@ Clicking second time on a location name, will trigger the loading of the sub dir
 
 ![Location manager](/media/location-manager.png)
 
-The location with the cloud icon (6) in front of its name is located in the AWS S3 compatible cloud storage. See [cloud locations](#cloud-locations) for more details.
+The location with the cloud icon (6) in front of its name is located in the AWS S3 compatible cloud storage. See [object storage locations](#object-storage-locations) for more details.
 
 The location with the light green background color (4) is the **currently opened location**. The 3-dot button located on the most right part of every location in the location manager will open the **context menu** for this location. This menu contains the following menu entries:
 
@@ -62,11 +62,11 @@ The extended dialog will have in addition the following properties:
 - _Switch to manual index creation with persisted search index_ <ProFeature /> - disables the automatic indexing of a location on its opening. The application will try to open a previously created index located in a file _tsi.json_ from the _.ts_ folder of the location. This is useful on locations with many files, where the content does not change very often.
 - _Open this location in read-only mode_ <ProFeature /> - switches the interface of TagSpaces to read-only mode
 
-## Cloud Locations
+## Object Storage Locations
 
 <ProFeature />
 
-These location are pointing to AWS S3 compatible stores (also known as buckets) located in the Internet.
+With this feature TagSpaces Pro can support object storage offered by different Cloud providers as locations. So you can connect the so called buckets from [AWS S3](https://aws.amazon.com/s3/), [Wasabi](https://www.wasabi.com/) or [Minio](https://min.io/) infrastructure. By doing so you get a fully functional file organizer, browser and navigator for this bucket, directly in TagSpaces. You do not have to download or sync the files from there in order to preview, edit or annotate them.
 
 ![Edit properties of a cloud location](/media/edit-cloud-location-dialog.png)
 
@@ -83,10 +83,6 @@ In addition to the regular locations, the cloud locations have the following pro
 :::
 
 In our tutorial section you can find a [complete manual](/tutorials/s3-bucket-locations.md) on how to create a new AWS S3 bucket and connect it as location in TagSpaces.
-
-## Object storages as locations
-
-With this feature TagSpaces PRO is going into direction of supporting the Cloud as file storage. In general it enables you to creating a location pointing to a remote object storages or buckets on [AWS S3](https://aws.amazon.com/s3/), [DigitalOcean Spaces](https://www.digitalocean.com/products/spaces/) or [Minio](https://min.io/) infrastructure. By doing this you get a fully functional file organizer, browser and navigator for this bucket, directly in TagSpaces. You don't have to download separately and eventually to upload them back in order to preview, edit or annotate them.
 
 You can recognize object storage location by the cloud icon in front of their name, as seen in the next screenshot.
 
@@ -126,9 +122,9 @@ If your bucket contains many files and the initial opening with indexing takes a
     showCaption
   />
 
-## Advanced Features
+## Advanced Location Features
 
-### Monitor for changes in locations
+### Monitor for changes
 
 This features is useful, when you have locations placed on a network drive or pointing to a folder synced with for example Dropbox, where changes to these folders happens in background while TagSpaces is running. This can happen if you work collaboratively with someone on a network or your Dropbox syncs files from other devices. In such cases TagSpaces monitors the folder pointed by the location with all its sub-folders for changes, such as **file creations**, **deletions** or **renames** and reflects these changes in the user interface of the app.
 
@@ -170,13 +166,7 @@ In the content menu of every tag group in the PRO version, there is an entry cal
     showCaption
   />
 
-### Custom location IDs
-
-Work in progress
-
-### Export and Import location's configuration
-
-<ProFeature />
+### Export and import location configuration
 
 <VideoYT
 youtubeId="LmjUM1BS-wQ"
@@ -184,3 +174,7 @@ title="Using file and folder linking functionality in TagSpaces"
 posterUrl="/media/videoposters/import-export-locations.jpg"
 height={550}
 />
+
+### Custom location IDs
+
+Work in progress

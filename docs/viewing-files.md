@@ -2,8 +2,6 @@
 title: Preview Files
 ---
 
-## File preview
-
 The application supports previewing of many file types without the need of external viewer. It comes with the following viewer extensions:
 
 - [Media Player](extensions/media-player.md)

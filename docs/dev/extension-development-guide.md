@@ -2,6 +2,10 @@
 title: Extension development guide
 ---
 
+:::caution
+This guide is outdated, please use it with caution.
+:::
+
 This is an initial version of a guide intended to clarify the process of extension development for TagSpaces.
 
 ## Prerequisites

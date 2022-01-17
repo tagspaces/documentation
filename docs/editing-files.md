@@ -1,6 +1,6 @@
 # Edit Files
 
-Besides opening and viewing files, TagSpaces can also edit specific file formats. Just like [File Browser Perspectives](browsing-files.md/#perspectives-overview), and [File Preview extensions](viewing-files.md/#file-previewing), the different types of **File Editors** are also **modular extensions**, making TagSpaces' file editing capabilities extendable. Currently three editor extensions ship bundled with the application:
+Besides opening and viewing files, TagSpaces can also edit specific file formats. Just like [File Browser Perspectives](browsing-files.md/#perspectives-overview), and [File Preview extensions](viewing-files.md/), the different types of **File Editors** are also **modular extensions**, making TagSpaces' file editing capabilities extendable. Currently three editor extensions ship bundled with the application:
 
 - [**HTML Editor**](/extensions/html-editor.md) - `HTML` files serve a specific purpose in TagSpaces. They are treated as RichText documents, that can not only be previewed, but visually edited in a full-featured **WYSIWYG editor**.
 

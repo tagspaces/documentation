@@ -5,6 +5,7 @@ title: Annotating files and folders
 import { ProFeature, CenteredImage } from '@site/src/components/CommonBlocks';
 
 <ProFeature />
+
 In addition to the tagging, in the TagSpaces PRO you have the ability to annotate every file or folder with a description. This is useful in particular if you want to add some more textual content to given a file or folder. This description information is managed in the properties area of every entry, and can be opened by clicking on the i-button, marked with **(1)** on the following screenshot.
 
 <CenteredImage

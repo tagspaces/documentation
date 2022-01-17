@@ -40,7 +40,7 @@ The file browsing area normally takes up he majority of the user interface. This
 In the top left corner of the browsing area is placed a button with a briefcase icon **(1)** which open a dropdown showing a list of all [locations](/ui/locations.md). From this dropdown you can quickly switch to another location.
 
 :::tip
-<ProFeature /> If you are currently using a cloud based location, the the icon of the button for changing the location **(1)** will be a cloud, in other cases the icon will be the briefcase.
+<ProFeature /> If you are currently using a cloud based location, the icon of the button for changing the location (1) will be a cloud, in other cases the icon will be the briefcase.
 :::
 
 The number above **(2)** shows the count of the files and folders in the current folder. If the file browsing area shows search results, then this number will represent the count of the found items.
@@ -51,7 +51,6 @@ The area above number **(3)** shows the name of the current folder, its parent f
 
 Clicking on the name of the current folder or on the three dot icon above **(4)** will open the context menu for the current directory, which contains the following menu items:
 
-- **Open Parent Directory** - Open the parent folder in the browsing area, only if the parent folder is located inside the current location
 - **Reload Directory** - Reloads the content of the current folder
 - **Rename Directory** - Opens the folder rename dialog
 - **Delete Directory** - Open a dialog where you can confirm the deletion of the folder
@@ -59,8 +58,12 @@ Clicking on the name of the current folder or on the three dot icon above **(4)*
 - **New Subdirectory** - Opens the folder create dialog, where you can enter the name of the new sub folder
 - **New File / Note** - Open the dialog for [creating new](/editing-files.md#creating-files) files / notes
 - **Add Existing File** - Opens a file choose where you can select a file from your local files system, which will be added to your current folder in TagSpaces.
-- **Extract Content** - Starts a data extraction process, where you can retrieve some additional meta information from the files in the current folder.
-- **Directory Properties** - Opens the folder properties area
+- **Import macOS tags** - This menu item is visible only on macOS, selecting it will start the attaching of native macOS tags as TagSpaces tags.
+- **Default Perspective** - will open the current folder in the default [Grid/List](/perspectives/grid) perspective
+- **Gallery Perspective** - will open the current folder in the [Gallery](/perspectives/gallery) perspective
+- **Mapique Perspective** - will open the current folder in the [Mapique](/perspectives/mapique) perspective
+- **Kanban Perspective** - will open the current folder in the [Kanban](/perspectives/kanban) perspective
+- **Directory Properties** - Opens the [properties](/ui/userinterface#folder-properties-area) of the current folder
 
 ## Preview area
 
