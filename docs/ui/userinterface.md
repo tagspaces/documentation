@@ -33,23 +33,27 @@ New in version 3 of the app is the vertical toolbar located in the most left par
 
 ## Browsing Area
 
-The file browsing area normally takes up he majority of the user interface. This is where all files from the currently active folder are displayed, either as a list, grid, or folder tree, depending on the active [**perspective**](browsing-files.md#Perspectives). To learn more about the all file browsing features, navigate to the [Browsing Section](/browsing-files).
+The file browsing area normally takes up he majority of the user interface. This is where all files from the currently active folder are displayed, either as a list, grid, or folder tree, depending on the active [**perspective**](browsing-files.md#Perspectives). To learn more about the all file browsing features, navigate to the [perspective section](/browsing-files).
 
 ![Screenshot showing the file browsing area](/media/browsing-area.png)
 
-In the top left corner of the browsing area is placed a button with a briefcase icon **(1)** which open a dropdown showing a list of all [locations](/ui/locations.md). From this dropdown you can quickly switch to another location.
+The button **(1)** placed in the top left part of the browsing area toggles the left area of the app containing the location manager, the tag library, settings and other important parts of the app.
+
+**(2)** will open the [search](/search) input field.
+
+**(3)** opens a dropdown showing a list of all currently configured [locations](/ui/locations.md). From this dropdown you can quickly switch to another location.
 
 :::tip
-<ProFeature /> If you are currently using a cloud based location, the icon of the button for changing the location (1) will be a cloud, in other cases the icon will be the briefcase.
+<ProFeature /> If you are in a cloud based location, the icon of the button for changing the location will be a <b>cloud</b>, in other cases the icon will be the <b>briefcase</b>.
 :::
 
-The number above **(2)** shows the count of the files and folders in the current folder. If the file browsing area shows search results, then this number will represent the count of the found items.
+The area above number **(4)** shows the name of the current folder and the names of the parent folders in reversed order. The folder names are separated by slashes (/). The parent folders are shown only if the these folders are in the current location. Clicking on the name parent folders will navigate to them.
 
-The area above number **(3)** shows the name of the current folder, its parent folder name and name of the parent's parent folder in reversed order. The folder names are separated by slashes (/). The parent folders are shown only if the these folders are in the current location. Clicking on the name parent folders will navigate to them.
+Clicking the button for current folder **(5)** will open folder context menu, which is described in the next section.
 
 ### Folder context menu
 
-Clicking on the name of the current folder or on the three dot icon above **(4)** will open the context menu for the current directory, which contains the following menu items:
+The context menu for the current folder contains the following menu items:
 
 - **Reload Directory** - Reloads the content of the current folder
 - **Rename Directory** - Opens the folder rename dialog

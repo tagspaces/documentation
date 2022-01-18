@@ -3,7 +3,7 @@ title: Grid Perspective (default)
 sidebar_label: Grid Perspective
 ---
 
-import { ProFeature } from '@site/src/components/CommonBlocks';
+import { ProFeature, CenteredImage } from '@site/src/components/CommonBlocks';
 
 This perspective is optimized for general browsing through file and folder structures while supporting some common file management operations such as:
 
@@ -31,7 +31,7 @@ The toolbar of the perspective is located in the top part of the perspective's, 
 
 - **(3) Switches the views** - toggles between the [grid](#grid-view) and [list](#list-view) views of this perspective.
 
-- **(4) Add/Remove tags** will allow you to manage tags on selected files. (This options is only available when there is an active selection, and works on multiple files simultaneously.) To learn more about how tagging works, refer to the [Tagging -> Tagging using context menus](/tagging.md/#tagging-using-context-menus) section.
+- **(4) Add/Remove tags** will allow you to manage tags on selected files. (This options is only available when there is an active selection, and works on multiple files simultaneously.) To learn more about how tagging works, refer to the [Tagging -> Tagging using context menus](/tagging.md/#tag-operations-on-many-entries) section.
 
 - **(5) Copy/move files** will allow you to copy or move the currently selected files. This option is only available when there is an active selection, and works on multiple files simultaneously. Selecting this option will present you with the **Move or Copy File(s)** dialog. After specifying the target directory (which can be anywhere on the file system, even outside your connected locations), you can choose to move or copy the file(s) by pressing the corresponding button.
 
@@ -112,17 +112,11 @@ The list view is a classic way to represent list of items such folders and files
 The following information can be found on every row representing a file on this view:
 
 - **File extension** - A color coded icon, representing the file type. Scroll down to [Color coded file extensions](#color-coded-file-extensions) to learn more about this feature.
-
 - **Folder icon** - On rows representing folders instead of the file extension a folder icon is displayed.
-
 - **Title** - The file's title is the filename without the extension or any tag information.
-
 - **Description** - If the file/folder have a description it will be displayed also here.
-
 - **Tags** - All the tags that are applied to the file will appear here, with the right background and font color. To learn more about tag colors, refer to the [Tag Library](/ui/taglibrary) section.
-
 - **Size** - This is the file size in a human readable format.
-
 - **Date modified** - The time the file had been last modified.
 
 ### Selecting files
@@ -137,19 +131,17 @@ The file context menu can be accessed by right-clicking a file in either perspec
 
 ![the context menu of a file](/media/file-context-menu.png)
 
-- **Open file** - will split the main area of TagSpaces into two, and open the file in the right pane. TagSpaces offers viewers for various file types, which can be opened inside the application. To learn more bout supported types, refer to the [Viewing Files](/viewing-files.md) section.
-
+- **Open File** - will split the main area of TagSpaces into two, and open the file in the right pane. TagSpaces offers viewers for various file types, which can be opened inside the application. To learn more bout supported types, refer to the [Viewing Files](/viewing-files.md) section.
+- **Open Parent Folder** - this feature is especially useful if the perspective shows search result from different folders, so using will open the parent folder of the currently selected file.
 - **Open File Natively** - will open the file in whatever application is associated with the file type in your operating system.
-
 - **Show in File Manager** - will show this file in the default file manager of your operating system
-
 - **Add / Remove Tags** - will open a dialog where you can add or remove multiple tag to this file.
-
 - **Rename File** - will open the file rename dialog, where you can change the name of the file.
-
+- **Duplicate File** - use this feature to create a copy of the current file. The new file can be easily separated from the original, since it will have the following tags: "copy" and e.g. "20210831T1230" representing the date and time of the duplication.
 - **Move / Copy File** - will open a dialog, where you can choose where this file should be moved or copied
-
+- **Use as thumbnail for the current folder** - will set the thumbnail of the file as thumbnail for the current folder
 - **Delete** - will open a dialog, where you can confirm the deletion the file
+- **Copy Sharing Link** - will copy a link for [internal sharing](/sharing) pointing to this file in the clipboard
 
 ## Folder context menu
 
@@ -158,15 +150,11 @@ The folder context menu can be accessed by right-clicking on a folder the perspe
 ![The context menu of a folder](/media/folder-context-menu.png)
 
 - **Open Directory** - will navigate to the selected directory.
-
 - **Rename directory** - will open the directory rename dialog, where you can change the name of the folder.
-
 - **Delete directory** - will open a dialog, where you can confirm the deletion the directory
-
 - **Show in File Manager** - will open this directory in the default file manager of your operating system
-
-- **Extract Content** - will start the extraction of special data such as _geo-locations_ from the files in this folder
-
+- **Use as thumbnail for parent folder** - will set the thumbnail of the folder as thumbnail for the parent folder
+- **Copy Sharing Link** - will copy a link for [internal sharing](/sharing) pointing to this folder in the clipboard
 - **Directory Properties** - will open the properties of this folder in the preview area (most right panel) of the application
 
 ### Drag to move within TagSpaces
@@ -186,6 +174,31 @@ Besides dragging files from the **File Browser Area** to a sub folder, TagSpaces
 To do this, just grab a file icon with your mouse, and drag it to TagSpaces' application.
 
 ![Importing files with drag and drop](/media/drag-file-into-tagspaces.png)
+
+## Export folder content and search results as CSV
+
+<ProFeature />
+
+Here you have the ability to export the file and folder list of the current folder or from the current search results as CSV file. This will allow you to process the information collected with TagSpaces in other tools. The export can be started by clicking on the button from the main toolbar of the default perspective, marked on the next screenshot.
+
+<CenteredImage
+    caption="Starting the CSV export from the toolbar of the perspective"
+    src="/media/csv-export.png"
+    showCaption
+  />
+
+The exported file contains the following columns:
+
+- **name** - name of the entry
+- **is file** - true if the entry is a file, false if it is folder
+- **file extension** - only for files
+- **tags** - a semicolon separated list of tags
+- **size** - in bytes
+- **last modified date** - ISO8601 compatible timestamp of the last modification
+- **full path** - the full path to the current entry
+- **description** - the entry description in markdown format
+
+You can see how such exported CSV file looks like in the screenshot of the next section.
 
 ## Color coded file extensions
 

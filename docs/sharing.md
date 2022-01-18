@@ -26,7 +26,9 @@ Once copied to the clipboard with the **COPY**-button, the links can be shared f
 
 ## File sharing for downloading
 
-<ProFeature /> The second kind of sharing links are called "Links for downloading" and are available only for files located on object storages such AWS S3 or MinIO servers. The area responsible for this kind of links is located on the right part of the sharing area. It consists of three elements as seen in the screenshot before the previous one:
+<ProFeature />
+
+The second kind of sharing links are called "Links for downloading" and are available only for files located on object storages such AWS S3 or MinIO servers. The area responsible for this kind of links is located on the right part of the sharing area. It consists of three elements as seen in the screenshot before the previous one:
 
 - A dropdown where you can select the adjust the **validity duration** of the link. Available options are: 15 minutes, 1 hour, 1 day, 3 days and 1 week
 - A **Generate & Copy**-button which will generate the link and copy it to the clipboard

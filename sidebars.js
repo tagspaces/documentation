@@ -42,64 +42,102 @@ module.exports = {
     ],
     "Get Started": [
       "ui/userinterface",
+      {
+        type: "link",
+        label: "File browsing area",
+        href: "/ui/userinterface/#browsing-area",
+      },
+      {
+        type: "link",
+        label: "File preview area",
+        href: "/ui/userinterface/#preview-area",
+      },
+      {
+        type: "link",
+        label: "File properties",
+        href: "/ui/userinterface/#file-properties-area",
+      },
+      {
+        type: "link",
+        label: "Folder properties",
+        href: "/ui/userinterface/#folder-properties-area",
+      },
+      {
+        type: "link",
+        label: "Other features",
+        href: "/ui/userinterface/#dark-mode",
+      },
+      // "ui/userinterface/#dark-mode",
+      // "ui/userinterface/#zoomable-user-interface",
+      // "ui/userinterface/#full-screen-mode",
+      "ui/keybindings",
+      "ui/i18n",
+    ],
+    Locations: [
       "ui/locations",
       {
         type: "link",
-        label: "Object storage Locations (S3)",
+        label: "Local Locations",
+        href: "/ui/locations/#local-locations",
+      },
+      {
+        type: "link",
+        label: "Object Storage Locations (S3)",
         href: "/ui/locations/#object-storage-locations",
       },
-      "ui/taglibrary",
-      // "ui/userinterface#browsing-area)
-      // "ui/userinterface#preview-area)
-      // "ui/userinterface#file-properties-area)
-      // "ui/userinterface#folder-properties-area)
-      // "ui/userinterface#dark-mode)
-      // "ui/userinterface#zoomable-user-interface)
-      // "ui/userinterface#full-screen-mode)
-      "ui/keybindings",
-      "ui/i18n",
+      {
+        type: "link",
+        label: "Advanced Features",
+        href: "/ui/locations/#advanced-features",
+      },
     ],
     "Tag Files and Folders": [
       "tagging",
       {
         type: "link",
-        label: "File tagging based on filename",
+        label: "File tagging using filename",
         href: "/tagging/#file-tagging-based-on-filenames",
       },
       {
         type: "link",
-        label: "File tagging with sidecar file",
+        label: "File tagging using sidecar file",
         href: "/tagging/#file-tagging-with-sidecar-file",
       },
       {
         type: "link",
-        label: "Folder tagging with sidecar file",
+        label: "Folder tagging",
         href: "/tagging/#folder-tagging-with-sidecar-file",
       },
       {
         type: "link",
-        label: "Tagging using context menus",
-        href: "/tagging/#tagging-using-context-menus",
+        label: "Tagging operation on many entries",
+        href: "/tagging/#tag-operations-on-many-entries",
       },
       {
         type: "link",
         label: "Tagging with drag and drop",
         href: "/tagging/#tagging-with-drag-and-drop",
       },
+      "ui/taglibrary",
       {
         type: "link",
         label: "Smart tags",
-        href: "/tagging/#smart-tags",
+        href: "/ui/taglibrary/#smart-tags",
       },
       {
         type: "link",
-        label: "Custom timestamp tagging",
-        href: "/tagging/#custom-timestamp-tagging",
+        label: "Tagging with timestamps",
+        href: "/ui/taglibrary/#custom-timestamp-tagging",
       },
       {
         type: "link",
         label: "Geo-tagging",
-        href: "/tagging/#geo-tagging",
+        href: "/ui/taglibrary/#geo-tagging",
+      },
+      {
+        type: "link",
+        label: "Location tags",
+        href: "/ui/taglibrary/#location-tags",
       },
     ],
     "Search Functionality": [
@@ -126,8 +164,8 @@ module.exports = {
       },
       {
         type: "link",
-        label: "Saved Search Queries",
-        href: "/search/#saved-search-queries",
+        label: "Stored Search Queries",
+        href: "/search/#stored-search-queries",
       },
     ],
     "Browse Files in Perspectives": [

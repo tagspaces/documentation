@@ -2,6 +2,8 @@
 
 A TagSpaces extension allowing opening of RTF files.
 
+![screenshot of the RTF viewer](/media/extensions/rtf-viewer.png)
+
 ## Used libraries
 
 This extension thankfully relays on the following great libraries:

@@ -7,6 +7,8 @@ A TagSpaces extension allowing you to preview the content of spreadsheet files.
 - Previewing the content of the XLSX files
 - Previewing the content of the ODS files
 
+![screenshot of the spreadsheet viewer](/media/extensions/spreadsheet-viewer.png)
+
 ## Used libraries
 
 This extension thankfully relays on the following great project(s):

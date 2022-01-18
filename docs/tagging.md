@@ -2,7 +2,7 @@
 title: Organizing files and folders with tags
 ---
 
-import { ProFeature, CenteredImage } from '@site/src/components/CommonBlocks';
+import { ProFeature, CenteredImage, CenteredVideo } from '@site/src/components/CommonBlocks';
 
 ## Why tagging?
 
@@ -74,9 +74,11 @@ Tags added to folders in TagSpaces are save always in the co called sidecar file
 If you want to have the files located in the `.ts` folder synched with some cloud service such as Dropbox or Google Drive you have to enable the synching of hidden folders and files.
 :::
 
-## Tagging using context menus
+## Tag operations on many entries
 
-A context menu can be accessed by by right clicking a file or folder in the default perspective. From the context menu, select _Add / Remove Tags_.
+In order to add or remove tags on many files or folders you have to select them first. This can be done in the default perspective, by holding the CTRL/CMD key and clicking on the entries with the left mouse button. In the list view of the default perspective you can use checkboxes located in front of the rows.
+
+Once you are done with the selection you can right click on a selected and choose _Add / Remove Tags_ from the context menu which will appear. Alternatively you can click on the tag button from the toolbar of the default perspective. Both places are marked in the following screenshot.
 
 ![](/media/tagspaces-tagging-default-perspective.png)
 
@@ -89,6 +91,18 @@ The options you have here are:
 - **Clean all tags**, which will remove all tags form the selected files
 - **Remove tags** will remove the specified tags from the files
 - **Add tags** will add the specified tags to the selected files
+
+### Add many tags at once in the tagging dialog
+
+It is possible to add many tags at once, separated by commas, in the dialog for tagging multiple files.
+
+<CenteredVideo
+    caption="Tagging with many tags at once."
+    src="/media/videos/tagging-dialog-many-tags.mp4"
+    posterUrl="/media/videos/tagging-dialog-many-tags.jpg"
+    autoPlay={false}
+    showCaption
+  />
 
 ## Tagging in file and folder properties area
 
@@ -106,93 +120,6 @@ File and folder can be tagged also with drag and drop. Here is a list of the sup
 - Drag and drop can be used also in the tag library for moving tags from one tag group to another
 
 ![Dropping tag in the file properties area](/media/tagspaces-tagging-folder-dandd.png)
-
-## Priorities and ratings
-
-These special tags are useful for organizing files by either importance or quality. You can apply priorities `high`, `medium` and `low`, and start ratings from `1start` to `5star`. Star ratings are yellow by default, whereas priorities are colour coded to easily distinguish visually.
-
-![](/media/smart-tag-colours.png)
-
-<!-- Priority and star ratings all have predefined keyboard bindings assigned to then, to that using them becomes really straightforward and fast. Currently the following key-bindings apply:
-
-### Priorities:
-* **high** - `t h`
-* **medium** - `t m`
-* **low** - `t l`
-
-### Start ratings
-* **1star** - `t 1`
-* **2star** - `t 2`
-* **3star** - `t 3`
-* **4star** - `t 4`
-* **5star** - `t 5` -->
-
-Users can easily extend these tags: You can simply create a new tag and add it to e.g. the priority group, give it a name a colour and a key binding, and you are all set.
-
-## Smart tags
-
-Smart tags are one of the advanced features of TagSpaces. These tags can be either **date and time**, or **location based**, and offer convenient **dynamic tagging** , based on a range of criteria.
-
-![tag library general overview](/media/smart-tags-group.png)
-
-- **Date and time tags** are timestamps textual representations, such as _now_, _today_, _tomorrow_, etc. Applying one of these tags to a file will add a timestamp, corresponding to your choice of smart tag. Tagging a file with e.g. _now_ would apply the full timestamp down to the second, while tagging e.g. _month_ would tag it with a subset like `YYYYMM`. Smart tags have a distinguishing blue background, which they only retain in the tag library.
-- <ProFeature /> Applying a geo tag, opens up a dialog with an interactive map, where you can drop a pin. The geo-location (longitude and latitude coordinates), will be added to the selected file as a tag.
-
-These smart tags offer a quick and easy way to timestamp documents or files, with different levels of precision. Dragging or applying a smart tag to a file will create a tag based on the current time date. Currently the following tags and formats are available:
-
-- **now** - This tag will create a very precise timestamp (from current year, down to seconds) of the moment you have applied it. The format of the timestamp is `YYYMMDDThhmmss`, so `20220111T143022` will stay for 14:30:22 on the 11th of January 2022. The used format is compatible with the [ISO8601 standard](https://en.wikipedia.org/wiki/ISO_8601).
-- **today**, **tomorrow and **yesterday\*\* will apply a timestamp with the current, the next, or the previous day's date, in the format of `YYYYMMDD`, e.g. `20170314`.
-- **month** will create a timestamp of the current month, in the format of `YYYYMM`, e.g. `201703`
-- **year** only applies the current year, in the format of `YYYY`, e.g. `2017`
-
-:::info
-Every newly created file will automatically have a smart tag, equivalent to **now**.
-:::
-
-### Custom timestamp tagging
-
-<ProFeature />
-
-With the help of the `custom-date` smart tag, the user can add any date and time as a tag to any file or folder.
-
-<iframe width="100%" height="500" src="https://www.youtube-nocookie.com/embed/DVHioQhpyYM?rel=0" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
-
-### Geo tagging
-
-<ProFeature />
-
-Geo Tagging can be use to add geo coordinates as a tag to any kind of files. It is useful to connect your photos or other documents with a geo location. This can be used for planning you vacation or next trip. In order to use this feature you have to use the smart tag `geo-location`. When you apply it to a file, the dialog shown on following screenshot will appear. Here with the help of the [OpenStreetMap](https://www.openstreetmap.org) and you can select any location somewhere in the world. The geographic coordinates (latitude and longitude) of this location will be converted in the [plus codes](https://plus.codes/) format, which is a for codding geo coordinates with smaller amount of characters.
-
-<iframe width="100%" height="650" src="https://www.youtube-nocookie.com/embed/n4LsMP85qtc?rel=0&cc_load_policy=1&modestbranding=1" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
-
-<!-- The geo tag is a special kind of smart tag, available in TaSpaces **PRO**, that allows tagging files with precise geolocation coordinates. When You drag the tag "geo" on a file, the **Edit tag** popup window with the Geo Location tab will open, showing a map from OpenStreetmap. You can drop a pin anywhere, and move it around, it automatically becomes a tag in the format of `latitude+longitude`, e.g. `47.2792290+18.9843750` This tag will then be applied to the file and treated as a geo-smarttag by TagSpaces -->
-
-<br />
-<br />
-In geo tagging dialog you can enter the latitude and longitude directly without the need of the map. To enable this you have to click on the advanced button in the dialog as shown in the following screenshot.
-
-![Enter latitude and longitude as geo tags](/media/geo-tagging-lat-lon.png)
-
-### Editing smart tags
-
-<ProFeature />
-
-Smart tags, once applied, can be edited, or further refined be refined to include date ranges. Clicking on a tag, ans selecting _Edit Tag_ form the context menu
-
-![](/media/tagspaces-open-tag-contextmenu.png)
-
-will bring up the **Tag Properties** popup dialog. Depending on the type of the smart tag, the dialog looks differently. In the next screenshot the "editor" for the geo smart tags.
-
-![Editing a geo smart tag](/media/tagspaces-edit-geo-tag.png)
-
-### Date ranges as tags
-
-besides being able to easily modify date, or date/time tags on their respective tabs, you can also specify date ranges in the following formats:
-
-- **Year Ranges:** 2016-2018
-- **Month Ranges:** 201605-201701
-- **Date Ranges:** 20160531-20160603
-- **DateTime Ranges**: 20160529T124532-20160529T154500
 
 <!-- ## Tagging using keyboard shortcuts
 Another quick way to tag files is to set keyboard shortcuts to often-used tags. To specify a shortcut, click on a tag in the **Tag Library**, and select *Edit Tag* from the context menu

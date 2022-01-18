@@ -2,7 +2,7 @@
 title: Tag Library
 ---
 
-import { ProFeature, CenteredImage } from '@site/src/components/CommonBlocks';
+import { ProFeature, CenteredImage, CenteredVideo } from '@site/src/components/CommonBlocks';
 
 The tag library is the place where you can manage and organize the tags with which you can tag your files and folders. To open it, you need to click the button with the tag icon (1), in the vertical navigation placed on the most left part of the application.
 
@@ -42,7 +42,7 @@ Tags are organized into **tag groups**, which are basically categories for tags 
 All the tag groups except the smart tag are optional and can be removed from the tag library if they are note needed.
 :::
 
-## Tag library context menu
+## Tag library operations
 
 This menu contains the following three menu items:
 
@@ -58,7 +58,7 @@ To create a new tag group, click on **Create Tag Group**, right underneath the t
 
 Selecting the **Import tag library** and **Export tag library** options will allow you to import/export predefined tags, which you have previously created in TagSpaces. This option takes a `JSON` file, previously exported from (probably another instance of) TagSpaces, and imports all the tags contained within, into your system. This can be useful, when you use TagSpaces on multiple systems, or you work collaboratively with others and wish to share the same tags library. To learn more about sharing tags between systems and people, refer to the [Sharing tag libraries](/tutorials/sharing-tags) tutorial article.
 
-## Tag group context menu
+## Tag group operations
 
 Tag groups have their own context menu, accessible by clicking the three dot icon next to the tag group's name. The context menu offers the following options and operations:
 
@@ -75,21 +75,37 @@ Tag groups have their own context menu, accessible by clicking the three dot ico
 Learn more about how to change the default tag background and text colors in the [settings](/ui/settings/#general).
 :::
 
-## Tag context menu
+### Drag and drop operations
+
+You can change the order of the tag groups in the tag library with simple drag and drop operations. The order of the tags in the tag group also can be changed with drag and drop. The following video demonstrates this.
+
+<CenteredVideo
+    caption="Manage tag groups with drag and drop"
+    src="/media/videos/manager-taggroups-with-dnd.mp4"
+    autoPlay={false}
+    maxWidth={300}
+    showCaption
+  />
+
+## Tag context menus
 
 Each tag also offers its own context menu, accessible by clicking or right clicking on the tag. The displayed context menu will be slightly different depending on whether you've accessed it from the left panel tag library, or form a tag that is already added to a file. When accessed from the left panel, you will be presented with four options:
 
-- **Show Files With This Tag** - is essentially a tag filter you can apply, so that only files that have the selected tag applied to them, will show.
+- **Show Files With This Tag** - will initiate a search for this tag, so that only entries having the selected tag applied to them, will show.
+- **Apply tag** - will apply this tag to the currently selected files in the browsing area.
 - **Edit tag** - will let you change the tag's name, or background color and text color.
 - **Delete tag** - will remove the tag from the tag group and the tag library. It will not remove it from any file or folder.
 
-![the context menu of a tag in the tag library](/media/tag-operations-dialog.png)
+![the context menu of a tag in the tag library](/media/tag-context-menu.png)
 
 Accessing the tag context menu from the browsing area in the default perspective will show similar menu, containing the following items:
 
-- **Show Files With This Tag** - is a tag filter you can apply, so that only files that have the selected tag applied to them, will show.
+- **Show Files With This Tag** - will initiate a search for this tag, so that only entries having the selected tag applied to them, will show.
+- **Add tag to tag group** - will open a dialog where you can select the tag group where this tag should be added
 - **Edit tag** - will let you change the tag's name
 - **Remove tag** - will remove the tag from the file or the folder on which the tags is assigned.
+
+![the context menu of a tag from an entry](/media/entry-tag-context-menu.png)
 
 <!-- > You can add key-bindings to any tag. Key bindings are essentially a key combination that allows you to quickly mark a file with the tag in question. just select the file, press the key combination, and the file will be marked.
 
@@ -100,8 +116,97 @@ When accessing a tag's context menu from the **file browsing area** (the main ar
 ![](/media/tag-operations-dialog-2.png) -->
 
 :::info
-Editing the name of a tag deleting one from the library tags will only affect the library itself. If the same tag had had already been applied to a file, the tag on that file will remain intact. But if you change the color of a tag in the library, it will be reflected on the files marked with that tag as well. This is because of the way TagSpaces handles tags, that essentially become an organic part of the filename. To learn more about how tagging works, please refer to [File tagging based on filename](/tagging.md#file-tagging-based-on-filenames) under the Tagging section.
+Editing the name of a tag or deleting one from the library tags will only affect the library itself. If the same tag had had already been applied to a file, the tag on that file will remain intact. But if you change the color of a tag in the library, it will be reflected on the files marked with that tag as well. This is because of the way TagSpaces handles tags, that essentially become an organic part of the filename. To learn more about how tagging works, please refer to [File tagging based on filename](/tagging.md#file-tagging-based-on-filenames) under the Tagging section.
 :::
+
+## Predefined tags
+
+The tag library is delivery with some predefined tag groups for some common tagging use cases like adding a priority or a rating.
+
+These special tags are useful for organizing files by either importance or quality. You can apply priorities `high`, `medium` and `low`, and start ratings from `1start` to `5star`. Star ratings are yellow by default, whereas priorities are colour coded to easily distinguish visually.
+
+![Priority and rating tags](/media/priority-and-rating-tags.png)
+
+<!-- Priority and star ratings all have predefined keyboard bindings assigned to then, to that using them becomes really straightforward and fast. Currently the following key-bindings apply:
+
+### Priorities:
+* **high** - `t h`
+* **medium** - `t m`
+* **low** - `t l`
+
+### Start ratings
+* **1star** - `t 1`
+* **2star** - `t 2`
+* **3star** - `t 3`
+* **4star** - `t 4`
+* **5star** - `t 5` -->
+
+Users can easily extend these tags: You can simply create a new tag and add it to e.g. the priority group, give it a name a colour and a key binding, and you are all set.
+
+## Smart tags
+
+Smart tags are one of the advanced features of TagSpaces. These tags can be either **date and time**, or **location based**, and offer convenient **dynamic tagging** , based on a range of criteria.
+
+![tag library general overview](/media/smart-tags-group.png)
+
+- **Date and time tags** are timestamps textual representations, such as _now_, _today_, _tomorrow_, etc. Applying one of these tags to a file will add a timestamp, corresponding to your choice of smart tag. Tagging a file with e.g. _now_ would apply the full timestamp down to the second, while tagging e.g. _month_ would tag it with a subset like `YYYYMM`. Smart tags have a distinguishing blue background, which they only retain in the tag library.
+- <ProFeature /> Applying a geo tag, opens up a dialog with an interactive map, where you can drop a pin. The geo-location (longitude and latitude coordinates), will be added to the selected file as a tag.
+
+These smart tags offer a quick and easy way to timestamp documents or files, with different levels of precision. Dragging or applying a smart tag to a file will create a tag based on the current time date. Currently the following tags and formats are available:
+
+- **now** - This tag will create a very precise timestamp (from current year, down to seconds) of the moment you have applied it. The format of the timestamp is `YYYMMDDThhmmss`, so `20220111T143022` will stay for 14:30:22 on the 11th of January 2022. The used format is compatible with the [ISO8601 standard](https://en.wikipedia.org/wiki/ISO_8601).
+- **today**, **tomorrow and **yesterday\*\* will apply a timestamp with the current, the next, or the previous day's date, in the format of `YYYYMMDD`, e.g. `20170314`.
+- **month** will create a timestamp of the current month, in the format of `YYYYMM`, e.g. `201703`
+- **year** only applies the current year, in the format of `YYYY`, e.g. `2017`
+
+:::info
+Every newly created file will automatically have a smart tag, equivalent to **now**.
+:::
+
+### Custom timestamp tagging
+
+<ProFeature />
+
+With the help of the `custom-date` smart tag, the user can add any date and time as a tag to any file or folder.
+
+<iframe width="100%" height="500" src="https://www.youtube-nocookie.com/embed/DVHioQhpyYM?rel=0" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+
+### Geo tagging
+
+<ProFeature />
+
+Geo Tagging can be use to add geo coordinates as a tag to any kind of files. It is useful to connect your photos or other documents with a geo location. This can be used for planning you vacation or next trip. In order to use this feature you have to use the smart tag `geo-location`. When you apply it to a file, the dialog shown on following screenshot will appear. Here with the help of the [OpenStreetMap](https://www.openstreetmap.org) and you can select any location somewhere in the world. The geographic coordinates (latitude and longitude) of this location will be converted in the [plus codes](https://plus.codes/) format, which is a for codding geo coordinates with smaller amount of characters.
+
+<iframe width="100%" height="650" src="https://www.youtube-nocookie.com/embed/n4LsMP85qtc?rel=0&cc_load_policy=1&modestbranding=1" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+
+<!-- The geo tag is a special kind of smart tag, available in TaSpaces **PRO**, that allows tagging files with precise geolocation coordinates. When You drag the tag "geo" on a file, the **Edit tag** popup window with the Geo Location tab will open, showing a map from OpenStreetmap. You can drop a pin anywhere, and move it around, it automatically becomes a tag in the format of `latitude+longitude`, e.g. `47.2792290+18.9843750` This tag will then be applied to the file and treated as a geo-smarttag by TagSpaces -->
+
+<br />
+<br />
+In geo tagging dialog you can enter the latitude and longitude directly without the need of the map. To enable this you have to click on the advanced button in the dialog as shown in the following screenshot.
+
+![Enter latitude and longitude as geo tags](/media/geo-tagging-lat-lon.png)
+
+### Editing smart tags
+
+<ProFeature />
+
+Smart tags, once applied, can be edited, or further refined be refined to include date ranges. Clicking on a tag, ans selecting _Edit Tag_ form the context menu
+
+![](/media/tagspaces-open-tag-contextmenu.png)
+
+will bring up the **Tag Properties** popup dialog. Depending on the type of the smart tag, the dialog looks differently. In the next screenshot the "editor" for the geo smart tags.
+
+![Editing a geo smart tag](/media/tagspaces-edit-geo-tag.png)
+
+### Date ranges as tags
+
+besides being able to easily modify date, or date/time tags on their respective tabs, you can also specify date ranges in the following formats:
+
+- **Year Ranges:** 2016-2018
+- **Month Ranges:** 201605-201701
+- **Date Ranges:** 20160531-20160603
+- **DateTime Ranges**: 20160529T124532-20160529T154500
 
 ## Location tags
 

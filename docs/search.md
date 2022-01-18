@@ -60,7 +60,7 @@ In order to provide a boolean search support for tags, the search user interface
 
 TagSpaces has an integrated file and folder search functionality based on an **index**, which is created immediately after the user opens a given location. The indexing process may take some resources on opening the location, but delivers later accurate and up to date search results.
 
-<!--  If your location contains a huge amount of files (> 20000) it is recommended to split it in two or more location or to [disable the indexing](/ui/locations#regular-locations) on location start (which is a <ProFeature /> feature). Disabling the indexing at start may also be useful for location based in a networks like on NAS systems or AWS S3 buckets. -->
+<!--  If your location contains a huge amount of files (> 20000) it is recommended to split it in two or more location or to [disable the indexing](/ui/locations#local-locations) on location start (which is a <ProFeature /> feature). Disabling the indexing at start may also be useful for location based in a networks like on NAS systems or AWS S3 buckets. -->
 
 If you decide to disable the automatic indexing, you should do this step manually on regular based in order to have a working and accurate search functionality. The index can be updated in the following ways:
 
@@ -172,7 +172,9 @@ This filter is still work in progress.
 
 ## Full text search
 
-<ProFeature /> TagSpaces PRO supports full text search for text (.TXT), markdown (.MD) and html (.HTML) files. You can activate this feature for every location individually in the "Edit Location" dialog, as seen in the following screenshot. After the activating of this feature (see next screenshot), during the indexing of a given location, the application will try to extract the text content of the supported files and create a keyword list with will be considered later by the search algorithm.
+<ProFeature />
+
+TagSpaces PRO supports full text search for text (.TXT), markdown (.MD) and html (.HTML) files. You can activate this feature for every location individually in the "Edit Location" dialog, as seen in the following screenshot. After the activating of this feature (see next screenshot), during the indexing of a given location, the application will try to extract the text content of the supported files and create a keyword list with will be considered later by the search algorithm.
 
 :::caution
 On locations with many big text files, activating this features may slow down the performance of the application, so be careful on which location you are activating it.
@@ -205,6 +207,7 @@ This feature is still in beta state and could lead to performance issues if you 
 ## Global search
 
 <ProFeature />
+
 Starting with version 3.5, TagSpaces Pro offers searching in all locations. We call this feature "Global search". It works on local and remote S3 based locations. The feature can be activated by clicking the _Global_-button in the search area, as seen in the following screenshot.
 
 <CenteredImage
@@ -222,14 +225,36 @@ All other search related settings should work as known from the single location 
 **Global search** should be considered as a feature in **Beta** status. There could be some edge cases which are not functioning correctly. Please share any glitches with us, we will try to fix them.
 :::
 
-## Saved search queries
+## Stored search queries
 
 <ProFeature />
 
-In version 3.10 we added a basic possibilities for saving search queries for later use.
+With the functionality one can store commonly used search queries for later use.
 
-![export search queries](/media/import-export-searches.png)
-Work in progress
+![export search queries](/media/stored-searches.png)
+
+:::tip
+The stored searches are location independent, so they can be executed on any location.
+:::
+
+### Export and import search queries
+
+This functionality will allow you to share commonly used search queries with other users working with you on the same file base.
+
+In the three dot menu of the stored search are you will find menu entries with which you can export and import search queries. The file format of the export is JSON, which can be opened and edited with any modern text editor. If needed, you can fine-tune the search queries in the editor and distribute them to another TagSpaces installations for you or your colleagues.
+
+<CenteredImage
+    caption="Screenshot of the menu for triggering the import and export of stored searches"
+    src="/media/import-export-searches.png"
+  />
+
+Due to the fact the search queries have unique IDs, TagSpaces can recognize if the query is already imported so you can skip the re-import or import the newer version of it. An example export can be found in the [documentation](/dev/metafileformats#format-of-the-exported-search-queries) of the project.
+
+<CenteredImage
+    caption="Screen showing the dialog for importing stored search queries"
+    src="/media/import-stored-searches-dialog.png"
+    maxWidth="600px"
+  />
 
 <!-- Advanced search v2.x / Search query language
 

@@ -54,6 +54,16 @@ Clicking in the popup of a file on the map will open it the file previewing area
     showCaption
   />
 
+### Smart pin icon
+
+With the help of a little pictogram you can directly recognize if the pin is for file or for a folder. The little balkan in the center of the icon represent the first tag of the file or the folder with its color. This will allow you to visually recognize the tagged files and folders. In the following screenshot for example, every pin is a geo-tagged file representing one person. The year of birth is the first tag. And the years are organized in decades with different colors. So now with help of the colored pins on the map you can get a first impression about the age distribution of those people and maybe build some kind of cluster.
+
+<CenteredImage
+    caption="Colored map icons according to the color of the first tag"
+    src="/media/mapique/mapique-geo-tag-pins.png"
+    showCaption
+  />
+
 ## Navigating Tagged Folders
 
 Since TagSpaces supports tagging of folders, you can geo tag your folders and turning them this way displayable in the Mapique perspective. On the following screenshot you can see that folders have a dedicated icon, so they can differentiated from the files. Clicking on a folder icon will open a small popup, which when clicked will navigate to the selected folder.
