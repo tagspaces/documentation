@@ -13,6 +13,7 @@ The first one which was introduced in version 3.8 is called "Link for internal s
 <CenteredImage
     caption="Sharing link types in the entry properties"
     src="/media/sharing-files.png"
+    maxWidth="700px"
     showCaption
   />
 
@@ -21,6 +22,7 @@ Once copied to the clipboard with the **COPY**-button, the links can be shared f
 <CenteredImage
     caption="Open shared links in TagSpaces"
     src="/media/open-shared-links.png"
+    maxWidth="500px"
     showCaption
   />
 

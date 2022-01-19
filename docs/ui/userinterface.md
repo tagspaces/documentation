@@ -2,9 +2,7 @@
 title: User Interface Areas
 ---
 
-import { ProFeature } from '@site/src/components/CommonBlocks';
-
-## Start screen
+import { ProFeature, CenteredImage } from '@site/src/components/CommonBlocks';
 
 TagSpaces opens up as a single-window application that tries to make the best use of any space available, be it large wide screens, or small mobile displays. The user interface, devised along the guidelines of Google's material design specifications, is very adaptable. The application will look the same, regardless of the operating system, or platform it runs under.
 
@@ -16,20 +14,27 @@ This streamlined experience offers familiarity and an ease to use the applicatio
 
 The user interface of the application consists of the following main areas:
 
-- **(2) [Location manager](/ui/locations.md) / [Tag Library](/ui/taglibrary.md) / [Search](/search.md) areas** - Here you can manage the connected locations, the tag library or search for file and folders.
-- **(3) [Navigation](#browsing-area)** - Here you can switch the location or quickly navigate to parent folders.
-- **(4) [Browsing area](/browsing-files.md)** - This section is occupied by the so called **perspective** used for browsing files and folders.
-- **(5) [Common actions area](#properties-area)** - Here you can access common actions for the currently opened file or folder.
-- **(6) [File / Folder properties](#file-properties-area)** - Here you will find some properties for the currently opened file or folder.
-- **(7) [Preview area](#preview-area)** - In this area you can preview and/or edit the current file.
+- **(1) [Left Drawer](#left-drawer-area)** - Here you can open the [location manager](/ui/locations.md) or the [tag library](/ui/taglibrary.md) and access other important functionalities of the app like the [settings](/ui/settings).
+- **(2) [Navigation and Search](#browsing-area)** - Here you can open the search, switch the current location or navigate to a parent folders.
+- **(3) [Browsing area](/browsing-files.md)** - This section is occupied by the so called **perspective** used for browsing files and folders.
+- **(4) [Common actions area](#preview-area)** - Here you can access common actions for the currently opened file or folder.
+- **(5) [File / Folder properties](#file-properties-area)** - Here you will find some properties for the currently opened file or folder.
+- **(6) [Preview area](#preview-area)** - In this area you can preview and/or edit the current file.
 
-<!-- ## Vertical toolbar
+## Left Drawer Area
 
-New in version 3 of the app is the vertical toolbar located in the most left part of the application. The toolbar is designed to be alway visible. Here you can quickly access the creation of a new file, switch between the location manager, tag library and the search panels, open the app setting or enable the [dark mode](#dark-mode).
+The main drawer of the app is divided in three sub areas.
 
-![Area on the left of the app](/media/navigation-v3.png)
+The one located at the top shows the logo of the app and its current version. Clicking on the app logo will open the **About dialog** of the app, where you can find details about the licensing or check for new app versions. Right beneath the logo you find a bar containing two buttons. The first one called **New** will open a dialog where you can [create files](/creating-files) in TagSpaces. The second button "Connect a location" will trigger the process of connecting local or remote [locations](/ui/locations) in the app.
 
-> Clicking a second time on the icons for the location manager, the tag library or the search area will close the whole area contain these sections. This could be useful if you want to have more space for file browsing or previewing. -->
+The area at button contains six buttons. The button with the gear icon located at the left will open the app [settings](/ui/settings). With the button at the most right you can switch between the _light_ and _dark_ [themes](#dark-mode) of the app. If you are using the [TagSpaces Enterprise](https://www.tagspaces.org/products/enterprise/) product this button will be exchanged with a button, which will open the properties of the currently logged user.
+
+The with the four so called radio buttons in the middle, you can switch between the following areas in main part of the drawer:
+
+- **[Location manager](/ui/locations.md)**
+- **[Tag Library](/ui/taglibrary.md)**
+- **[Stored search queries](/search/#stored-search-queries)**
+- **Help and feedback** - here you can access the application help, suggest a feature or contact us.
 
 ## Browsing Area
 
@@ -37,7 +42,7 @@ The file browsing area normally takes up he majority of the user interface. This
 
 ![Screenshot showing the file browsing area](/media/browsing-area.png)
 
-The button **(1)** placed in the top left part of the browsing area toggles the left area of the app containing the location manager, the tag library, settings and other important parts of the app.
+The button **(1)** placed in the top left part of the browsing area toggles the [left drawer area](#left-drawer-area).
 
 **(2)** will open the [search](/search) input field.
 
@@ -75,7 +80,12 @@ When a file is opened, the main UI area splits into two, the rightmost page beco
 
 The following screenshot show a JPG file (photo) with name _IMG_0180_ **(1)** opened in the preview area. Here the preview area uses the full width of the application windows. This can be achieved by clicking on button **(5)** from the preview toolbar. The preview area can be closed by clicking the button with **X** icon located on the right to **(2)**
 
-![](/media/preview-area.png)
+<CenteredImage
+    caption="Screenshot of the file preview area"
+    src="/media/preview-area.png"
+    maxWidth="650px"
+    showCaption
+  />
 
 The file preview toolbar offer some actions, some of them are described bellow:
 
@@ -90,17 +100,24 @@ The file preview toolbar offer some actions, some of them are described bellow:
 
 ## File properties area
 
-Clicking the button with the **i** icon will open and respectively close the file properties area. Here you will find details about the currently opened files such as:
+Clicking the button with the **( i )** icon will open and respectively close the file properties area. Here you will find details about the currently opened files such as:
 
-![Picture showing the folder properties area](/media/file-properties-area.png)
+<CenteredImage
+    caption="Screenshot of the file properties area"
+    src="/media/file-properties-area.png"
+    maxWidth="650px"
+    showCaption
+  />
 
-- **(1) Name** - Shows the complete name of the file with its file extension. Clicking the **RENAME** button located above (1) with switch the area to edit box, where you can change the name of the file.
-- **(2) Tags** - Show the tags added to this file. Clicking on this area will open a dropdown where you can choose additional tags which will be assigned to this file.
-- **(3) Description** <ProFeature /> - Shows the description assigned to the current file. Clicking on the **EDIT** will turn the description area in a edit box, where you can adjust the description of this file. Plain text and markdown formats are supported.
-- **(4) Date modified** - Shows the date and the time when the file was last modified.
-- **(5) Size** - Shows the size of the current file. Hovering the field will show the size in bytes.
-- **(6) Path** - Shows the complete path of the file. Clicking on the **MOVE** button, will open a dialog, where you can move or copy the existing file to a new path.
-- **(7) Thumbnail** <ProFeature /> - This area shows the current thumbnail of the file. Clicking on the **CHANGE THUMBNAIL** button will open a dialog, where can choose a new thumbnail for the file. The application supports adding a custom thumbnail to every file type.
+- **(1) File Name** - Shows the complete name of the file together with its extension. Clicking the **RENAME** button or just on the file name (1) will allow you to change the name of the file.
+- **(2) Tags** - Show the tags added to the file. Clicking on this area will open a dropdown where you can choose additional tags which will be assigned to this file. You can also drop tags from the tag library or other files or folders here.
+- **(3) Map with geo-tag** - if the files has attached geo-tag, a map will displayed showing the exact location of the geo tag. The used map is configurable in the [settings](/ui/settings/#advanced) of the app.
+- **(4) Description** <ProFeature /> - Shows the description assigned to the current file. Clicking on the **EDIT** will turn the description area in a edit box, where you can adjust the description of this file. Plain text and Markdown formats are supported.
+- **(5) Date Modified** - Shows the date and the time when the file was last modified.
+- **(6) Size** - Shows the size of the current file.
+- **(7) Path** - Shows the complete path of the file. If the file is located on an object storage location, a cloud icon instead of the a suitcase will be shown in front of the path. Clicking on the **MOVE** button, will open a dialog, where you can move or copy the existing file to a new path.
+- **(8) Links for sharing** - will show one or two fields representing links which you can [share](/sharing) files with other users.
+- **(9) Thumbnail** <ProFeature /> - This area shows the current thumbnail of the file. Clicking on the **CHANGE THUMBNAIL** button will open a dialog, where can choose a new thumbnail for the file. The application supports adding a custom thumbnail to every file type.
 
 :::tip
 The description field of files and folders supports basic [**markdown syntax**](https://en.wikipedia.org/wiki/Markdown).
@@ -108,9 +125,14 @@ The description field of files and folders supports basic [**markdown syntax**](
 
 ## Folder properties area
 
-The folder properties is very similar to the file properties area. It can be opened and closed in the same way by the button with the **i** icon.
+The folder properties is very similar to the file properties area. It can be opened and closed in the same way by the button with the <nobr>**( i )**</nobr> icon.
 
-![Picture showing the folder properties area](/media/folder-properties-area.png)
+<CenteredImage
+    caption="Screenshot of the folder properties area"
+    src="/media/folder-properties-area.png"
+    maxWidth="650px"
+    showCaption
+  />
 
 - **(1) Name** - Shows the complete name of the folder. Clicking the **RENAME** button located above (1) with switch the area to edit box, where you can change the name of the folder.
 - **(2) Tags** - Show the tags added to this folder. Clicking on this area will open a dropdown where you can choose additional tags which will be assigned to this folder.

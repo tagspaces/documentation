@@ -179,7 +179,7 @@ This feature is useful if your location has large folders containing many files 
 <CenteredImage
     caption="Manage the ignore pattern in the location settings"
     src="/media/location-ignore-patterns.png"
-    maxWidth="500px"
+    maxWidth="600px"
     showCaption
   />
 
@@ -200,7 +200,7 @@ Choosing the tagging method for all locations at once is limiting and kind of in
 <CenteredImage
     caption="Set the file tagging method per location"
     src="/media/file-tagging-method-per-location.png"
-    maxWidth="500px"
+    maxWidth="600px"
     showCaption
   />
 
