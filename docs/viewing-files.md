@@ -314,10 +314,28 @@ The following table lists the supported files types for viewing and editing of f
     <td>view</td>
   </tr>
   <tr>
-    <td>EPUB (v.1)</td>
-    <td>planned</td>
-    <td>planned</td>
-    <td>planned</td>
+    <td>XLSX</td>
+    <td>view</td>
+    <td>view</td>
+    <td>view</td>
+  </tr>
+  <tr>
+    <td>CSV</td>
+    <td>view</td>
+    <td>view</td>
+    <td>view</td>
+  </tr>
+  <tr>
+    <td>ODS</td>
+    <td>view</td>
+    <td>view</td>
+    <td>view</td>
+  </tr>      
+  <tr>
+    <td>EPUB</td>
+    <td>view</td>
+    <td>view</td>
+    <td>view</td>
   </tr>
   <tr>
     <td>ZIP</td>
@@ -337,6 +355,12 @@ The following table lists the supported files types for viewing and editing of f
     <td>view</td>
     <td>view</td>
   </tr>
+  <tr>
+    <td>URL</td>
+    <td>view</td>
+    <td>view</td>
+    <td>view</td>
+  </tr>  
   </table>
   </div>
 

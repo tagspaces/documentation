@@ -6,7 +6,9 @@ import { ProFeature, CenteredImage } from '@site/src/components/CommonBlocks';
 
 In order to compete with other desktop search applications, TagSpaces offers a variety of search related features, which are described in this section.
 
-The user can switch to the search area by clicking the `Ctrl+3` / `Cmd+3` key combination (configurable in the Setting). For the desktop app there is also a global key combination for opening TagSpaces in search mode. Just press `Ctrl+Shift+f` / `Cmd+Shift+f` to get there.
+The user can switch to the search area by clicking the `Ctrl+Shift+f` / `Cmd+Shift+f` key combination. This is global key binding so it will work even if the application is not currently visible or if focus. The search area can be also opening with magnifying glass icon visible above **(1)** in the following screenshot.
+
+![Open search](/media/open-search.png)
 
 ## Basic search
 
@@ -16,28 +18,29 @@ The search query in the basic search consists of two components. The first one i
 - The tags assigned to the file or folder
 - The description added to the file or the folder
 - The name of the parent directory of a given file is also considered by the search algorithm. So for example if you are searching for photos from you vacation in USA and the folder where these files are located contains the word USA (e.g. '20160301 vacation usa 70D'), then the search will list all the files located directly in this folder.
-- The content of TXT, MD and HTML, if the full text search is activated for the current location. The full text search for these files is a <ProFeature /> feature.
+- The content of TXT, MD and HTML, if the [full text search](#full-text-search) is activated for the current location.
+
+### Search query
 
 The search query consists of two components. The first one is just a simple free text which searched in the index. The second component is a list of tags. If you want a find entries tagged with given tag place `+` in front of it. Placing `-` will exclude entries with this tag.
 
-There are three type of searching:
+### Search options
+
+The search options can be access after clicking on the button with the sliders visible above **(2)** on the previous screenshot.
+
+![Search options](/media/search-options.png)
+
+The search algorithm can be forced to deliver results for the following **search scopes**:
+
+- **Location** - will search in the current location. This is the default scope
+- **Folder** - will search the current folder including all sub-folders
+- **Global** <ProFeature /> - will search in all configured locations. You can find more in the [Global Search](#global-search) section.
+
+There are three **type of searches**:
 
 - **Fuzzy** - it will deliver broader search results, tolerating typos in the search query
 - **Strict** - it will deliver exact search results
 - **Semi-strict** - it is same as strict but case insensitive
-
-<CenteredImage
-    caption="Basic search in TagSpaces"
-    src="/media/basic-search.png"
-    maxWidth="300px"
-    showCaption
-  />
-
-The search functionality can be targeted to deliver result for the following scopes:
-
-- **(1) Current location**, which is the default scope
-- **(2) Current folder** including all sub-folders, which in the case of the root folder in a locations is the same as the first scope
-- **(3) All locations** <ProFeature />. You can find out more in the [Global Search](#proglobal-search) section of the documentation.
 
 ### Searching for tags
 
@@ -53,8 +56,6 @@ In order to provide a boolean search support for tags, the search user interface
     maxWidth1="550px"
     showCaption
   />
-
-<!--  After opening of a certain location, the application starts to index in background all the files and folders from this location recursively. During the indexing time the search is not available to the user, but all other functionalities are accessible. Opening of location containing more the 100000 files could lead to performance issues, during the index or later by search. -->
 
 ### Indexing
 

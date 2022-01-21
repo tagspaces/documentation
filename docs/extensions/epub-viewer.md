@@ -2,15 +2,13 @@
 
 A TagSpaces extension allowing you to open ebooks in EPUB format.
 
-:::caution
-This extension is not supported anymore, due to lack of maintainers. Please contact us if you are interested.
-:::
-
 ## Features
 
 - Previewing ebooks in EPUB format
 
-![Screenshot of the viewerEPUB](https://docs.tagspaces.org/media/extensions/viewer-epub-lead.png)
+![Screenshot of the viewerEPUB](/media/extensions/viewer-epub-lead.png)
+
+![Screenshot of the viewerEPUB](/media/extensions/viewer-epub-twofold.png)
 
 ## Used libraries
 
@@ -24,7 +22,7 @@ Extension is currently deprecated
 
 ## Source code
 
-The source code of this extension is freely available on [GitHub](https://github.com/tagspaces/viewerEPUB)
+The source code of this extension is freely available on [GitHub](https://github.com/tagspaces/tagspaces-extensions/tree/main/ebook-viewer)
 
 ## Development
 
@@ -32,4 +30,4 @@ If you want to extend this extensions, please follow our general [extension deve
 
 ## License
 
-[MIT](https://github.com/tagspaces/viewerEPUB/blob/master/LICENSE.txt)
+[MIT](https://github.com/tagspaces/tagspaces-extensions/blob/main/ebook-viewer/LICENSE.txt)

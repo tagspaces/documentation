@@ -140,7 +140,7 @@ module.exports = {
         href: "/ui/taglibrary/#location-tags",
       },
     ],
-    "Search Functionality": [
+    "Search and Find": [
       "search",
       {
         type: "link",

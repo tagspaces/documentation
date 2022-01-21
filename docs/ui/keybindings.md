@@ -41,7 +41,7 @@ TagSpaces like a much of modern software also provides a range of keyboard short
 
 ### Global keybindings
 
-These keybindings are available even if TagSpaces is currently not in focus, but running in background for example in the system's tray.
+These keybindings are available even if TagSpaces is currently not in focus, but running in background for example in the system's [tray](/ui/#tray-menu).
 
 | Action                   | Key binding on Windows/Linux | Key binding on macOS |
 | ------------------------ | ---------------------------- | -------------------- |

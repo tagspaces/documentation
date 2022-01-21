@@ -1,10 +1,10 @@
 # Document viewer
 
-A TagSpaces extension allowing to open document file.
+A TagSpaces extension for previewing document files.
 
 ## Features
 
-- open document file format
+- preview files in DOCX format
 
 ## Used libraries
 

@@ -84,7 +84,7 @@ Once you are done with the selection you can right click on a selected and choos
 
 This will open a popup dialog, that allows you to manage tags on the current file. If the multiple tags were selected the popup dialog will not display all tags from all files, but rather will allows you to specify tags by name, offering suggestions based on tags currently in the tag library.
 
-![](/media/tagspaces-tagging-dialog.png)
+![Dialog for tagging multiple files](/media/tagspaces-tagging-dialog.png)
 
 The options you have here are:
 

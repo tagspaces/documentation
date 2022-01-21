@@ -18,10 +18,10 @@ The primary purpose of TagSpaces, is tagging files and organizing them. **Tags**
 You have the option to use a hidden file (a so called sidecar file) to store tag related information. This can be useful when you are not able, or not allowed to change filenames, such as with a development project, or working collaboratively on shared documents.
 :::
 
-Tags can be anything, form descriptive labels, to categories, ratings, priorities, or dates, timestamps, and smart tags.
+Tags can be anything, form descriptive labels, to categories, ratings, priorities, or dates, timestamps, and smart tags. To learn more about the powerful tag management features TagSpaces offers, read the [Tagging section](/tagging.md)
 
 :::tip
-To learn more about the powerful tag management features TagSpaces offers, read the [Tagging section](/tagging.md)
+The name of the tags should not contain **spaces** , **\\** , **/** or **#**. The **-** or **\_** symbols can be used instead of spaces.
 :::
 
 ## Tag groups

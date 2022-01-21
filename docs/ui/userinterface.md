@@ -176,3 +176,23 @@ The desktop application can run in a full screen mode, which can be toggled by p
 :::tip
 If the application is running in a browser, please use the integrated in the browser full screen mode capabilities.
 :::
+
+## Tray Menu
+
+On Windows, macOS and Linux starting the desktop application will load also a so called tray menu.
+
+![Tray menu on Linux](/media/tray-menu-linux.png)
+
+This menu offers the following functionalities:
+
+- **Show TagSpaces** `Ctrl+Shift+W` / `Cmd+Shift+W` - Brings the app on top if it is minimized or behind other windows.
+- **Show Search** `Ctrl+Shift+F` / `Cmd+Shift+F` - Brings the app on top and shows the search input field and brings the cursor on it, so you can enter your search query and confirm it with `Enter`.
+- **New File / Note** `Ctrl+Shift+N` / `Cmd+Shift+N` - Brings the app on top and shows the dialog for creating new files.
+- **Open next file** `Ctrl+Shift+W` / `Cmd+Shift+W` - Opens the next file (start its playback if audio/video file) in the current perspective or search results.
+- **Open previous file** `Ctrl+Shift+W` / `Cmd+Shift+W` - Opens the previous file (start its playback if audio/video file) in the current perspective or search results.
+- **Pause / Resume Playback** `Ctrl+Shift+P` / `Cmd+Shift+P` - Pause the currently played audio or video file, resumes the playback if it was paused.
+- **Quit TagSpaces** - Quits the app.
+
+:::tip
+The keyboard combination described here are globally available, so you can use them even if the application is not visible or on focus.
+:::
