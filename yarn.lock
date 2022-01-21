@@ -6617,6 +6617,15 @@ mkdirp@^0.5.4, mkdirp@^0.5.5:
   dependencies:
     minimist "^1.2.5"
 
+mr-pdf@^1.0.7:
+  version "1.0.7"
+  resolved "https://registry.yarnpkg.com/mr-pdf/-/mr-pdf-1.0.7.tgz#dd697221746b5e47850c63ca516644f6d64190d8"
+  integrity sha512-kt0nBI/21IWe6J8sjlbdMYZcIetTU2odxe3i7+5dxY+mSnbocUfkhsRItOuveZMxcou0YD+d+JZXxIzFe8on9Q==
+  dependencies:
+    chalk "^3.0.0"
+    commander "^4.1.1"
+    puppeteer "^2.1.1"
+
 mrmime@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/mrmime/-/mrmime-1.0.0.tgz#14d387f0585a5233d291baba339b063752a2398b"

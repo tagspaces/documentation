@@ -8,7 +8,8 @@
     "build": "docusaurus build",
     "swizzle": "docusaurus swizzle",
     "serve": "docusaurus serve",
-    "gen-pdf": "npx docusaurus-pdf from-build-config",
+    "gen-pdf-bak": "npx docusaurus-pdf from-build-config",
+    "gen-pdf": "npx mr-pdf --initialDocURLs='https://docs.tagspaces.org' --contentSelector='article' --paginationSelector='.pagination-nav__item--next > a' --excludeSelectors='.margin-vert--xl a' --coverImage='https://docusaurus.io/img/docusaurus.png' --coverTitle='TagSpaces Docs'",
     "update-ext": "./update-external.sh",
     "anigif": "gifify --colors 150 --to 19 media/input.webm -o media/result.gif",
     "prepare1": "yarn optipng && yarn update-ext && yarn build",
@@ -29,6 +30,7 @@
     "clsx": "^1.1.1",
     "docusaurus-lunr-search": "2.1.14",
     "docusaurus-pdf": "^1.2.0",
+    "mr-pdf": "^1.0.7",
     "react": "^16.8.4",
     "react-dom": "^16.8.4"
   },
