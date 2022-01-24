@@ -55,6 +55,10 @@ total 1476
  1305364 Sep 16  2019 third-party.txt
 ```
 
+:::caution
+Due to the current implementation, please make sure that you place the app files in the root folder of the web server. Using sub folders is currently not supported.
+:::
+
 ## Securing the TagSpaces Web installation
 
 It is highly recommended to use HTTPS for connection to your TagSpaces installation, especially if your installation is available on the Internet. In order have HTTPS connection you will need to setup a valid ssl certificate. You can use such for free from provider such as [Letsencrypt](https://letsencrypt.org/). Setting up a SSL certificate is not in the scope of this article.
@@ -161,3 +165,8 @@ When a new version of the app is available, you just need to unzip the content a
 :::caution
 You should not delete `extconfig.js` if you using one for configuring TagSpaces. Be careful not to delete also special folders such as `Recently-Snapshot` or `@Recycle` if you are hosting the app on a NAS system.
 :::
+
+## Next steps
+
+- Connect AWS S3 bucket as location is described in this [tutorial](/tutorials/s3-bucket-locations)
+- Install MinIO and connect buckets from there as locations is described in this [tutorial](/tutorials/setup-minio-bucket-nas)

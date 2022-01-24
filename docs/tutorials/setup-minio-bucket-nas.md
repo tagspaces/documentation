@@ -3,6 +3,8 @@ title: MinIO buckets hosted on NAS Server
 description: How to setup MinIO buckets on your NAS in order to connect them to a TagSpaces Pro installation?
 ---
 
+import VideoYT from '@site/src/components/VideoYT';
+
 This tutorial will guide through the setting up of a self hosted object storage based on MinIO for QNAP based NAS systems. Then we will show you how to setup the TagSpaces PRO Web on a web server and connect it to the MinIO server. We will use the Docker container apps, which are available on the operating systems of the NAS servers. On a QNAP NAS the app is called **ContainerStation**, so if is not installed please install before starting with your setup.
 
 ## Installing the MinIO Docker application
@@ -117,11 +119,33 @@ Create new cloud location by clicking the **Connect a location** button. In the 
 
 Once you have configured the location and saved the changes, TagSpaces should connect to it list the files in it.
 
-![Listing minio location in TagSpaces](tagspaces-web-nas/tagspaces-listing-minio-bucket.png)
+<VideoYT
+    youtubeId="uIr4FzgcBMs"
+    title="Linking MinIO buckets as locations in TagSpaces Pro or Pro Web"
+    posterUrl="/media/videos/tagspaces-connect-s3-bucket.png" 
+    height={550}
+  />
 
-## Other recommended step
+## Common pitfalls
 
-Here I will name some further recommended steps, which are out the scope of this tutorial.
+### Connection issues
 
-- Setup a SSL certificate for your MinIO docker.
-- Setup a SSL certificate for the webserver where the TagSpaces Web App is running
+If you are running your MinIO server on HTTP, you will need to allow **unsecure content** in the settings for the TagSpaces Pro Web web page in the Chrome/Chromium browser.
+
+![Enable insecure content in Chrome](/media/chrome-insecure-content.png)
+
+If you are using the Firefox browser, this relaxing of settings is not possible, so here you have to make sure that both TagSpaces Pro Web and Minio are working on HTTPS or on HTTP.
+
+:::caution
+Running TagSpaces Pro Web on HTTP connection is not recommended!
+
+- It is highly recommended to setup a SSL certificate for your MinIO server, so the connections to it will run over HTTPS.
+- It is highly recommended to setup a SSL certificate for the webserver where the TagSpaces Web App is hosted, so the connections to it will run over HTTPS.
+
+:::
+
+### CORS issue
+
+Some users are reporting CORS related issue on MinIO servers installed on a Synology NAS system. Please see this GitHub [issue](https://github.com/minio/minio/issues/11111) for more details.
+
+Please contact us, if you have any questions or recommendations!
