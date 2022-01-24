@@ -92,7 +92,7 @@ And then it can be just started with a double click.
 
 You can install the Android app from the [Google Play Store](https://play.google.com/store/apps/details?id=org.tagspaces.mobileapp).
 
-> **Updating the Android app:** Once we publish a newer version of the Android app, it will be automatically installed on your mobile device within the following days.
+**Updating the Android app:** Once we publish a newer version of the Android app, it will be automatically installed on your mobile device within the following days.
 
 ### From our web site
 
@@ -116,7 +116,9 @@ If the above steps doesn't work for you, try the following:
 
 Once these steps are done you can download and install with the previously configured browser the app from our [download section](https://www.tagspaces.org/downloads)
 
-> **Risks of installing apps outside the Play Store** - Installing an app outside of Google Play sore is risky as you may be subjecting your phone to viruses that come along with these apps, so please be very careful and check your download sources.
+:::caution
+**Risks of installing apps outside the Play Store** - Installing an app outside of Google Play store is risky as you may be subjecting your phone to viruses that come along with these apps, so please be very careful and check your download sources.
+:::
 
 ## Installing the Firefox Browser Extension
 
@@ -170,3 +172,17 @@ With the AppImage package, there is another way to have the application run in p
     tagspaces-linux-x86_64-4.1.3.AppImage.config
 
 Starting now the AppImage will places the whole config information in the .config folder and will not use the default config folder in the user's home folder. This allows to place the app for example on a USB-stick and run it on another PC with the same configuration.
+
+## TagSpaces command line tool
+
+We made some of the TagSpaces functionalities available from the command line. These are features like creation of the index for the search or generating thumbnails from images. The source code for tool is available on [GitHub](https://github.com/tagspaces/tagspaces-common/tree/master/tagspaces-shell)
+
+In order to install it you will need [node.js](https://nodejs.org/). and [npm](https://www.npmjs.com/). Once you have these tool you will need to execute the following command:
+
+    npm install -global @tagspaces/shell
+
+After the installation you can use the tool like this:
+
+    tscmd -m indexer /some/folder/
+
+You can find more examples in the [README](https://github.com/tagspaces/tagspaces-common/tree/master/tagspaces-shell#search-index-generation) of the tool.
