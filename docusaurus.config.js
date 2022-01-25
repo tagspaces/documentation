@@ -202,11 +202,9 @@ module.exports = {
           routeBasePath: "/",
           // homePageId: "intro",
           sidebarPath: require.resolve("./sidebars.js"),
+          showLastUpdateTime: true,
           editUrl: "https://github.com/tagspaces/documentation/edit/master/",
         },
-        // blog: {
-        //   showReadingTime: true,
-        // },
         theme: {
           customCss: require.resolve("./src/css/custom.css"),
         },
