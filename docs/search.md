@@ -4,7 +4,7 @@ title: Search Overview
 
 import { ProFeature, CenteredImage } from '@site/src/components/CommonBlocks';
 
-In order to compete with other desktop search applications, TagSpaces offers a variety of search related features, which are described in this section.
+In order to offer desktop search functionalities, TagSpaces offers a variety of search related features, which are described in this section.
 
 The user can switch to the search area by clicking the `Ctrl+Shift+f` / `Cmd+Shift+f` key combination. This is global key binding so it will work even if the application is not currently visible or if focus. The search area can be also opening with magnifying glass icon visible above **(1)** in the following screenshot.
 
@@ -12,43 +12,51 @@ The user can switch to the search area by clicking the `Ctrl+Shift+f` / `Cmd+Shi
 
 ## Basic search
 
-The search query in the basic search consists of two components. The first one is just a simple free text which searched in the index. The second component is a list of tags. It is possible to define very precise tag queries by including and excluding tags. Please see the next section for more details. The search algorithm considers with different weight the following fields from the index.
+With basic search you are able to find files and folders by their name, tags and other properties. The search algorithm considers with different weight the following properties of the [indexed](#indexing) entries.
 
-- The file or folder name
-- The tags assigned to the file or folder
+- The name of the file or the folder
+- The tags assigned to the file or the folder
 - The description added to the file or the folder
-- The name of the parent directory of a given file is also considered by the search algorithm. So for example if you are searching for photos from you vacation in USA and the folder where these files are located contains the word USA (e.g. '20160301 vacation usa 70D'), then the search will list all the files located directly in this folder.
-- The content of TXT, MD and HTML, if the [full text search](#full-text-search) is activated for the current location.
+- The name of the parent directory of a given file is also considered by the search algorithm. So for example if you are searching for photos from you vacation in USA and the folder where these files are located contains the word USA (e.g. '20160301 vacation usa'), then the search will list all the files located directly in this folder.
+- The content of TXT, MD and HTML, if the [full text search](#full-text-search) is activated for the current location - <ProFeature />
 
-### Search query
-
-The search query consists of two components. The first one is just a simple free text which searched in the index. The second component is a list of tags. If you want a find entries tagged with given tag place `+` in front of it. Placing `-` will exclude entries with this tag.
-
-### Search options
-
-The search options can be access after clicking on the button with the sliders visible above **(2)** on the previous screenshot.
+The **search options** can be access after clicking on the button with the sliders visible above **(2)** on the previous screenshot.
 
 ![Search options](/media/search-options.png)
 
-The search algorithm can be forced to deliver results for the following **search scopes**:
+### Search scope
 
-- **Location** - will search in the current location. This is the default scope
-- **Folder** - will search the current folder including all sub-folders
+The search algorithm can be required to deliver results for the following search scopes:
+
+- **Location** - will search in the current location. This is the default scope.
+- **Folder** - will search the current folder including all sub-folders.
 - **Global** <ProFeature /> - will search in all configured locations. You can find more in the [Global Search](#global-search) section.
 
-There are three **type of searches**:
+### Search types
 
-- **Fuzzy** - it will deliver broader search results, tolerating typos in the search query
-- **Strict** - it will deliver exact search results
+The following three types of search are supported:
+
+- **Fuzzy** - will deliver broader search results, tolerating typos in the search query
+- **Strict** - will deliver exact search results
 - **Semi-strict** - it is same as strict but case insensitive
 
-### Searching for tags
+### Search for tagged entries
 
-In order to provide a boolean search support for tags, the search user interface for tags was split in three input fields:
+In order to provide a detailed search support for tags, the user interface for entering them was split in three input fields:
 
-- Must contain all of the tags - all of the tags listed here should be attached to the files or directories (**logical AND search**)
-- At least one tag - any file or folder which contains one of the specified here tags will be included (**logical OR search**)
-- None of these tags - entries which have one the tags listed here will be excluded from the search results (**negative search**)
+- **Must contain all of the tags** - all tags listed here should be attached to the files or the folders in order to include them in the search results (**logical AND**)
+- **At least one tag** - any file or folder which contains one of the specified here tags will be included (**logical OR**)
+- **None of these tags** - entries which have one the tags listed here will be excluded from the search results (**logical exclusion**)
+
+### Search query
+
+The search query consists of two parts. The first one is just a simple free text for which is searched in the index. The second component is a list of tags. Here you define very precise the query by including and excluding tags. You can use the following shortcuts to add, remove or exclude certain tags.
+
+- `+` - will add the tag in the **Must contain all of the tags** field - logical ADD
+- `|` - will add the tat in the **At least one tag** field - logical OR
+- `-` - will add the tags in the **None of these tags** field - logical exclusion
+
+The tags specified here will be visible in the search options described in the previous [paragraph](#search-for-tagged-entries)
 
 <CenteredImage
     caption="Short video showing searching for tagged files"
@@ -57,9 +65,14 @@ In order to provide a boolean search support for tags, the search user interface
     showCaption
   />
 
+Example search queries:
+
+- **"jpg +usa +beach -sunset"** - will find all files and folders having jpg in the name and having the tag `beach` but not `sunset`
+- **"|beach |sunset"** - will find all files and folder having the tag `beach` or `sunset`
+
 ### Indexing
 
-TagSpaces has an integrated file and folder search functionality based on an **index**, which is created immediately after the user opens a given location. The indexing process may take some resources on opening the location, but delivers later accurate and up to date search results.
+TagSpaces has an integrated file and folder search functionality based on an **index**, which is created when you hit the search button. The index is valid for by default for 10 minutes. This time can adjust individually in the properties of every [location](/ui/locations/#local-locations). The ideas behind this is that some locations may contain files which do not change so often, so here a longer validity like 1 month can be applied.
 
 <!--  If your location contains a huge amount of files (> 20000) it is recommended to split it in two or more location or to [disable the indexing](/ui/locations#local-locations) on location start (which is a <ProFeature /> feature). Disabling the indexing at start may also be useful for location based in a networks like on NAS systems or AWS S3 buckets. -->
 
@@ -75,9 +88,9 @@ If you decide to disable the automatic indexing, you should do this step manuall
     showCaption
   />
 
-### Limiting the search results
+### Limit the search results
 
-By default, TagSpaces is limiting the amount of the found search results to 1000 files. This limitation is also valid for the maximum files, which can be displayed in a single folder. The reason for adding such limitation is the fact that pagination is not typical for file managers and for now we do not want to add such. In tab general of the Settings there is a field where you can increase or decrease this limit. See the next screenshot.
+By default, TagSpaces is limiting the amount of the found search results to 1000 files. This limitation is also valid for the maximum files, which can be displayed in a single folder. In tab general of the Settings there is a field where you can increase or decrease this limit. See the next screenshot.
 
 <CenteredImage
     caption="Adjust number of shown / found items in the perspectives"
@@ -90,7 +103,7 @@ By default, TagSpaces is limiting the amount of the found search results to 1000
 
 <ProFeature />
 
-The search options described in this section are available only in the Pro and Enterprise editions of TagSpaces. In addition to the searching by files name and by tag, the advanced search supports the following filter criteria:
+The search options described in this section are available only in the Pro and Enterprise editions of TagSpaces. In addition to the basic search, the advanced search supports the following filter criteria:
 
 <CenteredImage
     caption="Screenshot showing the advanced search options"
@@ -165,13 +178,13 @@ Here you can specify in which period the files you are searching should have bee
 
 ### Search by time period
 
-This filter is still work in progress.
+This filter is planed.
 
 ### Search by GPS coordinates
 
-This filter is still work in progress.
+This filter is planed.
 
-## Full text search
+### Full text search
 
 <ProFeature />
 
@@ -205,7 +218,7 @@ These file formats are currently supported:
 This feature is still in beta state and could lead to performance issues if you are dealing with many and/or big text files.
 :::
 
-## Global search
+### Global search
 
 <ProFeature />
 
