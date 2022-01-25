@@ -102,7 +102,7 @@ module.exports = {
               href: "https://www.tagspaces.org/products/",
             },
             {
-              label: "Community",
+              label: "Lite",
               href: "https://www.tagspaces.org/products/lite/",
             },
             {
