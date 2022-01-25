@@ -1,7 +1,12 @@
 ---
 id: setup-tagspaces-enterprise
 title: Setup TagSpaces Enterprise
+tags: [tutorial]
 ---
+
+:::caution
+⚒ This tutorial is work in progress
+:::
 
 ## Introduction
 

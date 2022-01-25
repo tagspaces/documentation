@@ -1,5 +1,6 @@
 ---
 title: Syncing files between TagSpaces installations
+tags: [tutorial]
 ---
 
 Using cloud services like:

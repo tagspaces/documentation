@@ -1,5 +1,6 @@
 ---
 title: Collaboratively using tags and tag groups
+tags: [tutorial]
 ---
 
 ## Introduction

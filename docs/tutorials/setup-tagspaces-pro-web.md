@@ -1,5 +1,6 @@
 ---
 title: Setup TagSpaces Pro Web
+tags: [tutorial]
 ---
 
 ## Introduction

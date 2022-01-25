@@ -1,5 +1,6 @@
 ---
 title: Use AWS S3 buckets as locations in TagSpaces
+tags: [tutorial]
 ---
 
 ## Motivation

@@ -1,6 +1,7 @@
 ---
 title: MinIO buckets hosted on NAS Server
 description: How to setup MinIO buckets on your NAS in order to connect them to a TagSpaces Pro installation?
+tags: [tutorial]
 ---
 
 import VideoYT from '@site/src/components/VideoYT';
