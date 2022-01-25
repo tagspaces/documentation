@@ -1,5 +1,5 @@
 ---
-title: About this Documentation
+title: About this documentation
 ---
 
 import { ProFeature } from '@site/src/components/CommonBlocks';

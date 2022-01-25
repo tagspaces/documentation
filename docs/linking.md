@@ -1,5 +1,5 @@
 ---
-title: Linking files, folders and locations
+title: Link files, folders and locations
 ---
 
 import { ProFeature, CenteredImage, CenteredVideo } from '@site/src/components/CommonBlocks';

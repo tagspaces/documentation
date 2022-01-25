@@ -57,6 +57,7 @@ The extended dialog will have in addition the following properties:
 
 - _Switch to manual index creation with persisted search index_ <ProFeature /> - disables the automatic indexing of a location on its opening. The application will try to open a previously created index located in a file _tsi.json_ from the _.ts_ folder of the location. This is useful on locations with many files, where the content does not change very often.
 - _Open this location in read-only mode_ <ProFeature /> - switches the interface of TagSpaces to read-only mode
+- _Index validity duration in minutes_ - validity of the location's [index](/search/#indexing)
 
 :::caution
 Be careful with connected huge folder located on network drive, depending on the speed of the network, this could lead to performance issues.
