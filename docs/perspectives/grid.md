@@ -1,6 +1,7 @@
 ---
 title: Grid Perspective (default)
 sidebar_label: Grid Perspective
+tags: [perspective]
 ---
 
 import { ProFeature, CenteredImage } from '@site/src/components/CommonBlocks';

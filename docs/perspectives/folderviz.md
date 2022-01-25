@@ -1,5 +1,6 @@
 ---
 title: Folder Visualization Perspective
+tags: [perspective]
 ---
 
 > **Note**: This perspective is not available in version 3 of TagSpaces.

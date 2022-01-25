@@ -1,5 +1,6 @@
 ---
 title: Gallery Perspective
+tags: [perspective]
 ---
 
 import { ProFeature, EntFeature, CenteredImage } from '@site/src/components/CommonBlocks'

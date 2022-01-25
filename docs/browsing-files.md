@@ -1,5 +1,6 @@
 ---
 title: Perspectives Overview
+tags: [perspective]
 ---
 
 import { ProFeature, CenteredImage } from '@site/src/components/CommonBlocks';

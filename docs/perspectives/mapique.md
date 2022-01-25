@@ -1,5 +1,6 @@
 ---
 title: Mapique Perspective
+tags: [perspective]
 ---
 
 import { ProFeature, EntFeature, CenteredImage, CenteredVideo } from '@site/src/components/CommonBlocks'
