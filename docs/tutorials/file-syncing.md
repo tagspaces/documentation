@@ -3,26 +3,24 @@ title: Syncing files between TagSpaces installations
 tags: [tutorial]
 ---
 
-Using cloud services like:
+One of the most common questions I receive about TagSpaces, is about the missing files synchronization feature. The concerns of the users are that they spend an hour tagging their files on the laptop, but now they want to get the same results also on their tablet or desktop computer and vice versa. Our opinion here is that TagSpaces does not need sync functionality, because all the tags are saved in the names of the files or in the so called sidecar files, which makes this meta-information extremely portable between devices. You have to just to sync files and this problem is already perfectly solved by some many online services. This is one of the main differences between TagSpaces and other applications offering tagging on files. Most of those applications are using some kind of database to store the tags, which makes the transfer of this information challenging. Besides that, your tagging information in this case is locked by the vendor and you cannot migrate to another application or service without significant effort. Saving the tags in the file names make the information stick to your files, and you can find files based on the tags even with simple search functionality supplied with your operating system.
 
-- Dropbox (TM)
-- Google Drive (TM)
-- Microsoft One Drive (TM)
+For the synchronization of the tagged files with TagSpaces, you can use any "cloud" service like <a href="http://dropbox.com" target="_blank">Dropbox</a> or projects like [Nextcloud](https://nextcloud.com), which provides sync clients. And since there are TagSpaces clients for Windows, macOS, Linux and Android), your tagged files can be synced and used almost everywhere.
 
-or other P2P projects like
+Here is a short list of services which can be used for syncing tagged files and folders:
 
-- [Syncthink (TM)](https://syncthing.net/)
-- Bittorentsync (TM)
+- Dropbox
+- Google Drive
+- Microsoft One Drive
 
-Encrypted:
+or other P2P projects like:
 
-- [Cryptomator](https://cryptomator.org/)
+- [Syncthink](https://syncthing.net/) - a good tutorial explaining details about the TagSpaces/Synching setup can be found on [Medium](https://attilaorosz.medium.com/syncronise-your-offline-notes-across-all-devices-without-the-cloud-1e82fa53d1f1)
+- Bittorentsync/Resilio
 
-One of the most common questions I receive about TagSpaces, is about the missing files synchronization feature. The concerns of the users are that they spend an hour tagging their files on the laptop, but now they want to get the same results also on their tablet or desktop computer and vice versa. Ok, my opinion here is that TagSpaces does not need sync functionality, because all the tags are saved in the names of the files or in the so called sidecar files, which makes this meta-information extremely portable between devices. You have to just to sync files and this problem is already perfectly solved by some many online services. This is one of the main differences between TagSpaces and other applications offering tagging on files. Most of those applications are using some kind of database to store the tags, which makes the transfer of this information challenging. Besides that, your tagging information in this case is locked by the vendor and you cannot migrate to another application or service without significant effort. Saving the tags in the file names make the information stick to your files, and you can find files based on the tags even with simple search functionality supplied with your operating system.
+E2E Encryption can be achieved with [Cryptomator](https://cryptomator.org/). You can details about how to setup in the [TagSpaces blog](https://www.tagspaces.org/blog/using-tagspaces-with-cryptomator/).
 
-For the synchronization of the tagged files with TagSpaces, you can use any "cloud" service like <a href="http://dropbox.com" target="_blank">Dropbox</a> or projects like <a href="http://owncloud.org" target="_blank">ownCloud</a>, which provides sync clients. At present, I personally use Dropbox with its native clients on my Ubuntu laptop and the <a href="https://play.google.com/store/apps/details?id=com.ttxapps.dropsync&amp;hl=en">Dropsync</a> app on my mobile phone and tablet device. This tool combination works perfectly with TagSpaces and the way it preserves tagged information. And since there are TagSpaces clients for many platforms (currently Windows, OS X, Linux and Android), your tagged files can be synced and used almost everywhere.
-
-The following diagram shows my current utilization of Dropbox in connection to TagSpaces.
+The following image shows my current utilization of Dropbox in connection to TagSpaces.
 
 ![Picture showing synching of tagged files with dropbox](/media/tagspaces-dropbox-sync.png)
 
