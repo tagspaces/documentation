@@ -1,16 +1,15 @@
 ---
 title: Web clipping - collect everything online
+tags: [tutorial]
 ---
 
-import { ProFeature, CenteredImage } from '@site/src/components/CommonBlocks';
-
-## Introduction
+import { ProFeature, CenteredImage, CenteredVideo } from '@site/src/components/CommonBlocks';
 
 In order to provide an easy way to collect web content such as web pages, articles, PDF-documents, bookmarks, places and screenshots, we have created the TagSpaces Web Clipper browser extension.
 
 ## Basic features
 
-The browser extensions are available for [Chrome](https://chrome.google.com/webstore/detail/tagspaces-web-clipper/ldalmgifdlgpiiadeccbcjojljeanhjk) and [Firefox](https://addons.mozilla.org/en-US/firefox/addon/tagspaces/). Both extensions have the following functionalities:
+The extension is available for [Chrome](https://chrome.google.com/webstore/detail/tagspaces-web-clipper/ldalmgifdlgpiiadeccbcjojljeanhjk), [Firefox](https://addons.mozilla.org/en-US/firefox/addon/tagspaces/) and [Microsoft Edge](https://microsoftedge.microsoft.com/addons/detail/tagspaces-web-clipper/dinjgbhjngaockabnagbonbfinanjpdn) browsers and have the following basic functionalities:
 
 - Saving the current webpage as a single file including the embedded images and styling information in HTML format. Here the extension supports two modes. The default one is called **simplified**, where TagSpaces uses a [library](https://github.com/mozilla/readability) for automatic extraction of the webpage's main content without any clutter of adds or navigation. This is very useful clipping articles for example. The second one is called **full**. Here the extension tries to save all the original text and image content of the webpage.
 - On Chrome we support an additional file format called MHTML, which is preserving the original look and feel of the web page as much as possible.
@@ -48,9 +47,9 @@ In addition to that we offers some features for more advanced use cases such as 
 
 The browser extensions are a practical additions to the desktop applications of TagSpaces, allowing a seamless way to collect locally and organize data from the web.
 
-## Chrome Fine-tuning
+## Adjustments for Chrome based browsers
 
-Here you will find some tips and trick for using the TagSpaces extension in the Chrome browser.
+Here you will find some tips and trick for using the TagSpaces extension in the **Chrome** and **Chromium** browsers. Some of these will work also for the **Microsoft Edge** browser.
 
 ### Enabling the saving of webpages as MHTML
 
@@ -81,8 +80,20 @@ So now I can conveniently save and tags any page by just clicking this shortcut 
 
 ![web clipper in action](/media/tagspaces-web-clipping.png)
 
-### Download location for web clippings
+### Specify download folder for web clippings
 
 In order to be asked every time, where you want to save the scaped web content, make sure to activate the checkbox "Ask where to save each file before downloading" in the advanced Chrome settings.
 
 ![enable asking where to save the files in Chrome](/media/chrome-ask-where-to-save.png)
+
+### Pin the web clipper
+
+If you want to make the Web Clipper easily accessible it can be placed in the extensions area. You can learn how from the following video.
+
+<CenteredVideo
+  caption="Video showing how to pin the chrome web clipper to the extensions's area"
+  src="/media/videos/pin-extension-chrome.mp4"
+  maxWidth={600}
+  autoPlay
+  showCaption
+/>
