@@ -41,7 +41,7 @@ module.exports = {
   themeConfig: {
     navbar: {
       // title: "TagSpaces Docs",
-      hideOnScroll: true,
+      hideOnScroll: false,
       logo: {
         alt: "TagSpaces Logo",
         src: "img/tagspaces-docs-logo.svg",
@@ -53,6 +53,11 @@ module.exports = {
         //   label: "Docs",
         //   position: "left",
         // },
+        {
+          href: "https://www.tagspaces.org/products",
+          label: "Our Products",
+          position: "right",
+        },
         {
           href: "https://www.tagspaces.org/demo",
           label: "Live Demo",
@@ -72,7 +77,7 @@ module.exports = {
     // },
     announcementBar: {
       id: "newyearssale",
-      backgroundColor: "black",
+      backgroundColor: "#525252",
       textColor: "white",
       content:
         '20% off for <a href="https://www.tagspaces.org/products/">TagSpaces Pro</a> only in January!',
