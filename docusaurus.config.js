@@ -54,12 +54,12 @@ module.exports = {
         //   position: "left",
         // },
         {
-          href: "https://www.tagspaces.org/products",
+          href: "https://www.tagspaces.org/products/",
           label: "Our Products",
           position: "right",
         },
         {
-          href: "https://www.tagspaces.org/demo",
+          href: "https://www.tagspaces.org/demo/",
           label: "Live Demo",
           position: "right",
         },
