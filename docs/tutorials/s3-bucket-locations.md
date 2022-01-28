@@ -3,9 +3,7 @@ title: Use AWS S3 buckets as locations in TagSpaces
 tags: [tutorial]
 ---
 
-## Motivation
-
-TagSpaces PRO/Web/Enterprise provide the ability to connect AWS S3 compatible buckets as locations. This offers many new capabilities and use cases.
+TagSpaces Pro, Pro Web and Enterprise provide the ability to connect AWS S3 compatible buckets as locations. This enables many new capabilities and use cases.
 
 ## Step 1 - Create a bucket in AWS S3
 

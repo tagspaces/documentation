@@ -77,6 +77,10 @@ In addition to the regular locations, the cloud locations have the following pro
 - _Access Key_ - the access key of a user, who has the rights to open this bucket
 - _Secret Access Key_ - the secret access key of the user
 - _Bucket Name_ - the name of the bucket to which this location points
+- _Endpoint URL_ - the url of the S3 service
+
+Clicking the advanced more button will reveal some more properties:
+
 - _Region_ - the AWS region, where the bucket is hosted. The dropdown is located on the right from the bucket name.
 
 :::caution

@@ -1,5 +1,6 @@
 ---
 title: Setup TagSpaces Web (deprecated)
+tags: [tutorial]
 ---
 
 ## User Management

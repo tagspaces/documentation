@@ -1,5 +1,6 @@
 ---
 title: Setup SabreDAV version
+tags: [tutorial]
 ---
 
 :::caution

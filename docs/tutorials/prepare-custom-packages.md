@@ -1,6 +1,6 @@
 ---
 title: Prepare custom packages
-# tags: [tutorial]
+tags: [tutorial]
 ---
 
 ## Introduction

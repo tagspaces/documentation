@@ -9,7 +9,7 @@ TagSpaces Pro Web is a web based single page web application. For hosting it you
 
 This tutorials explains you how to setup the "App Hosting" area located in the upper right part of the following deployment architecture diagram:
 
-![Deployment architecture of TagSpaces Web Pro](https://www.tagspaces.org/diagrams/tagspaces-pro-web-software-architecture.png)
+![Deployment architecture of TagSpaces Web Pro](/media/tagspaces-pro-web-software-architecture.png)
 
 ## Download and unpack
 
