@@ -1,6 +1,6 @@
 ---
 slug: /
-title: What is TagSpaces
+title: What is TagSpaces ?
 ---
 
 Welcome to the documentation of the TagSpaces products.
