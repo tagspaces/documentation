@@ -317,8 +317,9 @@ module.exports = {
         "tutorials/s3-bucket-locations",
         "tutorials/setup-minio-bucket-nas",
         "dev/extension-development-guide",
-        "selfhosting",
-        "tutorials/sabre-dav-setup",
+        "tutorials/e2ee-with-tagspaces-and-cryptomator",
+        // "selfhosting",
+        // "tutorials/sabre-dav-setup",
       ],
     },
     {
