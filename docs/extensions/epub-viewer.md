@@ -2,11 +2,12 @@ import { ProFeature, CenteredImage, CenteredVideo } from '@site/src/components/C
 
 # EPUB Viewer
 
-A TagSpaces extension allowing you to open ebooks in EPUB format.
+A TagSpaces extension allowing you to open eBooks or digital magazines in EPUB format.
 
 ## Features
 
-- Previewing ebooks in EPUB format
+- Previewing files in EPUB format
+- Automatically switch to two-fold mode by sufficient width
 
 <CenteredVideo
     caption="The EPUB viewer in action"

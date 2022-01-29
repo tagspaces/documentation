@@ -5,7 +5,7 @@ title: Preview Files
 The application supports previewing of many file types without the need of external viewer. It comes with the following viewer extensions:
 
 - [Media Player](extensions/media-player.md)
-<!-- * [EPUB Reader](extensions/epub-viewer.md)-->
+- [EPUB Reader](extensions/epub-viewer.md)
 - [HTML Reader](extensions/html-viewer.md)
 - [Image Viewer](extensions/image-viewer.md)
 - [Link Opener](extensions/url-viewer.md)
@@ -33,8 +33,8 @@ The following table lists the supported files types for viewing and editing of f
 <table className="table table-striped">
   <thead>
     <th>File type extension</th>
-    <th>Windows, Mac OS &amp; Linux desktop apps</th>
-    <th title="Pro and Enterprise">Web versions</th>
+    <th>Windows, macOS &amp; Linux desktop apps</th>
+    <th>Web versions</th>
     <th>Android app</th>
   </thead>
   <tr>
@@ -251,7 +251,7 @@ The following table lists the supported files types for viewing and editing of f
     <td>FLAC</td>
     <td>play</td>
     <td>play</td>
-    <td>planned</td>
+    <td>play</td>
   </tr>
   <tr>
     <td>OGG</td>
