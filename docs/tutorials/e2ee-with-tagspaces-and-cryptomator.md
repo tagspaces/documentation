@@ -13,8 +13,6 @@ Keeping your own files in your own cloud account is undoubtedly a better solutio
 
 Encryption might sound daunting to the everyday user, and rightly so. It is a broad topic, there are many solutions, and implementations, often targeting the advanced user, or even the expert. If you just want to secure your notes, it might seem like a little too much work of work. And of course we all prefer an instant solution. This is where [Cryptomator](https://cryptomator.org/) comes into the picture.
 
-![cryptomator logo](https://www.tagspaces.org/content/v2-7/cryptomator-logo.jpg)
-
 Cryptomator is a free and open source, transparent, client-side encryption solution, which makes encrypting your cloud hosted files effortless. The cross-platform software is available for Windows, Mac, Linux, and as an executable Java `.jar`. The platform is absolutely service agnostic: Your encrypted files can be used with any cloud storage provider, as the encryption/decryption happens on your local machine, with as password provided by yourself. Cryptomator integrates into your OS's file system, making encryption as easy as a drag and drop operation in your file manager. How much easier could it be?
 
 ## Your encrypted Evernote alternative
@@ -38,17 +36,17 @@ Once you're done, your new vault should show up on the side pane of Cryptomator'
 - Enter, and confirm a new password
 - And press "Create Vault"
 
-![new vault added](https://www.tagspaces.org/content/v2-7/cryptomator-new-vault-added.png)
+![new vault added](./e2ee-cryptomator/cryptomator-new-vault-added.png)
 
 Now your new vault is ready to use. To unlock it, you need to enter your password. In the "More options menu underneath, you can change the drive name to whatever you like, and opt to save your password, so that you will not need to enter it on the local machine, each time you want to unlock it. This might be good for single user computers, but you should remember it's always a security risk to store your passwords.
 
-![unlock encrypted vault](https://www.tagspaces.org/content/v2-7/cryptomator-unlock-vault.png)
+![unlock encrypted vault](./e2ee-cryptomator/cryptomator-unlock-vault.png)
 
 As you enter your password, your vault should be unlocked and automatically mounted on your system. Your File Browser application will most likely fire up, showing your vault mounted as a new `dav` network drive. You can just begin to copy or move files and folders onto this drive, and they will be instantly encrypted by Cryptomator, without you noticing anything. To you all the files and folders will appear as if they were stored in their plain for mat on your file system.
 
-You can also lock the vault any time from within Cryptomator by pressing "Lock vault"
+You can also lock the vault any time from within Cryptomator by pressing "Lock"
 
-![lock vault button](https://www.tagspaces.org/content/v2-7/cryptomator-lock-vault-button.png)
+![lock vault button](./e2ee-cryptomator/cryptomator-lock-vault-button.png)
 
 This will unmount the drive and make the vault's contents unacceptable to anyone locally. When you unlock the vault, you will have full access again.
 
@@ -64,7 +62,7 @@ You can now easily access your vaulted files from within TagSpaces:
 - Mount the drive, if you have to (although this should happen automatically)
 - And connect it as a new location in TagSpaces.
 
-![connect-vault-to-tagspaces](https://www.tagspaces.org/content/v2-7/cryptomator-connect-vault-to-tagspaces.png)
+![connect-vault-to-tagspaces](./e2ee-cryptomator/cryptomator-connect-vault-to-tagspaces.png)
 
 > Important note: You should not be adding the folder in which the Cryptomator vault is located, but rather the virtual dav network drive, which Cryptomator creates. If you need more information about how to mount a drive, you should consult your operating systems's documentation, although Cryptomator should handle this step for you automatically.
 
