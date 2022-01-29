@@ -1,3 +1,5 @@
+import { ProFeature, CenteredImage, CenteredVideo } from '@site/src/components/CommonBlocks';
+
 # EPUB Viewer
 
 A TagSpaces extension allowing you to open ebooks in EPUB format.
@@ -6,9 +8,18 @@ A TagSpaces extension allowing you to open ebooks in EPUB format.
 
 - Previewing ebooks in EPUB format
 
-![Screenshot of the viewerEPUB](/media/extensions/viewer-epub-lead.png)
+<CenteredVideo
+    caption="The EPUB viewer in action"
+    src="/media/extensions/viewer-epub.mp4"
+    posterUrl="/media/extensions/viewer-epub.jpg"
+    maxWidth="100%"
+    autoPlay
+    showCaption
+  />
 
-![Screenshot of the viewerEPUB](/media/extensions/viewer-epub-twofold.png)
+<!-- ![Screenshot of the viewerEPUB](/media/extensions/viewer-epub-lead.png)
+
+![Screenshot of the viewerEPUB](/media/extensions/viewer-epub-twofold.png) -->
 
 ## Used libraries
 
