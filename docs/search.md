@@ -2,6 +2,8 @@
 title: Search Overview
 ---
 
+import VideoYT from '@site/src/components/VideoYT';
+
 import { ProFeature, CenteredImage } from '@site/src/components/CommonBlocks';
 
 In order to offer desktop search functionalities, TagSpaces offers a variety of search related features, which are described in this section.
@@ -245,7 +247,12 @@ All other search related settings should work as known from the single location 
 
 With the functionality one can store commonly used search queries for later use.
 
-![export search queries](/media/stored-searches.png)
+<VideoYT
+    youtubeId="WMGsJjh_XPU"
+    title="Video showing creation and usage of a stored search query"
+    posterUrl="/media/stored-searches.png"
+    height={550}
+  />
 
 :::tip
 The stored searches are location independent, so they can be executed on any location.
