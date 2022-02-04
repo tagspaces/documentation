@@ -9,10 +9,6 @@ TagSpaces is an open source, cross-platform, no backend, no login, file manager,
 
 ![Start screen](/media/home-screen.png)
 
-<!-- The following few slides explain the basics of the project. To navigate the presentation use the arrow keys or click on it and use the arrow key on your keyboard. -->
-
-<!--iframe src="https://docs.google.com/presentation/d/e/2PACX-1vQEVye_m0Su6d0_jcUmmnqNVzt2cnXVB8CcejLr8k6fGH5_TIV4YC5QNbxyNBNoVdwRFu42Zor7ni1g/embed?start=true&loop=true&delayms=5000" frameBorder="0" width="100%" height="500" allowFullScreen></iframe-->
-
 ## Key Features
 
 - Platform independent and future-proof tagging for files and folders
@@ -42,9 +38,7 @@ TagSpaces is an open source, cross-platform, no backend, no login, file manager,
 - **[TagSpaces Pro Desktop](https://www.tagspaces.org/products/pro/)** - extended solution based on the community version for advanced users
 - **[TagSpaces Pro Web](https://www.tagspaces.org/products/proweb/)** - A package for self hosting on your NAS or other web infrastructure connecting object storage
 - **[TagSpaces Pro Enterprise](https://www.tagspaces.org/products/enterprise/)** -
-- **[Web Clipper extension for Chrome](https://www.tagspaces.org/products/webclipper/)** - a web clipper browser extension allowing the saving of whole webpages, webpage fragments and screenshot as local files
-- **[Web Clipper addon for Firefox](https://www.tagspaces.org/products/webclipper/)** - same as the previous one but for the Firefox browser
-- **[Web Clipper extension for Microsoft Edge](https://www.tagspaces.org/products/webclipper/)** - same as the previous one but for the Microsoft Edge browser
+- **[Web Clipper extension for Chrome, Firefox and Edge](https://www.tagspaces.org/products/webclipper/)** - a web clipper browser extension allowing the saving of whole webpages, webpage fragments and screenshot as local files
 - **[Android app](https://www.tagspaces.org/downloads/)** - a mobile app offering most of the features from the community desktop version on Android devices
 
 ## Common Use Cases
