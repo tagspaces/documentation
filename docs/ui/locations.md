@@ -160,9 +160,7 @@ If you do not have such persisted index file, you can create one manually with t
 
 ## Tag extraction from location
 
-<ProFeature />
-
-In the content menu of every tag group in the PRO version, there is an entry called "Collect Tags From Current Location", which does exactly this. It analyses the index of the current location and identifies tags with unique names, which are then added to the tag group from which the operation was started.
+In the content menu of every tag group, there is an entry called "Collect Tags From Current Location", which does exactly this. It analyses the index of the current location and identifies tags with unique names, which are then added to the tag group from which the operation was started.
 
 <CenteredImage
     caption="Starting the tag extraction"
