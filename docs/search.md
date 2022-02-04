@@ -3,12 +3,11 @@ title: Search Overview
 ---
 
 import VideoYT from '@site/src/components/VideoYT';
+import { ProFeature, CenteredImage, CenteredVideo } from '@site/src/components/CommonBlocks';
 
-import { ProFeature, CenteredImage } from '@site/src/components/CommonBlocks';
+In order to offer desktop search functionalities, TagSpaces provides a variety of search related features, which are described in this section.
 
-In order to offer desktop search functionalities, TagSpaces offers a variety of search related features, which are described in this section.
-
-The user can switch to the search area by clicking the `Ctrl+Shift+f` / `Cmd+Shift+f` key combination. This is global key binding so it will work even if the application is not currently visible or if focus. The search area can be also opening with magnifying glass icon visible above **(1)** in the following screenshot.
+The user can start a search by switch to the search area by pressing the `Ctrl+Shift+f` / `Cmd+Shift+f` key combination. This is global key binding so it will work even if the application is not currently visible or if focus. The search area can be also opening with magnifying glass icon visible above **(1)** in the following screenshot.
 
 ![Open search](/media/open-search.png)
 
@@ -22,7 +21,7 @@ With basic search you are able to find files and folders by their name, tags and
 - The name of the parent directory of a given file is also considered by the search algorithm. So for example if you are searching for photos from you vacation in USA and the folder where these files are located contains the word USA (e.g. '20160301 vacation usa'), then the search will list all the files located directly in this folder.
 - The content of TXT, MD and HTML, if the [full text search](#full-text-search) is activated for the current location - <ProFeature />
 
-The **search options** can be access after clicking on the button with the sliders visible above **(2)** on the previous screenshot.
+The **search options**, visible in the next screenshot, can be accessed after clicking on the button with the sliders **(2)** from the previous screenshot.
 
 ![Search options](/media/search-options.png)
 
@@ -30,9 +29,9 @@ The **search options** can be access after clicking on the button with the slide
 
 The search algorithm can be required to deliver results for the following search scopes:
 
-- **Location** - will search in the current location. This is the default scope.
-- **Folder** - will search the current folder including all sub-folders.
-- **Global** <ProFeature /> - will search in all configured locations. You can find more in the [Global Search](#global-search) section.
+- **Location** - will deliver results from the current location. This is the default scope.
+- **Folder** - will deliver results for the current folder including all sub-folders.
+- **Global** <ProFeature /> - will search in all configured locations. You can find more in the [Global Search](#global-search) section. This scope has currently a beta status.
 
 ### Search types
 
@@ -60,10 +59,12 @@ The search query consists of two parts. The first one is just a simple free text
 
 The tags specified here will be visible in the search options described in the previous [paragraph](#search-for-tagged-entries)
 
-<CenteredImage
-    caption="Short video showing searching for tagged files"
-    src="https://www.tagspaces.org/content/v3-x/advanced-tag-search.gif"
-    maxWidth1="550px"
+<CenteredVideo
+    caption="Searching for tags"
+    src="/media/videos/searching-for-tags.mp4"
+    posterUrl="/media/videos/searching-for-tags.jpg"
+    maxWidth="100%"
+    autoPlay
     showCaption
   />
 
@@ -74,11 +75,11 @@ Example search queries:
 
 ### Indexing
 
-TagSpaces has an integrated file and folder search functionality based on an **index**, which is created when you hit the search button. The index is valid for by default for 10 minutes. This time can adjust individually in the properties of every [location](/ui/locations/#local-locations). The ideas behind this is that some locations may contain files which do not change so often, so here a longer validity like 1 month can be applied.
+TagSpaces has an integrated file and folder search functionality based on an **index**, which is created when you hit the search button. The index is valid by default for 10 minutes. This time can adjust individually in the properties of every [location](/ui/locations/#local-locations). The ideas behind this is that some locations may contain files which do not change so often, so here a longer validity like 1 month can be applied.
 
 <!--  If your location contains a huge amount of files (> 20000) it is recommended to split it in two or more location or to [disable the indexing](/ui/locations#local-locations) on location start (which is a <ProFeature /> feature). Disabling the indexing at start may also be useful for location based in a networks like on NAS systems or AWS S3 buckets. -->
 
-If you decide to disable the automatic indexing, you should do this step manually on regular based in order to have a working and accurate search functionality. The index can be updated in the following ways:
+If you decide to disable the automatic indexing, you should do the indexing manually on regular based in order to have a working and accurate search functionality. The index can be updated in the following ways:
 
 - In the menu of every location in the location manager there is an item called "Refresh Location Index"
 - All indexes can be update at once from the search menu with the option "Update all location indexes"
@@ -92,7 +93,7 @@ If you decide to disable the automatic indexing, you should do this step manuall
 
 ### Limit the search results
 
-By default, TagSpaces is limiting the amount of the found search results to 1000 files. This limitation is also valid for the maximum files, which can be displayed in a single folder. In tab general of the Settings there is a field where you can increase or decrease this limit. See the next screenshot.
+By default, TagSpaces is limiting the amount of the found search results to 1000 files and folders. This limitation is also valid for the maximum files, which can be displayed in a single folder. In tab [general](/ui/settings#general) of the settings there is a field where you can increase or decrease this limit. See the next screenshot.
 
 <CenteredImage
     caption="Adjust number of shown / found items in the perspectives"
@@ -105,33 +106,35 @@ By default, TagSpaces is limiting the amount of the found search results to 1000
 
 <ProFeature />
 
-The search options described in this section are available only in the Pro and Enterprise editions of TagSpaces. In addition to the basic search, the advanced search supports the following filter criteria:
+The search options described in this section are available only in the Pro and Enterprise editions of TagSpaces.
 
 <CenteredImage
-    caption="Screenshot showing the advanced search options"
+    caption="The advanced search options"
     src="/media/tagspaces-advanced-search.png"
     maxWidth="300px"
     showCaption
   />
 
+In addition to the basic search, the advanced search supports the following filter criteria:
+
 ### Search by type
 
 In the file type dropdown you can specify types of the files you want to search. The file types are grouped in the following sections:
 
-- Pictures and Photos: JPG, PNG, GIF, etc.
-- Documents: PDF, ODF, DOCX, EXL, etc.
-- Notes: MD, TXT, HTML, etc.
-- Audio files: OGG, MP3, WAV, etc.
-- Video files: WEBM, OGV, MP4, etc.
-- Archives: ZIP, RAR, TGZ, 7Z, etc.
-- Bookmarks: URL, LNK, etc.
-- eBook EPUB, MOBI, AZW, PRC, etc.
+- **Pictures and Photos**: JPG, PNG, GIF, etc.
+- **Documents**: PDF, ODF, DOCX, EXL, etc.
+- **Notes**: MD, TXT, HTML, etc.
+- **Audio files**: OGG, MP3, WAV, etc.
+- **Video files**: WEBM, OGV, MP4, etc.
+- **Archives**: ZIP, RAR, TGZ, 7Z, etc.
+- **Bookmarks**: URL, LNK, etc.
+- **eBook**: EPUB, MOBI, AZW, PRC, etc.
 
 In addition to that there are some special filters:
 
-- Folders - selecting this options will limit the search to only folders
-- Files - selecting this option will limit the search to only files
-- Untagged files or folders - this options will show only files and folders witch are not tagged
+- **Folders** - selecting this options will limit the search to only folders
+- **Files** - selecting this option will limit the search to only files
+- **Untagged files or folders** - this options will show only files and folders witch are not tagged
 
 <CenteredImage
     caption="Search by file type"
@@ -144,13 +147,13 @@ In addition to that there are some special filters:
 
 In this dropdown you can filter for files by their size. The following options are supported:
 
-- Empty - will filter files with zero size
-- Tiny - will filter files smaller than 10KB
-- Very small - will filter files smaller than 100KB
-- Small - will filter files smaller than 1MB
-- Medium - will filter files smaller than 50MB
-- Large - will filter files smaller than 1GB
-- Huge - will filter files bigger that 1GB
+- **Empty** - will filter files with zero size
+- **Tiny** - will filter files smaller than 10KB
+- **Very small** - will filter files smaller than 100KB
+- **Small** - will filter files smaller than 1MB
+- **Medium** - will filter files smaller than 50MB
+- **Large** - will filter files smaller than 1GB
+- **Huge** - will filter files bigger that 1GB
 
 <CenteredImage
     caption="Options for searching by size"
@@ -163,13 +166,13 @@ In this dropdown you can filter for files by their size. The following options a
 
 Here you can specify in which period the files you are searching should have been modified. This filter supports the following options:
 
-- Today - will show files and folders modified today
-- Yesterday - will show results modified yesterday
-- Past 7 days - will show results modified in the last 7 days
-- Past 30 days - will shows results modified in the last 30 days
-- Past 6 months - will show files and folders modified in the last 6 months from today
-- Past year - will show files and folders modified in the last 12 months from today
-- More than one year - will show files and folder older than one year
+- **Today** - will show files and folders modified today
+- **Yesterday** - will show results modified yesterday
+- **Past 7 days** - will show results modified in the last 7 days
+- **Past 30 days** - will shows results modified in the last 30 days
+- **Past 6 months** - will show files and folders modified in the last 6 months from today
+- **Past year** - will show files and folders modified in the last 12 months from today
+- **More than one year** - will show files and folder older than one year
 
 <CenteredImage
     caption="Options for searching by last modified date"
@@ -195,8 +198,6 @@ TagSpaces PRO supports full text search for text (.TXT), markdown (.MD) and html
 :::caution
 On locations with many big text files, activating this features may slow down the performance of the application, so be careful on which location you are activating it.
 :::
-
-<!--This text content is saved in the hidden `.ts` folder and is considered later by the search. Since this is a early experimental feature, please don't relay only on ly on it.-->
 
 These file formats are currently supported:
 
@@ -224,7 +225,7 @@ This feature is still in beta state and could lead to performance issues if you 
 
 <ProFeature />
 
-Starting with version 3.5, TagSpaces Pro offers searching in all locations. We call this feature "Global search". It works on local and remote S3 based locations. The feature can be activated by clicking the _Global_-button in the search area, as seen in the following screenshot.
+TagSpaces Pro offers searching in all locations. We call this feature "Global search". It works on local and remote S3 based locations. The feature can be activated by clicking the _Global_-button in the search area, as seen in the following screenshot.
 
 <CenteredImage
     caption="Activating the global search"
@@ -245,7 +246,7 @@ All other search related settings should work as known from the single location 
 
 <ProFeature />
 
-With the functionality one can store commonly used search queries for later use.
+With the functionality one can store commonly used search queries for later use. The following video is demonstrating how this feature can be used.
 
 <VideoYT
     youtubeId="WMGsJjh_XPU"
