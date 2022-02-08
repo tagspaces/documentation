@@ -31,7 +31,7 @@ Do not choose very large directories such as your _home folder_ as a location ro
 
 ### Open sub-folders
 
-You can open the sub-folder of a given location by clicking on the suit-case or the cloud icons depending on the location type.
+You can open the sub-folders of a given location by clicking on the suitcase or the cloud icon depending on the location type.
 
 <CenteredVideo
     caption="Open sub-folders of a location"
