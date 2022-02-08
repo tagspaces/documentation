@@ -3,7 +3,7 @@ title: Location's Overview
 ---
 
 import VideoYT from '@site/src/components/VideoYT';
-import { ProFeature, CenteredImage } from '@site/src/components/CommonBlocks';
+import { ProFeature, CenteredImage, CenteredVideo } from '@site/src/components/CommonBlocks';
 
 A **location** is a folder on your local file system, which will serve as a root for listing sub folders, files and documents. Typical locations are for example the folder where you collect your photos or folders where you store documents, ebooks or music.
 
@@ -29,6 +29,19 @@ The location with the light green background color (4) is the **currently opened
 Do not choose very large directories such as your _home folder_ as a location root folder, as this may lead to performance issues. The reason for this is that TagSpaces is indexing the whole location every time you open it and the indexing can just take time if the location contains many files. On modern computers with SSD hard drives having a location with up to 60000 files is usually not a problem. The current upper limit for files indexed in a locations is 200000.
 :::
 
+### Open sub-folders
+
+You can open the sub-folder of a given location by clicking on the suit-case or the cloud icons depending on the location type.
+
+<CenteredVideo
+    caption="Open sub-folders of a location"
+    src="/media/videos/open-locations-subfolders.mp4"
+    posterUrl="/media/videos/open-locations-subfolders.png"
+    maxWidth="316px"
+    autoPlay
+    showCaption
+  />
+
 **Location types**
 
 In TagSpaces there are two type of locations, local and cloud based (e.g. on AWS S3 Object Storage). The type of the location can be selected during its creation.
@@ -49,6 +62,10 @@ The regular locations have the following properties:
 - _Enable full text search for TXT, MD and HTML files_ <ProFeature /> - activates the indexing of the content of text, markdown and HTML files.
 - _Watch for external changes in this location_ <ProFeature /> - once switched on TagSpaces will watch the folder to which the location points and all its sub folders for changes and reflect them in the application.
 
+:::caution
+Connecting folders located on network drives (e.g. NAS systems) as locations is not recommended. Depending on the speed of your network and the amount of files, the search in such locations can perform poorly!
+:::
+
 Clicking on the `Advanced Mode` button will extend the dialog and it will look like this.
 
 ![Advanced properties of a location pointing to a local folder](/media/local-location-properties-advanced.png)
@@ -58,10 +75,6 @@ The extended dialog will have in addition the following properties:
 - _Switch to manual index creation with persisted search index_ <ProFeature /> - disables the automatic indexing of a location on its opening. The application will try to open a previously created index located in a file _tsi.json_ from the _.ts_ folder of the location. This is useful on locations with many files, where the content does not change very often.
 - _Open this location in read-only mode_ <ProFeature /> - switches the interface of TagSpaces to read-only mode
 - _Index validity duration in minutes_ - validity of the location's [index](/search/#indexing)
-
-:::caution
-Be careful with connected huge folder located on network drive, depending on the speed of the network, this could lead to performance issues.
-:::
 
 ## Object Storage Locations
 
