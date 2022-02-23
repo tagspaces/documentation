@@ -6,7 +6,7 @@ tags: [tutorial]
 
 import VideoYT from '@site/src/components/VideoYT';
 
-This tutorial will guide through the setting up of a self hosted object storage based on MinIO for QNAP based NAS systems. Then we will show you how to setup the TagSpaces PRO Web on a web server and connect it to the MinIO server. We will use the Docker container apps, which are available on the operating systems of the NAS servers. On a QNAP NAS the app is called **ContainerStation**, so if is not installed please install before starting with your setup.
+This tutorial will guide through the setting up of a self hosted object storage based on [MinIO](https://min.io) for QNAP based NAS systems. Then we will show you how to setup the TagSpaces PRO Web on a web server and connect it to the MinIO server. We will use the Docker container apps, which are available on the operating systems of the NAS servers. On a QNAP NAS the app is called **ContainerStation**, so if is not installed please install before starting with your setup.
 
 ## Installing the MinIO Docker application
 
