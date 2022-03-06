@@ -142,7 +142,7 @@ The folder properties is very similar to the file properties area. It can be ope
 - **(5) Color** <ProFeature /> - Shows the color which is assigned to this folder. Clicking in the color area will open a dialog for changing the color of the folder. Click [here](/annotations/#custom-folder-color) for a short video demonstration the functionality.
 - **(6) Path** - Shows the complete path of the folder. If the folder is located on an object storage location, a cloud icon instead of the a suitcase will be shown in front of the path.
 - **(7) Links for sharing** - will show one or two fields representing links which you can [share](/sharing) files with other users.
-- **(8) Default perspective for this folder** - Click on this field will open a dropdown where you can specify the default perspective for this folder.
+- **(8) Default perspective for this folder** <ProFeature /> - Click on this field will open a dropdown where you can specify the default perspective for this folder.
 - **(9) Thumbnail** <ProFeature /> - This area shows the current thumbnail of the folder. Clicking on the **CHANGE THUMBNAIL** button will open a dialog, where can choose a new thumbnail for it.
 
 ## Dark mode
