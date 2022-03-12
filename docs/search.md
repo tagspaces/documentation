@@ -53,7 +53,7 @@ In order to provide a detailed search support for tags, the user interface for e
 
 The search query consists of two parts. The first one is just a simple free text for which is searched in the index. The second component is a list of tags. Here you define very precise the query by including and excluding tags. You can use the following shortcuts to add, remove or exclude certain tags.
 
-- `+` - will add the tag in the **Must contain all of the tags** field - logical ADD
+- `+` - will add the tag in the **Must contain all of the tags** field - logical AND
 - `|` - will add the tat in the **At least one tag** field - logical OR
 - `-` - will add the tags in the **None of these tags** field - logical exclusion
 
@@ -70,8 +70,8 @@ The tags specified here will be visible in the search options described in the p
 
 Example search queries:
 
-- **"jpg +usa +beach -sunset"** - will find all files and folders having jpg in the name and having the tag `beach` but not `sunset`
-- **"|beach |sunset"** - will find all files and folder having the tag `beach` or `sunset`
+- **"jpg +usa +beach -sunset"** - will find all files and folders having jpg in the name and having the `usa` and `beach` tags but not the `sunset` tag
+- **"|beach |sunset"** - will find all files and folder having the tags `beach` or `sunset`
 
 ### Indexing
 
