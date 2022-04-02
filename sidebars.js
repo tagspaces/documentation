@@ -315,6 +315,7 @@ module.exports = {
         "tutorials/file-syncing",
         "tutorials/sharing-tags",
         "tutorials/s3-bucket-locations",
+        "tutorials/wasabi-locations",
         "tutorials/setup-minio-bucket-nas",
         "dev/extension-development-guide",
         "tutorials/e2ee-with-tagspaces-and-cryptomator",

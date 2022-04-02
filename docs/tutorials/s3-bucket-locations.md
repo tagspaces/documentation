@@ -1,9 +1,13 @@
 ---
-title: Use AWS S3 buckets as locations in TagSpaces
+title: How to use AWS S3 buckets as locations
 tags: [tutorial]
 ---
 
-TagSpaces Pro, Pro Web and Enterprise provide the ability to connect AWS S3 compatible buckets as locations. This enables many new capabilities and use cases.
+import { ProFeature, CenteredImage, CenteredVideo } from '@site/src/components/CommonBlocks';
+
+<ProFeature />
+
+TagSpaces Pro, Pro Web and Enterprise provide the ability to connect AWS S3 compatible object storage (buckets) as locations. This opens the app for many new capabilities and use cases. By enabling you to store files online, you can build and easily manage your own personal cloud storage.
 
 ## Step 1 - Create a bucket in AWS S3
 
@@ -84,87 +88,88 @@ There you can enter and adjust your policies. The following JSON snipped, is a p
 
 Policy for read-only user:
 
+```json
+{
+  "Version": "2012-10-17",
+  "Statement": [
     {
-        "Version": "2012-10-17",
-        "Statement": [
-            {
-                "Sid": "VisualEditor0",
-                "Effect": "Allow",
-                "Action": [
-                    "s3:ListBucket",
-                    "s3:GetObject"
-                ],
-                "Resource": [
-                    "arn:aws:s3:::your-bucket-name",
-                    "arn:aws:s3:::your-bucket-name/*"
-                ]
-            },
-            {
-                "Sid": "VisualEditor1",
-                "Effect": "Allow",
-                "Action": "s3:GetAccountPublicAccessBlock",
-                "Resource": "*"
-            }
-        ]
+      "Sid": "VisualEditor0",
+      "Effect": "Allow",
+      "Action": ["s3:ListBucket", "s3:GetObject"],
+      "Resource": [
+        "arn:aws:s3:::your-bucket-name",
+        "arn:aws:s3:::your-bucket-name/*"
+      ]
+    },
+    {
+      "Sid": "VisualEditor1",
+      "Effect": "Allow",
+      "Action": "s3:GetAccountPublicAccessBlock",
+      "Resource": "*"
     }
+  ]
+}
+```
 
 Policy for user with admin/write access:
 
+```json
+{
+  "Version": "2012-10-17",
+  "Statement": [
     {
-        "Version": "2012-10-17",
-        "Statement": [
-            {
-                "Sid": "VisualEditor0",
-                "Effect": "Allow",
-                "Action": [
-                    "s3:ReplicateObject",
-                    "s3:GetObjectAcl",
-                    "s3:GetObjectVersionAcl",
-                    "s3:PutObjectTagging",
-                    "s3:DeleteObject",
-                    "s3:GetBucketWebsite",
-                    "s3:GetBucketNotification",
-                    "s3:GetReplicationConfiguration",
-                    "s3:ListMultipartUploadParts",
-                    "s3:PutObject",
-                    "s3:GetObject",
-                    "s3:RestoreObject",
-                    "s3:ListBucket",
-                    "s3:GetBucketPolicy",
-                    "s3:GetObjectVersionTorrent",
-                    "s3:AbortMultipartUpload",
-                    "s3:GetBucketRequestPayment",
-                    "s3:GetObjectTagging",
-                    "s3:GetMetricsConfiguration",
-                    "s3:PutObjectAcl",
-                    "s3:GetBucketPublicAccessBlock",
-                    "s3:ListBucketMultipartUploads",
-                    "s3:PutObjectVersionTagging",
-                    "s3:GetBucketVersioning",
-                    "s3:GetBucketAcl",
-                    "s3:PutInventoryConfiguration",
-                    "s3:GetObjectTorrent",
-                    "s3:GetBucketCORS",
-                    "s3:GetBucketLocation",
-                    "s3:ReplicateDelete",
-                    "s3:GetObjectVersion"
-                ],
-                "Resource": [
-                    "arn:aws:s3:::your-bucket-name",
-                    "arn:aws:s3:::your-bucket-name/*"
-                ]
-            },
-            {
-                "Sid": "VisualEditor1",
-                "Effect": "Allow",
-                "Action": "s3:GetAccountPublicAccessBlock",
-                "Resource": "*"
-            }
-        ]
+      "Sid": "VisualEditor0",
+      "Effect": "Allow",
+      "Action": [
+        "s3:ReplicateObject",
+        "s3:GetObjectAcl",
+        "s3:GetObjectVersionAcl",
+        "s3:PutObjectTagging",
+        "s3:DeleteObject",
+        "s3:GetBucketWebsite",
+        "s3:GetBucketNotification",
+        "s3:GetReplicationConfiguration",
+        "s3:ListMultipartUploadParts",
+        "s3:PutObject",
+        "s3:GetObject",
+        "s3:RestoreObject",
+        "s3:ListBucket",
+        "s3:GetBucketPolicy",
+        "s3:GetObjectVersionTorrent",
+        "s3:AbortMultipartUpload",
+        "s3:GetBucketRequestPayment",
+        "s3:GetObjectTagging",
+        "s3:GetMetricsConfiguration",
+        "s3:PutObjectAcl",
+        "s3:GetBucketPublicAccessBlock",
+        "s3:ListBucketMultipartUploads",
+        "s3:PutObjectVersionTagging",
+        "s3:GetBucketVersioning",
+        "s3:GetBucketAcl",
+        "s3:PutInventoryConfiguration",
+        "s3:GetObjectTorrent",
+        "s3:GetBucketCORS",
+        "s3:GetBucketLocation",
+        "s3:ReplicateDelete",
+        "s3:GetObjectVersion"
+      ],
+      "Resource": [
+        "arn:aws:s3:::your-bucket-name",
+        "arn:aws:s3:::your-bucket-name/*"
+      ]
+    },
+    {
+      "Sid": "VisualEditor1",
+      "Effect": "Allow",
+      "Action": "s3:GetAccountPublicAccessBlock",
+      "Resource": "*"
     }
+  ]
+}
+```
 
 :::caution
-The list of allowed actions is only a suggestion, the actions can be significantly reduced, to just those which are really needed for your use case.
+The list of allowed actions in the previous JSON file is only a suggestion. The actions can be reduced, to just those which are really needed for your use case.
 :::
 
 Once you are ready and have attached the newly created policy to the user, you can finalize the process. On the last screen you will see the **access key ID** and the **secret access key** of the just created user.
