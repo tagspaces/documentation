@@ -173,7 +173,7 @@ The locations can be exported from one TagSpaces Pro installation and imported i
       "path": "/home/username/Desktop", // path pointing to a local folder, should not be empty on local locations
       "isDefault": true, // specifies if this location is the default one, which loads after starting the app
       "isReadOnly": false, // specified is the location should be in read-only mode
-      "disableIndexing": false, // if "false" the app will try to find an existing search index and use it for the searches, by "true" the app will create the index on every search (unless the last created index in the current browser session is not expired see maxIndexAge property)
+      "disableIndexing": false, // if "true" the app will try to find an existing search index and use it for the searches, by "false" the app will create the index on every search (unless the last created index in the current browser session is not expired see maxIndexAge property)
       "creationDate": "2021-03-13T14:07:45.333Z", // the creation time of the location
       "fullTextIndex": false, // activated the full-text search for TXT, MD and HTML files
       "maxIndexAge": 660000, // time in milliseconds (10 minutes x 60 secs per minute x 1000 milliseconds per second) for which the index is valid
