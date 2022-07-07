@@ -173,7 +173,7 @@ The locations can be exported from one TagSpaces Pro installation and imported i
       "path": "/home/username/Desktop", // path pointing to a local folder, should not be empty on local locations
       "isDefault": true, // specifies if this location is the default one, which loads after starting the app
       "isReadOnly": false, // specified is the location should be in read-only mode
-      "persistIndex": false, // if set to true the search index should be created manually or with external tools. The external index will be used in the search
+      "disableIndexing": false, // if "false" the app will try to find an existing search index and use it for the searches, by "true" the app will create the index on every search (unless the last created index in the current browser session is not expired see maxIndexAge property)
       "creationDate": "2021-03-13T14:07:45.333Z", // the creation time of the location
       "fullTextIndex": false, // activated the full-text search for TXT, MD and HTML files
       "maxIndexAge": 660000, // time in milliseconds (10 minutes x 60 secs per minute x 1000 milliseconds per second) for which the index is valid
@@ -192,7 +192,7 @@ The locations can be exported from one TagSpaces Pro installation and imported i
       "region": "eu-central-1", // AWS region
       "isDefault": false,
       "isReadOnly": true,
-      "persistIndex": false,
+      "disableIndexing": false,
       "fullTextIndex": false,
       "watchForChanges": false,
       "creationDate": "2021-03-16T19:22:52.132Z",
@@ -211,7 +211,7 @@ The locations can be exported from one TagSpaces Pro installation and imported i
       "region": "",
       "isDefault": false,
       "isReadOnly": false,
-      "persistIndex": false,
+      "disableIndexing": false,
       "fullTextIndex": false,
       "watchForChanges": false,
       "creationDate": "2021-04-03T20:04:11.301Z"

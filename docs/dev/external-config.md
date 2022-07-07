@@ -72,7 +72,7 @@ window.ExtLocations = [
     isNotEditable: true, // disable the opening of the location properties and export
     isDefault: true, // if true this location will be loaded by the application start
     isReadOnly: true, // if true the user interface of the application turns to read-only mode
-    persistIndex: false, // if true the search index will be persisted and loaded by default on location opening
+    disableIndexing: false, // if "false" the app will try to find an existing search index and use it for the searches, by "true" the app will create the index on every search (unless the last created index in the current browser session is not expired see maxIndexAge property)
     fullTextIndex: false, // activated the full-text search for TXT, MD and HTML files
     watchForChanges: false, // activates the watching for changed files in the current location, (feature is not working on cloud locations)
     maxIndexAge: 600000 // time in milliseconds (10 minutes x 60 secs per minute x 1000 milliseconds per second) for which the index is valid
@@ -94,7 +94,7 @@ window.ExtLocations = [
     paths: ["/var/mnt/data/"], // the path pointing to the local folder
     isDefault: true, // if true this location will be loaded by the application start
     isReadOnly: true, // if true the user interface of the application turns to read-only mode
-    persistIndex: false, // if true the search index will be persisted and loaded by default on location opening
+    disableIndexing: false, // if "false" the app will try to find an existing search index and use it for the searches, by "true" the app will create the index on every search (unless the last created index in the current browser session is not expired see maxIndexAge property)
     fullTextIndex: false, // activated the full-text search for TXT, MD and HTML files
     watchForChanges: false, // activates the watching for changed files in the current location
   },
@@ -370,7 +370,7 @@ window.ExtLocations = [
     region: "eu-central-1",
     isDefault: false,
     isReadOnly: true,
-    persistIndex: false,
+    disableIndexing: false,
     fullTextIndex: false,
     watchForChanges: false,
   },
@@ -381,7 +381,7 @@ window.ExtLocations = [
     path: "/var/mnt/data/",
     isDefault: true,
     isReadOnly: true,
-    persistIndex: false,
+    disableIndexing: false,
     fullTextIndex: false,
     watchForChanges: false,
   },

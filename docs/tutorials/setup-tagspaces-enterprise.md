@@ -78,7 +78,7 @@ Create entries in the dynamoDB tables:
          "secretAccessKey":"YYYYYYYYYYYYYYYYYY",
          "bucketName":"tsdatastorageXXXX-dev",
          "watchForChanges":false,
-         "persistIndex":false,
+         "disableIndexing":false,
          "fullTextIndex":false,
          "type":"1",
          "path":"",
