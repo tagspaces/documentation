@@ -131,7 +131,7 @@ You can press the copy button in order to save the keys in for example the passw
 
 ## Connect the bucket as location in TagSpaces Pro
 
-So now we are ready to connect the Wasabi bucket in TagSpaces Pro or TagSpaces Pro Web. You should choose the "connect a location" button shown in the next screenshot and choose "Object Storage" as location type.
+So now we are ready to connect the Wasabi bucket in TagSpaces Pro or TagSpaces Pro Web. You should choose the "Connect a location" button shown in the next screenshot and choose "Object Storage" as location type.
 
 ![Connect the bucket in TagSpaces Pro](wasabi-locations/connect-bucket.png)
 
