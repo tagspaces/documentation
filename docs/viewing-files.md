@@ -80,6 +80,12 @@ The following table lists the supported files types for viewing and editing of f
     <td>view</td>
   </tr>
   <tr>
+    <td>AVIF</td>
+    <td>view</td>
+    <td>view</td>
+    <td>view</td>
+  </tr>  
+  <tr>
     <td>PDF</td>
     <td>view</td>
     <td>view</td>
@@ -247,6 +253,12 @@ The following table lists the supported files types for viewing and editing of f
     <td>edit</td>
     <td>edit</td>
   </tr>
+  <tr>
+    <td>ACC</td>
+    <td>play</td>
+    <td>play</td>
+    <td>play</td>
+  </tr>  
   <tr>
     <td>FLAC</td>
     <td>play</td>
