@@ -5,9 +5,7 @@ tags: [tutorial]
 
 import { ProFeature, CenteredImage, CenteredVideo } from '@site/src/components/CommonBlocks';
 
-<ProFeature />
-
-TagSpaces Pro offers a way to connect S3 compatible object storage. Recently we figured out that this functionality works pretty well with the Wasabi cloud storage service and so I decided to write the following tutorial showing the steps needed to use TagSpaces with this service. [Wasabi](https://wasabi.com/cloud-storage-pricing/#three-info) is a affordable and reliable alternative to object storage offered by Amazon's AWS. By the time of writing the price is 5.99 $ per TB storage per month and they are not charging for download traffic(egress) or API calls. Which makes their offer in my opinion very attractive.
+TagSpaces offers a way to connect S3 compatible object storage. Recently we figured out that this functionality works pretty well with the Wasabi cloud storage service and so I decided to write the following tutorial showing the steps needed to use TagSpaces with this service. [Wasabi](https://wasabi.com/cloud-storage-pricing/#three-info) is a affordable and reliable alternative to object storage offered by Amazon's AWS. By the time of writing the price is 5.99 $ per TB storage per month and they are not charging for download traffic(egress) or API calls. Which makes their offer in my opinion very attractive.
 
 In order to follow this tutorial you will need a Wasabi account. Luckily they offer a 30 days [trial period](https://wasabi.com/sign-up/), so you can test the service for free.
 
@@ -129,9 +127,9 @@ In the next section the API access key and the secret key will be automatically 
 
 You can press the copy button in order to save the keys in for example the password manager of your choice.
 
-## Connect the bucket as location in TagSpaces Pro
+## Connect the bucket as location in TagSpaces
 
-So now we are ready to connect the Wasabi bucket in TagSpaces Pro or TagSpaces Pro Web. You should choose the "Connect a location" button shown in the next screenshot and choose "Object Storage" as location type.
+So now we are ready to connect the Wasabi bucket in TagSpaces. You should choose the "Connect a location" button shown in the next screenshot and choose "Object Storage" as location type.
 
 ![Connect the bucket in TagSpaces Pro](wasabi-locations/connect-bucket.png)
 
@@ -148,4 +146,4 @@ Once you confirm the dialog, TagSpaces will try to connect to the bucket and sho
 
 ## Conclusion
 
-In this tutorial we learned how using **TagSpaces Pro** in combination with object storage service providers such as **Wasabi** will allows you to easily create and manage you own scalable Dropbox like application.
+In this tutorial we learned how using **TagSpaces** in combination with object storage service providers such as **Wasabi** will allows you to easily create and manage you own scalable Dropbox like application.

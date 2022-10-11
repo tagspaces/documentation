@@ -7,6 +7,8 @@ import VideoYT from '@site/src/components/VideoYT';
 
 <ProFeature />
 
+### General explanation
+
 One long awaited functionality is the ability to create links between files managed in TagSpaces, so you can navigate from one file to another. This is possible in version 4, you can use the description field of any file or folder to create links to other files and folders. If you are using markdown for your notes you can place the same kind of links in content of the file.
 
 <VideoYT

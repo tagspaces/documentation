@@ -5,9 +5,7 @@ tags: [tutorial]
 
 import { ProFeature, CenteredImage, CenteredVideo } from '@site/src/components/CommonBlocks';
 
-<ProFeature />
-
-TagSpaces Pro, Pro Web and Enterprise provide the ability to connect AWS S3 compatible object storage (buckets) as locations. This opens the app for many new capabilities and use cases. By enabling you to store files online, you can build and easily manage your own personal cloud storage.
+TagSpaces provides the ability to connect AWS S3 compatible object storage (buckets) as locations. This opens the app for many new capabilities and use cases. By enabling you to store files online, you can build and easily manage your own personal cloud storage.
 
 ## Step 1 - Create a bucket in AWS S3
 
@@ -193,7 +191,7 @@ This will sync all files and folder from your local folder called _local-bucket-
 
 You can find out how what is _AWS CLI_ and how to install it for your operating system from this [link](https://docs.aws.amazon.com/en_pv/cli/latest/userguide/cli-chap-welcome.html).
 
-## Step 5 - Create cloud location in TagSpaces PRO
+## Step 5 - Create cloud location in TagSpaces
 
 Start TagSpaces and click on the **Connect a location** button from the locations section. Then you should select the _AES S3 Object Store_ radio button, as shown in the following screenshot.
 

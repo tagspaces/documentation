@@ -16,18 +16,21 @@ module.exports = {
   },
   plugins: [
     require.resolve("docusaurus-lunr-search"),
-    // [
-    //   "@docusaurus/plugin-client-redirects",
-    //   {
-    //     // fromExtensions: ["html"],
-    //     redirects: [
-    //       {
-    //         from: ["/docs/support", "/docs/next/support"],
-    //         to: "/",
-    //       },
-    //     ],
-    //   },
-    // ],
+    [
+      "@docusaurus/plugin-client-redirects",
+      {
+        // fromExtensions: ["html"],
+        redirects: [
+          {
+            from: [
+              "/tutorials/web-edition-setup",
+              "/tutorials/setup-tagspaces-web",
+            ],
+            to: "/",
+          },
+        ],
+      },
+    ],
     // [
     //   "@docusaurus/plugin-ideal-image",
     //   {
