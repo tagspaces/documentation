@@ -1,7 +1,11 @@
 ---
-title: How to use custom map services in TagSpaces
+title: Use custom map tile services in TagSpaces Pro
 tags: [tutorial]
 ---
+
+import { ProFeature, CenteredImage, CenteredVideo } from '@site/src/components/CommonBlocks';
+
+<ProFeature />
 
 :::info
 This article is work in progress

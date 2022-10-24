@@ -202,6 +202,7 @@ module.exports = {
       items: [
         "browsing-files",
         "perspectives/grid",
+        "perspectives/list",
         "perspectives/gallery",
         "perspectives/mapique",
         "perspectives/kanban",
@@ -319,6 +320,7 @@ module.exports = {
         "tutorials/setup-minio-bucket-nas",
         "dev/extension-development-guide",
         "tutorials/e2ee-with-tagspaces-and-cryptomator",
+        "tutorials/map-tiler-tutorial",
         // "selfhosting",
         // "tutorials/sabre-dav-setup",
       ],

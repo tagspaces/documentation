@@ -1,5 +1,5 @@
 ---
-title: Grid Perspective (default)
+title: Grid Perspective
 sidebar_label: Grid Perspective
 tags: [perspective]
 ---

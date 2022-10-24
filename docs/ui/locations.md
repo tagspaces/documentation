@@ -78,8 +78,6 @@ The extended dialog will have in addition the following properties:
 
 ## Object Storage Locations
 
-<ProFeature />
-
 With this feature TagSpaces Pro can support object storage offered by different Cloud providers as locations. So you can connect the so called buckets from [AWS S3](https://aws.amazon.com/s3/), [Wasabi](https://www.wasabi.com/) or [Minio](https://min.io/) infrastructure. By doing so you get a fully functional file organizer, browser and navigator for this bucket, directly in TagSpaces. You do not have to download or sync the files from there in order to preview, edit or annotate them.
 
 ![Edit properties of a cloud location](/media/edit-cloud-location-dialog.png)
