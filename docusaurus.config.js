@@ -22,11 +22,8 @@ module.exports = {
         // fromExtensions: ["html"],
         redirects: [
           {
-            from: [
-              "/tutorials/web-edition-setup",
-              "/tutorials/setup-tagspaces-web",
-            ],
-            to: "/",
+            from: ["/tutorials/web-edition-setup"],
+            to: "/tutorials/setup-tagspaces-web",
           },
         ],
       },
