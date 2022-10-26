@@ -47,7 +47,7 @@ Just in case you need this, the **profile** folder under Windows is located here
 For macOS you have to [download](https://www.tagspaces.org/downloads/) 64bit versions of the application for Intel or Apple Silicon(arm) based processor. Then you have to double click the downloaded zip file in Finder to unpack it properly. Some users are reporting issues with unpacking the app with some 3th-party zip utils.
 
 :::tip
-By default macOS does not allow TagSpaces to be executed with a simple double click, because it is currently not digitally signed. To work around this, right-click the TagSpaces.app folder and choose Open, then click **Open** on the dialog that appears. You need to do this just once.
+Sometimes macOS does not allow TagSpaces to be executed with a simple double click. To work around this, right-click the TagSpaces.app folder and choose Open, then click **Open** on the dialog that appears. You need to do this just once.
 :::
 
 ![Install confirmation macOS](/media/mac-install-confirmation.jpg)
@@ -175,14 +175,4 @@ Starting now the AppImage will places the whole config information in the .confi
 
 ## TagSpaces command line tool
 
-We made some of the TagSpaces functionalities available from the command line. These are features like creation of the index for the search or generating thumbnails from images. The source code for tool is available on [GitHub](https://github.com/tagspaces/tagspaces-common/tree/master/tagspaces-shell)
-
-In order to install it you will need [node.js](https://nodejs.org/). and [npm](https://www.npmjs.com/). Once you have these tool you will need to execute the following command:
-
-    npm install -global @tagspaces/shell
-
-After the installation you can use the tool like this:
-
-    tscmd -m indexer /some/folder/
-
-You can find more examples in the [README](https://github.com/tagspaces/tagspaces-common/tree/master/tagspaces-shell#search-index-generation) of the tool.
+This section is moved [here](/dev/command-line-tools)

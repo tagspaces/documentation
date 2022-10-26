@@ -45,11 +45,7 @@ module.exports = {
           href: "/installation#running-in-portable-mode",
         },
         "tutorials/setup-tagspaces-web",
-        {
-          type: "link",
-          label: "Setup Command Line Tool",
-          href: "/installation#tagspaces-command-line-tool",
-        },
+        "dev/command-line-tools",
       ],
     },
     {
