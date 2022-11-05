@@ -118,8 +118,12 @@ export function ProFeature() {
           color: "white",
           fontWeight: "bold",
           fontStyle: "normal",
+          fontSize: 13,
+          paddingTop: 2,
+          paddingBottom: 2,
           paddingLeft: 5,
           paddingRight: 5,
+          borderRadius: 4,
         }}
       >
         PRO
@@ -132,9 +136,32 @@ export function EntFeature() {
   return (
     <MUTooltip
       arrow
-      title="This feature is available in the Enterprise version"
+      title={
+        <>
+          This feature is available in the{" "}
+          <a href="https://www.tagspaces.org/products/enterprise/">
+            Enterprise version
+          </a>
+          .
+        </>
+      }
     >
-      <entfeature />
+      <span
+        style={{
+          backgroundColor: "#169cda",
+          color: "white",
+          fontWeight: "bold",
+          fontStyle: "normal",
+          fontSize: 13,
+          paddingTop: 2,
+          paddingBottom: 2,
+          paddingLeft: 5,
+          paddingRight: 5,
+          borderRadius: 4,
+        }}
+      >
+        ENTERPRISE
+      </span>
     </MUTooltip>
   );
 }
