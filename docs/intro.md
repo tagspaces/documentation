@@ -1,9 +1,11 @@
 ---
 slug: /
-title: What is TagSpaces ?
+title: TagSpaces Product Documentation
 ---
 
-Welcome to the documentation of the TagSpaces products.
+Welcome to the documentation of the TagSpaces products!
+
+## What is TagSpaces ?
 
 TagSpaces is an open source, cross-platform, no backend, no login, file manager, organizer and browser. It helps you organize your files, photos and other documents with tags on different platforms and/or devices, according to your own preferences and following your own logic, by using the same smart and friendly interface everywhere.
 
