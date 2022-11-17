@@ -18,3 +18,17 @@ In this perspective the app shows the sub folders of the current folder as colum
 :::caution
 The development of this perspective is not finalized yet, so the documentation is also work in progress.
 :::
+
+## Importing Trello boards
+
+### Mapping of the elements
+
+## Mapping Trello to files and folders
+
+| Trello | TagSpaces(files and folders) | Comment                                                                                                |
+| :----- | :--------------------------- | :----------------------------------------------------------------------------------------------------- |
+| Card   | Markdown file                | Includes: Description, Checklist, Linkt to attachments, Link to original Trello item, Import timestamp |
+| Column | Folder                       |                                                                                                        |
+|        |                              |                                                                                                        |
+|        |                              |                                                                                                        |
+|        |                              |                                                                                                        |

@@ -15,7 +15,7 @@ TagSpaces uses the free OpenStreetMap service as a default digital map. It works
 
 ## Using map tiles from Maptiler
 
-In order to start with Maptile you will need to [create an account](https://www.maptiler.com/cloud/plans/) for this service.
+In order to start with Maptiler you will need to [create an account](https://www.maptiler.com/cloud/plans/) for this service.
 
 https://cloud.maptiler.com/geocoding/
 

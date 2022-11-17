@@ -23,14 +23,21 @@ Perspectives are not an integral part of TagSpaces, but exist as modular extensi
 
 ## Switching perspectives
 
-Switching the perspective is task which can be easily done from the folder menu, which is accessible on clicking the button with the name of the current folder, as seen in the following screenshot.
+The perspective for the current folder can be switched in two ways. The first and easier one is to user perspective switch located in the bottom right are of the application, as seen in the screenshot bellow.
 
-![Opening the folder menu](/media/tagspaces-open-foldermenu.png)
+![Changing perspectives for a folder](/media/tagspaces-perspective-switch.png)
 
-In the opened menu you will see a section, where you can directly choose the desired perspective.
+In some case such as the use of the application on mobile devices the perspective switch is not available. In this case, the folder menu available in the upper right part of the screen, should be opened. In this menu you can choose from the available perspectives, compare the previous screenshot.
 
-![Changing perspectives from the folder menu](/media/tagspaces-perspective-switch.png)
+## Default perspective for a folder
 
-Alternatively the perspectives can be switched with the newly introduced switch toolbar visible on the next screenshot
+Every folder can have its own default perspective, which can be selected in the folder properties area.
 
-![Perspective switch toolbar](/media/perspective-switch.jpg)
+![Selecting default folder perspective](/media/folder-properties-select-perspective.png)
+
+Once you choose a perspective here, every time you open this folder, it will be opened with selected perspective.
+
+## Custom perspective settings per folder
+
+<ProFeature /> 
+TBD

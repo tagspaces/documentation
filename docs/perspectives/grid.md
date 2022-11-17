@@ -74,15 +74,15 @@ Double click on a file will always open it in the preview area. Double click on 
 * **Export to CSV** will create a **Comma Separated Variable** from all displayed files, be it from the current folder, or from the full folder hierarchy, and save it n a folder of your choice. The generated CSV contains `path,title,size,tag1,tag2,tag3,...`, where each new line represents a separate file.
 * **About** will display information about the perspective extension in a pop-up window. -->
 
-## Grid view
+## Main area
 
 A common arrangement found in file browsing applications is the grid. The grid view offers a resizable grid with thumbnail previews of certain file formats, for quick and effective browsing. The files and folder are represented by user interface element called cards.
 
 The following screenshot shows the grid view in its **compact mode**. The thumbnails are in the so called **cover** mode, covering the whole area defined for the thumbnail. In order to achieve this effect this mode will more likely cut some of the border areas of the thumbnail's image.
-![](/media/grid-perspective.png)
+![](/media/grid/grid-perspective.png)
 
 The next screenshot shows the grid view in its **large mode**. The thumbnails here are in the **contain** mode, which displays the whole thumbnail in the thumbnail area of the card, eventually causing transparent bars to appear on the left and right side of the thumb image.
-![](/media/grid-view-large-mode.png)
+![](/media/grid/grid-view-large-mode.png)
 
 :::info
 Switching the thumbnail mode is triggered by the **Toggle thumbnails mode** menu item of the more options menu from the [perspective's toolbar](#main-toolbar).
@@ -92,7 +92,7 @@ Switching the thumbnail mode is triggered by the **Toggle thumbnails mode** menu
 
 Each card on the grid can represent the following information. In area **(1)** the tags added to this file will appear. If the file has a description it will be displayed in section **(2)**. Behind the number **(1)** and **(2)** a thumbnail of the file (if available) will be displayed. In **(3)** you will find the title of the file. Title is the part of the file name without the file extension. In section **(4)** you will find the file extension with appropriate color defined in the [File types tab](/ui/settings#file-types) from the settings. Bellow number **(5)** the amount of time elapsed since the last time the file was modified will be displayed. Hovering this area with the mouse pointer will show a tooltip with exact date and time of the file modification. Bellow number **(6)** the size of the file can be found. Hovering this are will display the file size in bytes.
 
-![](/media/grid-perspective-file-card.png)
+![](/media/grid/grid-perspective-file-card.png)
 
 <ProFeature /> - Defining descriptions for file is feature available in the Pro and the Enterprise versions of the app.
 
@@ -100,25 +100,9 @@ Each card on the grid can represent the following information. In area **(1)** t
 
 The folder card show basically similar information as the file card. In area **(1)** the tags added to this folder will appear. If the folder has a description it will be displayed in section **(2)**. Behind the number **(1)** and **(2)** a thumbnail of the folder will be displayed. In **(3)** you will find the name of the folder. Instead on the file extension in section **(4)** a folder icon will be shown. If the folder has a [custom color](/ui/userinterface#folder-properties-area) it is also visible on the card behind number **(3)** and **(4)**.
 
-![](/media/grid-perspective-folder-card.png)
+![](/media/grid/grid-perspective-folder-card.png)
 
 <ProFeature /> - Defining descriptions and thumbnails for folders are features available in the Pro and the Enterprise versions of the app.
-
-## List view
-
-The list view is a classic way to represent list of items such folders and files. It also features the three representation modes: compact, default and large.
-
-![](/media/list-perspective.png)
-
-The following information can be found on every row representing a file on this view:
-
-- **File extension** - A color coded icon, representing the file type. Scroll down to [Color coded file extensions](#color-coded-file-extensions) to learn more about this feature.
-- **Folder icon** - On rows representing folders instead of the file extension a folder icon is displayed.
-- **Title** - The file's title is the filename without the extension or any tag information.
-- **Description** - If the file/folder have a description it will be displayed also here.
-- **Tags** - All the tags that are applied to the file will appear here, with the right background and font color. To learn more about tag colors, refer to the [Tag Library](/ui/taglibrary) section.
-- **Size** - This is the file size in a human readable format.
-- **Date modified** - The time the file had been last modified.
 
 ### Selecting files
 

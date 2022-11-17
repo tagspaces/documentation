@@ -259,7 +259,17 @@ With the functionality one can store commonly used search queries for later use.
 The stored searches are location independent, so they can be executed on any location.
 :::
 
-### Export and import search queries
+### Quick access from search bar
+
+Alternatively, the stored searches can be accessed also from the dropdown menu located in the search bar. As seen in the next screenshot.
+
+<CenteredImage
+    caption="Accessing the stored searches from the search bar"
+    src="/media/stored-search-quick-access.png"
+    showCaption
+  />
+
+### Export and import
 
 This functionality will allow you to share commonly used search queries with other users working with you on the same file base.
 
