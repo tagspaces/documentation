@@ -11,7 +11,7 @@ In this perspective the app shows the sub folders of the current folder as colum
 
 <CenteredImage
     caption="Preview of the Kanban perspective"
-    src="/media/kanban/swtich-to-kanban-perspective.png"
+    src="/media/kanban/hero-kanban-light.png"
     showCaption
   />
 
@@ -21,14 +21,12 @@ The development of this perspective is not finalized yet, so the documentation i
 
 ## Importing Trello boards
 
-### Mapping of the elements
+### Mapping Trello to files and folders
 
-## Mapping Trello to files and folders
-
-| Trello | TagSpaces(files and folders) | Comment                                                                                                |
-| :----- | :--------------------------- | :----------------------------------------------------------------------------------------------------- |
-| Card   | Markdown file                | Includes: Description, Checklist, Linkt to attachments, Link to original Trello item, Import timestamp |
-| Column | Folder                       |                                                                                                        |
-|        |                              |                                                                                                        |
-|        |                              |                                                                                                        |
-|        |                              |                                                                                                        |
+| Trello | TagSpaces(files and folders) | Comment                                                                                               |
+| :----- | :--------------------------- | :---------------------------------------------------------------------------------------------------- |
+| Card   | Markdown file                | Includes: Description, Checklist, Link to attachments, Link to original Trello item, Import timestamp |
+| Column | Folder                       |                                                                                                       |
+| Labels | Tags                         |                                                                                                       |
+|        |                              |                                                                                                       |
+|        |                              |                                                                                                       |
