@@ -70,20 +70,20 @@ module.exports = {
         },
       ],
     },
-    announcementBar: {
-      id: "supportus",
-      backgroundColor: "#525252",
-      textColor: "white",
-      content:
-        '⭐️ If you like TagSpaces, give it a star on <a target="_blank" rel="noopener noreferrer" href="https://github.com/tagspaces/tagspaces">GitHub</a>! ⭐️',
-    },
     // announcementBar: {
-    //   id: "newyearssale",
+    //   id: "supportus",
     //   backgroundColor: "#525252",
     //   textColor: "white",
     //   content:
-    //     '20% off for <a href="https://www.tagspaces.org/products/">TagSpaces Pro</a> only in January!',
+    //     '⭐️ If you like TagSpaces, give it a star on <a target="_blank" rel="noopener noreferrer" href="https://github.com/tagspaces/tagspaces">GitHub</a>! ⭐️',
     // },
+    announcementBar: {
+      id: "blackweek2022",
+      backgroundColor: "#525252",
+      textColor: "white",
+      content:
+        'Black Week 2022 - 10% off for <a href="https://www.tagspaces.org/products/">TagSpaces Pro</a>!',
+    },
     prism: {
       defaultLanguage: "javascript",
       theme: require("prism-react-renderer/themes/github"),
