@@ -30,13 +30,21 @@ The property **ExtIsFirstRun** can be used for disabling the initial onboarding 
 
     window.ExtIsFirstRun = true;
 
+The default value is **true**.
+
+## Disable the checking for new version on startup
+
+    window.ExtCheckForUpdatesOnStartup = false
+
+The default value is **true**.
+
 ## Switching desktop and mobile mode of the app
 
 The property **ExtDisplayMode** can be used for switching between the desktop and mobile mode of the app.
 
     window.ExtDisplayMode = 'mobile';
 
-Possible values are 'mobile' and 'desktop'.
+Possible values are **'mobile'** and **'desktop'**.
 
 ## Setting the file tagging mode of the app
 
@@ -44,7 +52,7 @@ The property **ExtUseSidecarsForFileTagging** can be used for switching between 
 
     window.ExtUseSidecarsForFileTagging = false;
 
-Possible values are 'true' and 'false'.
+Possible values are **true** and **false**.
 
 :::tip
 If the parameter is specified then this setting could not be changed in the TagSpaces settings dialog anymore. The user can only see which file tagging method is activated (renaming files or using sidecar files)
