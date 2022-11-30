@@ -24,11 +24,11 @@ In the last section (4), you can specify where the file should be create. The in
 - **Create Note** - will create a HTML which can contain rich text content, with _.html_ file extension.
 - **Create MarkDown File** - will create a [markdown](https://en.wikipedia.org/wiki/Markdown), with _.md_ file extension.
 - **Create Text File** - will create a plain text file, with _.txt_ file extension.
-- **Add File** - will give you the possibility to import a single file in the app. See more in the [importing files](#importing-files) section.
+- **Add Files** - will give you the possibility to import a files in the app. See more in the [importing files](#importing-files) section.
 
 ![screenshot showing the create new content dialog](/media/tagspaces-create-content-dialog.png)
 
-The name of the create files will be _note[20191113~164613].md_ (or .html or .txt). Learn more for the timestamp tag in next section.
+The name of the file which will be created is visible in the a text field on the top of the dialog. It has the following format _note[20191113~164613].md_ (or .html or .txt). The file name is preselected so you can direct start typing in the a new name. More on the timestamp tag in next section.
 
 ### Timestamp as default tag
 
