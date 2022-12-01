@@ -75,7 +75,7 @@ module.exports = {
       backgroundColor: "#525252",
       textColor: "white",
       content:
-        '⭐️ If you like TagSpaces, give it a star on <a target="_blank" rel="noopener noreferrer" href="https://github.com/tagspaces/tagspaces">GitHub</a> or recommend in <a target="_blank" rel="noopener noreferrer" href="https://alternativeto.net/software/tagspaces/about/">AlternativeTo</a>!! ⭐️',
+        '⭐️ If you like TagSpaces, give it a star on <a target="_blank" rel="noopener noreferrer" href="https://github.com/tagspaces/tagspaces">GitHub</a> or recommend it on <a target="_blank" rel="noopener noreferrer" href="https://alternativeto.net/software/tagspaces/about/">AlternativeTo</a>!! ⭐️',
     },
     // announcementBar: {
     //   id: "blackweek2022",
