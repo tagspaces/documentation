@@ -39,5 +39,9 @@ Once you choose a perspective here, every time you open this folder, it will be 
 
 ## Custom perspective settings per folder
 
-<ProFeature /> 
+<ProFeature />
+
 TBD
+
+- Per directory sorting
+- Per directory file limit

@@ -40,3 +40,7 @@ http://download.geofabrik.de/
 <!-- ![](custom-map-tiles/.png)
 
 ![](custom-map-tiles/.png) -->
+
+## Other resources
+
+- [Self Hosting a Google Maps Alternative with OpenStreetMap](https://wcedmisten.fyi/post/self-hosting-osm/) - a deep dive into the topics of self hosting OpenStreetMap
