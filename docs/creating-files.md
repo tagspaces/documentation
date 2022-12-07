@@ -86,7 +86,7 @@ On **iOS** you have the options to take a picture with the _Camera app_ or selec
 
 ### Import from the create content dialog
 
-In the [dialog](#) for creating files on the last place is the _Add files_ action button. The functionality of this button is the same described in the previous section.
+In the dialog for creating files on the last place is the _Add files_ action button. The functionality of this button is the same described in the previous section.
 
 ### Import with drag and drop from the desktop
 

@@ -7,17 +7,13 @@ import { ProFeature, CenteredImage, CenteredVideo } from '@site/src/components/C
 
 <ProFeature />
 
-This perspective shows the first five sub folders of the current folder as columns of a Kanban board. Further sub folder can turned on later. The cards in the columns are actually the files of the sub folder and can represent for example tasks. The cards can be moved from one column to another with drag and drop. The columns can be also moved with drag and drop.
+This perspective shows the first five sub folders of the current folder as columns of a Kanban board. Further sub folder can turned on later. The cards in the columns are actually the files of the sub folder and can represent for example tasks. The cards can be moved from one column to another with drag and drop. Moving the cards in a given columns up and down will change to order of the cards which will be persisted. The columns can be also moved with drag and drop.
 
 <CenteredImage
     caption="Preview of the Kanban perspective"
     src="/media/kanban/hero-kanban-light.png"
     showCaption
   />
-
-:::caution
-The development of this perspective is not finalized yet, so the documentation is also work in progress.
-:::
 
 ## Why is this useful?
 
@@ -47,7 +43,7 @@ The button with top right position with tree dot icon will open a menu, where yo
 - **Reload Folder** - reloads the content of the folder
 - **Show in File Manager** - opens the default file manager of your operating system with preselected folder
 - **New File / Note** - opens the dialog for creating files
-- **Folder Properties** - open the properties of the folder, where you can change the background color, set a walpaper image or choose an thumbnail for the folder
+- **Folder Properties** - open the properties of the folder, where you can change the background color, set a wallpaper image or choose an thumbnail for the folder
 
 ## Migration of Trello boards
 
@@ -74,11 +70,11 @@ The settings of the perspective can be opened from the last button in the perspe
 
 The following options can be adjusted in this settings dialog:
 
-- Show folders - currently not is use
+- Show folders - show sub-folder in the columns if available
 - Show tags - show the full name of the tags or only a symbol representing the availability of tags
 - Show content of the current folder - turn the current folder column on and off, same as the button in the toolbar
-- Show folder details - currently not in use
-- Toggle thumbnail modes -
+- Show folder details - shows the name of the folder and a preview of the folder description above the columns of the board.
+- Toggle thumbnail modes - switches between two mode of displaying thumbnails in the cards: cover and contain
 - Size of the files/tasks in the column - the width of the tiles can be switched among compact, default and large
 - Definition of the single click
 
