@@ -75,7 +75,7 @@ module.exports = {
       backgroundColor: "#525252",
       textColor: "white",
       content:
-        '⭐️ If you like TagSpaces, review it on <a target="_blank" href="https://www.producthunt.com/posts/tagspaces-2">Product Hunt</a> or recommend it on <a target="_blank" rel="noopener noreferrer" href="https://alternativeto.net/software/tagspaces/about/">AlternativeTo</a>!! ⭐️',
+        '⭐️ If you like TagSpaces, upvote it on <a target="_blank" href="https://www.producthunt.com/posts/tagspaces-2">Product Hunt</a> or recommend it on <a target="_blank" rel="noopener noreferrer" href="https://alternativeto.net/software/tagspaces/about/">AlternativeTo</a>!! ⭐️',
     },
     // announcementBar: {
     //   id: "blackweek2022",
