@@ -17,10 +17,17 @@ This perspective shows the first five sub folders of the current folder as colum
 
 ## Why is this useful?
 
-- **Personal Kanban**
-- **Task management**
+Kanban boards can be used in many ways, here are some typical examples:
 
-## Main toolbar
+- **Personal Kanban**
+- **Tracking software development**
+- **Task management**
+- **Board for recruiting process**
+- **Weekly plan** - having a board where every day of the week is presented as column, can be used to track activities or document progress, having a diary
+
+## General functionalities
+
+The following list describes the button of the main toolbar of this perspective.
 
 - **Navigate to parent folder** - self explaining
 - **Folder properties** - open the folder properties in the right panel, so you can add tags, description, set background color or custom wallpaper for the current folder

@@ -28,7 +28,9 @@ In the last section (4), you can specify where the file should be create. The in
 
 ![screenshot showing the create new content dialog](/media/tagspaces-create-content-dialog.png)
 
-The name of the file which will be created is visible in the a text field on the top of the dialog. It has the following format _note[20191113~164613].md_ (or .html or .txt). The file name is preselected so you can direct start typing in the a new name. More on the timestamp tag in next section.
+The field on the top of the file creation dialog, shows the automatically generated file name. The text is preselected, so you can easy change it, to what ever you need. This is especially useful for the Kanban perspective where you create this way new cards. Bellow of this text field you will see the path where this file will be created. The path defaults in most of the cases to the current folder, but when there is no opened location, the dialog will create the file in the root folder of the first location in your location manager.
+
+The file name has the following format _note[20191113~164613].md_ (or .html or .txt). It contains a timestamp tag which format is explained in the next section.
 
 ### Timestamp as default tag
 
