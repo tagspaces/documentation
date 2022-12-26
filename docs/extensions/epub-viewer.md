@@ -30,7 +30,7 @@ This extension thankfully relays on the following great libraries:
 
 ## Installation
 
-Extension is currently deprecated
+This extensions is packaged with any new version of TagSpaces
 
 ## Source code
 

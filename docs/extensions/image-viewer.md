@@ -4,7 +4,7 @@ A TagSpaces extension allowing you to open different kinds of image formats
 
 ## Features
 
-- Opening of the following image formats: JPG, PNG, GIF, SVG, BMP, WEBP, ICO, PSD, TIFF
+- Opening of the following image formats: JPG, PNG, GIF, SVG, BMP, WEBP, ICO, PSD, TIFF, DNG, CR2, AVIF
 - Zooming, flipping and rotating of the current image
 - Different background colors of the viewer for better contrast
 - For JPG files it features an integrated Exif and IPTC reader with auto rotation of photos according to the Exif information
@@ -19,6 +19,7 @@ This extension thankfully relays on the following great libraries:
 
 - [viewer.js](https://fengyuanchen.github.io/viewerjs/)
 - [exif.js](https://github.com/exif-js/exif-js)
+- [utif.js](https://github.com/photopea/UTIF.js/)
 
 ## Installation
 

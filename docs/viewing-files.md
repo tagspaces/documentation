@@ -4,6 +4,7 @@ title: Preview Files
 
 The application supports previewing of many file types without the need of external viewer. It comes with the following viewer extensions:
 
+- [3D viewer](extensions/3d-viewer.md)
 - [Media Player](extensions/media-player.md)
 - [EPUB Reader](extensions/epub-viewer.md)
 - [HTML Reader](extensions/html-viewer.md)
@@ -85,6 +86,30 @@ The following table lists the supported files types for viewing and editing of f
     <td>view</td>
     <td>view</td>
   </tr>  
+  <tr>
+    <td>DNG</td>
+    <td>view</td>
+    <td>view</td>
+    <td>view</td>
+  </tr>  
+  <tr>
+    <td>CR2</td>
+    <td>view</td>
+    <td>view</td>
+    <td>view</td>
+  </tr>    
+  <tr>
+    <td>GLB</td>
+    <td>view</td>
+    <td>view</td>
+    <td>view</td>
+  </tr>    
+  <tr>
+    <td>GLTF</td>
+    <td>view</td>
+    <td>view</td>
+    <td>view</td>
+  </tr>      
   <tr>
     <td>PDF</td>
     <td>view</td>
