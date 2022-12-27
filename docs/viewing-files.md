@@ -4,7 +4,7 @@ title: Preview Files
 
 The application supports previewing of many file types without the need of external viewer. It comes with the following viewer extensions:
 
-- [3D viewer](extensions/3d-viewer.md)
+- [3D Viewer](extensions/3d-viewer.md)
 - [Media Player](extensions/media-player.md)
 - [EPUB Reader](extensions/epub-viewer.md)
 - [HTML Reader](extensions/html-viewer.md)
@@ -16,7 +16,7 @@ The application supports previewing of many file types without the need of exter
 - [Text Reader](extensions/text-viewer.md)
 - [Document Viewer](extensions/document-viewer.md)
 - [Spreadsheet Viewer](extensions/spreadsheet-viewer.md)
-- [ZIP Opener](extensions/archive-viewer.md)
+- [ZIP Viewer](extensions/archive-viewer.md)
 
 TagSpaces is designed with extensibility in mind so any other kind of file viewers can be easily developed and integrated.
 

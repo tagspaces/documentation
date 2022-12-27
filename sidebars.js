@@ -220,6 +220,7 @@ module.exports = {
           label: "Print files",
           href: "/viewing-files/#printing-files",
         },
+        "extensions/3d-viewer",
         "extensions/media-player",
         "extensions/epub-viewer",
         "extensions/html-viewer",

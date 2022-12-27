@@ -8,6 +8,7 @@ A TagSpaces extension for opening 3d models in GLB and GLTF formats.
 
 - Preview in 3D of GLB and GLTF files
 - Rotation of the models with mouse dragging
+- Save screenshot of the current 3D rendering
 
 <CenteredVideo
     caption="The 3D viewer showing 'Ordinary Behavior 2 - Television' (https://skfb.ly/oBEsP) by gozdemrl is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/)."
@@ -25,6 +26,8 @@ A TagSpaces extension for opening 3d models in GLB and GLTF formats.
 This extension thankfully relays on the following great libraries:
 
 - [model-viewer](https://modelviewer.dev/)
+- [bootstrap](https://getbootstrap.com/)
+- [file-saver](https://github.com/eligrey/FileSaver.js/)
 
 ## Installation
 
