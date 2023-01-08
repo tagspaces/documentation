@@ -1,6 +1,6 @@
 # URL Viewer
 
-A TagSpaces extension allowing you to open url files created from web-browsers or bookmark manangers
+A TagSpaces extension allowing you to open url files created from web-browsers or bookmark managers
 
 ## Features
 
@@ -10,7 +10,15 @@ A TagSpaces extension allowing you to open url files created from web-browsers o
 - Opening the links from Ubuntu's `.website` files
 - With this extensions it possible to use TagSpaces as a bookmark manager with support of tagging.
 
-![Screenshot of the viewerURL](/media/extensions/viewer-url-lead.png)
+![Screenshot of the viewerURL](/media/extensions/url-viewer.png)
+
+## Used libraries
+
+This extension thankfully relays on the following libraries:
+
+- [Bootstrap](https://getbootstrap.com/)
+- [i18next](https://www.i18next.com/)
+- [Dompurify](https://github.com/cure53/DOMPurify)
 
 ## Installation
 

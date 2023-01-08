@@ -2,21 +2,24 @@
 title: Preview Files
 ---
 
+import Link from "@docusaurus/Link";
+
 The application supports previewing of many file types without the need of external viewer. It comes with the following viewer extensions:
 
-- [3D Viewer](extensions/3d-viewer.md)
-- [Media Player](extensions/media-player.md)
-- [EPUB Reader](extensions/epub-viewer.md)
-- [HTML Reader](extensions/html-viewer.md)
-- [Image Viewer](extensions/image-viewer.md)
-- [Link Opener](extensions/url-viewer.md)
-- [Markdown Reader](extensions/md-viewer.md)
-- [MHTML Reader](extensions/mhtml-viewer.md)
-- [PDF Viewer](extensions/pdf-viewer.md)
-- [Text Reader](extensions/text-viewer.md)
-- [Document Viewer](extensions/document-viewer.md)
-- [Spreadsheet Viewer](extensions/spreadsheet-viewer.md)
-- [ZIP Viewer](extensions/archive-viewer.md)
+- [3D Viewer](extensions/3d-viewer.md) - GLB, GLTF ...
+- [Media Player](extensions/media-player.md) - WEBM, MP4, MP3, ...
+- [EPUB Reader](extensions/ebook-viewer.md) - EPUB
+- [HTML Reader](extensions/html-viewer.md) - HTML
+- [Image Viewer](extensions/image-viewer.md) - JPG, GIF, WEPB, TIF, TGA, ...
+- [Link Opener](extensions/url-viewer.md) - URL, DESKTOP, WEBSITE ...
+- [Markdown Reader](extensions/md-viewer.md) - MD
+- [MHTML Reader](extensions/mhtml-viewer.md) - MHTML and EML
+- [MSG Viewer](extensions/msg-viewer.md) - MSG
+- [PDF Viewer](extensions/pdf-viewer.md) - PDF
+- [Text Reader](extensions/text-viewer.md) - TXT, JS, MD, ...
+- [Document Viewer](extensions/document-viewer.md) - DOCX
+- [Spreadsheet Viewer](extensions/spreadsheet-viewer.md) - ODS, XLSX
+- [ZIP Viewer](extensions/archive-viewer.md) - ZIP
 
 TagSpaces is designed with extensibility in mind so any other kind of file viewers can be easily developed and integrated.
 
@@ -30,376 +33,607 @@ TagSpaces is designed with extensibility in mind so any other kind of file viewe
 
 The following table lists the supported files types for viewing and editing of files in TagSpaces.
 
+### 3D formats
+
 <div className="table-responsive">
 <table className="table table-striped">
-  <thead>
-    <th>File type extension</th>
-    <th>Windows, macOS &amp; Linux desktop apps</th>
-    <th>Web versions</th>
-    <th>Android app</th>
+  <thead className="table table-header">
+    <th>File format</th>
+    <th>Preview</th>
+    <th>Thumbnail</th>
+    <th>Edit</th>
+    <th>Extension</th>
+  </thead>
+  <tr>
+    <td>GLB</td>
+    <td>yes</td>
+    <td>no</td>
+    <td>no</td>
+    <td><Link to="/extensions/3d-viewer">3D Viewer</Link></td>
+  </tr>
+  <tr>
+    <td>GLTF</td>
+    <td>yes</td>
+    <td>no</td>
+    <td>no</td>
+    <td><Link to="/extensions/3d-viewer">3D Viewer</Link></td>
+  </tr>
+</table>
+</div>
+
+### Image formats
+
+<div className="table-responsive">
+<table className="table table-striped">
+  <thead className="table table-header">
+    <th>File format</th>
+    <th>Preview</th>
+    <th>Thumbnail</th>
+    <th>Edit</th>
+    <th>Extension</th>
   </thead>
   <tr>
     <td>PNG</td>
-    <td>view</td>
-    <td>view</td>
-    <td>view</td>
+    <td>yes</td>
+    <td>yes</td>
+    <td>no</td>
+    <td><Link to="/extensions/image-viewer">Image Viewer</Link></td>
   </tr>
   <tr>
-    <td>JPG/JPEG</td>
-    <td>view</td>
-    <td>view</td>
-    <td>view</td>
-  </tr>
-  <tr>
-    <td>GIF</td>
-    <td>view</td>
-    <td>view</td>
-    <td>view</td>
-  </tr>
-  <tr>
-    <td>BMP</td>
-    <td>view</td>
-    <td>view</td>
-    <td>view</td>
-  </tr>
-  <tr>
-    <td>ICO</td>
-    <td>view</td>
-    <td>view</td>
-    <td>view</td>
-  </tr>
-  <tr>
-    <td>WEBP</td>
-    <td>view</td>
-    <td>view</td>
-    <td>view</td>
+    <td>JPG</td>
+    <td>yes</td>
+    <td>yes</td>
+    <td>no</td>
+    <td><Link to="/extensions/image-viewer">Image Viewer</Link></td>
   </tr>
   <tr>
     <td>SVG</td>
-    <td>view</td>
-    <td>view</td>
-    <td>view</td>
-  </tr>
+    <td>yes</td>
+    <td>yes</td>
+    <td>no</td>
+    <td><Link to="/extensions/image-viewer">Image Viewer</Link></td>
+  </tr>  
   <tr>
+    <td>GIF</td>
+    <td>yes</td>
+    <td>yes</td>
+    <td>no</td>
+    <td><Link to="/extensions/image-viewer">Image Viewer</Link></td>
+  </tr>
+    <tr>
     <td>AVIF</td>
-    <td>view</td>
-    <td>view</td>
-    <td>view</td>
+    <td>yes</td>
+    <td>?</td>
+    <td>no</td>
+    <td><Link to="/extensions/image-viewer">Image Viewer</Link></td>
+  </tr>  
+  <tr>
+    <td>WEBP</td>
+    <td>yes</td>
+    <td>?</td>
+    <td>no</td>
+    <td><Link to="/extensions/image-viewer">Image Viewer</Link></td>
+  </tr>  
+  <tr>
+    <td>BMP</td>
+    <td>yes</td>
+    <td>yes</td>
+    <td>no</td>
+    <td><Link to="/extensions/image-viewer">Image Viewer</Link></td>
+  </tr> 
+  <tr>
+    <td>TGA</td>
+    <td>yes</td>
+    <td>yes</td>
+    <td>no</td>
+    <td><Link to="/extensions/image-viewer">Image Viewer</Link></td>
+  </tr> 
+  <tr>
+    <td>ICO</td>
+    <td>yes</td>
+    <td>yes</td>
+    <td>no</td>
+    <td><Link to="/extensions/image-viewer">Image Viewer</Link></td>
+  </tr>  
+  <tr>
+    <td>TIF</td>
+    <td>yes</td>
+    <td>yes</td>
+    <td>no</td>
+    <td><Link to="/extensions/image-viewer">Image Viewer</Link></td>
   </tr>  
   <tr>
     <td>DNG</td>
-    <td>view</td>
-    <td>view</td>
-    <td>view</td>
+    <td>yes</td>
+    <td>?</td>
+    <td>no</td>
+    <td><Link to="/extensions/image-viewer">Image Viewer</Link></td>
   </tr>  
   <tr>
     <td>CR2</td>
-    <td>view</td>
-    <td>view</td>
-    <td>view</td>
-  </tr>    
-  <tr>
-    <td>GLB</td>
-    <td>view</td>
-    <td>view</td>
-    <td>view</td>
-  </tr>    
-  <tr>
-    <td>GLTF</td>
-    <td>view</td>
-    <td>view</td>
-    <td>view</td>
-  </tr>      
-  <tr>
-    <td>PDF</td>
-    <td>view</td>
-    <td>view</td>
-    <td>view</td>
-  </tr>
-  <tr>
-    <td>HTML</td>
-    <td>edit</td>
-    <td>edit</td>
-    <td>edit</td>
-  </tr>
-  <tr>
-    <td>MHT/MHTML</td>
-    <td>view</td>
-    <td>view</td>
-    <td>view</td>
-  </tr>
-  <tr>
-    <td>MD/MARKDOWN</td>
-    <td>edit</td>
-    <td>edit</td>
-    <td>edit</td>
-  </tr>
-  <tr>
-    <td>TXT</td>
-    <td>edit</td>
-    <td>edit</td>
-    <td>edit</td>
-  </tr>
-  <tr>
-    <td>XML</td>
-    <td>edit</td>
-    <td>edit</td>
-    <td>edit</td>
-  </tr>
-  <tr>
-    <td>JS</td>
-    <td>edit</td>
-    <td>edit</td>
-    <td>edit</td>
-  </tr>
-  <tr>
-    <td>JSON</td>
-    <td>edit</td>
-    <td>edit</td>
-    <td>edit</td>
-  </tr>
-  <tr>
-    <td>CSS</td>
-    <td>edit</td>
-    <td>edit</td>
-    <td>edit</td>
-  </tr>
-  <tr>
-    <td>H</td>
-    <td>edit</td>
-    <td>edit</td>
-    <td>edit</td>
-  </tr>
-  <tr>
-    <td>CLJ</td>
-    <td>edit</td>
-    <td>edit</td>
-    <td>edit</td>
-  </tr>
-  <tr>
-    <td>COFFEE</td>
-    <td>edit</td>
-    <td>edit</td>
-    <td>edit</td>
-  </tr>
-  <tr>
-    <td>CPP</td>
-    <td>edit</td>
-    <td>edit</td>
-    <td>edit</td>
-  </tr>
-  <tr>
-    <td>CS</td>
-    <td>edit</td>
-    <td>edit</td>
-    <td>edit</td>
-  </tr>
-  <tr>
-    <td>GROOVY</td>
-    <td>edit</td>
-    <td>edit</td>
-    <td>edit</td>
-  </tr>
-  <tr>
-    <td>HAXE</td>
-    <td>edit</td>
-    <td>edit</td>
-    <td>edit</td>
-  </tr>
-  <tr>
-    <td>JAVA</td>
-    <td>edit</td>
-    <td>edit</td>
-    <td>edit</td>
-  </tr>
-  <tr>
-    <td>JSM</td>
-    <td>edit</td>
-    <td>edit</td>
-    <td>edit</td>
-  </tr>
-  <tr>
-    <td>LESS</td>
-    <td>edit</td>
-    <td>edit</td>
-    <td>edit</td>
-  </tr>
-  <tr>
-    <td>LUA</td>
-    <td>edit</td>
-    <td>edit</td>
-    <td>edit</td>
-  </tr>
-  <tr>
-    <td>ML</td>
-    <td>edit</td>
-    <td>edit</td>
-    <td>edit</td>
-  </tr>
-  <tr>
-    <td>MLI</td>
-    <td>edit</td>
-    <td>edit</td>
-    <td>edit</td>
-  </tr>
-  <tr>
-    <td>PL</td>
-    <td>edit</td>
-    <td>edit</td>
-    <td>edit</td>
-  </tr>
-  <tr>
-    <td>PHP</td>
-    <td>edit</td>
-    <td>edit</td>
-    <td>edit</td>
-  </tr>
-  <tr>
-    <td>PY</td>
-    <td>edit</td>
-    <td>edit</td>
-    <td>edit</td>
-  </tr>
-  <tr>
-    <td>RB</td>
-    <td>edit</td>
-    <td>edit</td>
-    <td>edit</td>
-  </tr>
-  <tr>
-    <td>SH</td>
-    <td>edit</td>
-    <td>edit</td>
-    <td>edit</td>
-  </tr>
-  <tr>
-    <td>SQL</td>
-    <td>edit</td>
-    <td>edit</td>
-    <td>edit</td>
-  </tr>
-  <tr>
-    <td>ACC</td>
-    <td>play</td>
-    <td>play</td>
-    <td>play</td>
+    <td>yes</td>
+    <td>?</td>
+    <td>no</td>
+    <td><Link to="/extensions/image-viewer">Image Viewer</Link></td>
   </tr>  
   <tr>
-    <td>FLAC</td>
-    <td>play</td>
-    <td>play</td>
-    <td>play</td>
-  </tr>
-  <tr>
-    <td>OGG</td>
-    <td>play</td>
-    <td>play</td>
-    <td>play</td>
-  </tr>
-  <tr>
-    <td>OGV</td>
-    <td>play</td>
-    <td>play</td>
-    <td>play</td>
-  </tr>
-  <tr>
-    <td>OGA</td>
-    <td>play</td>
-    <td>play</td>
-    <td>play</td>
-  </tr>
-  <tr>
-    <td>OGX</td>
-    <td>play</td>
-    <td>play</td>
-    <td>play</td>
-  </tr>
-  <tr>
-    <td>SPX</td>
-    <td>not supported</td>
-    <td>play</td>
-    <td>play</td>
-  </tr>
-  <tr>
-    <td>OPUS</td>
-    <td>not supported</td>
-    <td>play</td>
-    <td>play</td>
-  </tr>
-  <tr>
-    <td>WEBM</td>
-    <td>play</td>
-    <td>play</td>
-    <td>play</td>
-  </tr>
-  <tr>
-    <td>TIFF</td>
-    <td>view</td>
-    <td>view</td>
-    <td>view</td>
+    <td>NEF</td>
+    <td>yes</td>
+    <td>?</td>
+    <td>no</td>
+    <td><Link to="/extensions/image-viewer">Image Viewer</Link></td>
   </tr>
   <tr>
     <td>PSD</td>
-    <td>view</td>
-    <td>view</td>
-    <td>view</td>
+    <td>yes</td>
+    <td>?</td>
+    <td>no</td>
+    <td><Link to="/extensions/image-viewer">Image Viewer</Link></td>
+  </tr>  
+</table>
+</div>
+
+### Documents formats
+
+<div className="table-responsive">
+<table className="table table-striped">
+  <thead className="table table-header">
+    <th>File format</th>
+    <th>Preview</th>
+    <th>Thumbnail</th>
+    <th>Edit</th>
+    <th>Extension</th>
+  </thead>
+  <tr>
+    <td>PDF</td>
+    <td>yes</td>
+    <td>yes</td>
+    <td>no</td>
+    <td><Link to="/extensions/pdf-viewer">PDF Viewer</Link></td>
+  </tr>
+  <tr>
+    <td>MD/MARKDOWN</td>
+    <td>yes</td>
+    <td>no</td>
+    <td>yes</td>
+    <td><Link to="/extensions/md-editor">MD Editor</Link>, <Link to="/extensions/md-viewer">MD Viewer</Link> or <Link to="/extensions/text-editor">Text Editor</Link></td>
+  </tr>  
+  <tr>
+    <td>RTF</td>
+    <td>yes</td>
+    <td>no</td>
+    <td>no</td>
+    <td><Link to="/extensions/rtf-viewer">eBook Viewer</Link></td>
+  </tr>  
+  <tr>
+    <td>HTML</td>
+    <td>yes</td>
+    <td>yes*</td>
+    <td>no</td>
+    <td><Link to="/extensions/html-viewer">HTML Viewer</Link></td>
+  </tr>  
+  <tr>
+    <td>RTF</td>
+    <td>yes</td>
+    <td>no</td>
+    <td>no</td>
+    <td><Link to="/extensions/rtf-viewer">eBook Viewer</Link></td>
   </tr>
   <tr>
     <td>DOCX</td>
-    <td>view</td>
-    <td>view</td>
-    <td>view</td>
+    <td>yes</td>
+    <td>yes*</td>
+    <td>no</td>
+    <td><Link to="/extensions/document-viewer">Document Viewer</Link></td>
   </tr>
   <tr>
     <td>XLSX</td>
-    <td>view</td>
-    <td>view</td>
-    <td>view</td>
-  </tr>
-  <tr>
-    <td>CSV</td>
-    <td>view</td>
-    <td>view</td>
-    <td>view</td>
+    <td>yes</td>
+    <td>yes*</td>
+    <td>no</td>
+    <td><Link to="/extensions/spreadsheet-viewer">Spreadsheet Viewer</Link></td>
   </tr>
   <tr>
     <td>ODS</td>
-    <td>view</td>
-    <td>view</td>
-    <td>view</td>
-  </tr>      
+    <td>yes</td>
+    <td>yes*</td>
+    <td>no</td>
+    <td><Link to="/extensions/spreadsheet-viewer">Spreadsheet Viewer</Link></td>
+  </tr>  
   <tr>
-    <td>EPUB</td>
-    <td>view</td>
-    <td>view</td>
-    <td>view</td>
+    <td>CSV</td>
+    <td>yes</td>
+    <td>no</td>
+    <td>no</td>
+    <td><Link to="/extensions/spreadsheet-viewer">Spreadsheet Viewer</Link></td>
+  </tr>        
+</table>
+</div>
+
+### Audio / Video formats
+
+<div className="table-responsive">
+<table className="table table-striped">
+  <thead className="table table-header">
+    <th>File format</th>
+    <th>Preview</th>
+    <th>Thumbnail</th>
+    <th>Edit</th>
+    <th>Extension</th>
+  </thead>
+  <tr>
+    <td>WEBM</td>
+    <td>yes</td>
+    <td>no</td>
+    <td>no</td>
+    <td><Link to="/extensions/media-player">Media Player</Link></td>
   </tr>
   <tr>
-    <td>ZIP</td>
-    <td>view</td>
-    <td>view</td>
-    <td>view</td>
+    <td>MP4</td>
+    <td>yes</td>
+    <td>no</td>
+    <td>no</td>
+    <td><Link to="/extensions/media-player">Media Player</Link></td>
+  </tr>  
+  <tr>
+    <td>ACC</td>
+    <td>yes</td>
+    <td>no</td>
+    <td>no</td>
+    <td><Link to="/extensions/media-player">Media Player</Link></td>
+  </tr>  
+  <tr>
+    <td>FLAC</td>
+    <td>yes</td>
+    <td>no</td>
+    <td>no</td>
+    <td><Link to="/extensions/media-player">Media Player</Link></td>
+  </tr>  
+  <tr>
+    <td>OGG</td>
+    <td>yes</td>
+    <td>no</td>
+    <td>no</td>
+    <td><Link to="/extensions/media-player">Media Player</Link></td>
+  </tr>  
+  <tr>
+    <td>OGV</td>
+    <td>yes</td>
+    <td>no</td>
+    <td>no</td>
+    <td><Link to="/extensions/media-player">Media Player</Link></td>
+  </tr>  
+  <tr>
+    <td>OGA</td>
+    <td>yes</td>
+    <td>no</td>
+    <td>no</td>
+    <td><Link to="/extensions/media-player">Media Player</Link></td>
+  </tr>  
+  <tr>
+    <td>OGV</td>
+    <td>yes</td>
+    <td>no</td>
+    <td>no</td>
+    <td><Link to="/extensions/media-player">Media Player</Link></td>
+  </tr>  
+  <tr>
+    <td>OGX</td>
+    <td>yes</td>
+    <td>no</td>
+    <td>no</td>
+    <td><Link to="/extensions/media-player">Media Player</Link></td>
+  </tr>  
+  <tr>
+    <td>SPX</td>
+    <td>yes*</td>
+    <td>no</td>
+    <td>no</td>
+    <td><Link to="/extensions/media-player">Media Player</Link></td>
   </tr>
   <tr>
-    <td>RTF</td>
-    <td>view</td>
-    <td>view</td>
-    <td>view</td>
-  </tr>
+    <td>OPUS</td>
+    <td>yes*</td>
+    <td>no</td>
+    <td>no</td>
+    <td><Link to="/extensions/media-player">Media Player</Link></td>
+  </tr>  
   <tr>
     <td>MKV</td>
-    <td>view</td>
-    <td>view</td>
-    <td>view</td>
+    <td>yes</td>
+    <td>no</td>
+    <td>no</td>
+    <td><Link to="/extensions/media-player">Media Player</Link></td>
+  </tr>                
+</table>
+</div>
+
+### eBook formats
+
+<div className="table-responsive">
+<table className="table table-striped">
+  <thead className="table table-header">
+    <th>File format</th>
+    <th>Preview</th>
+    <th>Thumbnail</th>
+    <th>Edit</th>
+    <th>Extension</th>
+  </thead>
+  <tr>
+    <td>EPUB</td>
+    <td>yes</td>
+    <td>yes</td>
+    <td>no</td>
+    <td><Link to="/extensions/ebook-viewer">eBook Viewer</Link></td>
   </tr>
+</table>
+</div>
+
+### Bookmark formats
+
+<div className="table-responsive">
+<table className="table table-striped">
+  <thead className="table table-header">
+    <th>File format</th>
+    <th>Preview</th>
+    <th>Thumbnail</th>
+    <th>Edit</th>
+    <th>Extension</th>
+  </thead>
   <tr>
     <td>URL</td>
-    <td>view</td>
-    <td>view</td>
-    <td>view</td>
+    <td>yes</td>
+    <td>yes</td>
+    <td>no</td>
+    <td><Link to="/extensions/url-viewer">URL Viewer</Link></td>
+  </tr>
+  <tr>
+    <td>DESKTOP</td>
+    <td>yes</td>
+    <td>yes</td>
+    <td>no</td>
+    <td><Link to="/extensions/url-viewer">URL Viewer</Link></td>
+  </tr>
+  <tr>
+    <td>WEBSITE</td>
+    <td>yes</td>
+    <td>yes</td>
+    <td>no</td>
+    <td><Link to="/extensions/url-viewer">URL Viewer</Link></td>
   </tr>  
-  </table>
-  </div>
+</table>
+</div>
+
+### Email formats
+
+<div className="table-responsive">
+<table className="table table-striped">
+  <thead className="table table-header">
+    <th>File format</th>
+    <th>Preview</th>
+    <th>Thumbnail</th>
+    <th>Edit</th>
+    <th>Extension</th>
+  </thead>
+  <tr>
+    <td>EML</td>
+    <td>yes</td>
+    <td>no</td>
+    <td>no</td>
+    <td><Link to="/extensions/mhtml-viewer">MHTML Viewer</Link></td>
+  </tr>
+  <tr>
+    <td>MSG</td>
+    <td>yes</td>
+    <td>no</td>
+    <td>no</td>
+    <td><Link to="/extensions/msg-viewer">MSG Viewer</Link></td>
+  </tr>
+</table>
+</div>
+
+### Archive formats
+
+<div className="table-responsive">
+<table className="table table-striped">
+  <thead className="table table-header">
+    <th>File format</th>
+    <th>Preview</th>
+    <th>Thumbnail</th>
+    <th>Edit</th>
+    <th>Extension</th>
+  </thead>
+  <tr>
+    <td>ZIP</td>
+    <td>yes</td>
+    <td>yes*</td>
+    <td>no</td>
+    <td><Link to="/extensions/archive-viewer">Archive Viewer</Link></td>
+  </tr>
+</table>
+</div>
+
+### Text and source code formats
+
+<div className="table-responsive">
+<table className="table table-striped">
+  <thead className="table table-header">
+    <th>File format</th>
+    <th>Preview</th>
+    <th>Thumbnail</th>
+    <th>Edit</th>
+    <th>Extension</th>
+  </thead>
+  <tr>
+    <td>TXT</td>
+    <td>yes</td>
+    <td>no</td>
+    <td>yes</td>
+    <td><Link to="/extensions/text-editor">Text Editor</Link></td>
+  </tr>
+  <tr>
+    <td>XML</td>
+    <td>yes</td>
+    <td>no</td>
+    <td>yes</td>
+    <td><Link to="/extensions/text-editor">Text Editor</Link></td>
+  </tr>
+  <tr>
+    <td>JS</td>
+    <td>yes</td>
+    <td>no</td>
+    <td>yes</td>
+    <td><Link to="/extensions/text-editor">Text Editor</Link></td>
+  </tr>
+  <tr>
+    <td>JSON</td>
+    <td>yes</td>
+    <td>no</td>
+    <td>yes</td>
+    <td><Link to="/extensions/json-editor">JSON Editor</Link></td>
+  </tr>
+  <tr>
+    <td>CSS</td>
+    <td>yes</td>
+    <td>no</td>
+    <td>yes</td>
+    <td><Link to="/extensions/text-editor">Text Editor</Link></td>
+  </tr>
+  <tr>
+    <td>H</td>
+    <td>yes</td>
+    <td>no</td>
+    <td>yes</td>
+    <td><Link to="/extensions/text-editor">Text Editor</Link></td>
+  </tr>
+  <tr>
+    <td>CLJ</td>
+    <td>yes</td>
+    <td>no</td>
+    <td>yes</td>
+    <td><Link to="/extensions/text-editor">Text Editor</Link></td>
+  </tr>
+  <tr>
+    <td>COFFEE</td>
+    <td>yes</td>
+    <td>no</td>
+    <td>yes</td>
+    <td><Link to="/extensions/text-editor">Text Editor</Link></td>
+  </tr>
+  <tr>
+    <td>CPP</td>
+    <td>yes</td>
+    <td>no</td>
+    <td>yes</td>
+    <td><Link to="/extensions/text-editor">Text Editor</Link></td>
+  </tr>
+  <tr>
+    <td>CS</td>
+    <td>yes</td>
+    <td>no</td>
+    <td>yes</td>
+    <td><Link to="/extensions/text-editor">Text Editor</Link></td>
+  </tr>
+  <tr>
+    <td>GROOVY</td>
+    <td>yes</td>
+    <td>no</td>
+    <td>yes</td>
+    <td><Link to="/extensions/text-editor">Text Editor</Link></td>
+  </tr>
+  <tr>
+    <td>HAXE</td>
+    <td>yes</td>
+    <td>no</td>
+    <td>yes</td>
+    <td><Link to="/extensions/text-editor">Text Editor</Link></td>
+  </tr>
+  <tr>
+    <td>JAVA</td>
+    <td>yes</td>
+    <td>no</td>
+    <td>yes</td>
+    <td><Link to="/extensions/text-editor">Text Editor</Link></td>
+  </tr>
+  <tr>
+    <td>JSM</td>
+    <td>yes</td>
+    <td>no</td>
+    <td>yes</td>
+    <td><Link to="/extensions/text-editor">Text Editor</Link></td>
+  </tr>
+  <tr>
+    <td>LESS</td>
+    <td>yes</td>
+    <td>no</td>
+    <td>yes</td>
+    <td><Link to="/extensions/text-editor">Text Editor</Link></td>
+  </tr>
+  <tr>
+    <td>LUA</td>
+    <td>yes</td>
+    <td>no</td>
+    <td>yes</td>
+    <td><Link to="/extensions/text-editor">Text Editor</Link></td>
+  </tr>
+  <tr>
+    <td>ML</td>
+    <td>yes</td>
+    <td>no</td>
+    <td>yes</td>
+    <td><Link to="/extensions/text-editor">Text Editor</Link></td>
+  </tr>
+  <tr>
+    <td>MLI</td>
+    <td>yes</td>
+    <td>no</td>
+    <td>yes</td>
+    <td><Link to="/extensions/text-editor">Text Editor</Link></td>
+  </tr>
+  <tr>
+    <td>PL</td>
+    <td>yes</td>
+    <td>no</td>
+    <td>yes</td>
+    <td><Link to="/extensions/text-editor">Text Editor</Link></td>
+  </tr>
+  <tr>
+    <td>PHP</td>
+    <td>yes</td>
+    <td>no</td>
+    <td>yes</td>
+    <td><Link to="/extensions/text-editor">Text Editor</Link></td>
+  </tr>
+  <tr>
+    <td>PY</td>
+    <td>yes</td>
+    <td>no</td>
+    <td>yes</td>
+    <td><Link to="/extensions/text-editor">Text Editor</Link></td>
+  </tr>
+  <tr>
+    <td>RB</td>
+    <td>yes</td>
+    <td>no</td>
+    <td>yes</td>
+    <td><Link to="/extensions/text-editor">Text Editor</Link></td>
+  </tr>
+  <tr>
+    <td>SH</td>
+    <td>yes</td>
+    <td>no</td>
+    <td>yes</td>
+    <td><Link to="/extensions/text-editor">Text Editor</Link></td>
+  </tr>
+  <tr>
+    <td>SQL</td>
+    <td>yes</td>
+    <td>no</td>
+    <td>yes</td>
+    <td><Link to="/extensions/text-editor">Text Editor</Link></td>
+  </tr>  
+</table>
+</div>
 
 ## Printing files
 

@@ -10,7 +10,12 @@ A TagSpaces extension allowing you to preview any kind of files as text
 
 ## Used libraries
 
-This extension has no external dependencies
+This extension relays on the following libraries:
+
+- [Bootstrap](https://getbootstrap.com/)
+- [i18next](https://www.i18next.com/)
+- [Mark.js](https://markjs.io/)
+- [Dompurify](https://github.com/cure53/DOMPurify)
 
 ## Installation
 

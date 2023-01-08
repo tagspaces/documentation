@@ -47,6 +47,8 @@ You can test it live [here](https://demo.tagspaces.com/int.html?tslid=10ades09-c
 This extension thankfully relays on the following libraries:
 
 - [Milkdown](https://milkdown.dev/)
+- [React](https://reactjs.org/)
+- [Mui](https://mui.com/)
 
 ## Keyboard shortcuts
 

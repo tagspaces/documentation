@@ -26,8 +26,9 @@ A TagSpaces extension for opening 3d models in GLB and GLTF formats.
 This extension thankfully relays on the following great libraries:
 
 - [model-viewer](https://modelviewer.dev/)
-- [bootstrap](https://getbootstrap.com/)
-- [file-saver](https://github.com/eligrey/FileSaver.js/)
+- [FileSaver](https://github.com/eligrey/FileSaver.js/)
+- [Bootstrap](https://getbootstrap.com/)
+- [i18next](https://www.i18next.com/)
 
 ## Installation
 

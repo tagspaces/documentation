@@ -22,8 +22,10 @@ The TagSpaces [Firefox](https://addons.mozilla.org/en-us/firefox/addon/tagspaces
 
 This extension thankfully relays on the following great libraries:
 
-- [markdown-css](https://github.com/rhiokim/markdown-css)
-- [readability](https://github.com/mozilla/readability)
+- [Readability](https://github.com/mozilla/readability)
+- [Bootstrap](https://getbootstrap.com/)
+- [i18next](https://www.i18next.com/)
+- [Dompurify](https://github.com/cure53/DOMPurify)
 
 ## Installation
 

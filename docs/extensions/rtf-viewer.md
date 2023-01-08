@@ -9,6 +9,10 @@ A TagSpaces extension allowing opening of RTF files.
 This extension thankfully relays on the following great libraries:
 
 - [rtf.js](https://github.com/tbluemel/rtf.js)
+- [Bootstrap](https://getbootstrap.com/)
+- [i18next](https://www.i18next.com/)
+- [Mark.js](https://markjs.io/)
+- [Dompurify](https://github.com/cure53/DOMPurify)
 
 ## Installation
 

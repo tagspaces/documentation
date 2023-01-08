@@ -16,7 +16,10 @@ A TagSpaces extension allowing opening of markdown files
 This extension thankfully relays on the following great project(s):
 
 - [marked](https://github.com/chjj/marked)
-- [markdown-css](https://github.com/rhiokim/markdown-css)
+- [Bootstrap](https://getbootstrap.com/)
+- [i18next](https://www.i18next.com/)
+- [Mark.js](https://markjs.io/)
+- [Dompurify](https://github.com/cure53/DOMPurify)
 
 ## Installation
 

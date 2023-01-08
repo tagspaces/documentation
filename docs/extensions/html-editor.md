@@ -15,7 +15,10 @@ A TagSpaces extension allowing editing of HTML documents.
 
 This extension thankfully relays on the following great libraries:
 
-- [summernote](http://summernote.org/) - a JavaScript library for HTML editing
+- [Summernote](http://summernote.org/) - a JavaScript library for HTML editing
+- [Bootstrap](https://getbootstrap.com/)
+- [i18next](https://www.i18next.com/)
+- [Dompurify](https://github.com/cure53/DOMPurify)
 
 ## Installation
 

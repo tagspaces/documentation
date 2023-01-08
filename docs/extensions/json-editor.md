@@ -12,7 +12,10 @@ A TagSpaces extension allowing viewing and editing of JSON documents.
 
 This extension thankfully relays on the following great libraries:
 
-- [JSON Editor](https://github.com/josdejong/jsoneditor)
+- [JSON editor](https://github.com/josdejong/jsoneditor)
+- [Bootstrap](https://getbootstrap.com/)
+- [i18next](https://www.i18next.com/)
+- [Mark.js](https://markjs.io/)
 
 ## Installation
 

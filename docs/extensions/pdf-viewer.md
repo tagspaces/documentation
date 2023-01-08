@@ -15,6 +15,8 @@ A TagSpaces extension allowing opening, searching and navigating thought PDF fil
 
 This extension thankfully relays on the following great project(s):
 
+- [Bootstrap](https://getbootstrap.com/)
+- [i18next](https://www.i18next.com/)
 - [pdf.js](https://mozilla.github.io/pdf.js/)
 
 ## Installation

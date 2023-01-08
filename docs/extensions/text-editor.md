@@ -14,6 +14,9 @@ A TagSpaces extension allowing editing of text based documents.
 This extension thankfully relays on the following great libraries:
 
 - [Codemirror](http://codemirror.net/)
+- [Bootstrap](https://getbootstrap.com/)
+- [i18next](https://www.i18next.com/)
+- [Dompurify](https://github.com/cure53/DOMPurify)
 
 ## Installation
 

@@ -16,7 +16,10 @@ A TagSpaces extension allowing playing of audio and video files.
 
 This extension thankfully relays on the following great libraries:
 
-- [plyr](https://plyr.io/)
+- [Plyr](https://plyr.io/)
+- [React](https://reactjs.org/)
+- [Mui](https://mui.com/)
+- [Plyr-react](https://github.com/chintan9/plyr-reac)
 
 ## Installation
 

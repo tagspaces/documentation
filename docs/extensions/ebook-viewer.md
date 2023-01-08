@@ -1,6 +1,6 @@
 import { ProFeature, CenteredImage, CenteredVideo } from '@site/src/components/CommonBlocks';
 
-# EPUB Viewer
+# eBook Viewer
 
 A TagSpaces extension allowing you to open eBooks or digital magazines in EPUB format.
 
@@ -27,6 +27,9 @@ A TagSpaces extension allowing you to open eBooks or digital magazines in EPUB f
 This extension thankfully relays on the following great libraries:
 
 - [epub.js](https://github.com/futurepress/epub.js/)
+- [Bootstrap](https://getbootstrap.com/)
+- [i18next](https://www.i18next.com/)
+- [jszip.js](https://stuk.github.io/jszip/)
 
 ## Installation
 

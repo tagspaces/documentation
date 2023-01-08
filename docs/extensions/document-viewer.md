@@ -8,7 +8,14 @@ A TagSpaces extension for previewing document files.
 
 ## Used libraries
 
-no dependencies
+This extension thankfully relays on the following great libraries:
+
+- [mammoth](https://github.com/mwilliamson/mammoth.js/)
+- [bootstrap](https://getbootstrap.com/)
+- [i18next](https://www.i18next.com/)
+- [mark.js](https://markjs.io/)
+- [dompurify](https://github.com/cure53/DOMPurify)
+- [jszip.js](https://stuk.github.io/jszip/)
 
 ## Installation
 

@@ -14,6 +14,10 @@ A TagSpaces extension allowing you to preview the content of spreadsheet files.
 This extension thankfully relays on the following great project(s):
 
 - [SheetJS](https://sheetjs.com/)
+- [Bootstrap](https://getbootstrap.com/)
+- [i18next](https://www.i18next.com/)
+- [Mark.js](https://markjs.io/)
+- [Dompurify](https://github.com/cure53/DOMPurify)
 
 ## Installation
 
