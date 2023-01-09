@@ -2,11 +2,11 @@ import { ProFeature, CenteredImage, CenteredVideo } from '@site/src/components/C
 
 # 3D Viewer
 
-A TagSpaces extension for opening 3d models in GLB and GLTF formats.
+A TagSpaces extension for opening 3d file formats.
 
 ## Features
 
-- Preview in 3D of GLB and GLTF files
+- 3D preview of GLB, GLTF, STL and OBJ files
 - Rotation of the models with mouse dragging
 - Save screenshot of the current 3D rendering
 
@@ -26,6 +26,7 @@ A TagSpaces extension for opening 3d models in GLB and GLTF formats.
 This extension thankfully relays on the following great libraries:
 
 - [model-viewer](https://modelviewer.dev/)
+- [viewstl](https://www.viewstl.com/)
 - [FileSaver](https://github.com/eligrey/FileSaver.js/)
 - [Bootstrap](https://getbootstrap.com/)
 - [i18next](https://www.i18next.com/)
