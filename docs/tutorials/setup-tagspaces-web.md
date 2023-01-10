@@ -13,9 +13,7 @@ This tutorials explains you how to setup the "App Hosting" area located in the u
 
 ## Download and unpack
 
-The package can be downloaded from the link available in the email you will receive from our payment provider after purchasing the product.
-
-In the terminal you can use for example the **wget** utility to start the download.
+The package can be downloaded from the link our [download page](https://www.tagspaces.org/downloads/). If you have purchased the PRO Web version, the download links are available in the email you have received from our payment provider after purchasing the product.
 
 The downloaded package is a ZIP archive file which can be unpacked with this command:
 
