@@ -2,7 +2,13 @@
 
 A TagSpaces extension allowing opening of RTF files.
 
-![screenshot of the RTF viewer](/media/extensions/rtf-viewer.png)
+## Features
+
+- Preview files in RTF format
+- Export the content as HTML file
+- Zoom in and out of the content
+
+![screenshot of the RTF viewer](/media/extensions/viewer-rtf-lead.png)
 
 ## Used libraries
 

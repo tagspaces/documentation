@@ -5,8 +5,10 @@ A TagSpaces extension allowing you to open email in MSG format
 ## Features
 
 - Opens emails in MSG format
+- Export the content as HTML file
+- Zoom in and out of the content
 
-<!-- ![Screenshot of the viewerURL](/media/extensions/viewer-url-lead.png) -->
+![Screenshot of the viewer msg extensions](/media/extensions/viewer-msg-lead.png)
 
 ## Used libraries
 

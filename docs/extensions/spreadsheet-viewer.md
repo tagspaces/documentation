@@ -4,14 +4,17 @@ A TagSpaces extension allowing you to preview the content of spreadsheet files.
 
 ## Features
 
-- Previewing the content of the XLSX files
-- Previewing the content of the ODS files
+- Previewing the content of the XLSX files with sheets
+- Previewing the content of the ODS files with sheet
+- Previewing the content of the CSV files
+- Export the content as HTML file
+- Zoom in and out of the content
 
 ![screenshot of the spreadsheet viewer](/media/extensions/spreadsheet-viewer.png)
 
 ## Used libraries
 
-This extension thankfully relays on the following great project(s):
+This extension thankfully relays on the following great projects:
 
 - [SheetJS](https://sheetjs.com/)
 - [Bootstrap](https://getbootstrap.com/)

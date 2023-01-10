@@ -4,7 +4,11 @@ A TagSpaces extension for previewing document files.
 
 ## Features
 
-- preview files in DOCX format
+- Preview files in DOCX format
+- Export the content as HTML file
+- Zoom in and out of the content
+
+![general screenshot of the document viewer extension](/media/extensions/viewer-document-lead.png)
 
 ## Used libraries
 

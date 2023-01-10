@@ -4,19 +4,29 @@ A TagSpaces extension allowing you to open MHTML and EML files.
 
 ## Features
 
-- Viewing of MHTML/MHT files - MHTML is [file format](https://tools.ietf.org/html/rfc2557) for saving web pages with all the images and styling information in one single file. Saving in MHTML format is natively supported by [Chrome&trade;](http://docs.tagspaces.org/tutorials/webclipping.html#enabling-the-saving-of-webpages-as-mhtml), Internet Explorer&trade; and Firefox&trade; (with the help of the [MAFF addon](http://maf.mozdev.org/maff-file-format.html/)) browsers.
-- Viewing of EML files - EML is file format for saving emails. It is the default export email format of the Thunderbird email client. The _show original_ email functionality in Gmail&trade; also exports the email in this format.
+- Viewing of MHTML/MHT files - MHTML is [file format](https://tools.ietf.org/html/rfc2557) for saving web pages with all the images and styling information in one single file. Saving in MHTML format is natively supported by [Chrome&trade;](/web-clipper#enabling-the-saving-of-webpages-as-mhtml) and Internet Explorer&trade; browsers.
+- Viewing of EML files - EML is file format for saving emails. It is the default email export format of the email apps such as Thunderbird&trade; or Google Mail&trade;.
 - Readabilty mode - for easy reading of the text content, with support for _serif_ and _sans serif_ font, different font size and background colors.
 - Showing the creation date of the file
 - Opening the source url of a MHTML file
 - Finding text in the current file
 - File printing
 
-![Animation of the viewerMHTML extension](/media/extensions/mhtml-viewer-readabilty-mode.gif)
+<!-- ![Animation of the viewerMHTML extension](/media/extensions/mhtml-viewer-readabilty-mode.gif) -->
+
+![Screenshot of the MHTML viewer extension](/media/extensions/viewer-mhtml-lead.png)
+
+Dialog showing the scraping details, with ability to open the original URL in an external browser.
+
+![Screenshot of the MHTML viewer extension](/media/extensions/viewer-mhtml-webscraping.png)
+
+### Showing email exported in EML format
+
+![Screenshot of the MHTML viewer extension](/media/extensions/viewer-mhtml-emlpreview.png)
 
 ## Used libraries
 
-This extension thankfully relays on the following great project(s):
+This extension thankfully relays on the following great projects:
 
 - [mailparser](https://github.com/andris9/mailparser)
 - [Readability](https://github.com/mozilla/readability)

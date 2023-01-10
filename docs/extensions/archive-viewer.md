@@ -11,7 +11,7 @@ A TagSpaces extension allowing you to preview the content of ZIP files.
 
 ## Used libraries
 
-This extension thankfully relays on the following great project(s):
+This extension thankfully relays on the following great projects:
 
 - [jszip](https://stuk.github.io/jszip/)
 - [Bootstrap](https://getbootstrap.com/)

@@ -5,15 +5,16 @@ A TagSpaces extension allowing opening of markdown files
 ## Features
 
 - Offers different themes for displaying of the documents
-- Zoom in and zoom out capabilities
 - Finding text in the current document
+- Export the content as HTML file
+- Zoom in and out of the content
 - Document printing
 
-![Screenshot of the viewerMD](/media/extensions/viewer-markdown-lead.png)
+![Screenshot of the viewerMD](/media/extensions/viewer-md-lead.png)
 
 ## Used libraries
 
-This extension thankfully relays on the following great project(s):
+This extension thankfully relays on the following great projects:
 
 - [marked](https://github.com/chjj/marked)
 - [Bootstrap](https://getbootstrap.com/)
