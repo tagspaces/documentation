@@ -27,6 +27,7 @@ This extension thankfully relays on the following great libraries:
 
 - [model-viewer](https://modelviewer.dev/)
 - [viewstl](https://www.viewstl.com/)
+- [three.js](https://threejs.org/)
 - [FileSaver](https://github.com/eligrey/FileSaver.js/)
 - [Bootstrap](https://getbootstrap.com/)
 - [i18next](https://www.i18next.com/)
