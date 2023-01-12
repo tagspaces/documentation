@@ -46,7 +46,7 @@ You can open the sub-folders of a given location by clicking on the suitcase or 
 
 In TagSpaces there are two type of locations, local and cloud based (e.g. on AWS S3 Object Storage). The type of the location can be selected during its creation.
 
-<!-- You can also select here the default [**perspective**](browsing-files.md#perspectives), used with this location. For example if the  location contains mainly images and photos, you may want to open it with the  [**gallery-perspective**]() , offering a preview of the images and easy navigation through them. -->
+<!-- You can also select here the default [**perspective**](browsing-files#perspectives), used with this location. For example if the  location contains mainly images and photos, you may want to open it with the  [**gallery-perspective**]() , offering a preview of the images and easy navigation through them. -->
 
 ## Local Locations
 
@@ -98,7 +98,7 @@ Clicking the advanced more button will reveal some more properties:
 "Watch for external changes in this location" is disabled because it is not available for cloud locations.
 :::
 
-In our tutorial section you can find a [complete manual](/tutorials/s3-bucket-locations.md) on how to create a new AWS S3 bucket and connect it as location in TagSpaces.
+In our tutorial section you can find a [complete manual](/tutorials/s3-bucket-locations) on how to create a new AWS S3 bucket and connect it as location in TagSpaces.
 
 You can recognize object storage location by the cloud icon in front of their name, as seen in the next screenshot.
 

@@ -53,4 +53,4 @@ These keybindings are available even if TagSpaces is currently not in focus, but
 
 ## Configuring the keybindings
 
-Most of the keybindings integrated in TagSpaces are configurable. To change them, open the **Settings**. In the settings dialog, open the tab **KEY BINDINGS**. Learn more in the [settings](/ui/settings.md#key-bindings) part of the documentation.
+Most of the keybindings integrated in TagSpaces are configurable. To change them, open the **Settings**. In the settings dialog, open the tab **KEY BINDINGS**. Learn more in the [settings](/ui/settings#key-bindings) part of the documentation.

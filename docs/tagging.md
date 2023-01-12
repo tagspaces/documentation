@@ -114,9 +114,9 @@ Tags can be added in the file and folder properties area, by simple selecting th
 
 File and folder can be tagged also with drag and drop. Here is a list of the supported drag and drop operations.
 
-- Dragging a tag from the tag library and dropping it to a file or folder. This action is supported in the [default perspective](/perspectives/grid.md).
+- Dragging a tag from the tag library and dropping it to a file or folder. This action is supported in the [default perspective](/perspectives/grid).
 - Dragging a tag from the tag library and dropping it to a tagging section in file or folder properties area. This action work regardless of the current perspective.
-- Drag a tag from a file or folder and drop it on another file or folder for tagging it. This action is supported in the [default perspective](/perspectives/grid.md).
+- Drag a tag from a file or folder and drop it on another file or folder for tagging it. This action is supported in the [default perspective](/perspectives/grid).
 - Drag and drop can be used also in the tag library for moving tags from one tag group to another
 
 ![Dropping tag in the file properties area](/media/tagspaces-tagging-folder-dandd.png)

@@ -14,9 +14,9 @@ This streamlined experience offers familiarity and an ease to use the applicatio
 
 The user interface of the application consists of the following main areas:
 
-- **(1) [Left Drawer](#left-drawer-area)** - Here you can open the [location manager](/ui/locations.md) or the [tag library](/ui/taglibrary.md) and access other important functionalities of the app like the [settings](/ui/settings).
+- **(1) [Left Drawer](#left-drawer-area)** - Here you can open the [location manager](/ui/locations) or the [tag library](/ui/taglibrary) and access other important functionalities of the app like the [settings](/ui/settings).
 - **(2) [Navigation and Search](#browsing-area)** - Here you can open the search, switch the current location or navigate to a parent folders.
-- **(3) [Browsing area](/browsing-files.md)** - This section is occupied by the so called **perspective** used for browsing files and folders.
+- **(3) [Browsing area](/browsing-files)** - This section is occupied by the so called **perspective** used for browsing files and folders.
 - **(4) [Common actions area](#preview-area)** - Here you can access common actions for the currently opened file or folder.
 - **(5) [File / Folder properties](#file-properties-area)** - Here you will find some properties for the currently opened file or folder.
 - **(6) [Preview area](#preview-area)** - In this area you can preview and/or edit the current file.
@@ -31,14 +31,14 @@ The area at button contains six buttons. The button with the gear icon located a
 
 The with the four so called radio buttons in the middle, you can switch between the following areas in main part of the drawer:
 
-- **[Location manager](/ui/locations.md)**
-- **[Tag Library](/ui/taglibrary.md)**
+- **[Location manager](/ui/locations)**
+- **[Tag Library](/ui/taglibrary)**
 - **[Stored search queries](/search/#stored-search-queries)**
 - **Help and feedback** - here you can access the application help, suggest a feature or contact us.
 
 ## Browsing Area
 
-The file browsing area normally takes up he majority of the user interface. This is where all files from the currently active folder are displayed, either as a list, grid, or folder tree, depending on the active [**perspective**](browsing-files.md#Perspectives). To learn more about the all file browsing features, navigate to the [perspective section](/browsing-files).
+The file browsing area normally takes up he majority of the user interface. This is where all files from the currently active folder are displayed, either as a list, grid, or folder tree, depending on the active [**perspective**](browsing-files#Perspectives). To learn more about the all file browsing features, navigate to the [perspective section](/browsing-files).
 
 ![Screenshot showing the file browsing area](/media/browsing-area.png)
 
@@ -46,7 +46,7 @@ The button **(1)** placed in the top left part of the browsing area toggles the 
 
 **(2)** will open the [search](/search) input field.
 
-**(3)** opens a dropdown showing a list of all currently configured [locations](/ui/locations.md). From this dropdown you can quickly switch to another location.
+**(3)** opens a dropdown showing a list of all currently configured [locations](/ui/locations). From this dropdown you can quickly switch to another location.
 
 :::tip
 <ProFeature /> If you are in a cloud based location, the icon of the button for changing the location will be a <b>cloud</b>, in other cases the icon will be the <b>briefcase</b>.
@@ -65,7 +65,7 @@ The context menu for the current folder contains the following menu items:
 - **Delete Directory** - Open a dialog where you can confirm the deletion of the folder
 - **Show in File Manager** - Opens the folder in the default file manager of the operating system
 - **New Subdirectory** - Opens the folder create dialog, where you can enter the name of the new sub folder
-- **New File / Note** - Open the dialog for [creating new](/editing-files.md#creating-files) files / notes
+- **New File / Note** - Open the dialog for [creating new](/editing-files#creating-files) files / notes
 - **Add Existing File** - Opens a file choose where you can select a file from your local files system, which will be added to your current folder in TagSpaces.
 - **Import macOS tags** - This menu item is visible only on macOS, selecting it will start the attaching of native macOS tags as TagSpaces tags.
 - **Default Perspective** - will open the current folder in the default [Grid/List](/perspectives/grid) perspective

@@ -32,7 +32,7 @@ The toolbar of the perspective is located in the top part of the perspective's, 
 
 - **(3) Switches the views** - toggles between the [grid](#grid-view) and [list](#list-view) views of this perspective.
 
-- **(4) Add/Remove tags** will allow you to manage tags on selected files. (This options is only available when there is an active selection, and works on multiple files simultaneously.) To learn more about how tagging works, refer to the [Tagging -> Tagging using context menus](/tagging.md/#tag-operations-on-many-entries) section.
+- **(4) Add/Remove tags** will allow you to manage tags on selected files. (This options is only available when there is an active selection, and works on multiple files simultaneously.) To learn more about how tagging works, refer to the [Tagging -> Tagging using context menus](/tagging#tag-operations-on-many-entries) section.
 
 - **(5) Copy/move files** will allow you to copy or move the currently selected files. This option is only available when there is an active selection, and works on multiple files simultaneously. Selecting this option will present you with the **Move or Copy File(s)** dialog. After specifying the target directory (which can be anywhere on the file system, even outside your connected locations), you can choose to move or copy the file(s) by pressing the corresponding button.
 
@@ -116,7 +116,7 @@ The file context menu can be accessed by right-clicking a file in either perspec
 
 ![the context menu of a file](/media/file-context-menu.png)
 
-- **Open File** - will split the main area of TagSpaces into two, and open the file in the right pane. TagSpaces offers viewers for various file types, which can be opened inside the application. To learn more bout supported types, refer to the [Viewing Files](/viewing-files.md) section.
+- **Open File** - will split the main area of TagSpaces into two, and open the file in the right pane. TagSpaces offers viewers for various file types, which can be opened inside the application. To learn more bout supported types, refer to the [Viewing Files](/viewing-files) section.
 - **Open Parent Folder** - this feature is especially useful if the perspective shows search result from different folders, so using will open the parent folder of the currently selected file.
 - **Open File Natively** - will open the file in whatever application is associated with the file type in your operating system.
 - **Show in File Manager** - will show this file in the default file manager of your operating system

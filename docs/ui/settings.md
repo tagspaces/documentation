@@ -34,8 +34,8 @@ Most of the TagSpaces' common settings can be accessed from the General tab.
 * **Loads location meta data** - reads meta from `tsm.json`, located in a .ts subfolder, if present
 * **Restore initial settings** - Reset to defaults any time
 * **Watch current directory for changes** - Will update directory data as and when files change
-* **Tag delimiter** - By default, TagSpaces used a `space` to mark tag boundaries (learn more [here](tagging.md)).  Here you can change this to another character.
-* **Prefix for the tag container** - By default, TagSpaces does not use a prefix to show that the next part of the filename contains tags (learn more [here](tagging.md)). here you can change that behaviour. -->
+* **Tag delimiter** - By default, TagSpaces used a `space` to mark tag boundaries (learn more [here](tagging)).  Here you can change this to another character.
+* **Prefix for the tag container** - By default, TagSpaces does not use a prefix to show that the next part of the filename contains tags (learn more [here](tagging)). here you can change that behaviour. -->
 
 ## File types
 
@@ -46,13 +46,13 @@ Here you can choose which viewer and editor to launch for each supported file ty
 When you click on a file type's viewer dropdown, you will be offered a list of all installed viewer plugins (**1**).
 
 :::tip
-To learn more about file previews, refer to the [**Viewing Files**](/viewing-files.md) section.
+To learn more about file previews, refer to the [**Viewing Files**](/viewing-files) section.
 :::
 
 When you click on a file type's editor dropdown, you will be offered a list of all installed editor plugins (**2**).
 
 :::tip
-To learn more about file previews, refer to the [**Editing Files**](/editing-files.md) section.
+To learn more about file previews, refer to the [**Editing Files**](/editing-files) section.
 :::
 
 Clicking on the colored area (**3**) in the most right part of every files type will open a color selection dialog where you can adjust the color of the current file type.

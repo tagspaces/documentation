@@ -18,7 +18,7 @@ The primary purpose of TagSpaces, is tagging files and organizing them. **Tags**
 You have the option to use a hidden file (a so called sidecar file) to store tag related information. This can be useful when you are not able, or not allowed to change filenames, such as with a development project, or working collaboratively on shared documents.
 :::
 
-Tags can be anything, form descriptive labels, to categories, ratings, priorities, or dates, timestamps, and smart tags. To learn more about the powerful tag management features TagSpaces offers, read the [Tagging section](/tagging.md)
+Tags can be anything, form descriptive labels, to categories, ratings, priorities, or dates, timestamps, and smart tags. To learn more about the powerful tag management features TagSpaces offers, read the [Tagging section](/tagging)
 
 :::tip
 The name of the tags should not contain **spaces** , **\\** , **/** or **#**. The **-** or **\_** symbols can be used instead of spaces.
@@ -28,7 +28,7 @@ The name of the tags should not contain **spaces** , **\\** , **/** or **#**. Th
 
 Tags are organized into **tag groups**, which are basically categories for tags with similar purpose and/or characteristics. Tag groups make it easier to navigate, select and manage tags in the system. TagSpaces comes with a few pre-defined tag groups, which you can freely modify, delete, or expand upon. The default tag groups are:
 
-- **Smart tags** include various date based tags and geo location tagging. Learn more about smart tags in the [tagging section](/tagging.md#smart-tags)
+- **Smart tags** include various date based tags and geo location tagging. Learn more about smart tags in the [tagging section](/tagging#smart-tags)
 - **Common Tags**: This group contains two predefined tags, _book_, and _paper_. This can give you a general idea of the intended purpose of the group.
 - **Getting Things Done**: Another useful category that can enhance your productivity, is an implementation of the [GTD time management method](https://en.wikipedia.org/wiki/Getting_Things_Done). Predefined tags here are _done_, _next_, _maybe_ and _waiting_.
 - **Priorities** are exactly what they seem. These are color coded tags that will be easily identifiable by a simple glance. The three predefined priority tags are:
@@ -47,8 +47,8 @@ All the tag groups except the smart tag are optional and can be removed from the
 This menu contains the following three menu items:
 
 - **Create Tag Group** - Opens the dialog for creating tag groups
-- **Import Tag Library** - Start the process for importing tag groups in TagSpaces. Lear more in the [tag sharing tutorial](/tutorials/sharing-tags.md#distributing-the-library)
-- **Export Tag Library** - Start the process for exporting tag groups from TagSpaces. Lear more in the [tag sharing tutorial](/tutorials/sharing-tags.md#exporting-the-existing-tag-groups)
+- **Import Tag Library** - Start the process for importing tag groups in TagSpaces. Lear more in the [tag sharing tutorial](/tutorials/sharing-tags#distributing-the-library)
+- **Export Tag Library** - Start the process for exporting tag groups from TagSpaces. Lear more in the [tag sharing tutorial](/tutorials/sharing-tags#exporting-the-existing-tag-groups)
 
 ![screenshot of the context menu of the tag library](/media/taglibrary-context-menu.png)
 
@@ -116,7 +116,7 @@ When accessing a tag's context menu from the **file browsing area** (the main ar
 ![](/media/tag-operations-dialog-2.png) -->
 
 :::info
-Editing the name of a tag or deleting one from the library tags will only affect the library itself. If the same tag had had already been applied to a file, the tag on that file will remain intact. But if you change the color of a tag in the library, it will be reflected on the files marked with that tag as well. This is because of the way TagSpaces handles tags, that essentially become an organic part of the filename. To learn more about how tagging works, please refer to [File tagging based on filename](/tagging.md#file-tagging-based-on-filenames) under the Tagging section.
+Editing the name of a tag or deleting one from the library tags will only affect the library itself. If the same tag had had already been applied to a file, the tag on that file will remain intact. But if you change the color of a tag in the library, it will be reflected on the files marked with that tag as well. This is because of the way TagSpaces handles tags, that essentially become an organic part of the filename. To learn more about how tagging works, please refer to [File tagging based on filename](/tagging#file-tagging-based-on-filenames) under the Tagging section.
 :::
 
 ## Predefined tags
