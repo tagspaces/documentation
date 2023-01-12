@@ -9,3 +9,4 @@ aero-debug.log
 aero-deploy.tar.gz
 .ts/
 /../.ts
+deploy.sh

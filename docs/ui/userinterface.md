@@ -38,7 +38,7 @@ The with the four so called radio buttons in the middle, you can switch between 
 
 ## Browsing Area
 
-The file browsing area normally takes up he majority of the user interface. This is where all files from the currently active folder are displayed, either as a list, grid, or folder tree, depending on the active [**perspective**](browsing-files#Perspectives). To learn more about the all file browsing features, navigate to the [perspective section](/browsing-files).
+The file browsing area normally takes up he majority of the user interface. This is where all files from the currently active folder are displayed, either as a list, grid, or folder tree, depending on the active [**perspective**](/browsing-files#Perspectives). To learn more about the all file browsing features, navigate to the [perspective section](/browsing-files).
 
 ![Screenshot showing the file browsing area](/media/browsing-area.png)
 

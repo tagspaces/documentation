@@ -78,9 +78,6 @@ module.exports = {
           label: "Other features",
           href: "/ui/userinterface/#dark-mode",
         },
-        // "ui/userinterface/#dark-mode",
-        // "ui/userinterface/#zoomable-user-interface",
-        // "ui/userinterface/#full-screen-mode",
         "ui/keybindings",
         "ui/i18n",
       ],
@@ -210,16 +207,16 @@ module.exports = {
       label: "Preview and Print Files",
       items: [
         "viewing-files",
-        {
-          type: "link",
-          label: "Supported File Formats",
-          href: "/viewing-files/#supported-file-formats",
-        },
-        {
-          type: "link",
-          label: "Print files",
-          href: "/viewing-files/#printing-files",
-        },
+        // {
+        //   type: "link",
+        //   label: "Supported File Formats",
+        //   href: "/viewing-files/#supported-file-formats",
+        // },
+        // {
+        //   type: "link",
+        //   label: "Print files",
+        //   href: "/viewing-files/#printing-files",
+        // },
         "extensions/3d-viewer",
         "extensions/media-player",
         "extensions/ebook-viewer",
