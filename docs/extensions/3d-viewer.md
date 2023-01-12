@@ -8,6 +8,8 @@ A TagSpaces extension for opening 3d file formats. The extension is introduced f
 
 - 3D preview of GLB, GLTF, STL and OBJ files
 - Rotation of the models with mouse dragging
+- Use the mouse wheel to zoom in and out,
+- Moving the mouse by hold right click will shift the rotation center of the model,
 - Save screenshot of the current 3D rendering as PNG file
 
 <CenteredVideo
