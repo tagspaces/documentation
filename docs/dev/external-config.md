@@ -123,8 +123,14 @@ Turning on this property will force the app to store the configuration for the l
 
     window.ExtSaveLocationsInBrowser = true
 
-:::tip
-The use of this property is not recommended since saving access and secret access keys in the local storage of the browser is not a good practice from the security point of view. But there are some use-cases where this is useful and make sense.
+Possible values are **true** and **false**. Default value is **false**
+
+You might want to set this setting to true, if you want the location data, including the access and secret key for accessing S3 based locations is saved in the local storage of your browser. This way, you don't have to recreate the location every time you open the application.
+
+If you are using TagSpaces Web in a browser on your computer or mobile device, where only you have access, this shouldn't be a problem. Please keep in mind, anybody with access to your browser, can with some effort get access to the access keys. This of course is true also for the desktop version, where anybody who can start TagSpaces on your computer can see this information.
+
+:::caution
+It is not recommended to use TagSpaces Web installations with `ExtSaveLocationsInBrowser = true` on public computers, since the location information will potentially stay there even after you close the browser.
 :::
 
 ## Configuring custom tag library
