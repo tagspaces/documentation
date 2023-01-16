@@ -1,5 +1,5 @@
 ---
-title: Setup TagSpaces Web
+title: Setup TagSpaces Web on webserver
 tags: [tutorial]
 ---
 

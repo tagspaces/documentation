@@ -45,6 +45,7 @@ module.exports = {
           href: "/installation#running-in-portable-mode",
         },
         "tutorials/setup-tagspaces-web",
+        "tutorials/tagspaces-web-cloudflare",
         "dev/command-line-tools",
       ],
     },
