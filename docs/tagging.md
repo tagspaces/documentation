@@ -50,7 +50,7 @@ After the activation, the application will created for every tagged file an extr
     ├── file3.png
     └── file4.docx
 
-The main advantage of this solution is that the name of the files is not changed after tagging and there is theoretically no limit in the number of tags you can add to a given file. If you move or rename tagged files in TagSpaces it will take care of the sidecar file, which will also renamed or moved in the appropriate folder. But if you move or rename this file in an external file manager, you have to move or rename the sidecar files by hand. The same hold true for the deleting a file from an external application. It will not automatically delete the sidecar file in the `.ts` folder. These drawbacks makes the tagging with sidecars less robust and future proof.
+The main advantage of this solution is that the name of the files is not changed after tagging and there is theoretically no limit in the number of tags you can add to a given file. If you move or rename tagged files in TagSpaces it will take care of the sidecar file, which will also be renamed or moved in the appropriate folder. But if you move or rename this file in an external file manager, you have to move or rename the sidecar files by hand. The same hold true for the deleting a file from an external application. It will not automatically delete the sidecar file in the `.ts` folder. These drawbacks makes the tagging with sidecars less robust and future proof.
 
 :::tip
 If you want to have the files located in the `.ts` folder synched with some cloud service such as Dropbox or Google Drive you have to enable the synching of hidden folders and files.
