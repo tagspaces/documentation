@@ -205,7 +205,7 @@ module.exports = {
     },
     {
       type: "category",
-      label: "Preview and Print Files",
+      label: "Preview Files",
       items: [
         "viewing-files",
         // {
