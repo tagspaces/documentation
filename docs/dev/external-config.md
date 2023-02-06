@@ -58,6 +58,20 @@ Possible values are **true** and **false**.
 If the parameter is specified then this setting could not be changed in the TagSpaces settings dialog anymore. The user can only see which file tagging method is activated (renaming files or using sidecar files)
 :::
 
+## Configure custom URL
+
+### Custom privacy policy URL
+
+The installation of TagSpaces Web and TagSpaces Web Pro, do not show a button leading to a privacy policy by default. An URL to a custom privacy policy can be configured with this setting:
+
+    window.ExtPrivacyURL = "https://tagspacesweb.yourdomain.com/privacy/"
+
+### Custom imprint page URL
+
+The installation of TagSpaces Web and TagSpaces Web Pro, do not show a button leading to a imprint web page by default. An URL to a custom imprint page can be configured with this setting:
+
+    window.ExtImprintURL = "https://tagspacesweb.yourdomain.com/imprint/"
+
 ## Configuring custom locations
 
 With this feature TagSpaces can be deployed with a set of predefined location, which could point to local folder or object store buckets hosted for example on AWS S3. The configuration property responsible for this feature is called **ExtLocations**.
