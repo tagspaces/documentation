@@ -10,6 +10,10 @@ This tutorial will guide through the setting up of a self hosted object storage 
 
 ## Installing the MinIO Docker application
 
+:::caution
+Starting from releases in October 2022, Minio does not support anymore the gateway mode, which was exposing existing file and folder structures as s3 object storage. You can find more on this topic in their documentation: https://min.io/docs/minio/linux/operations/install-deploy-manage/migrate-fs-gateway.html
+:::
+
 In order to install the current docker image for MinIO you should go to the "Create" section of the ContainerStation. Here you should search for _minio_ in the _Docker Hub_ tab.
 
 ![MinIO's console login](tagspaces-web-nas/qnap-installing-minio-container.png)
