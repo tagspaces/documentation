@@ -17,6 +17,10 @@ A TagSpaces extension for opening slides in html format created with reveal.js. 
     showCaption
   />
 
+:::note
+The extension extracts only the content of the reveal.js-presentation from the HTML file and removes all the embedded and referenced javascript code. For the rendering of the slides it relays on the embedded reveal.js library. This is done for reducing the risc of opening malicious HTML files. The drawback is that the reveal.js version may be outdated and not supporting the newest features of the latest release.
+:::
+
 <!-- ![Screenshot of the slides viewer](/media/extensions/slides-viewer.jpg) -->
 
 ## Used libraries
