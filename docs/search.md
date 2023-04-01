@@ -11,9 +11,7 @@ The user can start a search by switch to the search area by pressing the `Ctrl+S
 
 ![Open search](/media/open-search.png)
 
-## Basic search
-
-With basic search you are able to find files and folders by their name, tags and other properties. The search algorithm considers with different weight the following properties of the [indexed](#indexing) entries.
+With the search functionality you are able to find files and folders by their name, tags and other properties. The search algorithm considers with different weight the following properties of the [indexed](#indexing) entries.
 
 - The name of the file or the folder
 - The tags assigned to the file or the folder
@@ -25,7 +23,7 @@ The **search options**, visible in the next screenshot, can be accessed after cl
 
 ![Search options](/media/search-options.png)
 
-### Search scope
+## Search scope
 
 The search algorithm can be required to deliver results for the following search scopes:
 
@@ -33,7 +31,7 @@ The search algorithm can be required to deliver results for the following search
 - **Folder** - will deliver results for the current folder including all sub-folders.
 - **Global** <ProFeature /> - will search in all configured locations. You can find more in the [Global Search](#global-search) section. This scope has currently a beta status.
 
-### Search types
+## Search types
 
 The following three types of search are supported:
 
@@ -41,7 +39,7 @@ The following three types of search are supported:
 - **Strict** - will deliver exact search results
 - **Semi-strict** - it is same as strict but case insensitive
 
-### Search for tagged entries
+## Search for tagged entries
 
 In order to provide a detailed search support for tags, the user interface for entering them was split in three input fields:
 
@@ -49,7 +47,7 @@ In order to provide a detailed search support for tags, the user interface for e
 - **At least one tag** - any file or folder which contains one of the specified here tags will be included (**logical OR**)
 - **None of these tags** - entries which have one the tags listed here will be excluded from the search results (**logical exclusion**)
 
-### Search query
+## Search query
 
 The search query consists of two parts. The first one is just a simple free text for which is searched in the index. The second component is a list of tags. Here you define very precise the query by including and excluding tags. You can use the following shortcuts to add, remove or exclude certain tags.
 
@@ -73,7 +71,38 @@ Example search queries:
 - **"jpg +usa +beach -sunset"** - will find all files and folders having jpg in the name and having the `usa` and `beach` tags but not the `sunset` tag
 - **"|beach |sunset"** - will find all files and folder having the tags `beach` or `sunset`
 
-### Indexing
+## Search actions
+
+As usually the search can be opened by the CTRL+SHIFT+F (⌘+SHIFT+F on Mac) key binding. The opened dropdown has the two sections. The first is called actions and here you can choose among the following items, using the up and down arrow keys or typing the one letter shortcut followed by a column:
+
+- **locations** - typing `l:` will make the dropdown list the current locations, so you easily find and open one by writing the first letters of it
+- **filter** - typing `f:` will filter the current content of the folder by, without starting a new search
+- **history** - typing `h:`will make the dropdown list the lastly opened or edited files so you can filter and open one of them
+- **bookmarks** - typing `b:` will allow to filter and open your bookmarked files or folders
+- **search query** - typing `q:`will allow to filter and start your saved search queries
+
+<CenteredImage caption="Quick access action in the search box" src="/media/search-actions.png" showCaption />
+
+## Search query composition
+
+With the following commands you will have the ability to easy compose complex search queries, combining or excluding tags, choosing the file size limit, type and details.
+
+- **AND tag** - typing `+` will show the list of all tags in the dropdown so you can select tags which should be present in every file or folder in the search results
+- **NOT tag** - typing `|` will show the list of all tags in the dropdown so you can select tags which can be presented in file or folder in the search results, so you will get for example all files tagged with "tag1" or "tag2".
+- **OR tag** - typing `-` will show the list of all tags in the dropdown so you can select a tags which should be excluded from the search results
+- **file type** - typing `t:` will present a list from the support file type group, so narrow the search result to for example documents or images
+- **file size** - typing `s:` will present a list with predefined files sizes
+- **last modified** - typing `lm:` will present a list of predefined points back in time
+- **search scope** - typing `sc:` will allow you to choose among the following search scopes: current folder, current location, global search in all locations
+- **search accuracy** - typing `a:` will allow to toggle the search accuracy between: fuzzy, semi-strict or string.
+
+<CenteredImage
+  caption="Query composition in the search box"
+  src="/media/search-query-composition.png"
+  showCaption
+/>
+
+## Indexing
 
 TagSpaces has an integrated file and folder search functionality based on an **index**, which is created when you hit the search button. The index is valid by default for 10 minutes. This time can adjust individually in the properties of every [location](/ui/locations/#local-locations). The ideas behind this is that some locations may contain files which do not change so often, so here a longer validity like 1 month can be applied.
 
@@ -91,7 +120,7 @@ If you decide to disable the automatic indexing, you should do the indexing manu
     showCaption
   />
 
-### Limit the search results
+## Limit the search results
 
 By default, TagSpaces is limiting the amount of the found search results to 1000 files and folders. This limitation is also valid for the maximum files, which can be displayed in a single folder. In tab [general](/ui/settings#general) of the settings there is a field where you can increase or decrease this limit. See the next screenshot.
 
@@ -102,7 +131,7 @@ By default, TagSpaces is limiting the amount of the found search results to 1000
     showCaption
   />
 
-## Advanced search
+<!-- ## Advanced search
 
 <ProFeature />
 
@@ -115,9 +144,9 @@ The search options described in this section are available only in the Pro and E
     showCaption
   />
 
-In addition to the basic search, the advanced search supports the following filter criteria:
+In addition to the basic search, the advanced search supports the following filter criteria: -->
 
-### Search by type
+## Search by type
 
 In the file type dropdown you can specify types of the files you want to search. The file types are grouped in the following sections:
 
@@ -143,7 +172,7 @@ In addition to that there are some special filters:
     showCaption
   />
 
-### Search by file size
+## Search by file size
 
 In this dropdown you can filter for files by their size. The following options are supported:
 
@@ -162,7 +191,7 @@ In this dropdown you can filter for files by their size. The following options a
     showCaption
   />
 
-### Search by last modified date
+## Search by last modified date
 
 Here you can specify in which period the files you are searching should have been modified. This filter supports the following options:
 
@@ -181,15 +210,15 @@ Here you can specify in which period the files you are searching should have bee
     showCaption
   />
 
-### Search by time period
+## Search by time period
 
 This filter is planed.
 
-### Search by GPS coordinates
+## Search by GPS coordinates
 
 This filter is planed.
 
-### Full text search
+## Full text search
 
 <ProFeature />
 
@@ -242,6 +271,12 @@ All other search related settings should work as known from the single location 
 **Global search** should be considered as a feature in **Beta** status. There could be some edge cases which are not functioning correctly. Please share any glitches with us, we will try to fix them.
 :::
 
+## Search history
+
+<ProFeature /> - since version 5.3
+
+This features can be activated in the advanced settings of the app. After the activation the app will save the last performed searches, with their search query and the location where they were executed.
+
 ## Stored search queries
 
 <ProFeature />
@@ -287,42 +322,3 @@ Due to the fact the search queries have unique IDs, TagSpaces can recognize if t
     src="/media/import-stored-searches-dialog.png"
     maxWidth="600px"
   />
-
-<!-- Advanced search v2.x / Search query language
-
-* It searches your sub-folders recursively by default. This could lead to performance issues on folders with many files and sub-folders. If you want the search to ignore the sub-folders, add `~` character in front of your search query. The default search in the sub-folders can be disabled in the settings. <span class="label label-info">Example:</span> If you want the find files having the word `word1` located in current folder, ignoring the sub-folders you have to enter `~ word1` in the search input box.
-* If you want to find all files tagged with a certain tag, you can add the `+` character in front of the tag name. This way occurrences of this word somewhere else in the file name or content will be ignored. <span class="label label-info">Example:</span> If you want to find all files from the current folder tagged with the tag `tag1` you have to enter `+tag1` in the search input box.
-
-One of the advantages of TagSpaces PRO's search are search operators. They are words that can be added to searches to help narrow down the results. You can use all of the search operators directly in the search box, without opening the advanced search dialog. Here is an example:
-
-![Advanced Search Syntax example]()/media/search-syntax-example.png
-
-So for the example above the search query **t:picture sport** will give you all pictures containing the word **sport**. No matter where it is located search operator in the search query and will work both placed before the search word or after.
-
-Another way is to click on search button (![TagSpaces button for search field](/content/search-button.png)) to showing the search field and then click on pointing down arrow (![TagSpaces entrance to advanced search dialog window](/content/search-arrow-down.png)) to open the advanced search dialog. Fill the keyword in **Search Words** and the file type in **File Type** and will achieve the same effect as above way.
-
-![TagSpaces advanced search dialog](/media/tagspaces-advanced-search.png)
-
-Please make sure, that when you are using search operators, there is no any spaces between the operator and your search terms. A search for **t:picture** *sport* will work, but **t:** **picture** *sport* won't.
-
-| Operator | Operator |
-| -- | -- |
-| t:picture | Search only for pictures with the following extensions for example: *JPG*, *JPEG*, *PNG* and etc.<br>Short search example: **t:picture photo** |
-| t:doc | Search only for documents with the following extensions for example: *DOCX*, *PDF*, *ODF* and etc.<br>Short search example: **t:doc document** |
-| t:note | Search only for notes with the following extensions for example: *MD*, *TXT*, *HTML* and etc.<br>Short search example: **t:note note** |
-| t:audio | Search only for audio with the following extensions for example: *OGG*, *MP3*, *WAV* and etc.<br>Short search example: **t:audio song** |
-| t:video | Search only for video with the following extensions for example: *WEBM*, *OGV*, *MP4* and etc.<br>Short search example: **t:video clip** |
-| t:archive | Search only for archives with the following extensions for example: *ZIP*, *RAR*, *7Z* and etc.<br>Short search example: **t:archive arch** |
-
-If you need more information about supported file types, please take a look at [this article](https://www.tagspaces.org/supported-file-formats/).
-
-* Pictures: JPG,PNG,GIF,... (query shortcut t:picture)
-* Documents: PDF,ODF,DOCX,EXL,... (query shortcut t:doc)
-* Notes: MD,TXT,HTML,... (query shortcut t:note)
-* Audio: OGG,MP3,WAV,... (query shortcut t:audio)
-* Video files (WEBM,OGV,MP4,... (query shortcut t:video)
-* Archives (ZIP,RAR,TGZ,7Z,... (query shortcut t:archive)
-
-> **Note** You can use the query shortcut for a given file type directly in the search box, without opening the advanced search dialog. So for example the search query `t:audio coldplay` will give you all audio files containing the word coldplay.
-
--->

@@ -221,6 +221,11 @@ module.exports = {
       async: true,
       defer: true,
     },
+    {
+      src: "https://consent.cookiebot.com/uc.js",
+      "data-cbid": "ce1b9450-89a1-425c-861d-2c4b50a53c53",
+      "data-blockingmode": "auto",
+    },
   ],
   presets: [
     [

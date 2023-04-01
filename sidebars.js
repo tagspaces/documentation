@@ -185,6 +185,11 @@ module.exports = {
         },
         {
           type: "link",
+          label: "Search History",
+          href: "/search/#search-history",
+        },
+        {
+          type: "link",
           label: "Stored Search Queries",
           href: "/search/#stored-search-queries",
         },
