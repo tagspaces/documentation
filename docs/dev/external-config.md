@@ -58,7 +58,7 @@ Possible values are **true** and **false**.
 If the parameter is specified then this setting could not be changed in the TagSpaces settings dialog anymore. The user can only see which file tagging method is activated (renaming files or using sidecar files)
 :::
 
-## Configure custom URL
+## Configure custom URLs
 
 ### Custom privacy policy URL
 
