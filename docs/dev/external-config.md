@@ -284,7 +284,7 @@ Possible values: 'pluscodes', 'mgrs'
 
 Possible values: 'none', 'taglibrary', 'search', 'locations'
 
-### Show advanced search
+### Show advanced search (removed with version 5.4 )
 
     window.ExtShowAdvancedSearch = true
 

@@ -150,14 +150,14 @@ In addition to the basic search, the advanced search supports the following filt
 
 In the file type dropdown you can specify types of the files you want to search. The file types are grouped in the following sections:
 
-- **Pictures and Photos**: JPG, PNG, GIF, etc.
-- **Documents**: PDF, ODF, DOCX, EXL, etc.
-- **Notes**: MD, TXT, HTML, etc.
-- **Audio files**: OGG, MP3, WAV, etc.
-- **Video files**: WEBM, OGV, MP4, etc.
-- **Archives**: ZIP, RAR, TGZ, 7Z, etc.
-- **Bookmarks**: URL, LNK, etc.
-- **eBook**: EPUB, MOBI, AZW, PRC, etc.
+- **Pictures and Photos**: e.g. JPG, PNG, GIF
+- **Documents**: e.g. PDF, ODF, DOCX, EXL
+- **Notes**: e.g. MD, TXT, HTML
+- **Audio files**: e.g. OGG, MP3, WAV
+- **Video files**: e.g. WEBM, OGV, MP4
+- **Archives**: e.g. ZIP, RAR, TGZ, 7Z
+- **Bookmarks**: e.g. URL, LNK
+- **eBook**: e.g. EPUB, MOBI, AZW, PRC
 
 In addition to that there are some special filters:
 
