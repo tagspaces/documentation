@@ -1,6 +1,6 @@
 ---
 slug: /
-title: TagSpaces Product Documentation
+title: TagSpaces User Docs
 ---
 
 Welcome to the documentation of the TagSpaces products!
