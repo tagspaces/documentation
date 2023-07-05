@@ -35,7 +35,7 @@ In the policy generation form which will appear you can give the policy a suitab
 From a security perspective it makes sense to have a separate policy for every bucket you want to make accessible in TagSpaces or other external tools.
 :::
 
-### Read-write policy
+### Read-write policy for a bucket
 
 The following policy gives you a full access on the bucket.
 
@@ -71,12 +71,7 @@ The following policy gives you a full access on the bucket.
         "s3:GetBucketLocation",
         "s3:GetObjectVersion"
       ],
-      "Resource": [
-        // highlight-next-line
-        "arn:aws:s3:::your-new-wasabi-bucket",
-        // highlight-next-line
-        "arn:aws:s3:::your-new-wasabi-bucket/*"
-      ]
+      "Resource": ["arn:aws:s3:::<BucketName>", "arn:aws:s3:::<BucketName>/*"]
     }
   ]
 }
@@ -86,9 +81,9 @@ The following policy gives you a full access on the bucket.
 The list of allowed actions in the previous JSON file is only a suggestion. The actions can be reduced, to just those which are really needed for your use case.
 :::
 
-### Read-only policy
+### Read-only policy for a bucket
 
-Depending on your use-case you may want to access the bucket in a read-only mode
+Depending on your use-case you may want to access the bucket in a read-only mode, with the following policy you can achieve this.
 
 ```json
 {
@@ -98,16 +93,71 @@ Depending on your use-case you may want to access the bucket in a read-only mode
       "Sid": "VisualEditor0",
       "Effect": "Allow",
       "Action": ["s3:ListBucket", "s3:GetObject"],
+      "Resource": ["arn:aws:s3:::<BucketName>", "arn:aws:s3:::<BucketName>/*"]
+    }
+  ]
+}
+```
+
+### Policy with read-write access for a folder
+
+Sometimes you want to share just a folder or sub-folder and not the whole bucket with someone. For this use case you can use the following policy:
+
+```json
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "VisualEditor0",
+      "Effect": "Allow",
+      "Action": "s3:ListBucket",
+      "Resource": ["arn:aws:s3:::<BucketName>", "arn:aws:s3:::<BucketName>/*"],
+      "Condition": {
+        "StringLike": {
+          "s3:prefix": ["<FolderName>", "<FolderName>/*"]
+        }
+      }
+    },
+    {
+      "Sid": "VisualEditor0",
+      "Effect": "Allow",
+      "Action": [
+        "s3:GetObjectAcl",
+        "s3:GetObjectVersionAcl",
+        "s3:DeleteObject",
+        "s3:GetBucketWebsite",
+        "s3:GetBucketNotification",
+        "s3:GetReplicationConfiguration",
+        "s3:ListMultipartUploadParts",
+        "s3:PutObject",
+        "s3:GetObject",
+        "s3:RestoreObject",
+        "s3:ListBucket",
+        "s3:GetBucketPolicy",
+        "s3:GetObjectVersionTorrent",
+        "s3:AbortMultipartUpload",
+        "s3:GetBucketRequestPayment",
+        "s3:PutObjectAcl",
+        "s3:ListBucketMultipartUploads",
+        "s3:GetBucketVersioning",
+        "s3:GetBucketAcl",
+        "s3:GetObjectTorrent",
+        "s3:GetBucketCORS",
+        "s3:GetBucketLocation",
+        "s3:GetObjectVersion"
+      ],
       "Resource": [
-        // highlight-next-line
-        "arn:aws:s3:::your-new-wasabi-bucket",
-        // highlight-next-line
-        "arn:aws:s3:::your-new-wasabi-bucket/*"
+        "arn:aws:s3:::<BucketName>/<FolderName>",
+        "arn:aws:s3:::<BucketName>/<FolderName>/*"
       ]
     }
   ]
 }
 ```
+
+:::note
+In the policy above you have to replace `<BucketName>` with the name of your bucket and `<FolderName>` with the path of your folder or sub-folder.
+:::
 
 ## Create a user
 
