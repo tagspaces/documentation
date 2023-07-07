@@ -23,30 +23,6 @@ The **search options**, visible in the next screenshot, can be accessed after cl
 
 ![Search options](/media/search-options.png)
 
-## Search scope
-
-The search algorithm can be required to deliver results for the following search scopes:
-
-- **Location** - will deliver results from the current location. This is the default scope.
-- **Folder** - will deliver results for the current folder including all sub-folders.
-- **Global** <ProFeature /> - will search in all configured locations. You can find more in the [Global Search](#global-search) section. This scope has currently a beta status.
-
-## Search types
-
-The following three types of search are supported:
-
-- **Fuzzy** - will deliver broader search results, tolerating typos in the search query
-- **Strict** - will deliver exact search results
-- **Semi-strict** - it is same as strict but case insensitive
-
-## Search for tagged entries
-
-In order to provide a detailed search support for tags, the user interface for entering them was split in three input fields:
-
-- **Must contain all of the tags** - all tags listed here should be attached to the files or the folders in order to include them in the search results (**logical AND**)
-- **At least one tag** - any file or folder which contains one of the specified here tags will be included (**logical OR**)
-- **None of these tags** - entries which have one the tags listed here will be excluded from the search results (**logical exclusion**)
-
 ## Search query
 
 The search query consists of two parts. The first one is just a simple free text for which is searched in the index. The second component is a list of tags. Here you define very precise the query by including and excluding tags. You can use the following shortcuts to add, remove or exclude certain tags.
@@ -68,24 +44,20 @@ The tags specified here will be visible in the search options described in the p
 
 Example search queries:
 
-- **"jpg +usa +beach -sunset"** - will find all files and folders having jpg in the name and having the `usa` and `beach` tags but not the `sunset` tag
+- **"+usa +beach -sunset jpg"** - will find all files and folders having jpg in the name and having the `usa` and `beach` tags but not the `sunset` tag
 - **"|beach |sunset"** - will find all files and folder having the tags `beach` or `sunset`
 
-## Search actions
+### Search query composition
 
-As usually the search can be opened by the CTRL+SHIFT+F (⌘+SHIFT+F on Mac) key binding. The opened dropdown has the two sections. The first is called actions and here you can choose among the following items, using the up and down arrow keys or typing the one letter shortcut followed by a column:
+As usually the search can be opened by the CTRL+SHIFT+F (⌘+SHIFT+F on Mac) key binding. The opened dropdown has the two sections. The first is called **Actions** which will be described bellow and "Search query compositions. With them you will have the ability to easy compose complex search queries, combining or excluding tags, choosing the file size limit, type and details.
 
-- **locations** - typing `l:` will make the dropdown list the current locations, so you easily find and open one by writing the first letters of it
-- **filter** - typing `f:` will filter the current content of the folder by, without starting a new search
-- **history** - typing `h:`will make the dropdown list the lastly opened or edited files so you can filter and open one of them
-- **bookmarks** - typing `b:` will allow to filter and open your bookmarked files or folders
-- **search query** - typing `q:`will allow to filter and start your saved search queries
+<CenteredImage
+  caption="Query composition in the search box"
+  src="/media/search-query-composition.png"
+  showCaption
+/>
 
-<CenteredImage caption="Quick access action in the search box" src="/media/search-actions.png" showCaption />
-
-## Search query composition
-
-With the following commands you will have the ability to easy compose complex search queries, combining or excluding tags, choosing the file size limit, type and details.
+The following commands are currently supported:
 
 - **AND tag** - typing `+` will show the list of all tags in the dropdown so you can select tags which should be present in every file or folder in the search results
 - **NOT tag** - typing `|` will show the list of all tags in the dropdown so you can select tags which can be presented in file or folder in the search results, so you will get for example all files tagged with "tag1" or "tag2".
@@ -96,11 +68,121 @@ With the following commands you will have the ability to easy compose complex se
 - **search scope** - typing `sc:` will allow you to choose among the following search scopes: current folder, current location, global search in all locations
 - **search accuracy** - typing `a:` will allow to toggle the search accuracy between: fuzzy, semi-strict or string.
 
+### App actions
+
+In the search menu you can also start some common actions just by using your keyboard. This is hte list of the currently supported commands:
+
+- **locations** - typing `l:` will make the dropdown list the current locations, so you easily find and open one by writing the first letters of it
+- **filter** - typing `f:` will filter the current content of the folder by, without starting a new search
+- **history** - typing `h:`will make the dropdown list the lastly opened or edited files so you can filter and open one of them
+- **bookmarks** - typing `b:` will allow to filter and open your bookmarked files or folders
+- **saved search query** - typing `q:`will allow to filter and start your saved search queries
+- **search history** - typing `s:`will allow to find and execute search queries you have used in the past
+
+<CenteredImage caption="Quick access action in the search box" src="/media/search-actions.png" showCaption />
+
+### Search scope
+
+The search algorithm can be required to deliver results for the following search scopes:
+
+- **Location** - will deliver results from the current location. This is the default scope.
+- **Folder** - will deliver results for the current folder including all sub-folders.
+- **Global** <ProFeature /> - will search in all configured locations. You can find more in the [Global Search](#global-search) section. This scope has currently a beta status.
+
+### Search accuracy
+
+The following three types of search are supported:
+
+- **Fuzzy** - will deliver broader search results, tolerating typos in the search query
+- **Strict** - will deliver exact search results
+- **Semi-strict** - it is same as strict but case insensitive
+
+### Search for tagged entries
+
+In order to provide a detailed search support for tags, the user interface for entering them was split in three input fields:
+
+- **Must contain all of the tags** - all tags listed here should be attached to the files or the folders in order to include them in the search results (**logical AND**)
+- **At least one tag** - any file or folder which contains one of the specified here tags will be included (**logical OR**)
+- **None of these tags** - entries which have one the tags listed here will be excluded from the search results (**logical exclusion**)
+
+### Filter by file type
+
+In the file type dropdown you can specify types of the files you want to search. The file types are grouped in the following sections:
+
+- **Pictures and Photos**: e.g. JPG, PNG, GIF
+- **Documents**: e.g. PDF, ODF, DOCX, EXL
+- **Notes**: e.g. MD, TXT, HTML
+- **Audio files**: e.g. OGG, MP3, WAV
+- **Video files**: e.g. WEBM, OGV, MP4
+- **Archives**: e.g. ZIP, RAR, TGZ, 7Z
+- **Bookmarks**: e.g. URL, LNK
+- **eBook**: e.g. EPUB, MOBI, AZW, PRC
+- **Emails**: e.g. EML, MSG
+
+In addition to that there are some special filters:
+
+- **Folders** - selecting this options will limit the search to only folders
+- **Files** - selecting this option will limit the search to only files
+- **Untagged files and folders** - this options will show only files and folders witch are not tagged
+
 <CenteredImage
-  caption="Query composition in the search box"
-  src="/media/search-query-composition.png"
-  showCaption
-/>
+    caption="Search by file type"
+    src="/media/tagspaces-search-by-type.png"
+    maxWidth="300px"
+    showCaption
+  />
+
+### Filter by file size
+
+In this dropdown you can filter for files by their size. The following options are supported:
+
+- **Empty** - will filter files with zero size
+- **Tiny** - will filter files smaller than 10KB
+- **Very small** - will filter files smaller than 100KB
+- **Small** - will filter files smaller than 1MB
+- **Medium** - will filter files smaller than 50MB
+- **Large** - will filter files smaller than 1GB
+- **Huge** - will filter files bigger that 1GB
+
+<CenteredImage
+    caption="Options for searching by size"
+    src="/media/tagspaces-search-by-size.png"
+    maxWidth="300px"
+    showCaption
+  />
+
+### Filter by last modified date
+
+Here you can specify in which period the files you are searching should have been modified. This filter supports the following options:
+
+- **Today** - will show files and folders modified today
+- **Yesterday** - will show results modified yesterday
+- **Past 7 days** - will show results modified in the last 7 days
+- **Past 30 days** - will shows results modified in the last 30 days
+- **Past 6 months** - will show files and folders modified in the last 6 months from today
+- **Past year** - will show files and folders modified in the last 12 months from today
+- **More than one year** - will show files and folder older than one year
+
+<CenteredImage
+    caption="Options for searching by last modified date"
+    src="/media/tagspaces-search-by-last-modified-date.png"
+    maxWidth="300px"
+    showCaption
+  />
+
+### Filter by time period
+
+This filter will limit the search results to files and folder which have a date-time tags pointing in a certain time period.
+<CenteredImage
+    caption="Options for searching entries tagged with date tags"
+    src="/media/search-for-time-period.png"
+    maxWidth="400px"
+    showCaption
+  />
+
+### Filter by GPS coordinates
+
+This filter is planed.
 
 ## Indexing
 
@@ -146,78 +228,6 @@ The search options described in this section are available only in the Pro and E
 
 In addition to the basic search, the advanced search supports the following filter criteria: -->
 
-## Search by type
-
-In the file type dropdown you can specify types of the files you want to search. The file types are grouped in the following sections:
-
-- **Pictures and Photos**: e.g. JPG, PNG, GIF
-- **Documents**: e.g. PDF, ODF, DOCX, EXL
-- **Notes**: e.g. MD, TXT, HTML
-- **Audio files**: e.g. OGG, MP3, WAV
-- **Video files**: e.g. WEBM, OGV, MP4
-- **Archives**: e.g. ZIP, RAR, TGZ, 7Z
-- **Bookmarks**: e.g. URL, LNK
-- **eBook**: e.g. EPUB, MOBI, AZW, PRC
-
-In addition to that there are some special filters:
-
-- **Folders** - selecting this options will limit the search to only folders
-- **Files** - selecting this option will limit the search to only files
-- **Untagged files or folders** - this options will show only files and folders witch are not tagged
-
-<CenteredImage
-    caption="Search by file type"
-    src="/media/tagspaces-search-by-type.png"
-    maxWidth="300px"
-    showCaption
-  />
-
-## Search by file size
-
-In this dropdown you can filter for files by their size. The following options are supported:
-
-- **Empty** - will filter files with zero size
-- **Tiny** - will filter files smaller than 10KB
-- **Very small** - will filter files smaller than 100KB
-- **Small** - will filter files smaller than 1MB
-- **Medium** - will filter files smaller than 50MB
-- **Large** - will filter files smaller than 1GB
-- **Huge** - will filter files bigger that 1GB
-
-<CenteredImage
-    caption="Options for searching by size"
-    src="/media/tagspaces-search-by-size.png"
-    maxWidth="300px"
-    showCaption
-  />
-
-## Search by last modified date
-
-Here you can specify in which period the files you are searching should have been modified. This filter supports the following options:
-
-- **Today** - will show files and folders modified today
-- **Yesterday** - will show results modified yesterday
-- **Past 7 days** - will show results modified in the last 7 days
-- **Past 30 days** - will shows results modified in the last 30 days
-- **Past 6 months** - will show files and folders modified in the last 6 months from today
-- **Past year** - will show files and folders modified in the last 12 months from today
-- **More than one year** - will show files and folder older than one year
-
-<CenteredImage
-    caption="Options for searching by last modified date"
-    src="/media/tagspaces-search-by-last-modified-date.png"
-    maxWidth="300px"
-    showCaption
-  />
-
-## Search by time period
-
-This filter is planed.
-
-## Search by GPS coordinates
-
-This filter is planed.
-
 ## Full text search
 
 <ProFeature />
@@ -250,7 +260,7 @@ These file formats are currently supported:
 This feature is still in beta state and could lead to performance issues if you are dealing with many and/or big text files.
 :::
 
-### Global search
+## Global search
 
 <ProFeature />
 
@@ -273,9 +283,18 @@ All other search related settings should work as known from the single location 
 
 ## Search history
 
-<ProFeature /> - since version 5.3
+<ProFeature />
 
-This features can be activated in the advanced settings of the app. After the activation the app will save the last performed searches, with their search query and the location where they were executed.
+This features can be activated in the advanced settings of the app by choosing how big should be the search history. After the activation the app will save the last performed searches, with their search query and the location where they were executed.
+
+<CenteredImage
+caption="Activating of the search history in the settings"
+src="/media/search-history-activation.png"
+maxWidth="600px"
+showCaption
+/>
+
+The search history can be also **disabled** by choosing _disabled_ from the dropdown or **deleted** by clicking on the button with the trash bin icon.
 
 ## Stored search queries
 
@@ -294,7 +313,7 @@ With the functionality one can store commonly used search queries for later use.
 The stored searches are location independent, so they can be executed on any location.
 :::
 
-### Quick access from search bar
+<!-- ### Quick access from search bar
 
 Alternatively, the stored searches can be accessed also from the dropdown menu located in the search bar. As seen in the next screenshot.
 
@@ -302,7 +321,7 @@ Alternatively, the stored searches can be accessed also from the dropdown menu l
     caption="Accessing the stored searches from the search bar"
     src="/media/stored-search-quick-access.png"
     showCaption
-  />
+  /> -->
 
 ### Export and import
 
@@ -313,6 +332,7 @@ In the three dot menu of the stored search are you will find menu entries with w
 <CenteredImage
     caption="Screenshot of the menu for triggering the import and export of stored searches"
     src="/media/import-export-searches.png"
+    maxWidth="811px"
   />
 
 Due to the fact the search queries have unique IDs, TagSpaces can recognize if the query is already imported so you can skip the re-import or import the newer version of it. An example export can be found in the [documentation](/dev/metafileformats#format-of-the-exported-search-queries) of the project.
