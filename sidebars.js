@@ -287,6 +287,11 @@ module.exports = {
         },
         {
           type: "link",
+          label: "Extensions",
+          href: "/ui/settings/#extensions",
+        },
+        {
+          type: "link",
           label: "Advanced",
           href: "/ui/settings/#advanced",
         },

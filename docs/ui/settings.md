@@ -1,8 +1,10 @@
 ---
-title: App Settings
+title: Application Settings
 ---
 
 import { ProFeature } from '@site/src/components/CommonBlocks';
+
+# Settings
 
 To access the settings dialog, just click on the gears icon at the bottom left part of the app.
 
@@ -14,7 +16,7 @@ The settings dialog has four tabs, which will be described bellow.
 
 Most of the TagSpaces' common settings can be accessed from the General tab.
 
-![Setting - General Tab](/media/settings-tab-general.png)
+![Setting - General Tab](/media/tagspaces-settings-general.png)
 
 - **Interface language** - TagSpaces has been translated to a variety languages. Choose your preference here
 - **Theme selector** - Here the user interface theme can be selected.
@@ -78,6 +80,19 @@ Here you can see all the keyboard shortcuts by default in TagSpaces, and what ac
 To learn more about the key bindings, refer to the [this section](/ui/keybindings) of the documentation.
 :::
 
+### Extensions
+
+This tab has two sections:
+
+- **Core** which list the extension together with their version packaged with the current application version.
+- **Installed Extension** here you will find a list of all manually installed extension. After activating the developer mode in the [Advanced](#advanced) tab, you will see here a [Install Extension] button, with which you choose a extension packaged as ZIP and install it.
+
+![Extensions tab](/media/tagspaces-settings-extensions.png)
+
+:::warning
+Please install extension only from trusted source. Malicious extension can be a significant security risk for your system!
+:::
+
 ## Advanced
 
 In this area we have collected settings which are relevant for some advanced use cases.
@@ -85,6 +100,7 @@ In this area we have collected settings which are relevant for some advanced use
 ![Advanced settings area](/media/tagspaces-settings-advanced.png)
 
 - **Enable mobile mode** - switches the app in mobile mode, which can be useful on small screens or app window sizes
+- **Enable developer mode** - this will enable some experimental features, like the ability to load extensions from third parties.
 - **Enable generating thumbnails and search index in a separate process** - since v4 the app generates thumbnails and search index in a separate process, here you can disable it and use the main app for that. This will have a negative impact on the performance
 - **Show warning on opening files externally** - showing a warning on opening files with external programs is a way to prevent you executing potentially malicious files (e.g. opening an .exe file on Windows will execute it)
 - **Enable location tags** - <ProFeature /> enabling this will give the options to store tag groups outside in the location itself (out of the tag library). Learn more [here](/ui/taglibrary/#location-tags).
