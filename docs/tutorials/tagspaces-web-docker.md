@@ -35,9 +35,11 @@ Once the container is build you can run it with this command:
 
     docker run -dp 127.0.0.1:5000:80 tagspaces-lite-web:5.4.2
 
-Where 5000 is the port on your local machine which is forwarded to port 80 of the docker container.
+Where `5000` is the port on your local machine which is forwarded to port `80` of the docker container.
 
 ### Add basic auth
+
+The easiest way to secure your TagSpaces installation is to add a basic auth in front of it.
 
     sudo docker cp ./default.conf tagspaces-lite-web:/etc/nginx/conf.d/
 
@@ -48,6 +50,10 @@ Where 5000 is the port on your local machine which is forwarded to port 80 of th
 ### Installing SSL certificate from Let's encrypt
 
 TBD
+
+SSL certificates are needed for your TagSpaces installation and for the object storage service (e.g. Minio, Zenko)
+
+A very good tutorial for Ubuntu and Apache is this one: [How to Set up Let's Encrypt on an Intranet Website](https://davidaugustat.com/web/set-up-lets-encrypt-on-intranet-website)
 
 ### Renew the SSL certificate
 

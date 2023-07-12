@@ -311,7 +311,7 @@ module.exports = {
         {
           type: "link",
           label: "Custom Thumbnail",
-          href: "/thumbnails/#custom-thumbnail",
+          href: "/thumbnails/#custom-thumbnails",
         },
         "dev/metafileformats",
         "dev/external-config",

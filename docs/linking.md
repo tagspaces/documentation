@@ -1,15 +1,13 @@
 ---
-title: Link files, folders and locations
+title: Link to files, folders and locations
 ---
 
-import { ProFeature, CenteredImage, CenteredVideo } from '@site/src/components/CommonBlocks';
+import { ProFeature, CenteredImage, CenteredVideo, FullScreenImage } from '@site/src/components/CommonBlocks';
 import VideoYT from '@site/src/components/VideoYT';
 
 <ProFeature />
 
-### General explanation
-
-One long awaited functionality is the ability to create links between files managed in TagSpaces, so you can navigate from one file to another. The description field of any file or folder can contain links to other files, folders or locations. If you are using markdown for your notes you can place the same kind of links in content of the markdown file.
+One long awaited functionality is the ability to create links between files managed in TagSpaces, so you can navigate from one file to another file, folder or location. The description field of any file or folder can contain links to other files, folders or locations. If you are using markdown for your notes you can place the same kind of links in content of the markdown file.
 
 <VideoYT
     youtubeId="3F2YUKd6rDc"
@@ -24,6 +22,34 @@ The context menu of every file and folder in the default perspective now have th
     caption="Context menu of a file containing the 'Copy Sharing Link' functionality"
     src="/media/copy-sharing-link.png"
   />
+
+### Location IDs
+
+:::info
+Info you share links between TagSpaces user, you have to make sure that the location in their TagSpaces' installation have the **same IDs**, otherwise the links will not work. This links will work also on folder synced with services like Dropbox or Syncthing.
+:::
+
+The location id can be changed in the locations properties, shown in the next screenshot. On S3 location you have also make sure that the location connects to the same sub folder of the connected bucket.
+
+<CenteredImage
+  caption="Changing the location ID"
+  src="/media/changing-location-id.png"
+  maxWidth="515px"
+/>
+
+### Links in the web versions ot TagSpaces
+
+The users of the web versions can directly copy the URL from their browser or using the copy button from the properties area.
+
+<CenteredImage
+    caption="Sharing link types in the entry properties"
+    src="/media/tagspaces-links.png"
+    showCaption
+  />
+
+:::info
+The advantage of the copying the URL from the browser is the URL can be directly used by the person receiving it to open the same installation in her browser.
+:::
 
 ### Opening TagSpaces links from the search
 
