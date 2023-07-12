@@ -39,10 +39,16 @@ Don't forget to put the trailing slash after the folder name.
 
 ## Cleaning obsolete thumbnails and sidecar files.
 
-Running this command will analyse the specified folder:
+Running this command will analyze the specified folder:
 
     tscmd -m metacleaner /some/folder
 
 Where `-m` is for mode, which here is metacleaner. The metacleaner will analyse first the specified folder and deliver a list with files which are not needed or connected anymore. You can review the list and confirm the deletion by setting the `-a`, which is for analyse with `false` as parameter. So this command will finally perform the cleaning.
 
     tscmd -m metacleaner -a false /some/folder
+
+## Third party tools
+
+Here you will find a list of projects which provides tooling compatible with TagSpaces. These projects are not affiliated with TagSpaces.
+
+- [TSS](https://github.com/nahoj/tss) - a command-line tool to manage files with tags, with completion provided for zsh.

@@ -262,7 +262,7 @@ module.exports = {
     },
     {
       type: "category",
-      label: "Share and Link Files",
+      label: "Sharing and Linking",
       items: ["sharing", "linking"],
     },
     {
