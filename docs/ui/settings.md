@@ -1,5 +1,5 @@
 ---
-title: Application Settings
+title: Settings Overview
 ---
 
 import { ProFeature } from '@site/src/components/CommonBlocks';
@@ -16,7 +16,7 @@ The settings dialog has four tabs, which will be described bellow.
 
 Most of the TagSpaces' common settings can be accessed from the General tab.
 
-![Setting - General Tab](/media/tagspaces-settings-general.png)
+![Settings - General Tab](/media/tagspaces-settings-general.png)
 
 - **Interface language** - TagSpaces has been translated to a variety languages. Choose your preference here
 - **Theme selector** - Here the user interface theme can be selected.
@@ -84,10 +84,10 @@ To learn more about the key bindings, refer to the [this section](/ui/keybinding
 
 This tab has two sections:
 
-- **Core** which list the extension together with their version packaged with the current application version.
-- **Installed Extension** here you will find a list of all manually installed extension. After activating the developer mode in the [Advanced](#advanced) tab, you will see here a [Install Extension] button, with which you choose a extension packaged as ZIP and install it.
+- **Core Extensions** which list the extension together with their version packaged with the current application version.
+- **Installed Extensions** here you will find a list of all manually installed extension. After activating the developer mode in the [Advanced](#advanced) tab, you will see here a [Install Extension] button, with which you choose a extension packaged as ZIP and install it.
 
-![Extensions tab](/media/tagspaces-settings-extensions.png)
+![Settings - Extensions tab](/media/tagspaces-settings-extensions.png)
 
 :::warning
 Please install extension only from trusted source. Malicious extension can be a significant security risk for your system!
@@ -97,7 +97,7 @@ Please install extension only from trusted source. Malicious extension can be a 
 
 In this area we have collected settings which are relevant for some advanced use cases.
 
-![Advanced settings area](/media/tagspaces-settings-advanced.png)
+![Settings - Advanced area](/media/tagspaces-settings-advanced.png)
 
 - **Enable mobile mode** - switches the app in mobile mode, which can be useful on small screens or app window sizes
 - **Enable developer mode** - this will enable some experimental features, like the ability to load extensions from third parties.
