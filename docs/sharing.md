@@ -86,7 +86,7 @@ It is possible to download such links also directly in a TagSpaces locations, wi
     showCaption
   />
 
-### Downloading links on your phone
+### Downloading to your phone
 
 If you point the camera of your phone or tablet to the QR-code, the link should be automatically recognized and then you can initiate its opening in your mobile browser. This is the easiest way to transfer files from your object storage locations to mobile devices.
 
@@ -94,4 +94,91 @@ If you point the camera of your phone or tablet to the QR-code, the link should 
 
 <ProFeature />
 
-If you want to share the files from a given folder, just of them or your current search results, you will need a functionality for sharing many files at once.
+If you want to share the files from a given folder, just few of them or your current search results, you will need a functionality for sharing many files at once. This functionality is now possible in the [Grid](/perspectives/grid), [List](/perspectives/list) and [Kanban](/perspectives/kanban) perspectives. To open the sharing dialog you have to click the sharing icon from the toolbar or choose the share menu item from the file context menu in these perspectives.
+
+<CenteredImage
+    caption="Open the file sharing dialog"
+    src="/media/open-sharing-dialog.png"
+    maxWidth="1056px"
+    showCaption
+  />
+
+The dialogs opens and generates sharing links which are valid for 3 days. You can adjust the validity of the links from the dropbox, where can choose among 15 minutes, 60 minutes, 1 day, 3 days and 7 days. After the validity time expires the links will not work anymore. TagSpaces do not offer links for permanent sharing.
+
+<CenteredImage
+    caption="The file sharing dialog"
+    src="/media/file-sharing-dialog.png"
+    maxWidth="735px"
+    showCaption
+  />
+
+In central area of the dialog surrounded by a dashed line you will see a preview of the generated code snipped. If the shared files have thumbnails, they will be displayed, otherwise the name of the file is displayed. In the top part of this area, the expiration date of the links is stated.
+
+At the bottom of dialog you will have the following options:
+
+- **Copy to clipboard** - this will copy the generated code with the links in the clipboard, so you can copy it an email or a chat program.
+- **Save as HTML** - this will initiate the saving of the generated code locally as a HTML file, so you can for example include it in as attachment in an email.
+- **Save & Share** - this will save the generated HTML file in the S3 bucket and open the file sharing dialog, where you can directly share the file.
+- **Close** - will close this dialog.
+- **Help** - will open this help page in online documentation of the application.
+
+:::info
+If the links are not expired, anybody in possession of the code with the sharing will be able to access and download the shared files. So please be careful how, where and with whom you share the code
+:::
+
+### Using the HTML snipped in email clients
+
+This is how the HTML snipped looks like once pasted in some common email clients.
+
+#### Thunderbird
+
+<CenteredImage
+    caption="Sharing snipped in Thunderbird"
+    src="/media/sharing-snipped-thunderbird.png"
+    maxWidth="970px"
+    showCaption
+  />
+
+:::info
+In Gmail you should uncheck the "Plain text mode" makred in the screenshot bellow in order the links to recognized
+:::
+
+#### Gmail
+
+<CenteredImage
+    caption="Sharing snipped in Gmail"
+    src="/media/sharing-snipped-gmail.png"
+    maxWidth="970px"
+    showCaption
+  />
+
+#### Outlook
+
+<CenteredImage
+    caption="Sharing snipped in Outlook"
+    src="/media/sharing-snipped-outlook.png"
+    maxWidth="970px"
+    showCaption
+  />
+
+### Using the HTML snipped in chat apps
+
+This is how the HTML snipped looks like once pasted in some common chat apps.
+
+#### Signal
+
+<CenteredImage
+    caption="Sharing snipped in Signal"
+    src="/media/sharing-snipped-signal.png"
+    maxWidth="970px"
+    showCaption
+  />
+
+#### Whatsapp
+
+<CenteredImage
+    caption="Sharing snipped in Whatsapp"
+    src="/media/sharing-snipped-whatsapp.png"
+    maxWidth="970px"
+    showCaption
+  />
