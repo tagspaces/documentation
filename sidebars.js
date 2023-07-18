@@ -299,7 +299,7 @@ module.exports = {
     },
     {
       type: "category",
-      label: "Advanced Functionalities",
+      label: "Advanced Topics",
       items: [
         "annotations",
         {
@@ -314,6 +314,7 @@ module.exports = {
           href: "/thumbnails/#custom-thumbnails",
         },
         "dev/metafileformats",
+        "dev/software-architecture",
         "dev/external-config",
       ],
     },

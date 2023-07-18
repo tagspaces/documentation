@@ -45,6 +45,8 @@ The easiest way to secure your TagSpaces installation is to add a basic auth in 
 
 ### Add TagSpaces custom configuration
 
+TagSpaces can be partially configured with an external [configuration file](/dev/external-config). It should be called `extconfig.js` and placed in the root folder of the application.
+
     sudo docker cp ./extconfig.js tagspaces-lite-web:/usr/share/nginx/html/
 
 ### Installing SSL certificate from Let's encrypt
