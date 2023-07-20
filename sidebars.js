@@ -6,7 +6,7 @@ module.exports = {
     },
     {
       type: "category",
-      label: "Download and Setup",
+      label: "Download and Install",
       items: [
         "installation",
         {
