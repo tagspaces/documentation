@@ -1,9 +1,9 @@
 ---
-title: Install on web server
+title: Install on Web Server
 tags: [tutorial]
 ---
 
-# Install TagSpaces Web on a web server
+# Install TagSpaces Web on a Web Server
 
 ## Introduction
 
@@ -13,7 +13,7 @@ This tutorials explains you how to setup the "App Hosting" area located in the u
 
 ![Deployment architecture of TagSpaces Web Pro](/media/tagspaces-pro-web-software-architecture.png)
 
-## Download and unpack
+## Download and Unpack
 
 The package can be downloaded from the link our [download page](https://www.tagspaces.org/downloads/). If you have purchased the PRO Web version, the download links are available in the email you have received from our payment provider after purchasing the product.
 
@@ -59,7 +59,7 @@ total 1476
 Due to the current implementation, please make sure that you place the app files in the root folder of the web server. Using sub folders is currently not supported.
 :::
 
-## Securing the TagSpaces Web installation
+## Securing the TagSpaces Web Installation
 
 It is highly recommended to use HTTPS for connection to your TagSpaces installation, especially if your installation is available on the Internet. In order have HTTPS connection you will need to setup a valid ssl certificate. You can use such for free from provider such as [Letsencrypt](https://letsencrypt.org/). Setting up a SSL certificate is not in the scope of this article.
 
@@ -67,7 +67,7 @@ It is highly recommended to use HTTPS for connection to your TagSpaces installat
 **Use static hosting**: In order to reduce the attack vectors it is recommended to configure your web server to deliver only static content by disabling the support of PHP, Perl, ASP.Net, Java and other similar server side scripting language and frameworks
 :::tip
 
-## Setup basic access authentication
+## Setup Basic Access Authentication
 
 On a Apache or nginx web servers you can setup very easily a **[basic access authentication](https://en.wikipedia.org/wiki/Basic_access_authentication)**, so not everybody knowing the URL of the installation can access the application. This is an optional step, which can be also exchanged with another way for securing the folder hosting the app.
 
@@ -136,7 +136,7 @@ $ touch extconfig.js
 
 After this command the installation folder should look like this:
 
-```bash {11}
+```bash
 ~/www $ ls -all
 total 1476
     4096 Sep 17 10:29 .
@@ -147,7 +147,7 @@ total 1476
    34520 Sep 17 10:29 EULA.txt
    51519 Sep 17 10:29 logo.svg
     1004 Sep 17 10:29 manifest.json
-     695 Sep 17 10:29 extconfig.js
+     695 Sep 17 10:29 extconfig.js <----
     4096 Sep 24  2019 node_modules
     3859 Sep 17 10:29 offline.html
      452 Sep 17 10:29 pwa.js

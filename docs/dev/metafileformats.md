@@ -6,6 +6,20 @@ import { ProFeature } from '@site/src/components/CommonBlocks';
 
 In comparison to many other tools, TagSpaces uses external text files for saving the meta information for folders and files, instead of a database. Here you will find the specification of the formats used by these files and also some other useful information concerning these files.
 
+## Role of the meta folder
+
+The folder containing the meta information for given folder is called `.ts`. The dot in front of the name makes this folder automatically hidden for Unix based file systems like Linux or MacOS. On Windows we set explicitly the a flag to make this folder hidden. Every folder managed in TagSpaces will have its own meta folder.
+
+The meta folder contains the following files:
+
+- **[tsm.json](#folder-meta-description-format)** - contains the meta information for the parent folder of the `.ts` folder
+- **tsi.json** - contains the search index for the parent folder it is a root of a location
+- **tst.jpg** - is the thumbnail file of the parent folder
+- **tsb.jpg** - is the background image file of the parent folder
+- **[tsl.jpg](#format-of-the-location-specific-tag-groups)** - contains location specific tag groups, if the parent folder is the root of a location
+- **file1.ext.jpg** - every file in the parent folder can have a thumbnail which is saved in this file (if the main fail is called `document.pdf` the thumbnail file will be named `document.pdf.jpg`)
+- **[file1.ext.json](#file-meta-description-format)** - every file in the parent folder can have its own meta information which is save in this files (the main file is called `file.ext`)
+
 ## File meta description format
 
 This file should be located in a folder called `.ts` located in the folder, where the tagged file is placed. The meta file should have exactly the same name as the tagged file, but in addition it should have the `.json` file extension. So at the end you should have similar structure as the following:

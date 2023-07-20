@@ -1,5 +1,5 @@
 ---
-title: Command line tools
+title: Command Line Tools
 ---
 
 This is a set of command line tools which can create search index and thumbnails for folders used in the TagSpaces Desktop and Web apps. The source code for the tools is available on [GitHub](https://github.com/tagspaces/tagspaces-common/tree/develop/packages/tagspaces-shell)

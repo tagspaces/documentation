@@ -43,7 +43,7 @@ Most of the TagSpaces' common settings can be accessed from the General tab.
 
 Here you can choose which viewer and editor to launch for each supported file type.
 
-![Adjusting the file associations](/media/settings-tab-file-types.png)
+![Adjusting the file associations](/media/settings-tab-file-types.svg)
 
 When you click on a file type's viewer dropdown, you will be offered a list of all installed viewer plugins (**1**).
 

@@ -6,13 +6,17 @@ A TagSpaces extension allowing viewing and editing of Markdown files.
 
 ## Features
 
-- [x] **WYSIWYG** Markdown editing
-- [x] embedding images, also as data URLs
-- [x] support for emojis 🍒
-- [x] support for tables
-- [x] simple text _formatting_ and headers
-- [x] copy and paste markdown text
-- [x] support math expressions like: ![math expression](/media/inline-math-expression.png)
+- **WYSIWYG** Markdown editing
+- embedding images, also as data URLs
+- support for emojis 🍒
+- support for tables
+- simple text _formatting_ and headers
+- copy and paste markdown text
+- support math expressions
+- reading aloud the text content of the document
+- visualizing the markdown header structure as mindmap
+
+![Screenshot of the markdown editor](/media/extensions/md-editor-menu.png)
 
 The following video will present some of the features:
 
@@ -25,6 +29,12 @@ The following video will present some of the features:
   />
 
 > **TIP**: Just type `/` on a new line to get a menu showing all available markdown elements such as headings, bullet lists, images, quotes or tables.
+
+### Mindmap
+
+The extension can generate a mindmap structure of the document based on its header structure.
+
+![Screenshot of the markdown editor](/media/extensions/md-editor-mindmap.png)
 
 ### Diagrams
 
