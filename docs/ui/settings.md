@@ -61,6 +61,12 @@ Clicking on the colored area (**3**) in the most right part of every files type 
 
 To add a formerly unrecognized extension, just use the **Add New File Type** button (**4**).
 
+### Color coded file extensions
+
+In the [grid](/perspectives/grid), [list](/perspectives/list) and [kanban](/perspectives/kanban) perspectives, color coded file extensions are supported. They allow a better visual recognition of the file type. For the most common file extensions, custom colors have been defined, to be displayed on the extension buttons found on the file rows or cards.
+
+![color codes file extensions in the list perspective](/media/color-coded-file-extensions-list.svg)
+
 ## Key bindings
 
 Under the key bindings tab, you can view and edit all the available key bindings, excluding those assigned to tags.

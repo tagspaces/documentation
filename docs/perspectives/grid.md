@@ -6,31 +6,25 @@ tags: [perspective]
 
 import { ProFeature, CenteredImage } from '@site/src/components/CommonBlocks';
 
-This perspective is optimized for general browsing through file and folder structures while supporting some common file management operations such as:
+This perspective is optimized for general browsing through file and folder structures while supporting some common file management operations such as: tagging, renaming, deleting, copying and moving of files and folders.
 
-- Tagging file and folders
-- Renaming file and folders
-- Deleting file and folders
-- Copying files
-- Moving files
+The most common way of presenting the content of a folder is a grid which is the default view in TagSpaces.
 
-The most common way of presenting files in a folder is in grid and list views. Both views are supported in the build-in _default perspective_. In the following screenshot you can see the grid view.
-
-![screenshot of the default perspective of the app](/media/default-perspective-grid-view.png)
+![screenshot of the default perspective of the app](/media/grid/grid-perspective-toolbar.svg)
 
 :::info
-The violet colored rectangle shows the area in TagSpaces which is typically occupied by the perspectives.
+The colored rectangle shows the area in TagSpaces which is typically occupied by the **[perspectives](/browsing-files)**.
 :::
 
 ## Main Toolbar
 
 The toolbar of the perspective is located in the top part of the perspective's, see the rectangle from the previous screenshot. The toolbar includes the following buttons and sub menus.
 
-- **(1) Toggles File Selection** - will mark every _file_ in the perspective as selected or unselected.
+- **(1) Open parent folder** - will navigate to the parent folder of the current folder, if it is part of the current location. This action can be achieved also by using the **BACKSPACE** key of the keyboard.
 
-- **(2) Open parent folder** - will navigate to the parent folder of the current folder, if it is part of the current location. This action can be achieved also by using the **BACKSPACE** key of the keyboard.
+- **(2) Toggles File Selection** - will mark every file and folder in the perspective as selected or unselected.
 
-- **(3) Switches the views** - toggles between the [grid](#grid-view) and [list](#list-view) views of this perspective.
+- **(3) Opens the folder properties** -
 
 - **(4) Add/Remove tags** will allow you to manage tags on selected files. (This options is only available when there is an active selection, and works on multiple files simultaneously.) To learn more about how tagging works, refer to the [Tagging -> Tagging using context menus](/tagging#tag-operations-on-many-entries) section.
 
@@ -41,22 +35,23 @@ The toolbar of the perspective is located in the top part of the perspective's, 
 - **(6) Delete files** - will open a dialog where you can confirm the deletion of the selected files.
 
 - **(7) Sort files** - open a menu with following options. There is an arrow in front of one these options, it indicates how the files and folders in the perspective are sorted.
+
   - **Title** - will sort the file alphabetically by name.
   - **Size** - will sort the files by their size.
   - **Date Modified** - will sort the files by the date of the last modification.
   - **First Tag** - will sort the files alphabetically by the title of their first tag.
   - **File Ext.** - will sort the files alphabetically by their file extension.
   - **Random** - will sort the files in a random way. This could be useful if TagSpaces is used as music player and you want to hear audio tracks in a random order.
+    :::tip
+    Clicking a second time on same sorting option will reverse the sort order. By sorting option **random** this will lead to a new randomization of the file order.
+    :::
 
-:::tip
-Clicking a second time on same sorting option will reverse the sort order. By sorting option **random** this will lead to a new randomization of the file order.
-:::
+    :::info
+    Sort order is preserved after navigation to a new folder.
+    :::
 
-:::info
-Sort order is preserved after navigation to a new folder.
-:::
-
-- **(8) More options** - will open a sub menu where you can choose among the following options:
+- **(8) Export as CSV**
+- **(9) Opens perspective settings** - will open a dialgo where you can choose among the following options:
   - **Show/Hide Subfolders** - Toggles the visibility of folders in the perspective
   - **Toggle thumbnail modes** - Toggles between the two modes(cover and contain) of displaying thumbnails, see [bellow](#grid-view) for more details.
   - **Compact mode** - A condensed display mode, where the area representing a file or folder takes a smaller place the default mode. Some of the information available in the following modes may be hidden here.
@@ -184,13 +179,3 @@ The exported file contains the following columns:
 - **description** - the entry description in markdown format
 
 You can see how such exported CSV file looks like in the screenshot of the next section.
-
-## Color coded file extensions
-
-In the grid and list perspectives, color coded file extensions are supported, allowing for a better visual recognition of the file type. For the most common file extensions, custom colors have been defined, to be displayed on the extension buttons found on the file rows or cards.
-
-![color codes file extensions in the list perspective](/media/color-coded-file-extensions-list.png)
-
-:::info
-The colors of the supported file types can configured in the [**File Types**](/ui/settings/#file-types) of application settings dialog.
-:::

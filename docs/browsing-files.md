@@ -19,7 +19,7 @@ Perspectives are not an integral part of TagSpaces, but exist as modular extensi
 
 - [Kanban Perspective](/perspectives/kanban) <ProFeature /> - show your files as tasks in a Kanban board, representing the sub folders as columns in the board
 
-- [FolderViz Perspective](/perspectives/folderviz) - this is an experimental perspective which applies some information visualization concepts to presenting your folder and file structures.
+- [FolderViz Perspective](/perspectives/folderviz) (deprecated) - this is an experimental perspective which applies some information visualization concepts to presenting your folder and file structures.
 
 ## Switching perspectives
 
