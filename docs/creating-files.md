@@ -4,29 +4,42 @@ title: Create Files
 
 import { ProFeature, CenteredImage, CenteredVideo } from '@site/src/components/CommonBlocks';
 
+# Create and Importing Files
+
 Besides opening and previewing various file types, TagSpaces can also create new files of some text-based formats. File creation is a functionality that allows TagSpaces to become an effective note-taking application.
+
+## Content creation dialog
 
 To create a new file in TagSpaces you have many options. The easiest one is from the button with plus icon, which almost always visible in the application.
 
-![create new file with the plus button](/media/create-new-plusbutton.png)
+![create new file with the plus button](/media/create-new-plusbutton.svg)
 
-On the desktop version of the app you can also use the _File menu_ from the _Main menu_. If the main menu is not visible you can open it by pressing the ALT keyboard key.
+On the desktop version of the app you can click `ÀLT` for showing the **Main Menu** and then choose **New File** from the **File menu**.
 
 ![create new file from main menu](/media/create-new-file-menu.png)
 
-The triggering of the file creation action will open a _Create new content_ dialog, where you can choose one of the following actions:
-
-<!-- where you can adjust the file name of the file, which will be create in area (1). In are (2) you can enter the text context of the file, you can copy and paste plain text, markdown or even HTML content here. This area could be left also empty allowing you enter content later. In a area (3) you should specify the type of the text content. Currently the following file formats are supported:
-
-In the last section (4), you can specify where the file should be create. The initial path here is taken automatically from the currently opened folder.
--->
+This will open the dialog for creation of new content, here you can choose one of the following actions:
 
 - **Create Note** - will create a HTML which can contain rich text content, with _.html_ file extension.
 - **Create MarkDown File** - will create a [markdown](https://en.wikipedia.org/wiki/Markdown), with _.md_ file extension.
 - **Create Text File** - will create a plain text file, with _.txt_ file extension.
-- **Add Files** - will give you the possibility to import a files in the app. See more in the [importing files](#importing-files) section.
+
+:::info
+Pressing `ENTER` in this dialog will create a markdown files, since this is the default action.
+:::
 
 ![screenshot showing the create new content dialog](/media/tagspaces-create-content-dialog.png)
+
+Expanding the **More Operations** section, will give you access to the following options:
+
+- **New Location** - opens the dialog where you can create new location.
+- **New Subfolder** - opens the dialog for creating new folders.
+- **Add Files** - will give you the possibility to import a files in the app. See more in the [importing files](#importing-files) section.
+- **URL input field and start downloading button** - if you paste a URL in the text field and click the **Start the download** button, the app will try to download the file and save in the current folder.
+
+:::info
+Downloading files from URLs mostly works for files shared from object stores, but often fails due to CORS restriction implemented on web sites. As a work around you can use the our **[browser extension](/web-clipper)**.
+:::
 
 The field on the top of the file creation dialog, shows the automatically generated file name. The text is preselected, so you can easy change it, to what ever you need. This is especially useful for the Kanban perspective where you create this way new cards. Bellow of this text field you will see the path where this file will be created. The path defaults in most of the cases to the current folder, but when there is no opened location, the dialog will create the file in the root folder of the first location in your location manager.
 
@@ -82,8 +95,8 @@ Depending on your Android devices and the installed apps, this dialog can look d
 
 On **iOS** you have the options to take a picture with the _Camera app_ or select one or more files from the _Files app_
 
-:::note
-<ProFeature /> If the current folder is located on an object storage like AWS S3, the import functionality will trigger the upload of the selected file to the S3 bucket.
+:::info
+If the current folder is located on an object storage like AWS S3, the import functionality will trigger the upload of the selected file to the S3 bucket.
 :::
 
 ### Import from the create content dialog

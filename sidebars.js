@@ -194,11 +194,12 @@ module.exports = {
           label: "Stored Search Queries",
           href: "/search/#stored-search-queries",
         },
+        "bookmarks",
       ],
     },
     {
       type: "category",
-      label: "Browse Files in Perspectives",
+      label: "Browse Files and Folders",
       items: [
         "browsing-files",
         "perspectives/grid",

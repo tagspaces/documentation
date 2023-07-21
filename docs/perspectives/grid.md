@@ -109,7 +109,7 @@ To select or deselect all the listed files, you can use the first button from th
 
 The file context menu can be accessed by right-clicking a file in either perspective. It will offer some common file management options.
 
-![the context menu of a file](/media/file-context-menu.png)
+![the context menu of a file](/media/grid/file-context-menu.png)
 
 - **Open File** - will split the main area of TagSpaces into two, and open the file in the right pane. TagSpaces offers viewers for various file types, which can be opened inside the application. To learn more bout supported types, refer to the [Viewing Files](/viewing-files) section.
 - **Open Parent Folder** - this feature is especially useful if the perspective shows search result from different folders, so using will open the parent folder of the currently selected file.
@@ -127,15 +127,18 @@ The file context menu can be accessed by right-clicking a file in either perspec
 
 The folder context menu can be accessed by right-clicking on a folder the perspective. It will offer some common folder management options.
 
-![The context menu of a folder](/media/folder-context-menu.png)
+![The context menu of a folder](/media/grid/folder-context-menu.png)
 
-- **Open Directory** - will navigate to the selected directory.
-- **Rename directory** - will open the directory rename dialog, where you can change the name of the folder.
-- **Delete directory** - will open a dialog, where you can confirm the deletion the directory
-- **Show in File Manager** - will open this directory in the default file manager of your operating system
-- **Use as thumbnail for parent folder** - will set the thumbnail of the folder as thumbnail for the parent folder
-- **Copy Sharing Link** - will copy a link for [internal sharing](/sharing) pointing to this folder in the clipboard
-- **Directory Properties** - will open the properties of this folder in the preview area (most right panel) of the application
+- **Open Folder** - will navigate to the selected directory.
+- **Open in new window** - will open the selected folder in new TagSpaces window or tab in the web version.
+- **Rename Folder** - will open the dialog, where you can rename the folder.
+- **Move / Copy Folder** - will open the dialog, where you can move or copy the folder.
+- **Delete Folder** - will open the dialog, where you can confirm the deletion of the folder.
+- **Show in File Manager** - will open this directory in the default file manager of your operating system.
+- **Use as thumbnail for parent folder** - will set the thumbnail of the folder as thumbnail for the parent folder-
+- **Copy Sharing Link** - will copy in the clipboard, a link which can be used for [internal sharing](/sharing) or [linking](/linking).
+- **Add / Remove Tags** - will open the dialog for adding or removing folder tags.
+- **Folder Properties** - will open the properties of this folder in the preview area (most right panel) of the application.
 
 ### Drag to move within TagSpaces
 
