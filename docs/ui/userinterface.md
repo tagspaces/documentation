@@ -1,6 +1,8 @@
 ---
-title: User Interface Areas
+title: Introduction
 ---
+
+# User Interface Areas
 
 import { ProFeature, CenteredImage } from '@site/src/components/CommonBlocks';
 

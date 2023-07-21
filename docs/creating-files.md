@@ -117,5 +117,5 @@ Files can be imported also by simple dragging one or more files from your deskto
   />
 
 :::note
-<ProFeature /> If the current folder is located on an object storage like AWS S3, the dropping of the file will trigger its upload to the S3 bucket.
+If the current folder is located on an object storage like AWS S3, the dropping of the file will trigger its upload to the S3 bucket.
 :::

@@ -3,6 +3,8 @@ slug: /
 title: TagSpaces User Docs
 ---
 
+# TagSpaces Documentation
+
 Welcome to the documentation of the TagSpaces products!
 
 ## What is TagSpaces ?
