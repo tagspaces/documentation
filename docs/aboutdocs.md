@@ -1,10 +1,12 @@
 ---
-title: About this documentation
+title: About the docs
 ---
 
 import { ProFeature } from '@site/src/components/CommonBlocks';
 
-This documentation has currently a **WIP status**. The articles are being updated on a regular base.
+# About this documentation
+
+This documentation is work in progress, the articles are being updated on a regular base.
 
 <!-- You can download version of the documentation as PDF files:
 
@@ -19,7 +21,15 @@ The navigation sidebar on the left side of this page will represent the **chapte
 
 ## Illustrations
 
-Much effort had gone into visually illustrating the documentation, so that you can instantly find what you are looking for, or what is being described in words. Most illustrations will feature some sort of annotation. For example if a **visible element** of the User Interface is discussed, a **neon-green rectangle around an element** will mark its location on the illustrating image.
+For preparing the screenshots for this documentation we use shapes from the following SVG file.
+
+![Shapes for preparing graphics](/media/inkscape-shapes.svg)
+
+We used another great open source product called [Inkscape](https://inkscape.org/) for the creation of the graphics.
+
+The color of the shapes has the following HEX encoding: `#ef2dae`
+
+<!-- Much effort had gone into visually illustrating the documentation, so that you can instantly find what you are looking for, or what is being described in words. Most illustrations will feature some sort of annotation. For example if a **visible element** of the User Interface is discussed, a **neon-green rectangle around an element** will mark its location on the illustrating image.
 
 ![](/media/introduction-main-screen.png)
 
@@ -30,7 +40,7 @@ When there are multiple elements discussed in the same paragraph, the illustrati
 - **20 px radius** for the rounded corners
 - **#1ccd9c color**
 - **3-6px line width**, depending on image size (larger images can use thicker lines)
-  Additionally, please use a **28pt font size** for numbering with a basic **sans font**.
+  Additionally, please use a **28pt font size** for numbering with a basic **sans font**. -->
 
 ## Text markup
 

@@ -20,4 +20,12 @@ The following information can be found on every row representing a file on this 
 - **Size** - This is the file size in a human readable format.
 - **Date modified** - The time the file had been last modified.
 
-The functionalities of this perspective are very similar to the grid perspective, so please find more information in the [documentation page](/perspectives/grid) of this perspective.
+:::info
+The functionalities of the list perspective are very similar to the **[grid perspective](/perspectives/grid)**, please follow the previous link for more details.
+:::
+
+<CenteredImage
+    caption="List perspective in compact mode"
+    src="/media/list/list-compact-mode.png"
+    showCaption
+  />

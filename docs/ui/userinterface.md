@@ -100,7 +100,7 @@ The file preview toolbar offer some actions, some of them are described bellow:
 - **(9) Delete** - Will open a dialog, where you can confirm the deletion of the file.
 - **(10) Previous/Next** - With the arrow button located above **(10)** you can open the previous or the next file from the current folder (or search results) in the preview area.
 
-## File properties area
+## File properties
 
 Clicking the button with the **( i )** icon will open and respectively close the file properties area. Here you will find details about the currently opened files such as:
 
@@ -125,7 +125,7 @@ Clicking the button with the **( i )** icon will open and respectively close the
 The description field of files and folders supports basic [**markdown syntax**](https://en.wikipedia.org/wiki/Markdown).
 :::
 
-## Folder properties area
+## Folder properties
 
 The folder properties is very similar to the file properties area. It can be opened and closed in the same way by the button with the <nobr>**( i )**</nobr> icon.
 
