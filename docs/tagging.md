@@ -12,28 +12,27 @@ Tags are personal things. Tagging something is your emotional response and not s
 
 Key functionality in TagSpaces is the ability to add tags to files and folders. In comparison to similar product, **TagSpaces does not use a central database for storing the tags** but rather offers to alternative ways for saving this meta information, which are described in the following sections.
 
-## File tagging based on filenames
+## File tagging
 
-TagSpaces supports tagging of files in a cross platform way. It uses basically the name of the file to save this kind of meta information. As an example if you want to add the tags `vacation` and `alps` to a image named `IMG-2653.jpg`, the application will simply rename it to `IMG-2653[vacation alps].jpg`. File renaming is of course very controversial solution, with its own limitations (on some operating systems the file path length is limited to ca. 256 characters). Once embedded in the name of file, the tag stick there and can be removed only by file renaming. **This makes the tagging "durable" and portable**. The tags embedded in the name of a file "survives" synchronization across cloud platforms such as Dropbox and Google Drive and can be read by TagSpaces or any other file searching software on Windows, macOS, Linux or Android.
+TagSpaces support two approaches for tagging files: renaming files and using sidecar files. Both ways are can be used on any file types and can be used on all supported operating systems.
+
+![File tagging method in the settings](/media/settings-specify-file-tagging-method.svg)
+
+### Storing the tags in the file names
+
+This approach uses the name of the file to save tagging information. As an example if you want to add the tags `vacation` and `alps` to a image named `IMG-2653.jpg`, the application will simply rename it to `IMG-2653[vacation alps].jpg`. File renaming is of course very controversial solution, with its own limitations (on some operating systems the file path length is limited to ca. 256 characters). Once embedded in the name of file, the tag stick there and can be removed only by file renaming. **This makes the tagging "durable" and portable**. The tags embedded in the name of a file "survives" synchronization across cloud platforms such as Dropbox and Google Drive and can be read by TagSpaces or any other file searching software on Windows, macOS, Linux or Android.
 
 ![Filename tagging](/media/filename-tagging.png)
 
 > **Note**: Drawback of this methods is the limiting in file name/path length in some operating systems. Windows for example is limiting the file path length to ca. 256 characters, which is in general enough but could be a limitation.
 
-## File tagging with sidecar file
+### Storing the tags in a sidecar file
 
 As alternative to saving the tags in the file names, TagSpaces offers saving this kind of data in a sidecar files located in a hidden `.ts` folder. The activation of this kind tagging for files, can be done in the settings of the application as shown in the following screenshot.
 
 :::info
 Please note that by default the `.ts` folder is hidden only on MacOS and Linux operating systems, on Windows folders with dot in front of their name are not hidden by default.
 :::
-
-<CenteredImage
-    caption="Activating the persisting of tags for files in sidecar files"
-    src="/media/tagspaces-sidecartagging-activation.png"
-    maxWidth="500px"
-    showCaption
-  />
 
 After the activation, the application will created for every tagged file an extra file having the same file name as the source file, but with a additional JSON extension. For example after tagging some files in some of your file locations you will have a similar file structure.
 
@@ -56,7 +55,7 @@ The main advantage of this solution is that the name of the files is not changed
 If you want to have the files located in the `.ts` folder synched with some cloud service such as Dropbox or Google Drive you have to enable the synching of hidden folders and files.
 :::
 
-## Folder tagging with sidecar file
+## Folder tagging
 
 Tags added to folders in TagSpaces are save always in the co called sidecar file. The file is located in the **.ts** sub folder of any tagged folders and is called **tsm.js**
 

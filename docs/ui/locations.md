@@ -1,11 +1,15 @@
 ---
-title: Location's Overview
+title: Locations Overview
 ---
 
 import VideoYT from '@site/src/components/VideoYT';
 import { ProFeature, CenteredImage, CenteredVideo } from '@site/src/components/CommonBlocks';
 
+# Locations
+
 A **location** is a folder on your local file system, which will serve as a root for listing sub folders, files and documents. Typical locations are for example the folder where you collect your photos or folders where you store documents, ebooks or music.
+
+## Location Manager
 
 The **location manager** is can be opened by clicking the case button (1) from the vertical navigation, or by pressing the _CTRL+1_ key combination. Once opened, you will see a list of the currently configured locations. Here you can open any location by clicking its name. You can add new locations, by clicking on the **Connect new location** button (2). This button will open the _Connect a Location_ dialog, which is very similar to the [_Edit Location_](#local-locations) dialog. The torch icon (3) indicates **Startup Location**, which is the location loaded automatically on the application start.
 
@@ -17,13 +21,15 @@ The location with the cloud icon (6) in front of its name is located in the AWS 
 
 The location with the light green background color (4) is the **currently opened location**. The 3-dot button located on the most right part of every location in the location manager will open the **context menu** for this location. This menu contains the following menu entries:
 
-- _Edit Location_ - will open the [_Edit Location_](#local-locations) dialog where you can change the location properties such as name or path.
-- _Refresh Location Index_ - will trigger the indexing process manually, this menu entry is visible only for the currently opened location
-- _Move up_ - will move the location visually up in the location manager
-- _Move down_ - will move the location visually down in the location manager
-- _Remove location_ - will remove the location permanently from the app. This operation will not affect your files, it only removes its reference in TagSpaces.
-- _Show in File Manager_ - will open the path in your file system to which this location point in the default file manager of your operating system
-- _Close Location_ - will simply close this location if it is currently opened.
+- **Edit Location** - will open the [_Edit Location_](#local-locations) dialog where you can change the location properties such as name or path.
+- **Open in New Window** - will open the location in new window or tab in the web version.
+- **Show in File Manager** - will open the path in your file system to which this location point in the default file manager of your operating system (options is hidden on S3 locations)
+- **Duplication location** - will create a copy of the location, which can be useful for S3 location, sharing the same credentials to object storage.
+- **Refresh Location Index** - will trigger the indexing process manually, this option is visible only for the currently opened location
+- **Move Up** - will move the location visually up in the location manager
+- **Move Down** - will move the location visually down in the location manager
+- **Remove Location** - will remove the location permanently from the app. This operation will not affect your files, it only removes its reference in TagSpaces.
+- **Close Location** - will close this location if it is currently opened, the welcome screen will appear on its place.
 
 :::tip
 Do not choose very large directories such as your _home folder_ as a location root folder, as this may lead to performance issues. The reason for this is that TagSpaces is indexing the whole location every time you open it and the indexing can just take time if the location contains many files. On modern computers with SSD hard drives having a location with up to 60000 files is usually not a problem. The current upper limit for files indexed in a locations is 200000.
@@ -42,57 +48,62 @@ You can open the sub-folders of a given location by clicking on the suitcase or 
     showCaption
   />
 
-**Location types**
+## Location Types
 
 In TagSpaces there are two type of locations, local and cloud based (e.g. on AWS S3 Object Storage). The type of the location can be selected during its creation.
 
 <!-- You can also select here the default [**perspective**](browsing-files#perspectives), used with this location. For example if the  location contains mainly images and photos, you may want to open it with the  [**gallery-perspective**]() , offering a preview of the images and easy navigation through them. -->
 
-## Local Locations
+### Local Locations
 
 Regular locations are pointing to a folder located on your local computer. This could be also a folder where you sync locally your Dropbox files or a folder from a connected network drive.
 
-![Properties of a location pointing to a local folder](/media/local-location-properties.png)
+![Properties of a location pointing to a local folder](/media/create-local-location.png)
 
 The regular locations have the following properties:
 
-- _Location name_ - this is the name of location as displayed in the location manager
-- _Location path_ - the path from your computer, to which this location points
-- _Startup location_ - turning this switch on will make the location load automatically on application start. You can set only one location to be a startup one.
-- _Enable full text search for TXT, MD and HTML files_ <ProFeature /> - activates the indexing of the content of text, markdown and HTML files.
-- _Watch for external changes in this location_ <ProFeature /> - once switched on TagSpaces will watch the folder to which the location points and all its sub folders for changes and reflect them in the application.
+- **Location name** - this is the name of location as displayed in the location manager
+- **Location path** - the path from your computer, to which this location points
+- **Startup location** - turning this switch on will make the location load automatically on application start. You can set only one location to be a startup one.
+- **Enable full text search for TXT, MD and HTML files** <ProFeature /> - activates the indexing of the content of text, markdown and HTML files.
+- **Watch for external changes in this location** <ProFeature /> - once switched on TagSpaces will watch the folder to which the location points and all its sub folders for changes and reflect them in the application.
 
 :::caution
 Connecting folders located on network drives (e.g. NAS systems) as locations is not recommended. Depending on the speed of your network and the amount of files, the search in such locations can perform poorly!
 :::
 
-Clicking on the `Advanced Mode` button will extend the dialog and it will look like this.
+Clicking on the `More properties` will extend the dialog and it will look like this.
 
-![Advanced properties of a location pointing to a local folder](/media/local-location-properties-advanced.png)
+![More properties for local locations](/media/create-local-locations-extendet.png)
 
 The extended dialog will have in addition the following properties:
 
-- _Switch to manual index creation with persisted search index_ <ProFeature /> - disables the automatic indexing of a location on its opening. The application will try to open a previously created index located in a file _tsi.json_ from the _.ts_ folder of the location. This is useful on locations with many files, where the content does not change very often.
-- _Open this location in read-only mode_ <ProFeature /> - switches the interface of TagSpaces to read-only mode
-- _Index validity duration in minutes_ - validity of the location's [index](/search/#indexing)
+- **Location ID** - here you change the location ID or generate new one, you can find more details in the section for [custom location ids](#custom-location-ids).
+- **Open this location in read-only mode** <ProFeature /> - switches the interface of TagSpaces to read-only mode
+- **Disable Indexing** <ProFeature /> - disables the automatic indexing of a location on its opening. The application will try to open a previously created index located in a file _tsi.json_ from the _.ts_ folder of the location. This is useful on locations with many files, where the content does not change very often.
+- **Index validity duration in minutes** - validity of the location's [index](/search/#indexing)
+- **File tagging method** - you can specify the [file tagging method](/tagging#file-tagging) per location, this setting will overwrite the tagging method from the application [settings](/ui/settings#general).
+- **Ignore pattern** - can be used to [filter out](#ignore-patterns) some file types or folders from the application.
 
-## Object Storage Locations
+### Object Storage Locations
 
 With this feature TagSpaces Pro can support object storage offered by different Cloud providers as locations. So you can connect the so called buckets from [AWS S3](https://aws.amazon.com/s3/), [Wasabi](https://www.wasabi.com/) or [Minio](https://min.io/) infrastructure. By doing so you get a fully functional file organizer, browser and navigator for this bucket, directly in TagSpaces. You do not have to download or sync the files from there in order to preview, edit or annotate them.
 
-![Edit properties of a cloud location](/media/edit-cloud-location-dialog.png)
+![Edit properties of a cloud location](/media/create-object-storage-location.png)
 
 In addition to the regular locations, the cloud locations have the following properties:
 
-- _Location Path_ - the path in the bucket to which this location points
-- _Access Key_ - the access key of a user, who has the rights to open this bucket
-- _Secret Access Key_ - the secret access key of the user
-- _Bucket Name_ - the name of the bucket to which this location points
-- _Endpoint URL_ - the url of the S3 service
+- **Location Name** - the name of the location, which will be visible in the location manager
+- **Location Path** - the path in the bucket to which this location points
+- **Access Key** - the access key of a user, who has the rights to open this bucket
+- **Secret Access Key** - the secret access key of the user
+- **Session Token** - used for debugging
+- **Bucket Name** - the name of the bucket to which this location points
+- **Endpoint URL** - the url of the S3 service
 
 Clicking the advanced more button will reveal some more properties:
 
-- _Region_ - the AWS region, where the bucket is hosted. The dropdown is located on the right from the bucket name.
+- **Region** - the AWS region, where the bucket is hosted. The dropdown is located on the right from the bucket name.
 
 :::caution
 "Watch for external changes in this location" is disabled because it is not available for cloud locations.
@@ -110,7 +121,9 @@ You can recognize object storage location by the cloud icon in front of their na
 
 In order to connect such location you will need to know the **bucket name**, the **access key**, the **secret access key** and the **data center location** for the particular bucket. If you have a location with a deep folder structure you can also specify the internal path to the files you want to manage in this location.
 
-> **Tutorial:** For detailed instructions on how to connect an AWS S3 location to TagSpaces, read this [tutorial](/tutorials/s3-bucket-locations) from the documentation.
+:::tip
+For detailed instructions on how to connect an AWS S3 location to TagSpaces, read this [tutorial](/tutorials/s3-bucket-locations).
+:::
 
 <CenteredImage
     caption="Screenshot of a bucket in AWS S3"
@@ -138,9 +151,15 @@ If your bucket contains many files and the initial opening with indexing takes a
     showCaption
   />
 
+### WebDav Locations
+
+Work in progress
+
 ## Advanced Features
 
-## Monitor for changes
+### Monitor for changes
+
+<ProFeature />
 
 This features is useful, when you have locations placed on a network drive or pointing to a folder synced with for example Dropbox, where changes to these folders happens in background while TagSpaces is running. This can happen if you work collaboratively with someone on a network or your Dropbox syncs files from other devices. In such cases TagSpaces monitors the folder pointed by the location with all its sub-folders for changes, such as **file creations**, **deletions** or **renames** and reflects these changes in the user interface of the app.
 
@@ -157,7 +176,7 @@ This option can be activated manually for every location individually in the loc
 This feature is not available on locations pointing to an object storage (e.g. AWS S3, Wasabi, Minio).
 :::
 
-## Manual indexing
+### Manual indexing
 
 For locations containing many files, it may make sense to disable the automatic indexing taking place on the opening of this location. You can activate this options for every location individually on its creation or on its properties screen as seen in the previous screenshot. The properties dialog is accessible from the context menu of any location. Enabling this options will speed up the loading of the location, especially on network based locations (W/LAN or S3 object stores). Instead of the indexing, the application will try to load a previously generated index file `tsi.json` located in the root folder of the location.
 If you do not have such persisted index file, you can create one manually with the command "Refresh Location Index" from the location context menu, as seen on the following screenshot.
@@ -169,7 +188,7 @@ If you do not have such persisted index file, you can create one manually with t
     showCaption
   />
 
-## Tag extraction from location
+### Tag extraction from location
 
 In the content menu of every tag group, there is an entry called "Collect Tags From Current Location", which does exactly this. It analyses the index of the current location and identifies tags with unique names, which are then added to the tag group from which the operation was started.
 
@@ -184,7 +203,7 @@ In the content menu of every tag group, there is an entry called "Collect Tags F
 Please update the index of the current location before using this feature. This can be done by performing a simple search.
 :::
 
-## Ignore patterns for locations
+### Ignore patterns
 
 <ProFeature />
 
@@ -205,7 +224,7 @@ Once a given pattern is added and the location is reloaded, all the matching fol
     showCaption
   />
 
-## Set file tagging method per location
+### Set file tagging method per location
 
 <ProFeature />
 
@@ -218,7 +237,7 @@ Choosing the tagging method for all locations at once is limiting and kind of in
     showCaption
   />
 
-## Export and import location configuration
+### Export and import location configuration
 
 <ProFeature />
 
@@ -235,6 +254,10 @@ height={550}
 
 The format of the location's export is described in this [section](/dev/external-config#configuring-custom-locations).
 
-## Custom location IDs
+### Custom location IDs
 
 In the advanced settings of the locations you have the possibility to change the internal ID of any given location. This is useful if you are working with someone on a common synced folder (e.g. Dropbox, Syncthing). If the locations have the same internal ID on all TagSpaces instances, you will be able to use the [internal sharing](/sharing#internal-sharing-for-files-and-folders) of files and folders with your peers.
+
+:::info
+If you create a new location to a folder (e.g. synced with Dropbox or from network share drive), which was already used as a location in TagSpaces, the application will try to find the [location ID](/dev/metafileformats#folder-meta-description-format) and it will use it in this installation .
+:::
