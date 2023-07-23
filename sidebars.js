@@ -68,12 +68,12 @@ module.exports = {
         {
           type: "link",
           label: "File properties",
-          href: "/ui/userinterface/#file-properties-area",
+          href: "/ui/userinterface/#file-properties",
         },
         {
           type: "link",
           label: "Folder properties",
-          href: "/ui/userinterface/#folder-properties-area",
+          href: "/ui/userinterface/#folder-properties",
         },
         {
           type: "link",
@@ -194,7 +194,6 @@ module.exports = {
           label: "Stored Search Queries",
           href: "/search/#stored-search-queries",
         },
-        "bookmarks",
       ],
     },
     {
@@ -215,16 +214,7 @@ module.exports = {
       label: "Preview Files",
       items: [
         "viewing-files",
-        // {
-        //   type: "link",
-        //   label: "Supported File Formats",
-        //   href: "/viewing-files/#supported-file-formats",
-        // },
-        // {
-        //   type: "link",
-        //   label: "Print files",
-        //   href: "/viewing-files/#printing-files",
-        // },
+        "supported-file-formats",
         "extensions/3d-viewer",
         "extensions/media-player",
         "extensions/ebook-viewer",
@@ -265,6 +255,29 @@ module.exports = {
       type: "category",
       label: "Sharing and Linking",
       items: ["sharing", "linking"],
+    },
+    {
+      type: "category",
+      label: "Quick Access",
+      items: [
+        "quick-access",
+        {
+          type: "link",
+          label: "Recent Files",
+          href: "/quick-access/#recent-files",
+        },
+        {
+          type: "link",
+          label: "Recent Folders",
+          href: "/quick-access/#recent-folders",
+        },
+        "bookmarks",
+        {
+          type: "link",
+          label: "Stored Search Queries",
+          href: "/search/#stored-search-queries",
+        },
+      ],
     },
     {
       type: "category",

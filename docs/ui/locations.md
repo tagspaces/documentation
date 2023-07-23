@@ -163,13 +163,6 @@ Work in progress
 
 This features is useful, when you have locations placed on a network drive or pointing to a folder synced with for example Dropbox, where changes to these folders happens in background while TagSpaces is running. This can happen if you work collaboratively with someone on a network or your Dropbox syncs files from other devices. In such cases TagSpaces monitors the folder pointed by the location with all its sub-folders for changes, such as **file creations**, **deletions** or **renames** and reflects these changes in the user interface of the app.
 
-<CenteredImage
-    caption="Location with activated watcher and enabled manual indexing"
-    src="https://www.tagspaces.org/content/v3-x/tagspaces-advanced-location-options.png"
-    maxWidth="600px"
-    showCaption
-  />
-
 This option can be activated manually for every location individually in the location properties dialog, as displayed in the screenshot.
 
 :::caution

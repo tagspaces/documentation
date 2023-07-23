@@ -41,7 +41,4 @@ Once you choose a perspective here, every time you open this folder, it will be 
 
 <ProFeature />
 
-TBD
-
-- Per directory sorting
-- Per directory file limit
+Some perspectives support custom settings on per folder level. You can for example set custom _sorting_, _thumbnail mode_ or _limit of the pagination_. You can learn more in the [perspective settings](/perspectives/grid#perspective-settings) section.

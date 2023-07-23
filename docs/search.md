@@ -7,19 +7,25 @@ import { ProFeature, CenteredImage, CenteredVideo } from '@site/src/components/C
 
 In order to offer desktop search functionalities, TagSpaces provides a variety of search related features, which are described in this section.
 
-The user can start a search by switch to the search area by pressing the `Ctrl+Shift+f` / `Cmd+Shift+f` key combination. This is global key binding so it will work even if the application is not currently visible or if focus. The search area can be also opening with magnifying glass icon visible above **(1)** in the following screenshot.
-
-![Open search](/media/open-search.png)
-
 With the search functionality you are able to find files and folders by their name, tags and other properties. The search algorithm considers with different weight the following properties of the [indexed](#indexing) entries.
 
 - The name of the file or the folder
 - The tags assigned to the file or the folder
 - The description added to the file or the folder
 - The name of the parent directory of a given file is also considered by the search algorithm. So for example if you are searching for photos from you vacation in USA and the folder where these files are located contains the word USA (e.g. '20160301 vacation usa'), then the search will list all the files located directly in this folder.
-- The content of TXT, MD and HTML, if the [full text search](#full-text-search) is activated for the current location - <ProFeature />
+- <ProFeature /> The content of TXT, MD and HTML, if the [full text search](#full-text-search) is activated for the current location
 
-The **search options**, visible in the next screenshot, can be accessed after clicking on the button with the sliders **(2)** from the previous screenshot.
+## Open the search
+
+The user can start a search by switch to the search area by pressing the `Ctrl+Shift+f` / `Cmd+Shift+f` key combination. This is global key binding so it will work even if the application is not currently visible or if focus. The search area can be also by click in the search text field.
+
+![Open search](/media/open-search.png)
+
+Once activated you can start entering the tags or other search [terms](#search-query). If you choose to enter tags with the `+` symbol, you will see suggestions **(1)** and you can choose from them with the arrow `UP` and `DOWN` keys. The search can be started by hitting the `ÈNTER` key or by a click on the search button **(4)**. You can close the search mode with the `ÈSC` key or via click on the X-button **(3)**.
+
+![Entering search query](/media/search-ui.svg)
+
+The **advanced search options**, visible in the next screenshot, can be accessed after clicking on the button with the sliders **(2)** from the previous screenshot.
 
 ![Search options](/media/search-options.png)
 
