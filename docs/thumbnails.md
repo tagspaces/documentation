@@ -32,13 +32,3 @@ The generated thumbnails are persisted in the `.ts` folder located in every fold
     src="/media/tagspaces-thumbnail-generation.png"
     showCaption
   />
-
-## Custom thumbnails
-
-<ProFeature />
-
-In TagSpaces Pro the user can manually set and change the thumbnail of **any file type and folder**. The following video show how to set a custom image as a thumbnail of a folder.
-
-<iframe width="100%" height="500" src="https://www.youtube-nocookie.com/embed/ZgnRRO1zdGc?rel=0" frameBorder="0" allow="autoplay; encrypted-media; picture-in-picture" allowFullScreen></iframe>
-
-Adding a custom thumbnail to any file type, can be achieved in a similar manner from the properties section of the file.

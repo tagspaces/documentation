@@ -29,13 +29,10 @@ The perspective for the current folder can be switched in two ways. The first an
 
 In some case such as the use of the application on mobile devices the perspective switch is not available. In this case, the folder menu available in the upper right part of the screen, should be opened. In this menu you can choose from the available perspectives, compare the previous screenshot.
 
-## Default perspective for a folder
-
-Every folder can have its own default perspective, which can be selected in the folder properties area.
-
-![Selecting default folder perspective](/media/folder-properties-select-perspective.png)
-
+:::tip
+Every folder can have its own **[default perspective](/folders#folder-default-perspective)**, which can be selected in the folder properties area.
 Once you choose a perspective here, every time you open this folder, it will be opened with selected perspective.
+:::
 
 ## Custom perspective settings per folder
 
