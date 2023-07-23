@@ -2,7 +2,6 @@
 title: Preview and Print Files
 ---
 
-import Link from "@docusaurus/Link";
 import { ProFeature } from "@site/src/components/CommonBlocks";
 
 The application supports previewing of many file types without the need of external viewer. It comes with the following viewer extensions:
