@@ -2,7 +2,7 @@
 title: Introduction
 ---
 
-# User Interface Areas
+# Get started - user interface areas
 
 import { ProFeature, CenteredImage } from '@site/src/components/CommonBlocks';
 
@@ -42,34 +42,32 @@ The with the four so called radio buttons in the middle, you can switch between 
 
 ## Navigation and Search
 
-The file browsing area normally takes up he majority of the user interface. This is where all files from the currently active folder are displayed, either as a list, grid, or folder tree, depending on the active [**perspective**](/browsing-files#Perspectives). To learn more about the all file browsing features, navigate to the [perspective section](/browsing-files).
+The file browsing area normally takes up he majority of the user interface. This is where all files from the currently active folder are displayed, either as a list, grid, or kanban board, depending on the active perspective. To learn more about the all file browsing features, navigate to the [perspective section](/browsing-files).
 
 ![Screenshot showing the file browsing area](/media/browsing-area.svg)
 
-The button **(1)** placed in the top left part of the browsing area toggles the [left drawer area](#left-drawer-area).
-
-**(2)** will open the [search](/search) input field.
-
-**(3)** opens a dropdown showing a list of all currently configured [locations](/ui/locations). From this dropdown you can quickly switch to another location.
+- **(1)** - Toggles the [left drawer](#left-drawer).
+- **(2)** - Navigates back to the last opened file, folder or location, this feature is still in **beta** status.
+- **(3)** - Reverts the navigation step of the back button.
+- **(4)** - Opens the [search](/search) mode.
+- **(5)** - Shows the all the parent folders as button up the location root folder. A click on a folder button, will navigate to it.
+- **(6)** - Shows the name of the current folder, clicking on it will open the [folder menu](#folder-menu).
+- **(7)** - Here you can switch [perspective](/browsing-files) of the current folder
 
 :::tip
-If you are in a cloud based location, the icon of the button for changing the location will be a <b>cloud</b>, in other cases the icon will be the <b>briefcase</b>.
+If you are in a cloud based location, the icon of the button of the folder in **(5)** will be a **cloud**, in other cases the icon will be a **briefcase**.
 :::
-
-The area above number **(4)** shows the name of the current folder and the names of the parent folders in reversed order. The folder names are separated by slashes (/). The parent folders are shown only if the these folders are in the current location. Clicking on the name parent folders will navigate to them.
-
-Clicking the button for current folder **(5)** will open folder menu, which is described in the next section.
 
 ### Folder menu
 
 The menu for the current folder contains the following items:
 
 - **Reload Folder** - Reloads the content of the current folder
-- **Rename Folder** - Opens the folder rename dialog
-- **Delete Folder** - Open a dialog where you can confirm the deletion of the folder
+- **Rename Folder** - Opens a dialog where you can rename the current folder
+- **Delete Folder** - Opens a dialog where you can confirm the deletion of the folder
 - **Show in File Manager** - Opens the folder in the default file manager of the operating system
-- **New File** - Open the dialog for [creating new](/editing-files#creating-files) files or note
-- **New Subfolder** - Opens the folder create dialog, where you can enter the name of the new sub folder
+- **New File** - Opens the dialog for [creating new](/editing-files#creating-files) files or notes
+- **New Subfolder** - Opens the folder create dialog, where you can create a new subfolder
 - **Add Files** - Opens a file chooser where you can select a file from your local files system, which will be added to your current folder in TagSpaces.
 - **Import macOS tags** - This option is visible only on the native macOS app, selecting it will to extract native macOS tags and them as TagSpaces tags.
 - **Grid Perspective** - will present the current folder in the [Grid](/perspectives/grid) perspective
@@ -90,8 +88,8 @@ The following screenshot show a markdown file with the title _diagrams_ **(1)**.
 A short explanation of the areas visible in the previous screenshot will follow:
 
 - **(1) Title area** - here you will find the title and the extension of the currently opened file or folder. You can also [bookmark](/bookmarks) it and see if it has been tagged.
-- **(2) Edit & Close** - here you can close the currently opened file or folder. By some text file types you can start the edit mode and toggle the **auto-save** functionality.
-- **(3) Toolbar** - containing common buttons for common action for the currently opened file or folder
+- **(2) Edit & Close** - here you can close the currently opened file or folder. TagSpaces [supports editing](/editing-files) of some text file types and here you can start the edit mode and toggle the **auto-save** functionality.
+- **(3) Toolbar** - containing buttons for common action for the currently opened [file](/files#file-toolbar) or [folder](/folders#folder-toolbar)
 - **(4) Navigation** - these buttons are shown only on files and will navigate to the next or the previous file in the current folder or search results
 - **(5) Preview & edit** - this is the area where you can see the preview of currently opened. Here you can even [edit](/editing-files) some text files.
 
@@ -103,10 +101,12 @@ The themes can be changed from the [tab general](/ui/settings#general) of the se
 
 ## Multiple Windows and Tabs
 
-TBD
+You can use TagSpaces in more than one window or tab in the web versions. You can a location, a folder and a file in a new window/tab or you can simple open a further new instance of the application. The following screenshot shows some of the places where you can open a new window.
+
+![Ways to open new window or tab](/media/open-new-window.svg)
 
 :::caution
-All the instances share the same local storage.
+All the instances share the same local storage. So if you are making changes to the application's settings, the last window which saves settings, locations, tags to the local storage will win.
 :::
 
 ## Scalable User Interface
