@@ -33,7 +33,7 @@ The folder properties is very similar to the file properties area.
 - **(5) Date modified** - Show the date and the time when this folder was last modified.
 - **(6) Size** - Calculated size of the current folder with the current subfolder. This feature is not available on object storage locations.
 - **(7) Path** - Shows the complete path of the folder. If the folder is located on an object storage location, a cloud icon instead of the a suitcase will be shown in front of the path. The **MOVE** button will open a dialog where you can move or copy this folder.
-- **(8) Sharing link** - will show the link for [internal sharing](/sharing#internal-sharing-for-files-and-folders). The **COPY** button will copy the link to the clipboard so you share it with other users or TagSpaces installations.
+- **(8) Sharing link** - will show the link for [internal sharing](/sharing#internal-sharing-for-files-and-folders). The **COPY** button will copy the link to the clipboard so you share the folder with other users or TagSpaces installations.
 - **(9) [Default folder perspective](#default-folder-perspective)** <ProFeature /> - Click on this field will open a dropdown where you can specify the default perspective for this folder.
 - **(10) [Folder Background](#folder-background)** <ProFeature /> - Shows the color which is assigned to this folder. Clicking in the color area will open a dialog for changing the color of the folder.
 - **(11) [Thumbnail](#folder-thumbnail)** <ProFeature /> - This area shows the current thumbnail of the folder. Clicking on the **CHANGE** button will open a dialog, where can choose a new thumbnail for it.

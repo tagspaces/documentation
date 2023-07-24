@@ -89,9 +89,9 @@ A short explanation of the areas visible in the previous screenshot will follow:
 
 - **(1) Title area** - here you will find the title and the extension of the currently opened file or folder. You can also [bookmark](/bookmarks) it and see if it has been tagged.
 - **(2) Edit & Close** - here you can close the currently opened file or folder. TagSpaces [supports editing](/editing-files) of some text file types and here you can start the edit mode and toggle the **auto-save** functionality.
-- **(3) Toolbar** - containing buttons for common action for the currently opened [file](/files#file-toolbar) or [folder](/folders#folder-toolbar)
+- **(3) [File](/files#file-toolbar) / [Folder](/folders#folder-toolbar) Toolbar** - containing buttons for common action for the currently opened file or folder
 - **(4) Navigation** - these buttons are shown only on files and will navigate to the next or the previous file in the current folder or search results
-- **(5) Preview & edit** - this is the area where you can see the preview of currently opened. Here you can even [edit](/editing-files) some text files.
+- **(5) Preview & edit area** - this is the place where you can see the preview of currently opened file. Here you can also [edit](/editing-files) some of the supported text file types.
 
 ## Dark Mode and Themes
 
