@@ -60,7 +60,7 @@ There are currently two types of symbols, apart from the usual text formatting a
 
 ## Contribution
 
-This documentation project is hosted on [GitHub](https://github.com/tagspaces/documentation), and uses the [Docusaurus MD format](https://docusaurus.io/). Enhancement, or corrections are welcome via pull requests. For the markdown syntax used for the document please refer to the [Style Guide](writehelp)
+This documentation project is hosted on [GitHub](https://github.com/tagspaces/documentation), and uses the [Docusaurus MD format](https://docusaurus.io/). Enhancement, or corrections are welcome via pull requests. For the markdown syntax used for the document please refer to the [Style Guide](/markdown)
 
 ## Credits
 
