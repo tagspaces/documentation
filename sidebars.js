@@ -203,8 +203,8 @@ module.exports = {
         },
         {
           type: "link",
-          label: "Folder Background Color",
-          href: "/folders#folder-background-color",
+          label: "Folder Background",
+          href: "/folders#folder-background",
         },
         {
           type: "link",

@@ -13,8 +13,8 @@ The quick access section can be accessed from the left drawer and looks like thi
 
 This section contains the following areas:
 
-- **Stored Search Queries** - contains prepared search queries for a later use, more on this in the [search section](/search/#stored-search-queries)
-- **Bookmarks** - contains list of bookmarked files and folders, more on this in the [bookmark section](/bookmarks)
+- **[Stored Search Queries](/search#stored-search-queries)** - contains prepared search queries for a later use, more on this in the [search section](/search/#stored-search-queries)
+- **[Bookmarks](/bookmakrs)** - contains list of bookmarked files and folders, more on this in the [bookmark section](/bookmarks)
 - **Recently opened files** -
 - **Recently edited files** -
 - **Recently opened folders**
