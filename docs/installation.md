@@ -46,6 +46,8 @@ Just in case you need this, the **profile** folder under Windows is located here
 
 For macOS you have to [download](https://www.tagspaces.org/downloads/) 64bit versions of the application for Intel or Apple Silicon(arm) based processor. Then you have to double click the downloaded zip file in Finder to unpack it properly. Some users are reporting issues with unpacking the app with some 3th-party zip utils.
 
+In case you need this, the **profile** folder under macOS is located here: `~/Library/Application Support/TagSpaces`
+
 :::tip
 Sometimes macOS does not allow TagSpaces to be executed with a simple double click. To work around this, right-click the TagSpaces.app folder and choose Open, then click **Open** on the dialog that appears. You need to do this just once.
 :::
