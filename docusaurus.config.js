@@ -216,15 +216,15 @@ module.exports = {
   },
   scripts: [
     {
+      src: "https://consent.cookiebot.com/uc.js",
+      "data-cbid": "ce1b9450-89a1-425c-861d-2c4b50a53c53",
+      "data-blockingmode": "auto",
+    },
+    {
       src: "https://plausible.io/js/plausible.js",
       "data-domain": "docs.tagspaces.org",
       async: true,
       defer: true,
-    },
-    {
-      src: "https://consent.cookiebot.com/uc.js",
-      "data-cbid": "ce1b9450-89a1-425c-861d-2c4b50a53c53",
-      "data-blockingmode": "auto",
     },
   ],
   presets: [
