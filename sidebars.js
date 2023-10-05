@@ -403,6 +403,7 @@ module.exports = {
         "tutorials/sharing-tags",
         "tutorials/s3-bucket-locations",
         "tutorials/wasabi-locations",
+        "tutorials/folders-as-objectstorage-with-s3proxy",
         "tutorials/setup-minio-bucket-nas",
         // "dev/extension-development-guide",
         "tutorials/e2ee-with-tagspaces-and-cryptomator",

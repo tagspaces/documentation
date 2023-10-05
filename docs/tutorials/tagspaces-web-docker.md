@@ -5,7 +5,7 @@ tags: [tutorial]
 
 # Install TagSpaces Web with Docker
 
-Here you will find information about using **TagSpaces Lite Web** and **TagSpaces Pro Web** as Docker containers.
+Here you will find information about using **TagSpaces Lite Web** and **TagSpaces Pro Web** as Docker containers. The containers are lightweight based on the alpine linux and using nginx as web server.
 
 ## Get Docker
 
@@ -63,13 +63,24 @@ TagSpaces can be partially configured with an external [configuration file](/dev
 
     sudo docker cp ./extconfig.js tagspaces-lite-web:/usr/share/nginx/html/
 
+The following example extconfig.js will allow location information to be saved in the browser's local storage in order to persist after an application reload.
+
+```
+// enables saving of location data in the browser's local storage, in order to persist after reload
+window.ExtSaveLocationsInBrowser = true;
+```
+
+## Installing self-signed SSL certificate
+
+TBD
+
 ## Installing SSL certificate from Let's encrypt
 
 TBD
 
 SSL certificates are needed for your TagSpaces installation and for the object storage service (e.g. Minio, Zenko)
 
-A very good tutorial for Ubuntu and Apache is this one: [How to Set up Let's Encrypt on an Intranet Website](https://davidaugustat.com/web/set-up-lets-encrypt-on-intranet-website)
+A good tutorial for Ubuntu and Apache is this one: [How to Set up Let's Encrypt on an Intranet Website](https://davidaugustat.com/web/set-up-lets-encrypt-on-intranet-website)
 
 ## Renew the SSL certificate
 
