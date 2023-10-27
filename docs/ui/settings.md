@@ -81,7 +81,7 @@ Here you can see all the keyboard shortcuts by default in TagSpaces, and what ac
 To learn more about the key bindings, refer to the [this section](/ui/keybindings) of the documentation.
 :::
 
-### Extensions
+## Extensions
 
 This tab has two sections:
 
