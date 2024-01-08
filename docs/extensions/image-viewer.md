@@ -29,7 +29,7 @@ This extension thankfully relays on the following great libraries:
 - [exif.js](https://github.com/exif-js/exif-js)
 - [UTIF.js](https://github.com/photopea/UTIF.js/)
 - [tga.js](https://github.com/vthibault/tga.js/)
-- [psd](https://github.com:meltingice/psd.js/)
+- [psd](https://github.com/meltingice/psd.js/)
 - [Bootstrap](https://getbootstrap.com/)
 - [i18next](https://www.i18next.com/)
 
