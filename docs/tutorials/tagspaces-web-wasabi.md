@@ -31,22 +31,20 @@ In order to have the TagSpaces Web application on the Internet, you will need a 
   This way you will make the content of the bucket publicly asccessible.
   If you have used different name for the bucket you have to adjust it in the **Resource** section.
 
-      {
-          "Version": "2012-10-17",
-          "Statement": [
-              {
-                  "Sid": "PublicReadGetObject",
-                  "Effect": "Allow",
-                  "Principal": "*",
-                  "Action": [
-                      "s3:GetObject"
-                  ],
-                  "Resource": [
-                      "arn:aws:s3:::my-tagspaces/*"
-                  ]
-              }
-          ]
-      }
+```json
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "PublicReadGetObject",
+      "Effect": "Allow",
+      "Principal": "*",
+      "Action": ["s3:GetObject"],
+      "Resource": ["arn:aws:s3:::my-tagspaces/*"]
+    }
+  ]
+}
+```
 
 - Extract the content of the TagSpaces Web package to a folder on your computer
 - Clicking on the **Uplad Files** button and drag the content of the **web** folder to the area which will appear.
@@ -77,20 +75,22 @@ Here we will create a user whose access and secret keys will be available public
 Go to the **Policy** section and create a new policy called **TagSpacesReadOnlyPolicy** with the following content.
 The policy restricts the user to just list and get object (e.g. files) from the bucket **my-cloud-files**.
 
+```
+{
+  "Version": "2012-10-17",
+  "Statement": [
     {
-      "Version": "2012-10-17",
-      "Statement": [
-        {
-          "Sid": "VisualEditor0",
-          "Effect": "Allow",
-          "Action": ["s3:ListBucket", "s3:GetObject"],
-          "Resource": [
-            "arn:aws:s3:::my-cloud-files",
-            "arn:aws:s3:::my-cloud-files/*"
-          ]
-        }
+      "Sid": "VisualEditor0",
+      "Effect": "Allow",
+      "Action": ["s3:ListBucket", "s3:GetObject"],
+      "Resource": [
+        "arn:aws:s3:::my-cloud-files",
+        "arn:aws:s3:::my-cloud-files/*"
       ]
     }
+  ]
+}
+```
 
 Do not forget to adjust the name of the buckets in the **Resource** section to reflect the name of the buckets you want to manage with the policy.
 
@@ -118,46 +118,48 @@ You can also create separate users for managing the both buckets.
 We have to create an admin policy with rights to administrate these two bucket.
 To do this you to go to the **Policy** section and create a new policy called **TagSpacesAdminPolicy** with the following content.
 
+```json
+{
+  "Version": "2012-10-17",
+  "Statement": [
     {
-      "Version": "2012-10-17",
-      "Statement": [
-        {
-          "Sid": "VisualEditor0",
-          "Effect": "Allow",
-          "Action": [
-            "s3:GetObjectAcl",
-            "s3:GetObjectVersionAcl",
-            "s3:DeleteObject",
-            "s3:GetBucketWebsite",
-            "s3:GetBucketNotification",
-            "s3:GetReplicationConfiguration",
-            "s3:ListMultipartUploadParts",
-            "s3:PutObject",
-            "s3:GetObject",
-            "s3:RestoreObject",
-            "s3:ListBucket",
-            "s3:GetBucketPolicy",
-            "s3:GetObjectVersionTorrent",
-            "s3:AbortMultipartUpload",
-            "s3:GetBucketRequestPayment",
-            "s3:PutObjectAcl",
-            "s3:ListBucketMultipartUploads",
-            "s3:GetBucketVersioning",
-            "s3:GetBucketAcl",
-            "s3:GetObjectTorrent",
-            "s3:GetBucketCORS",
-            "s3:GetBucketLocation",
-            "s3:GetObjectVersion"
-          ],
-          "Resource": [
-            "arn:aws:s3:::my-tagspaces",
-            "arn:aws:s3:::my-tagspaces/*",
-            "arn:aws:s3:::my-cloud-files",
-            "arn:aws:s3:::my-cloud-files/*"
-          ]
-        }
+      "Sid": "VisualEditor0",
+      "Effect": "Allow",
+      "Action": [
+        "s3:GetObjectAcl",
+        "s3:GetObjectVersionAcl",
+        "s3:DeleteObject",
+        "s3:GetBucketWebsite",
+        "s3:GetBucketNotification",
+        "s3:GetReplicationConfiguration",
+        "s3:ListMultipartUploadParts",
+        "s3:PutObject",
+        "s3:GetObject",
+        "s3:RestoreObject",
+        "s3:ListBucket",
+        "s3:GetBucketPolicy",
+        "s3:GetObjectVersionTorrent",
+        "s3:AbortMultipartUpload",
+        "s3:GetBucketRequestPayment",
+        "s3:PutObjectAcl",
+        "s3:ListBucketMultipartUploads",
+        "s3:GetBucketVersioning",
+        "s3:GetBucketAcl",
+        "s3:GetObjectTorrent",
+        "s3:GetBucketCORS",
+        "s3:GetBucketLocation",
+        "s3:GetObjectVersion"
+      ],
+      "Resource": [
+        "arn:aws:s3:::my-tagspaces",
+        "arn:aws:s3:::my-tagspaces/*",
+        "arn:aws:s3:::my-cloud-files",
+        "arn:aws:s3:::my-cloud-files/*"
       ]
     }
+  ]
+}
+```
 
 Do not forget to adjust the name of the buckets in the **Resource** section to reflect the name of the buckets you want to manage with the policy.
 
@@ -185,29 +187,31 @@ Please do not share the access key for this user, since it has a full access to 
 
 Create a file called **extconfig.js**, copy the content from bellow in it and upload it to the root of the **my-tagspaces** bucket.
 
-    window.ExtLocations = [
-        {
-          "uuid": "f15de534-4326-40c3-9f6a-3547azb97518",
-          "type": "1",
-          "name": "My Cloud Files",
-          "path": "",
-          "paths": [
-            ""
-          ],
-          "endpointURL": "https://s3.us-west-2.wasabisys.com",
-          "accessKeyId": "MYACCESSKEYRO",
-          "secretAccessKey": "MYSECRETKEYRO",
-          "bucketName": "my-cloud-files",
-          "region": "",
-          "isDefault": true,
-          "isReadOnly": true,
-          "disableIndexing": true,
-          "fullTextIndex": false,
-          "watchForChanges": false,
-          "maxIndexAge": 600000,
-          "creationDate": "2023-01-12T17:35:21.451Z",
-        }
-      ]
+```
+  window.ExtLocations = [
+      {
+        "uuid": "f15de534-4326-40c3-9f6a-3547azb97518",
+        "type": "1",
+        "name": "My Cloud Files",
+        "path": "",
+        "paths": [
+          ""
+        ],
+        "endpointURL": "https://s3.us-west-2.wasabisys.com",
+        "accessKeyId": "MYACCESSKEYRO",
+        "secretAccessKey": "MYSECRETKEYRO",
+        "bucketName": "my-cloud-files",
+        "region": "",
+        "isDefault": true,
+        "isReadOnly": true,
+        "disableIndexing": true,
+        "fullTextIndex": false,
+        "watchForChanges": false,
+        "maxIndexAge": 600000,
+        "creationDate": "2023-01-12T17:35:21.451Z",
+      }
+    ]
+```
 
 :::caution
 Please make sure that you put here the **readonly** key with the very limited security policy, since this file will be publicly available.
@@ -239,9 +243,11 @@ All photos can be collected in one folder on a local computer and synced via scr
 
 * Run the syncmyfiles.cmd on a regular basis in order to sync your local photos with the cloud
 
-      ├── MyCloudFiles
-      ├── rclone(.exe)
-      └── rclone.config
+```
+  ├── MyCloudFiles
+  ├── rclone(.exe)
+  └── rclone.config
+```
 
 ## Integration in web page
 

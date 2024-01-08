@@ -40,6 +40,7 @@ figcaption {
 
 article video,
 article img {
+  height: auto;
   box-shadow: 2px 2px 15px 0px rgba(0, 0, 0, 0.75);
   max-width: 95%;
   margin-left: auto;

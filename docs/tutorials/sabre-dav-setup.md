@@ -30,6 +30,7 @@ This Backend is also chosen if you use a different Webserver than Apache. A litt
 As shown in the example, the global variable contains \$\_SERVER['PHP_AUTH_USER'] username for the currently logged in User. This allows each user to use his own files. A tip: Sharing would be possible with Symlinks in this case as well.
 The complete PHP File could look like the following:
 
+```php
     <?php
     date_default_timezone_set('Europe/Amsterdam');
     $publicDir = '/path_to/webdav/'.$_SERVER['PHP_AUTH_USER'].'/files';
@@ -58,6 +59,7 @@ The complete PHP File could look like the following:
     $server->addPlugin(new \Sabre\DAV\Locks\Plugin($lockBackend));
 
     $server->exec();
+```
 
 In the same PHP file you can of course add other Backend’s for CalDAV and CardDAV, which I have omitted in this example, because this is all about WebDAV and TagSpaces.
 
@@ -65,6 +67,7 @@ In the same PHP file you can of course add other Backend’s for CalDAV and Card
 
 Of course Nginx also needs a small adjustment. I would highly recommend to use WebDAV Sharing only via SSL (free certificates provides for example Let's Encrypt). Additionally we have to adapt the PHP handling for SabreDAV. In my case, I use a corresponding location container for my DAV services. You do not need much, my looks like this:
 
+```
     location ~ ^/sabredav/ {
             auth_basic "Secured Area";
             auth_basic_user_file /path_to/.htpasswd;
@@ -80,6 +83,7 @@ Of course Nginx also needs a small adjustment. I would highly recommend to use W
                 fastcgi_param REMOTE_USER $remote_user;
             }
         }
+```
 
 With the both auth_basic directives I set the small on Notes which appears on the Login Box in the Browser and the path to the hidden file .htpasswd. We will generate this file later. This file contains the credentials for each individual user.
 SabreDAV works a lot with path information, so the corresponding lines are enormously important, otherwise SabreDAV does not work as expected. Particularly important is the penultimate line fastcgi_param REMOTE_USER \$ remote_user; At least for me, this was a stumbling block. As you can see, I use PHP7 from the Jessie-Backports. If you still use PHP5, the location container has to be adapted accordingly.
@@ -112,10 +116,12 @@ This creates a subdirectory "tagspaces" with all the necessary files. With the B
 
 You have to take care that not everyone can access your notes. We must now protect this directory with a password. Reopen your Nginx configuration file and add a location container for the TagSpaces directory. For me, this looks something like this:
 
+```
     location /tagspaces {
             auth_basic "Secured Area";
             auth_basic_user_file /path_to/.htpasswd;
         }
+```
 
 As you can see, I use the same auth_basic variables as with the SabreDAV location. I use the same Credential File. Since these Credentials are already entered, its enough to save the changes to the Nginx Config and reload the Server: systemctl reload nginx
 

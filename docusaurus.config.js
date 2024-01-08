@@ -84,11 +84,6 @@ module.exports = {
     //   content:
     //     'Black Week 2022 - 10% off for <a href="https://www.tagspaces.org/products/">TagSpaces Pro</a>!',
     // },
-    prism: {
-      defaultLanguage: "javascript",
-      theme: require("prism-react-renderer/themes/github"),
-      darkTheme: require("prism-react-renderer/themes/dracula"),
-    },
     footer: {
       style: "dark",
       links: [

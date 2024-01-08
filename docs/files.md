@@ -44,13 +44,15 @@ Clicking the button with the **( i )** icon will open and respectively close the
 
 For adding the description to a given file, TagSpaces PRO use the same sidecar file as the one used for the sidecar files. This file is called exactly like the original file but with `.json` at the end in the hidden `.ts` folder of current folder.
 
-    ~ some-folder
-    ├── .ts
-    │   ├── file5.png.json - contains tags and description for file.png
-    │   ├── file6.docx.json - contains tags and description for file6.docx
-    │   └── tsm.json
-    ├── file5.png
-    └── file6.docx
+```
+~ some-folder
+├── .ts
+│   ├── file5.png.json - contains tags and description for file.png
+│   ├── file6.docx.json - contains tags and description for file6.docx
+│   └── tsm.json
+├── file5.png
+└── file6.docx
+```
 
 ## File Thumbnails
 

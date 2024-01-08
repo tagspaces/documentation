@@ -47,14 +47,16 @@ This is an optional step, needed only if you want to access the bucket from [Tag
 
 The JSON config, can be copied from the section bellow.
 
-    [
-        {
-        "AllowedHeaders": ["*"],
-        "AllowedMethods": ["GET", "PUT", "POST", "HEAD", "DELETE"],
-        "AllowedOrigins": ["*"],
-        "ExposeHeaders": ["ETag"]
-       }
-    ]
+```json
+[
+  {
+    "AllowedHeaders": ["*"],
+    "AllowedMethods": ["GET", "PUT", "POST", "HEAD", "DELETE"],
+    "AllowedOrigins": ["*"],
+    "ExposeHeaders": ["ETag"]
+  }
+]
+```
 
 > You can remove the _PUT_ and _DELETE_ lines, if you want to disable the writing and deleting operation from TagSpaces Enterprise.
 

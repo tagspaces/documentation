@@ -47,16 +47,18 @@ In addition to the tagging you have the ability to annotate every folder with a 
 
 For adding the description to a given folder, the application creates a sidecar file called `tsm.json` in the hidden `.ts` folder of current folder. This is file contains also the tags, the default perspective and other meta information for this folder.
 
-    ~ some-folder
-    ├── sub-folder1
-    │   ├── .ts
-    │   │   └── tsm.json <- contains tags and description for sub-folder1
-    │   ├── file1.jpg
-    │   └── file2.pdf
-    ├── .ts
-    │   └── tsm.json <- contains tags and description some-folder
-    ├── file3.png
-    └── file4.docx
+```
+  ~ some-folder
+  ├── sub-folder1
+  │   ├── .ts
+  │   │   └── tsm.json - contains tags and description for sub-folder1
+  │   ├── file1.jpg
+  │   └── file2.pdf
+  ├── .ts
+  │   └── tsm.json - contains tags and description some-folder
+  ├── file3.png
+  └── file4.docx
+```
 
 The folder descriptions can be edited by clicking the **EDIT** button or just by double click directly in the description area. The descriptions text can contain [Markdown](https://en.wikipedia.org/wiki/Markdown) allowing you to add basic formatting, [links](/linking) and lists to the content.
 
