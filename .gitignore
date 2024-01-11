@@ -10,3 +10,4 @@ aero-deploy.tar.gz
 .ts/
 /../.ts
 deploy.sh
+.DS_Store
