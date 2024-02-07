@@ -1,5 +1,7 @@
 import { ProFeature, CenteredImage, CenteredVideo } from '@site/src/components/CommonBlocks';
 
+<ProFeature />
+
 # 3D Viewer
 
 A TagSpaces extension for opening 3d file formats. The extension is introduced for first time in version 5.2 of TagSpaces.

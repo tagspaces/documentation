@@ -19,7 +19,7 @@ Perspectives are not an integral part of TagSpaces, but exist as modular extensi
 
 - [Kanban Perspective](/perspectives/kanban) <ProFeature /> - show your files as tasks in a Kanban board, representing the sub folders as columns in the board
 
-- [FolderViz Perspective](/perspectives/folderviz) (deprecated) - this is an experimental perspective which applies some information visualization concepts to presenting your folder and file structures.
+- [FolderViz Perspective](/perspectives/folderviz) <ProFeature /> - this is an experimental perspective which applies some information visualization concepts to presenting your folder and file structures.
 
 ## Switching perspectives
 
@@ -37,5 +37,7 @@ Once you choose a perspective here, every time you open this folder, it will be 
 ## Custom perspective settings per folder
 
 <ProFeature />
+
+In the PRO version you can assign a default perspective to any folder, so everytime you open this folder it will be automatically displayed with the selected perspective.
 
 Some perspectives support custom settings on per folder level. You can for example set custom _sorting_, _thumbnail mode_ or _limit of the pagination_. You can learn more in the [perspective settings](/perspectives/grid#perspective-settings) section.
