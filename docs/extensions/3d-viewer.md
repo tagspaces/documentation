@@ -38,16 +38,8 @@ This extension thankfully relays on the following great libraries:
 
 ## Installation
 
-This extensions is packaged with new version of TagSpaces (after version 5.2)
-
-## Source code
-
-The source code of this extension is freely available on [GitHub](https://github.com/tagspaces/tagspaces-extensions/tree/main/3d-viewer)
-
-## Development
-
-If you want to extend this extensions, please follow our general [extension development guide](/dev/extension-development-guide)
+This extensions is pre-installed in TagSpaces Pro
 
 ## License
 
-[MIT](https://github.com/tagspaces/tagspaces-extensions/blob/main/3d-viewer/LICENSE.txt)
+Propriatery

@@ -206,7 +206,7 @@ module.exports = {
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} TagSpaces UG (haftungsbeschraenkt). Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} TagSpaces GmbH. Built with Docusaurus.`,
     },
   },
   scripts: [

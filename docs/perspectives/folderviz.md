@@ -9,7 +9,7 @@ import { ProFeature, CenteredImage, CenteredVideo } from '@site/src/components/C
 
 The **FolderViz Perspective** is a collection of experimental views that apply some information visualization concepts for representing files and folders. While the primary aim of this perspective is to showcase TagSpaces' capabilities to developers, some of the options might offer some useful features to the end users.
 
-This perspecitve is currently offering three views, which were accessible from the perspective menu. Hovering on a file or folder will show an overlay with a thumbnail (if available) and some details.
+This perspecitve is currently offering three views, which were accessible from the perspective menu. Hovering on a file or folder will show an overlay with a thumbnail (if available) and some details. Double click on folder will make the app navigate to it. Double click on a file will open in the file preview area.
 
 ## Tree View
 

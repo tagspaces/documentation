@@ -34,7 +34,7 @@ Here are the steps needed for installing the PRO version on your system.
 
 The Windows version of TagSpaces is distributed as a `exe`-installer, which can be directly executed to start the installation and a `zip`-archive file. The last have be to unzipped in a folder somewhere on your system. In the unpacked folder you will find a file called `tagspaces.exe`, which can be executed with double click.
 
-The installer program for Windows is signed with modern software certificates. The following screenshot shows the certificate in action during the installation under Windows. Here you can see that the installation program is created by TagSpaces UG (haftungsbeschränkt), which is the company behind TagSpaces.
+The installer program for Windows is signed with modern software certificates. The following screenshot shows the certificate in action during the installation under Windows.
 
 ![Screenshot showing signed installer under Windows](/media/signed-windows-installer.png)
 
