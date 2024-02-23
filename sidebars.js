@@ -285,10 +285,10 @@ module.exports = {
       items: [
         "viewing-files",
         "supported-file-formats",
-        "extensions/3d-viewer",
         "extensions/media-player",
         "extensions/ebook-viewer",
         "extensions/html-viewer",
+        "extensions/3d-viewer",
         "extensions/image-viewer",
         "extensions/md-viewer",
         "extensions/mhtml-viewer",
@@ -302,6 +302,7 @@ module.exports = {
         "extensions/text-viewer",
         "extensions/url-viewer",
         "extensions/archive-viewer",
+        "extensions/font-viewer",
       ],
     },
     {
