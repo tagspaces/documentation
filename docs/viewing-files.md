@@ -10,7 +10,7 @@ The application supports previewing of many file types without the need of exter
 - [E-Book Viewer](/extensions/ebook-viewer) - Opens ebooks in EPUB format
 - [HTML Viewer](/extensions/html-viewer) - Viewer for HTML files e.g. from the [Web Clipper](/web-clipper)
 - [Image Viewer](/extensions/image-viewer) - Viewer for image and photis in JPG, GIF, WEPB, TIF, TGA formats
-- [Link Opener](/extensions/url-viewer) - Bookmarks in URL, DESKTOP, WEBSITE ...
+- [Link Opener](/extensions/url-viewer) - Bookmarks in URL, DESKTOP or WEBSITE formats
 - [Markdown Reader](/extensions/md-viewer) - Viewer for markdown files
 - [MHTML Reader](/extensions/mhtml-viewer) - webpages in MHTML and and emails EML format
 - [Mind Map Viewer](/extensions/mindmap-viewer) - Presents a MD or MARKDOWN file as mindmap
