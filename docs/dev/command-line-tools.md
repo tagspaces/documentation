@@ -6,7 +6,9 @@ This is a set of command line tools which can create search index and thumbnails
 
 ## Installation
 
-    npm install -global @tagspaces/shell
+```
+npm install -global @tagspaces/shell
+```
 
 ## Search index generation
 
@@ -14,7 +16,9 @@ This tool will create a search index for a given folder with all its sub folders
 
 Run node script:
 
-    tscmd -m indexer /some/folder/
+```
+tscmd -m indexer /some/folder/
+```
 
 This command can be used for automation e.g. in CRON jobs.
 
@@ -24,15 +28,21 @@ This script will recursively create thumbnails for a specified folder with all i
 
 You have to install [sharp](https://sharp.pixelplumbing.com/install) package globally with the following command:
 
-    npm i sharp -g
+```
+npm i sharp -g
+```
 
 Set NODE_PATH environment points to global npm folder:
 
-    export NODE_PATH=$(npm root --quiet -g)
+```
+export NODE_PATH=$(npm root --quiet -g)
+```
 
 Run node script:
 
-    tscmd -m thumbgen /some/folder/
+```
+tscmd -m thumbgen /some/folder/
+```
 
 This command can be used for automation e.g. in CRON jobs.
 Don't forget to put the trailing slash after the folder name.
@@ -41,11 +51,15 @@ Don't forget to put the trailing slash after the folder name.
 
 Running this command will analyze the specified folder:
 
-    tscmd -m metacleaner /some/folder
+```
+tscmd -m metacleaner /some/folder
+```
 
 Where `-m` is for mode, which here is metacleaner. The metacleaner will analyse first the specified folder and deliver a list with files which are not needed or connected anymore. You can review the list and confirm the deletion by setting the `-a`, which is for analyse with `false` as parameter. So this command will finally perform the cleaning.
 
-    tscmd -m metacleaner -a false /some/folder
+```
+tscmd -m metacleaner -a false /some/folder
+```
 
 ## Third party tools
 

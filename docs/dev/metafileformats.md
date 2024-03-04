@@ -24,18 +24,20 @@ The meta folder contains the following files:
 
 This file should be located in a folder called `.ts` located in the folder, where the tagged file is placed. The meta file should have exactly the same name as the tagged file, but in addition it should have the `.json` file extension. So at the end you should have similar structure as the following:
 
-    ~ /some/TagSpaces/location/folder
-    ├── subfolder_1
-    │   ├── .ts
-    │   │   ├── file1.jpg.json
-    │   │   └── file2.pdf.json
-    │   ├── file1.jpg
-    │   └── file2.pdf
-    ├── .ts
-    │   ├── file3.png.json
-    │   └── file4.docx.json
-    ├── file3.png
-    └── file4.docx
+```
+~ /some/TagSpaces/location/folder
+├── subfolder_1
+│   ├── .ts
+│   │   ├── file1.jpg.json
+│   │   └── file2.pdf.json
+│   ├── file1.jpg
+│   └── file2.pdf
+├── .ts
+│   ├── file3.png.json
+│   └── file4.docx.json
+├── file3.png
+└── file4.docx
+```
 
 The meta information is saved in JSON format, which has the following format:
 
@@ -66,16 +68,18 @@ The meta information is saved in JSON format, which has the following format:
 
 In the PRO version of the application you can add tags and description to every folder managed in TagSpaces. This meta information is persisted in a file called **tsm.json** located in `.ts` folder of the tagged folder. The following is an example folder structure of a tagged folder with one tagged subfolder.
 
-    ~ /some/TagSpaces/location/folder
-    ├── subfolder_2
-    │   ├── .ts
-    │   │   ├── tsm.json // a file containing the meta info for subfolder_2
-    │   │   └── file2.pdf.json
-    │   └── file2.pdf
-    ├── .ts
-    │   ├── tsm.json
-    │   └── file4.docx.json
-    └── file4.docx
+```
+~ /some/TagSpaces/location/folder
+├── subfolder_2
+│   ├── .ts
+│   │   ├── tsm.json // a file containing the meta info for subfolder_2
+│   │   └── file2.pdf.json
+│   └── file2.pdf
+├── .ts
+│   ├── tsm.json
+│   └── file4.docx.json
+└── file4.docx
+```
 
 The meta information is saved in JSON format, which has the following format:
 
@@ -188,6 +192,7 @@ The locations can be exported from one TagSpaces Pro installation and imported i
       "isDefault": true, // specifies if this location is the default one, which loads after starting the app
       "isReadOnly": false, // specified is the location should be in read-only mode
       "disableIndexing": false, // if "true" the app will try to find an existing search index and use it for the searches, by "false" the app will create the index on every search (unless the last created index in the current browser session is not expired see maxIndexAge property)
+      "disableThumbnailGeneration": false, // disables the process of thumbnail generation, usefull for S3 buckets, where you do not want to dowload the folder content in order to generate thumbnails
       "creationDate": "2021-03-13T14:07:45.333Z", // the creation time of the location
       "fullTextIndex": false, // activated the full-text search for TXT, MD and HTML files
       "maxIndexAge": 660000, // time in milliseconds (10 minutes x 60 secs per minute x 1000 milliseconds per second) for which the index is valid
@@ -207,6 +212,7 @@ The locations can be exported from one TagSpaces Pro installation and imported i
       "isDefault": false,
       "isReadOnly": true,
       "disableIndexing": false,
+      "disableThumbnailGeneration": true,
       "fullTextIndex": false,
       "watchForChanges": false,
       "creationDate": "2021-03-16T19:22:52.132Z",
@@ -287,13 +293,13 @@ TagSpaces Pro offers the possibility to export previously saved search queries. 
 Since version 3.11 TagSpaces supports tags which are specific for a given location. The tags resides in a file called `tsl.json`, which should be located in the `.ts` folder of the current location.
 
 ```{5}
-    ~ /some7TagSpaces/location/folder
-    ├── subfolder_2
-    ├── .ts
-    │   ├── tsm.json
-    │   ├── tsl.json // file containing the tag groups of this location
-    │   └── file4.docx.json
-    └── file4.docx
+~ /some7TagSpaces/location/folder
+├── subfolder_2
+├── .ts
+│   ├── tsm.json
+│   ├── tsl.json // file containing the tag groups of this location
+│   └── file4.docx.json
+└── file4.docx
 ```
 
 The format of these files is similar to the format of the produced by exporting your [tag library](#format-of-the-tag-library-export). So basically you can take such exports rename them to tsl.json and put them in .ts folder. After reloading them by clicking the "Reload Location Tags"-menuitem the tag-groups should appear in the Tag Library. Tag groups imported from locations will have the location name in brackets as seen the following screenshot.

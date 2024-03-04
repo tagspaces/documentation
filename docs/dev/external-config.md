@@ -95,6 +95,7 @@ window.ExtLocations = [
     isDefault: true, // if true this location will be loaded by the application start
     isReadOnly: true, // if true the user interface of the application turns to read-only mode
     disableIndexing: false, // if "true" the app will try to find an existing search index and use it for the searches, by "false" the app will create the index on every search (unless the last created index in the current browser session is not expired see maxIndexAge property)
+    disableThumbnailGeneration: false, // disables the process of thumbnail generation, usefull for S3 buckets, where you do not want to dowload the folder content in order to generate thumbnails
     fullTextIndex: false, // activated the full-text search for TXT, MD and HTML files
     watchForChanges: false, // activates the watching for changed files in the current location, (feature is not working on cloud locations)
     maxIndexAge: 600000 // time in milliseconds (10 minutes x 60 secs per minute x 1000 milliseconds per second) for which the index is valid

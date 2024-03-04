@@ -15,7 +15,9 @@ Install Docker for your operating system: https://docs.docker.com/get-docker/
 
 You can download the latest available TagSpaces Lite docker image from the [hub.docker.com](https://hub.docker.com/r/tagspaces/tagspaces-lite-web) or by the following command:
 
-    docker pull tagspaces/tagspaces-lite-web
+```
+docker pull tagspaces/tagspaces-lite-web
+```
 
 ## Alternatively: Build Your Own Image
 
@@ -33,7 +35,9 @@ Download the TagSpaces' `Dockerfile` from [GitHub](https://raw.githubusercontent
 
 Place the download ZIP of TagSpaces Lite or Pro in the same folder where your TagSpaces' `Dockerfile` is located, rename it to `tagspaces-web.zip` and run:
 
-    docker build -t tagspaces-lite-web:5.4.4 .
+```
+docker build -t tagspaces-lite-web:5.4.4 .
+```
 
 The name `tagspaces-lite-web` after the -t switch can be changed to anything else, for example, if you are building a docker container for the PRO version you can choose `tagspaces-pro-web`. The version number at the end should correspond the version of TagSpaces in the ZIP file. It is optional but helps if you have many TagSpaces containers.
 
@@ -41,7 +45,9 @@ The name `tagspaces-lite-web` after the -t switch can be changed to anything els
 
 Once the container is build you can run it with this command:
 
-    docker run -dp 127.0.0.1:5000:80 tagspaces-lite-web:5.4.4
+```
+docker run -dp 127.0.0.1:5000:80 tagspaces-lite-web:5.4.4
+```
 
 Where `5000` is the port on your local machine which is forwarded to port `80` of the docker container.
 
@@ -61,7 +67,9 @@ Details on how to prepare the `default.conf` file can be found in the [Nginx doc
 
 TagSpaces can be partially configured with an external [configuration file](/dev/external-config). It should be called `extconfig.js` and placed in the root folder of the application.
 
-    sudo docker cp ./extconfig.js tagspaces-lite-web:/usr/share/nginx/html/
+```
+sudo docker cp ./extconfig.js tagspaces-lite-web:/usr/share/nginx/html/
+```
 
 The following example extconfig.js will allow location information to be saved in the browser's local storage in order to persist after an application reload.
 

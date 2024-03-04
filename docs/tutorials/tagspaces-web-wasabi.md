@@ -226,27 +226,29 @@ All photos can be collected in one folder on a local computer and synced via scr
 - Unzip the file and place rclone(.exe) in a folder from which you want make the sync
 - Create a new text file called `rclone.config` with the following content:
 
-      [mycloudfiles]
-      type = s3
-      provider = Wasabi
-      access_key_id = MYACCESSKEYRW
-      secret_access_key = MYSECRETKEYRW
-      endpoint = s3.us-west-2.wasabisys.com
-      acl = private
+```
+[mycloudfiles]
+type = s3
+provider = Wasabi
+access_key_id = MYACCESSKEYRW
+secret_access_key = MYSECRETKEYRW
+endpoint = s3.us-west-2.wasabisys.com
+acl = private
+```
 
-* Create a new text file called `syncmyfiles.cmd` with the following content:
+- Create a new text file called `syncmyfiles.cmd` with the following content:
 
   rclone sync "MyCloudFiles" "mycloudfiles:my-cloud-files" -v --config=rclone.config
 
-* In the previous command the **MyCloudFiles** is the name of the folder which content will be synced to the bucket.
+- In the previous command the **MyCloudFiles** is the name of the folder which content will be synced to the bucket.
   Other examples could be **D:\Photos\MyCloudFiles** or **../MyCloudFiles**.
 
-* Run the syncmyfiles.cmd on a regular basis in order to sync your local photos with the cloud
+- Run the syncmyfiles.cmd on a regular basis in order to sync your local photos with the cloud
 
 ```
-  ├── MyCloudFiles
-  ├── rclone(.exe)
-  └── rclone.config
+├── MyCloudFiles
+├── rclone(.exe)
+└── rclone.config
 ```
 
 ## Integration in web page

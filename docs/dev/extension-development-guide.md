@@ -25,51 +25,53 @@ For Linux users, please open your Terminal and execute the following command: sh
 
 After running the checkout script your dev environment should have the following directory structure:
 
-    ~ tagspaces-github-location
-    ├── data
-    │   ├── assets
-    │   │   └── ubuntu-font
-    │   ├── chromium
-    │   ├── cordova
-    │   │   └── fastclick
-    │   ├── electron - Electron framework core
-    │   ├── ext
-    │   │   ├── editorHTML -> tagspaces-github-location/extensions/editorHTML
-    │   │   ├── ...
-    │   │   ├── perspectiveGraph -> tagspaces-github-location/extensions/perspectiveGraph
-    │   │   ├── ...
-    │   │   ├── viewerAudioVideo -> tagspaces-github-location/extensions/viewerAudioVideo
-    │   │   └── ...
-    │   ├── js
-    │   ├── libs
-    │   │   ├── bootstrap
-    │   │   ├── ...
-    │   │   └── underscore
-    │   ├── locales
-    │   │   ├── de
-    │   │   ├── ...
-    │   │   └── zh_TW
-    │   ├── _locales
-    │   │   ├── de
-    │   │   ├── ..
-    │   │   └── zh_TW
-    │   ├── mozilla
-    │   ├── node_modules
-    │   │   └── fs-extra
-    │   ├── node-webkit
-    │	   ├── locales
-    │	   └── node_modules
-    │	   	├── fs-extra
-    │	   	└── trash
-    ├── docs
-    ├── extensions
-    │   ├── editorHTML
-    │   ├── ...
-    │   ├── perspectiveGraph
-    │   ├── ...
-    │   ├── viewerAudioVideo
-    │   └── ...
-    └── node_modules
+```
+~ tagspaces-github-location
+├── data
+│   ├── assets
+│   │   └── ubuntu-font
+│   ├── chromium
+│   ├── cordova
+│   │   └── fastclick
+│   ├── electron - Electron framework core
+│   ├── ext
+│   │   ├── editorHTML -> tagspaces-github-location/extensions/editorHTML
+│   │   ├── ...
+│   │   ├── perspectiveGraph -> tagspaces-github-location/extensions/perspectiveGraph
+│   │   ├── ...
+│   │   ├── viewerAudioVideo -> tagspaces-github-location/extensions/viewerAudioVideo
+│   │   └── ...
+│   ├── js
+│   ├── libs
+│   │   ├── bootstrap
+│   │   ├── ...
+│   │   └── underscore
+│   ├── locales
+│   │   ├── de
+│   │   ├── ...
+│   │   └── zh_TW
+│   ├── _locales
+│   │   ├── de
+│   │   ├── ..
+│   │   └── zh_TW
+│   ├── mozilla
+│   ├── node_modules
+│   │   └── fs-extra
+│   ├── node-webkit
+│	   ├── locales
+│	   └── node_modules
+│	   	├── fs-extra
+│	   	└── trash
+├── docs
+├── extensions
+│   ├── editorHTML
+│   ├── ...
+│   ├── perspectiveGraph
+│   ├── ...
+│   ├── viewerAudioVideo
+│   └── ...
+└── node_modules
+```
 
 Please note that after running the script all extension folders in `data/ext` are connected by symlinks to the extensions in the `extensions`. In this folder you will find cloned the repositories of all supported TagSpaces extension. This way you can make changes in for e.g. `extensions/viewerImage`, which will be immediately testable after running the application, because of the symlink.
 

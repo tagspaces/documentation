@@ -81,6 +81,7 @@ The extended dialog will have in addition the following properties:
 - **Location ID** - here you change the location ID or generate new one, you can find more details in the section for [custom location ids](#custom-location-ids).
 - **Open this location in read-only mode** <ProFeature /> - switches the interface of TagSpaces to read-only mode
 - **Disable Indexing** <ProFeature /> - disables the automatic indexing of a location on its opening. The application will try to open a previously created index located in a file _tsi.json_ from the _.ts_ folder of the location. This is useful on locations with many files, where the content does not change very often.
+- **Disable Thumbnail Generation** - disables the process of thumbnail generation, usefull for S3 buckets, where you do not want to dowload all the folder content in order to generate thumbnails. This option is disabled by default.
 - **Index validity duration in minutes** - validity of the location's [index](/search/#indexing)
 - **File tagging method** - you can specify the [file tagging method](/tagging#file-tagging) per location, this setting will overwrite the tagging method from the application [settings](/ui/settings#general).
 - **Ignore pattern** - can be used to [filter out](#ignore-patterns) some file types or folders from the application.

@@ -43,11 +43,15 @@ Line **(13)** specifies the name of the Docker image for the S3Proxy project, as
 
 You can start S3Proxy directly on your computer. On Linux or macOS you will need the program which can be downloaded from GitHub. You should make the `s3proxy` executable file with following command:
 
-    chmod +x s3proxy
+```
+chmod +x s3proxy
+```
 
 And run it with the appropriate configuration file:
 
-    ./s3proxy --properties s3proxy.conf
+```
+./s3proxy --properties s3proxy.conf
+```
 
 The content of the s3proxy.conf could be the following:
 
