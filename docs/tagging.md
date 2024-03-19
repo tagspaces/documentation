@@ -37,18 +37,18 @@ Please note that by default the `.ts` folder is hidden only on MacOS and Linux o
 After the activation, the application will created for every tagged file an extra file having the same file name as the source file, but with a additional JSON extension. For example after tagging some files in some of your file locations you will have a similar file structure.
 
 ```
-    ~ location (with your files)
-    ├── subfolder1
-    │   ├── .ts
-    │   │   ├── file1.jpg.json <-- contains the tags and the description for file1.jpg
-    │   │   └── file2.pdf.json
-    │   ├── file1.jpg
-    │   └── file2.pdf
-    ├── .ts
-    │   ├── file3.png.json
-    │   └── file4.docx.json
-    ├── file3.png
-    └── file4.docx
+~ location (with your files)
+├── subfolder1
+│   ├── .ts
+│   │   ├── file1.jpg.json <-- contains the tags and the description for file1.jpg
+│   │   └── file2.pdf.json
+│   ├── file1.jpg
+│   └── file2.pdf
+├── .ts
+│   ├── file3.png.json
+│   └── file4.docx.json
+├── file3.png
+└── file4.docx
 ```
 
 The main advantage of this solution is that the name of the files is not changed after tagging and there is theoretically no limit in the number of tags you can add to a given file. If you move or rename tagged files in TagSpaces it will take care of the sidecar file, which will also be renamed or moved in the appropriate folder. But if you move or rename this file in an external file manager, you have to move or rename the sidecar files by hand. The same hold true for the deleting a file from an external application. It will not automatically delete the sidecar file in the `.ts` folder. These drawbacks makes the tagging with sidecars less robust and future proof.
@@ -62,15 +62,15 @@ If you want to have the files located in the `.ts` folder synched with some clou
 Tags added to folders in TagSpaces are save always in the co called sidecar file. The file is located in the **.ts** sub folder of any tagged folders and is called **tsm.js**
 
 ```
-    ~ location (with your files)
-    ├── subfolder1
-    │   ├── .ts
-    │   │   ├── tsm.json <-- contains tags and description for subfolder1
-    │   │   └── file2.pdf.json
-    │   └── file2.pdf
-    ├── .ts
-    │   └── file4.docx.json
-    └── file4.docx
+~ location (with your files)
+├── subfolder1
+│   ├── .ts
+│   │   ├── tsm.json <-- contains tags and description for subfolder1
+│   │   └── file2.pdf.json
+│   └── file2.pdf
+├── .ts
+│   └── file4.docx.json
+└── file4.docx
 ```
 
 :::tip

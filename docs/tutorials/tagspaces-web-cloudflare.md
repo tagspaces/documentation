@@ -1,5 +1,5 @@
 ---
-title: Install on Cloudflare
+title: Install TagSpaces Web on Cloudflare
 tags: [tutorial]
 ---
 

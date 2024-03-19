@@ -1,5 +1,5 @@
 ---
-title: Install with Docker
+title: Install TagSpaces Web with Docker
 tags: [tutorial]
 ---
 

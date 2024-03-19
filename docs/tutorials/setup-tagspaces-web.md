@@ -1,5 +1,5 @@
 ---
-title: Install on Web Server
+title: Install on TagSpaces Web
 tags: [tutorial]
 ---
 
@@ -170,9 +170,10 @@ You should not delete `extconfig.js` if you using one for configuring TagSpaces.
 
 After the setup of the web version, you will need to connect the so called locations containing the files you will manage with the application. The web version can currently connect only object storage (S3) locations, such as offered by Amazon AWS and Wasabi or hosted on you NAS with the help of MinIO. The following tutorials will help you with the setup.
 
-- Connect AWS S3 buckets as location is described in this [tutorial](/tutorials/s3-bucket-locations)
-- Connect Wasabi buckets as location is described in this [tutorial](/tutorials/wasabi-locations)
-- Install MinIO and connect buckets from there as locations is described in this [tutorial](/tutorials/setup-minio-bucket-nas)
+- [Connect AWS S3 buckets as location](/tutorials/s3-bucket-locations)
+- [Connect Wasabi buckets as location](/tutorials/wasabi-locations)
+- [Expose local or server folder as object storage with S3proxy](/folders-as-objectstorage-with-s3proxy)
+- [Install MinIO and connect buckets from there as locations](/tutorials/setup-minio-bucket-nas)
 
 <!-- ## Nginx again
 
