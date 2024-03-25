@@ -172,7 +172,7 @@ After the setup of the web version, you will need to connect the so called locat
 
 - [Connect AWS S3 buckets as location](/tutorials/s3-bucket-locations)
 - [Connect Wasabi buckets as location](/tutorials/wasabi-locations)
-- [Expose local or server folder as object storage with S3proxy](/folders-as-objectstorage-with-s3proxy)
+- [Expose local or server folder as object storage with S3proxy](/tutorials/folders-as-objectstorage-with-s3proxy)
 - [Install MinIO and connect buckets from there as locations](/tutorials/setup-minio-bucket-nas)
 
 <!-- ## Nginx again

@@ -14,7 +14,9 @@
     "anigif": "gifify --colors 150 --to 19 media/input.webm -o media/result.gif",
     "prepare1": "yarn optipng && yarn update-ext && yarn build",
     "optipng": "optipng media/*png",
-    "clear": "docusaurus clear"
+    "clear": "docusaurus clear",
+    "write-translations": "docusaurus write-translations",
+    "write-heading-ids": "docusaurus write-heading-ids"
   },
   "dependencies": {
     "@docusaurus/core": "^3.1.1",
@@ -23,7 +25,7 @@
     "@docusaurus/preset-classic": "^3.1.1",
     "@emotion/react": "^11.11.3",
     "@emotion/styled": "^11.11.0",
-    "@mdx-js/react": "^2.3.0",
+    "@mdx-js/react": "^3.0.0",
     "@mui/icons-material": "^5.15.3",
     "@mui/material": "^5.15.3",
     "@mui/styles": "^5.15.3",
@@ -35,16 +37,23 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
+  "devDependencies": {
+    "@docusaurus/module-type-aliases": "3.1.1",
+    "@docusaurus/types": "3.1.1"
+  },
   "browserslist": {
     "production": [
-      ">0.2%",
+      ">0.5%",
       "not dead",
       "not op_mini all"
     ],
     "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
+      "last 3 chrome version",
+      "last 3 firefox version",
+      "last 5 safari version"
     ]
+  },
+  "engines": {
+    "node": ">=18.0"
   }
 }
