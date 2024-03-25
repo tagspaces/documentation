@@ -28,13 +28,17 @@ Images with up to **250 px** width and up to **50 px** height suits best in the 
 
 The property **ExtIsFirstRun** can be used for disabling the initial onboarding dialog and license confirmation.
 
-    window.ExtIsFirstRun = true;
+```js
+window.ExtIsFirstRun = true;
+```
 
 The default value is **true**.
 
 ## Disable the checking for new version on startup
 
-    window.ExtCheckForUpdatesOnStartup = false
+```js
+window.ExtCheckForUpdatesOnStartup = false;
+```
 
 The default value is **true**.
 
@@ -42,7 +46,9 @@ The default value is **true**.
 
 The property **ExtDisplayMode** can be used for switching between the desktop and mobile mode of the app.
 
-    window.ExtDisplayMode = 'mobile';
+```js
+window.ExtDisplayMode = "mobile";
+```
 
 Possible values are **'mobile'** and **'desktop'**.
 
@@ -50,7 +56,9 @@ Possible values are **'mobile'** and **'desktop'**.
 
 The property **ExtUseSidecarsForFileTagging** can be used for switching between using the file rename method and using sidecar files for saving the tagging information.
 
-    window.ExtUseSidecarsForFileTagging = false;
+```js
+window.ExtUseSidecarsForFileTagging = false;
+```
 
 Possible values are **true** and **false**.
 
@@ -64,13 +72,17 @@ If the parameter is specified then this setting could not be changed in the TagS
 
 The installation of TagSpaces Web and TagSpaces Web Pro, do not show a button leading to a privacy policy by default. An URL to a custom privacy policy can be configured with this setting:
 
-    window.ExtPrivacyURL = "https://tagspacesweb.yourdomain.com/privacy/"
+```js
+window.ExtPrivacyURL = "https://tagspacesweb.yourdomain.com/privacy/";
+```
 
 ### Custom imprint page URL
 
 The installation of TagSpaces Web and TagSpaces Web Pro, do not show a button leading to a imprint web page by default. An URL to a custom imprint page can be configured with this setting:
 
-    window.ExtImprintURL = "https://tagspacesweb.yourdomain.com/imprint/"
+```js
+window.ExtImprintURL = "https://tagspacesweb.yourdomain.com/imprint/";
+```
 
 ## Configuring custom locations
 
@@ -129,23 +141,29 @@ window.ExtLocations = [
 The editing of the locations can be disabled with the following property: **ExtLocationsReadOnly**
 
 :::tip
+
 This switch is not supported anymore. Now as soon as you have externally configured locations they are automatically read-only.
+
 :::
 
 ### Saving locations in the browser
 
 Turning on this property will force the app to store the configuration for the locations in the browser's local storage. In the desktop app this is enabled by default, but on the web based version it is turned off.
 
-    window.ExtSaveLocationsInBrowser = true
+```js
+window.ExtSaveLocationsInBrowser = true;
+```
 
 Possible values are **true** and **false**. Default value is **false**
 
 You might want to set this setting to true, if you want the location data, including the access and secret key for accessing S3 based locations is saved in the local storage of your browser. This way, you don't have to recreate the location every time you open the application.
 
-If you are using TagSpaces Web in a browser on your computer or mobile device, where only you have access, this shouldn't be a problem. Please keep in mind, anybody with access to your browser, can with some effort get access to the access keys. This of course is true also for the desktop version, where anybody who can start TagSpaces on your computer can see this information.
+If you are using TagSpaces Web in a browser on your computer or mobile device, where only you have access, this shouldn't be a problem. Please keep in mind, anybody with access to your browser, can with some effort get access to the access keys. This is of course true also for the desktop version, where anybody who can start TagSpaces on your computer can see this information.
 
-:::caution
-It is not recommended to use TagSpaces Web installations with `ExtSaveLocationsInBrowser = true` on public computers, since the location information will potentially stay there even after you close the browser.
+:::warning
+
+**Warning**: It is not recommended to use TagSpaces Web installations with `ExtSaveLocationsInBrowser = true` on public computers, since the location information will potentially stay there even after you close the browser.
+
 :::
 
 ## Configuring custom tag library
@@ -273,7 +291,9 @@ Some example map tile servers can be found in the [OpenStreetMap Wiki](https://w
 
 ## Configuring the format of the geo tags
 
-    window.ExtGeoTaggingFormat = 'pluscodes';
+```js
+window.ExtGeoTaggingFormat = "pluscodes";
+```
 
 Possible values: 'pluscodes', 'mgrs'
 
@@ -281,40 +301,52 @@ Possible values: 'pluscodes', 'mgrs'
 
 ### Show vertical panel on startup (deprecated)
 
-    window.ExtDefaultVerticalPanel = 'none';
+```js
+window.ExtDefaultVerticalPanel = "none";
+```
 
 Possible values: 'none', 'taglibrary', 'search', 'locations'
 
 ### Show advanced search (removed with version 5.4 )
 
-    window.ExtShowAdvancedSearch = true
+```js
+window.ExtShowAdvancedSearch = true;
+```
 
 Possible values: true, false
 Default value: true
 
 ### Show welcome panel
 
-    window.ExtShowWelcomePanel = true
+```js
+window.ExtShowWelcomePanel = true;
+```
 
 Possible values: true, false
 Default value: true
 
 ### Show smart tags
 
-    window.ExtShowSmartTags = true
+```js
+window.ExtShowSmartTags = true;
+```
 
 Possible values: true, false
 Default value: true
 
 ### Choose startup theme
 
-    window.ExtTheme = 'dark';
+```js
+window.ExtTheme = "dark";
+```
 
 Possible values: 'dark', 'light'
 
 ### Open app with predefined perspective
 
-    window.ExtDefaultPerspective = 'gallery';
+```js
+window.ExtDefaultPerspective = "gallery";
+```
 
 Possible values as of version 3.3.x are 'default', 'gallery', 'mapique'
 
@@ -322,7 +354,9 @@ Possible values as of version 3.3.x are 'default', 'gallery', 'mapique'
 
 ### Set custom light color for the light theme
 
-    window.ExtLightThemeLightColor = '#dcf3ec'
+```js
+window.ExtLightThemeLightColor = "#dcf3ec";
+```
 
 Possible value: any css color
 
@@ -330,7 +364,9 @@ Default value: <span style={{color: '#dcf3ec'}}>'#dcf3ec'</span>
 
 ### Set custom main color for the light theme
 
-    window.ExtLightThemeLightColor = '#1dd19f'
+```js
+window.ExtLightThemeLightColor = "#1dd19f";
+```
 
 Possible value: any css color
 
@@ -338,7 +374,9 @@ Default value: <span style={{color: '#1dd19f'}}>'#1dd19f'</span>
 
 ### Set custom light color for the dark theme
 
-    window.ExtDarkThemeLightColor = '#56454e'
+```js
+window.ExtDarkThemeLightColor = "#56454e";
+```
 
 Possible value: any css color
 
@@ -346,15 +384,19 @@ Default value: <span style={{color: '#56454e'}}>'#56454e'</span>
 
 ### Set custom main color for the dark theme
 
-    window.ExtDarkThemeMainColor = '#ff9abe'
+```js
+window.ExtDarkThemeMainColor = "#ff9abe";
+```
 
 Possible value: any css color
 
 Default value: <span style={{color: '#ff9abe'}}>'#ff9abe'</span>
 
-### Set custom sidebar color (obsolete since v4)
+{/* ### Set custom sidebar color (obsolete since v4)
 
-    window.ExtSidebarColor = '#2C001E'
+```js
+window.ExtSidebarColor = "#2C001E";
+```
 
 Possible value: any css color
 
@@ -362,11 +404,13 @@ Default value: <span style={{color: '#2C001E'}}>'#2C001E'</span>
 
 ### Set custom sidebar selection color (obsolete since v4)
 
-    window.ExtSidebarSelectionColor = '#880E4F'
+```js
+window.ExtSidebarSelectionColor = "#880E4F";
+```
 
 Possible value: any css color
 
-Default value: <span style={{color: '#880E4F'}}>'#880E4F'</span>
+Default value: <span style={{color: '#880E4F'}}>'#880E4F'</span> */}
 
 ## Modifying packages
 
