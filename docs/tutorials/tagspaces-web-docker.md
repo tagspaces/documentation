@@ -7,7 +7,7 @@ tags: [tutorial]
 
 Here you will find information about using **TagSpaces Lite Web** and **TagSpaces Pro Web** as Docker containers. The containers are lightweight based on the alpine linux and using nginx as web server.
 
-## Get Docker
+## Get Docker {#getdocker}
 
 Install Docker for your operating system: https://docs.docker.com/get-docker/
 

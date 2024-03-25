@@ -41,7 +41,7 @@ module.exports = {
   themeConfig: {
     navbar: {
       // title: "TagSpaces Docs",
-      hideOnScroll: false,
+      hideOnScroll: true,
       logo: {
         alt: "TagSpaces Logo",
         src: "img/tagspaces-docs-logo.svg",
