@@ -7,11 +7,6 @@
 
 @import url("/css/ubuntu-font.css");
 
-body {
-  font-family: "Ubuntu", Geneva, Arial, Helvetica, sans-serif;
-  font-size: 12pt;
-}
-
 /* You can override the default Infima variables here. */
 :root {
   --ifm-color-primary: #25c2a0;
