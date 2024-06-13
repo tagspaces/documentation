@@ -217,7 +217,7 @@ const config = {
     {
       src: "https://plausible.io/js/plausible.js",
       "data-domain": "docs.tagspaces.org",
-      async: true,
+      // async: true,
       defer: true,
     },
   ],
