@@ -52,7 +52,7 @@ window.ExtDisplayMode = "mobile";
 
 Possible values are **'mobile'** and **'desktop'**.
 
-## Setting the file tagging mode of the app
+## Specifying the file tagging mode in the app
 
 The property **ExtUseSidecarsForFileTagging** can be used for switching between using the file rename method and using sidecar files for saving the tagging information.
 
@@ -65,6 +65,16 @@ Possible values are **true** and **false**.
 :::tip
 If the parameter is specified then this setting could not be changed in the TagSpaces settings dialog anymore. The user can only see which file tagging method is activated (renaming files or using sidecar files)
 :::
+
+## Specifying the location of the tags in the filename
+
+The property **ExtFilenameTagPlacedAtEnd** can be used to switching between placing the tags in the beginning of the filename or in the end. For example: `[tag1 tag2] filename.ext` vs. `filename [tag1 tag2].ext`. 
+
+```js
+window.ExtFilenameTagPlacedAtEnd = true;
+```
+
+Possible values are **true** and **false**. The default value is **true**.
 
 ## Configure custom URLs
 
