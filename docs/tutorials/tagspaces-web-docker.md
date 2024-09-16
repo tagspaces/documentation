@@ -11,7 +11,9 @@ Here you will find information about using **TagSpaces Lite Web** and **TagSpace
 
 Install Docker for your operating system from https://docs.docker.com/get-docker/ .
 
-## Get TagSpaces Lite docker image {#tagspacesimage}
+## Using TagSpaces Lite Web with Docker {#tagspaces-lite-web-docker}
+
+### Get TagSpaces Lite docker image {#tagspaces-image}
 
 You can download the latest available TagSpaces docker image from the [hub.docker.com](https://hub.docker.com/r/tagspaces/tagspaces-lite-web) or from directly from the Docker Desktop app:
 
@@ -25,7 +27,7 @@ Alternatively you can use the following command in your terminal:
 docker pull tagspaces/tagspaces-lite-web
 ```
 
-## Run the image
+### Run the image
 
 Once you have the image locally you can run in Docker Desktop app:
 
@@ -41,23 +43,74 @@ docker run -dp 127.0.0.1:9000:80 tagspaces-lite-web:6.0.0
 
 `9000` is the port on your local machine, where the TagSpaces Web app will be accessible.
 
-## Testing in the browser
+### Testing in the browser
 
 If everything went well, open your browser click http://localhost:9000 or http://127.0.0.1:9000 and you should see TagSpaces Web in your browser.
 
 ![](tagspaces-web-docker/tagspaces-web-first-start.png)
 
+## Using TagSpaces Pro Web with Docker {#tagspaces-pro-web-docker}
+
+### Download TagSpaces Pro Web package
+
+Customer who have bought TagSpaces Pro Wev can download the web package from the links in the purchase confirmation email.
+
+### Unzip the package
+
+Use the program of your choice to unpack the zipped package. Alternatively on Mac and Linux you can use the following command in the terminal.
+
+```
+unzip tagspaces-web-pro.zip
+```
+
+This will create a folder called `web` in your current folder (e.g. /Users/username/Downloads).
+
+### Creating the container
+
+Get the _tagspaces-lite-web_ docker image as described [here](#tagspaces-image).
+
+For the next step you have to use the Docker Desktop app and create a new container from the tagspaces-lite-web image by clicking run in the image area.
+
+![Run the tagspaces docker image for the first time](tagspaces-web-docker/running-tagspaces-image.png)
+
+### Configuring the container
+
+In the "Run a new container" dialog, you have to open the optional settings and configure the following options:
+
+- **Container name** - The name of the container, should be something like "tagspaces-pro-web".
+- **Port** - a port on which the app will be accessible on your computer, should be different from the port selected for the lite version.
+- **Volumes**
+  - **Host path** - the complete path, where you have unzipped the pro web package (e.g. /Users/username/Downloads/web)
+  - **Container path** - should be `/usr/share/nginx/html`
+
+![](tagspaces-web-docker/configuring-pro-container.png)
+
+### Testing in the browser
+
+After running the container and opening [localhost:9100](http://localhost:9100) in your browser, the TagSpaces Pro Web should be loaded.
+![](tagspaces-web-docker/tagspaces-pro-web-first-start.png)
+
 ## Enable location information to be stored in the browser
 
-By default TagSpaces web do not save the location information in the browser. This is done in order to prevent accidentally leaving the sensitive data for accessing S3 object on an extraneous browser.
+By default TagSpaces web do not save the location information in the browser. This is done in order to prevent accidentally leaving the sensitive data for accessing S3 object on an extraneous browsers.
 
 ![Adjusting extconfig.js to enable saving in browser's local storage](tagspaces-web-docker/adjust-extconfigjs.png)
 
 Finally restart the container. Now the location configuration will be saved in the browser and will be available after reloading the page with the app.
 
+## Connect various S3 object storages as locations
+
+Both web versions of TagSpaces can connect currently only S3 object storage as location. Luckily there are countless provider for S3 compatible object storage. The following links are pointing to tutorials for connecting TagSpaces with some of these services and products:
+
+- [AWS S3](/tutorials/s3-bucket-locations) - Cloud service
+- [Wasabi](/tutorials/tagspaces-web-wasabi) - Cloud service
+- [S3Proxy](/tutorials/folders-as-objectstorage-with-s3proxy) - for self hosting
+- [Minio](/tutorials/setup-minio-bucket-nas) - for self hosting
+- Cloudflace R2 - Cloud service
+
 ## Adding basic auth
 
-If you do not want your TagSpaces installation to be accessible from everyone, you have to secure it. The easiest way is to add a basic auth in front of it. The next steps will put the application including the extconfig.js file behind an authentication dialog.
+If you do not want your TagSpaces installation to be accessible from everyone, you have to add an authentication for it. The easiest way is to do so is to configure a basic auth. The next steps will describe how to put the application including the extconfig.js file behind an authentication dialog.
 
 :::warning
 Making the [configuration file (extconfig.js)](/dev/external-config) inaccessible for unauthorized access is crucial, if it is used for storing access keys for connecting to location on S3 object storage.
@@ -104,26 +157,21 @@ The file is located here: /etc/nginx/conf.d/default.conf
 
 After saving the changes, restarting the container and reloading the application in the browser an authentication dialog will be displayed. Here you can log-in with the credentials created in the previous steps.
 
-![Basic auth dialog in the Chrome browser](tagspaces-web-docker//basic-auth-browser.png)
+![Basic auth dialog in the Chrome browser](tagspaces-web-docker/basic-auth-browser.png)
 
-## Using TagSpaces Pro with Docker {#tagspacesProWebDocker}
-
-### Add TagSpaces custom configuration
+## Add TagSpaces custom configuration
 
 TagSpaces can be partially configured with an external [configuration file](/dev/external-config). It should be called `extconfig.js` and placed in the root folder of the application.
+
+The configuration file can include your locations or a custom tag library.
+
+The easiest way to add the file to the container is by copying it directly on the right place, with the following command:
 
 ```
 sudo docker cp ./extconfig.js tagspaces-lite:/usr/share/nginx/html/
 ```
 
 ## Further Options
-
-### Connecting various S3 object storages as locations
-
-- [AWS S3](/tutorials/s3-bucket-locations)
-- [Wasabi](/tutorials/tagspaces-web-wasabi)
-- [S3Proxy](/tutorials/folders-as-objectstorage-with-s3proxy)
-- [Minio](/tutorials/setup-minio-bucket-nas)
 
 ### Installing self-signed SSL certificate
 
@@ -140,27 +188,3 @@ A good tutorial for Ubuntu and Apache is this one: [How to Set up Let's Encrypt 
 ### Renew the SSL certificate
 
 TBD
-
-<!--
-## Alternatively: Build Your Own Image
-
-### Download TagSpaces Lite Web
-
-For getting the free web version of TagSpaces, go to the download [page](https://www.tagspaces.org/downloads/) and click on the `package.zip`.
-
-### Download TagSpaces Pro Web
-
-For the PRO web version, open the purchase confirmation email and download the web version from there.
-
-### Build the image
-
-Download the TagSpaces' `Dockerfile` from [GitHub](https://raw.githubusercontent.com/tagspaces/tagspaces/develop/docker/Dockerfile).
-
-Place the download ZIP of TagSpaces Lite or Pro in the same folder where your TagSpaces' `Dockerfile` is located, rename it to `tagspaces-web.zip` and run:
-
-```
-docker build -t tagspaces-lite-web:5.4.4 .
-```
-
-The name `tagspaces-lite-web` after the -t switch can be changed to anything else, for example, if you are building a docker container for the PRO version you can choose `tagspaces-pro-web`. The version number at the end should correspond the version of TagSpaces in the ZIP file. It is optional but helps if you have many TagSpaces containers.
--->
