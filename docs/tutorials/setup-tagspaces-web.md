@@ -65,7 +65,7 @@ It is highly recommended to use HTTPS for connection to your TagSpaces installat
 
 :::tip
 **Use static hosting**: In order to reduce the attack vectors it is recommended to configure your web server to deliver only static content by disabling the support of PHP, Perl, ASP.Net, Java and other similar server side scripting language and frameworks
-:::tip
+:::
 
 ## Setup Basic Access Authentication
 

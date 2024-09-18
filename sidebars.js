@@ -32,11 +32,9 @@ const sidebars = {
           label: "Running in portable mode",
           href: "/installation#running-in-portable-mode",
         },
-        {
-          type: "link",
-          label: "Install the Android app",
-          href: "/installation#installation-on-android",
-        },
+        "tutorials/tagspaces-web-docker",
+        "tutorials/tagspaces-web-cloudflare",
+        "tutorials/setup-tagspaces-web",
         {
           type: "link",
           label: "Install the Firefox extension",
@@ -47,9 +45,11 @@ const sidebars = {
           label: "Install the Chrome extension",
           href: "/installation#installing-the-chrome-browser-extension",
         },
-        "tutorials/setup-tagspaces-web",
-        "tutorials/tagspaces-web-cloudflare",
-        "tutorials/tagspaces-web-docker",
+        {
+          type: "link",
+          label: "Install the Android app",
+          href: "/installation#installation-on-android",
+        },
       ],
     },
     {
