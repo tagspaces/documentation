@@ -108,7 +108,7 @@ If everything went well you should see the extconfig under this URL: http://loca
 ### Clear local storage of the browser
 
 :::warning
-After enabling this feature, and save location data with access keys to s3 buckets in a browsers not used only by you (e.g. Internet Cafes, colleagues PC ...), please make sure to clean the local storage of the browser once you leave this browser, otherwise persons using the browser will get access to these buckets.
+After enabling this feature, and save location data with access keys to s3 buckets in a browsers not used only by you (e.g. in an Internet café or on PC of a colleague ...), please make sure to clean the local storage of the browser once you leave this browser, otherwise persons using this browser after you will get access to these buckets.
 :::
 
 Step to clear the local storage for the TagSpaces web app in the Chrome browser.
