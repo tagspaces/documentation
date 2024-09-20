@@ -28,7 +28,7 @@ The following video will present some of the features:
     showCaption
   />
 
-> **TIP**: Just type `/` on a new line to get a menu showing all available markdown elements such as headings, bullet lists, images, quotes or tables.
+<!-- > **TIP**: Just type `/` on a new line to get a menu showing all available markdown elements such as headings, bullet lists, images, quotes or tables. -->
 
 ### Mindmap
 

@@ -97,7 +97,29 @@ By default, TagSpaces Web does not store location information in the browser to 
 
 ![Adjust extconfig.js to enable local storage](tagspaces-web-docker/adjust-extconfigjs.png)
 
-Restart the container to save the configuration, and the location data will persist after reloading the page.
+If the file extconfig.js does not exist, rename `extconfig.tmpl.js` to `extconfig.js` in the container.
+
+Reload the application in your browser and now on your location data will persisted in the local storage of your browser.
+
+If everything went well you should see the extconfig under this URL: http://localhost:9000/extconfig.js in your browser.
+
+![Extconfig.js in your browser](tagspaces-web-docker/extconfig-js-browser.png)
+
+### Clear local storage of the browser
+
+:::warning
+After enabling this feature, and save location data with access keys to s3 buckets in a browsers not used only by you (e.g. Internet Cafes, colleagues PC ...), please make sure to clean the local storage of the browser once you leave this browser, otherwise persons using the browser will get access to these buckets.
+:::
+
+Step to clear the local storage for the TagSpaces web app in the Chrome browser.
+
+1. Open develop's mode (e.g. with the F12 key)
+2. Navigate to tab _Application_
+3. Click the _Clear site data_ button
+
+![Clean local storage for TagSpaces web app](tagspaces-web-docker/clean-local-storage-chrome.png)
+
+In other browsers the steps are similar.
 
 ## Connect various S3 object storages as locations
 
