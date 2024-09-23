@@ -91,19 +91,23 @@ After running the container, open [localhost:9100](http://localhost:9100) in you
 
 ![TagSpaces Pro Web first start](tagspaces-web-docker/tagspaces-pro-web-first-start.png)
 
-## Enable location information to be stored in the browser
+## Enable location configuration data to be stored in the browser
 
 By default, TagSpaces Web does not store location information in the browser to avoid leaving sensitive data in external browsers.
 
-![Adjust extconfig.js to enable local storage](tagspaces-web-docker/adjust-extconfigjs.png)
+In order to enable storing the location data in the browser, you have to edit the `extconfig.js` which is located in `/usr/share/nginx/html` and uncomment the line shown in the next screenshot.
 
-If the file extconfig.js does not exist, rename `extconfig.tmpl.js` to `extconfig.js` in the container.
+![Adjust extconfig.js to enable local storage](tagspaces-web-docker/adjust-extconfigjs.png)
 
 Reload the application in your browser and now on your location data will persisted in the local storage of your browser.
 
 If everything went well you should see the extconfig under this URL: http://localhost:9000/extconfig.js in your browser.
 
 ![Extconfig.js in your browser](tagspaces-web-docker/extconfig-js-browser.png)
+
+:::tip
+After exchanging the docker image with a newer version, please make sure to enable this setting before loading the updated version in your browser, otherwise you will loose the stored location data in the browser.
+:::
 
 ### Clear local storage of the browser
 
