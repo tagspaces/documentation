@@ -109,8 +109,8 @@ Files can be imported also by simple dragging one or more files from your deskto
 
 <CenteredVideo
     caption="Importing files with drag and drop from the desktop"
-    src="/media/import-files-with-dnd.mp4"
-    posterUrl="/media/import-files-with-dnd.jpg"
+    src="/media/videos/file-drag-and-drop.mp4"
+    posterUrl="/media/videos/file-drag-and-drop.jpg"
     maxWidth="100%"
     autoPlay
     showCaption
