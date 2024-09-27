@@ -2,155 +2,139 @@
 title: Introduction
 ---
 
-# Get started - user interface areas
+# Get Started - User Interface Areas
 
 import { ProFeature, CenteredImage } from '@site/src/components/CommonBlocks';
 
-TagSpaces opens up as a single-window application that tries to make the best use of any space available, be it large wide screens, or small mobile displays. The user interface, devised along the guidelines of Google's material design specifications, is very adaptable. The application will look the same, regardless of the operating system, or platform it runs under.
+TagSpaces opens as a single-window application designed to maximize space usage, whether on large screens or small mobile displays. Its user interface follows Google's Material Design guidelines, making it adaptable and consistent across operating systems and platforms.
 
-<!-- ![Start screen](/media/home-screen.png) -->
+This streamlined experience ensures ease of use across platforms, so once you're familiar with the features, you can use them anywhere. The image below shows a typical start screen, with a list of available locations on the left and the content of the currently opened folder in the center, using the default perspective.
 
-This streamlined experience offers familiarity and an ease to use the application across platforms, while you will need to familiarize yourself with its extensive features only once. The following screen shows a typical start screen of TagSpaces with the list of the available locations on left, and content of the currently opened folder with the default perspective in center of the application.
+![Explanation of the application's user interface areas](/media/main-ui-areas.svg)
 
-![explanation of the applications user interface areas](/media/main-ui-areas.svg)
+The application's user interface consists of the following main areas:
 
-The user interface of the application consists of the following main areas:
-
-- **(1) [Left Drawer](#left-drawer)** - Here you can open the [location manager](/ui/locations) or the [tag library](/ui/taglibrary) and access other important functionalities of the app like the [settings](/ui/settings).
-- **(2) [Navigation and Search](#navigation-and-search)** - Here you can open the search, switch the current location or navigate to a parent folders.
-- **(3) [Browsing area](/browsing-files)** - This section is occupied by the so called **perspective** used for browsing files and folders.
-- **(4) [Common actions area](#preview-area)** - Here you can access common actions for the currently opened file or folder.
-- **(5) [File](/files#file-properties) / [Folder](/folders#folder-properties) properties** - Here you will find the properties of the currently opened file or folder.
-- **(6) [File Preview](#file-preview)** - In this area you can preview and/or edit the current file.
+1. **[Left Drawer](#left-drawer)** - Open the [location manager](/ui/locations) or [tag library](/ui/taglibrary) and access other important app functionalities like [settings](/ui/settings).
+2. **[Navigation and Search](#navigation-and-search)** - Use this area to search, switch locations, or navigate to parent folders.
+3. **[Browsing Area](/browsing-files)** - The central section for browsing files and folders using various **perspectives**.
+4. **[Common Actions Area](#preview-area)** - Access actions for the currently opened file or folder.
+5. **[File](/files#file-properties) / [Folder](/folders#folder-properties) Properties** - View the properties of the opened file or folder.
+6. **[File Preview](#file-preview)** - Preview and/or edit the current file here.
 
 ## Left Drawer
 
-The main drawer of the app is divided in three sub areas.
+The main drawer is divided into three sub-areas:
 
-The one located at the top shows the logo of the app and its current version. Clicking on the app logo will open the **About dialog** of the app, where you can find details about the licensing or check for new app versions. Right beneath the logo you find a bar containing two buttons. The first one called **Create** will open a dialog where you can [create files](/creating-files) in TagSpaces. The second button "New Window" will open a new TagSpaces [window or tab](#multiple-windows-and-tabs).
+**Top Area**: Displays the app's logo and version. Clicking the logo opens the **About dialog**, where you can check licensing details and new versions. Below the logo, the **Create** button opens a dialog to [create files](/creating-files), and the **New Window** button opens a new TagSpaces [window or tab](#multiple-windows-and-tabs).
+The bottom part of the drawer contains six buttons. The **gear icon (1)** on the left opens the [settings](/ui/settings). The rightmost button **(6)** toggles between **light** and **dark** [themes](#dark-mode-and-themes). In the [TagSpaces Enterprise](https://www.tagspaces.org/products/enterprise/) version, this button opens the logged user's properties.
 
-The area at button contains six buttons. The button with the gear icon **(1)** located at the left will open the app [settings](/ui/settings). With the button **(6)** at the most right you can switch between the **light** and **dark** [themes](#dark-mode-and-themes) of the app. If you are using the [TagSpaces Enterprise](https://www.tagspaces.org/products/enterprise/) product this button will be exchanged with a button, which will open the properties of the currently logged user.
+**Radio Buttons**: Switch between different areas:
 
-![drawer toolbar](/media/left-drawer-toolbar.svg)
+- **(2) [Location Manager](/ui/locations)** - Manage your locations here.
+- **(3) [Tag Library](/ui/taglibrary)** - Organize tags into groups.
+- **(4) [Quick Access](/quick-access)** - Access [stored searches](/search#stored-search-queries), [bookmarks](/bookmarks), and recently used files and folders.
+- **(5) Help & Feedback** - Access help, suggest features, or contact support.
 
-The with the four so called radio buttons in the middle, you can switch between the following areas in main part of the drawer:
-
-- **(2) [Location Manager](/ui/locations)** - this is the place for managing your locations
-- **(3) [Tag Library](/ui/taglibrary)** - the library contains all your tags organized in tag groups
-- **(4) [Quick Access](/quick-access)** - here you will find [stored searches](/search#stored-search-queries), [bookmarks](/bookmarks) and lists of recently used files and folders.
-- **(5) Help & feedback** - here you can access the application help, suggest a feature or contact us.
+![Drawer toolbar](/media/left-drawer-toolbar.svg)
 
 ## Navigation and Search
 
-The file browsing area normally takes up he majority of the user interface. This is where all files from the currently active folder are displayed, either as a list, grid, or kanban board, depending on the active perspective. To learn more about the all file browsing features, navigate to the [perspective section](/browsing-files).
+The file browsing area displays files from the active folder in various views (list, grid, or kanban), depending on the active perspective. Learn more in the [perspective section](/browsing-files).
 
 ![Screenshot showing the file browsing area](/media/browsing-area.svg)
 
 - **(1)** - Toggles the [left drawer](#left-drawer).
-- **(2)** - Navigates back to the last opened file, folder or location, this feature is still in **beta** status.
-- **(3)** - Reverts the navigation step of the back button.
-- **(4)** - Opens the [search](/search) mode.
-- **(5)** - Shows the all the parent folders as button up the location root folder. A click on a folder button, will navigate to it.
-- **(6)** - Shows the name of the current folder, clicking on it will open the [folder menu](#folder-menu).
-- **(7)** - Here you can switch [perspective](/browsing-files) of the current folder
+- **(2)** - Navigates back to the last opened file, folder, or location (beta).
+- **(3)** - Reverts the previous navigation step.
+- **(4)** - Opens [search](/search).
+- **(5)** - Displays parent folders as buttons, enabling navigation.
+- **(6)** - Displays the current folder's name, which opens the [folder menu](#folder-menu).
+- **(7)** - Switches the [perspective](/browsing-files) of the current folder.
 
 :::tip
-If you are in a cloud based location, the icon of the button of the folder in **(5)** will be a **cloud**, in other cases the icon will be a **briefcase**.
+In cloud-based locations, the folder icon in **(5)** will be a **cloud**. Otherwise, it will be a **briefcase**.
 :::
 
-### Folder menu
+### Folder Menu
 
-The menu for the current folder contains the following items:
+The folder menu includes options such as:
 
-- **Reload Folder** - Reloads the content of the current folder
-- **Rename Folder** - Opens a dialog where you can rename the current folder
-- **Delete Folder** - Opens a dialog where you can confirm the deletion of the folder
-- **Show in File Manager** - Opens the folder in the default file manager of the operating system
-- **New File** - Opens the dialog for [creating new](/editing-files#creating-files) files or notes
-- **New Subfolder** - Opens the folder create dialog, where you can create a new subfolder
-- **Add Files** - Opens a file chooser where you can select a file from your local files system, which will be added to your current folder in TagSpaces.
-- **Import macOS tags** - This option is visible only on the native macOS app, selecting it will to extract native macOS tags and them as TagSpaces tags.
-- **Grid Perspective** - will present the current folder in the [Grid](/perspectives/grid) perspective
-- **List Perspective** - will present the current folder in the [List](/perspectives/list) perspective
-- **Gallery Perspective** - will present the current folder in the [Gallery](/perspectives/gallery) perspective
-- **Mapique Perspective** - will present the current folder in the [Mapique](/perspectives/mapique) perspective
-- **Kanban Perspective** - will present the current folder in the [Kanban](/perspectives/kanban) perspective
-- **Folder Properties** - Opens the [properties](/folders#folder-properties) of the current folder
+- Reload, rename, or delete the folder.
+- Open the folder in the operating system's file manager.
+- Create new files, subfolders, or add files.
+- Import macOS tags (only on macOS desktop app).
+- Switch between different perspectives: [Grid](/perspectives/grid), [List](/perspectives/list), [Gallery](/perspectives/gallery), [Mapique](/perspectives/mapique), [Kanban](/perspectives/kanban).
+- Access folder [properties](/folders#folder-properties).
 
 ## Preview Area
 
-When a file is opened, the main UI area splits into two, the rightmost page becoming the **Preview area**. TagSpaces is capable of natively displaying different file types, from markdown, through HTML and docx, to PDF or various image files. To learn more about all the viewable and editable files, and TagSpaces' full file handling capacity, navigate to the [Previewing Files](/viewing-files) and [Editing Files](/editing-files) sections respectively.
-
-The following screenshot show a markdown file with the title _diagrams_ **(1)**. The file is not bookmarked and has one tag. The preview area can be closed by clicking the button with **X** icon located in section **(2)**.
+When a file is opened, the main UI splits into two areas, with the right side becoming the **Preview Area**. TagSpaces supports displaying various file types, from markdown to PDFs and images. For more details, see [Previewing Files](/viewing-files) and [Editing Files](/editing-files).
 
 ![Area for previewing and editing files](/media/preview-area.svg)
 
-A short explanation of the areas visible in the previous screenshot will follow:
-
-- **(1) Title area** - here you will find the title and the extension of the currently opened file or folder. You can also [bookmark](/bookmarks) it and see if it has been tagged.
-- **(2) Edit & Close** - here you can close the currently opened file or folder. TagSpaces [supports editing](/editing-files) of some text file types and here you can start the edit mode and toggle the **auto-save** functionality.
-- **(3) [File](/files#file-toolbar) / [Folder](/folders#folder-toolbar) Toolbar** - containing buttons for common action for the currently opened file or folder
-- **(4) Navigation** - these buttons are shown only on files and will navigate to the next or the previous file in the current folder or search results
-- **(5) Preview & edit area** - this is the place where you can see the preview of currently opened file. Here you can also [edit](/editing-files) some of the supported text file types.
+- **(1) Title Area** - Displays the file's name and extension, with options to [bookmark](/bookmarks) and tag it.
+- **(2) Edit & Close** - Close the file or folder, enable edit mode, and toggle **auto-save** for text files.
+- **(3) [File](/files#file-toolbar) / [Folder](/folders#folder-toolbar) Toolbar** - Contains actions for the opened file or folder.
+- **(4) Navigation** - Navigate between files in the current folder or search results.
+- **(5) Preview & Edit Area** - Displays the file preview and offers editing options for supported file types.
 
 ## Dark Mode and Themes
 
-The themes can be changed from the [tab general](/ui/settings#general) of the settings.
+Themes can be changed in the [general settings](/ui/settings#general).
 
-![Picture showing the app in the light and the dark theme](/media/themes-switch.jpg)
+![Light and Dark Themes](/media/themes-switch.avif)
 
 ## Multiple Windows and Tabs
 
-You can use TagSpaces in more than one window or tab in the web versions. You can a location, a folder and a file in a new window/tab or you can simple open a further new instance of the application. The following screenshot shows some of the places where you can open a new window.
+TagSpaces supports multiple windows or tabs in the web versions. You can open locations, folders, or files in new windows/tabs, or start a new instance of the application.
 
-![Ways to open new window or tab](/media/open-new-window.svg)
-
-:::caution
-All the instances share the same local storage. So if you are making changes to the application's settings, the last window which saves settings, locations, tags to the local storage will win.
-:::
+![Opening a location in a new window](/media/open-new-window.avif)
 
 ## Scalable User Interface
 
-The user interface of the application scalable, this allows you to adjust the zooming factor according to your preference, screen resolution or display size. In the desktop you can access the zoom functionality from the **View** in the **Main Menu**. Here you will find zoom in, zoom out functionality and also the possibility to restore the initial zoom factor with **Actual size** menu item.
+TagSpaces' UI is scalable, allowing you to adjust the zoom factor according to your screen. Access the zoom options from the **View** menu. Options include zoom in, zoom out, and resetting the zoom to its default.
 
-In the following screenshot you will see the menu options from the **View** sub menu and also TagSpaces with zoomed in interface.
+![Zoom menu options](/media/zoomable-ui-menu.avif)
 
-![Zoom menu items](/media/zoomable-ui-menu.png)
+- **Zoomed In Interface**:
 
-And here you will see TagSpaces with zoomed out interface.
-
-![Zoomed out interface](/media/zoomed-out.png)
+![Zoomed In Interface](/media/zoomed-out.avif)
 
 :::tip
-If the application is running in a browser, please use the integrated in the browser zooming capabilities.
+In a browser, use the built-in zoom functionality.
 :::
 
-## Full screen mode
+## Full Screen Mode
 
-The desktop application can run in a full screen mode, which can be toggled by pressing the `F11` key, or selecting _View -> Toggle Fullscreen_ from the **Main Menu.**
+The desktop app supports full screen mode, which can be toggled by pressing `F11` or selecting _View -> Toggle Fullscreen_ from the **Main Menu**.
 
-![Toggling the fullscreen mode](/media/toggle_fullscreen.png)
+![Toggle Fullscreen](/media/toggle_fullscreen.avif)
 
 :::tip
-If the application is running in a browser, the integrated full screen capabilities of the browser can be used.
+In a browser, use the browser's full screen capabilities.
 :::
 
 ## Tray Menu
 
-On Windows, macOS and Linux starting the desktop application will load also a so called tray menu, which is integrated in the operating system.
+On Windows, macOS, and Linux, starting the desktop app loads a **tray menu** integrated into the operating system.
 
-![Tray menu on Linux](/media/tray-menu-linux.png)
+<CenteredImage
+    caption="Tray Menu on macOS"
+    src="/media/tray-menu-macos.avif"
+    showCaption
+    maxWidth="300px"
+  />
 
-This menu offers the following functionalities:
+The tray menu offers the following functionalities:
 
-- **Show TagSpaces** `Ctrl+Shift+W` / `Cmd+Shift+W` - Brings the app on top if it is minimized or behind other windows.
-- **Show Search** `Ctrl+Shift+F` / `Cmd+Shift+F` - Brings the app on top and shows the search input field and brings the cursor on it, so you can enter your search query and confirm it with `Enter`.
-- **New File / Note** `Ctrl+Shift+N` / `Cmd+Shift+N` - Brings the app on top and shows the dialog for creating new files.
-- **Open next file** `Ctrl+Shift+W` / `Cmd+Shift+W` - Opens the next file (start its playback if audio/video file) in the current perspective or search results.
-- **Open previous file** `Ctrl+Shift+W` / `Cmd+Shift+W` - Opens the previous file (start its playback if audio/video file) in the current perspective or search results.
-- **Pause / Resume Playback** `Ctrl+Shift+P` / `Cmd+Shift+P` - Pause the currently played audio or video file, resumes the playback if it was paused.
-- **Quit TagSpaces** - Quits the app.
+- **Show TagSpaces** - `Ctrl+Shift+W` / `Cmd+Shift+W`
+- **Show Search** - `Ctrl+Shift+F` / `Cmd+Shift+F`
+- **New File / Note** - `Ctrl+Shift+N` / `Cmd+Shift+N`
+- **Open Next File** - `Ctrl+Shift+D` / `Cmd+Shift+D`
+- **Open Previous File** - `Ctrl+Shift+P` / `Cmd+Shift+P`
+- **Pause/Resume Playback** - `Ctrl+Shift+P` / `Cmd+Shift+P`
+- **Quit TagSpaces** - `Ctrl+Q` / `Cmd+Q`
 
 :::tip
-The key combination described here are globally available, so you can use them even if the application is not visible or on focus. The global keys can be disabled in the [settings](/ui/settings#key-bindings)
+These key combinations are available globally and can be used even if TagSpaces is not in focus. They can be disabled in the [settings](/ui/settings#key-bindings).
 :::
