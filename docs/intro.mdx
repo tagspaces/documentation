@@ -5,53 +5,51 @@ title: User Documentation
 
 import VideoYT from '@site/src/components/VideoYT';
 
-# TagSpaces Documentation
+# User Documentation
 
-Welcome to the documentation of the TagSpaces products!
+Welcome to the official documentation for **TagSpaces**! 
 
-## What is TagSpaces ?
+This guide will help you explore and understand the features, philosophy, and use cases of TagSpaces products.
 
-TagSpaces is an open source, cross-platform, no backend, no login, file manager, organizer and browser. It helps you organize your files, photos and other documents with tags on different platforms and/or devices, according to your own preferences and following your own logic, by using the same smart and friendly interface everywhere.
+## What is TagSpaces?
+
+**TagSpaces** is an open-source, cross-platform file manager, organizer, and browser, designed with a no-backend and no-login philosophy. It empowers you to organize files, photos, and documents using tags on various platforms and devices. With a consistent and user-friendly interface, TagSpaces allows you to organize files according to your personal logic and preferences.
 
 ![Start screen](/media/home-screen.png)
 
 ## Key Features
 
-- Platform independent and future-proof tagging for files and folders
-- Platform independent way for adding descriptions to files and folders
-- Integrated free text and tag search (AND, OR and NOT boolean operators)
-- Integrated viewers for many image, video, audio and document file formats
-- Integrated editors for HTML, text and markdown files
-- Support for user interface themes (e.g. dark mode)
-- Supporting thumbnail preview for many file types
+- Platform-independent and future-proof tagging for files and folders
+- Add descriptions to files and folders in a platform-independent way
+- Integrated free text and tag search (supports AND, OR, and NOT operators)
+- Viewers for a variety of image, video, audio, and document file formats
+- Editors for HTML, text, and markdown files
+- Support for user interface themes (including dark mode)
+- Thumbnail previews for numerous file types
 
 ## Philosophy
 
-- TagSpaces follows a no backend and no login philosophy
-- It is not a SaaS but a front-end application, where the files system or the object storage plays the role of a back-end.
-- The application is not Internet dependent, a pure offline use is possible
-- TagSpaces is not saving the meta information in a database -> no vendor locking, no lost information on database crashes or installations on a new computer
-- All the needed information is extracted by the time of use from your files and folders.
-- File system as a database
-- The supported tagging options makes a folder with tagged files self containing all the needed information, which useful by e.g. syncing
-- No database or vendor locking
-- Easy to synchronize between devices, just use TagSpaces with your Dropbox/NextCloud/Google Drive folder
-- Saving the tags in the filename enables you to use the search capabilities of your operating system
+- **No Backend, No Login:** TagSpaces follows a no-backend, no-login philosophy, meaning it works entirely offline without needing an internet connection.
+- **Local File System as a Backend:** TagSpaces is a front-end application that uses your file system (or object storage) as the backend.
+- **Database-Free:** Metadata is stored in your files and folders, preventing data loss in case of crashes, and eliminating vendor lock-in.
+- **Sync-Friendly:** Use cloud services like Dropbox, NextCloud, or Google Drive to easily synchronize tagged files between devices.
+- **Searchable:** Tags stored in filenames can be searched using your operating system's search functionality.
 
-## Product landscape
-
-- **[TagSpaces Lite Desktop](https://www.tagspaces.org/products/lite/)** - the main, community developed edition of TagSpaces as desktop application for Windows, Mac and Linux
-- **[TagSpaces Pro Desktop](https://www.tagspaces.org/products/pro/)** - extended solution based on the community version for advanced users
-- **[TagSpaces Pro Web](https://www.tagspaces.org/products/proweb/)** - a package for self hosting on your NAS or other web infrastructure connecting object storage
-- **[TagSpaces Pro Enterprise](https://www.tagspaces.org/products/enterprise/)** -
-- **[Web Clipper extension for Chrome, Firefox and Edge](https://www.tagspaces.org/products/webclipper/)** - a web clipper browser extension allowing the saving of whole webpages, webpage fragments and screenshot as local files
-- **[Android app](https://www.tagspaces.org/downloads/)** - a mobile app offering most of the features from the community desktop version on Android devices
+## Product Landscape
+TagSpaces offers several products to cater to different user needs:
+- **[TagSpaces Lite](https://www.tagspaces.org/products/lite/):** The community-developed edition of TagSpaces for Windows, macOS, and Linux.
+- **[TagSpaces Pro](https://www.tagspaces.org/products/pro/):** An extended solution with advanced features for power users.
+- **[TagSpaces Pro Web](https://www.tagspaces.org/products/proweb/):** A self-hosted package for managing files on web infrastructure with object storage support.
+- **[TagSpaces Custom](https://www.tagspaces.org/products/enterprise/):** Tailored for enterprise use.
+- **[Web Clipper Extension](https://www.tagspaces.org/products/webclipper/):** Available for Chrome, Firefox, and Edge, this extension allows you to save webpages, webpage fragments, and screenshots as local files.
+- **[Android App](https://www.tagspaces.org/downloads/):** A mobile app offering most of the desktop version's features on Android devices.
 
 ## Common Use Cases
 
+TagSpaces is suitable for various use cases:
 - Organizing files and folders
 - Desktop search
-- Note taking
+- Note-taking
 - Photo management
 - Bookmark management
 - Simple file manager
@@ -66,24 +64,24 @@ This short introductory video shows TagSpaces in action:
     title="General TagSpaces Introduction"
     posterUrl="/media/videoposters/linking-files-and-folders.jpg"
     height={550}
-  />
+/>
 
-### Youtube channel
+### YouTube Channel
 
-We have [YouTube channel](https://www.youtube.com/channel/UCzfSaeg-7mpt96UI97zwbfQ) where publish videos related to the application.
+We maintain a [YouTube channel](https://www.youtube.com/channel/UCzfSaeg-7mpt96UI97zwbfQ) where we publish videos related to TagSpaces.
 
 ## Technology Stack
 
-Front-end of the application is build with these technologies:
+The front-end of TagSpaces is built with:
 
-- JavaScript / Typescript / HTML / CSS
+- JavaScript / TypeScript / HTML / CSS
 - React / Redux / [MUI](https://mui.com/material-ui/)
 
-Native APIs for file access are based on the following projects:
+Native APIs for file access are based on:
 
-- Desktop versions for Windows, macOS and Linux based on [Electron](https://www.electronjs.org/)
-- Mobile versions for Android based on [Cordova](https://cordova.apache.org/)
-- Web versions for managing files in object storages based on [AWS SDK for JavaScript](https://aws.amazon.com/sdk-for-javascript/)
+- Desktop versions for Windows, macOS, and Linux, powered by [Electron](https://www.electronjs.org/)
+- Mobile versions for Android, powered by [Cordova](https://cordova.apache.org/)
+- Web versions for managing files in object storages, powered by [AWS SDK for JavaScript](https://aws.amazon.com/sdk-for-javascript/)
 
 ---
 
