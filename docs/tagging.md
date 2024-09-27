@@ -1,40 +1,53 @@
 ---
-title: Organizing files and folders with tags
+title: Organizing Files and Folders with Tags
 ---
 
 import { ProFeature, CenteredImage, CenteredVideo } from '@site/src/components/CommonBlocks';
 
-## Why tagging?
+## Why Tagging?
 
-Tagging and tags are a fresh approach to categorizing and grouping things. Tagging allows the user to label thing with their own words. They don’t need to conform to keywords or categories created by somebody else. Tagging allows you to describe what you’re seeing in your own words, to imbue the experience with your own meaning. Tagging saves your time, and can makes searching for a specific song, movie, book, document, note, or whatever you’re looking for, much easier and faster.
+Tagging is a versatile approach to organizing files and folders. Unlike predefined categories, tagging lets users label items with words that reflect their personal understanding. It enhances searching and helps categorize files like songs, books, documents, and more in a user-defined way. Tags are personal, providing the freedom to define and group files as you see fit.
 
-Tags are personal things. Tagging something is your emotional response and not simply a taxonomic decision. With using tags, you have the control to define things for yourself, and on the web -- not only for music, literature, games and movies, but also public websites, data repositories and consultations. Tagging is a new indirect way of control to express your mind and to name things your way -- you can call it a form of "freedom of speech", if you want to go that far. Tagging is a power to create your own genres in movies, music popular culture, or basically anywhere.
+Tagging is more than just organization; it's a way of expressing your thoughts and emotions. Instead of conforming to someone else's categories, you define what matters to you. Think of it as a form of personal expression or even a type of "freedom of speech."
 
-Key functionality in TagSpaces is the ability to add tags to files and folders. In comparison to similar product, **TagSpaces does not use a central database for storing the tags** but rather offers to alternative ways for saving this meta information, which are described in the following sections.
+One of the core functionalities in TagSpaces is the ability to add tags to files and folders. Unlike other products, **TagSpaces does not rely on a central database for storing tags**. Instead, it offers two alternative methods, which are described in the following sections.
 
-## File tagging
+## File Tagging
 
-TagSpaces support two approaches for tagging files: renaming files and using sidecar files. Both ways are can be used on any file types and can be used on all supported operating systems.
+TagSpaces supports two methods for tagging files: embedding tags in file names and using sidecar files. Both methods work on any file type and across all supported operating systems.
 
-![File tagging method in the settings](/media/settings-specify-file-tagging-method.svg)
+<CenteredImage src="/media/settings-specify-file-tagging-method.svg" caption="File tagging method in the settings" maxWidth="500px" />
 
-### Storing the tags in the file names
+### Storing Tags in File Names
 
-This approach uses the name of the file to save tagging information. As an example if you want to add the tags `vacation` and `alps` to a image named `IMG-2653.jpg`, the application will simply rename it to `IMG-2653[vacation alps].jpg`. File renaming is of course very controversial solution, with its own limitations (on some operating systems the file path length is limited to ca. 256 characters). Once embedded in the name of file, the tag stick there and can be removed only by file renaming. **This makes the tagging "durable" and portable**. The tags embedded in the name of a file "survives" synchronization across cloud platforms such as Dropbox and Google Drive and can be read by TagSpaces or any other file searching software on Windows, macOS, Linux or Android.
+This method embeds tags directly into the file name. For example, adding the tags `vacation` and `alps` to an image named `IMG-2653.jpg` will rename it to `IMG-2653[vacation alps].jpg`.
 
-![Filename tagging](/media/filename-tagging.png)
+**Advantages:**
 
-> **Note**: Drawback of this methods is the limiting in file name/path length in some operating systems. Windows for example is limiting the file path length to ca. 256 characters, which is in general enough but could be a limitation.
+- **Durable and Portable:** Tags persist across platforms like Dropbox and Google Drive.
+- **Compatibility:** Tags are visible and searchable using any file browsing software.
 
-### Storing the tags in a sidecar file
+**Drawbacks:**
 
-As alternative to saving the tags in the file names, TagSpaces offers saving this kind of data in a sidecar files located in a hidden `.ts` folder. The activation of this kind tagging for files, can be done in the settings of the application as shown in the following screenshot.
+- **File Path Length Limitations:** Some operating systems (like Windows) restrict the file path length to around 256 characters, which can limit how many tags you can add.
 
-:::info
-Please note that by default the `.ts` folder is hidden only on MacOS and Linux operating systems, on Windows folders with dot in front of their name are not hidden by default.
+<CenteredImage src="/media/filename-tagging.png" caption="Tags embedded in file names" />
+
+Once embedded in the name of file, the tag stick there and can be removed only by file renaming. **This makes the tagging "durable" and portable**. The tags embedded in the name of a file "survives" synchronization across cloud platforms such as Dropbox and Google Drive and can be read by TagSpaces or any other file searching software on Windows, macOS, Linux or Android.
+
+:::tip
+File name tagging may run into limitations due to file path length restrictions on certain operating systems like Windows.
 :::
 
-After the activation, the application will created for every tagged file an extra file having the same file name as the source file, but with a additional JSON extension. For example after tagging some files in some of your file locations you will have a similar file structure.
+### Storing Tags in Sidecar Files
+
+As an alternative to embedding tags in file names, TagSpaces allows storing tags in sidecar files within a hidden `.ts` folder. This can be activated in the settings for all locations or per location in the properties of every location.
+
+<!-- :::info
+Note: By default, `.ts` folders are hidden on macOS and Linux, but not on Windows.
+::: -->
+
+When tagging a file, TagSpaces will create a corresponding sidecar file with the same name as the source file but with a `.json` extension. For example:
 
 ```
 ~ location (with your files)
@@ -51,15 +64,23 @@ After the activation, the application will created for every tagged file an extr
 └── file4.docx
 ```
 
-The main advantage of this solution is that the name of the files is not changed after tagging and there is theoretically no limit in the number of tags you can add to a given file. If you move or rename tagged files in TagSpaces it will take care of the sidecar file, which will also be renamed or moved in the appropriate folder. But if you move or rename this file in an external file manager, you have to move or rename the sidecar files by hand. The same hold true for the deleting a file from an external application. It will not automatically delete the sidecar file in the `.ts` folder. These drawbacks makes the tagging with sidecars less robust and future proof.
+**Advantages:**
+
+- **File Integrity:** Tags are stored separately, preserving the original file name.
+- **Unlimited Tags:** There is theoretically no limit to the number of tags you can add.
+
+**Drawbacks:**
+
+- **Manual Maintenance:** If files are moved or renamed outside of TagSpaces, you must also move or rename the corresponding sidecar files manually.
+- **Synchronization Issues:** Hidden `.ts` folders may not sync with cloud services unless explicitly enabled.
 
 :::tip
-If you want to have the files located in the `.ts` folder synched with some cloud service such as Dropbox or Google Drive you have to enable the synching of hidden folders and files.
+To sync `.ts` folders with cloud services like Dropbox or Google Drive, enable the synchronization of hidden folders and files.
 :::
 
-## Folder tagging
+## Folder Tagging
 
-Tags added to folders in TagSpaces are save always in the co called sidecar file. The file is located in the **.ts** sub folder of any tagged folders and is called **tsm.js**
+Tags added to folders are always saved in sidecar files. The file is located in the `.ts` subfolder and is called `tsm.json`.
 
 ```
 ~ location (with your files)
@@ -74,55 +95,55 @@ Tags added to folders in TagSpaces are save always in the co called sidecar file
 ```
 
 :::tip
-If you want to have the files located in the `.ts` folder synched with some cloud service such as Dropbox or Google Drive you have to enable the synching of hidden folders and files.
+To sync `.ts` folders with cloud services like Dropbox or Google Drive, enable the synchronization of hidden folders and files.
 :::
 
-## Tag operations on many entries
+## Tag Operations on Multiple Entries
 
-In order to add or remove tags on many files or folders you have to select them first. This can be done in the default perspective, by holding the CTRL/CMD key and clicking on the entries with the left mouse button. In the list view of the default perspective you can use checkboxes located in front of the rows.
+To add or remove tags from multiple files or folders, first, select them by holding the CTRL/CMD key and clicking on the entries with the left mouse button. You can also use checkboxes in the list view.
 
-Once you are done with the selection you can right click on a selected and choose _Add / Remove Tags_ from the context menu which will appear. Alternatively you can click on the tag button from the toolbar of the default perspective. Both places are marked in the following screenshot.
+Once selected, right-click on the files and choose _Add / Remove Tags_ from the context menu, or click the tag button in the toolbar.
 
-![](/media/tagspaces-tagging-default-perspective.png)
+<CenteredImage src="/media/tagspaces-tagging-default-perspective.png" caption="Managing tags in the default perspective"/>
 
-This will open a popup dialog, that allows you to manage tags on the current file. If the multiple tags were selected the popup dialog will not display all tags from all files, but rather will allows you to specify tags by name, offering suggestions based on tags currently in the tag library.
+This will open a popup dialog for managing tags.
 
-![Dialog for tagging multiple files](/media/tagspaces-tagging-dialog.png)
+<CenteredImage src="/media/tagspaces-tagging-dialog.png" caption="Tagging multiple files"  maxWidth="500px"/>
 
-The options you have here are:
+The options in the dialog are:
 
-- **Clean all tags**, which will remove all tags form the selected files
-- **Remove tags** will remove the specified tags from the files
-- **Add tags** will add the specified tags to the selected files
+- **Clean all tags:** Removes all tags from the selected files.
+- **Remove tags:** Removes the specified tags. You have to manually enter the tags which you want to be remove from the selected files.
+- **Add tags:** Adds the specified tags to the selected files.
 
-### Add many tags at once in the tagging dialog
+### Adding Multiple Tags at Once
 
-It is possible to add many tags at once, separated by commas, in the dialog for tagging multiple files.
+You can add multiple tags at once by separating them with commas in the tagging dialog.
 
 <CenteredVideo
-    caption="Tagging with many tags at once."
-    src="/media/videos/tagging-dialog-many-tags.mp4"
-    posterUrl="/media/videos/tagging-dialog-many-tags.jpg"
-    autoPlay={false}
-    showCaption
-  />
+  caption="Tagging with many tags at once."
+  src="/media/videos/tagging-dialog-many-tags.mp4"
+  posterUrl="/media/videos/tagging-dialog-many-tags.jpg"
+  autoPlay={false}
+  showCaption
+/>
 
-## Tagging in file and folder properties area
+## Tagging in File and Folder Properties Area
 
-Tags can be added in the file and folder properties area, by simple selecting them from the dropdown list or dropping the over the tagging area. For removing tags just click on the **x**-button located in tag components.
+Tags can also be added in the properties area by selecting them from a dropdown or dragging them into the tagging area. To remove a tag, click the **x**-button next to the tag.
 
-![Dropping tag in the file properties area](/media/tagspaces-tagging-draganddrop.png)
+<CenteredImage src="/media/tagspaces-tagging-draganddrop.png" caption="Dropping tags in the properties area" />
 
-## Tagging with drag and drop
+## Tagging with Drag and Drop
 
-File and folder can be tagged also with drag and drop. Here is a list of the supported drag and drop operations.
+Tagging can also be performed using drag-and-drop. Here are the supported operations:
 
-- Dragging a tag from the tag library and dropping it to a file or folder. This action is supported in the [default perspective](/perspectives/grid).
-- Dragging a tag from the tag library and dropping it to a tagging section in file or folder properties area. This action work regardless of the current perspective.
-- Drag a tag from a file or folder and drop it on another file or folder for tagging it. This action is supported in the [default perspective](/perspectives/grid).
-- Drag and drop can be used also in the tag library for moving tags from one tag group to another
+- **Dragging a tag from the tag library to a file or folder:** Supported in the [grid perspective](/perspectives/grid) and [list perspective](/perspectives/list).
+- **Dragging a tag to the tagging section of the properties area:** Works in any perspective.
+- **Dragging a tag from one file or folder to another:** Supported in the [grid perspective](/perspectives/grid) and [list perspective](/perspectives/list).
+- **Moving tags between groups:** Supported within the tag library.
 
-![Dropping tag in the file properties area](/media/tagspaces-tagging-folder-dandd.png)
+<CenteredImage src="/media/tagspaces-tagging-folder-dandd.png" caption="Drag-and-drop tagging for folders" />
 
 <!-- ## Tagging using keyboard shortcuts
 Another quick way to tag files is to set keyboard shortcuts to often-used tags. To specify a shortcut, click on a tag in the **Tag Library**, and select *Edit Tag* from the context menu

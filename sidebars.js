@@ -224,12 +224,12 @@ const sidebars = {
         {
           type: "link",
           label: "File tagging using filename",
-          href: "/tagging#storing-the-tags-in-the-file-names",
+          href: "/tagging#storing-tags-in-file-names",
         },
         {
           type: "link",
           label: "File tagging using sidecar file",
-          href: "/tagging#storing-the-tags-in-a-sidecar-file",
+          href: "/tagging#storing-tags-in-sidecar-files",
         },
         {
           type: "link",
@@ -239,7 +239,7 @@ const sidebars = {
         {
           type: "link",
           label: "Tagging operation on many entries",
-          href: "/tagging/#tag-operations-on-many-entries",
+          href: "/tagging/#tag-operations-on-multiple-entries",
         },
         {
           type: "link",
