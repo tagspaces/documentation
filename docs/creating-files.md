@@ -4,118 +4,137 @@ title: Create Files
 
 import { ProFeature, CenteredImage, CenteredVideo } from '@site/src/components/CommonBlocks';
 
-# Create and Importing Files
+# Creating and Importing Files
 
-Besides opening and previewing various file types, TagSpaces can also create new files of some text-based formats. File creation is a functionality that allows TagSpaces to become an effective note-taking application.
+In addition to previewing various file types, TagSpaces also allows you to create new files in several text-based formats, making it a great note-taking application.
 
-## Content creation dialog
+## Content Creation Menu
 
-To create a new file in TagSpaces you have many options. The easiest one is from the button with plus icon, which almost always visible in the application.
+To create a new file in TagSpaces, you have several options. The easiest way is to click the plus icon button, which is almost always visible in the application.
 
-![create new file with the plus button](/media/create-new-plusbutton.svg)
+<CenteredImage
+    caption="Create new file with the plus button"
+    src="/media/create-new-plusbutton.avif"
+    maxWidth="350px"
+  />
 
-On the desktop version of the app you can click `ÀLT` for showing the **Main Menu** and then choose **New File** from the **File menu**.
+On the desktop version of the app, you can also press `ALT` to open the **Main Menu** and then select **New File** from the **File menu**.
 
-![create new file from main menu](/media/create-new-file-menu.png)
+![Create new file from the main menu](/media/create-new-file-menu.png)
 
-This will open the dialog for creation of new content, here you can choose one of the following actions:
+This opens the content creation menu, where you can choose from the following actions:
 
-- **Create Note** - will create a HTML which can contain rich text content, with _.html_ file extension.
-- **Create MarkDown File** - will create a [markdown](https://en.wikipedia.org/wiki/Markdown), with _.md_ file extension.
-- **Create Text File** - will create a plain text file, with _.txt_ file extension.
+- **New Plain Text File** - Creates a plain text file with the `.txt` extension.
+
+- **New Markdown File** - Creates a text file with the `.md` extension, which ill allow you to add content [Markdown](https://en.wikipedia.org/wiki/Markdown) format.
+
+<CenteredImage
+    caption="Dialog for creating markdown files"
+    src="/media/create-markdown-file-dialog.avif"
+    maxWidth="450px"
+  />
+
+- **New HTML File** - Creates an HTML file with the `.html` extension, allowing you to add rich text content.
+
+- **New Link File** - Create a URL file, which contain a link to a web site. This files are supported natively on Mac and Windows. There are suitable for creating bookmarks.
+
+- **New Audio File** - <ProFeature /> - Opens a dialog where you can record an audio note.
+
+- **New Form Device** - Allows you to import files into the app. See the [Importing Files](#importing-files) section for more details.
+- **New Folder** - Opens the dialog for creating new folders, where beside the name you can choose also the folder's background color.
+
+<CenteredImage
+    caption="Dialog for creating new folders"
+    src="/media/create-new-folder-dialog.avif"
+    maxWidth="500px"
+  />
+
+- **New From URL** - Opens a dialog where you can enter a URL in the text field and click the **OK** button to start the download and save the file in the current folder.
+
+<CenteredImage
+    caption="Dialog for downloading files from URLs"
+    src="/media/download-file-dialog.avif"
+    maxWidth="400px"
+  />
 
 :::info
-Pressing `ENTER` in this dialog will create a markdown files, since this is the default action.
+Downloading files from URLs generally works for files shared from object stores, but often fails due to CORS restrictions implemented by websites. As a workaround, you can use our **[browser extension](/web-clipper)**.
 :::
 
-![screenshot showing the create new content dialog](/media/tagspaces-create-content-dialog.png)
+- **New Location** - Opens the dialog for creating a new location.
 
-Expanding the **More Operations** section, will give you access to the following options:
+- **New Window** - Open a new application window
 
-- **New Location** - opens the dialog where you can create new location.
-- **New Subfolder** - opens the dialog for creating new folders.
-- **Add Files** - will give you the possibility to import a files in the app. See more in the [importing files](#importing-files) section.
-- **URL input field and start downloading button** - if you paste a URL in the text field and click the **Start the download** button, the app will try to download the file and save in the current folder.
+At the top of the file creation dialog, the automatically generated file name is displayed. The text is preselected, so you can easily change it to whatever you need. This is especially useful when creating new cards in the Kanban perspective. Below the text field, you will see the path where the file will be created. The default path is usually the current folder, but if no location is open, the file will be created in the root folder of the first location in your location manager.
+The file name follows this format: `note[20191113~164613].md` (or `.html` or `.txt`). This format includes a timestamp, which is explained in the next section.
 
-:::info
-Downloading files from URLs mostly works for files shared from object stores, but often fails due to CORS restriction implemented on web sites. As a work around you can use the our **[browser extension](/web-clipper)**.
-:::
+### Timestamp as Default Tag
 
-The field on the top of the file creation dialog, shows the automatically generated file name. The text is preselected, so you can easy change it, to what ever you need. This is especially useful for the Kanban perspective where you create this way new cards. Bellow of this text field you will see the path where this file will be created. The path defaults in most of the cases to the current folder, but when there is no opened location, the dialog will create the file in the root folder of the first location in your location manager.
+When you create a new file in TagSpaces, a timestamp in the format `YYYYMMDDThhmmss` is automatically added as a tag:
 
-The file name has the following format _note[20191113~164613].md_ (or .html or .txt). It contains a timestamp tag which format is explained in the next section.
+- `YYYY`: The current year
+- `MM`: The current month
+- `DD`: The current day
+- `T`: A delimiter between the date and time
+- `hh`: The hour
+- `mm`: The minute
+- `ss`: The second
 
-### Timestamp as default tag
+For example, a file created on January 17, 2017, at 10:30:32 would have the timestamp tag `20170117T103032`.
 
-When you create a new file in TagSpaces, a time-stamp in the format of `YYYMMDDThhmmss` will be automatically added as a tag, where
-
-- `YYYY` means the current year
-- `MM` - the current month
-- `DD` - the day
-- `T` - is just a delimiter between the date and the time
-- `hh` - the hour
-- `mm` - the minute
-- `ss` - the second
-
-when the file was created. For example a file created on the 17th of January in 2017, at 10:30 (and 32 seconds) would be tagged with timestamp like `20170117T133032`.
-
-Using these timestamp-tags ensures the uniqueness of the automatically generated file name of the file created by the app.
+These timestamp tags ensure the uniqueness of automatically generated file names.
 
 <!-- Such timestamps make it possible to easily group files from different locations based on the time of creation. Of course this would be possible by reading the same information from the file system, but tagging with the timestamp allows for greater flexibility. For example you can change the timestamp to anything you like, while keeping the original creation modification date of the file, and tagging the file will allow you to use TagSpaces's powerful grouping and organizing features in the same place you manage other tags. -->
 
-## Importing files
+## Importing Files
 
-In TagSpaces files can be imported in many ways. After a successful import the imported file will be copied in the currently opened folder.
+TagSpaces offers several ways to import files. After a successful import, the file will be copied to the currently open folder.
 
-### Import from the folder menu
+### Importing from the Folder Menu
 
-The importing of a file can be initiated also from the folder menu, located in the top right corner of the application.
+You can also import files from the folder menu, located in the top-right corner of the application.
 
-![screenshot showing how to open the folder menu](/media/tagspaces-open-folder-context-menu.png)
+![Screenshot showing how to open the folder menu](/media/tagspaces-open-folder-context-menu.avif)
 
-Choose the **Add files** to open the file chooser of your operating system. There you can select which files you want to import.
+Choose **New From Device** to open your operating system's file chooser. From there, select the files you want to import.
 
-#### Importing files on mobile devices
+### Importing Files on Mobile Devices
 
-On mobile devices, tapping on the **Add files** menu will show a dialog from which can choose various source for files. On the following screenshot from an **Android** operating system, you see the following options:
+On mobile devices, tapping the **New From Device** menu opens a dialog that lets you choose various sources for files. In the following screenshot from an **Android** device, you can see options like:
 
-- Camera - this will open the _Camera app_, where you can take a picture, which can be imported in the current location.
-- Camcoder - here you can taka directly a video, which can be imported in the app.
-- Voice Recorder - this will start the _Voice Recorded app_, where you can record an audio note to import.
-- Files - this will open the _Files app_, where you can select files to import.
+- **Camera**: Opens the _Camera app_ to take a picture and import it into the current location.
+- **Camcorder**: Allows you to record a video that can be imported into the app.
+- **Voice Recorder**: Launches the _Voice Recorder app_ to create an audio note that can be imported.
+- **Files**: Opens the _Files app_ to select files for import.
 
-Depending on your Android devices and the installed apps, this dialog can look differently and show more or less options.
+Depending on your Android device and installed apps, this dialog may display more or fewer options.
 
 <CenteredImage
     caption="Importing files on mobile devices"
     src="/media/tagspaces-mobile-import.jpg"
     showCaption
     maxWidth="300px"
-  />
+/>
 
-On **iOS** you have the options to take a picture with the _Camera app_ or select one or more files from the _Files app_
+On **iOS**, you have the options to take a picture with the _Camera app_ or select one or more files from the _Files app_.
 
 :::info
-If the current folder is located on an object storage like AWS S3, the import functionality will trigger the upload of the selected file to the S3 bucket.
+If the current folder is located on object storage (e.g., AWS S3), importing will trigger the file's upload to the S3 bucket.
 :::
 
-### Import from the create content dialog
+### Importing via Drag and Drop
 
-In the dialog for creating files on the last place is the _Add files_ action button. The functionality of this button is the same described in the previous section.
-
-### Import with drag and drop from the desktop
-
-Files can be imported also by simple dragging one or more files from your desktop or your default file manager and drop it over the app.
+You can also import files by dragging them from your desktop or file manager and dropping them into the app.
 
 <CenteredVideo
-    caption="Importing files with drag and drop from the desktop"
+    caption="Importing and exporting files via drag and drop from the desktop"
     src="/media/videos/file-drag-and-drop.mp4"
     posterUrl="/media/videos/file-drag-and-drop.jpg"
     maxWidth="100%"
     autoPlay
     showCaption
-  />
+/>
 
 :::note
-If the current folder is located on an object storage like AWS S3, the dropping of the file will trigger its upload to the S3 bucket.
+If the current folder is located on object storage (e.g., AWS S3), dragging and dropping files will trigger their upload to the S3 bucket.
 :::
