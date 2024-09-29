@@ -138,13 +138,18 @@ const sidebars = {
         "search",
         {
           type: "link",
-          label: "Basic Search",
-          href: "/search/#basic-search",
+          label: "Search Query",
+          href: "/search/#search-query",
         },
         {
           type: "link",
-          label: "Advanced Search",
-          href: "/search/#advanced-search",
+          label: "Search Filters",
+          href: "/search/#search-filters",
+        },
+        {
+          type: "link",
+          label: "Indexing",
+          href: "/search/#indexing",
         },
         {
           type: "link",
@@ -197,7 +202,7 @@ const sidebars = {
         {
           type: "link",
           label: "Folder Default Perspective",
-          href: "/folders#folder-default-perspective",
+          href: "/folders#default-folder-perspective",
         },
         {
           type: "link",

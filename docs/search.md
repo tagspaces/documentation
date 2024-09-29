@@ -111,6 +111,8 @@ To support detailed search for tags, the user interface for entering them is spl
 - **At least one tag** - any file or folder containing one of the tags listed here will be included (**logical OR**).
 - **None of these tags** - entries with any of the tags listed here will be excluded from the search results (**logical exclusion**).
 
+## Search filters
+
 ### Filter by file type
 
 In the file type dropdown, you can specify which types of files to search. The file types are grouped into the following sections:

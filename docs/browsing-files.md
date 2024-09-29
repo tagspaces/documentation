@@ -5,39 +5,33 @@ tags: [perspective]
 
 import { ProFeature, CenteredImage } from '@site/src/components/CommonBlocks';
 
-When you navigate to a folder in your active location, the files contained in the selected folder will be displayed on the main file browsing area of the user interface. TagSpaces offers flexible views to display your files. We call these views **perspectives**.
+When you navigate to a folder in your active location, the files contained in the selected folder will be displayed in the main file browsing area of the user interface. TagSpaces offers flexible views to display your files. We call these views **perspectives**.
 
-Perspectives are not an integral part of TagSpaces, but exist as modular extensions. This modular approach allows for more flexibility, easier development, and customizability of each separate perspective. TagSpaces is delivered by default with one perspective. Other perspective can be added on demand in the Enterprise version of the product. In this document we will describe the following perspectives:
+Perspectives are modular extensions that allow more flexibility, easier development, and customizability. TagSpaces is delivered by default with two perspective, while additional perspectives can be found in the PRO products. This is a list of all currently available :
 
-- [Grid Perspective](/perspectives/grid) - presenting files and folders as in a grid, suitable for tagging and file management. It is the **default** perspective build in TagSpaces.
+- [Grid Perspective](/perspectives/grid) - Presents files and folders in a grid format, suitable for tagging and file management. It is the **default** perspective built into TagSpaces.
+- [List Perspective](/perspectives/list) - Presents files in a list format, suitable for tagging and file management.
+- [Gallery Perspective](/perspectives/gallery) <ProFeature /> - Optimized for browsing and viewing images and photos.
+- [Mapique Perspective](/perspectives/mapique) <ProFeature /> - Displays geo-tagged files and folders on a map. Available in the Pro edition.
+- [Kanban Perspective](/perspectives/kanban) <ProFeature /> - Shows your files as tasks on a Kanban board, representing subfolders as columns on the board.
+- [FolderViz Perspective](/perspectives/folderviz) <ProFeature /> - An experimental perspective that applies information visualization concepts to presenting your folder and file structures.
 
-- [List Perspective](/perspectives/list) - presenting your files as list, suitable for tagging and file management.
+## Switching Perspectives
 
-- [Gallery Perspective](/perspectives/gallery) <ProFeature /> - optimized for browsing and viewing images and photos. This extension is available in the Pro and Enterprise packages
-
-- [Mapique Perspective](/perspectives/mapique) <ProFeature /> - showing geo-tagged files and folders on a map. This extension is available in the Pro and Enterprise packages
-
-- [Kanban Perspective](/perspectives/kanban) <ProFeature /> - show your files as tasks in a Kanban board, representing the sub folders as columns in the board
-
-- [FolderViz Perspective](/perspectives/folderviz) <ProFeature /> - this is an experimental perspective which applies some information visualization concepts to presenting your folder and file structures.
-
-## Switching perspectives
-
-The perspective for the current folder can be switched in two ways. The first and easier one is to user perspective switch located in the bottom right are of the application, as seen in the screenshot bellow.
+The perspective for the current folder can be switched in two ways. The easiest method is to use the perspective switch located in the bottom-right corner of the application, as shown in the screenshot below.
 
 ![Changing perspectives for a folder](/media/tagspaces-perspective-switch.png)
 
-In some case such as the use of the application on mobile devices the perspective switch is not available. In this case, the folder menu available in the upper right part of the screen, should be opened. In this menu you can choose from the available perspectives, compare the previous screenshot.
+In some cases, such as when using the application on mobile devices, the perspective switch is not available. In these cases, you can open the folder menu located in the upper-right part of the screen. From this menu, you can choose from the available perspectives, similar to the previous screenshot.
 
 :::tip
-Every folder can have its own **[default perspective](/folders#default-folder-perspective)**, which can be selected in the folder properties area.
-Once you choose a perspective here, every time you open this folder, it will be opened with selected perspective.
+Every folder can have its own **[default perspective](/folders#default-folder-perspective)**, which can be selected in the folder properties area. Once you choose a perspective, every time you open that folder, it will be displayed using the selected perspective.
 :::
 
-## Custom perspective settings per folder
+## Custom Perspective Settings Per Folder
 
 <ProFeature />
 
-In the PRO version you can assign a default perspective to any folder, so everytime you open this folder it will be automatically displayed with the selected perspective.
+In the PRO version, you can assign a default perspective to any folder so that every time you open the folder, it will automatically be displayed using the selected perspective.
 
-Some perspectives support custom settings on per folder level. You can for example set custom _sorting_, _thumbnail mode_ or _limit of the pagination_. You can learn more in the [perspective settings](/perspectives/grid#perspective-settings) section.
+Some perspectives support custom settings at the folder level. For example, you can set custom _sorting_, _thumbnail mode_, or _pagination limits_. You can learn more in the [perspective settings](/perspectives/grid#perspective-settings) section.
