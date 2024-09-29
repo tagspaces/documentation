@@ -1,18 +1,18 @@
 # RTF Viewer
 
-A TagSpaces extension allowing opening of RTF files.
+A TagSpaces extension allowing the opening of RTF files.
 
 ## Features
 
-- Preview files in RTF format
-- Export the content as HTML file
-- Zoom in and out of the content
+- Preview files in RTF format.
+- Export the content as an HTML file.
+- Zoom in and out of the content.
 
 ![screenshot of the RTF viewer](/media/extensions/viewer-rtf-lead.png)
 
-## Used libraries
+## Used Libraries
 
-This extension thankfully relays on the following great libraries:
+This extension thankfully relies on the following great libraries:
 
 - [rtf.js](https://github.com/tbluemel/rtf.js)
 - [Bootstrap](https://getbootstrap.com/)
@@ -22,15 +22,15 @@ This extension thankfully relays on the following great libraries:
 
 ## Installation
 
-This extensions is packaged by default with TagSpaces
+This extension is packaged by default with TagSpaces.
 
-## Source code
+## Source Code
 
-The source code of this extension is freely available on [GitHub](https://github.com/tagspaces/tagspaces-extensions/tree/main/rtf-viewer)
+The source code of this extension is freely available on [GitHub](https://github.com/tagspaces/tagspaces-extensions/tree/main/rtf-viewer).
 
 ## Development
 
-If you want to extend this extensions, please follow our general [extension development guide](/dev/extension-development-guide)
+If you want to extend this extension, please follow our general [extension development guide](/dev/extension-development-guide).
 
 ## License
 

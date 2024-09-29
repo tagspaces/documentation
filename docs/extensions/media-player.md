@@ -1,37 +1,37 @@
 # Media Player
 
-A TagSpaces extension allowing playing of audio and video files.
+A TagSpaces extension that allows the playback of audio and video files.
 
 ## Features
 
-- Playing audio and video files
-- Fullscreen mode
-- This extension will trigger the opening of the next file in the current folder on finishing playback, allowing you for example to listen many audio files one after another like in a regular music player.
+- Play audio and video files.
+- Fullscreen mode for an immersive experience.
+- Automatically triggers the opening of the next file in the current folder upon finishing playback, allowing you to listen to multiple audio files continuously, just like a regular music player.
 
 ![Screenshot of the media player](/media/extensions/viewer-audiovideo-lead.png)
 
-> The supported audio and video formats depend on the underlaying browser platform.
+> Note: The supported audio and video formats depend on the underlying browser platform.
 
-## Used libraries
+## Used Libraries
 
-This extension thankfully relays on the following great libraries:
+This extension relies on the following excellent libraries:
 
-- [Plyr](https://plyr.io/)
-- [React](https://reactjs.org/)
-- [Mui](https://mui.com/)
-- [Plyr-react](https://github.com/chintan9/plyr-reac)
+- [Plyr](https://plyr.io/) - A simple, customizable HTML5 media player.
+- [React](https://reactjs.org/) - A JavaScript library for building user interfaces.
+- [Mui](https://mui.com/) - A popular React UI framework.
+- [Plyr-react](https://github.com/chintan9/plyr-react) - A React wrapper for the Plyr media player.
 
 ## Installation
 
-This extensions is packaged with any new version of TagSpaces
+This extension is packaged with any new version of TagSpaces.
 
-## Source code
+## Source Code
 
-The source code of this extension is freely available on [GitHub](https://github.com/tagspaces/tagspaces-extensions/tree/main/media-player)
+The source code of this extension is freely available on [GitHub](https://github.com/tagspaces/tagspaces-extensions/tree/main/media-player).
 
 ## Development
 
-If you want to extend this extensions, please follow our general [extension development guide](/dev/extension-development-guide)
+If you want to extend this extension, please follow our general [extension development guide](/dev/extension-development-guide).
 
 ## License
 

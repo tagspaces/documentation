@@ -1,18 +1,18 @@
-# Document viewer
+# Document Viewer
 
 A TagSpaces extension for previewing document files.
 
 ## Features
 
 - Preview files in DOCX format
-- Export the content as HTML file
+- Export the content as an HTML file
 - Zoom in and out of the content
 
 ![general screenshot of the document viewer extension](/media/extensions/viewer-document-lead.png)
 
-## Used libraries
+## Used Libraries
 
-This extension thankfully relays on the following great libraries:
+This extension thankfully relies on the following great libraries:
 
 - [mammoth](https://github.com/mwilliamson/mammoth.js/)
 - [bootstrap](https://getbootstrap.com/)
@@ -23,15 +23,15 @@ This extension thankfully relays on the following great libraries:
 
 ## Installation
 
-This extensions is packaged with any new version of TagSpaces
+This extension is packaged with any new version of TagSpaces.
 
-## Source code
+## Source Code
 
-The source code of this extension is freely available on [GitHub](https://github.com/tagspaces/tagspaces-extensions/tree/main/document-viewer)
+The source code of this extension is freely available on [GitHub](https://github.com/tagspaces/tagspaces-extensions/tree/main/document-viewer).
 
 ## Development
 
-If you want to extend this extensions, please follow our general [extension development guide](/dev/extension-development-guide)
+If you want to extend this extension, please follow our general [extension development guide](/dev/extension-development-guide).
 
 ## License
 

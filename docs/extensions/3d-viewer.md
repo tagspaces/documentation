@@ -4,15 +4,15 @@ import { ProFeature, CenteredImage, CenteredVideo } from '@site/src/components/C
 
 <ProFeature />
 
-A TagSpaces extension for opening 3d file formats. The extension is introduced for first time in version 5.2 of TagSpaces.
+A TagSpaces extension for opening 3D file formats.
 
 ## Features
 
-- 3D preview of GLB, GLTF, STL and OBJ files
-- Rotation of the models with mouse dragging
-- Use the mouse wheel to zoom in and out,
-- Moving the mouse by hold right click will shift the rotation center of the model,
-- Save screenshot of the current 3D rendering as PNG file
+- 3D preview of GLB, GLTF, STL, and OBJ files
+- Rotate the models with mouse dragging
+- Use the mouse wheel to zoom in and out
+- Hold right-click and move the mouse to shift the rotation center of the model
+- Save a screenshot of the current 3D rendering as a PNG file
 
 <CenteredVideo
     caption="The 3D viewer showing 'Ordinary Behavior 2 - Television' (https://skfb.ly/oBEsP) by gozdemrl is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/)."
@@ -23,11 +23,9 @@ A TagSpaces extension for opening 3d file formats. The extension is introduced f
     showCaption
   />
 
-<!-- ![Screenshot of the 3d viewer](/media/extensions/3d-viewer.jpg) -->
+## Used Libraries
 
-## Used libraries
-
-This extension thankfully relays on the following great libraries:
+This extension thankfully relies on the following great libraries:
 
 - [model-viewer](https://modelviewer.dev/)
 - [viewstl](https://www.viewstl.com/)
@@ -38,8 +36,8 @@ This extension thankfully relays on the following great libraries:
 
 ## Installation
 
-This extensions is pre-installed in TagSpaces Pro
+This extension is pre-installed in TagSpaces Pro.
 
 ## License
 
-Propriatery
+Proprietary

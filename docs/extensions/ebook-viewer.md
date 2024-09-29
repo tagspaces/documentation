@@ -18,13 +18,9 @@ A TagSpaces extension allowing you to open eBooks or digital magazines in EPUB f
     showCaption
   />
 
-<!-- ![Screenshot of the viewerEPUB](/media/extensions/viewer-epub-lead.png)
+## Used Libraries
 
-![Screenshot of the viewerEPUB](/media/extensions/viewer-epub-twofold.png) -->
-
-## Used libraries
-
-This extension thankfully relays on the following great libraries:
+This extension thankfully relies on the following great libraries:
 
 - [epub.js](https://github.com/futurepress/epub.js/)
 - [Bootstrap](https://getbootstrap.com/)
@@ -33,15 +29,15 @@ This extension thankfully relays on the following great libraries:
 
 ## Installation
 
-This extensions is packaged with any new version of TagSpaces
+This extension is packaged with any new version of TagSpaces.
 
-## Source code
+## Source Code
 
-The source code of this extension is freely available on [GitHub](https://github.com/tagspaces/tagspaces-extensions/tree/main/ebook-viewer)
+The source code of this extension is freely available on [GitHub](https://github.com/tagspaces/tagspaces-extensions/tree/main/ebook-viewer).
 
 ## Development
 
-If you want to extend this extensions, please follow our general [extension development guide](/dev/extension-development-guide)
+If you want to extend this extension, please follow our general [extension development guide](/dev/extension-development-guide).
 
 ## License
 

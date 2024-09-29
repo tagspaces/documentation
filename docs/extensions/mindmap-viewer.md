@@ -11,9 +11,9 @@ A TagSpaces extension for opening mind maps based on markdown with the help of m
 
 ![Screenshot of the mind map viewer](/media/extensions/mindmap-viewer-lead.png)
 
-## Used libraries
+## Used Libraries
 
-This extension thankfully relays on the following great libraries:
+This extension thankfully relies on the following great libraries:
 
 - [markmap.js](https://markmap.js.org/)
 - [Bootstrap](https://getbootstrap.com/)
@@ -22,15 +22,15 @@ This extension thankfully relays on the following great libraries:
 
 ## Installation
 
-This extensions is packaged with new version of TagSpaces (after version 5.2)
+This extension is packaged with the new version of TagSpaces (after version 5.2).
 
-## Source code
+## Source Code
 
-The source code of this extension is freely available on [GitHub](https://github.com/tagspaces/tagspaces-extensions/tree/main/mindmap-viewer)
+The source code of this extension is freely available on [GitHub](https://github.com/tagspaces/tagspaces-extensions/tree/main/mindmap-viewer).
 
 ## Development
 
-If you want to extend this extensions, please follow our general [extension development guide](/dev/extension-development-guide)
+If you want to extend this extension, please follow our general [extension development guide](/dev/extension-development-guide).
 
 ## License
 

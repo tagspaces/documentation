@@ -9,26 +9,26 @@ A TagSpaces extension allowing you to preview the content of ZIP files.
 
 ![Screenshot of the viewerZIP](/media/extensions/viewer-zip-lead.png)
 
-## Used libraries
+## Used Libraries
 
-This extension thankfully relays on the following great projects:
+This extension thankfully relies on the following great projects:
 
 - [jszip](https://stuk.github.io/jszip/)
 - [Bootstrap](https://getbootstrap.com/)
 - [i18next](https://www.i18next.com/)
-- [Dompurify](https://github.com/cure53/DOMPurify)
+- [DOMPurify](https://github.com/cure53/DOMPurify)
 
 ## Installation
 
-This extensions is packaged with any new version of TagSpaces
+This extension is packaged with any new version of TagSpaces.
 
-## Source code
+## Source Code
 
-The source code of this extension is freely available on [GitHub](https://github.com/tagspaces/tagspaces-extensions/tree/main/archive-viewer)
+The source code of this extension is freely available on [GitHub](https://github.com/tagspaces/tagspaces-extensions/tree/main/archive-viewer).
 
 ## Development
 
-If you want to extend this extensions, please follow our general [extension development guide](/dev/extension-development-guide)
+If you want to extend this extension, please follow our general [extension development guide](/dev/extension-development-guide).
 
 ## License
 
