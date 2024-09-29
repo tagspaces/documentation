@@ -7,7 +7,7 @@ import { ProFeature, CenteredImage, CenteredVideo } from '@site/src/components/C
 
 <ProFeature />
 
-This perspective shows the first five sub folders of the current folder as columns of a Kanban board. Further sub folder can turned on later. The cards in the columns are actually the files of the sub folder and can represent for example tasks. The cards can be moved from one column to another with drag and drop. Moving the cards in a given columns up and down will change to order of the cards which will be persisted. The columns can be also moved with drag and drop.
+This perspective shows the first five subfolders of the current folder as columns of a Kanban board. Additional subfolders can be turned on later. The cards in the columns represent the files of the subfolders and can be used to organize tasks or other items. The cards can be moved between columns via drag and drop. Moving cards within a column will persist their order. Columns themselves can also be moved via drag and drop.
 
 <CenteredImage
     caption="Preview of the Kanban perspective"
@@ -17,72 +17,69 @@ This perspective shows the first five sub folders of the current folder as colum
 
 ## Why is this useful?
 
-Kanban boards can be used in many ways, here are some typical examples:
+Kanban boards have many potential uses. Here are some typical examples:
 
 - **Personal Kanban**
 - **Tracking software development**
 - **Task management**
-- **Board for recruiting process**
-- **Weekly plan** - having a board where every day of the week is presented as column, can be used to track activities or document progress, having a diary
+- **Recruiting process board**
+- **Weekly plan** – Have each day of the week as a column and track activities or document progress like a diary.
 
 ## General functionalities
 
-The following list describes the button of the main toolbar of this perspective.
+Below is a description of the buttons in the main toolbar of this perspective:
 
-- **Navigate to parent folder** - self explaining
-- **Folder properties** - open the folder properties in the right panel, so you can add tags, description, set background color or custom wallpaper for the current folder
-- **Shows the content of the current folder** - this is useful if want to distribute files from the current folder to the columns (sub folders)
-- **Toggle visibility of sub folders** - this button will show the content of the current folder as addition column placed on the most left. This could be useful if you have files there which you want to move with drag and drop to the other columns.
-- **Import Kanban board** - open a dialog where you can start the import of a Trello board. Details are explained bellow.
-- **Perspective settings** - opens a dialog with settings of the Kanban perspective
+- **Navigate to parent folder** – Self-explanatory.
+- **Folder properties** – Opens the folder properties in the right panel, allowing you to add tags, descriptions, and set the background color or custom wallpaper for the current folder.
+- **Show the content of the current folder** – Useful for distributing files from the current folder into the columns (subfolders).
+- **Toggle visibility of subfolders** – Displays the content of the current folder as an additional column on the far left. Useful for moving files from the current folder to other columns.
+- **Import Kanban board** – Opens a dialog for importing a Trello board. Details are provided below.
+- **Perspective settings** – Opens a dialog with settings specific to the Kanban perspective.
 
-## Actions for columns
+## Actions for Columns
 
-Besides moving the column with drag and drop, there are some more actions attached to every column on the board. In the bottom right corner of every columns there is a button with a plus icon, which will open the dialog for [creating files](/creating-files).
+Beyond moving columns via drag and drop, there are additional actions for each column. In the bottom right corner of every column, there's a plus icon that opens the dialog for [creating files](/creating-files).
 
 ![Actions for columns](/media/kanban/column-actions.png)
 
-The button with top right position with tree dot icon will open a menu, where you can do the following actions:
+The three-dot icon in the top-right corner of each column opens a menu with the following options:
 
-- **Hide** - hides the column, you can always show the column from the button in toolbar, mentioned in the previous section
-- **Move Left** - switches the position of the column with the column on the left
-- **Move Right** - switches the position of the column with the column on the right
-- **Reload Folder** - reloads the content of the folder
-- **Show in File Manager** - opens the default file manager of your operating system with preselected folder
-- **New File / Note** - opens the dialog for creating files
-- **Folder Properties** - open the properties of the folder, where you can change the background color, set a wallpaper image or choose an thumbnail for the folder
+- **Hide** – Hides the column. You can show it again using the toolbar button mentioned earlier.
+- **Move Left** – Switches the column with the one to the left.
+- **Move Right** – Switches the column with the one to the right.
+- **Reload Folder** – Reloads the content of the folder.
+- **Show in File Manager** – Opens the default file manager of your operating system with the preselected folder.
+- **New File / Note** – Opens the dialog for creating new files.
+- **Folder Properties** – Opens the folder properties, where you can change the background color, set a wallpaper image, or choose a thumbnail for the folder.
 
-## Migration of Trello boards
+## Migration of Trello Boards
 
-This perspective features a importer for Trello boards exported as JSON files. In order to use a Trello board in TagSpaces you have to export it first as JSON. This can be done in the board's menu accessible after clicking the tree-dot menu in the top right corner of the board and select "More", then "Print and export" and finally "Export as JSON". Save the file somewhere locally so you can select in easily in the next steps.
+This perspective includes an importer for Trello boards exported as JSON files. To use a Trello board in TagSpaces, you must first export it as JSON. This can be done by navigating to the board's menu (top-right corner) and selecting "More," then "Print and export," and finally "Export as JSON." Save the file locally for easy access during import.
 
 ![Export Trello board as JSON file](/media/kanban/trello-json-export.png)
 
-Once you have the file on you computer, open TagSpaces, navigate to the folder where you want to import the Trello board and switch to the Kanban perspective. Click the import Kanban button and select "Choose Trello JSON file" from the dialog which will appear.
+Once you have the JSON file on your computer, open TagSpaces, navigate to the folder where you want to import the Trello board, and switch to the Kanban perspective. Click the "Import Kanban" button and select "Choose Trello JSON file" from the dialog.
 
-### Mapping the Trello board to files and folders
+### Mapping the Trello Board to Files and Folders
 
-| Trello | TagSpaces     | Comment                                                                                                                                                                                                                 |
-| :----- | :------------ | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Card   | Markdown file | For every card is created a text file in markdown format, including: description, checklist, link to attachments, Link to original card in Trello, timestamp of the import                                              |
-| Column | Folder        | The order of the tasks in the columns is preserved later in the Kanban folders                                                                                                                                          |
-| Labels | Tags          | The labels of the exported boards are imported as [locations based tags](/ui/taglibrary/#location-tags). The importer tries to preserve the color of the labels. All labels are transformed to lower case by the import |
-|        |               |                                                                                                                                                                                                                         |
+| Trello | TagSpaces     | Comment                                                                                                                                                                                                                  |
+| ------ | ------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Card   | Markdown file | For each card, a text file in markdown format is created, including: description, checklist, link to attachments, link to the original card in Trello, and the timestamp of the import.                                  |
+| Column | Folder        | The order of the tasks in the columns is preserved as they are imported into the Kanban folders.                                                                                                                         |
+| Labels | Tags          | The labels of the exported board are imported as [location-based tags](/ui/taglibrary/#location-tags). The importer tries to preserve the colors of the labels. All labels are transformed to lowercase by the importer. |
 
 ## Perspective Settings
 
-The settings of the perspective can be opened from the last button in the perspective's toolbar.
+The settings for this perspective can be accessed from the last button in the perspective's toolbar.
 
 ![Kanban perspective settings](/media/kanban/kanban-perspecitve-settings.png)
 
-The following options can be adjusted in this settings dialog:
+The following options can be adjusted in the settings dialog:
 
-- Show folders - show sub-folder in the columns if available
-- Show tags - show the full name of the tags or only a symbol representing the availability of tags
-- Show content of the current folder - turn the current folder column on and off, same as the button in the toolbar
-- Show folder details - shows the name of the folder and a preview of the folder description above the columns of the board.
-- Toggle thumbnail modes - switches between two mode of displaying thumbnails in the cards: cover and contain
-- Size of the files/tasks in the column - the width of the tiles can be switched among compact, default and large
-- Definition of the single click
-
-### Folder specific settings
+- **Show folders** – Displays subfolders as columns, if available.
+- **Show tags** – Toggles between showing the full name of the tags or just a symbol indicating the presence of tags.
+- **Show content of the current folder** – Toggles the display of the current folder column on or off (same as the button in the toolbar).
+- **Show folder details** – Displays the name and a preview of the folder description above the columns of the board.
+- **Toggle thumbnail modes** – Switches between two modes for displaying thumbnails on the cards: cover and contain.
+- **Size of the files/tasks in the column** – Adjusts the width of the tiles between compact, default, and large.
+- **Definition of the single click** – Customizes the behavior of single-click actions.
