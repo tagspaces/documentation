@@ -7,7 +7,7 @@ import { ProFeature, EntFeature, CenteredImage } from '@site/src/components/Comm
 
 <ProFeature />
 
-This perspective offers basic image gallery functionality, like previewing the images from the current folder, a presentation mode in a full screen view.
+This perspective offers basic image gallery functionality, including previewing images from the current folder and a presentation mode with full-screen viewing.
 
 <CenteredImage
     caption="Showing the regular view of the gallery perspective"
@@ -16,10 +16,10 @@ This perspective offers basic image gallery functionality, like previewing the i
   />
 
 :::tip
-This perspective can only be activated in folder which contains images and photos in file formats such as JPG, PNG, GIF, BMP, SVG, WEBP ....
+This perspective can only be activated in folders containing images and photos in file formats such as JPG, PNG, GIF, BMP, SVG, WEBP, etc.
 :::
 
-## Functionalities in the toolbar
+## Functionalities in the Toolbar
 
 <CenteredImage
     caption="Showing the regular view of the gallery perspective"
@@ -29,28 +29,28 @@ This perspective can only be activated in folder which contains images and photo
 
 The toolbar of the gallery perspective offers the following functionalities:
 
-- **(1) Navigate to parent folder** - opens the parent folder of the current folder.
-- **(2) Switches back to masonry view** - open the initial masonry view.
-- **(3) Folder properties** - opens the [properties](/ui/userinterface#folder-properties) of the current folder.
-- **(4) Open previous/next image** - opens the previous/next image file from the current folder.
-- **(5) Start/stops presentation mode** - toggles on and off the presentation of the images in the current folder, by showing them for 3 seconds. We plan to make this duration configurable in future release.
-- **(6 )Full screen mode** - opens the currently selected file in full screen mode.
-- **(7) File properties** - clicking this button will open the properties of the current file in the regular area for this purpose.
-- **(8) Thumbnail bar modes** - clicking this button will toggle through the modes of the thumbnail bar, which are: position on the top, position on the left or hidden. This modes are respected in the full screen mode.
-- **(9) Import EXIF/IPTC** - clicking on the button will open the dialog for importing EXIF/IPTC infos from your files.
-- **(10) Help** - clicking on the button will open this page.
+- **(1) Navigate to parent folder** - Opens the parent folder of the current folder.
+- **(2) Switch to masonry view** - Returns to the initial masonry view.
+- **(3) Folder properties** - Opens the [properties](/ui/userinterface#folder-properties) of the current folder.
+- **(4) Open previous/next image** - Navigates to the previous or next image file in the current folder.
+- **(5) Start/stop presentation mode** - Toggles the slideshow presentation mode, displaying images from the current folder for 3 seconds each. (Future releases will allow configurable durations.)
+- **(6) Full screen mode** - Opens the currently selected file in full screen mode.
+- **(7) File properties** - Opens the properties of the current file in the regular properties area.
+- **(8) Thumbnail bar modes** - Toggles through thumbnail bar positions: at the top, on the left, or hidden. These modes apply in full screen mode as well.
+- **(9) Import EXIF/IPTC** - Opens the dialog to import EXIF/IPTC information from your files.
+- **(10) Help** - Opens this page for further guidance.
 
 :::tip
-In full screen mode you can navigate through the file by using the left and right key of the keyboard. On a device with touch screen, the image can be changed with the swipe left and right gestures.
+In full-screen mode, you can navigate through the files using the left and right arrow keys on your keyboard. On touch-screen devices, images can be changed by swiping left or right.
 :::
 
-## Importing EXIF/IPTC data from JPGs
+## Importing EXIF/IPTC Data from JPGs
 
-Many digital cameras are embedding additional information such as geo location in the photos created by them. One common format for this meta data is [EXIF](https://en.wikipedia.org/wiki/Exif). Another format for saving meta data is [IPTC](https://en.wikipedia.org/wiki/IPTC_Information_Interchange_Model), it usually used for embedding keyword and description to JPGs files. The gallery perspective has ability to read and convert the following data into TagSpaces' tags:
+Many digital cameras embed additional metadata, such as geolocation, in the photos they capture. One common format for this metadata is [EXIF](https://en.wikipedia.org/wiki/Exif). Another format is [IPTC](https://en.wikipedia.org/wiki/IPTC_Information_Interchange_Model), which is often used for embedding keywords and descriptions in JPG files. The gallery perspective can read and convert the following data into TagSpaces' tags:
 
-- **EXIF geo location** - Takes the latitude and longitude and converts in geo-tags in [Plus Code](https://maps.google.com/pluscodes/) or MGRS format
-- **EXIF shooting date and time** - Converts the date and time of the shooting as a date time tag
-- **IPTC keywords** - Imports IPTC keywords as regular tags
+- **EXIF geolocation** - Converts latitude and longitude into geo-tags using [Plus Code](https://maps.google.com/pluscodes/) or MGRS format.
+- **EXIF shooting date and time** - Converts the shooting date and time into a date-time tag.
+- **IPTC keywords** - Imports IPTC keywords as regular tags.
 
 <CenteredImage
     caption="Dialog for importing EXIF/IPTC data from JPGs"
