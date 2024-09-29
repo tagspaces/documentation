@@ -5,38 +5,39 @@ title: Thumbnail Generation
 import VideoYT from '@site/src/components/VideoYT';
 import { ProFeature, CenteredImage, CenteredVideo } from '@site/src/components/CommonBlocks';
 
-When the user opens a given folder, the application scans its content and tries to generate mini previews of file content automatically. These mini previews are known also als thumbnails.
+When a user opens a folder, the application automatically scans its contents and attempts to generate mini-previews, or thumbnails, for the files in the folder.
 
-## Thumbnails on local folders
+## Thumbnails on Local Folders
 
-The free version of TagSpaces supports thumbnail generation only for image and video file formats e.g. JPG, PNG, MP4.
+In the free version of TagSpaces, thumbnail generation is supported only for image and video file formats such as JPG, PNG, and MP4. Thumbnails for PDF file are also generated.
 
-The PRO version, on the other hand, tries to create thumbnails from the following files format.
+The PRO version expands thumbnail generation to a broader range of file formats:
 
-- Images: PNG, JPG, BMP, GIF, SVG, WEBP, TIFF
-- Videos: WEBM, OGV, MP4, M4V
-- Notes: HTML (uses the embedded screenshot, if created with the TagSpaces [Web Clipper](/web-clipper/)
-- Text files: TXT, MD, source code files (uses the first lines found in the files)
-- Bookmarks: URL (uses the embedded screenshot, if created with the TagSpaces [Web Clipper](/web-clipper/))
-- Ebooks: EPUB (uses the integrated ebook cover image)
-- Archives: ZIP (uses the first found image in the archive)
-- Documents: PDF
-- Office Documents: ODT, ODP, ODS, DOCX, XLSX, PPTX (uses the embedded preview image if available)
+- **Images:** PNG, JPG, BMP, GIF, SVG, WEBP, TIFF
+- **Videos:** WEBM, OGV, MP4, M4V
+- **Notes:** HTML (utilizing embedded screenshots, if created with the TagSpaces [Web Clipper](/web-clipper/))
+- **Text Files:** TXT, MD, source code files (using the first lines found in the file)
+- **Bookmarks:** URL (using the embedded screenshot, if created with the TagSpaces [Web Clipper](/web-clipper/))
+- **Ebooks:** EPUB (using the integrated ebook cover image)
+- **Archives:** ZIP (using the first image found in the archive)
+- **Office Documents:** ODT, ODP, ODS, DOCX, XLSX, PPTX (using embedded preview images, if available)
 
 <CenteredImage
     caption="Showing generated thumbnails in TagSpaces"
     src="/media/tagspaces-thumbnails.png"
     showCaption
-  />
+/>
 
-The generated thumbnails are persisted in the `.ts` folder located in every folder you browse. This feature significantly accelerates the browsing of folders containing many files. The thumbnail generation can be activated or deactivated in the application settings.
+The generated thumbnails are stored in the `.ts` folder located within each folder you browse. This caching mechanism significantly improves the speed of browsing folders containing many files. Thumbnail generation can be enabled or disabled in the application settings.
 
 <CenteredImage
     caption="Activating the thumbnails generation in the settings"
     src="/media/tagspaces-thumbnail-generation.png"
     showCaption
-  />
+/>
 
-## Thumbnails on S3 locations
+## Thumbnails on S3 Locations
 
-Thumbnails are not not generated on S3 locations. The reason for this is that the application have to download all files from the current folder in order to generate the thumbnails. This can be unpractical by folder with many files. There is one exception if you are uploading files to a s3 location, the application will try to generate a thumbnail during the upload process.
+<!-- Thumbnails are not generated automatically on S3 locations. This limitation is due to the fact that generating thumbnails requires downloading all files from the folder, which can be impractical for folders with many files. However, there is an exception:  -->
+
+When you upload files to an S3 location, TagSpaces will attempt to generate thumbnails during the upload process.

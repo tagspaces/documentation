@@ -4,37 +4,39 @@ title: Preview and Print Files
 
 import { ProFeature } from "@site/src/components/CommonBlocks";
 
-The application supports previewing of many file types without the need of external viewer. It comes with the following viewer extensions:
+TagSpaces supports the previewing of many file types without requiring external viewers. The application includes several viewer extensions:
 
-- [Media Player](/extensions/media-player) - Opens audio and video files
-- [E-Book Viewer](/extensions/ebook-viewer) - Opens ebooks in EPUB format
-- [HTML Viewer](/extensions/html-viewer) - Viewer for HTML files e.g. from the [Web Clipper](/web-clipper)
-- [Image Viewer](/extensions/image-viewer) - Viewer for image and photis in JPG, GIF, WEPB, TIF, TGA formats
-- [Link Opener](/extensions/url-viewer) - Bookmarks in URL, DESKTOP or WEBSITE formats
-- [Markdown Reader](/extensions/md-viewer) - Viewer for markdown files
-- [MHTML Reader](/extensions/mhtml-viewer) - webpages in MHTML and and emails EML format
-- [Mind Map Viewer](/extensions/mindmap-viewer) - Presents a MD or MARKDOWN file as mindmap
-- [MSG Viewer](/extensions/msg-viewer) - Viewer for Emails in MSG format
-- [PDF Viewer](/extensions/pdf-viewer) - Viewer for documents in PDF format
-- [RTF Viewer](/extensions/rtf-viewer) - Viewr for richt text files in RTF format
-- [Text Reader](/extensions/text-viewer) - Viewer for plain text files in TXT, Markdown and various source code formats
-- [Document Viewer](/extensions/document-viewer) - Viewer for word documents in DOCX
-- [Slided Viewer](/extensions/slides-viewer) - Viewer for Reveal.js presentations
-- [Spreadsheet Viewer](/extensions/spreadsheet-viewer) - Preview of spreadsheets in ODS, XLSX, CSV formats
-- [ZIP Viewer](/extensions/archive-viewer) - Preview for archives in ZIP file format
-- [3D Viewer](/extensions/3d-viewer) - <ProFeature /> Preview for 3d models in GLB, STL and OBJ formats
-- [Font Viewer](/extensions/font-viewer) - <ProFeature /> Preview for fonts in TTF, OTF and WOFF formats
+- [Media Player](/extensions/media-player) - Opens audio and video files.
+- [E-Book Viewer](/extensions/ebook-viewer) - Opens eBooks in EPUB format.
+- [HTML Viewer](/extensions/html-viewer) - Views HTML files, such as those saved by the [Web Clipper](/web-clipper).
+- [Image Viewer](/extensions/image-viewer) - Previews images and photos in formats like JPG, GIF, WEBP, TIF, and TGA.
+- [Link Opener](/extensions/url-viewer) - Opens bookmarks in URL, DESKTOP, or WEBSITE formats.
+- [Markdown Reader](/extensions/md-viewer) - Previews Markdown files.
+- [MHTML Reader](/extensions/mhtml-viewer) - Views webpages in MHTML format and emails in EML format.
+- [Mind Map Viewer](/extensions/mindmap-viewer) - Displays Markdown (.MD) or .MARKDOWN files as mind maps.
+- [MSG Viewer](/extensions/msg-viewer) - Opens emails in MSG format.
+- [PDF Viewer](/extensions/pdf-viewer) - Previews documents in PDF format.
+- [RTF Viewer](/extensions/rtf-viewer) - Views rich text files in RTF format.
+- [Text Reader](/extensions/text-viewer) - Previews plain text files, Markdown files, and various source code formats.
+- [Document Viewer](/extensions/document-viewer) - Previews Word documents in DOCX format.
+- [Slides Viewer](/extensions/slides-viewer) - Opens Reveal.js presentations.
+- [Spreadsheet Viewer](/extensions/spreadsheet-viewer) - Previews spreadsheets in ODS, XLSX, and CSV formats.
+- [ZIP Viewer](/extensions/archive-viewer) - Previews archives in ZIP format.
+- [3D Viewer](/extensions/3d-viewer) - <ProFeature /> Previews 3D models in GLB, STL, and OBJ formats.
+- [Font Viewer](/extensions/font-viewer) - <ProFeature /> Previews fonts in TTF, OTF, and WOFF formats.
 
-TagSpaces is designed with extensibility in mind so any other kind of file viewers can be easily developed and integrated.
+TagSpaces is built with extensibility in mind, allowing new file viewers to be easily developed and integrated into the application.
 
-> **Source code browser and editor** The text editor supports source code highlighting for many common programming languages. This in combination with the build in [JSON editor](/extensions/json-editor) makes the application a good source code navigator with basic editing capabilities. The intention here is not to makes TagSpaces your next IDE, but rather to give your quick overview of source code repositories.
+> **Source Code Browser and Editor:** TagSpaces includes a built-in text editor that supports source code highlighting for many common programming languages. Coupled with the [JSON editor](/extensions/json-editor), it serves as a convenient tool for navigating source code repositories and performing basic code edits. However, it is not intended to replace your IDE but rather to give you a quick overview of code files.
 
-## Assigning file viewer to file extensions
+## Assigning File Viewers to File Extensions
+
+You can assign different viewer extensions to specific file extensions via the settings menu.
 
 ![settings tab file types](/media/settings-tab-file-types.svg)
 
-## Printing files
+## Printing Files
 
-The majority of the viewer extensions has tha ability to print the opened files, thanks to the build in print functionality. In the following short video, you can see how you can start the printing.
+Most viewer extensions in TagSpaces support printing thanks to the built-in print functionality. In the following short video, you can see how to initiate file printing.
 
 ![printing files](/media/printing.gif)

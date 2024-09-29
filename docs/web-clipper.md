@@ -1,132 +1,134 @@
 ---
-title: Web clipping - collect everything online
+title: Web Clipping - Collect Everything Online
 tags: [tutorial]
 ---
 
 import { ProFeature, CenteredImage, CenteredVideo } from '@site/src/components/CommonBlocks';
 import VideoYT from '@site/src/components/VideoYT';
 
-In order to provide an easy way to collect web content such as web pages, articles, PDF-documents, bookmarks, places and screenshots, we have created the TagSpaces Web Clipper browser extension. The main difference with other web clipping software is that our extension saves the content locally on the user's hard drive as plain files, allowing a full control on the saved files.
+To provide an easy way to collect web content such as web pages, articles, PDF documents, bookmarks, places, and screenshots, we have created the TagSpaces Web Clipper browser extension. Unlike other web clipping software, our extension saves content locally on the user's hard drive as plain files, offering full control over the saved files.
 
-The extension is available for [Chrome](https://chrome.google.com/webstore/detail/tagspaces-web-clipper/ldalmgifdlgpiiadeccbcjojljeanhjk), [Firefox](https://addons.mozilla.org/en-US/firefox/addon/tagspaces/) and [Microsoft Edge](https://microsoftedge.microsoft.com/addons/detail/tagspaces-web-clipper/dinjgbhjngaockabnagbonbfinanjpdn) browsers.
+The extension is available for [Chrome](https://chrome.google.com/webstore/detail/tagspaces-web-clipper/ldalmgifdlgpiiadeccbcjojljeanhjk), [Firefox](https://addons.mozilla.org/en-US/firefox/addon/tagspaces/), and [Microsoft Edge](https://microsoftedge.microsoft.com/addons/detail/tagspaces-web-clipper/dinjgbhjngaockabnagbonbfinanjpdn).
 
 <VideoYT
     youtubeId="lUVoa8tAr6U"
     title="TagSpaces Web Clipper Introduction Video"
     posterUrl="/media/videos/tagspaces-webclipper-screenshot-yt-video.png"
     height={550}
-  />
+/>
 
-## Basic features
+## Basic Features
 
-Before the creation of any file, the user has the ability to change the title of the file and to add tags to its file name. This information can be entered in section (1) and (2) of the extension's screenshot.
+Before creating any file, the user can change the file's title and add tags to its name. This information can be entered in sections (1) and (2) of the extension's interface.
 
 <CenteredImage
     caption="A screenshot showing the web clipper in action"
     src="/media/tagspaces-webclipper.png"
     maxWidth="550px"
     showCaption
-  />
+/>
 
 :::tip
-The basic functionalities described in the following section are completely decoupled from the desktop application of TagSpaces and so they can be used with any other application supporting HTML, MHTML, PNG, PDF or URL files.
+The basic functionalities described in the following sections are completely decoupled from the TagSpaces desktop application and can be used with any other application that supports HTML, MHTML, PNG, PDF, or URL files.
 :::
 
-### Save content as HTML
+### Save Content as HTML
 
-The `Save Editable Page` button will save the current webpage as a single file including the embedded images and styling information in HTML format. Here the extension supports two modes. The default one is called **simplified**, where TagSpaces uses a [library](https://github.com/mozilla/readability) for automatic extraction of the webpage's main content without any clutter of adds or navigation. This is very useful clipping articles for example. The second one is called **full**. Here the extension tries to save all the original text and image content of the webpage.
+The `Save Editable Page` button saves the current webpage as a single file, including embedded images and styling, in HTML format. There are two modes available:
 
-HTML files can be opened with every web browser. TagSpaces application have a build in [viewer](/extensions/html-viewer) and [editor](/extensions/html-editor) for such files, so you can for example add comments or mark some important information.
+- **Simplified Mode:** Automatically extracts the webpage's main content without clutter like ads or navigation, useful for clipping articles (uses [Mozilla's Readability](https://github.com/mozilla/readability) library).
+- **Full Mode:** Saves all original text and image content of the webpage.
 
-### Save content as MHTML
+HTML files can be opened with any web browser. TagSpaces also has a built-in [viewer](/extensions/html-viewer) and [editor](/extensions/html-editor) for HTML files, allowing users to add comments or highlight important information.
 
-This options is available only on Chromium based browser like Google Chrome or Microsoft Edge browsers. The button `Save Complete Page` will save the web page in the MHTML format, the main advantage of this format is that it preserves the original design of the web page as much as possible.
+:::info
+The javascript code in the crate HTML-file is removed in order to prevent unwanted behavior on opening the file with other programs.
+:::
 
-On some browsers the saving in MHTML format is not enabled by default. You can see how to activate in [here](#enabling-the-saving-of-webpages-as-mhtml).
+### Save Content as MHTML
 
-MHTML files are supported natively in web browsers like Google Chrome, MS Edge or Internet Explorer. Files in this format can be previewed in the TagSpaces applications with the help of the built-in [MHTML viewer](/extensions/mhtml-viewer).
+Available only on Chromium-based browsers like Chrome and Edge, the `Save Complete Page` button saves the webpage in MHTML format, preserving the original design as much as possible.
 
-### Save content as PDF
+On some browsers, MHTML saving is not enabled by default. Learn how to activate it [here](#enabling-the-saving-of-webpages-as-mhtml).
 
-On the Firefox browser `Save Complete Page` button will save of the current web page as PDF file.
+MHTML files are natively supported by Chrome, Edge, and Internet Explorer. TagSpaces includes an integrated [MHTML viewer](/extensions/mhtml-viewer).
 
-### Save current selection
+### Save Content as PDF
 
-If you have selected text and images in the current tab, you can save this selection with the button `Clip Selection` as HTML. Here again the extension will embed the contained images as data-urls in the HTML file itself.
+On Firefox, the `Save Complete Page` button saves the webpage as a PDF file.
 
-### Save a screenshot
+### Save Current Selection
 
-The `Take Screenshot` will save a screenshot of the visible area of the current web page as a PNG file.
+If you select text and images on the webpage, the `Clip Selection` button saves the selection as an HTML file, embedding images as data URLs directly into the file.
 
-### Save bookmark
+### Save a Screenshot
 
-The button "Create bookmark" will create an URL file containing the url of the current web page. This is useful if you don't want to save the whole page, but only to make a bookmark to it.
+The `Take Screenshot` button saves a screenshot of the visible area of the webpage as a PNG file.
+
+### Save Bookmark
+
+The `Create Bookmark` button creates a URL file containing the current webpage's URL, useful for saving only the link rather than the entire page.
 
 ### Download PDF
 
-If the currently opened file is a PDF, the extension will offer to save it.
+If the current webpage is a PDF, the extension offers to save it directly.
 
-## Advanced features
+## Advanced Features
 
-In addition to that we offers some features for more advanced use cases such as the following:
+The TagSpaces Web Clipper also includes several advanced features:
 
-- Embedding the clipping timestamp and the source URL of the currently scraped web page in the HTML file. This information can be used later by previewing the file in TagSpaces for navigation to the original URL of the clipped page.
-- Integration of a screenshot of the visible part of the web site in the created HTML and URL files. If you open the URL for example is opened in the desktop app, the screenshot is extracted and shown in the file preview area. It is also used for the creation of the thumbnail for this file. In addition to that the screenshot is useful for archiving purposed, it displays the web page in the exact way you have opened it in the browser. Everybody knows that some page change or completely disappear very often. This feature makes TagSpaces a perfect visual bookmarking tool.
-- Extracting the geo coordinates from the URLs of mapping services such as OpenStreetMap and Google Maps. This information is converted to a geo tag and embedded in the name of the created file.
-- The extension can create the geo tag in [Open Location Code](https://github.com/google/open-location-code) or OLC for short used as [plus codes](https://plus.codes/) in Google Maps for example. The plus codes have the advantage that they represent the geo coordinates in a much simpler and readable way.
-- By saving of a screenshot from the current web page, the web clipper adds as tags the domain of this web page, the current date and tag "screenshot". This makes the search later for such screenshot much easier in TagSpaces and other application.
+- **Timestamp and Source URL:** The extension embeds the clipping timestamp and source URL in the HTML file. This information is used later for navigation back to the original webpage when previewing in TagSpaces.
+- **Screenshot Integration:** A screenshot of the visible part of the webpage is embedded in the created HTML and URL files. This screenshot is used as a thumbnail and helps archive the webpage as it appeared at the time of clipping. This makes TagSpaces an effective visual bookmarking tool.
+- **Geo Coordinates Extraction:** For URLs from mapping services like OpenStreetMap or Google Maps, the extension extracts geo coordinates and converts them to a geo tag, embedded in the file name.
+- **Plus Codes Support:** The geo tag can be converted to [Open Location Code](https://github.com/google/open-location-code) or Plus Codes, which provide a simpler and more readable representation of geo coordinates (used in Google Maps).
+- **Automated Tagging:** When saving a screenshot, the domain of the webpage, current date, and the "screenshot" tag are automatically added to the file, making search and organization easier within TagSpaces and other applications.
 
 <CenteredImage
     caption="A screenshot showing the extracted geo location as Plus Code"
     src="/media/tagspaces-webclipper-olc.png"
     showCaption
-  />
+/>
 
-The browser extensions are a practical additions to the desktop applications of TagSpaces, allowing a seamless way to collect locally and organize data from the web.
+The browser extension seamlessly integrates with the TagSpaces desktop application, allowing for local collection and organization of web data.
 
-## Adjustments for Chrome based browsers
+## Adjustments for Chrome-based Browsers
 
-Here you will find some tips and trick for using the TagSpaces extension in the **Chrome** and **Chromium** browsers. Some of these will work also for the **Microsoft Edge** browser.
+### Enabling Webpage Saving as MHTML
 
-### Enabling the saving of webpages as MHTML
+Follow these steps to enable MHTML saving in Chrome and Chromium browsers:
 
-TagSpaces is a great tool for MHTML file organization on many platforms, because it features an integrated MHTML viewer, but the question here is how you can save web pages as handy MHTML files directly out of the Chrome browser. Here you will find the answer of this question for the both browsers - Chrome and Chromium respectively. And no, you don't have to install the TagSpaces chrome extension to achieve this, but just to execute the following steps:
+1. Open Chrome/Chromium.
+2. Navigate to `chrome://flags`.
+3. Search for "Save Page as MHTML."
+4. Click "Enable."
+5. Restart your browser.
 
-1. Start the Chrome/Chromium browser
-2. Navigate to "chrome://flags"
-3. Find the entry "Save Page as MHTML"
-4. Click "enable"
-5. Restart your browser
-6. That's it, now the web pages will be saved by default as MHTML
+![Screenshot showing how enable MHTML saving in Chrome](/media/enable--mhtml-saving-chrome.png)
 
-![Screenshot showing how enable mhtml saving in chrome](/media/enable--mhtml-saving-chrome.png)
+> **Note**: After activation, you will no longer be able to save websites as HTML files.
 
-> **Note** After this activation you will not be able to save website in HTML anymore.
+### Adding Keyboard Shortcuts to the Web Clipper
 
-### Adding keyboard shortcut to the web clipper in Chrome
+At the bottom of Chrome's extension management page, you'll find a "Keyboard shortcuts" link (highlighted in red in the screenshot below). This opens a dialog where you can set a direct keyboard shortcut for the extension's popup area.
 
-At the bottom of the extension management page in the Chrome browser you will find a link named "Keyboard shortcuts". See the red area of the screenshot below.
+![Open the Chrome extension shortcut configuration](/media/chrome-shortcuts-config.png)
 
-![open the chrome extension shortcut configuration](/media/chrome-shortcuts-config.png)
+I set `ctrl+s` as my shortcut, replacing Chrome's default "Save As" functionality, but you can choose any key combination.
 
-This link opens a dialog where you can set a direct keyboard shortcut, which will open the popup area of an extension. Since currently the main functionality of the this area in TagSpaces is to scrap the current webpage, I choose for myself the shortcut `ctrl+s`, which overwrites the default save as functionality of Chrome browser. You can choose of course any other key combination, like for example `ctrl+shift+s`.
+![Setting ctrl+s as keyboard shortcut for the web clipper](/media/chrome-set-extension-shortcut.png)
 
-![setting ctrl+s as keyboard shortcut for the web clipper](/media/chrome-set-extension-shortcut.png)
+### Specify Download Folder for Web Clippings
 
-So now I can conveniently save and tag any page by just clicking this shortcut combination.
+To be prompted where to save each file, activate the "Ask where to save each file before downloading" option in Chrome's advanced settings.
 
-### Specify download folder for web clippings
+![Enable asking where to save files in Chrome](/media/chrome-ask-where-to-save.png)
 
-In order to be asked every time, where you want to save the scraped web content, make sure to activate the checkbox "Ask where to save each file before downloading" in the advanced Chrome settings.
+### Pin the Web Clipper
 
-![enable asking where to save the files in Chrome](/media/chrome-ask-where-to-save.png)
-
-### Pin the web clipper
-
-If you want to make the Web Clipper easily accessible it can be placed in the extensions area. You can learn how from the following video.
+Make the Web Clipper easily accessible by pinning it in the extensions area of your browser. Learn how from the video below.
 
 <CenteredVideo
-  caption="Video showing how to pin the chrome web clipper to the extensions's area"
+  caption="Video showing how to pin the chrome web clipper to the extensions' area"
   src="/media/videos/pin-extension-chrome.mp4"
   maxWidth={600}
   autoPlay
