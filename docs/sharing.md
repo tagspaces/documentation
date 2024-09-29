@@ -4,181 +4,190 @@ title: Share files and folders
 
 import { ProFeature, EntFeature, CenteredImage, CenteredVideo, FullScreenImage } from '@site/src/components/CommonBlocks';
 
-You can share files in two ways, here you will find how this can be done.
+You can share files in two ways, and here is how it can be done.
 
 ## Internal sharing for files and folders
 
-The first one which was introduced back in version 3.8 is called "Sharing", as seen in the next screenshot. It is intended for sharing links to files anf folders with other TagSpaces users and installations. These links will work on object storage locations or local locations synced with tools such as Dropbox, Google Drive or Syncthing. Other important requirement is that these location should have the [same location id](/linking#location-ids).
+The first method, introduced back in version 3.8, is called "Sharing." It allows you to share links to files and folders with other TagSpaces users and installations. These links will work for object storage locations or local locations synced with tools such as Dropbox, Google Drive, or Syncthing. A key requirement is that these locations must have the [same location ID](/linking#location-ids).
 
 <CenteredImage
-    caption="Sharing link file and folder properties"
+    caption="Sharing link in file and folder properties"
     src="/media/sharing-link.png"
     maxWidth="778px"
     showCaption
-  />
+/>
 
-Once copied to the clipboard with the **COPY** button, the link can be shared for example per email or via messenger. The person with which you share the link have to open his installation of TagSpaces and paste the link in the search box of the app and hit enter.
+Once copied to the clipboard with the **COPY** button, the link can be shared, for example, via email or messenger. The recipient must open TagSpaces, paste the link into the search box, and press enter.
 
 <CenteredImage
     caption="Open TS-Links from the search box"
     src="/media/tslinks-in-search.png"
     showCaption
-  />
+/>
 
-Alternatively she can navigation to the locations section and open the three-dot menu and choose on the **Open Link**, as showed in the next screenshot.
+Alternatively, they can navigate to the locations section, open the three-dot menu, and select **Open Link**, as shown in the next screenshot.
 
 <CenteredImage
     caption="Open shared links in TagSpaces"
     src="/media/open-shared-links.png"
     maxWidth="697px"
     showCaption
-  />
+/>
 
 :::info
-This kind of links can be also used for internal links in TagSpaces, more on this topic can be found in the a dedicated [linking section](/linking).
+These kinds of links can also be used for internal links within TagSpaces. More details can be found in the dedicated [linking section](/linking).
 :::
 
-## Sharing download link to a file
+## Sharing download links to a file
 
 <ProFeature />
 
-The second kind of sharing links are called "Links for downloading" and are available only for only files (not folders) located on object storages (e.g. AWS S3 or MinIO). The place responsible for this links is located in the file properties and is marked in the next screenshot.
+The second type of sharing links, called "Links for downloading," are available only for files (not folders) located on object storages such as AWS S3 or MinIO. The relevant section in the file properties is shown in the next screenshot.
 
 <CenteredImage
     caption="Download links in the file properties"
     src="/media/download-link.png"
     maxWidth="778px"
     showCaption
-  />
+/>
 
-The click on the **Generate Link** button will open the following dialog:
+Clicking the **Generate Link** button opens the following dialog:
 
 <CenteredImage
     caption="Generating the download links"
     src="/media/generate-download-link.png"
     maxWidth="595px"
     showCaption
-  />
+/>
 
-Here you can have the following options:
+Here, you have the following options:
 
-- Ability to adjust the **validity duration** of the link. Currently supported are these durations: 15 minutes, 1 hour, 1 day, 3 days and 1 week.
-- The **Copy** button copies the link to the clipboard, so you can use it in some other application.
-- A **QR-code** of the link is automatically generated on opening the dialog. By changing the duration, the QR-code is automatically re-generated.
+- Adjust the **validity duration** of the link. Supported durations include: 15 minutes, 1 hour, 1 day, 3 days, and 1 week.
+- The **Copy** button copies the link to the clipboard for use in other applications.
+- A **QR-code** of the link is automatically generated. Changing the duration will regenerate the QR-code.
 
-The generated link can be shared for example via chat ot email so the counterpart, so opening it in a browser will initiate the download. If the link is expired the user will see the following message:
+The generated link can be shared via chat or email. When opened in a browser, the download will be initiated. If the link expires, the user will see this message:
 
 <CenteredImage
     caption="Expired download links"
     src="/media/expired-download-link.png"
     maxWidth="797px"
     showCaption
-  />
+/>
 
 ### Downloading directly in locations
 
-It is possible to download such links also directly in a TagSpaces locations, without the need of a browser. Just go to the file create dialog, click on **More options**, paste the link in the URL text field and click the **Start the Download** button. The file will be saved in the current folder of your current location.
+It is possible to download files via links directly into a TagSpaces location, bypassing the browser. Click on the **Create new** button and from the menu choose **New From URL**
 
 <CenteredImage
-    caption="Download in locations"
-    src="/media/create-dialog-download-links.png"
-    maxWidth="592px"
+    caption="Open "
+    src="/media/open-download-from-url-dialog.avif"
+    maxWidth="350px"
     showCaption
-  />
+/>
+
+This will open the following dialog, where you can paste the URL and start the download with the **OK** button.
+
+<CenteredImage
+    caption="Open "
+    src="/media/download-file-dialog.avif"
+    maxWidth="450px"
+    showCaption
+/>
 
 ### Downloading to your phone
 
-If you point the camera of your phone or tablet to the QR-code, the link should be automatically recognized and then you can initiate its opening in your mobile browser. This is the easiest way to transfer files from your object storage locations to mobile devices.
+You can also download files to your phone or tablet. Point your device’s camera at the QR-code, and it will automatically recognize the link, allowing you to open it in your mobile browser. This is an easy way to transfer files from object storage to mobile devices.
 
-## Sharing many files at once
+## Sharing multiple files at once
 
 <ProFeature />
 
-If you want to share the files from a given folder, just few of them or your current search results, you will need a functionality for sharing many files at once. This functionality is now possible in the [Grid](/perspectives/grid), [List](/perspectives/list) and [Kanban](/perspectives/kanban) perspectives. To open the sharing dialog you have to click the sharing icon from the toolbar or choose the share menu item from the file context menu in these perspectives.
+To share files from a folder, a selection of files, or search results, you can use the "Share many files" feature. This functionality is available in the [Grid](/perspectives/grid), [List](/perspectives/list), and [Kanban](/perspectives/kanban) perspectives. To open the sharing dialog, click the sharing icon in the toolbar or select the share option from the context menu in these perspectives.
 
 <CenteredImage
     caption="Open the file sharing dialog"
     src="/media/open-sharing-dialog.png"
     maxWidth="1056px"
     showCaption
-  />
+/>
 
-The dialogs opens and generates sharing links which are valid for 3 days. You can adjust the validity of the links from the dropbox, where can choose among 15 minutes, 60 minutes, 1 day, 3 days and 7 days. After the validity time expires the links will not work anymore. TagSpaces do not offer links for permanent sharing.
+The dialog generates sharing links that are valid for 3 days by default. You can adjust the validity duration to 15 minutes, 60 minutes, 1 day, 3 days, or 7 days. After expiration, the links will no longer work. TagSpaces does not offer permanent sharing links.
 
 <CenteredImage
     caption="The file sharing dialog"
     src="/media/file-sharing-dialog.png"
     maxWidth="735px"
     showCaption
-  />
+/>
 
-In central area of the dialog surrounded by a dashed line you will see a preview of the generated code snipped. If the shared files have thumbnails, they will be displayed, otherwise the name of the file is displayed. In the top part of this area, the expiration date of the links is stated.
+The center of the dialog, surrounded by a dashed line, shows a preview of the generated HTML snippet. If the shared files have thumbnails, they will be displayed; otherwise, the filenames will be shown. The expiration date of the links is displayed at the top of this area.
 
-At the bottom of dialog you will have the following options:
+At the bottom of the dialog, you have the following options:
 
-- **Copy to clipboard** - this will copy the generated code with the links in the clipboard, so you can copy it an email or a chat program.
-- **Save as HTML** - this will initiate the saving of the generated code locally as a HTML file, so you can for example include it in as attachment in an email.
-- **Save & Share** - this will save the generated HTML file in the S3 bucket and open the file sharing dialog, where you can directly share the file.
-- **Close** - will close this dialog.
-- **Help** - will open this help page in online documentation of the application.
+- **Copy to clipboard** - Copies the generated code with the links to the clipboard, so you can paste it into an email or chat application.
+- **Save as HTML** - Saves the generated code locally as an HTML file, which can be attached to an email.
+- **Save & Share** - Saves the generated HTML file to the S3 bucket and opens the sharing dialog, allowing direct sharing of the file.
+- **Close** - Closes the dialog.
+- **Help** - Opens this help page in the online documentation.
 
-:::info
-If the links are not expired, anybody in possession of the code with the sharing will be able to access and download the shared files. So please be careful how, where and with whom you share the code
+:::caution
+If the links have not expired, anyone with the code snippet can access and download the shared files. So be cautious with whom and how you share this code.
 :::
 
-### Using the HTML snipped in email clients
+### Using the HTML snippet in email clients
 
-This is how the HTML snipped looks like once pasted in some common email clients.
+Here is how the HTML snippet appears when pasted into some common email clients.
 
 #### Thunderbird
 
 <CenteredImage
-    caption="Sharing snipped in Thunderbird"
+    caption="Sharing snippet in Thunderbird"
     src="/media/sharing-snipped-thunderbird.png"
     maxWidth="970px"
     showCaption
-  />
+/>
 
 :::info
-In Gmail you should uncheck the "Plain text mode" makred in the screenshot bellow in order the links to recognized
+In Gmail, make sure to uncheck the "Plain text mode" option, as marked in the screenshot below, to ensure the links are recognized.
 :::
 
 #### Gmail
 
 <CenteredImage
-    caption="Sharing snipped in Gmail"
+    caption="Sharing snippet in Gmail"
     src="/media/sharing-snipped-gmail.png"
     maxWidth="970px"
     showCaption
-  />
+/>
 
 #### Outlook
 
 <CenteredImage
-    caption="Sharing snipped in Outlook"
+    caption="Sharing snippet in Outlook"
     src="/media/sharing-snipped-outlook.png"
     maxWidth="970px"
     showCaption
-  />
+/>
 
-### Using the HTML snipped in chat apps
+### Using the HTML snippet in chat apps
 
-This is how the HTML snipped looks like once pasted in some common chat apps.
+This is how the HTML snippet looks when pasted into common chat applications.
 
 #### Signal
 
 <CenteredImage
-    caption="Sharing snipped in Signal"
+    caption="Sharing snippet in Signal"
     src="/media/sharing-snipped-signal.png"
     maxWidth="970px"
     showCaption
-  />
+/>
 
 #### Whatsapp
 
 <CenteredImage
-    caption="Sharing snipped in Whatsapp"
+    caption="Sharing snippet in Whatsapp"
     src="/media/sharing-snipped-whatsapp.png"
     maxWidth="970px"
     showCaption
-  />
+/>
