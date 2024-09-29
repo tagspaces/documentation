@@ -209,8 +209,6 @@ You can specify date ranges using the following formats:
 
 These date range tags help you organize and filter files based on time periods.
 
----
-
 ## Location Tags
 
 <ProFeature />
