@@ -9,7 +9,7 @@
     "swizzle": "docusaurus swizzle",
     "serve": "docusaurus serve",
     "gen-pdf-bak": "npx docusaurus-pdf from-build-config",
-    "gen-pdf": "npx mr-pdf --initialDocURLs='https://docs.tagspaces.org' --contentSelector='article' --paginationSelector='.pagination-nav__item--next > a' --excludeSelectors='.margin-vert--xl a' --coverImage='https://docusaurus.io/img/docusaurus.png' --coverTitle='TagSpaces Docs'",
+    "gen-pdf": "npx docs-to-pdf --initialDocURLs='http://localhost:3000/' --contentSelector='article' --paginationSelector='a.pagination-nav__link.pagination-nav__link--next' --excludeSelectors='.margin-vert--xl a,[class^='tocCollapsible'],.breadcrumbs,.theme-edit-this-page' --coverImage='http://localhost:3000/img/logo.svg' --coverTitle='TagSpaces v6 - User Documentation'",
     "update-ext": "./update-external.sh",
     "anigif": "gifify --colors 150 --to 19 media/input.webm -o media/result.gif",
     "prepare1": "yarn optipng && yarn update-ext && yarn build",
