@@ -39,7 +39,7 @@ The `Save Editable Page` button saves the current webpage as a single file, incl
 - **Simplified Mode:** Automatically extracts the webpage's main content without clutter like ads or navigation, useful for clipping articles (uses [Mozilla's Readability](https://github.com/mozilla/readability) library).
 - **Full Mode:** Saves all original text and image content of the webpage.
 
-HTML files can be opened with any web browser. TagSpaces also has a built-in [viewer](/extensions/html-viewer) and [editor](/extensions/html-editor) for HTML files, allowing users to add comments or highlight important information.
+HTML files can be opened with any web browser. TagSpaces also has a built-in [viewer](/extensions/html-viewer/) and [editor](/extensions/html-editor/) for HTML files, allowing users to add comments or highlight important information.
 
 :::info
 The javascript code in the crate HTML-file is removed in order to prevent unwanted behavior on opening the file with other programs.
@@ -51,7 +51,7 @@ Available only on Chromium-based browsers like Chrome and Edge, the `Save Comple
 
 On some browsers, MHTML saving is not enabled by default. Learn how to activate it [here](#enabling-the-saving-of-webpages-as-mhtml).
 
-MHTML files are natively supported by Chrome, Edge, and Internet Explorer. TagSpaces includes an integrated [MHTML viewer](/extensions/mhtml-viewer).
+MHTML files are natively supported by Chrome, Edge, and Internet Explorer. TagSpaces includes an integrated [MHTML viewer](/extensions/mhtml-viewer/).
 
 ### Save Content as PDF
 

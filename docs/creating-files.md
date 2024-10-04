@@ -58,7 +58,7 @@ This opens the content creation menu, where you can choose from the following ac
   />
 
 :::info
-Downloading files from URLs generally works for files shared from object stores, but often fails due to CORS restrictions implemented by websites. As a workaround, you can use our **[browser extension](/web-clipper)**.
+Downloading files from URLs generally works for files shared from object stores, but often fails due to CORS restrictions implemented by websites. As a workaround, you can use our **[browser extension](/web-clipper/)**.
 :::
 
 - **New Location** - Opens the dialog for creating a new location.

@@ -34,11 +34,11 @@ The only extra the text editor offers is basic code highlighting for some common
 
 ![](/media/code-highlighting-js.png)
 
-The text editor will keep the option to print from the plain [text viewer](/extensions/text-viewer).
+The text editor will keep the option to print from the plain [text viewer](/extensions/text-viewer/).
 
 ### MarkDown Editor
 
-When you open a MarkDown file for editing from the [MarkDown Viewer](/extensions/md-viewer), it will be opened with the same **Text Editor** any plain text file would, offering inline highlighting of Markdown syntax.
+When you open a MarkDown file for editing from the [MarkDown Viewer](/extensions/md-viewer/), it will be opened with the same **Text Editor** any plain text file would, offering inline highlighting of Markdown syntax.
 
 ![](/media/markdown-syntax-highlight.png)
 

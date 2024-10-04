@@ -14,11 +14,11 @@ This streamlined experience ensures ease of use across platforms, so once you're
 
 The application's user interface consists of the following main areas:
 
-1. **[Left Drawer](#left-drawer)** - Open the [location manager](/ui/locations) or [tag library](/ui/taglibrary) and access other important app functionalities like [settings](/ui/settings).
+1. **[Left Drawer](#left-drawer)** - Open the [location manager](/ui/locations/) or [tag library](/ui/taglibrary/) and access other important app functionalities like [settings](/ui/settings).
 2. **[Navigation and Search](#navigation-and-search)** - Use this area to search, switch locations, or navigate to parent folders.
 3. **[Browsing Area](/browsing-files)** - The central section for browsing files and folders using various **perspectives**.
 4. **[Common Actions Area](#preview-area)** - Access actions for the currently opened file or folder.
-5. **[File](/files#file-properties) / [Folder](/folders#folder-properties) Properties** - View the properties of the opened file or folder.
+5. **[File](/files/#file-properties) / [Folder](/folders/#folder-properties) Properties** - View the properties of the opened file or folder.
 6. **[File Preview](#file-preview)** - Preview and/or edit the current file here.
 
 ## Left Drawer
