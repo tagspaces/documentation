@@ -1,5 +1,6 @@
 ---
 title: Install on TagSpaces Web
+description: Learn how to setup TagSpaces Web on a web server.
 tags: [tutorial]
 ---
 

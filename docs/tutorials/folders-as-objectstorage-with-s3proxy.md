@@ -1,5 +1,6 @@
 ---
 title: Exposing local folders as object storage with S3Proxy
+description: Learn how to expose local folder as s3 object storage with S3Proxy
 tags: [tutorial]
 ---
 

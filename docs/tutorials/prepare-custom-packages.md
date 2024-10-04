@@ -1,5 +1,6 @@
 ---
 title: Prepare custom packages
+description: Learn how to prepare custom packages for TagSpaces' desktop app.
 tags: [tutorial]
 ---
 
