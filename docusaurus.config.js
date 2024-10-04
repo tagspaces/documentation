@@ -52,7 +52,7 @@ const config = {
             position: "right",
           },
           {
-            href: "https://www.tagspaces.org/demo/",
+            href: "https://demo.tagspaces.com/",
             label: "Live Demo",
             position: "right",
           },
