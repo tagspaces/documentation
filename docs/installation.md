@@ -80,6 +80,8 @@ chmod +x tagspaces-linux-x86_64-x.x.x.AppImage
 
 Then, you can launch it with a double-click.
 
+The **profile** folder under Linux/Ubuntu is located here: `/home/your_username/.config/TagSpaces`
+
 ### Updating the Linux version
 
 To update the **tar.gz** version, replace the contents of your current installation with the files from the new release. Your tag library and locations are persisted in the user's home folder. For distribution packages, simply reinstall over the current version.
