@@ -1,0 +1,109 @@
+---
+title: AI Functionality (experimental)
+---
+
+import VideoYT from '@site/src/components/VideoYT';
+import { ProFeature, CenteredImage, CenteredVideo } from '@site/src/components/CommonBlocks';
+
+
+Starting with the version 6.1.1 the TagSpaces desktop application you can connect to Ollama and use it as external AI service provider. [Ollama](https://ollama.com/)) is a software which can be installed **locally** on your computer and which will provide the ability to run AI models (LLMs - large language models) locally on your computer.
+
+:::tip
+TagSpaces' products do not have its own AI-engine or AI-models, but relay entirely on external AI-software such as Ollama for this functionality. All the **AI-features are turned off** by default.
+:::
+
+## Prerequisites
+
+- A modern PC with a recent Nvidia/AMD graphic card or Mac with Apple Silicon processor. Ollama will work also on regular CPUs but the performance will be slow.
+- [Download](https://ollama.com/download) and install Ollama software.
+- at least 10 GBs of free hard drive space for the LLMs.
+
+## AI Configuration
+
+In the settings of the a new tab called **AI** can be found. Here you can add AI-engines and manage the AI-models for these engines
+
+###  Add AI-engine.
+After you install ollama on your computer you can add it, be clicking the "Add AI engine" button in TagSpaces.
+<CenteredImage
+caption="Add Ollama as AI-engine"
+src="/media/ai/settings-add-ollama.avif"
+/>
+If everything went ok you will see a new section, called Ollama having a green indicator, symbolising that the Ollama is running in the background. If there are connection issues the indicator will be red.
+<CenteredImage
+caption="Ollama connected in TagSpaces"
+src="/media/ai/settung-ollama-running.avif"
+/>
+The default configuration is looking for the ollama service on your local machine (url: https://localhost:11434), but it can be on another computers in your network. You can have also more then one Ollama configurations in TagSpaces. Just add another one with the **Add AI Engine** button. Which one of the AI-engines is currently used can be selected in the **Default AI Engine** dropdown.
+
+### Downloading models
+Next important step is download a suitable model (LLM). This can be done in the "Default model for text-based tasks" dropdown.
+<CenteredImage
+caption="Choosing AI models"
+src="/media/ai/settings-choose-ai-model.avif"
+/>
+In the section "Example installable AI models" you can choose a suitable model. For text based tasks we have made a good experience with the **llama3.2** model. For image based tasks, such as description of an image, we have worked with *llava* and *llama3.2-vision*. The last one is significantly slower but creates better results.
+
+Once you select a model from the list a progress dialog will appear, where you can see the status of the download process. The model's sizes vary a lot but they are usually many GBs big, so be patient.
+
+If you do not find the model you want you can install further models from the ollama's [command line tool](https://github.com/ollama/ollama/tree/main?tab=readme-ov-file#cli-reference).
+
+## AI Chat in Folders
+If everything is configured correctly you will find a new button to the right of the perspective switcher buttons in the folder area. Click on the button to open the **AI Chat** tab in the folder properties. 
+<CenteredImage
+caption="Open folder AI-chat"
+src="/media/ai/open-folder-chat.avif"
+/>
+On top of the tab, you can choose the model you want to use for the AI-cat. At the bottom of the tab you will find the AI prompt, where you can ask questions.
+
+<CenteredImage
+caption="AI-chat results"
+src="/media/ai/folder-chat-results.avif"
+/>
+
+So now you can have a separate chat in every folder you manage in TagSpaces. This way you can organize your chat-based research or project simply in folders.
+
+<CenteredImage
+caption="Add images to AI prompts"
+src="/media/ai/images-in-folder-chat.avif"
+/>
+
+:::warning
+All the chat history including the images you have dropped in the AI-prompt are saved in the **ai** folder located in the **.ts** sub folder of the current folder. Deleting the **ai** or the folder itself will delete all the chat history.
+:::
+
+## AI-features for files
+
+<ProFeature /> The file related AI-features will be part of the PRO version. We have added the following functionalities so far.
+
+* Generate description of an image in JPG and PNG formats.
+* Generate tags from the description of a file.
+
+<CenteredImage
+caption="Add images to AI prompts"
+src="/media/ai/ai-generated-image-description.avif"
+/>
+
+* Generate tags of an image in JPG and PNG formats.
+
+<CenteredImage
+caption="Add images to AI prompts"
+src="/media/ai/ai-generated-image-tags.avif"
+/>
+
+* Generate description of a PDF file based on its content.
+
+<CenteredImage
+caption="Add images to AI prompts"
+src="/media/ai/ai-generated-pdf-description.avif"
+/>
+
+### AI-features in our roadmap
+
+* Generate summary of text-based files
+* Batch operations on many files
+* Integration of further AI-engines
+* Extraction of the lead colors in images
+* Translation of generated content
+* Configuration the langauge in which the content is generated
+
+

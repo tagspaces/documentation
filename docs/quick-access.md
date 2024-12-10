@@ -24,3 +24,10 @@ This section contains the following areas:
 ## Recent folders
 
 ## Settings
+
+The amount of the collected files can be adjusted in the advanced tab of the settings. Here you can also clear the history or deactivate the collection of the recent entries by choosing the _disabled_ menu item in dropdowns.
+
+<CenteredImage
+caption="Changing the location ID"
+src="/media/settings/settings-recently-opened-entries.avif"
+/>

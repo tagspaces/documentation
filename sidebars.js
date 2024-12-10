@@ -397,6 +397,7 @@ const sidebars = {
         "ui/keybindings",
         "ui/i18n",
         "thumbnails",
+        "ai",
         "dev/metafileformats",
         "dev/software-architecture",
         "dev/external-config",
