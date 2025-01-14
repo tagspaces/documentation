@@ -8,18 +8,19 @@ A TagSpaces extension that allows the playback of audio and video files.
 - Fullscreen mode for an immersive experience.
 - Automatically triggers the opening of the next file in the current folder upon finishing playback, allowing you to listen to multiple audio files continuously, just like a regular music player.
 
-![Screenshot of the media player](/media/extensions/viewer-audiovideo-lead.png)
+![Screenshot of the media player](/media/extensions/media-player.avif)
 
-> Note: The supported audio and video formats depend on the underlying browser platform.
+:::info
+The supported audio and video formats depend on the underlying browser platform.
+:::
 
 ## Used Libraries
 
 This extension relies on the following excellent libraries:
 
-- [Plyr](https://plyr.io/) - A simple, customizable HTML5 media player.
+- [Vidstack](https://vidstack.io/) - An advanced, customizable HTML5 media player.
 - [React](https://reactjs.org/) - A JavaScript library for building user interfaces.
 - [Mui](https://mui.com/) - A popular React UI framework.
-- [Plyr-react](https://github.com/chintan9/plyr-react) - A React wrapper for the Plyr media player.
 
 ## Installation
 
