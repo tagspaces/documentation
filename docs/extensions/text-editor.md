@@ -5,18 +5,19 @@ A TagSpaces extension allowing editing of text-based documents.
 ## Features
 
 - Opening and editing of text documents
-- Syntax highlighting for the following file types: h, c, clj, coffee, coldfusion, cpp, cs, css, groovy, haxe, htm, html, java, js, jsm, json, latex, less, ly, ily, lua, markdown, md, mdx, ml, mli, pl, php, powershell, py, rb, scad, scala, scss, sh, sql, svg, textile, txt, xml
+- Syntax highlighting for the following file types: h, c, clj, coffee, coldfusion, cpp, cs, css, groovy, haxe, htm, html, java, js, ts, tsx, jsm, json, latex, less, ly, ily, lua, markdown, md, mdx, ml, mli, pl, php, powershell, py, rb, scad, scala, scss, sh, sql, svg, textile, txt, xml
 
-![Screenshot of the editorText](/media/extensions/editor-text-lead.png)
+![Code highlighting with the text editor](/media/extensions/text-editor-code.avif)
 
 ## Used Libraries
 
 This extension thankfully relies on the following great libraries:
 
-- [Codemirror](http://codemirror.net/)
-- [Bootstrap](https://getbootstrap.com/)
+- [Monaco-editor](https://microsoft.github.io/monaco-editor/)
+- [React](https://reactjs.org/) - A JavaScript library for building user interfaces.
+- [Mui](https://mui.com/material-ui/) - A popular React UI framework.
 - [i18next](https://www.i18next.com/)
-- [Dompurify](https://github.com/cure53/DOMPurify)
+- [Dompurify](https://github.com/cure53/DOMPurify) - library for content sanitization
 
 ## Installation
 
@@ -26,16 +27,25 @@ This extension is packaged with any new version of TagSpaces.
 
 ### Text Editor
 
-When you edit a plain text file, or any unsupported file format that displays the edit button, the simple text editor will open.
+The text editor offers code highlighting for some common programming languages. In the extension menu you will find some extras like toggling line number, adjusting the font size or toggling the wrapping for words.
 
-![](/media/random-text-file.png)
-
-The only extra the text editor offers is basic code highlighting for some common programming languages, and numbered lines.
-
-![](/media/code-highlighting-js.png)
+![Screenshot of the editorText](/media/extensions/text-editor-main.avif)
 
 The text editor will keep the option to print from the plain [text viewer](/extensions/text-viewer/).
 
+## Source Code
+
+The source code of this extension is freely available on [GitHub](https://github.com/tagspaces/tagspaces-extensions/tree/main/text-editor).
+
+## Development
+
+If you want to extend this extension, please follow our general [extension development guide](/dev/extension-development-guide).
+
+## License
+
+[MIT](https://github.com/tagspaces/tagspaces-extensions/blob/main/text-editor/LICENSE.txt)
+
+<!--
 ### MarkDown Editor
 
 When you open a MarkDown file for editing from the [MarkDown Viewer](/extensions/md-viewer/), it will be opened with the same **Text Editor** any plain text file would, offering inline highlighting of Markdown syntax.
@@ -64,16 +74,4 @@ To enter a relative path, you can usually use UNIX-style slashes (`/`) in paths,
 
 :::info
 TagSpaces only understands relative paths. You cannot reference any level above your current folder, or the root of your connected location, but might only link files located in the currently active folder, or in subfolders within.
-:::
-
-## Source Code
-
-The source code of this extension is freely available on [GitHub](https://github.com/tagspaces/tagspaces-extensions/tree/main/text-editor).
-
-## Development
-
-If you want to extend this extension, please follow our general [extension development guide](/dev/extension-development-guide).
-
-## License
-
-[MIT](https://github.com/tagspaces/tagspaces-extensions/blob/main/text-editor/LICENSE.txt)
+:::-->

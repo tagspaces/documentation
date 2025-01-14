@@ -20,7 +20,7 @@ To create a new file in TagSpaces, you have several options. The easiest way is 
 
 On the desktop version of the app, you can also press `ALT` to open the **Main Menu** and then select **New File** from the **File menu**.
 
-![Create new file from the main menu](/media/create-new-file-menu.png)
+![Create new file from the main menu](/media/create-new-file-menu.avif)
 
 This opens the content creation menu, where you can choose from the following actions:
 
@@ -38,7 +38,19 @@ This opens the content creation menu, where you can choose from the following ac
 
 - **New Link File** - Create a URL file, which contain a link to a web site. This files are supported natively on Mac and Windows. There are suitable for creating bookmarks.
 
+<CenteredImage
+    caption="Create new file with the plus button"
+    src="/media/create-new-url-file.avif"
+    maxWidth="450px"
+  />
+
 - **New Audio File** - <ProFeature /> - Opens a dialog where you can record an audio note.
+
+<CenteredImage
+    caption="Create new file with the plus button"
+    src="/media/create-new-audio-file.avif"
+    maxWidth="450px"
+  />
 
 - **New Form Device** - Allows you to import files into the app. See the [Importing Files](#importing-files) section for more details.
 - **New Folder** - Opens the dialog for creating new folders, where beside the name you can choose also the folder's background color.
