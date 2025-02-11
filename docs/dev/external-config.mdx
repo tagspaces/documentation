@@ -221,7 +221,7 @@ Explanation which part of the code should be copied.
 ```js
 {
   "appName": "TagSpaces",
-  "appVersion": "3.1.5",
+  "appVersion": "6.3.1",
   "settingsVersion": 3,
   "tagGroups": [
     // Copy everything from here to window.ExtTagLibrary = [ here ]
@@ -232,6 +232,73 @@ Explanation which part of the code should be copied.
 :::tip
 As soon as tags are defined in the `extconfig.js`, the tag library will rendered read-only in the application, so the user will not able to add, change or delete tags there.
 :::
+
+## Configuring search file types
+With this setting you can customize the file types grouping in the search.
+
+This is the current default configuration:
+
+```js
+window.ExtSearchTypeGroups = {
+  any: [''],
+  images: [
+    'jpg',
+    'jpeg',
+    'jfif',
+    'jif',
+    'jiff',
+    'png',
+    'gif',
+    'svg',
+    'webp',
+    'bmp',
+    'tga',
+    'tif',
+    'tiff',
+    'nef',
+    'cr2',
+    'dng',
+    'psd',
+    'avif',
+    'nef',
+  ],
+  notes: ['md', 'mdown', 'txt', 'html'],
+  documents: [
+    'pdf',
+    'doc',
+    'docx',
+    'xls',
+    'xlsx',
+    'odt',
+    'ods',
+    'odp',
+    'pptx',
+    'numbers',
+    'potx',
+    'sldx',
+    'dotx',
+  ],
+  audio: ['ogg', 'mp3', 'wav', 'wave', 'flac', 'acc', 'm4a', 'opus'],
+  video: ['ogv', 'mp4', 'webm', 'm4v', 'mkv', 'avi', '3gp', '3g2', 'mov'],
+  archives: ['zip', 'rar', 'gz', 'tgz', 'arc', '7z'],
+  bookmarks: ['url', 'lnk', 'sym', 'desktop', 'website'],
+  ebooks: [
+    'epub',
+    'mobi',
+    'azw',
+    'prc',
+    'azw1',
+    'azw3',
+    'azw4',
+    'azw8',
+    'azk',
+  ],
+  emails: ['eml', 'msg'],
+  folders: ['folders'],
+  files: ['files'],
+  untagged: ['untagged'],
+};
+```
 
 ## Configuring custom search queries
 

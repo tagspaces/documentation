@@ -17,7 +17,7 @@ With the search functionality, you are able to find files and folders by their n
 
 ## Open the search
 
-The user can start a search by switching to the search area by pressing the `Ctrl+F` / `Cmd+F` key combination. It can also be opened by clicking on the search text field.
+The user can start a search by switching to the search area by pressing the `Ctrl+K` / `Cmd+K` key combination. It can also be opened by clicking on the search text field.
 
 ![Open search](/media/open-search.png)
 
@@ -93,7 +93,7 @@ The search algorithm can be required to deliver results for the following search
 
 - **Location** - will deliver results from the current location. This is the default scope.
 - **Folder** - will deliver results for the current folder, including all sub-folders.
-- **Global** <ProFeature /> - will search in all configured locations. You can find more in the [Global Search](#global-search) section.
+- **Global** - will search in all configured locations. You can find more in the [Global Search](#global-search) section.
 
 ### Search accuracy
 
@@ -223,26 +223,11 @@ By default, TagSpaces limits the number of search results to 1,000 files and fol
     showCaption
   />
 
-<!-- ## Advanced search
-
-<ProFeature />
-
-The search options described in this section are available only in the Pro and Enterprise editions of TagSpaces.
-
-<CenteredImage
-    caption="The advanced search options"
-    src="/media/tagspaces-advanced-search.png"
-    maxWidth="300px"
-    showCaption
-  />
-
-In addition to the basic search, the advanced search supports the following filter criteria: -->
-
 ## Full text search
 
 <ProFeature />
 
-TagSpaces PRO supports full text search for text (.TXT), markdown (.MD), and HTML (.HTML) files. You can activate this feature for each location individually in the "Edit Location" dialog, as seen in the following screenshot. Once activated (see the screenshot below), during the indexing of a given location, the application will extract the text content of the supported files and create a keyword list that will be considered in the search algorithm.
+TagSpaces PRO supports full text search for text (.TXT), markdown (.MD), HTML and searchable PDF files. You can activate this feature for each location individually in the "Edit Location" dialog, as seen in the following screenshot. Once activated (see the screenshot below), during the indexing of a given location, the application will extract the text content of the supported files and create a keyword list that will be considered in the search algorithm.
 
 :::caution
 On locations with many large text files, activating this feature may slow down the application's performance, so be careful where you activate it.
@@ -253,6 +238,7 @@ These file formats are currently supported:
 - **HTML** - files in HTML format, used for rich text notes.
 - **MD** - markdown files.
 - **TXT** - plain text files.
+- **PDF** - searchable PDF documents (already OCR-ed).
 
 <!-- * Office Documents: PDF, ODT, ODP, ODS, DOCX, XLSX, PPTX (extracts the text content)
 * Images: JPG (extracts Exif and IPTC informations)
@@ -272,8 +258,6 @@ This feature is still in beta and could lead to performance issues if you have m
 
 ## Global search
 
-<ProFeature />
-
 TagSpaces Pro offers searching across all locations, called "Global search." It works on both local and remote S3-based locations. You can activate this feature by clicking the _Global_ button in the search area, as shown in the following screenshot.
 
 <CenteredImage
@@ -285,11 +269,9 @@ TagSpaces Pro offers searching across all locations, called "Global search." It 
 
 Once in _Global search_ mode, you will see an additional option called "Force re-indexing all locations." Activating this checkbox will force TagSpaces to create a new index for each location before searching in it. This option delivers the most accurate search results but may take more time, especially when re-indexing remote locations or locations with many files.
 
-All other search settings work the same as in single location searches. The [search result limit](#limiting-the-search-results) applies here; once the limit is reached, TagSpaces will stop the search and not continue searching the remaining unsearched locations.
+All other search settings work the same as in single location searches. The [search result limit](#limiting-the-search-results) applies here; once the limit is reached, TagSpaces will stop the search and not continue searching the remaining locations.
 
 ## Search history
-
-<ProFeature />
 
 This feature can be activated in the app's advanced settings, where you can choose how large the search history should be. Once activated, the app will save the last searches performed, including the search query and the location where they were executed.
 
@@ -303,8 +285,6 @@ This feature can be activated in the app's advanced settings, where you can choo
 The search history can also be **disabled** by choosing _disabled_ from the dropdown or **deleted** by clicking the trash bin icon.
 
 ## Stored search queries
-
-<ProFeature />
 
 This feature allows you to store commonly used search queries for later use. The following video demonstrates how to use this feature.
 
@@ -331,6 +311,7 @@ Alternatively, stored searches can also be accessed from the dropdown menu locat
 
 ### Export and import
 
+<ProFeature />
 This functionality allows you to share commonly used search queries with others who are working with you on the same file base.
 
 In the three-dot menu of the stored search area, you will find menu entries for exporting and importing search queries. The file format for the export is JSON, which can be opened and edited with any modern text editor. If needed, you can fine-tune the search queries in the editor and distribute them to other TagSpaces installations for yourself or colleagues.

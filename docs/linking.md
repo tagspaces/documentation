@@ -89,7 +89,8 @@ Technically the links consist of some parameter embedded in the URL.
 - `&tslid` - Represents the TagSpaces location ID.
 - `&tsepath` - Encoded relative path to the entry.
 - `&tsdpath` - Encoded relative path to the folder.
+- `&tseid` - The unique id of a file or folder.
 
-:::caution
-Currently, renaming a file or folder linked in a tslink will invalidate the link. However, TagSpaces will attempt to open the valid part of the link (e.g., the location).
+:::tip
+Renaming or deleting a file or folder linked in a tslink will make the link unusable. However, TagSpaces will attempt to open the valid part of the link (e.g., the location). If the tslink contains a `tseid`, a search for this id will be offered by the application, so if a file or a folder with this id is still in the location it will be found.
 :::

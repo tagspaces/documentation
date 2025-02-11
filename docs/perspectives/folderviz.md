@@ -48,7 +48,7 @@ Shows the same information like the folder tree view but in a circular tree.
 
 ## Links Graph View
 
-This view uses the index created by the full-text search in a given location to show links between files and folder and link to external website. The arrow connecting linked entries show the direction of the link. Only file and folder participating in a link will be displayed here.
+This view uses the index created by the full-text search in a given location to show links between files and folder and their links to external website. The arrow connecting linked entries show the direction of the link. Only file and folder participating in a link will be displayed here.
 
 <CenteredImage
     caption="Screenshot of the links graph view"
