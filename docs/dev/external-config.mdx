@@ -375,6 +375,30 @@ window.ExtGeoTaggingFormat = "pluscodes";
 
 Possible values: 'pluscodes', 'mgrs'
 
+{/* ## Configuring third-party extensions
+
+```js
+window.ExtExtensionsFound = [
+  {
+    extensionId: '@tagspaces/arithmetic-player',
+    extensionName: 'Mental Arithmetic',
+    extensionTypes: ['viewer'],
+    extensionEnabled: true,
+    version: '1.0.0',
+  },
+];
+```
+
+```js
+window.ExtSupportedFileTypes = [
+  {
+    type: 'math',
+    color: '#5cb85c',
+    viewer: 'third-party/extensions/@tagspacesarithmetic-player_1.0.0/build',
+  },
+];
+``` */}
+
 ## User interface tweaks
 
 ### Show vertical panel on startup (deprecated)

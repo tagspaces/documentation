@@ -399,7 +399,7 @@ const sidebars = {
         "thumbnails",
         "ai",
         "dev/metafileformats",
-        "dev/software-architecture",
+        "dev/deployment",
         "dev/external-config",
         "dev/command-line-tools",
       ],
