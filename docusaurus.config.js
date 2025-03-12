@@ -61,6 +61,13 @@ const config = {
             label: "GitHub",
             position: "right",
           },
+          {
+            href: "https://docs-tagspaces-org.translate.goog/?_x_tr_sl=en&_x_tr_tl=de",
+            label: "Google Translate",
+            title:
+              "Translate this website in any language supported by Google Translate",
+            position: "right",
+          },
         ],
       },
       announcementBar: {
