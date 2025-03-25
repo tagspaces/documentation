@@ -33,7 +33,7 @@ TagSpaces is built with extensibility in mind, allowing new file viewers to be e
 
 You can assign different viewer extensions to specific file extensions via the settings menu.
 
-![settings tab file types](/media/settings-tab-file-types.svg)
+![settings tab file types](/media/settings/settings-tab-file-types.svg)
 
 ## Printing Files
 

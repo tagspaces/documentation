@@ -2,13 +2,17 @@
 title: Settings Overview
 ---
 
-import { ProFeature } from '@site/src/components/CommonBlocks';
+import { ProFeature, CenteredImage, FullScreenImage } from '@site/src/components/CommonBlocks';
 
 # Settings
 
 To access the settings dialog, click on the gears icon located at the bottom-left part of the app.
 
-![Access the settings of the app](/media/open-settings.png)
+<FullScreenImage
+caption="Access the settings of the app"
+src="/media/settings/open-settings.jpg"
+maxWidth={500}
+/>
 
 The settings dialog consists of five tabs, which are described below.
 
@@ -16,7 +20,11 @@ The settings dialog consists of five tabs, which are described below.
 
 Most common TagSpaces settings are accessible from the **General** tab.
 
-![Settings - General Tab](/media/tagspaces-settings-general.png)
+<FullScreenImage
+caption="Settings - General Tab"
+src="/media/settings/settings-general.jpg"
+maxWidth={600}
+/>
 
 - **Interface language**: Choose your preferred language from the variety of translations available for TagSpaces.
 - **Color scheme**: Select between light, dark, or matching the operating system's theme. The last option will automatically switch between light and dark based on your operating system settings.
@@ -38,10 +46,14 @@ Most common TagSpaces settings are accessible from the **General** tab.
 
 This section allows you to configure the viewers and editors that will open specific file types.
 
-![Adjusting the file associations](/media/settings-tab-file-types.svg)
+<FullScreenImage
+caption="Adjusting the file associations"
+src="/media/settings/settings-tab-file-types.jpg"
+maxWidth={650}
+/>
 
-- **Viewer Dropdown**: Select the preferred [viewer plugin](/viewing-files) for each file type (**1**).
-- **Editor Dropdown**: Select the preferred [editor plugin](/editing-files) for each file type (**2**).
+- **File Viewer Dropdown**: Select the preferred [viewer plugin](/viewing-files) for each file type (**1**).
+- **File Editor Dropdown**: Select the preferred [editor plugin](/editing-files) for each file type (**2**).
 - **Color Coding**: Adjust the color of the file type by clicking on the colored area (**3**).
 - **Add New File Type**: Add a new file type that was previously unrecognized (**4**).
 
@@ -49,13 +61,17 @@ This section allows you to configure the viewers and editors that will open spec
 
 In the [grid](/perspectives/grid), [list](/perspectives/list), and [kanban](/perspectives/kanban) perspectives, color-coded file extensions enhance visual recognition. For common file extensions, custom colors are predefined and displayed on the extension buttons in the file rows or cards.
 
-![Color-coded file extensions in the list perspective](/media/color-coded-file-extensions-list.svg)
+![Color-coded file extensions in the list perspective](/media/settings/color-coded-file-extensions.jpg)
 
 ## Key Bindings
 
 The **Key Bindings** tab allows you to view and customize keyboard shortcuts.
 
-![Changing the key bindings](/media/tagspaces-settings-key-bindings.png)
+<FullScreenImage
+caption="Changing the key bindings"
+src="/media/settings/settings-key-bindings.jpg"
+maxWidth={600}
+/>
 
 Most key bindings are configurable. You can modify them by clicking on the field where the binding is listed.
 
@@ -80,7 +96,11 @@ This tab includes two sections:
 - **Core Extensions**: Lists the extensions packaged with the current version of the application.
 - **Installed Extensions**: Shows manually installed extensions. Once the **Developer Mode** is activated in the [Advanced](#advanced) tab, a button labeled **Install Extension** becomes available, allowing you to install extensions from a ZIP package.
 
-![Settings - Extensions tab](/media/tagspaces-settings-extensions.png)
+<FullScreenImage
+caption="Settings - Extensions Tab"
+src="/media/settings/settings-extensions.jpg"
+maxWidth={600}
+/>
 
 :::warning
 Install extensions only from trusted sources, as malicious extensions could pose security risks to your system.
@@ -90,7 +110,11 @@ Install extensions only from trusted sources, as malicious extensions could pose
 
 The **Advanced** tab contains settings intended for advanced use cases.
 
-![Settings - Advanced area](/media/tagspaces-settings-advanced.png)
+<FullScreenImage
+caption="Settings - Advanced Tab"
+src="/media/settings/settings-advanced.jpg"
+maxWidth={600}
+/>
 
 - **Enable mobile mode**: Switch the app to mobile mode for use on small screens or smaller app window sizes.
 - **Enable developer mode**: Enables experimental features like the ability to load third-party extensions.
@@ -103,7 +127,7 @@ The **Advanced** tab contains settings intended for advanced use cases.
 - **Map tile servers** <ProFeature />: TagSpaces uses OpenStreetMap-based maps for its geotagging features. You can add custom map tile servers here, including from [this list of common servers](https://wiki.openstreetmap.org/wiki/Tile_servers) or your own server for an internet-independent geo-tagging system.
 
 :::caution
-Always respect the policies and terms of use for any map service provider.
+Please respect the policies and terms of use of the map service providers.
 :::
 
 ### Additional Buttons
