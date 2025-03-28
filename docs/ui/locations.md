@@ -56,7 +56,11 @@ In TagSpaces, locations can be either **local** (on your computer or network) or
 
 Local locations point to a folder on your computer. This could also be a folder synced from Dropbox or connected to a network drive.
 
-![Properties of a location pointing to a local folder](/media/create-local-location.png)
+<CenteredImage
+    caption="Dialog for creating a local location"
+    src="/media/locations/create-local-location.jpg"
+    maxWidth="500px"
+/>
 
 Local locations include the following properties:
 
@@ -97,7 +101,11 @@ Additional options include:
 
 TagSpaces supports object storage from cloud providers like AWS S3, Wasabi, and Minio. These locations allow you to manage files in the cloud without downloading or syncing them. By doing so you get a fully functional file organizer, browser and navigator for this bucket, directly in TagSpaces.
 
-![Edit properties of a cloud location](/media/create-object-storage-location.png)
+<CenteredImage
+    caption="Creating a location pointing to a S3 object storage"
+    src="/media/locations/create-object-storage-location.jpg"
+    maxWidth="500px"
+/>
 
 In addition to the properties of local locations, cloud locations include:
 

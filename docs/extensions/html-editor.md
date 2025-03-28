@@ -30,7 +30,7 @@ This extension is packaged with any new version of TagSpaces.
 
 In editor mode, the HTML document will keep its formatting, but you are now able to edit the text, making the HTML editor behave like a RichText editor. On the top of the view, you will find a formatting toolbar, with which you can fully control the appearance of the document.
 
-![](/media/tagspaces-html-editor.png)
+![](/media/extensions/html-editor/tagspaces-html-editor.png)
 
 The formatting toolbar offers some common features you can find in any RichText or WYSIWYG HTML editor, with some features specific to TagSpaces. The overflow menu options from the [HTML viewer](/extensions/html-viewer/) are not implemented in the HTML Editor.
 
@@ -38,7 +38,7 @@ The formatting toolbar offers some common features you can find in any RichText 
 
 The toolbar buttons are grouped together based on similar behavior or functionality. The major groups are illustrated below:
 
-![](/media/html-editor-toolbar.png)
+![](/media/extensions/html-editor/html-editor-toolbar.png)
 
 - [**Manage Checkboxes**](#manage-checkboxes) (**1**)
 - [**Paragraph Style**](#paragraph-style) (**2**)
@@ -59,7 +59,7 @@ This is a compound button, consisting of two parts:
 - **Add Checkbox** (**1**)
 - **Toggle All Checkboxes** (**2**)
 
-![](/media/add-checkbox-button.png)
+![](/media/extensions/html-editor/add-checkbox-button.png)
 
 Pressing **Add Checkbox** will insert an interactive, clickable checkbox into your document, which can be used to create, e.g., ToDo lists. To learn more about this feature, scroll down to the [Creating ToDo Lists](#creating-todo-lists) section.
 
@@ -75,7 +75,7 @@ When some checkboxes are manually selected, while others are deselected, the **T
 
 This button will open a dropdown menu from which you can select a paragraph style to apply. When selecting an option, the chosen style will be applied to the entire current paragraph (where the cursor is located) without having to make a selection first. If you do select some text first, the style will only be applied to the current selection.
 
-![](/media/paragraph-styles.png)
+![](/media/extensions/html-editor/paragraph-styles.png)
 
 Available styles are:
 
@@ -90,15 +90,15 @@ Available styles are:
 
 This is a compound button, which has two parts.
 
-![](/media/color-button.png)
+![](/media/extensions/html-editor/color-button.png)
 
 The left part, **Recent Color**, will apply the last used background and foreground color on the text. The applicable background and foreground colors are reflected on the button itself.
 
-![](/media/colour-button-alt-background.png)
+![](/media/extensions/html-editor/colour-button-alt-background.png)
 
 The right part, **More Color**, will open a dropdown menu, from which you can choose both background and foreground colors to apply, while the default color values can be reset with their respective buttons.
 
-![](/media/color-button-dropdown.png)
+![](/media/extensions/html-editor/color-button-dropdown.png)
 
 [Back to button group list](#toolbar-buttons)
 
@@ -106,7 +106,7 @@ The right part, **More Color**, will open a dropdown menu, from which you can ch
 
 The following groups represent font styles that can be applied to either a selection or as a toggle, to mark any text to be written with the given style, until the toggle is switched off.
 
-![](/media/font-styles.png)
+![](/media/extensions/html-editor/font-styles.png)
 
 **Bold** (**1**), **Italic** (**2**), and **Underline** (**3**) will mark either the selected text or the text that follows as **bold**, _italic_, or <u>underlined</u>, respectively. These three buttons also have hotkeys assigned. `Ctrl+b` will toggle **bold**, `Ctrl+i` toggles _italic_, while `Ctrl+u` toggles <u>underline</u>.
 
@@ -120,7 +120,7 @@ From this group, only two options have hotkeys assigned. **Strikethrough** can b
 
 This is the last of the font style buttons. It can set the selection or the text that follows to a specific font family.
 
-![](/media/font-family.png)
+![](/media/extensions/html-editor/font-family.png)
 
 :::tip
 The options presented here might depend on your operating system and the fonts installed.
@@ -132,7 +132,7 @@ The options presented here might depend on your operating system and the fonts i
 
 This is a compound group, which offers different options that all work on the currently active paragraph as a toggle, without the need to make a selection first.
 
-![](/media/alignment-button-dropdown.png)
+![](/media/extensions/html-editor/alignment-button-dropdown.png)
 
 The first two buttons offer toggles for **Unordered List** (**1**) and **Ordered List** (**2**). The last button in the group will open a dropdown menu which offers four standard alignment options: **Left** (**3**), **Center** (**4**), **Right** (**5**), and **Full Justify** (**6**); and also the option to **Decrease Indent** (**7**) or **Increase Indent** (**8**).
 
@@ -153,7 +153,7 @@ The hotkeys for these operations are:
 
 Offers a dropdown menu that allows you to set the line-height of either the active paragraph or the currently selected paragraphs between **1.0** and **3.0** by increments of **1.0**, **1.2**, **1.4**, **1.5**, **1.8**, **2.0**, and **3.0**.
 
-![](/media/change-line-height.png)
+![](/media/extensions/html-editor/change-line-height.png)
 
 :::tip
 When you make a selection, you do not need to select the entire paragraph. The selection's edges will mark active paragraphs. The line height adjustment will be performed on all full paragraphs, starting with the one inside which the selection starts, and ending with the one inside which the selection ends.
@@ -163,11 +163,11 @@ When you make a selection, you do not need to select the entire paragraph. The s
 
 This button will open a drop-down graphical menu for drawing a table grid, with a maximum size of **10x10**, that can be easily inserted into the document.
 
-![](/media/insert-table-dropdown.png)
+![](/media/extensions/html-editor/insert-table-dropdown.png)
 
 #### Insert Link, Image, and Horizontal Ruler
 
-![](/media/insert-link-etc.png)
+![](/media/extensions/html-editor/insert-link-etc.png)
 
 This group has the following three buttons:
 
@@ -179,13 +179,13 @@ This group has the following three buttons:
 
 The first button will open a dialog that allows you to add a hyperlink to the text. The dialog allows for specifying the text to display and the link to follow when clicked, with a checkbox allowing you to set the link to be opened in a new tab or window. The dialog can also be invoked by pressing `Ctrl+K`.
 
-![](/media/insert-link-dialog.png)
+![](/media/extensions/html-editor/insert-link-dialog.png)
 
 If you select some text to apply the link to before pressing the button, the selection will automatically populate the _Text to display_ field. If you made no selection, you will need to specify a text to be displayed. If you leave the field empty and start typing a URL, it will automatically populate the text to display field, which you can later modify.
 
 To edit or remove links, you can just click inside the link and use the buttons that appear on the popup.
 
-![](/media/edit-link.png)
+![](/media/extensions/html-editor/edit-link.png)
 
 The first button (**1**) will allow you to edit the link, while the second (**2**) will remove it.
 
@@ -197,7 +197,7 @@ Links can also be added to the documents by typing the URL and pressing enter. A
 
 The second button in the group will also open a dialog, which lets you insert a picture from either your computer or from a URL.
 
-![](/media/insert-image-dialogue.png)
+![](/media/extensions/html-editor/insert-image-dialogue.png)
 
 ##### Insert Horizontal Ruler
 
@@ -211,11 +211,11 @@ This button does not respect paragraph endings. If you press this button in the 
 
 #### Code View
 
-![](/media/code-view.png)
+![](/media/extensions/html-editor/code-view.png)
 
 This is a toggle to show plain HTML code on a dark background, where the formatting buttons are disabled, and you can edit the HTML code directly.
 
-![](/media/code-view-view.png)
+![](/media/extensions/html-editor/code-view-view.png)
 
 Pressing the button again will return to the WYSIWYG mode.
 
@@ -225,11 +225,11 @@ Code highlighting for the HTML view is not currently implemented.
 
 #### Help
 
-![](/media/help-button.png)
+![](/media/extensions/html-editor/help-button.png)
 
 The last button will display a summary of all the keybindings. If you prefer to use hotkeys, you will find a quick reference here.
 
-![](/media/help-view.png)
+![](/media/extensions/html-editor/help-view.png)
 
 ### Creating ToDo Lists
 
@@ -237,7 +237,7 @@ The recently added feature of interactive checkboxes makes TagSpaces ideal for c
 
 For **ToDo Lists**, you would ideally want the checkbox to be the very first character of a list, although you are not limited by placement. To make your list multi-level (i.e. sub-items under list items), you can use the **Increase Indent** feature (see [Toolbar Buttons -> Lists and Alignment](#lists-and-alignment)) on the desired line, by either pressing its button or using its hotkey (`Ctrl+Tab` to increase indent, `Ctrl+Shift+Tab` to decrease indent).
 
-![](/media/ToDoList.png)
+![](/media/extensions/html-editor/ToDoList.png)
 
 :::tip
 The interactive checkboxes only work in editor mode. When in HTML preview mode, you can see the current state of the box, but cannot change it. To make a list interactive, switch to editor mode by pressing the little pencil icon at the top of the preview.
@@ -288,4 +288,4 @@ If you want to extend this extension, please follow our general [extension devel
 
 ## License
 
-[MIT](https://github.com/tagspaces/tagspaces-extensions/blob/main/html-editor/LICENSE.txt)
+[MIT](https://github.com/tagspa ces/tagspaces-extensions/blob/main/html-editor/LICENSE.txt)

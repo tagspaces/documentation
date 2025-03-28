@@ -25,15 +25,15 @@ This extension is packaged with any new version of TagSpaces.
 
 Editing JSON files will build upon the functionality you've already seen in the **JSON Preview mode**.
 
-![JSON Editor Screenshot](/media/json-editor.png)
+![JSON Editor Screenshot](/media/extensions/json-editor/json-editor.png)
 
 The top row of the editor will offer a basic toolbar, with some common actions such as **Expand all fields** (**1**), **Collapse all fields** (**2**), **Undo** and **Redo** (**3**), and a search box (**4**).
 
-![JSON Editor Toolbar](/media/json-editor-toolbar.png)
+![JSON Editor Toolbar](/media/extensions/json-editor/json-editor-toolbar.png)
 
 Each field has some useful controls that can help manipulate and rearrange JSON files easily.
 
-![JSON Editor Parts](/media/json-editor-parts.png)
+![JSON Editor Parts](/media/extensions/json-editor/json-editor-parts.png)
 
 - On the left edge, there is a drag handle, allowing for easy movement of each row (**1**).
 
