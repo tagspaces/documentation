@@ -12,7 +12,7 @@ One long-awaited feature in TagSpaces is the ability to create links between fil
 <VideoYT
     youtubeId="3F2YUKd6rDc"
     title="Using file and folder linking functionality in TagSpaces"
-    posterUrl="/media/videoposters/linking-files-and-folders.jpg"
+    posterUrl="/media/videos/linking-files-and-folders.jpg"
     height={550}
 />
 

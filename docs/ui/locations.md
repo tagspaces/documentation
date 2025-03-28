@@ -243,7 +243,7 @@ The process of exporting and importing location configuration is demonstrated in
 <VideoYT
 youtubeId="LmjUM1BS-wQ"
 title="Using file and folder linking functionality in TagSpaces"
-posterUrl="/media/videoposters/import-export-locations.jpg"
+posterUrl="/media/videos/import-export-locations.jpg"
 height={550}
 />
 

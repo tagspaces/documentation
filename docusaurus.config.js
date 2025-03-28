@@ -244,6 +244,7 @@ const config = {
           //   keywords: ["note", "tip", "info", "warning", "danger"],
           //   extendDefaults: true,
           // },
+          exclude: ["**/.ts/**"],
         },
         theme: {
           customCss: require.resolve("./src/css/custom.css"),
