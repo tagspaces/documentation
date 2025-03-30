@@ -1,3 +1,5 @@
+import { ProFeature, CenteredImage, CenteredVideo } from '@site/src/components/CommonBlocks';
+
 # JSON Editor
 
 A TagSpaces extension allowing viewing and editing of JSON documents.
@@ -6,7 +8,12 @@ A TagSpaces extension allowing viewing and editing of JSON documents.
 
 - Open and edit JSON documents graphically.
 
-![Screenshot of the editorJSON](/media/extensions/editor-json-lead.png)
+<CenteredImage
+    caption="Screenshot of JSON editor"
+    src="/media/extensions/json-editor/editor-json-lead.jpg"
+    showCaption
+    maxWidth="650px"
+  />
 
 ## Used Libraries
 

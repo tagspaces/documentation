@@ -16,7 +16,7 @@ Here is a list of the key features offered by this extension:
 
 <CenteredImage
     caption="Screenshot of the font viewer extension"
-    src="/media/extensions/font-viewer-lead.png"
+    src="/media/extensions/font-viewer-lead.jpg"
     showCaption
     maxWidth="650px"
   />
