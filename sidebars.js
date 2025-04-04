@@ -343,19 +343,9 @@ const sidebars = {
     },
     {
       type: "category",
-      label: "Quick Access",
+      label: "Quick Access Area",
       items: [
         "quick-access",
-        {
-          type: "link",
-          label: "Recent Files",
-          href: "/quick-access/#recent-files",
-        },
-        {
-          type: "link",
-          label: "Recent Folders",
-          href: "/quick-access/#recent-folders",
-        },
         "bookmarks",
         {
           type: "link",

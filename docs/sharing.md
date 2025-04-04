@@ -38,11 +38,11 @@ Alternatively the **Open Link** button from the next screenshot can be used for 
 These kinds of links can also be used for internal links within TagSpaces. More details can be found in the dedicated [linking section](/linking).
 :::
 
-## Download links files on S3 buckets
+## Download links for files on object storage
 
 <ProFeature />
 
-The second type of sharing links, called "Links for downloading," are available only for files (not folders) located on object storages such as AWS S3 or MinIO. The relevant section in the file properties is shown in the next screenshot.
+The second type of sharing links, called "Links for downloading," are available only for files (not folders) located on object storages such as AWS S3 or MinIO buckets. The relevant section in the file properties is shown in the next screenshot.
 
 <CenteredImage
     caption="Download links in the file properties"
@@ -60,7 +60,7 @@ Clicking the **Generate Link** button opens the following dialog:
     showCaption
 />
 
-Here, you have the following options:
+Here you have the following options:
 
 - Adjust the **validity duration** of the link. Supported durations include: 15 minutes, 1 hour, 1 day, 3 days, and 1 week.
 - The **Copy** button copies the link to the clipboard for use in other applications.

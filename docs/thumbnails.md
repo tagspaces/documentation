@@ -2,7 +2,6 @@
 title: Thumbnail Generation
 ---
 
-import VideoYT from '@site/src/components/VideoYT';
 import { ProFeature, CenteredImage, CenteredVideo } from '@site/src/components/CommonBlocks';
 
 When a user opens a folder, the application automatically scans its contents and attempts to generate mini-previews, or thumbnails, for the files in the folder.
