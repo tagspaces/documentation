@@ -14,13 +14,17 @@ To create a new file in TagSpaces, you have several options. The easiest way is 
 
 <CenteredImage
     caption="Create new file with the plus button"
-    src="/media/create-new-plusbutton.avif"
+    src="/media/create/create-new-plusbutton.avif"
     maxWidth="350px"
   />
 
 On the desktop version of the app, you can also press `ALT` to open the **Main Menu** and then select **New File** from the **File menu**.
 
-![Create new file from the main menu](/media/create-new-file-menu.avif)
+<CenteredImage
+    caption="Create new file from the main menu"
+    src="/media/editcreate/create-new-file-menu.avif"
+    maxWidth="650px"
+  />
 
 This opens the content creation menu, where you can choose from the following actions:
 
@@ -30,7 +34,7 @@ This opens the content creation menu, where you can choose from the following ac
 
 <CenteredImage
     caption="Dialog for creating markdown files"
-    src="/media/create-markdown-file-dialog.avif"
+    src="/media/editcreate/create-markdown-file-dialog.avif"
     maxWidth="450px"
   />
 
@@ -40,7 +44,7 @@ This opens the content creation menu, where you can choose from the following ac
 
 <CenteredImage
     caption="Create new file with the plus button"
-    src="/media/create-new-url-file.avif"
+    src="/media/editcreate/create-new-link-file.avif"
     maxWidth="450px"
   />
 
@@ -48,7 +52,7 @@ This opens the content creation menu, where you can choose from the following ac
 
 <CenteredImage
     caption="Create new file with the plus button"
-    src="/media/create-new-audio-file.avif"
+    src="/media/editcreate/create-new-audio-file.avif"
     maxWidth="450px"
   />
 
@@ -57,7 +61,7 @@ This opens the content creation menu, where you can choose from the following ac
 
 <CenteredImage
     caption="Dialog for creating new folders"
-    src="/media/create-new-folder-dialog.avif"
+    src="/media/editcreate/create-new-folder-dialog.avif"
     maxWidth="500px"
   />
 
@@ -65,7 +69,7 @@ This opens the content creation menu, where you can choose from the following ac
 
 <CenteredImage
     caption="Dialog for downloading files from URLs"
-    src="/media/download-file-dialog.avif"
+    src="/media/editcreate/download-file-dialog.avif"
     maxWidth="400px"
   />
 
