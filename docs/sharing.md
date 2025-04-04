@@ -12,8 +12,8 @@ The first method, introduced back in version 3.8, is called "Sharing." It allows
 
 <CenteredImage
     caption="Sharing link in file and folder properties"
-    src="/media/sharing-link.png"
-    maxWidth="778px"
+    src="/media/sharing/sharing-link.avif"
+    maxWidth="600px"
     showCaption
 />
 
@@ -21,16 +21,16 @@ Once copied to the clipboard with the **COPY** button, the link can be shared, f
 
 <CenteredImage
     caption="Open TS-Links from the search box"
-    src="/media/tslinks-in-search.png"
+    src="/media/search/tslink-in-search.avif"
     showCaption
 />
 
-Alternatively, they can navigate to the locations section, open the three-dot menu, and select **Open Link**, as shown in the next screenshot.
+Alternatively the **Open Link** button from the next screenshot can be used for this purpose.
 
 <CenteredImage
-    caption="Open shared links in TagSpaces"
-    src="/media/open-shared-links.png"
-    maxWidth="697px"
+    caption="Open sharing link in TagSpaces"
+    src="/media/sharing/open-sharing-link.avif"
+    maxWidth="650px"
     showCaption
 />
 
@@ -38,7 +38,7 @@ Alternatively, they can navigate to the locations section, open the three-dot me
 These kinds of links can also be used for internal links within TagSpaces. More details can be found in the dedicated [linking section](/linking).
 :::
 
-## Sharing download links to a file
+## Download links files on S3 buckets
 
 <ProFeature />
 
@@ -46,8 +46,8 @@ The second type of sharing links, called "Links for downloading," are available 
 
 <CenteredImage
     caption="Download links in the file properties"
-    src="/media/download-link.png"
-    maxWidth="778px"
+    src="/media/sharing/open-download-link-dialog.avif"
+    maxWidth="600px"
     showCaption
 />
 
@@ -55,8 +55,8 @@ Clicking the **Generate Link** button opens the following dialog:
 
 <CenteredImage
     caption="Generating the download links"
-    src="/media/generate-download-link.png"
-    maxWidth="595px"
+    src="/media/sharing/generate-download-link.avif"
+    maxWidth="600px"
     showCaption
 />
 
@@ -143,7 +143,7 @@ Here is how the HTML snippet appears when pasted into some common email clients.
 
 <CenteredImage
     caption="Sharing snippet in Thunderbird"
-    src="/media/sharing-snipped-thunderbird.png"
+    src="/media/sharing/sharing-snipped-thunderbird.png"
     maxWidth="970px"
     showCaption
 />
@@ -156,7 +156,7 @@ In Gmail, make sure to uncheck the "Plain text mode" option, as marked in the sc
 
 <CenteredImage
     caption="Sharing snippet in Gmail"
-    src="/media/sharing-snipped-gmail.png"
+    src="/media/sharing/sharing-snipped-gmail.png"
     maxWidth="970px"
     showCaption
 />
@@ -165,7 +165,7 @@ In Gmail, make sure to uncheck the "Plain text mode" option, as marked in the sc
 
 <CenteredImage
     caption="Sharing snippet in Outlook"
-    src="/media/sharing-snipped-outlook.png"
+    src="/media/sharing/sharing-snipped-outlook.png"
     maxWidth="970px"
     showCaption
 />
@@ -178,7 +178,7 @@ This is how the HTML snippet looks when pasted into common chat applications.
 
 <CenteredImage
     caption="Sharing snippet in Signal"
-    src="/media/sharing-snipped-signal.png"
+    src="/media/sharing/sharing-snipped-signal.png"
     maxWidth="970px"
     showCaption
 />
@@ -187,7 +187,7 @@ This is how the HTML snippet looks when pasted into common chat applications.
 
 <CenteredImage
     caption="Sharing snippet in Whatsapp"
-    src="/media/sharing-snipped-whatsapp.png"
+    src="/media/sharing/sharing-snipped-whatsapp.png"
     maxWidth="970px"
     showCaption
 />

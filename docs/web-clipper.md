@@ -103,7 +103,7 @@ Follow these steps to enable MHTML saving in Chrome and Chromium browsers:
 4. Click "Enable."
 5. Restart your browser.
 
-![Screenshot showing how enable MHTML saving in Chrome](/media/enable--mhtml-saving-chrome.png)
+![Screenshot showing how enable MHTML saving in Chrome](/media/webclipper/enable-mhtml-saving-chrome.png)
 
 > **Note**: After activation, you will no longer be able to save websites as HTML files.
 
@@ -111,17 +111,17 @@ Follow these steps to enable MHTML saving in Chrome and Chromium browsers:
 
 At the bottom of Chrome's extension management page, you'll find a "Keyboard shortcuts" link (highlighted in red in the screenshot below). This opens a dialog where you can set a direct keyboard shortcut for the extension's popup area.
 
-![Open the Chrome extension shortcut configuration](/media/chrome-shortcuts-config.png)
+![Open the Chrome extension shortcut configuration](/media/webclipper/chrome-shortcuts-config.png)
 
 I set `ctrl+s` as my shortcut, replacing Chrome's default "Save As" functionality, but you can choose any key combination.
 
-![Setting ctrl+s as keyboard shortcut for the web clipper](/media/chrome-set-extension-shortcut.png)
+![Setting ctrl+s as keyboard shortcut for the web clipper](/media/webclipper/chrome-set-extension-shortcut.png)
 
 ### Specify Download Folder for Web Clippings
 
 To be prompted where to save each file, activate the "Ask where to save each file before downloading" option in Chrome's advanced settings.
 
-![Enable asking where to save files in Chrome](/media/chrome-ask-where-to-save.png)
+![Enable asking where to save files in Chrome](/media/webclipper/chrome-ask-where-to-save.png)
 
 ### Pin the Web Clipper
 

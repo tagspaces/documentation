@@ -76,7 +76,11 @@ Descriptions are saved in a sidecar file called `tsm.json` within the hidden `.t
 
 Every folder can have its own default perspective, which can be selected in the folder properties area.
 
-![Selecting default folder perspective](/media/folder-properties-select-perspective.png)
+<CenteredImage
+    caption="Folder description"
+    src="/media/entrydetails/folder-default-perspective.avif"
+    showCaption
+  />
 
 Once you choose a perspective, every time you open this folder, it will open with the selected perspective.
 
@@ -94,7 +98,7 @@ The folder background is visible in grid, list, gallery, and kanban perspectives
 
 <CenteredImage
     caption="Short video showing how to set color to a folder"
-    src="/media/tagspaces-folder-colors.gif"
+    src="/media/entrydetails/tagspaces-folder-colors.gif"
     showCaption
   />
 
@@ -105,31 +109,46 @@ The folder background is visible in grid, list, gallery, and kanban perspectives
 In TagSpaces Pro, users can manually set a thumbnail for any file or folder. This can be achieved in a dedicated dialog, where you can choose an image from your hard drive or from thumbnails embedded in the application. The images used here are based on the [illlustrations.co](https://illlustrations.co) kit. In this dialog, you can also clear the folder's thumbnail.
 
 :::info
-If the folder is on an S3 bucket, the thumbnail file will be uploaded there.
+If the folder is on an S3 bucket, the selected thumbnail file will be uploaded there.
 :::
 
-![Dialog for changing the folder thumbnail](/media/change-folder-thumbnail.png)
-
-<!--iframe width="100%" height="500" src="https://www.youtube-nocookie.com/embed/ZgnRRO1zdGc?rel=0" frameBorder="0" allow="autoplay; encrypted-media; picture-in-picture" allowFullScreen></iframe-->
+<CenteredImage
+    caption="Dialog for changing the folder thumbnail"
+    src="/media/entrydetails/change-folder-thumbnail.avif"
+    showCaption
+    maxWidth={500}
+  />
 
 :::tip
-Adding a custom thumbnail to any file type can be achieved similarly from the file's properties section.
+An image in the clipboard can be used as thumbnail after pasting it in this dialog with `cmd/ctrl+v`
 :::
 
-## Folder Wallpaper
+Adding a custom thumbnail to any file type can be achieved similarly from the file's properties section.
+
+## Folder Background Imagee
 
 <ProFeature />
+Folders can have background images (wallpapers) in TagSpaces Pro. The background images are supported in the Grid, List, Gallery and Kanban [perspectives](/browsing-files).
+
 <CenteredImage
-    caption="Folder with thumbnail and wallpaper containing subfolders with thumbnails"
-    src="/media/folder-with-thumbnail-and-wallpaper.png"
+    caption="Folder with thumbnail and wallpaper in grid perspective"
+    src="/media/grid/folder-with-background-image.jpg"
     showCaption
   />
 
-In the folder properties, you can also set a background wallpaper for every folder. This can be done with the help of the dialog shown in the next screenshot.
+The background image can be changed in the folder properties, where you can open the dialog for changing the wallpapers.
 
-![Dialog for changing the folder wallpaper](/media/change-folder-wallpaper.png)
+<CenteredImage
+    caption="Dialog for changing the folder wallpaper"
+    src="/media/entrydetails/change-folder-background.avif"
+    showCaption
+  />
 
-Some wallpapers are bundled with the application, but you can also choose an image from your hard drive. In this dialog, you also have the option to clear the wallpaper.
+:::tip
+An image in the clipboard can be used as background for a folder after pasting it in this dialog with `cmd/ctrl+v`
+:::
+
+Some wallpapers are bundled with the application, but you can also choose an image from your hard drive. In the dialog, you also can also clear any previously selected wallpapers.
 
 :::info
 If the folder is on an S3 bucket, the wallpaper file will be uploaded there.

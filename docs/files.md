@@ -60,4 +60,9 @@ TagSpaces PRO allows users to add descriptions to files using a sidecar file loc
 
 TagSpaces can automatically generate thumbnails for many file types, as described [here](/thumbnails). Additionally, the PRO version offers a dialog where you can set a custom thumbnail for any file type, even those unsupported by the automatic [thumbnail generation](/thumbnails).
 
-![Dialog for changing the folder thumbnail](/media/change-folder-thumbnail.png)
+<CenteredImage
+    caption="Dialog for changing the folder thumbnail"
+    src="/media/entrydetails/change-folder-thumbnail.avif"
+    showCaption
+    maxWidth={500}
+  />
