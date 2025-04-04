@@ -23,7 +23,7 @@ Most common TagSpaces settings are accessible from the **General** tab.
 <FullScreenImage
 caption="Settings - General Tab"
 src="/media/settings/settings-general.jpg"
-maxWidth={600}
+maxWidth={700}
 />
 
 - **Interface language**: Choose your preferred language from the variety of translations available for TagSpaces.
@@ -49,7 +49,7 @@ This section allows you to configure the viewers and editors that will open spec
 <FullScreenImage
 caption="Adjusting the file associations"
 src="/media/settings/settings-tab-file-types.jpg"
-maxWidth={650}
+maxWidth={700}
 />
 
 - **File Viewer Dropdown**: Select the preferred [viewer plugin](/viewing-files) for each file type (**1**).
@@ -70,7 +70,7 @@ The **Key Bindings** tab allows you to view and customize keyboard shortcuts.
 <FullScreenImage
 caption="Changing the key bindings"
 src="/media/settings/settings-key-bindings.jpg"
-maxWidth={600}
+maxWidth={700}
 />
 
 Most key bindings are configurable. You can modify them by clicking on the field where the binding is listed.
@@ -99,7 +99,7 @@ This tab includes two sections:
 <FullScreenImage
 caption="Settings - Extensions Tab"
 src="/media/settings/settings-extensions.jpg"
-maxWidth={600}
+maxWidth={700}
 />
 
 :::warning
@@ -113,7 +113,7 @@ The **Advanced** tab contains settings intended for advanced use cases.
 <FullScreenImage
 caption="Settings - Advanced Tab"
 src="/media/settings/settings-advanced.jpg"
-maxWidth={600}
+maxWidth={700}
 />
 
 - **Enable mobile mode**: Switch the app to mobile mode for use on small screens or smaller app window sizes.

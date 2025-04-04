@@ -14,21 +14,36 @@ Besides opening and viewing files, TagSpaces can also edit specific file formats
 
 If the file format of the currently opened files is supported for editing the **EDIT button** will appear in the top right corner of the application. Clicking on this button will activate the edit mode for this file.
 
-![Screenshot showing how start editing of a file](/media/start-file-editing.png)
+<CenteredImage
+    caption="Open file for editing"
+    src="/media/editcreate/enter-edit-mode.avif"
+    showCaption
+    maxWidth={600}
+  />
 
-Once in the edit mode the **edit button** will disappear and on its place two new buttons will be visible. Pressing on button (1) will save the current changes. This can be done in the most cases also with the **CTRL+S** key combination. Pressing the button (2) will activate the preview mode by leaving the edit mode. If the changes were not saved, the app will ask you to save them.
+Once in edit mode the `Edit` button will disappear and on its place two new buttons will be appear. Pressing the `Cancel` button will revert the changes and exit the edit mode. Pressing the `Save` button will respectively save the changes, which can be done also with the `CMD/CTRL+S` key combination. After saving the changes the file will remain in edit mode and you can continue its editing. If the file is changed you will see a black dot in front of the file extension, visible in the upper left corner of the next screenshot. Saving the changes will make the dot to disappear. The `Cancel` and `Save` button will be exchanged with an`Exit editing` button, which will open the file back with file viewer extension for this file type.
 
-![Screenshot showing how start editing of a file](/media/save-preview-changes.png)
+<CenteredImage
+    caption="Save changes"
+    src="/media/editcreate/file-edited.avif"
+    showCaption
+    maxWidth={600}
+  />
 
 ## File revisions
 
 <ProFeature />
 
-A key feature of document management systems is the ability to create revisions of the edited files. This feature can be enabled in the Advanced tab of the application's Settings dialog box. Once activated, a full copy of the current file (e.g. TXT, MD, HTML or JSON) is created with each save.
+A key feature of document management systems is the ability to create revisions of the edited files. This feature can be enabled in the [Advanced tab](/ui/settings/#advanced) of the application's Settings dialog box. Once activated, a full copy of the current file (e.g. TXT, MD, HTML or JSON) is created with each save.
 
 The revisions are stored in a subfolder of the `.ts` folder, which is located in the same folder as the file being currently edited. The name of the folder is a unique ID, which is the same as the ID of the document's sidecar file. The created file copies are listed in the Revisions tab of the file properties view, as seen in the screenshot.
 
-![File revisions in file properties section](/media/file-revisions.png)
+<CenteredImage
+    caption="File revisions in file properties section"
+    src="/media/editcreate/file-revisions.avif"
+    showCaption
+    maxWidth={600}
+  />
 
 From here, you can preview and restore old revisions. It is also possible to delete all revisions, by clicking the button with the trash bin icon, located in the revision's table header.
 
@@ -37,20 +52,29 @@ From here, you can preview and restore old revisions. It is also possible to del
 <ProFeature />
 
 The auto-save feature can be enabled individually for each editable file. When it is enabled, the application will save any changes you
-make automatically every 40 seconds. You can also save the file manually by clicking the save button or by pressing the CTRL+S
-key combination.
+make automatically every 40 seconds. In the most editor extensions you can also save the file anytime manually by clicking the save button or by pressing the `CMD/CTRL+S` key combination.
 
-![The switch for the auto-save functionality](/media/auto-save-switch.png)
+<CenteredImage
+    caption="A switch for activation of the auto-save functionality for the current file"
+    src="/media/editcreate/auto-save-switch.avif"
+    showCaption
+    maxWidth={650}
+  />
 
 ## Increasing your workspace
 
 All of the above editors, will initially open on the right pane of the main area. You can expand your workspace to be able to see and edit more of the document, in two ways:
 
-- **Expand** the editor to fill the whole width of the TagSpaces UI, by pressing the **Expand button** (2) as shown in the next screenshot.
-- Pressing the **Fullscreen button** (1) will open only the area of the editor in full screen mode. To exit fullscreen mode, press the (X) button located at the top right or just press the **ESC** key on your keyboard.
+- **Expand** the editor to fill the whole width of the TagSpaces user interface, by clicking on the **Toggle full width** menu entry, shown in the next screenshot.
+- Click on the **Switch to fullscreen** menu entry will open only the area of the editor in full screen mode. To exit fullscreen mode, press the (X) button located at the top right of the screen or just press the **ESC** key on your keyboard.
 
-![Screenshot showing the distraction free edit mode](/media/distraction-free-editing.png)
+<CenteredImage
+    caption="Distraction free editing"
+    src="/media/editcreate/distraction-free-editing.avif"
+    showCaption
+    maxWidth={650}
+  />
 
-## Distraction free editing
-
-By using the fullscreen button you can edit documents in the so called **distraction free mode**. This will expand the editor area to fill the entire screen area, with no window decorations, or other UI elements, while any applicable **formatting toolbars** and the **Floating Action Button** will still be shown.
+:::tip
+By using the fullscreen feature you are editing the documents in the so called **distraction free mode**. This will expand the editor area to fill the entire screen area, with no window decorations, or other user interface elements, while any applicable **formatting toolbars** and the **Floating Action Button** will still be shown.
+:::

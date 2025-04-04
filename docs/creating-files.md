@@ -14,7 +14,7 @@ To create a new file in TagSpaces, you have several options. The easiest way is 
 
 <CenteredImage
     caption="Create new file with the plus button"
-    src="/media/create/create-new-plusbutton.avif"
+    src="/media/editcreate/create-new-plusbutton.avif"
     maxWidth="350px"
   />
 
@@ -53,7 +53,7 @@ This opens the content creation menu, where you can choose from the following ac
 <CenteredImage
     caption="Create new file with the plus button"
     src="/media/editcreate/create-new-audio-file.avif"
-    maxWidth="450px"
+    maxWidth="550px"
   />
 
 - **New Form Device** - Allows you to import files into the app. See the [Importing Files](#importing-files) section for more details.
@@ -127,7 +127,7 @@ Depending on your Android device and installed apps, this dialog may display mor
 
 <CenteredImage
     caption="Importing files on mobile devices"
-    src="/media/tagspaces-mobile-import.jpg"
+    src="/media/editcreate/tagspaces-mobile-import.jpg"
     showCaption
     maxWidth="300px"
 />
