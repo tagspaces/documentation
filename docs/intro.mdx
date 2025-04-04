@@ -4,6 +4,7 @@ title: User Documentation
 ---
 
 import VideoYT from '@site/src/components/VideoYT';
+import { ProFeature, CenteredImage, CenteredVideo } from '@site/src/components/CommonBlocks';
 
 # User Documentation
 
@@ -59,11 +60,13 @@ TagSpaces is suitable for various use cases:
 
 This short introductory video shows TagSpaces in action:
 
-<VideoYT
-    youtubeId="Xjwxq4c0RBQ"
-    title="General TagSpaces Introduction"
-    posterUrl="/media/intro-video-poster.avif"
-    height={550}
+<CenteredVideo
+    caption="General TagSpaces Introduction"
+    src="https://www.tagspaces.org/content/v6/tagspaces-lite-demo.mp4"
+    posterUrl="https://www.tagspaces.org/content/v6/tagspaces-lite-demo.avif"
+    maxWidth="100%"
+    autoPlay
+    showCaption
 />
 
 ### YouTube Channel

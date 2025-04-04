@@ -126,13 +126,6 @@ Clicking `Advanced More` reveals additional settings:
 :::
 
 For a detailed guide on connecting AWS S3 locations to TagSpaces, read our [tutorial](/tutorials/s3-bucket-locations).
-You can recognize object storage location by the cloud icon in front of their name, as seen in the next screenshot.
-
-<CenteredImage
-    caption="Configuration of a location hosted in the Cloud (Wasabi)"
-    src="/media/tagspaces-s3-locations.png"
-    showCaption
-/>
 
 In order to connect such location you will need to know the **bucket name**, the **access key**, the **secret access key** and the **data center location** for the particular bucket. If you have a location with a deep folder structure you can also specify the internal path to the files you want to manage in this location.
 
@@ -184,8 +177,7 @@ For locations with many files, manual indexing speeds up loading times by disabl
 
 <CenteredImage
     caption="Starting manual index generation"
-    src="/media/tagspaces-manual-indexing.png"
-    maxWidth="650px"
+    src="/media/locations/location-manual-indexing.avif"
     showCaption
 />
 
@@ -195,8 +187,7 @@ The **Collect Tags From Current Location** menu item from the next screenshot, i
 
 <CenteredImage
     caption="Starting tag extraction"
-    src="/media/tagspaces-tag-extraction.png"
-    maxWidth="650px"
+    src="/media/locations/location-tag-extraction.avif"
     showCaption
 />
 
@@ -212,7 +203,7 @@ You can configure **ignore patterns** in the advanced area of location propertie
 
 <CenteredImage
     caption="Manage ignore patterns in location settings"
-    src="/media/location-ignore-patterns.png"
+    src="/media/locations/location-ignore-patterns.avif"
     maxWidth="600px"
     showCaption
 />
@@ -233,7 +224,7 @@ Choosing the tagging method for all locations at once is limiting and kind of in
 
 <CenteredImage
     caption="Set file tagging method per location"
-    src="/media/file-tagging-method-per-location.png"
+    src="/media/locations/location-tagging-method.avif"
     maxWidth="600px"
     showCaption
 />

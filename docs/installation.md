@@ -36,17 +36,23 @@ The installer is signed with modern software certificates, ensuring authenticity
 
 ![Screenshot showing signed installer under Windows](/media/signed-windows-installer.png)
 
-> **Updating the Windows version:** To update, replace the contents of your current installation with the contents from the zip file of a newer release. Your tag library and locations are stored in the user's home folder, so you won’t lose any data during the update process.
-
+:::tip
 The **profile** folder under Windows is located here: `C:\Users\Your_User_Name\AppData\Roaming\TagSpaces`
+:::
+
+### Updating the Windows version
+
+To update, replace the contents of your current installation with the contents from the zip file of a newer release. Your tag library and locations are stored in the user's home folder, so you won’t lose any data during the update process.
 
 ## Installation on macOS
 
 For macOS, you can [download](https://www.tagspaces.org/downloads/) the 64-bit versions of TagSpaces for either Intel or Apple Silicon (ARM) processors. After downloading, double-click the zip file in Finder to properly unpack it. Some users have reported issues unpacking the app with third-party zip utilities, so it’s recommended to use Finder.
 
-The **profile** folder under macOS is located here: `~/Library/Application Support/TagSpaces`
-
 :::tip
+The **profile** folder under macOS is located here: `~/Library/Application Support/TagSpaces`
+:::
+
+<!-- :::tip
 Sometimes macOS may block TagSpaces from opening with a double-click. To bypass this, right-click on the TagSpaces.app folder and choose **Open**, then click **Open** in the dialog that appears. This step is only required once.
 :::
 
@@ -55,9 +61,11 @@ Sometimes macOS may block TagSpaces from opening with a double-click. To bypass 
 :::tip
 Alternatively, you can run this command in Terminal to avoid the "quarantine" warning:
 `xattr -d com.apple.quarantine /Applications/TagSpaces.app`
-:::
+::: -->
 
-> **Updating the macOS version:** To update, replace the contents of your current installation with the files from the zip archive of the new release. Your tag library and locations are stored in the user's home folder, ensuring no data loss during updates.
+### Updating the macOS version
+
+To update, replace the contents of your current installation with the files from the zip archive of the new release. Your tag library and locations are stored in the user's home folder, ensuring no data loss during updates.
 
 ## Installation on Linux
 
@@ -80,7 +88,9 @@ chmod +x tagspaces-linux-x86_64-x.x.x.AppImage
 
 Then, you can launch it with a double-click.
 
-The **profile** folder under Linux/Ubuntu is located here: `/home/your_username/.config/TagSpaces`
+:::tip
+The **profile** folder under Linux/Ubuntu is located here: `~/.config/TagSpaces`
+:::
 
 ### Updating the Linux version
 
