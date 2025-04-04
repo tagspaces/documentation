@@ -23,7 +23,7 @@ Before creating any file, the user can change the file's title and add tags to i
 
 <CenteredImage
     caption="A screenshot showing the web clipper in action"
-    src="/media/tagspaces-webclipper.png"
+    src="/media/webclipper/web-cipper-extension.avif"
     maxWidth="550px"
     showCaption
 />
@@ -85,7 +85,7 @@ The TagSpaces Web Clipper also includes several advanced features:
 
 <CenteredImage
     caption="A screenshot showing the extracted geo location as Plus Code"
-    src="/media/tagspaces-webclipper-olc.png"
+    src="/media/webclipper/web-clipper-geotag-extraction.avif"
     showCaption
 />
 

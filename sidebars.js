@@ -223,6 +223,33 @@ const sidebars = {
     },
     {
       type: "category",
+      label: "Tag Library",
+      items: [
+        "ui/taglibrary",
+        {
+          type: "link",
+          label: "Smart tags",
+          href: "/ui/taglibrary/#smart-tags",
+        },
+        {
+          type: "link",
+          label: "Tagging with timestamps",
+          href: "/ui/taglibrary/#custom-timestamp-tagging",
+        },
+        {
+          type: "link",
+          label: "Geo-tagging",
+          href: "/ui/taglibrary/#geo-tagging",
+        },
+        {
+          type: "link",
+          label: "Location tags",
+          href: "/ui/taglibrary/#location-tags",
+        },
+      ],
+    },
+    {
+      type: "category",
       label: "Tag Files and Folders",
       items: [
         "tagging",
@@ -250,27 +277,6 @@ const sidebars = {
           type: "link",
           label: "Tagging with drag and drop",
           href: "/tagging/#tagging-with-drag-and-drop",
-        },
-        "ui/taglibrary",
-        {
-          type: "link",
-          label: "Smart tags",
-          href: "/ui/taglibrary/#smart-tags",
-        },
-        {
-          type: "link",
-          label: "Tagging with timestamps",
-          href: "/ui/taglibrary/#custom-timestamp-tagging",
-        },
-        {
-          type: "link",
-          label: "Geo-tagging",
-          href: "/ui/taglibrary/#geo-tagging",
-        },
-        {
-          type: "link",
-          label: "Location tags",
-          href: "/ui/taglibrary/#location-tags",
         },
       ],
     },

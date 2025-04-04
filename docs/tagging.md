@@ -16,7 +16,7 @@ One of the core functionalities in TagSpaces is the ability to add tags to files
 
 TagSpaces supports two methods for tagging files: embedding tags in file names and using sidecar files. Both methods work on any file type and across all supported operating systems.
 
-<CenteredImage src="/media/settings-specify-file-tagging-method.svg" caption="File tagging method in the settings" maxWidth="500px" />
+<CenteredImage src="/media/settings/settings-specify-file-tagging-method.avif" caption="File tagging method in the settings" maxWidth="700px" />
 
 ### Storing Tags in File Names
 
@@ -102,13 +102,11 @@ To sync `.ts` folders with cloud services like Dropbox or Google Drive, enable t
 
 To add or remove tags from multiple files or folders, first, select them by holding the CTRL/CMD key and clicking on the entries with the left mouse button. You can also use checkboxes in the list view.
 
-Once selected, right-click on the files and choose _Add / Remove Tags_ from the context menu, or click the tag button in the toolbar.
-
-<CenteredImage src="/media/tagspaces-tagging-default-perspective.png" caption="Managing tags in the default perspective"/>
+Once selected, right-click on the files and choose `Add / Remove Tags` from the context menu, or click the `Tags` button in the toolbar.
 
 This will open a popup dialog for managing tags.
 
-<CenteredImage src="/media/tagspaces-tagging-dialog.png" caption="Tagging multiple files"  maxWidth="500px"/>
+<CenteredImage src="/media/tagging/tagging-multiple-tags-dialog.avif" caption="Tagging multiple files"  maxWidth="500px"/>
 
 The options in the dialog are:
 

@@ -97,7 +97,12 @@ Each tag has its own context menu, accessible by right-clicking on the tag. The 
 - **Edit Tag**: Lets you rename the tag or change its colors.
 - **Delete Tag**: Removes the tag from the tag group and library, but not from any files or folders it's applied to.
 
-![Tag context menu in the tag library](/media/tag-context-menu.png)
+<CenteredImage
+    caption="Tag menu in the tag library"
+    src="/media/taglibrary/tag-contextmenu-taglibrary.avif"
+    maxWidth="600px"
+    showCaption
+  />
 
 When accessed from the file browsing area, the context menu options are similar, but with the addition of:
 
@@ -137,7 +142,12 @@ Editing a tag's name or deleting it from the library affects only the library it
 
 Smart tags are an advanced feature in TagSpaces that offer **dynamic tagging** based on **date, time, or location** criteria. These tags automatically update based on real-time or geographic data, making them highly useful for specific tasks.
 
-![Smart Tag Overview](/media/smart-tags-group.png)
+<CenteredImage
+    caption="Smart Tags - Tag Group"
+    src="/media/taglibrary/smart-tags-taggroup.jpg"
+    maxWidth="400px"
+    showCaption
+  />
 
 ### Custom Timestamp Tagging
 
