@@ -135,7 +135,7 @@ In addition, there are special filters:
 
 <CenteredImage
     caption="Search by file type"
-    src="/media/tagspaces-search-by-type.png"
+    src="/media/search/tagspaces-search-by-type.png"
     maxWidth="300px"
     showCaption
   />
@@ -154,7 +154,7 @@ In this dropdown, you can filter files by their size. The following options are 
 
 <CenteredImage
     caption="Options for searching by size"
-    src="/media/tagspaces-search-by-size.png"
+    src="/media/search/tagspaces-search-by-size.png"
     maxWidth="300px"
     showCaption
   />
@@ -173,7 +173,7 @@ Here you can specify the time period in which the files you're searching for sho
 
 <CenteredImage
     caption="Options for searching by last modified date"
-    src="/media/tagspaces-search-by-last-modified-date.png"
+    src="/media/search/tagspaces-search-by-last-modified-date.png"
     maxWidth="300px"
     showCaption
   />

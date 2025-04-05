@@ -98,16 +98,18 @@ To update the **tar.gz** version, replace the contents of your current installat
 
 ## Installation on Android
 
-### From Google Play (not updated anymore)
+:::caution
+The Android version is meanwhile **deprecated**, we still are still releasing new versions, but we are not actively developing the app anymore.
+:::
+
+<!-- ### From Google Play (not updated anymore)
 
 You can install the Android app from the [Google Play Store](https://play.google.com/store/apps/details?id=org.tagspaces.mobileapp).
 :::tip
 The version of TagSpaces in Google Play Store is outdated and not supported anymore, please read the next section for installing the app from our web page.
-:::
+::: -->
 
 <!-- **Updating the Android app:** Once a newer version of the Android app is published, it will be automatically installed on your mobile device within a few days. -->
-
-### From Our Website
 
 A version of the Android app is available as an [APK file](https://www.tagspaces.org/downloads/) in the download section of our website.
 
