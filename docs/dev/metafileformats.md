@@ -2,7 +2,7 @@
 title: Specification of the meta file formats
 ---
 
-import { ProFeature } from '@site/src/components/CommonBlocks';
+import { ProFeature, CenteredImage } from '@site/src/components/CommonBlocks';
 
 In comparison to many other tools, TagSpaces uses external text files for saving the meta information for folders and files, instead of a database. Here you will find the specification of the formats used by these files and also some other useful information concerning these files.
 
@@ -115,7 +115,7 @@ The meta information is saved in JSON format, which has the following format:
 
 All tag groups and tags can be exported from the settings of the application, as shown in the next screenshot.
 
-![exporting the tag library](/media/taggroups-export.png)
+![exporting the tag library](/media/taglibrary/taglibrary-export.avif)
 
 The meta information is persisted in JSON format, which has the following format:
 
@@ -246,7 +246,7 @@ The locations can be exported from one TagSpaces Pro installation and imported i
 
 TagSpaces Pro offers the possibility to export previously saved search queries. And later import them in another TagSpaces Pro installation.
 
-![export search queries](/media/import-export-searches.png)
+![export search queries](/media/search/import-export-searches.avif)
 
 ```json title="Example files with exported search queries in JSON format"
 {
@@ -304,7 +304,12 @@ Since version 3.11 TagSpaces supports tags which are specific for a given locati
 
 The format of these files is similar to the format of the produced by exporting your [tag library](#format-of-the-tag-library-export). So basically you can take such exports rename them to tsl.json and put them in .ts folder. After reloading them by clicking the "Reload Location Tags"-menuitem the tag-groups should appear in the Tag Library. Tag groups imported from locations will have the location name in brackets as seen the following screenshot.
 
-![reloading location from locations](/media/location-taggroups.png)
+<CenteredImage
+    caption="Reload location tags"
+    src="/media/taglibrary/reload-location-taggroups.avif"
+    maxWidth="550px"
+    showCaption
+  />
 
 ```json title="Example tsl.json file"
 {

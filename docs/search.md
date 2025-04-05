@@ -19,7 +19,11 @@ With the search functionality, you are able to find files and folders by their n
 
 The user can start a search by switching to the search area by pressing the `Ctrl+K` / `Cmd+K` key combination. It can also be opened by clicking on the search text field.
 
-![Open search](/media/open-search.png)
+<CenteredImage
+  caption="Open search"
+  src="/media/search/open-search.avif"
+  showCaption
+/>
 
 Once activated, you can start entering the tags or other search [terms](#search-query). If you choose to enter tags with the `+` symbol, you will see suggestions **(1)** and you can choose from them with the arrow `UP` and `DOWN` keys. The search can be started by hitting the `ENTER` key or by clicking on the search button **(4)**. You can close the search mode with the `ESC` key or by clicking on the X-button **(3)**.
 
@@ -85,7 +89,7 @@ In the search menu, you can also start some common actions just by using your ke
 - **Saved search query** - Typing `q:` will allow you to filter and start your saved search queries.
 - **Search history** - Typing `s:` will allow you to find and execute search queries you have used in the past.
 
-<CenteredImage caption="Quick access action in the search box" src="/media/search-actions.png" showCaption />
+<CenteredImage caption="Quick access for actions in the search box" src="/media/search/search-actions.avif" showCaption />
 
 ### Search scope
 
@@ -318,14 +322,15 @@ In the three-dot menu of the stored search area, you will find menu entries for 
 
 <CenteredImage
     caption="Menu for triggering the import and export of stored searches"
-    src="/media/import-export-searches.png"
+    src="/media/search/import-export-searches.avif"
     maxWidth="811px"
   />
 
 Due to the unique IDs associated with search queries, TagSpaces can recognize if the query has already been imported, allowing you to skip the re-import or import the newer version. An example export can be found in the [documentation](/dev/metafileformats#format-of-the-exported-search-queries).
 
 <CenteredImage
-    caption="Dialog for importing stored search queries"
-    src="/media/import-stored-searches-dialog.png"
-    maxWidth="600px"
+    caption="Dialog for exporting stored search queries"
+    src="/media/search/import-stored-searches-dialog.avif"
+    maxWidth="500px"
+    showCaption
   />

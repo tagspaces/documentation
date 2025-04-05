@@ -157,7 +157,6 @@ When accessed from the file browsing area, the context menu options are similar,
 <CenteredImage
     caption="The tag context menu from a tagged file or folder"
     src="/media/taglibrary/entry-tag-context-menu.avif"
-    maxWidth="650px"
     showCaption
   />
 
@@ -221,7 +220,7 @@ For more advanced users, the **custom-date** smart tag allows you to add any cus
 <VideoYT
 youtubeId="DVHioQhpyYM"
 title="Tagging with Timestamps"
-posterUrl="/media/timestamp-tagging-poster.avif"
+posterUrl="/media/tagging/timestamp-tagging-poster.avif"
 showCaption
 />
 

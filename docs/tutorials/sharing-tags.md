@@ -3,6 +3,8 @@ title: Collaboratively using tags and tag groups
 tags: [tutorial]
 ---
 
+import { ProFeature, CenteredImage } from '@site/src/components/CommonBlocks';
+
 ## Introduction
 
 A common requirement for many TagSpaces users is sharing tag and tag groups across computer networks and devices. This article runs through the steps required for setting up TagSpaces in order to use a shared tag groups. It will guide you through the process of exporting the tag groups, editing them in externally and re-importing or reusing them in other installations. After understanding how TagSpaces handles tag groups you will be able to achieve the following use cases with our application:
@@ -12,7 +14,12 @@ A common requirement for many TagSpaces users is sharing tag and tag groups acro
 
 But before we start, let's define some terms from the TagSpaces jargon. **Tag Library** is a collection of tag groups, which can be opened by clicking on the button located in the bottom left cornet of the application. A **Tag Group** is a collection of tags (3). For clarification you can see the screenshot bellow.
 
-![the tag library](/media/taglibrary/tag-library-overview.png)
+<CenteredImage
+    caption="The user interface of the tag library"
+    src="/media/taglibrary/tag-library-overview.png"
+    maxWidth="300px"
+    showCaption
+  />
 
 So let's assume you want share the tag groups with the names "TagGroups for Sharing 1" and "TagGroups for Sharing 2" with your colleague which is also using TagSpaces in order to have a common base for tagging on collaborative projects. As a preparation steps you can define these tag groups and put the needed tags in there, with the desired names and colors. Of course you can change them later, but at this point is much easier as you can use the TagSpaces user interface.
 
@@ -20,11 +27,20 @@ So let's assume you want share the tag groups with the names "TagGroups for Shar
 
 After adding all the needed tags and specifying their colors you are now ready to export them. Just click the three dot menu on top right area of the tag library and select "Export Tag Library".
 
-![exporting the tag library](/media/taggroups-export.png)
+<CenteredImage
+    caption="Exporting the tag library"
+    src="/media/taglibrary/taglibrary-export.avif"
+    showCaption
+  />
 
 In the following screen you can select which tag group you want to export.
 
-![selecting tag groups for export](/media/taglibary-export-select-taggroups.png)
+<CenteredImage
+    caption="Selecting tag groups for export"
+    src="/media/taglibrary/taglibary-export-dialog.avif"
+    maxWidth="550px"
+    showCaption
+  />
 
 After clicking on the export button, a file saving dialog will appear, asking you to select a location where to save the file with the exported tag groups. This is files a called "tsm[20160807~131454].json", where the date/time stamp in the tags reflects the date and the time of the export. More on the export file format can be found in the [file format specification](/dev/metafileformats#taggroupsexport).
 
@@ -51,11 +67,20 @@ Some other possible operation in the export file are:
 
 In tag area of TagSpaces you will find a button, which once clicked will trigger the tags import functionality of the application.
 
-![importing the json export file](/media/taglibrary-import.png)
+<CenteredImage
+    caption="Importing the exported and changed JSON file"
+    src="/media/taglibrary/taglibrary-import.avif"
+    showCaption
+  />
 
 After selecting the file and clicking the "open" button, a dialogs will appear asking you to choose the json files, which should be imported. This dialog is shown on the next screenshot.
 
-![importing the json export file](/media/taglibrary-import-selection.png)
+<CenteredImage
+    caption="Dialog for importing tag groups"
+    src="/media/taglibrary/taglibrary-import-selection.avif"
+    maxWidth="550px"
+    showCaption
+  />
 
 This method has the drawback that once imported in another TagSpaces installation, these tags are disconnected from the source tag library, so any changed done in the source application, will **not** be reflected in the instance where the tags were imported.
 
