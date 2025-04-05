@@ -188,7 +188,7 @@ When you apply a geo-location tag, a dialog will appear with an interactive map,
 youtubeId="n4LsMP85qtc"
 title="Geo tagging with TagSpaces Pro"
 height={550}
-posterUrl="/media/geo-tagging-poster.avif"
+posterUrl="/media/tagging/geo-tagging-poster.avif"
 />
 
 <!-- The geo tag is a special kind of smart tag, available in TaSpaces **PRO**, that allows tagging files with precise geolocation coordinates. When You drag the tag "geo" on a file, the **Edit tag** popup window with the Geo Location tab will open, showing a map from OpenStreetmap. You can drop a pin anywhere, and move it around, it automatically becomes a tag in the format of `latitude+longitude`, e.g. `47.2792290+18.9843750` This tag will then be applied to the file and treated as a geo-smarttag by TagSpaces -->
@@ -201,12 +201,12 @@ Smart tags can be edited or further refined to include more detailed information
 
 <CenteredImage
     caption="Enter Latitude and Longitude as Geo Tags"
-    src="/media/geo-tagging-lat-lon.png"
-    maxWidth="500px"
+    src="/media/tagging/geo-tagging-lat-lon.avif"
+    maxWidth="600px"
     showCaption
   />
 
-In geo tagging dialog you can enter the latitude and longitude directly without the need of the map. To enable this you have to click on the advanced button in the dialog as shown in the following screenshot.
+In geo tagging dialog you can enter the latitude and longitude directly without the need of the map. To enable this you have to click on the advanced button in the dialog as shown in the previous screenshot.
 
 ### Date Ranges as Tags
 

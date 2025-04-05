@@ -2,7 +2,7 @@
 title: Preview and Print Files
 ---
 
-import { ProFeature } from "@site/src/components/CommonBlocks";
+import { ProFeature, CenteredImage, CenteredVideo } from "@site/src/components/CommonBlocks";
 
 TagSpaces supports the previewing of many file types without requiring external viewers. The application includes several viewer extensions:
 
@@ -37,6 +37,15 @@ You can assign different viewer extensions to specific file extensions via the s
 
 ## Printing Files
 
-Most viewer extensions in TagSpaces support printing thanks to the built-in print functionality. In the following short video, you can see how to initiate file printing.
+Most viewer extensions in TagSpaces support printing thanks to the built-in print functionality. In order to print a file you have to open in the file properties and from there you should click on the round FAB button in the bottom right part of the screen. From there you can choose the `Print` menu entry, which will open the print dialog of your operating system.
+<CenteredImage
+    caption="Printing files"
+    src="/media/printing.avif"
+    showCaption
+  />
 
-![printing files](/media/printing.gif)
+:::tip
+**Exporting to PDF**
+
+Some operating systems like macOS support directly printing to PDF files. This can be seen in the previous screenshot.
+:::
