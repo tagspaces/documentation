@@ -12,7 +12,7 @@ A common requirement for many TagSpaces users is sharing tag and tag groups acro
 
 But before we start, let's define some terms from the TagSpaces jargon. **Tag Library** is a collection of tag groups, which can be opened by clicking on the button located in the bottom left cornet of the application. A **Tag Group** is a collection of tags (3). For clarification you can see the screenshot bellow.
 
-![the tag library](/media/tag-library-overview.png)
+![the tag library](/media/taglibrary/tag-library-overview.png)
 
 So let's assume you want share the tag groups with the names "TagGroups for Sharing 1" and "TagGroups for Sharing 2" with your colleague which is also using TagSpaces in order to have a common base for tagging on collaborative projects. As a preparation steps you can define these tag groups and put the needed tags in there, with the desired names and colors. Of course you can change them later, but at this point is much easier as you can use the TagSpaces user interface.
 

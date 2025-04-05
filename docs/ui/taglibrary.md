@@ -7,7 +7,12 @@ import VideoYT from '@site/src/components/VideoYT';
 
 The **Tag Library** in TagSpaces allows you to manage and organize tags, which you can use to categorize and label your files and folders. To access the tag library, click the tag icon (1) located in the vertical navigation bar on the far left side of the application.
 
-![Tag Library User Interface Overview](/media/tag-library-overview.png)
+<CenteredImage
+    caption="The user interface of the tag library"
+    src="/media/taglibrary/tag-library-overview.png"
+    maxWidth="400px"
+    showCaption
+  />
 
 The tag library has its own [context menu](#tag-library-context-menu), which can be started by clicking the three dot icon on right of (2). The area marked with (3) represents a single [tag group](#tag-groups). On the top of (3) there is a three dot icon which will open the [context menu](#tag-group-context-menu) of this tag group. (4) show a collapse tag group. Every tag group can be collapsed by clicking on the arrow icon in front of the tag group's name. (5) shows a special tag group used for automatically collecting new tags used in the application. (6) shows a single tag. Every tag has its own three dot icon, which will open its [context menu](#tag-context-menu)
 
@@ -48,14 +53,26 @@ All tag groups, except smart tags, are optional and can be removed from the tag 
 The tag library menu contains the following options:
 
 - **Create Tag Group**: Opens a dialog for creating a new tag group.
+- **Reload Location Tags**: Reloads all location tags.
 - **Import Tag Library**: Starts the process of importing tag groups. Learn more in the [tag sharing tutorial](/tutorials/sharing-tags#distributing-the-library).
 - **Export Tag Library**: Initiates the export process for tag groups. Learn more in the [tag sharing tutorial](/tutorials/sharing-tags#exporting-the-existing-tag-groups).
+- **Help**: Opens this page.
 
-![Screenshot of the tag library context menu](/media/taglibrary-context-menu.png)
+<CenteredImage
+    caption="The context menu of the tag library"
+    src="/media/taglibrary/taglibrary-context-menu.avif"
+    maxWidth="700px"
+    showCaption
+  />
 
 To create a new tag group, click **Create Tag Group** below the existing tag groups. This will open a dialog where you can specify a name and color for your tag group. Color coding helps distinguish between tags that share common characteristics. You can also specify the text color for better contrast depending on the background color.
 
-![Screenshot of the new tag group dialog](/media/new-tag-group-dialog.png)
+<CenteredImage
+    caption="Dialog for creating new tag groups"
+    src="/media/taglibrary/new-tag-group-dialog.avif"
+    maxWidth="450px"
+    showCaption
+  />
 
 By selecting **Import Tag Library** or **Export Tag Library**, you can transfer predefined tags between instances of TagSpaces (e.g., on different computers). The process uses a `JSON` file, which allows you to share your tag library across different systems or collaborate with others. Learn more in the [Sharing Tag Libraries](/tutorials/sharing-tags) tutorial.
 
@@ -67,14 +84,40 @@ Each tag group has its own context menu, accessible via the three-dot icon next 
 - **Edit Tag Group**: Allows you to rename the group, change the default background color, and adjust text colors.
 - **Move Tag Group Up/Down**: Reorders the tag group within the library.
 - **Sort Tag Group**: Sorts all tags in the group alphabetically.
+- **Search for tags from this group**: Search for files and folders tagged with at least one tag from this tag group
 - **Delete Tag Group**: Removes the group and its tags from the library.
 - **Collect Tags From Current Location** <ProFeature />: Collects all tags used in the current location and adds them to the selected group.
 
-![Tag group context menu](/media/tag-group-context-menu.png)
+<CenteredImage
+    caption="The context menu for a tag group"
+    src="/media/taglibrary/tag-group-context-menu.avif"
+    maxWidth="650px"
+    showCaption
+  />
 
 :::info
 Learn more about changing the default tag background and text colors in the [settings](/ui/settings/#general).
 :::
+
+### Adding tags to a tag group
+
+In this dialog you can enter a comma or space separated word which will added as tags to the tag group, for the which this dialog wa opened.
+<CenteredImage
+    caption="Dialog for creating tags"
+    src="/media/taglibrary/tag-creation-dialog.avif"
+    maxWidth="350px"
+    showCaption
+  />
+
+### Editing tag from a tag group
+
+In this dialog you can edit the tag name and colors.
+<CenteredImage
+    caption="Dialog for editing tags"
+    src="/media/taglibrary/edit-tag-in-taggroup.avif"
+    maxWidth="450px"
+    showCaption
+  />
 
 ### Drag and Drop Operations
 
@@ -92,8 +135,8 @@ You can reorder tag groups in the library via drag-and-drop. Similarly, you can 
 
 Each tag has its own context menu, accessible by right-clicking on the tag. The context menu varies slightly depending on whether it's accessed from the tag library or from a file. When accessed from the tag library, the options are:
 
-- **Show Files With This Tag**: Searches for files with the selected tag.
-- **Apply Tag**: Applies the tag to selected files in the browsing area.
+- **Show Files With This Tag**: Search for files and folder tagged with the selected tag.
+- **Apply Tag**: Applies the tag to selected files and folders in the browsing area.
 - **Edit Tag**: Lets you rename the tag or change its colors.
 - **Delete Tag**: Removes the tag from the tag group and library, but not from any files or folders it's applied to.
 
@@ -106,11 +149,17 @@ Each tag has its own context menu, accessible by right-clicking on the tag. The 
 
 When accessed from the file browsing area, the context menu options are similar, but with the addition of:
 
+- **Show Files With This Tag**: Search for files and folder tagged with the selected tag.
 - **Add Tag to Tag Group**: Opens a dialog to select the tag group where the tag should be added.
 - **Edit tag** - will let you change the tag's name for the tagged file and folder not in the tag library.
 - **Remove Tag**: Removes the tag from the selected file or folder.
 
-![the context menu of a tag from an entry](/media/entry-tag-context-menu.png)
+<CenteredImage
+    caption="The tag context menu from a tagged file or folder"
+    src="/media/taglibrary/entry-tag-context-menu.avif"
+    maxWidth="650px"
+    showCaption
+  />
 
 <!-- > You can add key-bindings to any tag. Key bindings are essentially a key combination that allows you to quickly mark a file with the tag in question. just select the file, press the key combination, and the file will be marked.
 
@@ -227,13 +276,18 @@ Location tags are particularly useful when sharing tag libraries with collaborat
 
 To activate location-based tags, open the advanced settings tab and check the corresponding checkbox, as shown below:
 
-![Activating Location Tags in Settings](/media/activation-location-tags.png)
+<CenteredImage
+    caption="Activating location tags in the advanced tab of the settings"
+    src="/media/settings/activation-location-tags.avif"
+    maxWidth="700px"
+    showCaption
+  />
 
-Once activated, you will see a dropdown option called **Store Tag Group In** when creating new tag groups. This allows you to specify that the tag group should be stored in the `.ts` folder of the current location. This ensures that tags "travel" with the location when you copy or sync the folder, for example, when moving it to a USB stick or using Dropbox for syncing.
+Once activated, you will see a dropdown option called **Store Tag Group In** when creating new tag groups. This allows you to specify that the tag group should be stored in the `.ts` folder of the current location. This ensures that tags "travels" with the location when you copy or sync the folder, for example, when moving it to a USB stick or using Dropbox for syncing.
 
 <CenteredImage
-    caption="Creating location based tag group"
-    src="/media/creating-location-taggroup.png"
+    caption="Choosing in which location to store the tag group"
+    src="/media/taglibrary/editing-location-taggroup.avif"
     maxWidth="500px"
     showCaption
   />
