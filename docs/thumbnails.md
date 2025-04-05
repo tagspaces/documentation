@@ -22,8 +22,8 @@ The PRO version expands thumbnail generation to a broader range of file formats:
 - **Office Documents:** ODT, ODP, ODS, DOCX, XLSX, PPTX (using embedded preview images, if available)
 
 <CenteredImage
-    caption="Showing generated thumbnails in TagSpaces"
-    src="/media/tagspaces-thumbnails.png"
+    caption="Showing files with generated thumbnails in the grid perspective"
+    src="/media/grid/folder-with-generated-thumbs.avif"
     showCaption
 />
 
@@ -31,8 +31,9 @@ The generated thumbnails are stored in the `.ts` folder located within each fold
 
 <CenteredImage
     caption="Activating the thumbnails generation in the settings"
-    src="/media/tagspaces-thumbnail-generation.png"
+    src="/media/settings/settings-enable-tmb-generation.avif"
     showCaption
+    maxWidth={700}
 />
 
 ## Thumbnails on S3 Locations

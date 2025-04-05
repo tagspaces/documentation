@@ -217,7 +217,7 @@ const sidebars = {
         {
           type: "link",
           label: "Folder Wallpaper",
-          href: "/folders#folder-wallpaper",
+          href: "/folders#folder-background-image",
         },
       ],
     },

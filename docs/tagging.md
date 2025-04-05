@@ -128,20 +128,29 @@ You can add multiple tags at once by separating them with commas in the tagging 
 
 ## Tagging in File and Folder Properties Area
 
-Tags can also be added in the properties area by selecting them from a dropdown or dragging them into the tagging area. To remove a tag, click the **x**-button next to the tag.
+Tags can also be added in the properties area by selecting them from a dropdown or dragging them into the tagging area. To remove a tag, click the open the three-dots menu next to the tag and choose `Remove tag`.
 
-<CenteredImage src="/media/tagspaces-tagging-draganddrop.png" caption="Dropping tags in the properties area" />
+<CenteredImage src="/media/tagging/tagging-entry-details.avif" caption="Tagging in the file and folder details area" maxWidth={600} />
 
 ## Tagging with Drag and Drop
 
 Tagging can also be performed using drag-and-drop. Here are the supported operations:
 
-- **Dragging a tag from the tag library to a file or folder:** Supported in the [grid perspective](/perspectives/grid) and [list perspective](/perspectives/list).
-- **Dragging a tag to the tagging section of the properties area:** Works in any perspective.
-- **Dragging a tag from one file or folder to another:** Supported in the [grid perspective](/perspectives/grid) and [list perspective](/perspectives/list).
-- **Moving tags between groups:** Supported within the tag library.
+### Dragging a tag from the tag library to a file or folder
 
-<CenteredImage src="/media/tagspaces-tagging-folder-dandd.png" caption="Drag-and-drop tagging for folders" />
+This action is supported in the [grid](/perspectives/grid), [list](/perspectives/list) and [kanban](/perspectives/kanbak) perspective.
+<CenteredImage src="/media/tagging/tagging-dnd-taglibrary.avif" caption="Tagging with drag-and-drop from the tag library" maxWidth={650}/>
+
+### Dragging a tag to the tagging section of the details area
+
+This actions is supported in the details of files and folders and can be initiated from the tag library or from a file or folder in the [grid](/perspectives/grid) and [list](/perspectives/list) perspectives
+
+<CenteredImage src="/media/tagging/tagging-dnd-entrydetais.avif" caption="Tagging with drag-and-drop from the tag library folder details" />
+
+### Dragging a tag from one file or folder to another
+
+This action is supported in the [grid](/perspectives/grid) and [list](/perspectives/list) perspectives.
+<CenteredImage src="/media/tagging/tagging-dnd-entry-to-entry.avif" caption="Tagging with drag-and-drop from a folder to another" maxWidth={650}/>
 
 <!-- ## Tagging using keyboard shortcuts
 Another quick way to tag files is to set keyboard shortcuts to often-used tags. To specify a shortcut, click on a tag in the **Tag Library**, and select *Edit Tag* from the context menu

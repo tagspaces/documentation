@@ -23,10 +23,6 @@ This section contains the following areas:
 - **Recently edited files** - contains a list of recently edited files
 - **Recently opened folders** - contains a list of folders opened in the details section
 
-## Bookmarks
-
-TBD
-
 ## Configuring the recently opened entries
 
 The amount of the collected files can be adjusted in the advanced tab of the settings. Here you can also clear the history or deactivate the collection of the recent entries by choosing the _disabled_ menu item in dropdowns.

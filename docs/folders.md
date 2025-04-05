@@ -77,12 +77,13 @@ Descriptions are saved in a sidecar file called `tsm.json` within the hidden `.t
 Every folder can have its own default perspective, which can be selected in the folder properties area.
 
 <CenteredImage
-    caption="Folder description"
+    caption="Changing the default perspective for a folder"
     src="/media/entrydetails/folder-default-perspective.avif"
+    maxWidth={650}
     showCaption
   />
 
-Once you choose a perspective, every time you open this folder, it will open with the selected perspective.
+Once you choose a perspective, every time you open this folder, it should open with the selected perspective.
 
 ## Folder Background
 
@@ -125,7 +126,7 @@ An image in the clipboard can be used as thumbnail after pasting it in this dial
 
 Adding a custom thumbnail to any file type can be achieved similarly from the file's properties section.
 
-## Folder Background Imagee
+## Folder Background Image
 
 <ProFeature />
 Folders can have background images (wallpapers) in TagSpaces Pro. The background images are supported in the Grid, List, Gallery and Kanban [perspectives](/browsing-files).
