@@ -17,7 +17,7 @@ With the search functionality, you are able to find files and folders by their n
 
 ## Open the search
 
-The user can start a search by switching to the search area by pressing the `Ctrl+K` / `Cmd+K` key combination. It can also be opened by clicking on the search text field.
+The user can start a search by switching to the search area by pressing the `Ctrl+F` / `Cmd+F` key combination. It can also be opened by clicking on the search text field.
 
 <CenteredImage
   caption="Open search"
@@ -27,11 +27,20 @@ The user can start a search by switching to the search area by pressing the `Ctr
 
 Once activated, you can start entering the tags or other search [terms](#search-query). If you choose to enter tags with the `+` symbol, you will see suggestions **(1)** and you can choose from them with the arrow `UP` and `DOWN` keys. The search can be started by hitting the `ENTER` key or by clicking on the search button **(4)**. You can close the search mode with the `ESC` key or by clicking on the X-button **(3)**.
 
-![Entering search query](/media/search-ui.svg)
+<CenteredImage
+  caption="Explanation of the search user interface"
+  src="/media/search/search-ui.avif"
+  showCaption
+/>
 
 The **advanced search options**, visible in the next screenshot, can be accessed after clicking on the button with the sliders **(2)** from the previous screenshot.
 
-![Search options](/media/search-options.png)
+<CenteredImage
+  caption="Advanced search options"
+  src="/media/search/advanced-search.avif"
+  showCaption
+  maxWidth={400}
+/>
 
 ## Search query
 
@@ -45,8 +54,8 @@ The tags specified here will be visible in the search options described in the p
 
 <CenteredVideo
     caption="Searching for tags"
-    src="/media/videos/searching-for-tags.mp4"
-    posterUrl="/media/videos/searching-for-tags.jpg"
+    src="/media/search/searching-for-tags.mp4"
+    posterUrl="/media/search/searching-for-tags.jpg"
     maxWidth="100%"
     autoPlay
     showCaption
@@ -63,7 +72,7 @@ As usual, the search can be opened by the `CTRL+SHIFT+F` (`⌘+SHIFT+F` on Mac) 
 
 <CenteredImage
   caption="Query composition in the search box"
-  src="/media/search-query-composition.png"
+  src="/media/search/search-query-composition.avif"
   showCaption
 />
 
@@ -188,8 +197,8 @@ This filter limits search results to files and folders that have date-time tags 
 
 <CenteredImage
     caption="Options for searching entries tagged with date tags"
-    src="/media/search-for-time-period.png"
-    maxWidth="400px"
+    src="/media/search/search-for-time-period.avif"
+    maxWidth="550px"
     showCaption
   />
 
@@ -211,8 +220,8 @@ If you decide to disable automatic indexing, you should manually update the inde
 
 <CenteredImage
     caption="Updating indexes for all locations"
-    src="/media/update-all-indexes.png"
-    maxWidth="550px"
+    src="/media/locations/update-all-indexes.avif"
+    maxWidth="650px"
     showCaption
   />
 
@@ -221,9 +230,9 @@ If you decide to disable automatic indexing, you should manually update the inde
 By default, TagSpaces limits the number of search results to 1,000 files and folders. This limitation also applies to the maximum number of files that can be displayed in a single folder. In the [general](/ui/settings#general) tab of the settings, there is a field where you can increase or decrease this limit. See the next screenshot.
 
 <CenteredImage
-    caption="Adjust the number of shown/found items in the perspectives"
-    src="/media/adjust-search-limit.png"
-    maxWidth="650px"
+    caption="Adjust the number of found items in the search result"
+    src="/media/settings/limit-search-results.avif"
+    maxWidth="700px"
     showCaption
   />
 
@@ -251,8 +260,8 @@ These file formats are currently supported:
 
 <CenteredImage
     caption="Enabling full-text indexing"
-    src="/media/tagspaces-enabling-fulltext-indexing.png"
-    maxWidth="650px"
+    src="/media/locations/enable-fulltext-search.avif"
+    maxWidth="500px"
     showCaption
   />
 
@@ -266,8 +275,8 @@ TagSpaces Pro offers searching across all locations, called "Global search." It 
 
 <CenteredImage
     caption="Activating the global search"
-    src="/media/global-search.png"
-    maxWidth="300px"
+    src="/media/search/activation-global-search.avif"
+    maxWidth="400px"
     showCaption
   />
 
@@ -281,8 +290,8 @@ This feature can be activated in the app's advanced settings, where you can choo
 
 <CenteredImage
     caption="Activating the search history in the settings"
-    src="/media/search-history-activation.png"
-    maxWidth="600px"
+    src="/media/settings/activation-search-history.avif"
+    maxWidth="700px"
     showCaption
   />
 
@@ -295,13 +304,30 @@ This feature allows you to store commonly used search queries for later use. The
 <VideoYT
     youtubeId="WMGsJjh_XPU"
     title="Video showing creation and usage of a stored search query"
-    posterUrl="/media/stored-searches.png"
+    posterUrl="/media/search/stored-searches-poster.avif"
     height={550}
   />
 
 :::tip
 Stored searches are location-independent, meaning they can be executed on any location.
 :::
+
+### Create stored searches
+
+<CenteredImage
+    caption="Dialog for creating stored search"
+    src="/media/search/create-stored-search.avif"
+    showCaption
+  />
+
+### Edit stored searches
+
+<CenteredImage
+    caption="Dialog for editing stored search"
+    src="/media/search/edit-stored-search.avif"
+    maxWidth="700px"
+    showCaption
+  />
 
 <!-- ### Quick access from search bar
 
