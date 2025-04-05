@@ -135,8 +135,8 @@ In addition, there are special filters:
 
 <CenteredImage
     caption="Search by file type"
-    src="/media/search/tagspaces-search-by-type.png"
-    maxWidth="300px"
+    src="/media/search/tagspaces-search-by-type.avif"
+    maxWidth="350px"
     showCaption
   />
 

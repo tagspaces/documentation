@@ -33,7 +33,7 @@ This method embeds tags directly into the file name. For example, adding the tag
 
 <CenteredImage src="/media/filename-tagging.png" caption="Tags embedded in file names" />
 
-Once embedded in the name of file, the tag stick there and can be removed only by file renaming. **This makes the tagging "durable" and portable**. The tags embedded in the name of a file "survives" synchronization across cloud platforms such as Dropbox and Google Drive and can be read by TagSpaces or any other file searching software on Windows, macOS, Linux or Android.
+Once embedded in the name of file, the tag stick there and can be removed only by file renaming. **This makes the tagging "durable" and portable**. The tags embedded in the name of a file "survives" synchronization across cloud platforms such as Dropbox and Google Drive and can be read by TagSpaces or any other file searching software on Windows, macOS or Linux.
 
 :::tip
 File name tagging may run into limitations due to file path length restrictions on certain operating systems like Windows.

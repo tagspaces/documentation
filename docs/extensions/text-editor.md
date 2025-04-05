@@ -70,7 +70,7 @@ The Markdown editor will also allow you to **link local files and images** from 
 
 For example, the link `[link text](images/picture.jpg)` will show the file named `picture.jpg` (located in the `images` subfolder of the folder your file is located) in the markdown viewer, while `[link text](/files/more_files/example.pdf)` will open the file named `example.pdf` (located in the `more_files` subfolder of the `files` folder, located in the current folder) in an external PDF viewer.
 
-To enter a relative path, you can usually use UNIX-style slashes (`/`) in paths, e.g., `path/to/file/filename.ext`, as `node.js`, upon which TagSpaces is built, will handle them properly even on Windows. This allows for interoperability across different operating systems. If you only use Windows, however, you can use a backslash (`\`), e.g., `path\to\file\filename.ext`, if you prefer, but such paths will not be understood on any other system, including Android.
+To enter a relative path, you can usually use UNIX-style slashes (`/`) in paths, e.g., `path/to/file/filename.ext`, as `node.js`, upon which TagSpaces is built, will handle them properly even on Windows. This allows for interoperability across different operating systems. If you only use Windows, however, you can use a backslash (`\`), e.g., `path\to\file\filename.ext`, if you prefer, but such paths will not be understood on any other system.
 
 :::info
 TagSpaces only understands relative paths. You cannot reference any level above your current folder, or the root of your connected location, but might only link files located in the currently active folder, or in subfolders within.
