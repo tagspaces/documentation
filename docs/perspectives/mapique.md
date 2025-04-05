@@ -22,9 +22,8 @@ Here are some ideas for which this perspective can be used:
 The default map shown when opening this perspective is provided by [OpenStreetMap](https://www.openstreetmap.org/).
 
 <CenteredImage
-    caption="Showing geo-tagged files on the default map from openstreetmap.org"
-    src="/media/tagspaces-mapique-openstreetmap.png"
-    maxWidth1="550px"
+    caption="Showing geo-tagged folders on the default map from openstreetmap.org"
+    src="/media/mapique/geotagged-entries-openstreetmap.avif"
     showCaption
   />
 
@@ -32,8 +31,7 @@ An optional topological map is provided by [OpenTopoMap](https://opentopomap.org
 
 <CenteredImage
     caption="Showing geo-tagged files on a topographical map"
-    src="/media/tagspaces-mapique-topo.png"
-    maxWidth1="550px"
+    src="/media/mapique/geotagged-files-topomap.avif"
     showCaption
   />
 
@@ -41,17 +39,20 @@ An optional topological map is provided by [OpenTopoMap](https://opentopomap.org
 
 From the main toolbar of this perspective, the user can access the following functionalities:
 
+- **Parent folder** - Will open the parent folder in this perspective if possible.
+- **Details** - Will open the properties of the current folder.
 - **Extract geo tags** - Start the extraction of geo coordinates from JPG files with embedded EXIF/IPTC located in the current directory.
 - **Geo tag current folder** - Takes the location of the current map center and adds it as a geo tag in [Plus Code format](https://en.wikipedia.org/wiki/Open_Location_Code) to the current folder.
 - **Change the map type** - Clicking this button will iterate through the currently supported map types, which for now include: OpenStreetMap (default) and topographical.
-- **Open perspective's documentation** - Clicking this button will open this page.
+- **Show folders** - Will show the a list of all sub-folders of the current folder, so you can navigate to them. This is useful if some of the folders are not geo-tagged or currently not visible on the map.
+
+- **Help** - Clicking this button will open this page.
 
 Clicking on the popup of a file on the map will open the file in the previewing area of TagSpaces, where you can add or change the file description, rename the file, or choose another thumbnail. The following screenshot shows a comparison.
 
 <CenteredImage
     caption="Showing the file properties in the Mapique perspective"
-    src="/media/tagspaces-mapique-file-properties.png"
-    maxWidth1="550px"
+    src="/media/mapique/perspective-user-interface.avif"
     showCaption
   />
 
@@ -61,7 +62,7 @@ With the help of a small pictogram, you can directly recognize if the pin is for
 
 <CenteredImage
     caption="Colored map icons according to the color of the first tag"
-    src="/media/mapique/mapique-geo-tag-pins.png"
+    src="/media/mapique/mapique-geo-tag-pins.avif"
     showCaption
   />
 

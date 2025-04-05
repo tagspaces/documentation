@@ -107,7 +107,7 @@ To share files from a folder, a selection of files, or search results, you can u
 
 <CenteredImage
     caption="Open the file sharing dialog"
-    src="/media/open-sharing-dialog.png"
+    src="/media/sharing/open-sharing-dialog.png"
     maxWidth="1056px"
     showCaption
 />
@@ -116,7 +116,7 @@ The dialog generates sharing links that are valid for 3 days by default. You can
 
 <CenteredImage
     caption="The file sharing dialog"
-    src="/media/file-sharing-dialog.png"
+    src="/media/sharing/file-sharing-dialog.png"
     maxWidth="735px"
     showCaption
 />
