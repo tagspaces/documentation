@@ -10,12 +10,16 @@ To provide an easy way to collect web content such as web pages, articles, PDF d
 
 The extension is available for [Chrome](https://chrome.google.com/webstore/detail/tagspaces-web-clipper/ldalmgifdlgpiiadeccbcjojljeanhjk), [Firefox](https://addons.mozilla.org/en-US/firefox/addon/tagspaces/), and [Microsoft Edge](https://microsoftedge.microsoft.com/addons/detail/tagspaces-web-clipper/dinjgbhjngaockabnagbonbfinanjpdn).
 
-<VideoYT
-    youtubeId="lUVoa8tAr6U"
-    title="TagSpaces Web Clipper Introduction Video"
-    posterUrl="/media/videos/tagspaces-webclipper-screenshot-yt-video.png"
-    height={550}
+<CenteredVideo
+    caption="Demonstration of content collection with the web clipper"
+    src="/media/webclipper/webclipper-content-collection.mp4"
+    posterUrl="/media/webclipper/webclipper-content-collection.avif"
+    autoPlay
+    showCaption
+    maxWidth="100%"
 />
+
+Here is an older video on [Youtube](https://youtu.be/lUVoa8tAr6U) demonstrating the capabilities of the web clipper.
 
 ## Basic Features
 
