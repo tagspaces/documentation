@@ -2,9 +2,9 @@
 title: Introduction
 ---
 
-# Get Started - User Interface Areas
+import { ProFeature, CenteredImage, CenteredVideo } from '@site/src/components/CommonBlocks';
 
-import { ProFeature, CenteredImage } from '@site/src/components/CommonBlocks';
+# Get Started - User Interface Areas
 
 TagSpaces opens as a single-window application designed to maximize space usage, whether on large screens or small mobile displays. Its user interface follows Google's Material Design guidelines, making it adaptable and consistent across operating systems and platforms.
 
@@ -82,7 +82,14 @@ When a file is opened, the main UI splits into two areas, with the right side be
 
 Themes can be changed in the [general settings](/ui/settings#general).
 
-![Light and Dark Themes](/media/themes-switch.avif)
+<CenteredVideo
+    caption="Switching user interface themes"
+    posterUrl="/media/core/switch-themes-poster.avif"
+    src="/media/core/switch-themes.mp4"
+    autoPlay={false}
+    width="100%"
+    showCaption
+  />
 
 ## Multiple Windows and Tabs
 
@@ -94,11 +101,11 @@ TagSpaces supports multiple windows or tabs in the web versions. You can open lo
 
 TagSpaces' UI is scalable, allowing you to adjust the zoom factor according to your screen. Access the zoom options from the **View** menu. Options include zoom in, zoom out, and resetting the zoom to its default.
 
-![Zoom menu options](/media/zoomable-ui-menu.avif)
+![Zoom menu options](/media/core/zoomable-ui-menu.avif)
 
 - **Zoomed In Interface**:
 
-![Zoomed In Interface](/media/zoomed-out.avif)
+![Zoomed In Interface](/media/core/zoomed-out.avif)
 
 :::tip
 In a browser, use the built-in zoom functionality.
@@ -108,7 +115,7 @@ In a browser, use the built-in zoom functionality.
 
 The desktop app supports full screen mode, which can be toggled by pressing `F11` or selecting _View -> Toggle Fullscreen_ from the **Main Menu**.
 
-![Toggle Fullscreen](/media/toggle_fullscreen.avif)
+![Toggle Fullscreen](/media/core/toggle_fullscreen.avif)
 
 :::tip
 In a browser, use the browser's full screen capabilities.
@@ -120,7 +127,7 @@ On Windows, macOS, and Linux, starting the desktop app loads a **tray menu** int
 
 <CenteredImage
     caption="Tray Menu on macOS"
-    src="/media/tray-menu-macos.avif"
+    src="/media/core/tray-menu-macos.avif"
     showCaption
     maxWidth="300px"
   />

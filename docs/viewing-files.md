@@ -40,7 +40,7 @@ You can assign different viewer extensions to specific file extensions via the s
 Most viewer extensions in TagSpaces support printing thanks to the built-in print functionality. In order to print a file you have to open in the file properties and from there you should click on the round FAB button in the bottom right part of the screen. From there you can choose the `Print` menu entry, which will open the print dialog of your operating system.
 <CenteredImage
     caption="Printing files"
-    src="/media/printing.avif"
+    src="/media/core/printing.avif"
     showCaption
   />
 
