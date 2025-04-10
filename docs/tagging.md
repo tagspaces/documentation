@@ -12,6 +12,15 @@ Tagging is more than just organization; it's a way of expressing your thoughts a
 
 One of the core functionalities in TagSpaces is the ability to add tags to files and folders. Unlike other products, **TagSpaces does not rely on a central database for storing tags**. Instead, it offers two alternative methods, which are described in the following sections.
 
+<CenteredVideo
+    caption="Various ways for tagging files and folders"
+    src="/media/tagging/tag-files-and-folders.mp4"
+    posterUrl="/media/tagging/tag-files-and-folders.avif"
+    autoPlay
+    showCaption
+    maxWidth="100%"
+/>
+
 ## File Tagging
 
 TagSpaces supports two methods for tagging files: embedding tags in file names and using sidecar files. Both methods work on any file type and across all supported operating systems.
