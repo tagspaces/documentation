@@ -367,13 +367,26 @@ window.ExtMapTileServers = [
 Some example map tile servers can be found in the [OpenStreetMap Wiki](https://wiki.openstreetmap.org/wiki/Tile_servers). Please consider the terms of usage of any given map service provider!
 :::
 
-## Configuring the format of the geo tags
+## Configure the format of the geo tags
+The geo tags in can be in either in [Pluscode](https://en.wikipedia.org/wiki/Open_Location_Code) or in [MGRS](https://en.wikipedia.org/wiki/Military_Grid_Reference_System) formats.
 
 ```js
 window.ExtGeoTaggingFormat = "pluscodes";
 ```
 
 Possible values: 'pluscodes', 'mgrs'
+
+## Configure the boundaries of the default map
+With this parameter you can configure a map rectangle, which will be loaded by default in the Mapique perspective the current folder does contain any geo-tagged files or folders.
+
+```js
+window.ExtDefaultMapBounds = {
+        southWest: { lat: 56, lng: -13 },
+        northEast: { lat: 29, lng: 50 },
+      }
+```
+
+The geo coordinates in the example above are the default ones, will open Europe in the map.
 
 {/* ## Configuring third-party extensions
 
