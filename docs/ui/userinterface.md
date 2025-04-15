@@ -10,7 +10,11 @@ TagSpaces opens as a single-window application designed to maximize space usage,
 
 This streamlined experience ensures ease of use across platforms, so once you're familiar with the features, you can use them anywhere. The image below shows a typical start screen, with a list of available locations on the left and the content of the currently opened folder in the center, using the default perspective.
 
-![Explanation of the application's user interface areas](/media/main-ui-areas.svg)
+<CenteredImage
+    caption="Areas in the app's user interface"
+    src="/media/core/main-ui-areas.avif"
+    showCaption
+  />
 
 The application's user interface consists of the following main areas:
 
@@ -46,19 +50,19 @@ The main drawer is divided into three sub-areas:
 
 The file browsing area displays files from the active folder in various views (list, grid, or kanban), depending on the active perspective. Learn more in the [perspective section](/browsing-files).
 
-![Screenshot showing the file browsing area](/media/browsing-area.svg)
+<CenteredImage
+    caption="Browsing area"
+    src="/media/core/browsing-area.avif"
+    showCaption
+  />
 
 - **(1)** - Toggles the [left drawer](#left-drawer).
-- **(2)** - Navigates back to the last opened file, folder, or location (beta).
-- **(3)** - Reverts the previous navigation step.
+- **(2)** - The toolbar of the current [perspective](/browsing-files).
+- **(3)** - Navigate to the previously file or folder.
 - **(4)** - Opens [search](/search).
 - **(5)** - Displays parent folders as buttons, enabling navigation.
 - **(6)** - Displays the current folder's name, which opens the [folder menu](#folder-menu).
 - **(7)** - Switches the [perspective](/browsing-files) of the current folder.
-
-:::tip
-In cloud-based locations, the folder icon in **(5)** will be a **cloud**. Otherwise, it will be a **briefcase**.
-:::
 
 ### Folder Menu
 
@@ -75,13 +79,19 @@ The folder menu includes options such as:
 
 When a file is opened, the main UI splits into two areas, with the right side becoming the **Preview Area**. TagSpaces supports displaying various file types, from markdown to PDFs and images. For more details, see [Previewing Files](/viewing-files) and [Editing Files](/editing-files).
 
-![Area for previewing and editing files](/media/preview-area.svg)
+<CenteredImage
+    caption="Area for previewing and editing files"
+    src="/media/core/preview-area.avif"
+    showCaption
+    maxWidth="600px"
+  />
 
-- **(1) Title Area** - Displays the file's name and extension, with options to [bookmark](/bookmarks) and tag it.
-- **(2) Edit & Close** - Close the file or folder, enable edit mode, and toggle **auto-save** for text files.
-- **(3) [File](/files#file-toolbar) / [Folder](/folders#folder-toolbar) Toolbar** - Contains actions for the opened file or folder.
-- **(4) Navigation** - Navigate between files in the current folder or search results.
-- **(5) Preview & Edit Area** - Displays the file preview and offers editing options for supported file types.
+- **(1) Title Area** - displays the file's name, tags and extension, with options to [bookmark](/bookmarks) it.
+- **(2) Navigate & Close** - navigate between files in the current folder or search results, close the current file or folder.
+- **(3) Tab Switch** - between entry properties, entry [description](/folders#folder-description), [file revisions](/editing-files#file-revisions), [ai chat](/ai#ai-chat-in-folders) and links. A click on the tab title of the current tab will close it, providing more space for the file preview.
+- **(4) Editing options** - the edit mode for certain file type can be enabled here. A toggle for **auto-saving** changes in the currently edited file is located also in this area.
+- **(5) Entry Properties** - if opened it displays the properties of the currently opened [file](/files#file-properties) or [folder](/folders#folder-properties).
+- **(6) Preview & Edit Area** - displays the a preview of the current file. Some text based files like TXT, Markdown or HTML can be edited here.
 
 ## Dark Mode and Themes
 
