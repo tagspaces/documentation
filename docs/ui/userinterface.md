@@ -25,17 +25,22 @@ The application's user interface consists of the following main areas:
 
 The main drawer is divided into three sub-areas:
 
-**Top Area**: Displays the app's logo and version. Clicking the logo opens the **About dialog**, where you can check licensing details and new versions. Below the logo, the **Create** button opens a dialog to [create files](/creating-files), and the **New Window** button opens a new TagSpaces [window or tab](#multiple-windows-and-tabs).
-The bottom part of the drawer contains six buttons. The **gear icon (1)** on the left opens the [settings](/ui/settings). The rightmost button **(6)** toggles between **light** and **dark** [themes](#dark-mode-and-themes). In the [TagSpaces Enterprise](https://www.tagspaces.org/products/enterprise/) version, this button opens the logged user's properties.
+**Top Area**: Displays the app's logo and application version. Clicking the logo opens the **About dialog**, where you can check licensing details and new versions. Below the logo, the **Create New (1)** button opens a dialog to [create files](/creating-files), and the **Open Link (2)** button open new internal or external [link](/linking). The rightmost button **(3)** toggles between **light** and **dark** [themes](#dark-mode-and-themes). In the [TagSpaces Custom](https://www.tagspaces.org/products/custom/) version, this button can open the logged user's properties.
 
-**Radio Buttons**: Switch between different areas:
+<CenteredImage
+    caption="Bottom Toolbar in the left area"
+    src="/media/core/left-drawer.svg"
+    showCaption
+    maxWidth={350}
+  />
 
-- **(2) [Location Manager](/ui/locations)** - Manage your locations here.
-- **(3) [Tag Library](/ui/taglibrary)** - Organize tags into groups.
-- **(4) [Quick Access](/quick-access)** - Access [stored searches](/search#stored-search-queries), [bookmarks](/bookmarks), and recently used files and folders.
-- **(5) Help & Feedback** - Access help, suggest features, or contact support.
+**Bottom toolbar**: You can access here the following areas
 
-![Drawer toolbar](/media/left-drawer-toolbar.svg)
+- **(4) [Location Manager](/ui/locations)** - Manage your locations here.
+- **(5) [Tag Library](/ui/taglibrary)** - Organize tags into groups.
+- **(6) [Quick Access](/quick-access)** - Access [stored searches](/search#stored-search-queries), [bookmarks](/bookmarks), and recently used files and folders.
+- **(7) Help** - Access area where you can get help, suggest features, give us feedback or contact support.
+- **(8) [Settings](/ui/settings#general)** - Access the settings dialog of the application.
 
 ## Navigation and Search
 
