@@ -20,7 +20,7 @@ The context menu for every file and folder in the default perspective includes t
 
 <CenteredImage
     caption="Context menu of a file containing the 'Copy Sharing Link' functionality"
-    src="/media/copy-sharing-link.png"
+    src="/media/sharing/copy-sharing-link.avif"
 />
 
 ### Location IDs
@@ -33,8 +33,7 @@ You can change the location ID in the location's properties, as shown in the fol
 
 <CenteredImage
   caption="Changing the location ID"
-  src="/media/changing-location-id.png"
-  maxWidth="515px"
+  src="/media/sharing/changing-location-id.avif"
 />
 
 ### Links in the web versions of TagSpaces
@@ -42,8 +41,8 @@ You can change the location ID in the location's properties, as shown in the fol
 Users of the web versions can directly copy the URL from their browser or use the copy button in the properties area.
 
 <CenteredImage
-    caption="Sharing link types in the entry properties"
-    src="/media/tagspaces-links.png"
+    caption="Sharing link in the entry properties and browser address bar"
+    src="/media/sharing/tagspaces-links.avif"
     showCaption
 />
 
@@ -57,7 +56,7 @@ If you've received a TagSpaces link (e.g., a tslink) in an email or chat, you ca
 
 <CenteredImage
     caption="Open TS-Links from the search box"
-    src="/media/tslinks-in-search.png"
+    src="/media/sharing/tslinks-in-search.avif"
     showCaption
 />
 
