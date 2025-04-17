@@ -34,9 +34,7 @@ Once in edit mode the `Edit` button will disappear and on its place two new butt
 
 <ProFeature />
 
-A key feature of document management systems is the ability to create revisions of the edited files. This feature can be enabled in the [Advanced tab](/ui/settings/#advanced) of the application's Settings dialog box. Once activated, a full copy of the current file (e.g. TXT, MD, HTML or JSON) is created with each save.
-
-The revisions are stored in a subfolder of the `.ts` folder, which is located in the same folder as the file being currently edited. The name of the folder is a unique ID, which is the same as the ID of the document's sidecar file. The created file copies are listed in the Revisions tab of the file properties view, as seen in the screenshot.
+A key feature of document management systems is the ability to create revisions of the edited files. This feature can be enabled in the [Advanced tab](/ui/settings/#advanced) of the application's Settings dialog box. Once activated, a full copy of the current file (e.g. TXT, MD, HTML or JSON) is created with each save. The created file versions are listed in the **Revisions** tab of the file properties view, as seen in the screenshot.
 
 <CenteredImage
     caption="File revisions in file properties section"
@@ -45,7 +43,22 @@ The revisions are stored in a subfolder of the `.ts` folder, which is located in
     maxWidth={600}
   />
 
-From here, you can preview and restore old revisions. It is also possible to delete all revisions, by clicking the button with the trash bin icon, located in the revision's table header.
+From here, you can **preview** and **restore** previous versions of the file. It is also possible to **delete all** revisions, by clicking the button with the trash bin icon, located in the revision's table header.
+
+### Technical details
+
+The revisions are stored in a subfolder of the `.ts` folder, which is located in the same folder as the file being currently edited. The name of the folder is an unique ID, which is the same as the Entry ID visible in the file properties and saved in the file's sidecar file.
+
+```bash
+  ~ folder1
+  ├ ── .ts
+  │   ├── 95b6e7d8e00245c7ba8a37d65783d514 - the folder containing the revisions for file4.md
+  │   │   ├── 1743100950489.md - the version of the files create on the timestamp
+  │   │   └── 1744314207751.md - another version of the file
+  │   ├── file4.md.json - contains the entry id for file4 e.g.: 95b6e7d8e00245c7ba8a37d65783d514
+  │   └── tsm.json - contains tags and description for folder1
+  └── file4.md
+```
 
 ## Auto-save changes
 

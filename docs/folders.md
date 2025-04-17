@@ -6,6 +6,22 @@ import { ProFeature, CenteredImage, CenteredVideo } from '@site/src/components/C
 
 Folders play an essential role in TagSpaces that goes beyond typical file grouping and organization. We have enhanced their functionality by adding tagging, description, custom background, thumbnail, wallpaper, and a default perspective. This allows you to turn every folder into a so-called **file-based app**, depending on the files stored within it.
 
+## Folder Areas
+
+The in top area of a folder you can switch between the following sub-areas:
+
+- **[Details](#folder-properties)** - opens the folder properties, see more bellow.
+- **[Description](#folder-description)** - opens the area where you can add description for this folder (opened in the screenshot bellow).
+- **[AI Chat](/ai#ai-chat-in-folders)** - this is the place for the folder's own AI chat, this tab is visible only if the AI functionality is enabled.
+- **[Links](/linking)** - a place where you can see all incoming and outgoing links for this folder.
+
+<CenteredImage
+    caption="Folder areas"
+    src="/media/entrydetails/folder-tabs.png"
+    showCaption
+    maxWidth="500px"
+  />
+
 ## Folder Menu
 
 The toolbar for folders can be seen in the following screenshot:
@@ -50,7 +66,7 @@ The folder properties section is similar to the file properties area.
 - **(10) [Background color](#folder-background)** <ProFeature /> - Displays the folder's background color. Clicking the color area opens a dialog to change the folder's color.
 - **(11) [Thumbnail](#folder-thumbnail)** <ProFeature /> - Displays the folder's current thumbnail. Clicking **CHANGE** opens a dialog to select a new thumbnail.
 - **(12) [Background Image](#folder-wallpaper)** <ProFeature /> - Shows a preview of the folder's wallpaper. Clicking **CHANGE** allows you to choose a new wallpaper.
-- **(13) [ID](/linking)** - a folder identifier used for internal TagSpaces links.
+- **(13) [Entry ID](/linking)** - the folder identifier used for internal TagSpaces links.
 
 ## Folder Description
 
@@ -67,21 +83,6 @@ The folder descriptions can be edited by clicking the **EDIT** button or by doub
   />
 
 The descriptions are indexed by the search algorithm and considered in search results. If a given file or folder has a description, the first few words from it are displayed in the grid perspective.
-
-Descriptions are saved in a sidecar file called `tsm.json` within the hidden `.ts` folder of the current folder. This file also contains tags, the default perspective, and other metadata.
-
-```bash
-  ~ some-folder
-  ├── sub-folder1
-  │   ├── .ts
-  │   │   └── tsm.json - contains tags and description for sub-folder1
-  │   ├── file1.jpg
-  │   └── file2.pdf
-  ├── .ts
-  │   └── tsm.json - contains tags and description for some-folder
-  ├── file3.png
-  └── file4.docx
-```
 
 ## Default Folder Perspective
 
@@ -172,3 +173,22 @@ Some wallpapers are bundled with the application, but you can also choose an ima
 :::info
 If the folder is on an S3 bucket, the wallpaper file will be uploaded there.
 :::
+
+## Technical details
+
+The folder descriptions, id, background color, preferred perspective and tags are saved in a [sidecar file](/dev/metafileformats#folder-meta-description-format) called `tsm.json` within the hidden `.ts` folder of the current folder.
+
+The `.ts` folder contains also the thumbnail images of the files. The thumbnail files have also the same name as original file but with `.jpg` at the end.
+
+```bash
+  ~ folder1
+  ├── sub-folder2
+  │   └── .ts
+  │       └── tsm.json - can contains tags and description for sub-folder2
+  ├── .ts
+  │   ├── file4.docx.json - can contain tags and description for file4.docx
+  │   ├── tsb.jpg - is the background image for the folder1
+  │   ├── tst.jpg - is the thumbnail image of the folder1
+  │   └── tsm.json - contains tags and description for some-folder1
+  └── file4.docx
+```

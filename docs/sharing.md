@@ -89,8 +89,8 @@ It is possible to download files via links directly into a TagSpaces location, b
 This will open the following dialog, where you can paste the URL and start the download with the **OK** button.
 
 <CenteredImage
-    caption="Open "
-    src="/media/download-file-dialog.avif"
+    caption="Dialog for downloading files from URLs"
+    src="/media/editcreate/download-file-dialog.avif"
     maxWidth="450px"
     showCaption
 />
