@@ -394,9 +394,10 @@ The format of these files is similar to the format of the produced by exporting 
   "tagGroups": [
     // a list of one or more tag groups
     {
-      "created_date": "2021-03-19T17:43:44.494Z", // the time when this tag group was created
+      "created_date": "1740474629766", // the time when this tag group was created
       "uuid": "2e0c46f0-3a1b-4902-a930-58a0a1a170f8", //  an universally unique of the tag group
-      "title": "TestTG", // the name of the tag group
+      "title": "TestTagGroup", // the name of the tag group
+      "readOnly": "true", // specifies if the tag group can be edited
       "color": "#fa573cff", // the default color of the tags in this tag group
       "textcolor": "white", // the default text color of the tags in this tag group
       "children": [
@@ -414,7 +415,7 @@ The format of these files is similar to the format of the produced by exporting 
           "textcolor": "white"
         }
       ],
-      "modified_date": "2021-06-05T08:26:47.598Z",
+      "modified_date": "1740474629766",
       "expanded": false
     }
   ]
