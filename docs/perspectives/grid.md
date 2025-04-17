@@ -10,11 +10,11 @@ This perspective is optimized for general browsing through file and folder struc
 
 The default view in TagSpaces presents content in a grid, making it the most common way of displaying folders.
 
-![screenshot of the default perspective of the app](/media/grid/grid-perspective-toolbar.svg)
+![screenshot of the default perspective of the app](/media/grid/grid-lead.avif)
 
-:::info
+<!-- :::info
 The colored rectangle shows the area in TagSpaces typically occupied by **[perspectives](/browsing-files)**.
-:::
+::: -->
 
 ### File Tile
 
@@ -73,9 +73,9 @@ The toolbar at the top of the perspective contains the following buttons and sub
 
 <CenteredImage
     caption="The dialog for moving or copying files and folders"
-    src="/media/copy-move-files-dialog.png"
+    src="/media/core/copy-move-files-dialog.avif"
     showCaption
-    maxWidth={598}
+    maxWidth={500}
 />
 
 - **(6) Delete Files** - Opens a dialog to confirm the deletion of selected files.
@@ -140,12 +140,12 @@ Adjust the grid perspective settings in the dialog below.
 
 <CenteredImage
     caption="Settings of the Grid Perspective"
-    src="/media/grid/grid-perspective-settings.png"
+    src="/media/grid/grid-settings.avif"
     showCaption
-    maxWidth={407}
+    maxWidth={350}
 />
 
-### Settings Options
+Settings Options
 
 - **Show Folders** - Toggles folder visibility.
 - **Show Tags on Files and Folders** - Shows/hides tags as small colored circles.
@@ -192,7 +192,11 @@ An alternative way to move files into another folder is to drag it icon onto a f
 You can access sub folders of any folder displayed in the hierarchy, by clicking the folder icon next to its name.
 :::
 
-![](/media/drop-files-to-folder.png)
+<CenteredImage
+    caption="Moving or copying files to the folder tree"
+    src="/media/grid/drop-files-to-folder.avif"
+    showCaption
+  />
 
 ## Export files as CSV
 
@@ -202,7 +206,7 @@ With this feature you can export the list of file and folder from the current fo
 
 <CenteredImage
     caption="Starting the CSV export from the toolbar of the perspective"
-    src="/media/csv-export.png"
+    src="/media/grid/csv-export.avif"
     showCaption
   />
 
@@ -216,5 +220,3 @@ The exported file contains the following columns:
 - **last modified date** - ISO8601 compatible timestamp of the last modification
 - **full path** - the full path to the current entry
 - **description** - the entry description in markdown format
-
-You can see how such exported CSV file looks like in the screenshot of the next section.

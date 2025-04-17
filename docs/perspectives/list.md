@@ -8,7 +8,11 @@ import { ProFeature, CenteredImage } from '@site/src/components/CommonBlocks';
 
 This perspective is optimized for general browsing through files and folders and performing standard file and folder operations. It features three representation modes: compact, default, and large.
 
-![Screenshot of the list perspective](/media/list/list-lead.png)
+<CenteredImage
+    caption="List perspective"
+    src="/media/list/list-lead.avif"
+    showCaption
+/>
 
 The following information can be found on every row representing a file in this view:
 
@@ -24,8 +28,35 @@ The following information can be found on every row representing a file in this 
 The functionalities of the list perspective are very similar to the **[grid perspective](/perspectives/grid)**. Please follow the previous link for more details.
 :::
 
+## Customizations
+
 <CenteredImage
-    caption="List perspective in compact mode"
-    src="/media/list/list-compact-mode.png"
+    caption="Customized folder in the list perspective"
+    src="/media/list/list-customized.avif"
     showCaption
+/>
+
+<CenteredImage
+    caption="Folder with background image in the list perspective"
+    src="/media/list/list-customized2.avif"
+    showCaption
+/>
+
+## Compact mode
+
+<CenteredImage
+    caption="Folder with the lowest zoom level in the list perspective"
+    src="/media/list/list-compact-mode.avif"
+    showCaption
+/>
+
+## Perspective Settings
+
+Perspective settings are described in the [grid perspective](/perspectives/grid#settings-options).
+
+<CenteredImage
+    caption="Settings of the list perspective"
+    src="/media/list/list-settings.avif"
+    showCaption
+    maxWidth="350px"
 />

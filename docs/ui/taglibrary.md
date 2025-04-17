@@ -10,7 +10,7 @@ The **Tag Library** in TagSpaces allows you to manage and organize tags, which y
 <CenteredImage
     caption="The user interface of the tag library"
     src="/media/taglibrary/tag-library-overview.png"
-    maxWidth="400px"
+    maxWidth="350px"
     showCaption
   />
 
@@ -109,9 +109,9 @@ In this dialog you can enter a comma or space separated word which will added as
     showCaption
   />
 
-### Editing tag from a tag group
+### Editing tag in a tag group
 
-In this dialog you can edit the tag name and colors.
+In this dialog you can edit the tag **name** and **colors**. Here it is also possible to add an optional **description** for the tags.
 <CenteredImage
     caption="Dialog for editing tags"
     src="/media/taglibrary/edit-tag-in-taggroup.avif"
