@@ -9,11 +9,12 @@ import VideoYT from '@site/src/components/VideoYT';
 
 One long-awaited feature in TagSpaces is the ability to create links between files, folders, and locations. Now, you can navigate seamlessly from one file to another, or to a folder or location. The description field of any file or folder can contain links to other entities. If you're using markdown for notes, you can also place these kinds of links directly into your markdown file content.
 
-<VideoYT
-    youtubeId="3F2YUKd6rDc"
-    title="Using file and folder linking functionality in TagSpaces"
-    posterUrl="/media/videos/linking-files-and-folders.jpg"
-    height={550}
+<CenteredVideo
+    caption="Creating links to files and folders"
+    src="/media/sharing/creating-links.mp4"
+    posterUrl="/media/sharing/creating-links-poster.avif"
+    maxWidth="100%"
+    autoPlay
 />
 
 The context menu for every file and folder in the default perspective includes the option **Copy Sharing Link**, which generates a sharing link and copies it to your clipboard. This link can be used to create internal links to this file inside TagSpaces.

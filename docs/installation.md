@@ -16,7 +16,7 @@ The free versions of TagSpaces are available for download from the [Downloads Se
 
 When a new version of the application is available, you will see a notification in the lower-left corner of the app. Clicking the **GET NOW** button will direct you to the TagSpaces website download page, where you can obtain the latest community version. PRO users should use the links in their order confirmation email to access the latest version.
 
-![New version notification](/media/new-version-available.png)
+![New version notification](/media/core/new-version-available.png)
 
 :::tip
 If you prefer not to have TagSpaces check automatically for new versions, you can disable this functionality in the [settings](/ui/settings).
