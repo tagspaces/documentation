@@ -217,11 +217,12 @@ Each newly created file automatically receives a smart tag equivalent to **now**
 
 For more advanced users, the **custom-date** smart tag allows you to add any custom date or time as a tag to your files and folders.
 
-<VideoYT
-youtubeId="DVHioQhpyYM"
-title="Tagging with Timestamps"
-posterUrl="/media/tagging/timestamp-tagging-poster.avif"
-showCaption
+<CenteredVideo
+    caption="Tagging with timestamps in TagSpaces Pro"
+    src="/media/tagging/timestamp-tagging.mp4"
+    posterUrl="/media/tagging/timestamp-tagging-poster.avif"
+    showCaption
+    maxWidth="100%"
 />
 
 ### Geo Tagging
@@ -233,10 +234,9 @@ Geo tagging allows you to add geographic coordinates as tags to files, connectin
 When you apply a geo-location tag, a dialog will appear with an interactive map, enabling you to drop a pin on any location. The geographic coordinates will be stored in the [Plus Codes](https://plus.codes/) format, which is a compact way of representing geo-coordinates.
 
 <CenteredVideo
-    caption="Geo tagging with TagSpaces Pro"
+    caption="Geo tagging in TagSpaces Pro"
     src="/media/tagging/geo-tagging.mp4"
     posterUrl="/media/tagging/geo-tagging-poster.avif"
-    autoPlay
     showCaption
     maxWidth="100%"
 />
