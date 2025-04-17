@@ -239,12 +239,12 @@ This features allows you to share with you peers pre-configured locations. This 
 
 The process of exporting and importing location configuration is demonstrated in the following video.
 
-<VideoYT
-youtubeId="LmjUM1BS-wQ"
-caption="Video demonstrating how to export and import locations"
-posterUrl="/media/videos/import-export-locations.jpg"
-showCaption
-height={550}
+<CenteredVideo
+    caption="Exporting location configuration and importing in on another installation"
+    src="/media/locations/export-import-locations.mp4"
+    posterUrl="/media/locations/export-import-locations-poster.avif"
+    maxWidth="100%"
+    autoPlay
 />
 
 The format of the location's export is described in this [section](/dev/external-config#configuring-custom-locations).

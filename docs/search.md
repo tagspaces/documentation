@@ -301,12 +301,14 @@ The search history can also be **disabled** by choosing _disabled_ from the drop
 
 This feature allows you to store commonly used search queries for later use. The following video demonstrates how to use this feature.
 
-<VideoYT
-    youtubeId="WMGsJjh_XPU"
-    title="Video showing creation and usage of a stored search query"
-    posterUrl="/media/search/stored-searches-poster.avif"
-    height={550}
-  />
+<CenteredVideo
+    caption="Creating and deleting stored search queries"
+    src="/media/search/creating-stored-search-query.mp4"
+    posterUrl="/media/search/creating-stored-search-query-poster.avif"
+    maxWidth="100%"
+    autoPlay
+    showCaption
+/>
 
 :::tip
 Stored searches are location-independent, meaning they can be executed on any location.
