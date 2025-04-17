@@ -6,7 +6,7 @@ import { ProFeature, CenteredImage } from '@site/src/components/CommonBlocks';
 
 ## File Toolbar
 
-![The toolbar for the files](/media/file-toolbar.svg)
+![The toolbar for the files](/media/entrydetails/file-menu.svg)
 
 The file preview toolbar offers several actions, some of which are described below:
 
@@ -25,7 +25,7 @@ The file preview toolbar offers several actions, some of which are described bel
 
 Clicking the **( i )** icon button will open and close the file properties area. Here, you will find details about the currently opened file such as:
 
-![Screenshot of the file properties area](/media/file-properties.svg)
+![Screenshot of the file properties area](/media/entrydetails/file-properties.svg)
 
 - **(1) File Name** - Shows the complete name of the file, including its extension. Clicking the **RENAME** button or just on the file name will allow you to change it.
 - **(2) Tags** - Displays the tags added to the file. Clicking on this area will open a dropdown where you can select additional tags to assign to the file. You can also drop tags from the tag library or other files or folders here.

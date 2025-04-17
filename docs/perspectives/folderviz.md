@@ -37,15 +37,6 @@ Shows the same information like the folder tree view but in a circular tree.
     showCaption
   />
 
-<!-- <CenteredVideo
-    caption="Short video showcasing the radial tree visualization"
-    src="/media/folderviz/folderviz-radial.mp4"
-    posterUrl="/media/folderviz/folderviz-radial-poster.jpg"
-    maxWidth="90%"
-    autoPlay
-    showCaption
-  /> -->
-
 ## Links Graph View
 
 This view uses the index created by the full-text search in a given location to show links between files and folder and their links to external website. The arrow connecting linked entries show the direction of the link. Only file and folder participating in a link will be displayed here.

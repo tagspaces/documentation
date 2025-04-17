@@ -2,42 +2,55 @@
 title: Folders Overview
 ---
 
-import { ProFeature, CenteredImage } from '@site/src/components/CommonBlocks';
+import { ProFeature, CenteredImage, CenteredVideo } from '@site/src/components/CommonBlocks';
 
 Folders play an essential role in TagSpaces that goes beyond typical file grouping and organization. We have enhanced their functionality by adding tagging, description, custom background, thumbnail, wallpaper, and a default perspective. This allows you to turn every folder into a so-called **file-based app**, depending on the files stored within it.
 
-## Folder Toolbar
+## Folder Menu
 
 The toolbar for folders can be seen in the following screenshot:
-![Folder toolbar](/media/folder-toolbar.svg)
+
+<CenteredImage
+    caption="Folder menu"
+    src="/media/entrydetails/folder-menu.avif"
+    showCaption
+    maxWidth="600px"
+  />
 
 The following actions can be accessed from the toolbar:
 
-- **(1) Open in main area** - Opens the folder in the main area of the application. This is useful if you have navigated away from the folder opened in the preview area.
-- **(2) Open in new window** - Opens the folder in a new window or tab in the web version.
-- **(3) Open folder externally** - Opens the folder in the default file manager of your operating system.
-- **(4) Reload folder** - Reloads the content of the current folder.
-- **(5) Open in full width** - Opens the folder properties in full width.
-- **(6) Delete folder** - Opens the folder deletion dialog, allowing you to delete the current folder along with its files and subfolders.
+- **(1) Reload folder** - Reloads the folder properties.
+- **(2) Open in main area** - Opens the folder in the main area of the application. This is useful if you have navigated away from the folder opened in the preview area.
+- **(3) Open in new window** - Opens the folder in a new window or tab in the web version.
+- **(4) Open folder externally** - Opens the folder in the default file manager of your operating system, not available for S3 locations.
+- **(5) Toggle full width** - Opens the folder properties in full width, giving more space for AI tasks, writing description.
+- **(6) Delete folder** - Starts the process for deleting the current folder along with its files and subfolders.
+- **(7) Close entry** - Closes the folder properties area.
 
 ## Folder Properties
 
 The folder properties section is similar to the file properties area.
 
-![Folder properties area](/media/folder-properties.svg)
+<CenteredImage
+    caption="Folder properties area"
+    src="/media/entrydetails/folder-properties.svg"
+    showCaption
+    maxWidth="600px"
+  />
 
 - **(1) Folder Name** - Displays the complete folder name. Clicking the **RENAME** button will make the name editable.
 - **(2) [Tags](/tagging#folder-tagging)** - Displays the folder's tags. Clicking on this area opens a dropdown to assign additional tags, or you can drag and drop tags from the tag library or other files and folders.
 - **(3) Map with geo-tag** - If geo-tagged, a map with a droppin shows the exact [geo tag](/ui/taglibrary/#geo-tagging). The map tile server is configurable in the [settings](/ui/settings/#advanced).
-- **(4) [Description](#folder-description)** <ProFeature /> - Displays the folder description. Clicking **EDIT** allows you to adjust the description using plain text or [Markdown](/markdown).
+- **(4) [Description](#folder-description)** <ProFeature /> - Displays the folder description. Opening this tab will allow you to add description for the folder.
 - **(5) Date modified** - Shows the last modified date and time of the folder.
 - **(6) Size** - Displays the calculated size of the folder, including subfolders. This feature is unavailable on object storage locations.
 - **(7) Path** - Shows the complete folder path. For object storage locations, a cloud icon is shown instead of a suitcase. Clicking **MOVE** opens a dialog to move or copy the folder.
 - **(8) Sharing link** - Shows the internal sharing [link](/sharing#internal-sharing-for-files-and-folders). Clicking **COPY** copies the link to your clipboard for sharing with others or other TagSpaces installations.
 - **(9) [Default folder perspective](#default-folder-perspective)** <ProFeature /> - Lets you specify the default perspective for this folder.
-- **(10) [Folder Background](#folder-background)** <ProFeature /> - Displays the folder's background color. Clicking the color area opens a dialog to change the folder's color.
+- **(10) [Background color](#folder-background)** <ProFeature /> - Displays the folder's background color. Clicking the color area opens a dialog to change the folder's color.
 - **(11) [Thumbnail](#folder-thumbnail)** <ProFeature /> - Displays the folder's current thumbnail. Clicking **CHANGE** opens a dialog to select a new thumbnail.
-- **(12) [Wallpaper](#folder-wallpaper)** <ProFeature /> - Shows a preview of the folder's wallpaper. Clicking **CHANGE** allows you to choose a new wallpaper.
+- **(12) [Background Image](#folder-wallpaper)** <ProFeature /> - Shows a preview of the folder's wallpaper. Clicking **CHANGE** allows you to choose a new wallpaper.
+- **(13) [ID](/linking)** - a folder identifier used for internal TagSpaces links.
 
 ## Folder Description
 
@@ -49,7 +62,7 @@ The folder descriptions can be edited by clicking the **EDIT** button or by doub
 
 <CenteredImage
     caption="Folder description"
-    src="/media/folder-description.avif"
+    src="/media/entrydetails/folder-description.avif"
     showCaption
   />
 
@@ -91,17 +104,22 @@ Once you choose a perspective, every time you open this folder, it should open w
 
 With this feature, every folder in TagSpaces can have its own background color or gradient. In addition to tagging, you can use colors to mark folders for particular use cases or areas of work. For example, you can differentiate your personal folders from your work folders using color or mark folders containing sensitive or important information.
 
-![Folder background](/media/folder-background.svg)
+<CenteredImage
+    caption="Change folder background color"
+    src="/media/entrydetails/folder-background.avif"
+    showCaption
+  />
 
 In the previous screenshot, you can see a preview **(1)** of the background color. Clicking the preview will open the dialog shown in the screenshot. **(2)** switches between editing a color or a color gradient. **(3)** shows a set of 4 predefined backgrounds, and with button **(4)**, the background can be cleared.
 
 The folder background is visible in grid, list, gallery, and kanban perspectives, even when the folder is shown as a subfolder.
 
-<CenteredImage
-    caption="Short video showing how to set color to a folder"
-    src="/media/entrydetails/tagspaces-folder-colors.gif"
-    showCaption
-  />
+<CenteredVideo
+    caption="Change folder background"
+    src="/media/entrydetails/change-folder-background.mp4"
+    posterUrl="/media/entrydetails/change-folder-background-poster.avif"
+    autoPlay
+/>
 
 ## Folder Thumbnail
 
