@@ -147,7 +147,7 @@ Tagging can also be performed using drag-and-drop. Here are the supported operat
 
 ### Dragging a tag from the tag library to a file or folder
 
-This action is supported in the [grid](/perspectives/grid), [list](/perspectives/list) and [kanban](/perspectives/kanbak) perspective.
+This action is supported in the [grid](/perspectives/grid), [list](/perspectives/list) and [kanban](/perspectives/kanban) perspective.
 <CenteredImage src="/media/tagging/tagging-dnd-taglibrary.avif" caption="Tagging with drag-and-drop from the tag library" maxWidth={650}/>
 
 ### Dragging a tag to the tagging section of the details area
