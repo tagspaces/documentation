@@ -6,8 +6,9 @@ const config = {
   tagline: "Documentation for TagSpaces",
   url: "https://docs.tagspaces.org",
   baseUrl: "/",
+  trailingSlash: true,
   onBrokenLinks: "warn",
-  onBrokenMarkdownLinks: "warn",
+  onBrokenMarkdownLinks: "throw",
   favicon: "img/favicon.ico",
   organizationName: "tagspaces", // Usually your GitHub org/user name.
   projectName: "tagspaces", // Usually your repo name.
