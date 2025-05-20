@@ -52,8 +52,8 @@ src="/media/settings/settings-tab-file-types.jpg"
 maxWidth={700}
 />
 
-- **File Viewer Dropdown**: Select the preferred [viewer plugin](/viewing-files) for each file type (**1**).
-- **File Editor Dropdown**: Select the preferred [editor plugin](/editing-files) for each file type (**2**).
+- **File Viewer Dropdown**: Select the preferred [viewer plugin](/viewing-files/) for each file type (**1**).
+- **File Editor Dropdown**: Select the preferred [editor plugin](/editing-files/) for each file type (**2**).
 - **Color Coding**: Adjust the color of the file type by clicking on the colored area (**3**).
 - **Add New File Type**: Add a new file type that was previously unrecognized (**4**).
 

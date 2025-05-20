@@ -68,6 +68,6 @@ The needed steps are described in here: https://developers.cloudflare.com/pages/
 You can follow this tutorial to achieve this: https://dev.to/charca/password-protection-for-cloudflare-pages-8ma
 
 :::info
-If you need a solution, where the files are behind a login, you may take a look on [**TagSpaces Enterprise**](https://www.tagspaces.org/products/enterprise/),
+If you need a solution, where the files are behind a login, you may take a look on [**TagSpaces Custom**](https://www.tagspaces.org/products/custom/),
 where we offer a setup based on AWS services supporting user management, 2FA, automatic indexing and countless customization possibilities.
 :::

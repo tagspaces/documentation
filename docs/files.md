@@ -10,7 +10,7 @@ The in top area of a file you can switch between the following sub-areas:
 
 - **[Details](#file-properties)** - opens the file properties, see more bellow.
 - **[Description](#file-description)** - opens the area where you can add description for this file (opened in the screenshot bellow).
-- **[Revisions](/editing-files#file-revisions)** - visible only for editable files, display a list of all file changes.
+- **[Revisions](/editing-files/#file-revisions)** - visible only for editable files, display a list of all file changes.
 - **[Links](/linking)** - a place where you can see all incoming and outgoing links for this file.
 
 <CenteredImage

@@ -72,12 +72,12 @@ The folder menu includes options such as:
 - Open the folder in the operating system's file manager.
 - Create new files, subfolders, or add files.
 - Import macOS tags (only on macOS desktop app).
-- Switch between different perspectives: [Grid](/perspectives/grid), [List](/perspectives/list), [Gallery](/perspectives/gallery), [Mapique](/perspectives/mapique), [Kanban](/perspectives/kanban).
+- Switch between different perspectives: [Grid](/perspectives/grid/), [List](/perspectives/list/), [Gallery](/perspectives/gallery/), [Mapique](/perspectives/mapique/), [Kanban](/perspectives/kanban/).
 - Access folder [properties](/folders#folder-properties).
 
 ## Preview Area
 
-When a file is opened, the main UI splits into two areas, with the right side becoming the **Preview Area**. TagSpaces supports displaying various file types, from markdown to PDFs and images. For more details, see [Previewing Files](/viewing-files) and [Editing Files](/editing-files).
+When a file is opened, the main UI splits into two areas, with the right side becoming the **Preview Area**. TagSpaces supports displaying various file types, from markdown to PDFs and images. For more details, see [Previewing Files](/viewing-files/) and [Editing Files](/editing-files/).
 
 <CenteredImage
     caption="Area for previewing and editing files"

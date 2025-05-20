@@ -200,7 +200,7 @@ const config = {
                   <a href="https://www.tagspaces.org/blog/rss.xml" target="_blank" rel="noreferrer noopener"><svg class="footerIcon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="6.18" cy="17.82" r="2.18"></circle><path d="M4 4.44v2.83c7.03 0 12.73 5.7 12.73 12.73h2.83c0-8.59-6.97-15.56-15.56-15.56zm0 5.66v2.83c3.9 0 7.07 3.17 7.07 7.07h2.83c0-5.47-4.43-9.9-9.9-9.9z"></path></svg></a>&nbsp;
                   <a href="https://github.com/tagspaces/tagspaces" target="_blank" rel="noreferrer noopener"><svg class="footerIcon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .3a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2c-3.3.7-4-1.6-4-1.6-.6-1.4-1.4-1.8-1.4-1.8-1-.7.1-.7.1-.7 1.2 0 1.9 1.2 1.9 1.2 1 1.8 2.8 1.3 3.5 1 0-.8.4-1.3.7-1.6-2.7-.3-5.5-1.3-5.5-6 0-1.2.5-2.3 1.3-3.1-.2-.4-.6-1.6 0-3.2 0 0 1-.3 3.4 1.2a11.5 11.5 0 0 1 6 0c2.3-1.5 3.3-1.2 3.3-1.2.6 1.6.2 2.8 0 3.2.9.8 1.3 1.9 1.3 3.2 0 4.6-2.8 5.6-5.5 5.9.5.4.9 1 .9 2.2v3.3c0 .3.1.7.8.6A12 12 0 0 0 12 .3"></path></svg></a>                                               
                   <br><br>
-                  <iframe height="40" src="https://ghbtns.com/github-btn.html?user=tagspaces&amp;repo=tagspaces&amp;type=watch&amp;count=true"></iframe>
+                  <iframe height="40" src="https://ghbtns.com/github-btn.html?user=tagspaces&amp;repo=tagspaces&amp;type=star&amp;count=true"></iframe>
                   `,
                 // <a href="https://www.producthunt.com/posts/tagspaces-2?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-tagspaces&#0045;2" target="_blank"><img src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=371129&theme=light" alt="TagSpaces - A&#0032;file&#0032;manager&#0032;with&#0032;tagging&#0032;and&#0032;note&#0045;taking&#0032;capabilities&#0046; | Product Hunt" style="width: 250px; height: 54px;" width="250" height="54" /></a>
               },
@@ -217,10 +217,12 @@ const config = {
 
   scripts: [
     {
+      id: "Cookiebot",
       src: "https://consent.cookiebot.com/uc.js",
       "data-cbid": "ce1b9450-89a1-425c-861d-2c4b50a53c53",
-      // async: true,
-      "data-blockingmode": "auto",
+      type: "text/javascript",
+      async: true,
+      // "data-blockingmode": "manual",
     },
     {
       src: "https://plausible.io/js/plausible.js",
