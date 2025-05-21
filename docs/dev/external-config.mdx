@@ -3,6 +3,9 @@ title: External Configuration
 description: This document will describe how to deploy TagSpaces Pro and Enterprise with predefined configuration such as custom logo and color, tag library or locations.
 ---
 
+import { ProFeature, CenteredImage, CenteredVideo } from '@site/src/components/CommonBlocks';
+
+
 ## Introduction
 
 This document will describe how to deploy TagSpaces Pro and Enterprise with predefined configuration such as custom logo and color, tag library or locations. The settings discussed here should be saved in a file called **extconfig.js**, placed in the folder where the application is hosted.
@@ -25,6 +28,24 @@ window.ExtLogoURL = "custom-logo.png";
 Images with up to **250 px** width and up to **50 px** height suits best in the user interface of the application. Valid image file formats are JPG, GIF, PNG and SVG.
 :::
 
+## Hiding TagSpaces' logo
+The following setting can be used in order to hide the TagSpaces' logo in the upper left part of the user interface.
+
+```js
+window.ExtShowTSLogo = false;
+```
+
+Possible values: `true`, `false`. Default value: `true`
+
+## Hiding TagSpaces' version
+The following setting can be used in order to hide the TagSpaces' version in the upper left part of the user interface.
+
+```js
+window.ExtShowTSVersion = false;
+```
+
+Possible values: `true`, `false`. Default value: `true`
+
 ## Disabling the onboarding dialog and the license confirmation
 
 The property **ExtIsFirstRun** can be used for disabling the initial onboarding dialog and license confirmation.
@@ -33,7 +54,7 @@ The property **ExtIsFirstRun** can be used for disabling the initial onboarding 
 window.ExtIsFirstRun = true;
 ```
 
-The default value is **true**.
+The default value is `true`.
 
 ## Disable the checking for new version on startup
 
@@ -41,7 +62,7 @@ The default value is **true**.
 window.ExtCheckForUpdatesOnStartup = false;
 ```
 
-The default value is **true**.
+The default value is `true`.
 
 ## Switching desktop and mobile mode of the app
 
@@ -51,7 +72,7 @@ The property **ExtDisplayMode** can be used for switching between the desktop an
 window.ExtDisplayMode = "mobile";
 ```
 
-Possible values are **'mobile'** and **'desktop'**.
+Possible values are `mobile` and `desktop`.
 
 ## Specifying the file tagging mode in the app
 
@@ -61,7 +82,7 @@ The property **ExtUseSidecarsForFileTagging** can be used for switching between 
 window.ExtUseSidecarsForFileTagging = false;
 ```
 
-Possible values are **true** and **false**.
+Possible values are `true` and `false`.
 
 :::tip
 If the parameter is specified then this setting could not be changed in the TagSpaces settings dialog anymore. The user can only see which file tagging method is activated (renaming files or using sidecar files)
@@ -75,7 +96,7 @@ If the property **ExtUseOnlyTagsFromTagLibrary** is set to true, the user is for
 window.ExtUseOnlyTagsFromTagLibrary = false;
 ```
 
-Possible values are **true** and **false**.
+Possible values are `true` and `false`.
 
 :::tip
 If the parameter is specified then this setting could not be changed in the TagSpaces settings dialog anymore. The user can only see the current status of the setting.
@@ -89,7 +110,7 @@ The property **ExtFilenameTagPlacedAtEnd** can be used to switching between plac
 window.ExtFilenameTagPlacedAtEnd = true;
 ```
 
-Possible values are **true** and **false**. The default value is **true**.
+Possible values are `true` and `false`. The default value is `true`.
 
 ## Configure custom URLs
 
@@ -179,7 +200,7 @@ Turning on this property will force the app to store the configuration for the l
 window.ExtSaveLocationsInBrowser = true;
 ```
 
-Possible values are **true** and **false**. Default value is **false**
+Possible values are `true` and `false`. Default value is `false`
 
 You might want to set this setting to true, if you want the location data, including the access and secret key for accessing S3 based locations is saved in the local storage of your browser. This way, you don't have to recreate the location every time you open the application.
 
@@ -389,7 +410,7 @@ The geo tags in can be in either in [Pluscode](https://en.wikipedia.org/wiki/Ope
 window.ExtGeoTaggingFormat = "pluscodes";
 ```
 
-Possible values: 'pluscodes', 'mgrs'
+Possible values: `pluscodes`, `mgrs`.
 
 ## Configure the boundaries of the default map
 With this parameter you can configure a map rectangle, which will be loaded by default in the Mapique perspective the current folder does contain any geo-tagged files or folders.
@@ -435,16 +456,15 @@ window.ExtSupportedFileTypes = [
 window.ExtDefaultVerticalPanel = "none";
 ```
 
-Possible values: 'none', 'taglibrary', 'search', 'locations'
+Possible values: `none`, `taglibrary`, `locations`
 
-### Show advanced search (removed with version 5.4 )
+{/* ### Show advanced search (removed with version 5.4 )
 
 ```js
 window.ExtShowAdvancedSearch = true;
 ```
 
-Possible values: true, false
-Default value: true
+Possible values: `true`, `false`. Default value: `true`. */}
 
 ### Show welcome panel
 
@@ -452,17 +472,27 @@ Default value: true
 window.ExtShowWelcomePanel = true;
 ```
 
-Possible values: true, false
-Default value: true
+Possible values: `true`, `false`. Default value: `true`.
 
 ### Show smart tags
+
+Smart tags are documented [here](/ui/taglibrary/#smart-tags).
 
 ```js
 window.ExtShowSmartTags = true;
 ```
 
-Possible values: true, false
-Default value: true
+Possible values: `true`, `false`. Default value: `true`.
+
+### Enable location based tags
+
+The [location tags](/ui/taglibrary/#location-tags) are saved in the location's folder and not centrally in the applicaiton's configuration.
+
+```js
+window.window.ExtUseLocationTags = true;
+```
+
+Possible values: `true`, `false`. Default value: `false`.
 
 ### Choose startup theme
 
@@ -470,7 +500,7 @@ Default value: true
 window.ExtTheme = "dark";
 ```
 
-Possible values: 'dark', 'light'
+Possible values: `dark`, `light`.
 
 ### Open app with predefined perspective
 
@@ -478,7 +508,7 @@ Possible values: 'dark', 'light'
 window.ExtDefaultPerspective = "gallery";
 ```
 
-Possible values as of version 3.3.x are 'default', 'gallery', 'mapique'
+Possible values are `default`, `gallery`, `mapique`.
 
 ## Custom color for the default themes
 
@@ -490,7 +520,7 @@ window.ExtLightThemeLightColor = "#dcf3ec";
 
 Possible value: any css color
 
-Default value: <span style={{color: '#dcf3ec'}}>'#dcf3ec'</span>
+Default value: <span style={{color: '#dcf3ec'}}>`'#dcf3ec'`</span>
 
 ### Set custom main color for the light theme
 
@@ -500,7 +530,7 @@ window.ExtLightThemeLightColor = "#1dd19f";
 
 Possible value: any css color
 
-Default value: <span style={{color: '#1dd19f'}}>'#1dd19f'</span>
+Default value: <span style={{color: '#1dd19f'}}>`'#1dd19f'`</span>
 
 ### Set custom light color for the dark theme
 
@@ -510,7 +540,7 @@ window.ExtDarkThemeLightColor = "#56454e";
 
 Possible value: any css color
 
-Default value: <span style={{color: '#56454e'}}>'#56454e'</span>
+Default value: <span style={{color: '#56454e'}}>`'#56454e'`</span>
 
 ### Set custom main color for the dark theme
 
@@ -520,7 +550,7 @@ window.ExtDarkThemeMainColor = "#ff9abe";
 
 Possible value: any css color
 
-Default value: <span style={{color: '#ff9abe'}}>'#ff9abe'</span>
+Default value: <span style={{color: '#ff9abe'}}>`'#ff9abe'`</span>
 
 {/* ### Set custom sidebar color (obsolete since v4)
 
@@ -542,13 +572,40 @@ Possible value: any css color
 
 Default value: <span style={{color: '#880E4F'}}>'#880E4F'</span> */}
 
-## Modifying packages
+## Embedding extconfig.js to packages
 
-- Unzip the packaged
-- Copy in _resources/app_ folder the the file extconfig.js
-- Copy in _resources/app_ folder the custom logo of the app. This is an optional step, for the case where you have specified the logo as a relative path.
-- Zip the unzipped folder containing the tagspaces program files
-- Distribute and/or deploy it
+### For macOS
+
+- Open the TagSpaces' DMG package
+- Copy the content `TagSpaces.app` to a folder e.g. your desktop
+- Navigate to TagSpaces.app/Contents folder and copy there your `extconfig.js` file
+- Install TagSpaces.app to your Applications folder with simple drag and drop
+
+<CenteredImage
+    caption="Location of the extconfig.js in the macOS applcation's structure"
+    src="/media/setup/macos-extconfig.png"
+    showCaption
+  />
+
+Allternatively you can copy the `extconfig.js` after the installation to this path: `/Applications/TagSpaces.app/Contents`
+
+### For Windows
+- Extract the content of TagSpaces' ZIP package to a folder e.g. your desktop
+- Copy the `extconfig.js` in the extracted folder
+- Zip the folder and redistribute
+
+Alternatively copy the `extconfig.js` directoy to the installation folder, as shown in the following screenshot. The path is usually `C:\Users\USERNAME\AppData\Local\Programs\TagSpaces`.
+
+<CenteredImage
+    caption="Location of the extconfig.js in the Windows applcation's structure"
+    src="/media/setup/windows-extconfig.png"
+    showCaption
+  />
+
+### For Linux
+- Extract the content of TagSpaces' TAR.GZ package to a folder e.g. your desktop
+- Copy the `extconfig.js` in the extracted folder
+- Zip the folder and redistribute  
 
 ## Example configuration file
 

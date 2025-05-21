@@ -151,7 +151,9 @@ You can install the Chrome extension directly from the [Chrome Web Store](https:
 
 ## Running in Portable Mode
 
-The Windows and Linux versions of TagSpaces can run in "portable mode," allowing you to use the application from a USB stick or other portable devices. In this mode, all configuration data (such as tags, tag groups, and location connections) is stored in a folder called `_tsprofile_` within the same directory where the application is started, rather than in the home directory of the operating system.
+The Windows, macOS and Linux versions of TagSpaces can run in "portable mode," allowing you to use the application from a USB stick or other portable devices. In this mode, all configuration data (such as tags, tag groups, and location connections) is stored in a folder called `_tsprofile_` within the same directory where the application is started, rather than in the home directory of the operating system.
+
+### On Windows and Linux
 
 To start the portable mode, use the `tagspacesp.cmd` script on Windows or `tagspacesp` on Linux. These scripts are usually found in the unpacked application folder. On Linux, you may need to make the script executable by running:
 
@@ -165,6 +167,16 @@ If the files are not included in the distributed packages, they can be downloade
 - [tagspacesp.cmd (Windows)](https://raw.githubusercontent.com/tagspaces/tagspaces/develop/resources/tagspacesp.cmd)
 
 Once downloaded, place these files in the same directory where the TagSpaces executable is located.
+
+### On macOS
+
+Extract the content of the DMG files, to the place where you want to have the portable version, e.g. a USB stick. Open the command line for this folder and run:
+
+```bash
+./TagSpaces.app/Contents/MacOS/TagSpaces -p
+```
+
+This will start the app in portable mode and create the `_tsprofile_` folder in the current folder. All the setting for the portable version will be stored in this folder.
 
 ### Updating the Portable Version
 
