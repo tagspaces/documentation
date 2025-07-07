@@ -4,6 +4,14 @@ import { CenteredImage, CenteredVideo } from '@site/src/components/CommonBlocks'
 
 A TagSpaces extension allowing viewing and editing of Markdown files.
 
+<CenteredVideo
+    caption="Markdown editor - demonstration"
+    src="/media/extensions/md-editor-demo.mp4"
+    posterUrl="/media/extensions/md-editor-demo-poster.avif"
+    autoPlay={true}
+    showCaption
+/>
+
 ## Features
 
 - **WYSIWYG** Markdown editing
@@ -16,19 +24,7 @@ A TagSpaces extension allowing viewing and editing of Markdown files.
 - Reading aloud the text content of the document
 - Visualizing the markdown header structure as a mind map
 
-![Screenshot of the markdown editor](/media/extensions/md-editor-menu.png)
-
-The following video will present some of the features:
-
-<CenteredVideo
-    caption="Markdown editor - feature overview"
-    src="https://www.tagspaces.org/content/v3-11/markdown-editor-demo.mp4"
-    posterUrl="/content/videos/mermaid-diagrams.png"
-    autoPlay={true}
-    showCaption
-/>
-
-<!-- > **TIP**: Just type `/` on a new line to get a menu showing all available markdown elements such as headings, bullet lists, images, quotes or tables. -->
+**TIP**: Just type `/` on a new line to get a menu showing all available markdown elements such as headings, bullet lists, images, quotes or tables.
 
 ### Mindmap
 
@@ -36,7 +32,7 @@ The extension can generate a mind map structure of the document based on its hea
 
 ![Screenshot of the markdown editor mind map](/media/extensions/md-editor-mindmap.png)
 
-### Diagrams
+### Diagrams (depracated)
 
 The editor supports presenting and editing of [mermaid](https://mermaid-js.github.io/mermaid/) based diagrams:
 
