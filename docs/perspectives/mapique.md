@@ -82,4 +82,4 @@ Not all folders have geo tags, so the Mapique perspective only shows files and f
 
 ## Encoding Geo Tags
 
-TagSpaces uses [Plus Codes](https://plus.codes/) by default for encoding geo locations. Plus codes can encode coordinates such as **48°08'27.8"N 11°34'53.6"E** into a short string like **8FWH4HRJ+CJ**, making the format ideal for use as tags.
+By default TagSpaces uses [Plus Codes](https://en.wikipedia.org/wiki/Open_Location_Code) for encoding geo locations. Plus codes encode coordinates such as **48°08'27.8"N 11°34'53.6"E** into a short string like **8FWH4HRJ+CJ**, making the format ideal for use as tags. As alternative the geo tags can be encoded in [MGRS](https://en.wikipedia.org/wiki/Military_Grid_Reference_System) format.
