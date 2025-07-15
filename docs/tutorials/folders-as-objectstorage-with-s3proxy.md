@@ -21,6 +21,7 @@ sudo docker run -d \
     -e S3PROXY_ENDPOINT="http://0.0.0.0:80" \
     -e S3PROXY_IDENTITY="username" \
     -e S3PROXY_CREDENTIAL="password" \
+    -e S3PROXY_IGNORE_UNKNOWN_HEADERS=true \
     -e JCLOUDS_PROVIDER="filesystem" \
     -e JCLOUDS_FILESYSTEM_BASEDIR="/data" \
     -e S3PROXY_CORS_ALLOW_ALL="true" \
@@ -28,7 +29,7 @@ sudo docker run -d \
     andrewgaul/s3proxy \
 ```
 
-Here is a short explanation of the docker command parameters. The parameter on line **(2)** is optional and makes Docker starting TagSpaces automatically after restart. Line **(3)** maps the internal port `80`, specified on line **(6)**, to port `9000` of the host computer, so TagSpaces Web can be accessed on `localhost:9000` or `127.0.0.1:9000`. On line **(4)** the name of the docker container is specified. Line **(12)** maps the host folder `/Users/yourusername/buckets` to the internal `/data` folder, which is the root folder of the S3Proxy server specified on line **(10)**.
+Here is a short explanation of the docker command parameters. The parameter on line **(2)** is optional and makes Docker starting TagSpaces automatically after restart. Line **(3)** maps the internal port `80`, specified on line **(6)**, to port `9000` of the host computer, so TagSpaces Web can be accessed on `localhost:9000` or `127.0.0.1:9000`. On line **(4)** the name of the docker container is specified. Line **(13)** maps the host folder `/Users/yourusername/buckets` to the internal `/data` folder, which is the root folder of the S3Proxy server specified on line **(11)**.
 
 :::info
 Every sub folder in the `/Users/yourusername/buckets` folder is served as a separate bucket by the S3Proxy service, so the name of the sub folder should be used later as bucket name in TagSpaces.
@@ -36,9 +37,9 @@ Every sub folder in the `/Users/yourusername/buckets` folder is served as a sepa
 
 Line **(5)** is specifying the s3 authorization version, for TagSpaces Web and Desktop app you will need `aws-v2-or-v4`. On line **(7)** you should specify the username and on line **(8)** the password. Please change them according to your needs.
 
-The local filesystem is specified as file backend on line **(9)**. Line **(11)** disables the CORS restrictions, so you can access the S3 service from any host running TagSpaces. This is not always recommended and can be restricted with other parameters from the S3Proxy [Dockerfile](https://github.com/gaul/s3proxy/blob/master/Dockerfile).
+The local filesystem is specified as file backend on line **(10)**. Line **(12)** disables the CORS restrictions, so you can access the S3 service from any host running TagSpaces. This is not always recommended and can be restricted with other parameters from the S3Proxy [Dockerfile](https://github.com/gaul/s3proxy/blob/master/Dockerfile).
 
-Line **(13)** specifies the name of the Docker image for the S3Proxy project, as published on [Docker Hub](https://hub.docker.com/r/andrewgaul/s3proxy/).
+Line **(14)** specifies the name of the Docker image for the S3Proxy project, as published on [Docker Hub](https://hub.docker.com/r/andrewgaul/s3proxy/).
 
 ## Running S3Proxy as standalone program
 
@@ -61,6 +62,8 @@ s3proxy.endpoint=http://127.0.0.1:9000
 s3proxy.authorization=aws-v2-or-v4
 s3proxy.identity=username
 s3proxy.credential=password
+s3proxy.ignore-unknown-headers=true
+s3proxy.cors-allow-all=true
 jclouds.provider=filesystem
 jclouds.filesystem.basedir=/Users/yourusername/buckets
 ```
