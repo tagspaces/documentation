@@ -12,10 +12,6 @@ The default view in TagSpaces presents content in a grid, making it the most com
 
 ![screenshot of the default perspective of the app](/media/grid/grid-lead.avif)
 
-<!-- :::info
-The colored rectangle shows the area in TagSpaces typically occupied by **[perspectives](/browsing-files)**.
-::: -->
-
 ### File Tile
 
 Each tile in the grid represents the following information:
@@ -171,8 +167,6 @@ At the bottom of the dialog, you’ll find these options:
 - **Set for This Folder** - Saves the current settings for the folder, so these options will be applied upon opening.
 
 The dialog also indicates if the current folder has custom settings. You can reset them using the **Reset Custom Settings** button.
-
-<!-- * **Show sub folders content** - If you don't care about folder structure, or do not know where in the hierarchy you would find a necessary file, you can turn this option on, to show every file from all sub folders recursively, starting from your current directory. The list will display all files in order, without any indication of their actual locations. This option will allow you to work with multiple files across a folder hierarchy at once.-->
 
 ### Example Configurations
 

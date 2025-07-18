@@ -22,12 +22,6 @@ When a new version of the application is available, you will see a notification 
 If you prefer not to have TagSpaces check automatically for new versions, you can disable this functionality in the [settings](/ui/settings).
 :::
 
-<!-- ## Installing TagSpaces PRO
-Here are the steps needed for installing the PRO version on your system.
-- Save the installer file to a location on your hard drive.
-- Locate the installer and double-click to start the install process.
-- The Windows installer allows you to specify a custom install location. -->
-
 ## Installation on Windows
 
 The Windows version of TagSpaces is distributed as either an `.exe` installer or a `.zip` archive file. The `.exe` file can be directly executed to start the installation. The `.zip` archive must be unzipped into a folder on your system. In the unpacked folder, you will find a file named `tagspaces.exe`, which can be executed with a double-click.
@@ -101,15 +95,6 @@ To update the **tar.gz** version, replace the contents of your current installat
 :::caution
 The Android version is meanwhile **deprecated**, we still are still releasing new versions, but we are not actively developing the app anymore.
 :::
-
-<!-- ### From Google Play (not updated anymore)
-
-You can install the Android app from the [Google Play Store](https://play.google.com/store/apps/details?id=org.tagspaces.mobileapp).
-:::tip
-The version of TagSpaces in Google Play Store is outdated and not supported anymore, please read the next section for installing the app from our web page.
-::: -->
-
-<!-- **Updating the Android app:** Once a newer version of the Android app is published, it will be automatically installed on your mobile device within a few days. -->
 
 A version of the Android app is available as an [APK file](https://www.tagspaces.org/downloads/) in the download section of our website.
 

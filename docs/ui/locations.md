@@ -208,14 +208,6 @@ You can configure **ignore patterns** in the advanced area of location propertie
     showCaption
 />
 
-<!-- Ignored folders will appear like this:
-
-<CenteredImage
-    caption="Ignored folders in the default perspective"
-    src="/media/ignored-folders.png"
-    showCaption
-/> -->
-
 ### Set File Tagging Method Per Location
 
 <ProFeature />

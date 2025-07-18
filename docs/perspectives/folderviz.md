@@ -73,38 +73,3 @@ The TreeMap View represents files and folders as tiles, where the size of each t
     src="/media/folderviz/folderviz-treemap.avif"
     showCaption
   />
-
-<!--
-## Legacy Views from v2
-
-### MindMap View
-
-The **MindMap View** displays all folders and subfolders within the current directory in an expandable tree-node format. There are plans to enhance this view in the future with an inverted graph of tags, allowing you to navigate your tagged files via a tag group tree rather than a folder tree. This could enable drag-and-drop functionality, where moving a file between branches would automatically re-tag it.
-
-![MindMap View](/media/folderviz/folderviz-mindmap.avif)
-
-### TreeMap View
-
-The **TreeMap View** represents files and folders as tiles, where the size of each tile corresponds to the file size relative to others in the same folder hierarchy. This provides a visual understanding of file sizes in relation to the root and each other.
-
-![TreeMap View](/media/folderviz/folderviz-treemap-view.avif)
-
-### Tree View
-
-The **Tree View** shows a fully expanded, non-interactive folder tree, similar to **MindMap**, but static. While useful for visualizing folder hierarchies, it may struggle with performance in large directories.
-
-![Tree View](/media/folderviz/folderviz-tree-view.avif)
-
-### TreeMap-Navi View
-
-**TreeMap Navi** is similar to **TreeMap** but omits the folder hierarchy, using the entire user interface to represent relative file sizes. This view can be particularly useful for identifying large files or folders.
-
-![TreeMap Navi View](/media/folderviz/folderviz-treemap-navi.avif)
-
-### Bilevel Partition
-
-The **Bilevel Partition** is the most experimental view, mainly designed as a test to explore folder and file visualization capabilities. While it can generate intriguing visual results, it is likely to be removed in a future release of TagSpaces.
-
-![Bilevel Partition View](/media/folderviz/bilevel-partition.avif)
-
--->

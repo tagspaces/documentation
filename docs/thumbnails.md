@@ -38,6 +38,4 @@ The generated thumbnails are stored in the `.ts` folder located within each fold
 
 ## Thumbnails on S3 Locations
 
-<!-- Thumbnails are not generated automatically on S3 locations. This limitation is due to the fact that generating thumbnails requires downloading all files from the folder, which can be impractical for folders with many files. However, there is an exception:  -->
-
 When you upload files to an S3 location, TagSpaces will attempt to generate thumbnails during the upload process.

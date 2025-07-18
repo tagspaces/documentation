@@ -12,8 +12,6 @@ tags: [tutorial]
 
 Overview
 
-<!-- ![Amplify SW architecture]() -->
-
 - User management - Cognito
 - File hosting - S3
 - Configuration data for the location and tag libraries - DynamoDB

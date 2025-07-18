@@ -203,8 +203,3 @@ SSL certificates are needed for both your TagSpaces installation and the object 
 ### Installing a self-signed SSL certificate
 
 TBD
-
-<!--
-### Renewing the SSL certificate
-
-TBD -->

@@ -126,13 +126,6 @@ Once the user has been created, you can configure TagSpaces Pro to connect with 
 
 Once configured and saved, TagSpaces should connect to the MinIO instance and list the files within it.
 
-<!-- <VideoYT
-    youtubeId="uIr4FzgcBMs"
-    title="Linking MinIO buckets as locations in TagSpaces Pro or Pro Web"
-    posterUrl="/media/videos/tagspaces-connect-s3-bucket.png"
-    height={550}
-/> -->
-
 ## Common Pitfalls
 
 ### Connection Issues

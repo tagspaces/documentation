@@ -37,8 +37,6 @@ TagSpaces like a much of modern software also provides a range of keyboard short
 | Close the currently opened document                  | `control + w`                | `⌘ + w`              |
 | Open the properties of the currently opened document | `alt+enter`                  | `alt+enter`          |
 
-<!--| Reload the currently opened document | `control + r` | `⌘ + r` |-->
-
 ### Global keybindings
 
 These keybindings are available even if TagSpaces is currently not in focus, but running in background for example in the system's [tray](/ui/userinterface/#tray-menu).

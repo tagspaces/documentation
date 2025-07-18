@@ -25,8 +25,6 @@ https://cloud.maptiler.com/geocoding/
 
 ## Setting up your own map tile server
 
-<!-- ![](custom-map-tiles/.png) -->
-
 DockerImage
 
 https://github.com/Overv/openstreetmap-tile-server
@@ -36,10 +34,6 @@ https://hub.docker.com/r/overv/openstreetmap-tile-server
 http://download.geofabrik.de/
 
 ## Adding map tile servers in TagSpaces
-
-<!-- ![](custom-map-tiles/.png)
-
-![](custom-map-tiles/.png) -->
 
 ## Other resources
 

@@ -172,20 +172,6 @@ When accessing a tag's context menu from the **file browsing area** (the main ar
 Editing a tag's name or deleting it from the library affects only the library itself. Tags already applied to files will remain unchanged. However, if you change a tag's color in the library, the color will update on all files using that tag. This is because TagSpaces embeds tags into filenames. Learn more about [file tagging based on filenames](/tagging#file-tagging-based-on-filenames).
 :::
 
-<!-- Priority and star ratings all have predefined keyboard bindings assigned to then, to that using them becomes really straightforward and fast. Currently the following key-bindings apply:
-
-### Priorities:
-* **high** - `t h`
-* **medium** - `t m`
-* **low** - `t l`
-
-### Start ratings
-* **1star** - `t 1`
-* **2star** - `t 2`
-* **3star** - `t 3`
-* **4star** - `t 4`
-* **5star** - `t 5` -->
-
 ## Smart tags
 
 Smart tags are an advanced feature in TagSpaces that offer **dynamic tagging** based on **date, time, or location** criteria. These tags automatically update based on real-time or geographic data, making them highly useful for specific tasks.

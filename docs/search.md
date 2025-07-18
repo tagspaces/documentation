@@ -253,11 +253,6 @@ These file formats are currently supported:
 - **TXT** - plain text files.
 - **PDF** - searchable PDF documents (already OCR-ed).
 
-<!-- * Office Documents: PDF, ODT, ODP, ODS, DOCX, XLSX, PPTX (extracts the text content)
-* Images: JPG (extracts Exif and IPTC informations)
-* Audios formats: MP3 (extracts id3 tags)
-* Ebooks: EPUB (extracts the text content) -->
-
 <CenteredImage
     caption="Enabling full-text indexing"
     src="/media/locations/enable-fulltext-search.avif"

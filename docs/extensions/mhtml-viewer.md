@@ -12,8 +12,6 @@ A TagSpaces extension allowing you to open MHTML and EML files.
 - Finding text in the current file.
 - File printing.
 
-<!-- ![Animation of the viewerMHTML extension](/media/extensions/mhtml-viewer-readabilty-mode.gif) -->
-
 ![Screenshot of the MHTML viewer extension](/media/extensions/viewer-mhtml-lead.png)
 
 Dialog showing the scraping details, with the ability to open the original URL in an external browser.

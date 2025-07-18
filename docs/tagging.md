@@ -52,10 +52,6 @@ File name tagging may run into limitations due to file path length restrictions 
 
 As an alternative to embedding tags in file names, TagSpaces allows storing tags in sidecar files within a hidden `.ts` folder. This can be activated in the settings for all locations or per location in the properties of every location.
 
-<!-- :::info
-Note: By default, `.ts` folders are hidden on macOS and Linux, but not on Windows.
-::: -->
-
 When tagging a file, TagSpaces will create a corresponding sidecar file with the same name as the source file but with a `.json` extension. For example:
 
 ```
