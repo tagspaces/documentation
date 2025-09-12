@@ -572,6 +572,79 @@ Possible value: any css color
 
 Default value: <span style={{color: '#880E4F'}}>'#880E4F'</span> */}
 
+## Custom prompts for AI functionalities
+
+### Default question prompt
+```js
+window.ExtDefaultSystemPrompt = "Given the following conversation and a follow up question, rephrase the follow up question to be a standalone question.   Chat History: {chat_history} Follow Up Input: {question} Standalone question:";
+```
+
+### Prompt for summary generation
+```js
+window.ExtSummarizePrompt = "Generate a concise summary {max_chars} in {language} language for the following text: {summarize_text}";
+```
+
+### Prompt for generation of structured description for an image
+```js
+window.ExtDescriptionFromImageStructuredPrompt = "Analyze this image and return a detailed JSON description including objects, scene, colors and any text detected. If you cannot determine certain details, leave those fields empty.";
+```
+
+### Prompt for generation of description for an image
+```js
+window.ExtDescriptionFromImagePrompt = "Generate a concise description for this image {file_name} in {language} language.";
+```
+
+### Prompt for generation of description for text
+```js
+window.ExtDescriptionFromTextPrompt = "Generate a concise description {max_chars} in {language} language for this text: {input_text}.";
+```
+
+### Prompt for generating tags from image
+```js
+window.ExtTagsFromImagePrompt = "Write the most important topics from the image description. The output TOPICS must be in parsable format like {keyword} without whitespace in braces.";
+```
+
+### Prompt for generating tags from text
+```js
+window.ExtTagsFromTextPrompt = "Extract important tags (single words please) and sort them by their importance from the following content: {input_text}";
+```
+
+## Custom templates for new files
+
+### Default new file template
+
+```js
+window.ExtDefaultFileTemplate = {
+  id: 'default',
+  name: 'Default',
+  content: '{createdInApp} ({date})',
+  fileNameTmpl: 'note[{timestamp}]',
+};
+```
+
+### Defining a set of templates for new files
+
+```js
+window.ExtFileTemplates = [
+  {
+    id: '62342',
+    name: 'External Template 1',
+    type: 'md', // md | txt | html
+    content: '{createdInApp} ({date})',
+    fileNameTmpl: 'task[{timestamp}]',
+    screenshotUrl: 'dataURL:...', // URL to a screenshot of the template
+  },
+  {
+    id: '72323',
+    name: 'External Template 2',
+    type: 'txt', // md | txt | html
+    content: '{createdInApp} ({date})',
+    fileNameTmpl: 'issue[{timestamp}]',
+    screenshotUrl: 'dataURL:...', // URL to a screenshot of the template
+  }]
+```
+
+
 ## Embedding extconfig.js to packages
 
 ### For macOS
