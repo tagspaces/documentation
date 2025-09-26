@@ -64,6 +64,11 @@ const config = {
             position: "right",
           },
           {
+            label: "Support Forum",
+            href: "https://tagspaces.discourse.group",
+            position: "right",
+          },
+          {
             href: "https://github.com/tagspaces/documentation",
             label: "GitHub",
             position: "right",
@@ -153,7 +158,7 @@ const config = {
             title: "Community",
             items: [
               {
-                label: "Forums",
+                label: "Support Forum",
                 href: "https://tagspaces.discourse.group",
               },
               {
@@ -222,14 +227,14 @@ const config = {
     }),
 
   scripts: [
-    {
-      id: "Cookiebot",
-      src: "https://consent.cookiebot.com/uc.js",
-      "data-cbid": "ce1b9450-89a1-425c-861d-2c4b50a53c53",
-      type: "text/javascript",
-      async: true,
-      // "data-blockingmode": "manual",
-    },
+    // {
+    //   id: "Cookiebot",
+    //   src: "https://consent.cookiebot.com/uc.js",
+    //   "data-cbid": "ce1b9450-89a1-425c-861d-2c4b50a53c53",
+    //   type: "text/javascript",
+    //   async: true,
+    //   // "data-blockingmode": "manual",
+    // },
     {
       src: "https://plausible.io/js/plausible.js",
       "data-domain": "docs.tagspaces.org",
