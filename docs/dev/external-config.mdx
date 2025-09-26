@@ -494,6 +494,19 @@ window.ExtUseLocationTags = true;
 
 Possible values: `true`, `false`. Default value: `false`.
 
+### Author
+
+This setting provides a way to overwrite the author name which is by default the username of the operating system. The author name can be used in the templates.
+
+```js
+window.ExtAuthor = '';
+```
+
+Possible values: `true`, `false`. Default value: `true`.
+
+
+## Theming
+
 ### Choose startup theme
 
 ```js
@@ -629,14 +642,16 @@ window.ExtFileTemplates = [
   {
     id: '62342',
     name: 'External Template 1',
+    description: 'Default template for new markdown files'
     type: 'md', // md | txt | html
-    content: '{createdInApp} ({date})',
+    content: '{createdInApp} ({date}) by {{author}},
     fileNameTmpl: 'task[{timestamp}]',
     screenshotUrl: 'dataURL:...', // URL to a screenshot of the template
   },
   {
     id: '72323',
     name: 'External Template 2',
+    description: 'Default template for new text files'
     type: 'txt', // md | txt | html
     content: '{createdInApp} ({date})',
     fileNameTmpl: 'issue[{timestamp}]',
