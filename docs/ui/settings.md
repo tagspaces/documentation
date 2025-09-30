@@ -63,6 +63,41 @@ In the [grid](/perspectives/grid), [list](/perspectives/list), and [kanban](/per
 
 ![Color-coded file extensions in the list perspective](/media/settings/color-coded-file-extensions.jpg)
 
+## File Templates
+
+Here is the place where you can manage the templates for creating new files. You can also select here the default template for every supported file type: MD, HTML or TXT.
+
+<FullScreenImage
+caption="Tab file templates in the settings"
+src="/media/settings/settings-templates.avif"
+maxWidth={700}
+/>
+
+With the **reset template** button on the top you can restore the default templates delivered with the installation of the application.
+
+### Managing templates
+
+Click on any template will open an area where you can edit it.
+
+<FullScreenImage
+caption="Managing templates in the settings"
+src="/media/settings/settings-edit-template.avif"
+maxWidth={700}
+/>
+
+Every template has the following attributes:
+
+- **Name** - the name of the template
+- **Type** - here you can choose between md for markdown, txt and html as target file formats
+- **Template Content** - the content of the template, here the following placeholder can be used:
+  - **\{date\}** - will be replaced with the current date on file creation
+  - **\{time\}** - will be replaced with the current time on file creation
+  - **\{author\}** - will be replaced with the author on file creation. The author can specified in [tab advanced](/ui/settings#advanced) of the settings.
+  - **\{createdInApp\}** - will be replaced with 'Created in TagSpaces' in the application language.
+- **File name template** - the template for the name of the created file, can have the following attributes:
+  - **\{timestamp\}** - will be replaced with a timestamp of the file creation e.g. 20250930T123032 for 30th of September 2025 at 12:30:32.
+  - **\{uuid\}** - will be replaced with a unique id.
+
 ## Key Bindings
 
 The **Key Bindings** tab allows you to view and customize keyboard shortcuts.
@@ -112,12 +147,11 @@ The **Advanced** tab contains settings intended for advanced use cases.
 
 <FullScreenImage
 caption="Settings - Advanced Tab"
-src="/media/settings/settings-advanced.jpg"
+src="/media/settings/settings-advanced.avif"
 maxWidth={700}
 />
 
 - **Enable mobile mode**: Switch the app to mobile mode for use on small screens or smaller app window sizes.
-- **Enable developer mode**: Enables experimental features like the ability to load third-party extensions.
 - **Enable generating thumbnails and search index in a separate process**: Thumbnails and the search index are generated in a separate process by default for better performance. You can disable this and use the main app process, but this may negatively impact performance.
 - **Show warning on opening files externally**: A warning will appear when opening files with external programs to prevent accidental execution of malicious files (e.g., an .exe file on Windows).
 - **Enable location tags** <ProFeature />: Store tag groups outside the main tag library in the location itself. Learn more [here](/ui/taglibrary/#location-tags).
@@ -126,11 +160,24 @@ maxWidth={700}
   - **MGRS**: Military Grid Reference System, which encodes coordinates like `4QFJ12345678`.
 - **Map tile servers** <ProFeature />: TagSpaces uses OpenStreetMap-based maps for its geotagging features. You can add custom map tile servers here, including from [this list of common servers](https://wiki.openstreetmap.org/wiki/Tile_servers) or your own server for an internet-independent geo-tagging system.
 
-:::caution
-Please respect the policies and terms of use of the map service providers.
-:::
+  :::caution
+  Please respect the policies and terms of use of the map service providers.
+  :::
+
+- **Workspaces** <ProFeature />: a place where you can manage [workspaces](/workspaces) for the application.
+- **Author**: a property which specifies an author's name, which can be inserted in the templates, by creating new files. On the desktop version this variable uses the user name of the operating system.
+- **Enable developer mode**: Enables some experimental new features and addition debugging.
 
 ### Additional Buttons
 
 - **Restore default settings**: Resets the app to its original settings, including connected locations and the tag library. Be careful, as this action cannot be undone without backups.
 - **Reload application**: Reloads the app, similar to pressing the browser reload button.
+
+## AI / LLM Configuration
+
+Find out more about this tab in the [AI section](/ai) of the documentation.
+
+<CenteredImage
+caption="Ollama connected in TagSpaces"
+src="/media/ai/settung-ollama-running.avif"
+/>

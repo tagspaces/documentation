@@ -133,6 +133,18 @@ const sidebars = {
     },
     {
       type: "category",
+      label: "Workspaces",
+      items: [
+        "workspaces",
+        {
+          type: "link",
+          label: "Managing",
+          href: "/workspaces#manage",
+        },
+      ],
+    },
+    {
+      type: "category",
       label: "Search and Find",
       items: [
         "search",
@@ -368,6 +380,11 @@ const sidebars = {
           type: "link",
           label: "File Types",
           href: "/ui/settings/#file-types",
+        },
+        {
+          type: "link",
+          label: "File Templates",
+          href: "/ui/settings/#file-templates",
         },
         {
           type: "link",

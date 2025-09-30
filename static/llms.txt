@@ -4988,6 +4988,20 @@ This section contains the following areas:
 - **Recently edited files** - contains a list of recently edited files
 - **Recently opened folders** - contains a list of folders opened in the details section
 
+Since version 6.6 every bookmarks or recently visited entries have its own context menu containing the following operations:
+
+<CenteredImage
+    caption="Opening the Quick Access Menu"
+    src="/media/quickaccess/quick-access-menu.avif"
+    showCaption
+    maxWidth="350px"
+/>
+
+- **Open entry** - will open the entry in the current application window
+- **Open in new window** - will open the entry in a new application window or browser tab if on the web version.
+- **Copy the link to the clipboard** - will copy the link of the bookmarked file to clipboard, so it can be shared will somebody else working on the same files
+- **Remove** - will remove the file or folder from the list
+
 ## Configuring the recently opened entries
 
 The amount of the collected files can be adjusted in the advanced tab of the settings. Here you can also clear the history or deactivate the collection of the recent entries by choosing the _disabled_ menu item in dropdowns.
@@ -5278,6 +5292,10 @@ TagSpaces Pro offers searching across all locations, called "Global search." It 
 Once in _Global search_ mode, you will see an additional option called "Force re-indexing all locations." Activating this checkbox will force TagSpaces to create a new index for each location before searching in it. This option delivers the most accurate search results but may take more time, especially when re-indexing remote locations or locations with many files.
 
 All other search settings work the same as in single location searches. The [search result limit](#limiting-the-search-results) applies here; once the limit is reached, TagSpaces will stop the search and not continue searching the remaining locations.
+
+:::info
+If you are in the context of a given [workspace](/workspaces), the global search will deliver only result from the location assigned to the current workspace.
+:::
 
 ## Search history
 
@@ -9162,6 +9180,41 @@ In the [grid](/perspectives/grid), [list](/perspectives/list), and [kanban](/per
 
 ![Color-coded file extensions in the list perspective](/media/settings/color-coded-file-extensions.jpg)
 
+## File Templates
+
+Here is the place where you can manage the templates for creating new files. You can also select here the default template for every supported file type: MD, HTML or TXT.
+
+<FullScreenImage
+caption="Tab file templates in the settings"
+src="/media/settings/settings-templates.avif"
+maxWidth={700}
+/>
+
+With the **reset template** button on the top you can restore the default templates delivered with the installation of the application.
+
+### Managing templates
+
+Click on any template will open an area where you can edit it.
+
+<FullScreenImage
+caption="Managing templates in the settings"
+src="/media/settings/settings-edit-template.avif"
+maxWidth={700}
+/>
+
+Every template has the following attributes:
+
+- **Name** - the name of the template
+- **Type** - here you can choose between md for markdown, txt and html as target file formats
+- **Template Content** - the content of the template, here the following placeholder can be used:
+  - **\{date\}** - will be replaced with the current date on file creation
+  - **\{time\}** - will be replaced with the current time on file creation
+  - **\{author\}** - will be replaced with the author on file creation. The author can specified in [tab advanced](/ui/settings#advanced) of the settings.
+  - **\{createdInApp\}** - will be replaced with 'Created in TagSpaces' in the application language.
+- **File name template** - the template for the name of the created file, can have the following attributes:
+  - **\{timestamp\}** - will be replaced with a timestamp of the file creation e.g. 20250930T123032 for 30th of September 2025 at 12:30:32.
+  - **\{uuid\}** - will be replaced with a unique id.
+
 ## Key Bindings
 
 The **Key Bindings** tab allows you to view and customize keyboard shortcuts.
@@ -9211,12 +9264,11 @@ The **Advanced** tab contains settings intended for advanced use cases.
 
 <FullScreenImage
 caption="Settings - Advanced Tab"
-src="/media/settings/settings-advanced.jpg"
+src="/media/settings/settings-advanced.avif"
 maxWidth={700}
 />
 
 - **Enable mobile mode**: Switch the app to mobile mode for use on small screens or smaller app window sizes.
-- **Enable developer mode**: Enables experimental features like the ability to load third-party extensions.
 - **Enable generating thumbnails and search index in a separate process**: Thumbnails and the search index are generated in a separate process by default for better performance. You can disable this and use the main app process, but this may negatively impact performance.
 - **Show warning on opening files externally**: A warning will appear when opening files with external programs to prevent accidental execution of malicious files (e.g., an .exe file on Windows).
 - **Enable location tags** <ProFeature />: Store tag groups outside the main tag library in the location itself. Learn more [here](/ui/taglibrary/#location-tags).
@@ -9225,14 +9277,27 @@ maxWidth={700}
   - **MGRS**: Military Grid Reference System, which encodes coordinates like `4QFJ12345678`.
 - **Map tile servers** <ProFeature />: TagSpaces uses OpenStreetMap-based maps for its geotagging features. You can add custom map tile servers here, including from [this list of common servers](https://wiki.openstreetmap.org/wiki/Tile_servers) or your own server for an internet-independent geo-tagging system.
 
-:::caution
-Please respect the policies and terms of use of the map service providers.
-:::
+  :::caution
+  Please respect the policies and terms of use of the map service providers.
+  :::
+
+- **Workspaces** <ProFeature />: a place where you can manage [workspaces](/workspaces) for the application.
+- **Author**: a property which specifies an author's name, which can be inserted in the templates, by creating new files. On the desktop version this variable uses the user name of the operating system.
+- **Enable developer mode**: Enables some experimental new features and addition debugging.
 
 ### Additional Buttons
 
 - **Restore default settings**: Resets the app to its original settings, including connected locations and the tag library. Be careful, as this action cannot be undone without backups.
 - **Reload application**: Reloads the app, similar to pressing the browser reload button.
+
+## AI / LLM Configuration
+
+Find out more about this tab in the [AI section](/ai) of the documentation.
+
+<CenteredImage
+caption="Ollama connected in TagSpaces"
+src="/media/ai/settung-ollama-running.avif"
+/>
 
 ---
 
@@ -9871,3 +9936,122 @@ Make the Web Clipper easily accessible by pinning it in the extensions area of y
   autoPlay
   showCaption
 />
+
+---
+
+// File: workspaces
+
+import { ProFeature, CenteredImage, FullScreenImage } from '@site/src/components/CommonBlocks';
+
+# Workspaces
+
+_Workspaces_ are a new way to organize your **locations** and **tag groups** in TagSpaces. They allow you to separate different contexts—such as work, personal projects, or hobbies—into their own dedicated spaces, making it easier to stay focused and organized.
+
+---
+
+## Why Use Workspaces?
+
+- **Keep projects separate** – Switch between different areas of your life without mixing files or tags.
+- **Better navigation** – Only see the locations and tags relevant to the active workspace.
+- **Flexible organization** – Create as many workspaces as you need (e.g., Work, Personal, Research, Photography).
+- **Focused search results** – If you are in the context of a given workspace the global search functionality will give you only results from the locations assigned to the current workspace.
+
+---
+
+## Managing Workspaces
+
+### Creating a New workspace
+
+1. Open the advanced settings tab and scroll down.
+<!--
+<CenteredImage
+    caption="Screenshot of the workspaces menu in the sidebar"
+    src="/media/workspaces/workspaces-management.avif"
+    showCaption
+    maxWidth="300px"
+/> -->
+
+2. Click on **“Add workspace”** to create a new workspace.
+
+<!-- <CenteredImage
+    caption="Screenshot of add workspace dialog"
+    src="/media/workspaces/workspaces-add-dialog.avif"
+    showCaption
+    maxWidth="300px"
+/> -->
+
+3. In the opened dialog, you have to enter a short name for your workspace (e.g., WPG1, 🍭). The short name can be an abbreviation or an emoji and will be displayed after the name of the locations and tag group to which this workspace will be assigned.
+4. Enter a full name for your workspace (e.g., “Work Projects 1”).
+5. Click the Ok button to finish the creation.
+
+---
+
+### Switching Between Workspaces
+
+- Use the **workspaces dropdown** in the sidebar to switch between available workspaces.
+
+<!-- <CenteredImage
+    caption="Screenshot of workspace dropdown menu"
+    src="/media/workspaces/workspaces-switch.avif"
+    showCaption
+    maxWidth="300px"
+/> -->
+
+- When you switch, the UI updates to show only the locations and tag groups that belong to the selected workspace.
+
+---
+
+### Editing or Deleting a Workspace
+
+- Open the **workspace settings dialog**.
+
+<!-- <CenteredImage
+    caption="Screenshot of workspace settings dialog"
+    src="/media/workspaces/workspaces-settings.avif"
+    showCaption
+    maxWidth="300px"
+/> -->
+
+- From here, you can rename, reassign, or delete a workspace.
+
+---
+
+## Workspaces and Tag Groups
+
+- Each workspace can have its own **tag groups**, keeping your tags organized by context.
+- For example:
+  - In a **Work** workspace: `#clientA`, `#invoice`, `#meeting`.
+  - In a **Personal** workspace: `#travel`, `#recipes`, `#health`.
+- Switching workspaces also switches which tag groups are visible.
+  <!-- ![Screenshot of tag groups scoped to a workspace](./images/workspaces-tags.png) -->
+
+---
+
+## Workspaces and Locations
+
+- You can assign **locations** (folders or drives) to specific workspaces.
+- This ensures you’ll only see the relevant locations when working in a given workspace.
+  <!-- ![Screenshot of locations assigned to a workspace](./images/workspaces-locations.png) -->
+
+---
+
+## Tips & Best Practices
+
+- Use workspaces to **separate professional and personal content**.
+- Create dedicated workspaces for **large projects** with their own tag structure.
+- If you handle sensitive data, a separate workspace can help keep it isolated.
+
+---
+
+## Limitations
+
+- Locations and tag groups can belong to only **one workspace at a time**.
+- Workspaces are stored locally—if you use multiple devices, you’ll need to configure them individually.
+
+---
+
+## Related Topics
+
+- [Managing Locations](/ui/locations.md)
+- [Using Tag Groups](/ui/taglibrary.md)
+- [Organizing Files with Tags](/tagging.md)

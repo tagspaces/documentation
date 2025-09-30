@@ -279,6 +279,10 @@ Once in _Global search_ mode, you will see an additional option called "Force re
 
 All other search settings work the same as in single location searches. The [search result limit](#limiting-the-search-results) applies here; once the limit is reached, TagSpaces will stop the search and not continue searching the remaining locations.
 
+:::info
+If you are in the context of a given [workspace](/workspaces), the global search will deliver only result from the location assigned to the current workspace.
+:::
+
 ## Search history
 
 This feature can be activated in the app's advanced settings, where you can choose how large the search history should be. Once activated, the app will save the last searches performed, including the search query and the location where they were executed.

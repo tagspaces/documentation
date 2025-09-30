@@ -23,6 +23,20 @@ This section contains the following areas:
 - **Recently edited files** - contains a list of recently edited files
 - **Recently opened folders** - contains a list of folders opened in the details section
 
+Since version 6.6 every bookmarks or recently visited entries have its own context menu containing the following operations:
+
+<CenteredImage
+    caption="Opening the Quick Access Menu"
+    src="/media/quickaccess/quick-access-menu.avif"
+    showCaption
+    maxWidth="350px"
+/>
+
+- **Open entry** - will open the entry in the current application window
+- **Open in new window** - will open the entry in a new application window or browser tab if on the web version.
+- **Copy the link to the clipboard** - will copy the link of the bookmarked file to clipboard, so it can be shared will somebody else working on the same files
+- **Remove** - will remove the file or folder from the list
+
 ## Configuring the recently opened entries
 
 The amount of the collected files can be adjusted in the advanced tab of the settings. Here you can also clear the history or deactivate the collection of the recent entries by choosing the _disabled_ menu item in dropdowns.
