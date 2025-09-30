@@ -154,6 +154,9 @@ maxWidth={700}
 - **Enable mobile mode**: Switch the app to mobile mode for use on small screens or smaller app window sizes.
 - **Enable generating thumbnails and search index in a separate process**: Thumbnails and the search index are generated in a separate process by default for better performance. You can disable this and use the main app process, but this may negatively impact performance.
 - **Show warning on opening files externally**: A warning will appear when opening files with external programs to prevent accidental execution of malicious files (e.g., an .exe file on Windows).
+- **Tag delimiter**: The character used in the file names to separate the tags. Example: In the file name file1[TAG1_TAG2].txt , \_ is the delimiter.
+- **Prefix for tag container**: The character which is placed in the front of the tag container. Example: In the file name 'file1*[TAG1].txt', '*' is the prefix.
+- **Max collected tags**: the maximal amount of tags which will be collected in the "Collected Tags" tag group.
 - **Enable location tags** <ProFeature />: Store tag groups outside the main tag library in the location itself. Learn more [here](/ui/taglibrary/#location-tags).
 - **Geo tagging format** <ProFeature />: Choose from the following geo-tagging formats:
   - **PlusCode**: Encodes latitude and longitude coordinates into a short text representation, e.g., `8FV9P8RR+MW` for `47.741687, 7.342313`.
