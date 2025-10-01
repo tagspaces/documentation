@@ -20,7 +20,7 @@ Perspectives are modular extensions that allow more flexibility, easier developm
 
 The perspective for the current folder can be switched in two ways. The easiest method is to use the perspective switch located in the bottom-right corner of the application, as shown in the screenshot below.
 
-![Changing perspectives for a folder](/media/tagspaces-perspective-switch.png)
+![Changing perspectives for a folder](/media/core/perspective-switch.avif)
 
 In some cases, such as when using the application on mobile devices, the perspective switch is not available. In these cases, you can open the folder menu located in the upper-right part of the screen. From this menu, you can choose from the available perspectives, similar to the previous screenshot.
 
