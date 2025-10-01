@@ -6,6 +6,7 @@ import { ProFeature, CenteredImage, FullScreenImage } from '@site/src/components
 
 # Workspaces
 
+<ProFeature />
 _Workspaces_ are a new way to organize your **locations** and **tag groups** in TagSpaces. They allow you to separate different contexts—such as work, personal projects, or hobbies—into their own dedicated spaces, making it easier to stay focused and organized.
 
 ---
@@ -24,22 +25,14 @@ _Workspaces_ are a new way to organize your **locations** and **tag groups** in 
 ### Creating a New workspace
 
 1. Open the advanced settings tab and scroll down.
-<!--
+2. Click on **“Create workspace”** to add a new workspace.
+
 <CenteredImage
-    caption="Screenshot of the workspaces menu in the sidebar"
-    src="/media/workspaces/workspaces-management.avif"
-    showCaption
-    maxWidth="300px"
-/> -->
-
-2. Click on **“Add workspace”** to create a new workspace.
-
-<!-- <CenteredImage
     caption="Screenshot of add workspace dialog"
-    src="/media/workspaces/workspaces-add-dialog.avif"
+    src="/media/workspaces/create-workspace.avif"
     showCaption
-    maxWidth="300px"
-/> -->
+    maxWidth="650px"
+/>
 
 3. In the opened dialog, you have to enter a short name for your workspace (e.g., WPG1, 🍭). The short name can be an abbreviation or an emoji and will be displayed after the name of the locations and tag group to which this workspace will be assigned.
 4. Enter a full name for your workspace (e.g., “Work Projects 1”).
@@ -50,15 +43,14 @@ _Workspaces_ are a new way to organize your **locations** and **tag groups** in 
 ### Switching Between Workspaces
 
 - Use the **workspaces dropdown** in the sidebar to switch between available workspaces.
+- When you switch, the UI updates to show only the locations and tag groups that belong to the selected workspace.
 
-<!-- <CenteredImage
-    caption="Screenshot of workspace dropdown menu"
-    src="/media/workspaces/workspaces-switch.avif"
+<CenteredImage
+    caption="Screenshot of workspaces' dropdown menu"
+    src="/media/workspaces/workspaces-changing.avif"
     showCaption
     maxWidth="300px"
-/> -->
-
-- When you switch, the UI updates to show only the locations and tag groups that belong to the selected workspace.
+/>
 
 ---
 
@@ -66,12 +58,12 @@ _Workspaces_ are a new way to organize your **locations** and **tag groups** in 
 
 - Open the **workspace settings dialog**.
 
-<!-- <CenteredImage
-    caption="Screenshot of workspace settings dialog"
-    src="/media/workspaces/workspaces-settings.avif"
+<CenteredImage
+    caption="Screenshot of the dialog where you can edit and delete workspaces"
+    src="/media/workspaces/edit-delete-workspace.avif"
     showCaption
-    maxWidth="300px"
-/> -->
+    maxWidth="650px"
+/>
 
 - From here, you can rename, reassign, or delete a workspace.
 
@@ -79,20 +71,36 @@ _Workspaces_ are a new way to organize your **locations** and **tag groups** in 
 
 ## Workspaces and Tag Groups
 
-- Each workspace can have its own **tag groups**, keeping your tags organized by context.
-- For example:
-  - In a **Work** workspace: `#clientA`, `#invoice`, `#meeting`.
-  - In a **Personal** workspace: `#travel`, `#recipes`, `#health`.
-- Switching workspaces also switches which tag groups are visible.
-  <!-- ![Screenshot of tag groups scoped to a workspace](./images/workspaces-tags.png) -->
+Each workspace can have its own **tag groups**, keeping your tags organized by context. For example:
+
+- In a **Work** workspace: `clientA`, `invoice`, `meeting`.
+- In a **Personal** workspace: `travel`, `recipes`, `health`.
+
+Switching workspaces also switches which tag groups are visible. If there are no tag groups assigned to the current workspace, all tag group will be displayed.
+
+You can assign a workspace to a tag group in the properties of a given tag group. In the **edit tag group** dialog, you will find a dropdown, with which you can assign the current tag group to a workspace. The **plus button** in this dropdown will the workspace creation dialog. The **minus button** will disconnect the workspace from the tag group.
+
+<CenteredImage
+    caption="Screenshot of the tag group properties dialog, where you can assign workspace to a tag group"
+    src="/media/workspaces/assign-workspace-taggroup.avif"
+    showCaption
+    maxWidth="650px"
+/>
 
 ---
 
 ## Workspaces and Locations
 
-- You can assign **locations** (folders or drives) to specific workspaces.
-- This ensures you’ll only see the relevant locations when working in a given workspace.
-  <!-- ![Screenshot of locations assigned to a workspace](./images/workspaces-locations.png) -->
+You can assign **locations** (folders or drives) to specific workspaces. This ensures you’ll only see the relevant locations when working in a given workspace.
+
+In order to do this, you have to open the properties of a given location, from the location's context menu. In the **More properties** area, you will find a dropdown, with which you can assign the current location to a workspace. The **plus button** in this dropdown will the workspace creation dialog. The **minus button** will disconnect the workspace from the location.
+
+<CenteredImage
+    caption="Screenshot of the location properties dialog, where you can assign workspace to a location"
+    src="/media/workspaces/assign-workspace-location.avif"
+    showCaption
+    maxWidth="650px"
+/>
 
 ---
 

@@ -171,7 +171,17 @@ src="/media/ai/ai-generated-pdf-description.avif"
 - Extraction of **dominant colors** in images
 - **Language configuration** for generated content
 
-### Upcoming AI Features
+## Custom prompts for the AI features
+
+<ProFeature /> In the bottom of the AI tab, there is a section called _Advanced_ which is closed by default. When you open it, you will find text areas where the prompts for the AI/LLM features can be adjusted.
+
+<CenteredImage
+caption="Adjust the prompt for the LLM engines in the settings"
+src="/media/ai/custom-ai-prompts.avif"
+/>
+
+
+## Upcoming AI Features
 
 The following features are on the development roadmap for TagSpaces. 
 - Integration with additional AI engines
@@ -5186,9 +5196,9 @@ In this dropdown, you can filter files by their size. The following options are 
     showCaption
   />
 
-### Filter by last modified date
+### Filter by creation and last modified date
 
-Here you can specify the time period in which the files you're searching for should have been modified. This filter supports the following options:
+Here you can specify the time period in which the files you're searching for should have been modified. This filters supports the following options:
 
 - **Today** - shows files and folders modified today.
 - **Yesterday** - shows results modified yesterday.
@@ -5199,7 +5209,7 @@ Here you can specify the time period in which the files you're searching for sho
 - **More than one year** - shows files and folders older than one year.
 
 <CenteredImage
-    caption="Options for searching by last modified date"
+    caption="Options for searching by creation and last modified date"
     src="/media/search/tagspaces-search-by-last-modified-date.png"
     maxWidth="300px"
     showCaption
@@ -9271,6 +9281,9 @@ maxWidth={700}
 - **Enable mobile mode**: Switch the app to mobile mode for use on small screens or smaller app window sizes.
 - **Enable generating thumbnails and search index in a separate process**: Thumbnails and the search index are generated in a separate process by default for better performance. You can disable this and use the main app process, but this may negatively impact performance.
 - **Show warning on opening files externally**: A warning will appear when opening files with external programs to prevent accidental execution of malicious files (e.g., an .exe file on Windows).
+- **Tag delimiter**: The character used in the file names to separate the tags. Example: In the file name file1[TAG1_TAG2].txt , \_ is the delimiter.
+- **Prefix for tag container**: The character which is placed in the front of the tag container. Example: In the file name 'file1*[TAG1].txt', '*' is the prefix.
+- **Max collected tags**: the maximal amount of tags which will be collected in the "Collected Tags" tag group.
 - **Enable location tags** <ProFeature />: Store tag groups outside the main tag library in the location itself. Learn more [here](/ui/taglibrary/#location-tags).
 - **Geo tagging format** <ProFeature />: Choose from the following geo-tagging formats:
   - **PlusCode**: Encodes latitude and longitude coordinates into a short text representation, e.g., `8FV9P8RR+MW` for `47.741687, 7.342313`.
@@ -9945,6 +9958,7 @@ import { ProFeature, CenteredImage, FullScreenImage } from '@site/src/components
 
 # Workspaces
 
+<ProFeature />
 _Workspaces_ are a new way to organize your **locations** and **tag groups** in TagSpaces. They allow you to separate different contexts—such as work, personal projects, or hobbies—into their own dedicated spaces, making it easier to stay focused and organized.
 
 ---
@@ -9963,22 +9977,14 @@ _Workspaces_ are a new way to organize your **locations** and **tag groups** in 
 ### Creating a New workspace
 
 1. Open the advanced settings tab and scroll down.
-<!--
+2. Click on **“Create workspace”** to add a new workspace.
+
 <CenteredImage
-    caption="Screenshot of the workspaces menu in the sidebar"
-    src="/media/workspaces/workspaces-management.avif"
-    showCaption
-    maxWidth="300px"
-/> -->
-
-2. Click on **“Add workspace”** to create a new workspace.
-
-<!-- <CenteredImage
     caption="Screenshot of add workspace dialog"
-    src="/media/workspaces/workspaces-add-dialog.avif"
+    src="/media/workspaces/create-workspace.avif"
     showCaption
-    maxWidth="300px"
-/> -->
+    maxWidth="650px"
+/>
 
 3. In the opened dialog, you have to enter a short name for your workspace (e.g., WPG1, 🍭). The short name can be an abbreviation or an emoji and will be displayed after the name of the locations and tag group to which this workspace will be assigned.
 4. Enter a full name for your workspace (e.g., “Work Projects 1”).
@@ -9989,15 +9995,14 @@ _Workspaces_ are a new way to organize your **locations** and **tag groups** in 
 ### Switching Between Workspaces
 
 - Use the **workspaces dropdown** in the sidebar to switch between available workspaces.
+- When you switch, the UI updates to show only the locations and tag groups that belong to the selected workspace.
 
-<!-- <CenteredImage
-    caption="Screenshot of workspace dropdown menu"
-    src="/media/workspaces/workspaces-switch.avif"
+<CenteredImage
+    caption="Screenshot of workspaces' dropdown menu"
+    src="/media/workspaces/workspaces-changing.avif"
     showCaption
     maxWidth="300px"
-/> -->
-
-- When you switch, the UI updates to show only the locations and tag groups that belong to the selected workspace.
+/>
 
 ---
 
@@ -10005,12 +10010,12 @@ _Workspaces_ are a new way to organize your **locations** and **tag groups** in 
 
 - Open the **workspace settings dialog**.
 
-<!-- <CenteredImage
-    caption="Screenshot of workspace settings dialog"
-    src="/media/workspaces/workspaces-settings.avif"
+<CenteredImage
+    caption="Screenshot of the dialog where you can edit and delete workspaces"
+    src="/media/workspaces/edit-delete-workspace.avif"
     showCaption
-    maxWidth="300px"
-/> -->
+    maxWidth="650px"
+/>
 
 - From here, you can rename, reassign, or delete a workspace.
 
@@ -10018,20 +10023,36 @@ _Workspaces_ are a new way to organize your **locations** and **tag groups** in 
 
 ## Workspaces and Tag Groups
 
-- Each workspace can have its own **tag groups**, keeping your tags organized by context.
-- For example:
-  - In a **Work** workspace: `#clientA`, `#invoice`, `#meeting`.
-  - In a **Personal** workspace: `#travel`, `#recipes`, `#health`.
-- Switching workspaces also switches which tag groups are visible.
-  <!-- ![Screenshot of tag groups scoped to a workspace](./images/workspaces-tags.png) -->
+Each workspace can have its own **tag groups**, keeping your tags organized by context. For example:
+
+- In a **Work** workspace: `clientA`, `invoice`, `meeting`.
+- In a **Personal** workspace: `travel`, `recipes`, `health`.
+
+Switching workspaces also switches which tag groups are visible. If there are no tag groups assigned to the current workspace, all tag group will be displayed.
+
+You can assign a workspace to a tag group in the properties of a given tag group. In the **edit tag group** dialog, you will find a dropdown, with which you can assign the current tag group to a workspace. The **plus button** in this dropdown will the workspace creation dialog. The **minus button** will disconnect the workspace from the tag group.
+
+<CenteredImage
+    caption="Screenshot of the tag group properties dialog, where you can assign workspace to a tag group"
+    src="/media/workspaces/assign-workspace-taggroup.avif"
+    showCaption
+    maxWidth="650px"
+/>
 
 ---
 
 ## Workspaces and Locations
 
-- You can assign **locations** (folders or drives) to specific workspaces.
-- This ensures you’ll only see the relevant locations when working in a given workspace.
-  <!-- ![Screenshot of locations assigned to a workspace](./images/workspaces-locations.png) -->
+You can assign **locations** (folders or drives) to specific workspaces. This ensures you’ll only see the relevant locations when working in a given workspace.
+
+In order to do this, you have to open the properties of a given location, from the location's context menu. In the **More properties** area, you will find a dropdown, with which you can assign the current location to a workspace. The **plus button** in this dropdown will the workspace creation dialog. The **minus button** will disconnect the workspace from the location.
+
+<CenteredImage
+    caption="Screenshot of the location properties dialog, where you can assign workspace to a location"
+    src="/media/workspaces/assign-workspace-location.avif"
+    showCaption
+    maxWidth="650px"
+/>
 
 ---
 

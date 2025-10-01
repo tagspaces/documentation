@@ -172,9 +172,9 @@ In this dropdown, you can filter files by their size. The following options are 
     showCaption
   />
 
-### Filter by last modified date
+### Filter by creation and last modified date
 
-Here you can specify the time period in which the files you're searching for should have been modified. This filter supports the following options:
+Here you can specify the time period in which the files you're searching for should have been modified. This filters supports the following options:
 
 - **Today** - shows files and folders modified today.
 - **Yesterday** - shows results modified yesterday.
@@ -185,7 +185,7 @@ Here you can specify the time period in which the files you're searching for sho
 - **More than one year** - shows files and folders older than one year.
 
 <CenteredImage
-    caption="Options for searching by last modified date"
+    caption="Options for searching by creation and last modified date"
     src="/media/search/tagspaces-search-by-last-modified-date.png"
     maxWidth="300px"
     showCaption

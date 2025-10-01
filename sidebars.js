@@ -139,7 +139,7 @@ const sidebars = {
         {
           type: "link",
           label: "Managing",
-          href: "/workspaces#manage",
+          href: "/workspaces#managing-workspaces",
         },
       ],
     },
