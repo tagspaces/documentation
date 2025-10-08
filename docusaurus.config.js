@@ -124,8 +124,8 @@ const config = {
                 href: "https://www.tagspaces.org/products/pro/",
               },
               {
-                label: "Enterprise",
-                href: "https://www.tagspaces.org/products/enterprise/",
+                label: "Custom",
+                href: "https://www.tagspaces.org/products/custom/",
               },
               {
                 label: "Demo",
@@ -235,6 +235,11 @@ const config = {
     //   async: true,
     //   // "data-blockingmode": "manual",
     // },
+    {
+      // Cookie banner
+      src: "https://cloud.ccm19.de/app.js?apiKey=83273bf36c280a26000eaa459a4c0b928a4f337a6669db99&amp;domain=68e3bd8d7d6dd947690f2382",
+      referrerpolicy: "origin",
+    },
     {
       src: "https://plausible.io/js/plausible.js",
       "data-domain": "docs.tagspaces.org",
