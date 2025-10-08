@@ -19,23 +19,49 @@ const config = {
   plugins: [
     require.resolve("docusaurus-lunr-search"),
     [
-      "docusaurus-plugin-generate-llms-txt",
+      "docusaurus-plugin-llms",
       {
-        outputFile: "llms.txt", // defaults to llms.txt if not specified
+        // Options here
+        generateLLMsTxt: true,
+        generateLLMsFullTxt: true,
+        docsDir: "docs",
+        // ignoreFiles: ['advanced/*', 'private/*'],
+        title: "TagSpaces Documentation",
+        description: "Complete reference documentation for TagSpaces",
+        includeBlog: true,
+        // Content cleaning options
+        excludeImports: true,
+        removeDuplicateHeadings: true,
+        // Generate individual markdown files following llmstxt.org specification
+        generateMarkdownFiles: true,
+        // Control documentation order
+        // includeOrder: [
+        //   'getting-started/*',
+        //   'guides/*',
+        //   'api/*',
+        // ],
+        // includeUnmatchedLast: true,
+        // // Path transformation options
+        // pathTransformation: {
+        //   // Paths to ignore when constructing URLs (will be removed if found)
+        //   ignorePaths: ['docs'],
+        //   // Paths to add when constructing URLs (will be prepended if not already present)
+        //   addPaths: ['api'],
+        // },
       },
     ],
-    // [
-    //   "@docusaurus/plugin-client-redirects",
-    //   {
-    //     redirects: [
-    //       {
-    //         from: ["/tutorials/web-edition-setup"],
-    //         to: "/tutorials/setup-tagspaces-web",
-    //       },
-    //     ],
-    //   },
-    // ],
   ],
+  // [
+  //   "@docusaurus/plugin-client-redirects",
+  //   {
+  //     redirects: [
+  //       {
+  //         from: ["/tutorials/web-edition-setup"],
+  //         to: "/tutorials/setup-tagspaces-web",
+  //       },
+  //     ],
+  //   },
+  // ],
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
