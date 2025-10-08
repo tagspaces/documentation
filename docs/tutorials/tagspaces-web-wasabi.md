@@ -13,9 +13,9 @@ similar to the [demo web page](https://www.tagspaces.org/demo/) of TagSpaces.
 where the customer do not have to pay for download(egress) traffic.
 This tutorial can be used to make a similar setup with other S3 providers such as [AWS S3](https://aws.amazon.com/s3/).
 
-:::info
-If you need a solution, where TagSpaces is accessible behind a login, you may take a look on [TagSpaces Enterprise](https://www.tagspaces.org/products/enterprise/). Here we offer a setup based on AWS services supporting user management, 2FA, automatic indexing and countless customization possibilities.
-:::
+<!-- :::info
+If you need a solution, where TagSpaces is accessible behind a login, you may take a look on [TagSpaces Custom](https://www.tagspaces.org/products/custom/). Here we offer a setup based on AWS services supporting user management, 2FA, automatic indexing and countless customization possibilities.
+::: -->
 
 ## Hosting the TagSpaces web app
 

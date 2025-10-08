@@ -3,7 +3,7 @@ title: Setup Self-hosted TagSpaces based on WebDAV
 ---
 
 :::caution
-Deprecated functionality: The here described functionality is not supported actively anymore. For a self hosted web version please use [TagSpaces Enterprise](https://www.tagspaces.org/products/enterprise/)
+Deprecated functionality: The here described functionality is not supported anymore.
 :::
 
 ## Motivation

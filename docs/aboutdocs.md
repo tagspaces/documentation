@@ -37,7 +37,7 @@ Bulleted lists will be used to
 
 There are currently two types of symbols, apart from the usual text formatting and annotations, that you can find on these pages:
 
-- <ProFeature /> - means that the described feature is part of the TagSpaces Pro and Enterprise editions.
+- <ProFeature /> - means that the described feature is part of the TagSpaces Pro and Custom editions.
 - ⚒ - means that the section is not ready yet and may contain unclear, or not up-to-date information, or sections might be missing entirely.
 
 ## Contribution

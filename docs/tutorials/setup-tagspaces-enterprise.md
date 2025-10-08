@@ -1,6 +1,6 @@
 ---
-id: setup-tagspaces-enterprise
-title: Setup TagSpaces Enterprise
+id: setup-tagspaces-custom
+title: Setup TagSpaces Custom
 tags: [tutorial]
 ---
 

@@ -41,7 +41,7 @@ Once you have successfully created the bucket you should see the following scree
 
 ## Step 2 - Set the CORS settings of the bucket
 
-This is an optional step, needed only if you want to access the bucket from [TagSpaces Enterprise](https://www.tagspaces.org/products/enterprise/) edition.
+This is an optional step, needed only if you want to access the bucket from the web version of TagSpaces.
 
 ![Create S3 bucket](/media/aws/aws-s3-cors.png)
 
@@ -58,7 +58,7 @@ The JSON config, can be copied from the section bellow.
 ]
 ```
 
-> You can remove the _PUT_ and _DELETE_ lines, if you want to disable the writing and deleting operation from TagSpaces Enterprise.
+> You can remove the _PUT_ and _DELETE_ lines, if you want to disable the writing and deleting operation from TagSpaces Custom.
 
 > It is recommended to put in the _AllowedOrigin_ line, the domain from which you will access this bucket. E.g.: https://example.com
 
