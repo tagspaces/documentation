@@ -161,7 +161,7 @@ maxWidth={700}
 - **Geo tagging format** <ProFeature />: Choose from the following geo-tagging formats:
   - **PlusCode**: Encodes latitude and longitude coordinates into a short text representation, e.g., `8FV9P8RR+MW` for `47.741687, 7.342313`.
   - **MGRS**: Military Grid Reference System, which encodes coordinates like `4QFJ12345678`.
-- **Map tile servers** <ProFeature />: TagSpaces uses OpenStreetMap-based maps for its geotagging features. You can add custom map tile servers here, including from [this list of common servers](https://wiki.openstreetmap.org/wiki/Tile_servers) or your own server for an internet-independent geo-tagging system.
+- **Map tile servers** <ProFeature />: TagSpaces uses OpenStreetMap-based maps for its geotagging features. You can add custom map tile servers here, including from [this list of common servers](https://wiki.openstreetmap.org/wiki/Raster_tile_providers) or your own server for an internet-independent geo-tagging system.
 
   :::caution
   Please respect the policies and terms of use of the map service providers.
