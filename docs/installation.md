@@ -2,6 +2,8 @@
 title: Installing TagSpaces
 ---
 
+import { ProFeature, CenteredImage } from '@site/src/components/CommonBlocks';
+
 Here you will learn how to install TagSpaces on different operating systems.
 
 ## Getting the Application
@@ -14,9 +16,9 @@ The free versions of TagSpaces are available for download from the [Downloads Se
 
 ### New Version Notification
 
-When a new version of the application is available, you will see a notification in the lower-left corner of the app. Clicking the **GET NOW** button will direct you to the TagSpaces website download page, where you can obtain the latest community version. PRO users should use the links in their order confirmation email to access the latest version.
+When a new version of the application is available, you will see a notification in the lower-left corner of the app. Clicking the **Get It Now** button will direct you to the TagSpaces website download page, where you can obtain the latest community version. **TagSpaces Pro** users should use the links in their order confirmation email to access the latest version or follow this [link](https://tagspacesstore.onfastspring.com/account).
 
-![New version notification](/media/core/new-version-available.png)
+<CenteredImage maxWidth={500} src="/media/core/new-version-available.png" caption="New version notification" showCaption/>
 
 :::tip
 If you prefer not to have TagSpaces check automatically for new versions, you can disable this functionality in the [settings](/ui/settings).
@@ -26,9 +28,9 @@ If you prefer not to have TagSpaces check automatically for new versions, you ca
 
 The Windows version of TagSpaces is distributed as either an `.exe` installer or a `.zip` archive file. The `.exe` file can be directly executed to start the installation. The `.zip` archive must be unzipped into a folder on your system. In the unpacked folder, you will find a file named `tagspaces.exe`, which can be executed with a double-click.
 
-The installer is signed with modern software certificates, ensuring authenticity. The screenshot below shows the certificate during installation on Windows.
+The installer is signed with modern software certificates, ensuring authenticity. By a right click on installer and choosing **Properties**, you can check the certificate of the installer, see the screenshot for orientation.
 
-![Screenshot showing signed installer under Windows](/media/signed-windows-installer.png)
+<CenteredImage maxWidth={600} src="/media/signed-windows-installer.png" caption="Screenshot showing how to check if the Windows installer is signed" showCaption/>
 
 :::tip
 The **profile** folder under Windows is located here: `C:\Users\Your_User_Name\AppData\Roaming\TagSpaces`

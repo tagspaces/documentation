@@ -56,11 +56,12 @@ const sidebars = {
       type: "category",
       label: "Get Started",
       items: [
+        "tutorials/how-to-start",
         "ui/userinterface",
         {
           type: "link",
-          label: "Left Drawer",
-          href: "/ui/userinterface/#left-drawer",
+          label: "Left Area",
+          href: "/ui/userinterface/#left-area",
         },
         {
           type: "link",

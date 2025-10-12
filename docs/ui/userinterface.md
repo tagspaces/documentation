@@ -1,10 +1,10 @@
 ---
-title: Introduction
+title: User Interface Intro
 ---
 
 import { ProFeature, CenteredImage, CenteredVideo } from '@site/src/components/CommonBlocks';
 
-# Get Started - User Interface Areas
+# User Interface Introduction
 
 TagSpaces opens as a single-window application designed to maximize space usage, whether on large screens or small mobile displays. Its user interface follows Google's Material Design guidelines, making it adaptable and consistent across operating systems and platforms.
 
@@ -25,9 +25,9 @@ The application's user interface consists of the following main areas:
 5. **[File](/files/#file-properties) / [Folder](/folders/#folder-properties) Properties** - View the properties of the opened file or folder.
 6. **[File Preview](#file-preview)** - Preview and/or edit the current file here.
 
-## Left Drawer
+## Left Area
 
-The main drawer is divided into three sub-areas:
+The main user interface area is divided into three sub-areas:
 
 **Top Area**: Displays the app's logo and application version. Clicking the logo opens the **About dialog**, where you can check licensing details and new versions. Below the logo, the **Create New (1)** button opens a dialog to [create files](/creating-files), and the **Open Link (2)** button open new internal or external [link](/linking). The rightmost button **(3)** toggles between **light** and **dark** [themes](#dark-mode-and-themes). In the [TagSpaces Custom](https://www.tagspaces.org/products/custom/) version, this button can open the logged user's properties.
 
