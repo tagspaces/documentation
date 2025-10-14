@@ -39,7 +39,37 @@ From a security perspective it makes sense to have a separate policy for every b
 
 The following policy gives you a full access on the bucket.
 
+:::note
+In the policy bellow you have to replace `<BucketName>` with the name of your bucket.
+:::
+
 ```json
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "AllowListBucket",
+      "Effect": "Allow",
+      "Action": ["s3:ListBucket"],
+      "Resource": "arn:aws:s3:::<BucketName>"
+    },
+    {
+      "Sid": "AllowReadWriteObjects",
+      "Effect": "Allow",
+      "Action": [
+        "s3:GetObject",
+        "s3:PutObject",
+        "s3:DeleteObject",
+        "s3:GetObjectAcl",
+        "s3:PutObjectAcl"
+      ],
+      "Resource": "arn:aws:s3:::<BucketName>/*"
+    }
+  ]
+}
+```
+
+<!-- ```json
 {
   "Version": "2012-10-17",
   "Statement": [
@@ -75,7 +105,7 @@ The following policy gives you a full access on the bucket.
     }
   ]
 }
-```
+``` -->
 
 :::caution
 The list of allowed actions in the previous JSON file is only a suggestion. The actions can be reduced, to just those which are really needed for your use case.
@@ -85,7 +115,7 @@ The list of allowed actions in the previous JSON file is only a suggestion. The 
 
 Depending on your use-case you may want to access the bucket in a read-only mode, with the following policy you can achieve this.
 
-```json
+<!-- ```json
 {
   "Version": "2012-10-17",
   "Statement": [
@@ -97,13 +127,62 @@ Depending on your use-case you may want to access the bucket in a read-only mode
     }
   ]
 }
+``` -->
+
+```json
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "AllowListBucket",
+      "Effect": "Allow",
+      "Action": ["s3:ListBucket"],
+      "Resource": "arn:aws:s3:::<BucketName>"
+    },
+    {
+      "Sid": "AllowReadObjects",
+      "Effect": "Allow",
+      "Action": ["s3:GetObject", "s3:GetObjectAcl"],
+      "Resource": "arn:aws:s3:::<BucketName>/*"
+    }
+  ]
+}
 ```
 
-### Policy with read-write access for a folder
+:::note
+In the policy above you have to replace `<BucketName>` with the name of your bucket.
+:::
+
+### Policy with read-only access for a folder
 
 Sometimes you want to share just a folder or sub-folder and not the whole bucket with someone. For this use case you can use the following policy:
 
 ```json
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "AllowListObjectsInFolder",
+      "Effect": "Allow",
+      "Action": "s3:ListBucket",
+      "Resource": "arn:aws:s3:::<BucketName>",
+      "Condition": {
+        "StringLike": {
+          "s3:prefix": ["<FolderName>", "<FolderName>/*"]
+        }
+      }
+    },
+    {
+      "Sid": "AllowReadObjectsInFolder",
+      "Effect": "Allow",
+      "Action": ["s3:GetObject", "s3:GetObjectVersion", "s3:GetObjectAcl"],
+      "Resource": "arn:aws:s3:::<BucketName>/<FolderName>/*"
+    }
+  ]
+}
+```
+
+<!-- ```json
 {
   "Version": "2012-10-17",
   "Statement": [
@@ -153,7 +232,7 @@ Sometimes you want to share just a folder or sub-folder and not the whole bucket
     }
   ]
 }
-```
+``` -->
 
 :::note
 In the policy above you have to replace `<BucketName>` with the name of your bucket and `<FolderName>` with the path of your folder or sub-folder.
@@ -179,21 +258,22 @@ You can press the copy button in order to save the keys in for example the passw
 
 ## Connect the bucket as location in TagSpaces
 
-So now we are ready to connect the Wasabi bucket in TagSpaces. You should choose the "Connect a location" button shown in the next screenshot and choose "Object Storage" as location type.
+So now we are ready to connect the Wasabi bucket in TagSpaces. You should choose the **New location** menu item from the menu which will be opened after clicking the **New**-Button, visible on the next screenshot.
 
-![Connect the bucket in TagSpaces Pro](wasabi-locations/connect-bucket.png)
+![Connect the bucket in TagSpaces Pro](wasabi-locations/connect-bucket.avif)
 
 Now you will be able to enter additional parameters needed for the connection:
 
+- **Type** - please choose here Object Storage from the dropdown
 - **Location Name** - a free text for the name of the location in TagSpaces
-- **Location Path** - optional parameter
+- **Location Path** - optional parameter, where you can specify a sub-folder of the bucket as root folder for the location
 - **Access Key** - generated in the user creation step of this tutorial
 - **Secret Access Key** - generated in the user creation step
-- **Bucket Nama** - as entered in the bucket creation step of this tutorial
-- **Endpoint URL** - for example https://s3.eu-central-1.wasabisys.com/ for the eu-central-1 region of Wasabi, as select in the bucket creation step
+- **Bucket Name** - as entered in the bucket creation step of this tutorial
+- **Endpoint URL** - as select in the bucket creation step (e.g., https://s3.eu-central-1.wasabisys.com/ for the eu-central-1 region of Wasabi,)
 
 Once you confirm the dialog, TagSpaces will try to connect to the bucket and show the files and folders in the bucket.
 
 ## Conclusion
 
-In this tutorial we learned how using **TagSpaces** in combination with object storage service providers such as **Wasabi** will allows you to easily create and manage you own scalable Dropbox like application.
+In this tutorial we learned how using **TagSpaces** in combination with object storage service providers such as **Wasabi** will allows you to easily create and manage you own **scalable Dropbox like** application.
