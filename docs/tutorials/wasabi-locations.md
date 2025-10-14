@@ -270,7 +270,7 @@ Now you will be able to enter additional parameters needed for the connection:
 - **Access Key** - generated in the user creation step of this tutorial
 - **Secret Access Key** - generated in the user creation step
 - **Bucket Name** - as entered in the bucket creation step of this tutorial
-- **Endpoint URL** - as select in the bucket creation step (e.g., https://s3.eu-central-1.wasabisys.com/ for the eu-central-1 region of Wasabi,)
+- **Endpoint URL** - as select in the bucket creation step (e.g., https://s3.eu-central-1.wasabisys.com/ for the eu-central-1 region of Wasabi)
 
 Once you confirm the dialog, TagSpaces will try to connect to the bucket and show the files and folders in the bucket.
 

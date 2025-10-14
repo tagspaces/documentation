@@ -1,12 +1,11 @@
 ---
 title: How to start
 tags: [tutorial]
-draft: true
 ---
 
 <!-- 🧭 TagSpaces as manager for personal data storage -->
 
-import { ProFeature, CenteredImage } from '@site/src/components/CommonBlocks';
+import { ProFeature, CenteredImage, CenteredVideo } from '@site/src/components/CommonBlocks';
 
 # Getting Started with TagSpaces
 
@@ -15,7 +14,7 @@ This guide will help you get started quickly after downloading and installing th
 
 ---
 
-## Launching TagSpaces for the First Time
+## Launching for the First Time
 
 When you start TagSpaces, after you accept the software license, you’ll be greeted by the **Welcome Screen**.  
 From here, you can:
@@ -62,15 +61,17 @@ The standard locations are fully optional you can remove them or create new loca
 
 <CenteredImage src="/media/how-to-start/adjusting-location.avif" caption="Giving a suitable name for your location" showCaption/>
 
-TagSpaces takes automatically the name of the chosen folder as name for the location. You can change this name something else in this dialog.
+TagSpaces takes automatically the name of the chosen folder as name for the location. You can change this name to something else in this dialog.
 
 5. Now you can browse, tag, and organize all files inside that location directly within TagSpaces.
 
 <CenteredImage src="/media/how-to-start/listing-location.avif" caption="Giving a suitable name for your location" showCaption/>
 
 :::info Connecting cloud locations
-TagSpaces can connect to folders located on object storage. The object storage can be hosted on a [NAS](/tutorials/folders-as-objectstorage-with-s3proxy) or in the Cloud like on [AWS S3](/tutorials/s3-bucket-locations), [Cloudflare R2](/tutorials/tagspaces-web-cloudflare), [Wasabi](/tutorials/wasabi-locations) or [Contabo](/tutorials/wasabi-locations).
+TagSpaces can connect to folders located on object storage. The object storage can be hosted on a [NAS](/tutorials/folders-as-objectstorage-with-s3proxy) or in the Cloud like on [AWS S3](/tutorials/s3-bucket-locations) or [Wasabi](/tutorials/wasabi-locations).
 :::
+
+ <!-- [Cloudflare R2](/tutorials/tagspaces-web-cloudflare) or [Contabo](/tutorials/contabo-locations). -->
 
 ---
 
@@ -79,10 +80,8 @@ TagSpaces can connect to folders located on object storage. The object storage c
 TagSpaces uses a clean, two-panel layout:
 
 - **Left panel:** lists your connected locations and tag groups
-- **Main area:** displays folder contents using a **perspective** (grid, list, gallery, map, etc.)
+- **Main area:** displays folder contents using a **perspective** (grid, list, gallery, kanban, etc.)
 - **Top bar:** provides search, sorting, and settings access
-
-Drag and drop files freely between folders or arrange them visually in Kanban boards.
 
 ---
 
@@ -90,13 +89,23 @@ Drag and drop files freely between folders or arrange them visually in Kanban bo
 
 Tags are at the heart of TagSpaces. They help you organize and find files faster.
 
-**To tag a file:**
+The following video how you can apply tags to files and folder:
 
-1. Select the file.
-2. Open the **Tag Panel** on the right.
-3. Drag an existing tag, or create a new one.
+- By adding tags from the tag library using drag and drop
+- By dragging tags from one file and dropping them onto another
+- By using the tagging dialog to add and remove tags
 
-You can group tags by category — for example:  
+<CenteredVideo
+    src="/media/videos/file-and-folder-tagging.mp4"
+    videoAutoplay={false}
+    posterUrl="/media/videos/file-and-folder-tagging.jpg"
+    maxWidth="100%"
+    autoPlay
+    caption="Video showing various ways to apply tags to files and folders"
+    showCaption
+/>
+
+You can group tags by category in [tag groups](/ui/taglibrary#tag-groups) — for example:  
 🧾 _Document Type_, 🎨 _Project_, 🌍 _Location_, or 📅 _Year_.
 
 > ⚙️ **Tagging method:** Choose between storing tags in filenames or in sidecar files (`.json`).  
