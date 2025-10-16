@@ -405,6 +405,11 @@ const sidebars = {
       ],
     },
     {
+      type: "link",
+      label: "Web Clipper",
+      href: "/web-clipper",
+    },
+    {
       type: "category",
       label: "Advanced Topics",
       items: [
@@ -422,6 +427,7 @@ const sidebars = {
       type: "category",
       label: "Tutorials",
       items: [
+        "tutorials/overview",
         "web-clipper",
         "tutorials/file-syncing",
         "tutorials/sharing-tags",

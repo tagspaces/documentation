@@ -6,7 +6,7 @@ draft: false
 
 import { ProFeature, CenteredImage, CenteredVideo } from '@site/src/components/CommonBlocks';
 
-[Contabo](https://contabo.com/de/object-storage/) offers affordable cloud infrastructure and storage solutions hosted in Germany and other EU locations. Currently (October 2025) they are offering 250 GB for roughly 3 € per month, which sound very reasonable. For users in the European Union or those concerned about **GDPR compliance**, Contabo provides a strong alternative to US-based cloud providers by keeping your data under strict EU privacy and data protection laws.
+[Contabo](https://contabo.com/de/object-storage/) offers affordable cloud infrastructure and storage solutions hosted in Germany and other EU locations. Currently (October 2025) they are offering 250 GB for roughly 3 € per month, which sound very reasonable. For users in the European Union or those concerned about **GDPR compliance**, Contabo provides a strong alternative to US-based cloud providers by keeping your data under strict EU privacy and data protection laws. Another advantage is the unlimited and free traffic for downloading and uploading files from/to the object storage.
 
 In this tutorial, we’ll walk through how to set up **Contabo Object Storage** as a location in **TagSpaces**, allowing you to manage, tag, and browse your files directly from Contabo’s S3-compatible storage.
 
@@ -53,7 +53,7 @@ Now it’s time to connect your Contabo storage to **TagSpaces**.
    - **Location name** – any name you prefer
    - **Bucket name** – the name of your Contabo bucket
    - **Access key** and **Secret key** – from the previous step
-   - **URL** – the endpoint from your bucket list
+   - **Endpoint URL** – the endpoint from your bucket list
 
 :::important
 Remove the **bucket name** from the URL when entering it into TagSpaces, e.g.: https://eu2.contabostorage.com/.

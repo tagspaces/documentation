@@ -23,10 +23,8 @@ From here, you can:
 - Explore the **intro tour** to understand the interface
 - Open existing folders on your computer or cloud storage
 
-<!-- > 💡 **Tip:**  -->
-
 :::tip
-TagSpaces never uploads your data anywhere by default. All your files stay where they are — on your local drive or your object storage.
+TagSpaces never uploads your data anywhere by default. All your files stay where they are — on your local drive. If your location is on object storage, then your files stay in this storage, unless your download them.
 :::
 
 ---
@@ -68,14 +66,14 @@ TagSpaces takes automatically the name of the chosen folder as name for the loca
 <CenteredImage src="/media/how-to-start/listing-location.avif" caption="Giving a suitable name for your location" showCaption/>
 
 :::info Connecting cloud locations
-TagSpaces can connect to folders located on object storage. The object storage can be hosted on a [NAS](/tutorials/folders-as-objectstorage-with-s3proxy) or in the Cloud like on [AWS S3](/tutorials/s3-bucket-locations) or [Wasabi](/tutorials/wasabi-locations).
+TagSpaces can connect to folders located on object storage. The object storage can be hosted on a [NAS](/tutorials/folders-as-objectstorage-with-s3proxy) or in the Cloud like on [AWS S3](/tutorials/s3-bucket-locations), [Contabo](/tutorials/contabo-storage) or [Wasabi](/tutorials/wasabi-locations).
 :::
 
- <!-- [Cloudflare R2](/tutorials/tagspaces-web-cloudflare) or [Contabo](/tutorials/contabo-locations). -->
+ <!-- [Cloudflare R2](/tutorials/tagspaces-web-cloudflare) -->
 
 ---
 
-## Navigating the Interface
+<!-- ## Navigating the Interface
 
 TagSpaces uses a clean, two-panel layout:
 
@@ -83,7 +81,7 @@ TagSpaces uses a clean, two-panel layout:
 - **Main area:** displays folder contents using a **perspective** (grid, list, gallery, kanban, etc.)
 - **Top bar:** provides search, sorting, and settings access
 
----
+--- -->
 
 ## Tagging Your Files and Folders
 
@@ -120,12 +118,16 @@ TagSpaces includes built-in editors for:
 - **Markdown** (recommended for note-taking)
 - **Plain text**
 - **HTML** (for formatted documents)
+- **Audio** (for dictation of audio notes)
 
 **To create a note:**
 
-1. Click the **“+ New File”** button.
-2. Select a format.
-3. Start typing — your note is saved as a regular file in your folder.
+1. Click the **“+ New”** button.
+2. Select the type of file you want to create
+3. Change the desired template (optional step)
+4. Start typing
+
+Your note is saved as a regular file in the current folder.
 
 ---
 
@@ -155,7 +157,7 @@ TagSpaces works with any file synchronization service:
 - Google Drive
 - Nextcloud
 - Syncthing
-- S3-compatible storage (Pro)
+- S3-compatible storage
 
 Connect the same folder as a location on multiple devices to keep tags and notes synced.
 
@@ -167,10 +169,8 @@ Personalize your workspace:
 
 - Light and dark modes
 - Adjustable language and default perspectives
-- Custom folder background colors (Pro)
+- Custom folder background colors
 - Tag color customization
-
-Go to **Settings → Appearance & Preferences** to tweak your setup.
 
 ---
 
