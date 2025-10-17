@@ -79,8 +79,8 @@ Now it’s time to connect your s3proxy bucket to **TagSpaces**.
 3. In the dialog, set the **Location Type** to **Object Storage**.
 4. Fill in the required fields:
    - **Location name** – any name you prefer
-   - **Bucket name** – the name of any sub folder of the bucket folder, which was specified in the previous steps
    - **Access key** and **Secret key** – as created earlier
+   - **Bucket name** – the name of any sub folder of the bucket folder, which was specified in the previous steps
    - **Endpoint URL** – the URL with port of the s3proxy server, it could begin with `http` or `https`, depending on the utilization of SSL certificate
 
 Once everything is set, click **OK** to create the location.

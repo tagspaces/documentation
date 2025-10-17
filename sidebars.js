@@ -434,6 +434,7 @@ const sidebars = {
         "tutorials/s3-bucket-locations",
         "tutorials/wasabi-locations",
         "tutorials/contabo-storage",
+        "tutorials/cloudflare-r2-storage",
         "tutorials/tagspaces-web-wasabi",
         "tutorials/folders-as-objectstorage-with-s3proxy",
         "tutorials/setup-minio-bucket-nas",
