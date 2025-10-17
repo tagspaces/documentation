@@ -72,9 +72,20 @@ More details for installation and running the application on Windows can be foun
 
 ## Connecting to TagSpaces
 
-Once the S3Proxy server is running you can connect in TagSpaces as shown in the following screenshot.
+Now it’s time to connect your s3proxy bucket to **TagSpaces**.
 
-![Connecting S3Proxy bucket in TagSpaces](/media/connecting-s3proxy-bucket.png)
+1. Open **TagSpaces**.
+2. Click the **New** button and select **New Location**.
+3. In the dialog, set the **Location Type** to **Object Storage**.
+4. Fill in the required fields:
+   - **Location name** – any name you prefer
+   - **Bucket name** – the name of any sub folder of the bucket folder, which was specified in the previous steps
+   - **Access key** and **Secret key** – as created earlier
+   - **Endpoint URL** – the URL with port of the s3proxy server, it could begin with `http` or `https`, depending on the utilization of SSL certificate
+
+Once everything is set, click **OK** to create the location.
+
+![Connecting S3Proxy bucket in TagSpaces](/media/locations/create-s3proxy-location.avif)
 
 ## Serving S3Proxy with SSL certificate
 
