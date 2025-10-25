@@ -25,6 +25,7 @@ import { ProFeature, CenteredImage, CenteredVideo } from '@site/src/components/C
 - [How to use AWS S3 buckets as locations](/tutorials/s3-bucket-locations/)
 - [How to use Contabo buckets as locations](/tutorials/contabo-storage/)
 - [How to use Wasabi buckets as locations](/tutorials/wasabi-locations/)
+- [How to use Cloudflare R2 buckets as locations](/tutorials/cloudflare-r2-storage/)
 - [Exposing local folders as object storage with S3Proxy](/tutorials/folders-as-objectstorage-with-s3proxy)
 - [How to use MinIO buckets hosted on NAS Server](/tutorials/setup-minio-bucket-nas/)
 - [How to use Garage buckets as locations](/tutorials/garage-storage/)

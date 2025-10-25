@@ -66,7 +66,7 @@ TagSpaces takes automatically the name of the chosen folder as name for the loca
 <CenteredImage src="/media/how-to-start/listing-location.avif" caption="Giving a suitable name for your location" showCaption/>
 
 :::info Connecting cloud locations
-TagSpaces can connect to folders located on object storage. The object storage can be hosted on a [NAS](/tutorials/folders-as-objectstorage-with-s3proxy) or in the Cloud like on [AWS S3](/tutorials/s3-bucket-locations), [Contabo](/tutorials/contabo-storage) or [Wasabi](/tutorials/wasabi-locations).
+TagSpaces can connect to folders located on object storage. The object storage can be hosted on a [NAS](/tutorials/folders-as-objectstorage-with-s3proxy) or in the Cloud like on [AWS S3](/tutorials/s3-bucket-locations), [Contabo](/tutorials/contabo-storage) [Wasabi](/tutorials/wasabi-locations) or [Cloudflare R2](/tutorials/cloudflare-r2-storage).
 :::
 
  <!-- [Cloudflare R2](/tutorials/tagspaces-web-cloudflare) -->
