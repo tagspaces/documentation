@@ -11,7 +11,7 @@ Here is a short list of services which can be used for syncing tagged files and 
 
 - Dropbox
 - Google Drive
-- Microsoft One Drive
+- Microsoft OneDrive
 
 or other P2P projects like:
 
@@ -20,8 +20,6 @@ or other P2P projects like:
 
 E2E Encryption can be achieved with [Cryptomator](https://cryptomator.org/). You can details about how to setup in this [tutorial](/tutorials/e2ee-with-tagspaces-and-cryptomator).
 
-The following image shows my current utilization of Dropbox in connection to TagSpaces.
+The following image shows a utilization of Dropbox in connection to TagSpaces. But this setup will most probably work with other service like Google Drive, MS OneDrive and other.
 
 ![Picture showing synching of tagged files with dropbox](/media/tagspaces-dropbox-sync.png)
-
-If you are using TagSpaces with any other sync service, please post a comment bellow. I am always keen to know details on the way you are using TagSpaces.

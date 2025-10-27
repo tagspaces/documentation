@@ -429,7 +429,7 @@ const sidebars = {
       items: [
         "tutorials/overview",
         "web-clipper",
-        "tutorials/file-syncing",
+        "tutorials/using-tagspaces-collaboratively",
         "tutorials/sharing-tags",
         "tutorials/s3-bucket-locations",
         "tutorials/wasabi-locations",

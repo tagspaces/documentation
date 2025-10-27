@@ -8,9 +8,7 @@ When a user opens a folder, the application automatically scans its contents and
 
 ## Thumbnails on Local Folders
 
-In the free version of TagSpaces, thumbnail generation is supported only for image and video file formats such as JPG, PNG, and MP4. Thumbnails for PDF file are also generated.
-
-The PRO version expands thumbnail generation to a broader range of file formats:
+When you navigate to a folder, TagSpaces will try to generated automatically thumbnails for the supported file types in this folder. The following file types are supported, a full list can be found [here](/supported-file-formats).
 
 - **Images:** PNG, JPG, BMP, GIF, SVG, WEBP, TIFF
 - **Videos:** WEBM, OGV, MP4, M4V
@@ -19,7 +17,7 @@ The PRO version expands thumbnail generation to a broader range of file formats:
 - **Bookmarks:** URL (using the embedded screenshot, if created with the TagSpaces [Web Clipper](/web-clipper/))
 - **Ebooks:** EPUB (using the integrated ebook cover image)
 - **Archives:** ZIP (using the first image found in the archive)
-- **Office Documents:** ODT, ODP, ODS, DOCX, XLSX, PPTX (using embedded preview images, if available)
+- **Office Documents:** PDF, ODT, ODP, ODS, DOCX, XLSX, PPTX (using embedded preview images, if available)
 
 <CenteredImage
     caption="Showing files with generated thumbnails in the grid perspective"
