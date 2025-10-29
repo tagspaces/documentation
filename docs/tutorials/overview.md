@@ -11,7 +11,7 @@ import { ProFeature, CenteredImage, CenteredVideo } from '@site/src/components/C
 - [How to start](/tutorials/how-to-start/)
 - [Collaboratively using tags and tag groups](/tutorials/sharing-tags/)
 - [How I manage my ever growing collection of photos?](https://www.tagspaces.org/blog/photo-management-process/)
-- [Syncing files between TagSpaces installations](/tutorials/file-syncing/)
+- [Using TagSpaces with other users or on many devices](/tutorials/using-tagspaces-collaboratively/)
 
 ## Advanced topics
 

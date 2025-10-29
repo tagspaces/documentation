@@ -198,12 +198,12 @@ flowchart
         direction TB
         subgraph PC1[Windows PC]
             direction RL
-            TSLoc1["TagSpaces S3 Location: Photos"]
-            TSLoc2["TagSpaces S3 Location: Projects"]
+            TSLoc1["Photos - S3 location in TagSpaces"]
+            TSLoc2["Projects - S3 location in TagSpaces"]
         end
-        subgraph MD1["Browser on iOS or Android"]
+        subgraph MD1["Browser on iOS / Android / Mac"]
             direction RL
-            TSLoc4["TagSpaces S3 Location: Projects"]
+            TSLoc4["Projects - S3 location in TagSpaces **Web**"]
         end
         subgraph S3Service1[AWS S3]
             direction BT
@@ -215,7 +215,7 @@ flowchart
         end
         subgraph MAC1[Mac Laptop]
             direction RL
-            TSLoc3["TagSpaces S3 Location: Photos"]
+            TSLoc3["Photos - S3 location in TagSpaces"]
         end
         TSLoc1 <-->|connected| SF1
         TSLoc2 <-->|connected| SF4
@@ -238,7 +238,7 @@ flowchart
 - Typically involves some setup and credential management
 - May incur cloud storage costs
 
-## Using local object storage on your NAS
+## Using object storage on your NAS
 
 If you prefer self-hosting or need a private cloud, you can run your own **S3-compatible storage** locally on a NAS or server.
 
@@ -248,9 +248,38 @@ Popular self-hosted object storage options include:
 - [S3Proxy](https://github.com/gaul/s3proxy) – Converts local filesystems into an S3 API
 - [Garage](https://garagehq.deuxfleurs.fr/) – Distributed, open-source storage
 
-These can all be connected as S3 locations in TagSpaces, just like cloud providers — but under your full control.
+These can all be connected as S3 locations in TagSpaces, just like cloud providers — but under your full control. See our dedicated tutorials for setup details:
 
+- [Exposing local folders as object storage with S3Proxy](/tutorials/folders-as-objectstorage-with-s3proxy)
 - [Using Garage with TagSpaces](/tutorials/garage-storage)
+- [How to use MinIO buckets hosted on NAS Server](/tutorials/setup-minio-bucket-nas/)
+
+```mermaid
+flowchart
+    subgraph Intranet[Your local network]
+        direction TB
+        subgraph PC1[Windows PC]
+            direction RL
+            TSLoc1["Photos - S3 location in TagSpaces"]
+        end
+        subgraph MD1["Browser on iOS / Android"]
+            direction RL
+            TSLoc3["Projects - S3 location in TagSpaces **Web**"]
+        end
+        subgraph NAS1[NAS]
+            direction BT
+            subgraph S3Service1["S3 service: s3Proxy, Garage"]
+                SF1["Object Storage Bucket: Photos"]
+            end
+        end
+        TSLoc1 <-->|connected| SF1
+        TSLoc3 <-->|connected| SF1
+    end
+    style Intranet fill:#e8e8e87d
+    style NAS1 fill:#b4b4b47d
+```
+
+<figcaption>Using TagSpaces with local S3 services running on NAS/Docker</figcaption>
 
 ✅ **Advantages**
 
@@ -282,7 +311,7 @@ flowchart
             TSSync1 <-->|connected| MND1
 
         end
-        subgraph CloudService[S3 Object Storage e.g. AWS S3, Wasabi, Minio]
+        subgraph CloudService[S3 Object Storage: AWS S3, Wasabi]
             direction BT
             SF1["Object Storage Bucket: Photos"]
         end
@@ -352,7 +381,3 @@ Because your tags are stored with your files — not locked inside a database �
 Whether you use Dropbox, Syncthing, your NAS, or a self-hosted S3 service, TagSpaces adapts to your workflow — empowering you to collaborate privately, flexibly, and without losing control of your data.
 
 **TagSpaces: organize everywhere, own your data.**
-
-```
-
-```
