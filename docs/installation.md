@@ -138,7 +138,7 @@ You can install the Chrome extension directly from the [Chrome Web Store](https:
 
 ## Running in Portable Mode
 
-The Windows, macOS and Linux versions of TagSpaces can run in "portable mode," allowing you to use the application from a USB stick or other portable devices. In this mode, all configuration data (such as tags, tag groups, and location connections) is stored in a folder called `_tsprofile_` within the same directory where the application is started, rather than in the home directory of the operating system.
+The Windows, macOS and Linux versions of TagSpaces can run in "portable mode," allowing you to use the application from a USB stick or other portable devices. In this mode, all configuration data (such as tags, tag groups, and location connections) is stored in a folder called `tsprofile` within the same directory where the application is started, rather than in the home directory of the operating system.
 
 ### On Windows and Linux
 
@@ -163,18 +163,18 @@ Extract the content of the DMG files, to the place where you want to have the po
 ./TagSpaces.app/Contents/MacOS/TagSpaces -p
 ```
 
-This will start the app in portable mode and create the `_tsprofile_` folder in the current folder. All the setting for the portable version will be stored in this folder.
+This will start the app in portable mode and create the `tsprofile` folder in the current folder. All the setting for the portable version will be stored in this folder.
 
 ### Updating the Portable Version
 
-To update a portable version of TagSpaces (e.g., on a USB stick), you simply need to replace the existing files and directories with the updated ones from the new installation package. Since the tag library and locations are stored in the `_tsprofile_` folder during portable mode, special care should be taken to preserve this folder during the update. Follow these steps to upgrade:
+To update a portable version of TagSpaces (e.g., on a USB stick), you simply need to replace the existing files and directories with the updated ones from the new installation package. Since the tag library and locations are stored in the `tsprofile` folder during portable mode, special care should be taken to preserve this folder during the update. Follow these steps to upgrade:
 
 1. Rename your existing `tagspaces` folder (e.g., to `tagspaces_old`).
 2. Extract the new TagSpaces zip file, which will create a fresh `tagspaces` folder.
-3. Copy or move the `_tsprofile_` folder from the old `tagspaces_old` directory into the newly created `tagspaces` folder.
+3. Copy or move the `tsprofile` folder from the old `tagspaces_old` directory into the newly created `tagspaces` folder.
 
-:::tip
-**Important:** Do **not** delete the `_tsprofile_` folder as it contains crucial data for your portable TagSpaces setup.
+:::caution
+**Important:** Do **not** delete the `tsprofile` folder as it contains crucial data for your portable TagSpaces setup.
 :::
 
 ### Portable Mode with the AppImage Package (Linux Only)
