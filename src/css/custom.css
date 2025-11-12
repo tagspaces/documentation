@@ -19,6 +19,25 @@
   --ifm-code-font-size: 95%;
 }
 
+/* @font-face {
+    font-family: NotoSansLight;
+    src: url(/static/fonts/NotoSans-Light.ttf)
+} */
+
+@font-face {
+    font-family: NotoSansRegular;
+    src: url(/static/fonts/NotoSans-Regular.ttf)
+}
+
+/* @font-face {
+    font-family: NotoSansBold;
+    src: url(/static/fonts/NotoSans-Bold.ttf)
+} */
+
+body {
+    font-family: NotoSansRegular,Arial
+}
+
 .docusaurus-highlight-code-line {
   background-color: rgb(72, 77, 91);
   display: block;
