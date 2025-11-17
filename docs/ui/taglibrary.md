@@ -275,7 +275,6 @@ Once activated, you will see a dropdown option called **Store Tag Group In** whe
 <CenteredImage
     caption="Choosing in which location to store the tag group"
     src="/media/taglibrary/editing-location-taggroup.avif"
-    maxWidth="500px"
     showCaption
   />
 
