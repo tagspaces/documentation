@@ -112,20 +112,20 @@ const config = {
           },
         ],
       },
-      announcementBar: {
-        id: "supportus",
-        backgroundColor: "#525252",
-        textColor: "white",
-        content:
-          '⭐️ If you like TagSpaces, upvote it on <a target="_blank" href="https://www.producthunt.com/posts/tagspaces-2">Product Hunt</a> or recommend it on <a target="_blank" rel="noopener noreferrer" href="https://alternativeto.net/software/tagspaces/about/">AlternativeTo</a>!! ⭐️',
-      },
       // announcementBar: {
-      //   id: "blackweek2022",
+      //   id: "supportus",
       //   backgroundColor: "#525252",
       //   textColor: "white",
       //   content:
-      //     'Black Week 2022 - 10% off for <a href="https://www.tagspaces.org/products/">TagSpaces Pro</a>!',
+      //     '⭐️ If you like TagSpaces, upvote it on <a target="_blank" href="https://www.producthunt.com/posts/tagspaces-2">Product Hunt</a> or recommend it on <a target="_blank" rel="noopener noreferrer" href="https://alternativeto.net/software/tagspaces/about/">AlternativeTo</a>!! ⭐️',
       // },
+      announcementBar: {
+        id: "blackweek2025",
+        backgroundColor: "#000000ff",
+        textColor: "white",
+        content:
+          '🎁 <b>Black Week 2025 - 15% off</b> for <a href="https://www.tagspaces.org/products/">TagSpaces Pro</a> with the code <b>2025BW</b>',
+      },
       footer: {
         style: "dark",
         links: [
