@@ -161,6 +161,10 @@ const config = {
                 label: "Demo",
                 href: "https://demo.tagspaces.com/",
               },
+              {
+                label: "llms.txt",
+                href: "https://docs.tagspaces.org/llms-full.txt",
+              },
             ],
           },
           {
