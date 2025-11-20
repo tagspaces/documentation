@@ -8,8 +8,6 @@ import { ProFeature, CenteredImage, CenteredVideo } from '@site/src/components/C
 
 In addition to previewing various file types, TagSpaces also allows you to create new files in several text-based formats, making it a great note-taking application.
 
-## Creating New Files
-
 To create a new file in TagSpaces, you have several options. The easiest way is to click the plus icon button, which is almost always visible in the application.
 
 <CenteredImage
@@ -18,76 +16,9 @@ To create a new file in TagSpaces, you have several options. The easiest way is 
     maxWidth="350px"
   />
 
-This opens the content creation menu, where you can choose from the following actions:
+This opens the content creation menu, where you can choose from the actions described bellow.
 
-- **New Plain Text File** - Creates a plain text file with the `.txt` extension.
-
-- **New Markdown File** - Creates a text file with the `.md` extension, which ill allow you to add content [Markdown](https://en.wikipedia.org/wiki/Markdown) format.
-
-<CenteredImage
-    caption="Dialog for creating markdown files"
-    src="/media/editcreate/create-markdown-file-dialog.avif"
-    maxWidth="550px"
-  />
-
-- **New HTML File** - Creates an HTML file with the `.html` extension, allowing you to add rich text content.
-
-At the top of the file creation dialogs, the automatically generated file name is displayed. The text is preselected, so you can easily change it to whatever you need. This is especially useful when creating new cards in the Kanban perspective. Below the text field, you will see the path where the file will be created. The default path is usually the current folder, but if no location is open, the file will be created in the root folder of the first location in your location manager.
-The file name follows this format: `note[20191113T164613].md` (or `.html` or `.txt`). The default file name includes a timestamp tag, which is explained bellow.
-
-- **New Link File** - Create a URL file, which contain a link to a web site. This files are supported natively on Mac and Windows. There are suitable for creating bookmarks.
-
-<CenteredImage
-    caption="Create new file with the plus button"
-    src="/media/editcreate/create-new-link-file.avif"
-    maxWidth="450px"
-  />
-
-- **New Audio File** - <ProFeature /> - Opens a dialog where you can record an audio note.
-
-<CenteredImage
-    caption="Create new file with the plus button"
-    src="/media/editcreate/create-new-audio-file.avif"
-    maxWidth="550px"
-  />
-
-- **New From Template** - <ProFeature /> - Opens a dialog where you can create files from different templates.
-
-<CenteredImage
-    caption="Create new files from templates"
-    src="/media/editcreate/new-from-template.avif"
-    maxWidth="550px"
-  />
-
-:::info
-The file template are completely customizable in the settings of the application. Just click the **Manage templates** button in the top of the dialog to open the [**file templates tab**](/ui/settings#file-templates) in the settings.
-:::
-
-- **New Form Device** - Allows you to import files into the app. See the [Importing Files](#importing-files) section for more details.
-- **New From URL** - Opens a dialog where you can enter a URL in the text field and click the **OK** button to start the download and save the file in the current folder.
-
-<CenteredImage
-    caption="Dialog for downloading files from URLs"
-    src="/media/editcreate/download-file-dialog.avif"
-    maxWidth="550px"
-  />
-
-:::info
-Downloading files from URLs generally works for files shared from object stores, but often fails due to CORS restrictions implemented by websites. As a workaround, you can use our **[browser extension](/web-clipper/)**.
-:::
-
-- **New Folder** - Opens the dialog for creating new folders, where beside the name you can choose also the folder's background color.
-
-<CenteredImage
-    caption="Dialog for creating new folders"
-    src="/media/editcreate/create-new-folder-dialog.avif"
-    maxWidth="550px"
-  />
-
-- **New Location** - Opens the dialog for creating a new location.
-- **New Window** - Opens a new application window
-
-### Timestamp as Default Tag
+**Timestamp as Default Tag**
 
 When you create a new file in TagSpaces, a timestamp in the format `YYYYMMDDThhmmss` is automatically added as a tag:
 
@@ -105,7 +36,7 @@ These timestamp tags ensure the uniqueness of automatically generated file names
 
 <!-- Such timestamps make it possible to easily group files from different locations based on the time of creation. Of course this would be possible by reading the same information from the file system, but tagging with the timestamp allows for greater flexibility. For example you can change the timestamp to anything you like, while keeping the original creation modification date of the file, and tagging the file will allow you to use TagSpaces's powerful grouping and organizing features in the same place you manage other tags. -->
 
-### Desktop app alternatives
+**Creating files in the desktop app**
 
 On the desktop version of the app, you can open the **Main Menu** (by pressing `ALT` on Windows or Linux) and then select **New File** from the **File menu**.
 
@@ -122,6 +53,100 @@ In the tray menu there is also an entry called **New file** which will open the 
     src="/media/core/tray-menu-macos.avif"
     maxWidth="300px"
   />
+
+## New Plain Text File
+
+Creates a plain text file with the `.txt` extension.
+
+## New Markdown File
+
+Creates a text file with the `.md` extension, which ill allow you to add content [Markdown](https://en.wikipedia.org/wiki/Markdown) format.
+
+<CenteredImage
+    caption="Dialog for creating markdown files"
+    src="/media/editcreate/create-markdown-file-dialog.avif"
+    maxWidth="550px"
+  />
+
+## New HTML File
+
+Creates an HTML file with the `.html` extension, allowing you to add rich text content.
+
+At the top of the file creation dialogs, the automatically generated file name is displayed. The text is preselected, so you can easily change it to whatever you need. This is especially useful when creating new cards in the Kanban perspective. Below the text field, you will see the path where the file will be created. The default path is usually the current folder, but if no location is open, the file will be created in the root folder of the first location in your location manager.
+The file name follows this format: `note[20191113T164613].md` (or `.html` or `.txt`). The default file name includes a timestamp tag, which is explained bellow.
+
+## New Link File
+
+Create a URL file, which contain a link to a web site. This files are supported natively on Mac and Windows. There are suitable for creating bookmarks.
+
+<CenteredImage
+    caption="Create new file with the plus button"
+    src="/media/editcreate/create-new-link-file.avif"
+    maxWidth="450px"
+  />
+
+:::tip
+The created link files can be then opened in TagSpaces with the [URL Viewer](/extensions/url-viewer/) extension.
+:::
+
+## New Audio File
+
+<ProFeature /> Opens a dialog where you can record an audio note.
+
+<CenteredImage
+    caption="Create new file with the plus button"
+    src="/media/editcreate/create-new-audio-file.avif"
+    maxWidth="550px"
+  />
+
+:::tip
+The recorded audio files can be played in TagSpaces with the [Media Player](/extensions/media-player/) extension.
+:::
+
+## New From Template
+
+<ProFeature /> Opens a dialog where you can create files from different templates.
+
+<CenteredImage
+    caption="Create new files from templates"
+    src="/media/editcreate/new-from-template.avif"
+    maxWidth="550px"
+  />
+
+:::info
+The file template are completely customizable in the settings of the application. Just click the **Manage templates** button in the top of the dialog to open the [**file templates tab**](/ui/settings#file-templates) in the settings.
+:::
+
+## New Form Device
+
+Allows you to import files into the app. See the [Importing Files](#importing-files) section for more details.
+
+## New From URL
+
+Opens a dialog where you can enter a URL in the text field and click the **OK** button to start the download and save the file in the current folder.
+
+<CenteredImage
+    caption="Dialog for downloading files from URLs"
+    src="/media/editcreate/download-file-dialog.avif"
+    maxWidth="550px"
+  />
+
+:::info
+Downloading files from URLs generally works for files shared from object stores, but often fails due to CORS restrictions implemented by websites. As a workaround, you can use our **[browser extension](/web-clipper/)**.
+:::
+
+## New Folder
+
+Opens the dialog for creating new folders, where beside the name you can choose also the folder's background color.
+
+<CenteredImage
+    caption="Dialog for creating new folders"
+    src="/media/editcreate/create-new-folder-dialog.avif"
+    maxWidth="550px"
+  />
+
+<!-- - **New Location** - Opens the dialog for creating a new location.
+- **New Window** - Opens a new application window -->
 
 ## Importing Files
 
