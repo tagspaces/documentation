@@ -22,7 +22,7 @@ Most common TagSpaces settings are accessible from the **General** tab.
 
 <FullScreenImage
 caption="Settings - General Tab"
-src="/media/settings/settings-general.jpg"
+src="/media/settings/settings-general.avif"
 maxWidth={700}
 />
 
@@ -41,6 +41,14 @@ maxWidth={700}
 - **Move deleted files or folders to trash bin**: When enabled, deleted files will be moved to the Trash, Trashbin, or Recyclebin depending on your operating system, allowing easy recovery in case of accidental deletion.
 - **Show files/directories with a dot (.) in front of the name**: Allows browsing hidden files in UNIX-like systems (Linux, macOS, BSD, etc.).
 - **Max search results**: Limit the maximum number of files and folders displayed in perspectives and search results.
+- **Enable mobile mode**: Switch the app to mobile mode for use on small screens or smaller app window sizes.
+- **Enable generating thumbnails and search index in a separate process**: Thumbnails and the search index are generated in a separate process by default for better performance. You can disable this and use the main app process, but this may negatively impact performance.
+- **Show warning on opening files externally**: A warning will appear when opening files with external programs to prevent accidental execution of malicious files (e.g., an .exe file on Windows).
+- **Tag delimiter**: The character used in the file names to separate the tags. Example: In the file name file1[TAG1_TAG2].txt , \_ is the delimiter.
+- **Prefix for tag container**: The character which is placed in the front of the tag container. Example: In the file name 'file1*[TAG1].txt', '*' is the prefix.
+- **Max collected tags**: the maximal amount of tags which will be collected in the "Collected Tags" tag group.
+- <ProFeature /> **Enable location tags**: Store tag groups outside the main tag library in the location itself. Learn more [here](/ui/taglibrary/#location-tags).
+- **Author**: a property which specifies an author's name, which can be inserted in the templates, by creating new files. On the desktop version this variable uses the user name of the operating system.
 
 ## File Types
 
@@ -151,24 +159,16 @@ src="/media/settings/settings-advanced.avif"
 maxWidth={700}
 />
 
-- **Enable mobile mode**: Switch the app to mobile mode for use on small screens or smaller app window sizes.
-- **Enable generating thumbnails and search index in a separate process**: Thumbnails and the search index are generated in a separate process by default for better performance. You can disable this and use the main app process, but this may negatively impact performance.
-- **Show warning on opening files externally**: A warning will appear when opening files with external programs to prevent accidental execution of malicious files (e.g., an .exe file on Windows).
-- **Tag delimiter**: The character used in the file names to separate the tags. Example: In the file name file1[TAG1_TAG2].txt , \_ is the delimiter.
-- **Prefix for tag container**: The character which is placed in the front of the tag container. Example: In the file name 'file1*[TAG1].txt', '*' is the prefix.
-- **Max collected tags**: the maximal amount of tags which will be collected in the "Collected Tags" tag group.
-- **Enable location tags** <ProFeature />: Store tag groups outside the main tag library in the location itself. Learn more [here](/ui/taglibrary/#location-tags).
-- **Geo tagging format** <ProFeature />: Choose from the following geo-tagging formats:
+- <ProFeature /> **Workspaces**: a place where you can manage [workspaces](/workspaces) for the application.
+- <ProFeature /> **Geo tagging format**: Choose from the following geo-tagging formats:
   - **PlusCode**: Encodes latitude and longitude coordinates into a short text representation, e.g., `8FV9P8RR+MW` for `47.741687, 7.342313`.
   - **MGRS**: Military Grid Reference System, which encodes coordinates like `4QFJ12345678`.
-- **Map tile servers** <ProFeature />: TagSpaces uses OpenStreetMap-based maps for its geotagging features. You can add custom map tile servers here, including from [this list of common servers](https://wiki.openstreetmap.org/wiki/Raster_tile_providers) or your own server for an internet-independent geo-tagging system.
+- <ProFeature /> **Map tile servers**: TagSpaces uses OpenStreetMap-based maps for its geotagging features. You can add custom map tile servers here, including from [this list of common servers](https://wiki.openstreetmap.org/wiki/Raster_tile_providers) or your own server for an internet-independent geo-tagging system.
 
   :::caution
   Please respect the policies and terms of use of the map service providers.
   :::
 
-- **Workspaces** <ProFeature />: a place where you can manage [workspaces](/workspaces) for the application.
-- **Author**: a property which specifies an author's name, which can be inserted in the templates, by creating new files. On the desktop version this variable uses the user name of the operating system.
 - **Enable developer mode**: Enables some experimental new features and addition debugging.
 
 ### Additional Buttons
@@ -182,5 +182,5 @@ Find out more about this tab in the [AI section](/ai) of the documentation.
 
 <CenteredImage
 caption="Ollama connected in TagSpaces"
-src="/media/ai/settung-ollama-running.avif"
+src="/media/settings/settings-ai.avif"
 />
