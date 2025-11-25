@@ -1,11 +1,4 @@
 /* stylelint-disable docusaurus/copyright-header */
-/**
- * Any CSS included here will be global. The classic template
- * bundles Infima by default. Infima is a CSS framework designed to
- * work well for content-centric websites.
- */
-
-/* @import url("/css/ubuntu-font.css"); */
 
 /* You can override the default Infima variables here. */
 :root {
@@ -33,6 +26,11 @@
     font-family: NotoSansBold;
     src: url(/static/fonts/NotoSans-Bold.ttf)
 } */
+
+@font-face {
+    font-family: Fredoka;
+    src: url(/static/fonts/fredoka.ttf)
+}
 
 body {
     font-family: NotoSansRegular,Arial
@@ -62,11 +60,20 @@ article img {
   display: block;
   margin-top: 25px;
   margin-bottom: 25px;
-  border-radius: 7px;
+  border-radius: 10px;
 }
 
 h1 {
   font-size: 2.5em !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+header h2 a {
+  font-family: Fredoka, Arial, sans-serif;
+  font-weight: normal !important;
 }
 
 .footerIcon {
