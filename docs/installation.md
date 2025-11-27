@@ -10,18 +10,50 @@ Here you will learn how to install TagSpaces on different operating systems.
 
 The free versions of TagSpaces are available for download from the [Downloads Section](https://www.tagspaces.org/downloads/) on the TagSpaces website. Here, you can quickly find the appropriate installer for your operating system (Windows, macOS, Linux, Android, Firefox, and Chrome).
 
-:::tip
+<!-- :::tip
 **Download the newest PRO release:** TagSpaces PRO customers should use the download links provided in their purchase confirmation email. These links will always point to the latest available PRO version.
-:::
+::: -->
 
 ### New Version Notification
 
-When a new version of the application is available, you will see a notification in the lower-left corner of the app. Clicking the **Get It Now** button will direct you to the TagSpaces website download page, where you can obtain the latest community version. **TagSpaces Pro** users should use the links in their order confirmation email to access the latest version or follow this [link](https://tagspacesstore.onfastspring.com/account).
+When a new version of the application is available, you will see a notification in the lower-left corner of the app. Clicking the **Get It Now** button will direct you to the [download page](https://www.tagspaces.org/downloads/), where you can obtain the latest **TagSpaces Lite** version.
 
 <CenteredImage maxWidth={500} src="/media/core/new-version-available.png" caption="New version notification" showCaption/>
 
 :::tip
-If you prefer not to have TagSpaces check automatically for new versions, you can disable this functionality in the [settings](/ui/settings).
+If you prefer TagSpaces not to check for updates automatically, you can easily turn off this feature in the [settings](/ui/settings/#general).
+:::
+
+### Getting latest TagSpaces Pro version
+
+TagSpaces Pro users should use the links in their order confirmation email to access the latest version or follow this link: https://tagspacesstore.onfastspring.com/account. The link will open the webpage visible on the next screenshot.
+
+<CenteredImage maxWidth={600} src="/media/setup/fastspring-email.avif" caption="Enter the email with which you have purchased the app" showCaption/>
+
+<CenteredImage maxWidth={600} src="/media/setup/fastspring-email-send.avif" caption="Confirmation screen that the email was send" showCaption/>
+
+In your email inbox you should find soon an email from FastSpring containing a link which will lead to a page listing all your TagSpaces subscriptions.
+
+<CenteredImage maxWidth={600} src="/media/setup/fastspring-subscriptions.avif" caption="Subscriptions overview screen" showCaption/>
+
+Clicking on **orders** will open the tab where you will find the download links, with the latest TagSpaces Pro version.
+
+<CenteredImage maxWidth={600} src="/media/setup/fastspring-download-links.avif" caption="Download links" showCaption/>
+
+The following links should be available:
+
+- Download **tagspaces-pro-mac-arm64-6.5.2.dmg** - recommended for **macOS with Apple Silicon** (M1/M2/M3/..)
+- Download **tagspaces-pro-mac-x64-6.5.2.dmg** - recommended for **macOS on Intel** processors
+- Download **tagspaces-pro-mac-arm64-6.5.2.pkg**
+- Download **tagspaces-pro-mac-x64-6.5.2.pkg**
+- Download **tagspaces-pro-win-x64-6.5.2.exe** - recommended download for **Windows**
+- Download **tagspaces-pro-win-x64-6.5.2.zip**
+- Download **tagspaces-pro-linux-amd64-6.5.2.deb** - recommended download for **Ubuntu** and other **Debian based Linux** distributions
+- Download **tagspaces-pro-linux-x86_64-6.5.2.appimage** - recommended download for **non-Debian Linux** distributions
+- Download **tagspaces-pro-linux-x64-6.5.2.tar.gz**
+
+:::warning
+Due to a known issue, FastSpring may display the app version that was current at the time of your purchase. However, the download links always point to the latest available version.
 :::
 
 ## Installation on Windows
@@ -42,7 +74,7 @@ To update, replace the contents of your current installation with the contents f
 
 ## Installation on macOS
 
-For macOS, you can [download](https://www.tagspaces.org/downloads/) the 64-bit versions of TagSpaces for either Intel or Apple Silicon (ARM) processors. After downloading, double-click the zip file in Finder to properly unpack it. Some users have reported issues unpacking the app with third-party zip utilities, so it’s recommended to use Finder.
+For macOS, you can [download](https://www.tagspaces.org/downloads/) the 64-bit versions of TagSpaces for either Intel (e.g. _tagspaces-mac-**x64**-x.y.z.dmg_) or Apple Silicon (e.g. _tagspaces-mac-**arm64**-x.y.z.dmg_) processors. After downloading, double-click the zip file in Finder to properly unpack it. Some users have reported issues unpacking the app with third-party zip utilities, so it’s recommended to use Finder.
 
 :::tip
 The **profile** folder under macOS is located here: `~/Library/Application Support/TagSpaces`
