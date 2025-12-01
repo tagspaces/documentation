@@ -62,8 +62,8 @@ Clicking the **( i )** icon button will open and close the file properties area.
 - **(4) Date Modified** - Shows the date and time when the file was last modified.
 - **(5) Size** - Displays the size of the current file.
 - **(6) Path** - Shows the complete path of the file. If the file is located on an object storage location, a cloud icon instead of a suitcase will appear in front of the path. Clicking the `Move` button will open a dialog allowing you to move or copy the file to another folder.
-- **(7) Sharing link** - Displays a link for [internal sharing](/sharing#internal-sharing-for-files-and-folders). Clicking `Copy` will copy the link to the clipboard so that you can share the file with other users or TagSpaces installations.
-- **(8) Link for downloading** <ProFeature /> - The `Generate link` button will open a dialog where you can generate a [link or QR-code](/sharing#sharing-download-link-to-a-file) for downloading the file. This section is visible only for files located on S3 storage.
+- **(7) Sharing link** - Displays a link for [internal sharing](/sharing/#internal-sharing-for-files-and-folders). Clicking `Copy` will copy the link to the clipboard so that you can share the file with other users or TagSpaces installations.
+- **(8) Link for downloading** <ProFeature /> - The `Generate link` button will open a dialog where you can generate a [link or QR-code](/sharing/#download-links-for-files-on-object-storage) for downloading the file. This section is visible only for files located on S3 storage.
 - **(9) Thumbnail** <ProFeature /> - Displays the current thumbnail of the file. Clicking `Change` will open a dialog where you can choose a new thumbnail. The application supports adding a custom thumbnail to any file type.
 - **(10) [Entry ID](/linking)** - the file identifier used for internal TagSpaces links.
 

@@ -38,7 +38,7 @@ Similar to file tiles, folder tiles display the following:
 
 - **(1)**: Shows tags added to the folder.
 - **(2)**: Displays the folder description, if available.
-- **(3)**: Shows the folder name and, if set, the [custom color](/ui/userinterface#folder-properties-area).
+- **(3)**: Shows the folder name and, if set, the [custom color](/folders/#folder-properties).
 - **(4)**: Displays a folder icon (instead of a file extension).
 - **(5)**: Displays a folder thumbnail, if available.
 - **(6)**: Shows selection status for the folder.

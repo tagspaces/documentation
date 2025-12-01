@@ -34,7 +34,7 @@ Tag names should not contain **spaces**, **\\**, **/**, or **#**. Instead, use *
 
 Tags are organized into **tag groups**, which serve as categories for tags with similar purposes or characteristics. Tag groups make it easier to navigate, select, and manage tags within the system. TagSpaces comes with several pre-defined tag groups that you can modify, delete, or expand as needed. The default tag groups include:
 
-- **Smart Tags**: These tags include various date-based tags and geolocation tags. Learn more in the [smart tags section](/tagging#smart-tags).
+- **Smart Tags**: These tags include various date-based tags and geolocation tags. Learn more in the [smart tags section](#smart-tags).
 - **Common Tags**: This group contains two predefined tags, _book_ and _paper_, offering a general idea of the group’s intended purpose.
 - **Getting Things Done (GTD)**: This group is based on the [GTD time management method](https://en.wikipedia.org/wiki/Getting_Things_Done). Predefined tags include _done_, _next_, _maybe_, and _waiting_, designed to enhance productivity.
 - **Priorities**: These are color-coded tags, making them easily recognizable at a glance. The predefined priority tags are:

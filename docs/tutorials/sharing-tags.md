@@ -42,7 +42,7 @@ In the following screen you can select which tag group you want to export.
     showCaption
   />
 
-After clicking on the export button, a file saving dialog will appear, asking you to select a location where to save the file with the exported tag groups. This is files a called "tsm[20160807~131454].json", where the date/time stamp in the tags reflects the date and the time of the export. More on the export file format can be found in the [file format specification](/dev/metafileformats#taggroupsexport).
+After clicking on the export button, a file saving dialog will appear, asking you to select a location where to save the file with the exported tag groups. This is files a called "tsm[20160807~131454].json", where the date/time stamp in the tags reflects the date and the time of the export. More on the export file format can be found in the [file format specification](/dev/metafileformats/#format-of-the-tag-library-export).
 
 ## Editing and cleaning up the exported library (optional step)
 

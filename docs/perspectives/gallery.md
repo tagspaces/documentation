@@ -31,7 +31,7 @@ The toolbar of the gallery perspective offers the following functionalities:
 
 - **(1) Navigate to parent folder** - Opens the parent folder of the current folder.
 - **(2) Switch to masonry view** - Returns to the initial masonry view.
-- **(3) Folder properties** - Opens the [properties](/ui/userinterface#folder-properties) of the current folder.
+- **(3) Folder properties** - Opens the [properties](/folders/#folder-properties) of the current folder.
 - **(4) Open previous/next image** - Navigates to the previous or next image file in the current folder.
 - **(5) Start/stop presentation mode** - Toggles the slideshow presentation mode, displaying images from the current folder for 3 seconds each. (Future releases will allow configurable durations.)
 - **(6) Full screen mode** - Opens the currently selected file in full screen mode.

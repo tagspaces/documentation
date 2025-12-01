@@ -142,7 +142,7 @@ Your note is saved as a regular file in the current folder.
 | 🖼️ [Gallery](/perspectives/gallery) <ProFeature />     | Ideal for image collections                     |
 | 🗺️ [Mapique](/perspectives/mapique) <ProFeature />     | Display geo-tagged files on a map               |
 | 📊 [FolderViz](/perspectives/folderviz) <ProFeature /> | Visualize folder structures and tag connections |
-| ✅ [Kanban](/perspectives/kanben) <ProFeature />       | Manage tasks as cards in a board                |
+| ✅ [Kanban](/perspectives/kanban) <ProFeature />       | Manage tasks as cards in a board                |
 
 Switch perspectives using the **Perspective Switcher** in the toolbar.
 ![Changing perspectives for a folder](/media/core/perspective-switch.avif)

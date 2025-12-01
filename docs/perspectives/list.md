@@ -16,7 +16,7 @@ This perspective is optimized for general browsing through files and folders and
 
 The following information can be found on every row representing a file in this view:
 
-- **File extension** - A color-coded icon, representing the file type. Scroll down to [Color-coded file extensions](#color-coded-file-extensions) to learn more about this feature.
+- **File extension** - A color-coded icon, representing the file type. Visit [color-coded file extensions](/ui/settings/#color-coded-file-extensions) to learn more about this feature.
 - **Folder icon** - On rows representing folders, instead of the file extension, a folder icon is displayed.
 - **Title** - The file's title, which is the filename without the extension or any tag information.
 - **Description** - If the file/folder has a description, it will be displayed here.
