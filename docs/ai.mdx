@@ -2,6 +2,7 @@
 title: AI Functionality
 ---
 
+import { Summarize } from '@mui/icons-material';
 import { ProFeature, CenteredImage, CenteredVideo } from '@site/src/components/CommonBlocks';
 
 
@@ -28,58 +29,72 @@ After installing Ollama, you can add it by clicking the **Add AI Engine** button
 <CenteredImage
 caption="Add Ollama as AI engine"
 src="/media/ai/settings-add-ollama.avif"
+maxWidth="750px"
 />
 
 If everything is set up correctly, you'll see a new section labeled "Ollama" with a green indicator, meaning Ollama is running in the background. If there are connection issues, the indicator will turn red.
 
 <CenteredImage
 caption="Ollama connected in TagSpaces"
-src="/media/ai/settung-ollama-running.avif"
+src="/media/ai/setting-ollama-running.avif"
+maxWidth="750px"
 />
 
 By default, the configuration assumes the Ollama service is running on your local machine `https://localhost:11434`. However, it can also run on other computers in your network. You can add multiple Ollama configurations using the **Add AI Engine** button. Select the desired engine in the **Default AI Engine** dropdown.
 
 ### Downloading Models
 
-The next step is to download a suitable model (LLM). This can be done via the **Default model for text-based tasks** dropdown.
+The next step is to download a suitable model (LLM). TagSpaces can be configured with two types of models, one for the text based tasks and one for the image analyses (multimodel). The app needs at least one text based model in order the AI functionalities to be activated.
+
+The models can be download and selected from the **Default model for text-based tasks** and **Default model for image-based tasks** dropdowns.
+
+As seen the in the next screenshot the dropdown menu is divided in three sections. The first one is listing the already downloaded models, which is empty on a new Ollama installation. The second section lists some installable models so you can easy test the AI functionality. In the third section, currently you can find the menu **Install custom model**, which will open a small dialog, where you can enter the name to a custom model you wish to download. You can find downloadable models [here](https://ollama.com/search). 
 
 <CenteredImage
 caption="Choosing AI models"
 src="/media/ai/settings-choose-ai-model.avif"
+maxWidth="750px"
 />
 
-In the "Example installable AI models" section, you can choose a suitable model. For text-based tasks, we suggest the **llama3.2** model. For image-based tasks (e.g., image description), you can use *llava* or *llama3.2-vision*. While *llama3.2-vision* delivers better results, it is significantly slower.
+:::tip
+The models in the installable section are not recommendation, you have to find by your own which models are most suitable for your needs and hardware.
+:::
 
 Once you select a model, a progress dialog will show the download status. Note that models are typically several gigabytes in size, so patience is required.
 
-If you can't find the desired model, you can install additional ones using Ollama's [command-line tool](https://github.com/ollama/ollama/tree/main?tab=readme-ov-file#cli-reference).
 
 ## AI Chat in Folders
 
-If configured correctly, a new button will appear next to the perspective switcher in the folder area. Clicking it opens the **AI Chat** tab in the folder properties.
+If Ollama is configured correctly, a new button will appear next to the perspective switcher in the folder area. Clicking it opens the **AI Chat** tab in the folder properties. 
 
 <CenteredImage
 caption="Open folder AI chat"
 src="/media/ai/open-folder-chat.avif"
 />
 
-At the top of the tab, select the model for the AI chat. At the bottom, use the AI prompt to ask questions.
+At the top of the tab, select the model for the AI chat of the folder and at the bottom, use the AI prompt to ask questions. You can switch between different models before asking a new question. The third arrow from the screenshot points how to open the chat context menu for the folder. This menu contains the following actions:
 
-<CenteredImage
-caption="AI chat results"
-src="/media/ai/folder-chat-results.avif"
-/>
+- **Select all** - selects the whole content of the chat so it can copied to the clipboard for further use in other application. 
+- **Clear History** - deletes all the chat history together with attached images and other files.
+- **Sava as HTML** - exports the chat history as HTML file.
+- **Save as Markdown** - exports the chat history as markdown file
+- **AI Setting** - opens the AI tab of the settings.
 
-You can maintain a separate chat for each folder, enabling chat-based research or project organization directly in folders.
-
-<CenteredImage
-caption="Add images to AI prompts"
-src="/media/ai/images-in-folder-chat.avif"
-/>
-
-:::warning
+:::tip
 All chat history, including dropped images, is saved in the **ai** folder within the **.ts** subfolder of the current folder. Deleting the **ai** folder or the current folder will delete the chat history.
 :::
+
+You can maintain a separate chat for each folder, enabling chat-based research or project organization directly in folders. Every folder can have only one AI chat. 
+
+You can drag and drop images in JPG and PNG formats from the current perspective to the chat prompt so the model can use them.
+
+<CenteredVideo
+    caption="Adding images with drag and drop to the chat"
+    src="/media/ai/ai-image-dnd.mp4"
+    posterUrl="/media/ai/ai-image-dnd-poster.avif"
+    autoPlay
+    showCaption
+/>
 
 ## AI Features for Files
 
@@ -112,21 +127,61 @@ src="/media/ai/ai-generated-pdf-description.avif"
 - Extraction of **dominant colors** in images
 - **Language configuration** for generated content
 
-## Custom prompts for the AI features
+## Advanced Features
 
-<ProFeature /> In the bottom of the AI tab, there is a section called _Advanced_ which is closed by default. When you open it, you will find text areas where the prompts for the AI/LLM features can be adjusted.
+### Custom prompts for the AI features
+
+<ProFeature /> In the bottom of the AI tab, there is a section called _Advanced_ which is closed by default. When you open it, you will find text areas where the prompts for the AI/LLM features can be adjusted. This may make since different LLM can have different requirement on the prompts with which they generate content.
 
 <CenteredImage
 caption="Adjust the prompt for the LLM engines in the settings"
 src="/media/ai/custom-ai-prompts.avif"
+maxWidth="750px"
 />
 
+The following prompts are supported:
+- **Summarize Prompt** - used for creating text summarizations. You should use the following variable to parametrize it:
+    - **\{max_chars\}** - the maximal length of the summary in characters
+    - **\{language\}** - the language for the summary, the output depends on the language capabilities of the LLM
+    - **\{summarize_text\}** - the text for the summarization
+- **Image description prompt** - used for the creation of descriptions based on the graphical image content. You should use the following variable to parametrize it:
+    - **\{file_name\}** - the file name of the image which should be analyzed
+    - **\{language\}** - the language for the description, the output depends on the language capabilities of the LLM
+- **Text description prompt** - used for creation of description based on text content. You should use the following variable to parametrize it:
+    - **\{max_chars\}** - the maximal length of the summary in characters
+    - **\{language\}** - the language for the summary, the output depends on the language capabilities of the LLM
+    - **\{summarize_text\}** - the text for the summarization
+- **Generate image tags** - used for the generation tags based on the graphical image content.
+- **Generate tags** - used for the extraction of tags from text content, which should be in the \{input_text\} parameter
+- **Default Question Prompt** - currently not in use
+- **Default System Prompt** - currently not in use
 
-## Upcoming AI Features
+### Using Ollama from your local network
+You can share a single Ollama installation among many TagSpaces installation in your network. For this purpose you have to point the AI Engine URL to the IP address where the Ollama app is running.
 
-The following features are on the development roadmap for TagSpaces. 
-- Integration with additional AI engines
-- Translation of generated content
+In a the following screenshot you can see how TagSpaces is configured to use an Ollama installation running on Mac computer located in the local network.
 
+<CenteredImage
+caption="TagSpaces configured to use Ollama from a computer in the local network"
+src="/media/ai/settings-ollama-lan.avif"
+maxWidth="750px"
+/>
+
+To use Ollama on a local network, you need to configure the Ollama server to listen on all network interfaces instead of just localhost. This is done by setting the OLLAMA_HOST environment variable to 0.0.0.0 before starting or restarting the service. After making this change, other devices on the network can connect to the server using its IP address and the default port `11434`. 
+
+**Step 1: Set the OLLAMA_HOST environment variable**
+- **macOS**: Edit your launchctl configuration to set the OLLAMA_HOST environment variable to 0.0.0.0 before starting Ollama.
+- **Linux**: Edit the Ollama service file and add OLLAMA_HOST=0.0.0.0.
+- **Windows**: Set the OLLAMA_HOST environment variable to 0.0.0.0 in your system settings or user account settings before starting the Ollama server. 
+
+**Step 2: Restart Ollama**
+After setting the variable, stop any running Ollama processes and restart the service to apply the changes. 
+
+**Step 3: Find the server's IP address**
+Find the local IP address of the machine running Ollama (e.g., 192.168.1.100) and use it with together with the port (e.g. 11343) to configure Ollama in TagSpaces.
+
+You can find more details in the Ollama [documentation](https://docs.ollama.com/faq#how-do-i-configure-ollama-server).
+
+## Feedback
 
 Any **feedback and new ideas** are welcomed in our [**forum**](https://tagspaces.discourse.group/c/feature-requests/6).
