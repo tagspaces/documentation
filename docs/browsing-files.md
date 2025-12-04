@@ -15,6 +15,7 @@ Perspectives are modular extensions that allow more flexibility, easier developm
 - [Mapique Perspective](/perspectives/mapique/) <ProFeature /> - Displays geo-tagged files and folders on a map. Available in the Pro edition.
 - [Kanban Perspective](/perspectives/kanban/) <ProFeature /> - Shows your files as tasks on a Kanban board, representing subfolders as columns on the board.
 - [FolderViz Perspective](/perspectives/folderviz/) <ProFeature /> - An experimental perspective that applies information visualization concepts to presenting your folder and file structures.
+- [Calendar Perspective](/perspectives/calendar/) BETA <ProFeature /> - An experimental perspective that grouping the files in the current location by date.
 
 ## Switching Perspectives
 

@@ -176,9 +176,9 @@ maxWidth={700}
 - **Restore default settings**: Resets the app to its original settings, including connected locations and the tag library. Be careful, as this action cannot be undone without backups.
 - **Reload application**: Reloads the app, similar to pressing the browser reload button.
 
-## AI / LLM Configuration
+## AI Settings
 
-Find out more about this tab in the [AI section](/ai) of the documentation.
+Find out more about this tab in the [AI section](/ai/#ai-configuration) of the documentation.
 
 <CenteredImage
 caption="Ollama connected in TagSpaces"

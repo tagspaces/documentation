@@ -304,6 +304,7 @@ const sidebars = {
         "perspectives/mapique",
         "perspectives/kanban",
         "perspectives/folderviz",
+        "perspectives/calendar",
       ],
     },
     {
@@ -401,6 +402,11 @@ const sidebars = {
           type: "link",
           label: "Advanced",
           href: "/ui/settings/#advanced",
+        },
+        {
+          type: "link",
+          label: "AI",
+          href: "/ui/settings/#ai-settings",
         },
       ],
     },
