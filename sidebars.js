@@ -352,6 +352,33 @@ const sidebars = {
     },
     {
       type: "category",
+      label: "AI",
+      items: [
+        "ai",
+        {
+          type: "link",
+          label: "Configuration",
+          href: "/ai/#prerequisites",
+        },
+        {
+          type: "link",
+          label: "AI Folder Chat",
+          href: "/ai/#folder-ai-chat",
+        },
+        {
+          type: "link",
+          label: "AI Features for Files",
+          href: "/ai/#ai-features-for-files",
+        },
+        {
+          type: "link",
+          label: "Advanced Features",
+          href: "/ai/#advanced-features",
+        },
+      ],
+    },
+    {
+      type: "category",
       label: "Sharing and Linking",
       items: ["sharing", "linking"],
     },
@@ -422,7 +449,6 @@ const sidebars = {
         "ui/keybindings",
         "ui/i18n",
         "thumbnails",
-        "ai",
         "dev/metafileformats",
         "dev/deployment",
         "dev/external-config",

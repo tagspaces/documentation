@@ -7,8 +7,8 @@ import { ProFeature, CenteredImage, CenteredVideo } from '@site/src/components/C
 
 Starting with version 6.1, TagSpaces can connect to [Ollama](https://ollama.com/) as an external AI service provider. Ollama is **locally installed, offline** software that enables you to run AI models (LLMs - Large Language Models) directly on your computer.
 
-:::tip
-TagSpaces does not include its own AI engine or models; it relies entirely on external AI software like Ollama. **All AI features are disabled by default.**
+:::tip Disclaimer
+TagSpaces does not include its own AI engine or large language models (LLMs). It relies entirely on external AI software like Ollama. **All AI features are disabled by default.**
 :::
 
 ## Prerequisites
@@ -64,13 +64,14 @@ The models listed in the "Installable" section are suggestions and not recommend
 
 Once you select a model, a progress dialog will display the download status. Please note that models are typically several gigabytes in size, so the download may take some time.
 
-## AI Chat in Folders
+## Folder AI Chat
 
 If Ollama is configured correctly, a new button will appear next to the perspective switcher in the folder area. Clicking it opens the **AI Chat** tab within the folder properties.
 
 <CenteredImage
-caption="Open folder AI chat"
+caption="Folder with opened AI chat tab"
 src="/media/ai/open-folder-chat.avif"
+showCaption
 />
 
 At the top of the tab, you can select the specific model to use for the folder's chat. At the bottom, use the AI prompt area to ask questions. You can switch between different models before asking a new question.
@@ -126,10 +127,40 @@ src="/media/ai/ai-generated-pdf-description.avif"
 />
 
 - **Summarization** of text-based files such as HTML, TXT, and Markdown.
-- **Batch AI-processing** for multiple files at once.
 - **Extraction of dominant colors** from images.
 - **Language configuration** for the generated content.
 
+### Batch AI-processing
+
+<ProFeature />  When you select one or more files in the current perspective, the **AI button** in the toolbar becomes active. Clicking this button opens the batch processing dialog.
+
+<CenteredImage
+caption="Dialog for AI functionalities on multiple files"
+src="/media/ai/ai-batch-processing.avif"
+showCaption
+/>
+
+From this dialog, you can initiate the following tasks:
+
+- **Generate Tags** – The following options apply:
+    - **Use tags from the tag library:** Restricts generated tags to those already present in your Tag Library.
+    - **Generate tags from description:** Uses only the file's existing description as the source for generating tags.
+    - **Max number of tags:** Limits the maximum number of tags generated per file.
+- **Generate Summary**
+    - **Limit the length of the summary:** Enables character limits for the output.
+    - **Max. characters for the summary:** Specifies the maximum number of characters allowed in the generated summary.
+    - **Append to description:** Toggles between appending the summary to the existing file description (checked) or replacing the description entirely (unchecked).
+    - **Language:** Allows you to specify the target language for the summary (dependent on the capabilities of the selected model).
+- **Extended Image Analysis** – These options are available only for images (PNG and JPG formats). A **multimodal LLM** must be configured in the AI settings for these features to work.
+    - **Name:** Generates a descriptive title for the image.
+    - **Summary:** Generates a summary of the visual content.
+    - **Objects:** Attempts to identify distinct objects within the image.
+    - **Scene:** Attempts to identify the scene type (e.g., landscape, office, beach).
+    - **Colors:** Identifies the dominant colors in the image.
+    - **Time of the day:** Estimates the time of day depicted in the photo.
+    - **Settings:** Attempts to identify the context or environment of the image.
+    - **Text content in image:** Extracts text found within the image (similar to OCR).
+    - **Append analysis to description:** Toggles between appending the analysis results to the existing description or replacing it.
 ## Advanced Features
 
 ### Custom Prompts for AI Features
