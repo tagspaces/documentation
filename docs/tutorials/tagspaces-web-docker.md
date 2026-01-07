@@ -112,7 +112,7 @@ After exchanging the docker image with a newer version, please make sure to enab
 ### Clear local storage of the browser
 
 :::warning
-After enabling this feature, and save location data with access keys to s3 buckets in a browsers not used only by you (e.g. in an Internet café or on PC of a colleague ...), please make sure to clean the local storage of the browser once you leave this browser, otherwise persons using this browser after you will get access to these buckets.
+After enabling this feature and saving location data with access keys for S3 buckets in a browser that is not exclusively used by you (for example, in an internet café or on a colleague’s computer), make sure to clear the browser’s local storage before you leave. Otherwise, anyone who uses the browser after you may gain access to these buckets.
 :::
 
 Step to clear the local storage for the TagSpaces web app in the Chrome browser.
