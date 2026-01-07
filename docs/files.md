@@ -8,10 +8,10 @@ import { ProFeature, CenteredImage } from '@site/src/components/CommonBlocks';
 
 The in top area of a file you can switch between the following sub-areas:
 
-- **[Details](#file-properties)** - opens the file properties, see more bellow.
+- **[Details](#file-details)** - opens the file properties, see more bellow.
 - **[Description](#file-description)** - opens the area where you can add description for this file (opened in the screenshot bellow).
-- **[Revisions](/editing-files/#file-revisions)** - visible only for editable files, display a list of all file changes.
-- **[Links](/linking)** - a place where you can see all incoming and outgoing links for this file.
+- **[Revisions](#file-revisions)** - visible only for editable files, display a list of all file changes.
+- **[Links](#file-links)** - a place where you can see all incoming and outgoing links for this file.
 
 <CenteredImage
     caption="File areas"
@@ -45,7 +45,7 @@ The file preview toolbar offers several actions, some of which are described bel
 - **(8) Open file natively** - Opens the current file in the default application of your operating system.
 - **(9) Close entry** - Will close the file properties area.
 
-## File Properties
+## File Details
 
 Clicking the **( i )** icon button will open and close the file properties area. Here, you will find details about the currently opened file such as:
 
@@ -67,23 +67,7 @@ Clicking the **( i )** icon button will open and close the file properties area.
 - **(9) Thumbnail** <ProFeature /> - Displays the current thumbnail of the file. Clicking `Change` will open a dialog where you can choose a new thumbnail. The application supports adding a custom thumbnail to any file type.
 - **(10) [Entry ID](/linking)** - the file identifier used for internal TagSpaces links.
 
-## File Description
-
-<ProFeature />
-TagSpaces PRO allows users to add descriptions to any kind of files.
-
-<CenteredImage
-    caption="Description for files"
-    src="/media/entrydetails/file-description.avif"
-    showCaption
-    maxWidth={600}
-  />
-
-:::tip
-Typing the forward slash `/` will open the context menu visible in the previous screenshot, with which you can insert various text elements supported in the description editor. Pressing `cmd + s` on Mac or `command + s` Windows or Linux PCs will save the changes in the descirptions
-:::
-
-## File Thumbnails
+### File Thumbnails
 
 <ProFeature />
 
@@ -103,6 +87,51 @@ An image in the clipboard can be used as thumbnail after pasting it in this dial
 :::info
 If the file is on an S3 object storage, the thumbnail will be uploaded there.
 :::
+
+## File Description
+
+<ProFeature />
+TagSpaces PRO allows users to add descriptions to any kind of files.
+
+<CenteredImage
+    caption="Description for files"
+    src="/media/entrydetails/file-description.avif"
+    showCaption
+    maxWidth={600}
+  />
+
+:::tip
+Typing the forward slash `/` will open the context menu visible in the previous screenshot, with which you can insert various text elements supported in the description editor. Pressing `cmd + s` on Mac or `command + s` Windows or Linux PCs will save the changes in the descriptions
+:::
+
+## File Revisions
+
+<ProFeature />
+Every time the changes to the file's content and description are saved revision are created. All the description revisions are listed in this tab. From here they can be previewed, restored and irreversibly deleted.
+
+The dropdown on the next screenshot switches between the revisions of the file content (main file) and file description (sidecar file).
+
+<CenteredImage
+    caption="File Revisions Tab"
+    src="/media/entrydetails/file-revisions.avif"
+    showCaption
+    maxWidth="650px"
+  />
+
+## File Links
+
+The first section of this tab **Outgoing Links** shows all links contained in the file’s content and description. These include links to external websites as well as links to other files and folders inside TagSpaces.
+
+The second section **Incoming Links** shows links pointing to this file from elsewhere. It’s empty by default—just click **Find Incoming Links** to discover which files or folders link here.
+
+<CenteredImage
+  caption="File Links Tab"
+  src="/media/entrydetails/file-links.avif"
+  maxWidth="650px"
+  showCaption
+/>
+
+To learn more about connecting files and folders with links, check out this [section](/linking).
 
 ## Technical details
 

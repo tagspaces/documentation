@@ -73,16 +73,6 @@ const sidebars = {
           label: "Preview Area",
           href: "/ui/userinterface/#preview-area",
         },
-        // {
-        //   type: "link",
-        //   label: "File properties",
-        //   href: "/files#file-properties",
-        // },
-        // {
-        //   type: "link",
-        //   label: "Folder properties",
-        //   href: "/folders#folder-properties",
-        // },
         {
           type: "link",
           label: "Dark Mode and Themes",
@@ -191,11 +181,6 @@ const sidebars = {
       label: "Files and Folders",
       items: [
         "files",
-        // {
-        //   type: "link",
-        //   label: "File Properties",
-        //   href: "/files#file-description",
-        // },
         {
           type: "link",
           label: "File Description",
@@ -205,6 +190,16 @@ const sidebars = {
           type: "link",
           label: "File Thumbnails",
           href: "/files#file-thumbnails",
+        },
+        {
+          type: "link",
+          label: "File Revisions",
+          href: "/files#file-revisions",
+        },
+        {
+          type: "link",
+          label: "File Links",
+          href: "/files#file-links",
         },
         "folders",
         {

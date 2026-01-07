@@ -22,7 +22,7 @@ The application's user interface consists of the following main areas:
 2. **[Navigation and Search](#navigation-and-search)** - Use this area to search, switch locations, or navigate to parent folders.
 3. **[Browsing Area](/browsing-files)** - The central section for browsing files and folders using various **perspectives**.
 4. **[Common Actions Area](#preview-area)** - Access actions for the currently opened file or folder.
-5. **[File](/files/#file-properties) / [Folder](/folders/#folder-properties) Properties** - View the properties of the opened file or folder.
+5. **[File](/files/#file-details) / [Folder](/folders/#folder-properties) Properties** - View the properties of the opened file or folder.
 6. **[File Preview](#file-preview)** - Preview and/or edit the current file here.
 
 ## Left Area
@@ -90,7 +90,7 @@ When a file is opened, the main UI splits into two areas, with the right side be
 - **(2) Navigate & Close** - navigate between files in the current folder or search results, close the current file or folder.
 - **(3) Tab Switch** - between entry properties, entry [description](/folders#folder-description), [file revisions](/editing-files#file-revisions), [ai chat](/ai#ai-chat-in-folders) and links. A click on the tab title of the current tab will close it, providing more space for the file preview.
 - **(4) Editing options** - the edit mode for certain file type can be enabled here. A toggle for **auto-saving** changes in the currently edited file is located also in this area.
-- **(5) Entry Properties** - if opened it displays the properties of the currently opened [file](/files#file-properties) or [folder](/folders#folder-properties).
+- **(5) Entry Properties** - if opened it displays the properties of the currently opened [file](/files#file-details) or [folder](/folders#folder-properties).
 - **(6) Preview & Edit Area** - displays the a preview of the current file. Some text based files like TXT, Markdown or HTML can be edited here.
 
 ## Dark Mode and Themes
