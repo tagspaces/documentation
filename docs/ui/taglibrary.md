@@ -119,6 +119,10 @@ In this dialog you can edit the tag **name** and **colors**. Here it is also pos
     showCaption
   />
 
+:::tip
+Due to the fact that the tag description is considered by the search engine of TagSpaces, it can be (mis)used for specifying synonyms or translations for the current tag.
+:::
+
 ### Drag and Drop Operations
 
 You can reorder tag groups in the library via drag-and-drop. Similarly, you can rearrange tags within a group using drag-and-drop. The following video demonstrates how this works:

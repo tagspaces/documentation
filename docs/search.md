@@ -10,7 +10,7 @@ In order to offer desktop search functionalities, TagSpaces provides a variety o
 With the search functionality, you are able to find files and folders by their name, tags, and other properties. The search algorithm considers different weights for the following properties of the [indexed](#indexing) entries:
 
 - The name of the file or the folder
-- The tags assigned to the file or the folder
+- The tags (with tag descriptions) assigned to the file or the folder
 - The description added to the file or the folder
 - The name of the parent directory of a given file is also considered by the search algorithm. For example, if you are searching for photos from your vacation in the USA and the folder where these files are located contains the word USA (e.g., '20160301 vacation usa'), the search will list all the files located directly in this folder.
 - <ProFeature /> The content of TXT, MD, and HTML files if the [full-text search](#full-text-search) is activated for the current location.
