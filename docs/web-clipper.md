@@ -95,6 +95,23 @@ The TagSpaces Web Clipper also includes several advanced features:
 
 The browser extension seamlessly integrates with the TagSpaces desktop application, allowing for local collection and organization of web data.
 
+## Extension Options
+
+Currently the extension has only one setting, with which the embedding of a web page screenshot in URL and HTML files can be disabled.
+The following screenshots show how to access the extension preferences in the Chrome and Firefox browsers.
+
+<CenteredImage
+    caption="Extensions options in Chrome"
+    src="/media/webclipper/web-clipper-chrome-options.avif"
+    showCaption
+/>
+
+<CenteredImage
+    caption="Extensions preferences in Firefox"
+    src="/media/webclipper/web-clipper-firefox-preferences.avif"
+    showCaption
+/>
+
 ## Adjustments for Chrome-based Browsers
 
 ### Enabling Webpage Saving as MHTML
