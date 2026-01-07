@@ -209,11 +209,6 @@ const sidebars = {
         "folders",
         {
           type: "link",
-          label: "Folder Description",
-          href: "/folders#folder-description",
-        },
-        {
-          type: "link",
           label: "Folder Default Perspective",
           href: "/folders#default-folder-perspective",
         },
@@ -231,6 +226,21 @@ const sidebars = {
           type: "link",
           label: "Folder Wallpaper",
           href: "/folders#folder-background-image",
+        },
+        {
+          type: "link",
+          label: "Folder Description",
+          href: "/folders#folder-description",
+        },
+        {
+          type: "link",
+          label: "Folder Revisions",
+          href: "/folders#folder-revisions",
+        },
+        {
+          type: "link",
+          label: "Folder Links",
+          href: "/folders#folder-links",
         },
       ],
     },
@@ -362,7 +372,7 @@ const sidebars = {
         },
         {
           type: "link",
-          label: "AI Folder Chat",
+          label: "Folder AI Chat",
           href: "/ai/#folder-ai-chat",
         },
         {

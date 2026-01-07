@@ -11,16 +11,21 @@ Folders play an essential role in TagSpaces that goes beyond typical file groupi
 The in top area of a folder you can switch between the following sub-areas:
 
 - **[Details](#folder-properties)** - opens the folder properties, see more bellow.
-- **[Description](#folder-description)** - opens the area where you can add description for this folder (opened in the screenshot bellow).
-- **[AI Chat](/ai#ai-chat-in-folders)** - this is the place for the folder's own AI chat, this tab is visible only if the AI functionality is enabled.
-- **[Links](/linking)** - a place where you can see all incoming and outgoing links for this folder.
+- **[Description](#folder-description)** - opens the area where you can add description for this folder.
+- **[Revisions](#folder-revisions)** - opens the area listing all the versions of the folder's description.
+- **[AI Chat](#folder-ai-chat)** - this is the place for the folder's own AI chat, this tab is visible only if the AI functionality is enabled.
+- **[Links](#folder-links)** - a place where you can see all incoming and outgoing links for this folder.
 
 <CenteredImage
-    caption="Folder areas"
-    src="/media/entrydetails/folder-tabs.png"
+    caption="Tabs available for folders"
+    src="/media/entrydetails/folder-tabs.avif"
     showCaption
     maxWidth="500px"
   />
+
+:::tip
+The green dots over the description and ai-chat icons indicate that these sections are not empty.
+:::
 
 ## Folder Menu
 
@@ -68,23 +73,7 @@ The folder properties section is similar to the file properties area.
 - **(12) [Background Image](#folder-wallpaper)** <ProFeature /> - Shows a preview of the folder's wallpaper. Clicking **CHANGE** allows you to choose a new wallpaper.
 - **(13) [Entry ID](/linking)** - the folder identifier used for internal TagSpaces links.
 
-## Folder Description
-
-<ProFeature />
-
-Folders can be annotated with descriptions, useful for adding additional information to files or folders. Descriptions are managed in the a separate tab in the folder' properties area.
-
-The folder descriptions can be edited by clicking the **EDIT** button or by double-clicking directly in the description area. The description text can contain [Markdown](https://en.wikipedia.org/wiki/Markdown), allowing you to add basic formatting, [links](/linking), and lists to the content.
-
-<CenteredImage
-    caption="Folder description"
-    src="/media/entrydetails/folder-description.avif"
-    showCaption
-  />
-
-The descriptions are indexed by the search algorithm and considered in search results. If a given file or folder has a description, the first few words from it are displayed in the grid perspective.
-
-## Default Folder Perspective
+### Default Folder Perspective
 
 <ProFeature />
 
@@ -99,7 +88,7 @@ Every folder can have its own default perspective, which can be selected in the 
 
 Once you choose a perspective, every time you open this folder, it should open with the selected perspective.
 
-## Folder Background
+### Folder Background
 
 <ProFeature />
 
@@ -122,7 +111,7 @@ The folder background is visible in grid, list, gallery, and kanban perspectives
     autoPlay
 />
 
-## Folder Thumbnail
+### Folder Thumbnail
 
 <ProFeature />
 
@@ -145,7 +134,7 @@ An image in the clipboard can be used as thumbnail after pasting it in this dial
 
 Adding a custom thumbnail to any file type can be achieved similarly from the file's properties section.
 
-## Folder Background Image
+### Folder Background Image
 
 <ProFeature />
 Folders can have background images (wallpapers) in TagSpaces Pro. The background images are supported in the Grid, List, Gallery and Kanban [perspectives](/browsing-files).
@@ -173,6 +162,53 @@ Some wallpapers are bundled with the application, but you can also choose an ima
 :::info
 If the folder is on an S3 bucket, the wallpaper file will be uploaded there.
 :::
+
+## Folder Description
+
+<ProFeature />
+
+Folders can be annotated with descriptions, useful for adding additional information to files or folders. Descriptions are managed in the a separate tab in the folder' properties area.
+
+The folder descriptions can be edited by clicking the **EDIT** button or by double-clicking directly in the description area. The description text can contain [Markdown](https://en.wikipedia.org/wiki/Markdown), allowing you to add basic formatting, [links](/linking), and lists to the content.
+
+<CenteredImage
+    caption="Folder description"
+    src="/media/entrydetails/folder-description.avif"
+    showCaption
+  />
+
+The descriptions are indexed by the search algorithm and considered in search results. If a given file or folder has a description, the first few words from it are displayed in the grid perspective.
+
+## Folder Revisions
+
+<ProFeature />
+Every time the descriptions of a folder is saved a revision is created. All the description revisions are listed in this tab. From here they can be previewed, restored and irreversibly deleted.
+
+<CenteredImage
+    caption="Folder Revisions Tab"
+    src="/media/entrydetails/folder-revisions.avif"
+    showCaption
+    maxWidth="600px"
+  />
+
+## Folder AI Chat
+
+Every folder managed in the application can have its own AI-chat chat with history. Learn more in the [AI section](/ai/#folder-ai-chat)
+
+## Folder Links
+
+The first section of this tab **Outgoing Links** shows all links contained in the folder’s description. These include links to external websites as well as links to other files and folders inside TagSpaces.
+
+The second section **Incoming Links** shows links pointing to this folder from elsewhere. It’s empty by default—just click **Find Incoming Links** to discover which files or folders link here.
+
+<CenteredImage
+  caption="Folder Links Tab"
+  src="/media/entrydetails/folder-links.avif"
+  maxWidth="550px"
+  showCaption
+/>
+
+To learn more about connecting files and folders with links, check out this [section](/linking).
 
 ## Technical details
 
