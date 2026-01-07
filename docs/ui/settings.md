@@ -47,8 +47,9 @@ maxWidth={700}
 - **Tag delimiter**: The character used in the file names to separate the tags. Example: In the file name file1[TAG1_TAG2].txt , \_ is the delimiter.
 - **Prefix for tag container**: The character which is placed in the front of the tag container. Example: In the file name 'file1*[TAG1].txt', '*' is the prefix.
 - **Max collected tags**: the maximal amount of tags which will be collected in the "Collected Tags" tag group.
-- <ProFeature /> **Enable location tags**: Store tag groups outside the main tag library in the location itself. Learn more [here](/ui/taglibrary/#location-tags).
-- **Author**: a property which specifies an author's name, which can be inserted in the templates, by creating new files. On the desktop version this variable uses the user name of the operating system.
+- **Author**: a property which specifies an author's name, which can be inserted in the templates, by creating new files. On the desktop version this variable uses the user name from the operating system.
+- <ProFeature /> **Enable Revisions**: this switch will enable the versioning feature of the application.
+- <ProFeature /> **Enable Location Tags**: Store tag groups outside the main tag library in the location itself. Learn more [here](/ui/taglibrary/#location-tags).
 
 ## File Types
 

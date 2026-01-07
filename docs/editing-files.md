@@ -34,7 +34,7 @@ Once in edit mode the `Edit` button will disappear and on its place two new butt
 
 <ProFeature />
 
-A key feature of document management systems is the ability to create revisions of the edited files. This feature can be enabled in the [Advanced tab](/ui/settings/#advanced) of the application's Settings dialog box. Once activated, a full copy of the current file (e.g. TXT, MD, HTML or JSON) is created with each save. The created file versions are listed in the **Revisions** tab of the file properties view, as seen in the screenshot.
+A key feature of document management systems is the ability to create revisions of the edited files. This feature can be enabled in the [General tab](/ui/settings/#general) of the application's Settings dialog box. Once activated, a full copy of the current file (e.g. TXT, MD, HTML or JSON) is created with each save. The created file versions are listed in the **Revisions** tab of the file properties view, as seen in the screenshot.
 
 <CenteredImage
     caption="File revisions in file properties section"

@@ -95,7 +95,14 @@ When a file is opened, the main UI splits into two areas, with the right side be
 
 ## Dark Mode and Themes
 
-Themes can be changed in the [general settings](/ui/settings#general).
+TagSpaces currently supports 6 light and 6 dark themes. These themes can be switched automatically when the operating systems toggles the dark mode or manually in the [tab general](/ui/settings#general) of the settings.
+
+<CenteredImage
+    caption="Choosing themes in the settings of the application"
+    src="/media/settings/settings-general-themes.avif"
+    showCaption
+    maxWidth="600px"
+  />
 
 <CenteredVideo
     caption="Switching user interface themes"

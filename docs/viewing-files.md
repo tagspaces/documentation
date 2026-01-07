@@ -35,6 +35,28 @@ You can assign different viewer extensions to specific file extensions via the s
 
 ![settings tab file types](/media/settings/settings-tab-file-types.svg)
 
+## Settings as default application for certain file types
+
+The desktop application registers on installation the app as default viewer for MD (markdown), HTML, TXT and URL files types. In addition to that TagSpaces can be made manually in the operating system the default viewer for every supported [file type](/supported-file-formats/).
+
+![File association under macOS](/media/core/macos-file-association.avif)
+
+## Opening files from command line
+
+You can also open supported files directly from the terminal or the command line:
+
+```bash title="Windows"
+C:\Users\username\AppData\Local\Programs\TagSpaces\TagSpaces.exe C:\Users\username\Desktop\testfile.md
+```
+
+```bash title="macOS"
+/Applications/TagSpaces.app/Contents/MacOS/TagSpaces /Users/username/Desktop/testfile.md
+```
+
+```bash title="Linux"
+tagspaces /home/username/Desktop/testfile.md
+```
+
 ## Printing Files
 
 Most viewer extensions in TagSpaces support printing thanks to the built-in print functionality. In order to print a file you have to open in the file properties and from there you should click on the round FAB button in the bottom right part of the screen. From there you can choose the `Print` menu entry, which will open the print dialog of your operating system.
