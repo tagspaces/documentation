@@ -189,29 +189,58 @@ Smart tags are an advanced feature in TagSpaces that offer **dynamic tagging** b
 
 ### Date and Time Tagging
 
-TagSpaces offers several predefined timestamp-based smart tags that can be used to tag files with various levels of date and time precision. Assuming that today is the 8th of January 2026 at 1:45 PM, applying smart date tags will result in the following tags.
+TagSpaces includes a set of **predefined, timestamp-based smart tags** that make it easy to label files and folders with dates and times. These tags help you organize content chronologically and work especially well with features like search, sorting, and the [Calendar Perspective](/perspectives/calendar/).
 
-- **now**: Creates a precise timestamp down to the second: `20260108T134500`, with the following format: `YYYYMMDDTHHmmSS`
-- **today**: Created this tag: `20260108`, with this format: `YYYYMMDD`
-- **tomorrow**: will result in `20260109`, with this format: `YYYYMMDD`
-- **yesterday**: will result in `20260107`, with this format: `YYYYMMDD`
-- **month**: will result in `202601` for the current mont, with this format: `YYYYMM`
-- **year**: will result in `2026` for the current year, with this format: `YYYY`
+Assuming the current date and time is **January 8, 2026 at 1:45 PM**, applying the smart date tags will generate the following results:
+
+- **now** – Creates a precise timestamp down to the second:  
+  `20260108T134500`  
+  Format: `YYYYMMDDTHHmmSS`
+
+- **today** – Tags the current date:  
+  `20260108`  
+  Format: `YYYYMMDD`
+
+- **tomorrow** – Tags the next day:  
+  `20260109`  
+  Format: `YYYYMMDD`
+
+- **yesterday** – Tags the previous day:  
+  `20260107`  
+  Format: `YYYYMMDD`
+
+- **month** – Tags the current month:  
+  `202601`  
+  Format: `YYYYMM`
+
+- **year** – Tags the current year:  
+  `2026`  
+  Format: `YYYY`
 
 :::tip
-`YYYY` represent the year e.g. 2026, `MM` represent the month e.g. 01 for January, `DD` the current day on the month e.g. 08 for the 8th of January. `T` is a delimiter for the time in the following time stamp, where `HH` is the hour e.g. 13 for 1PM, `mm` represent the minutes and `SS` the seconds. There is no time zone representation.
+Format reference:
+
+- `YYYY` – year (e.g. `2026`)
+- `MM` – month (e.g. `01` for January)
+- `DD` – day of the month (e.g. `08`)
+- `T` – separator between date and time
+- `HH` – hour in 24-hour format (e.g. `13` for 1 PM)
+- `mm` – minutes
+- `SS` – seconds
+
+Note: Time tags do not include time zone information.
 :::
 
-These smart tags are particularly helpful for maintaining a chronological order in your file organization.
+These smart tags are ideal for keeping your files in a clear, time-based order—whether you’re organizing notes, documents, or media files.
 
-The **custom-date** smart tag allows you to add any custom date or time as a tag to your files and folders.
+In addition, the **custom-date** smart tag lets you assign any date or time you choose, giving you full flexibility when tagging files and folders.
 
 <CenteredVideo
-    caption="Tagging with timestamps in TagSpaces Pro"
-    src="/media/tagging/timestamp-tagging.mp4"
-    posterUrl="/media/tagging/timestamp-tagging-poster.avif"
-    showCaption
-    maxWidth="100%"
+  caption="Tagging files with date and time smart tags in TagSpaces Pro"
+  src="/media/tagging/timestamp-tagging.mp4"
+  posterUrl="/media/tagging/timestamp-tagging-poster.avif"
+  showCaption
+  maxWidth="100%"
 />
 
 ### Geo Tagging
