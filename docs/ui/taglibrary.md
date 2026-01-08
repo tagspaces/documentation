@@ -187,25 +187,24 @@ Smart tags are an advanced feature in TagSpaces that offer **dynamic tagging** b
     showCaption
   />
 
-### Custom Timestamp Tagging
+### Date and Time Tagging
 
-<ProFeature />
+TagSpaces offers several predefined timestamp-based smart tags that can be used to tag files with various levels of date and time precision. Assuming that today is the 8th of January 2026 at 1:45 PM, applying smart date tags will result in the following tags.
 
-TagSpaces offers several predefined timestamp-based smart tags that can be used to tag files with various levels of date and time precision. Some examples include:
+- **now**: Creates a precise timestamp down to the second: `20260108T134500`, with the following format: `YYYYMMDDTHHmmSS`
+- **today**: Created this tag: `20260108`, with this format: `YYYYMMDD`
+- **tomorrow**: will result in `20260109`, with this format: `YYYYMMDD`
+- **yesterday**: will result in `20260107`, with this format: `YYYYMMDD`
+- **month**: will result in `202601` for the current mont, with this format: `YYYYMM`
+- **year**: will result in `2026` for the current year, with this format: `YYYY`
 
-- **now**: Creates a precise timestamp down to the second (e.g., `20220111T143022`).
-- **today, tomorrow, yesterday**: Tags a file with the current, next, or previous day in `YYYYMMDD` format (e.g., `20170314`).
-- **month**: Applies the current month in `YYYYMM` format.
-- **year**: Tags the file with the current year in `YYYY` format.
+:::tip
+`YYYY` represent the year e.g. 2026, `MM` represent the month e.g. 01 for January, `DD` the current day on the month e.g. 08 for the 8th of January. `T` is a delimiter for the time in the following time stamp, where `HH` is the hour e.g. 13 for 1PM, `mm` represent the minutes and `SS` the seconds. There is no time zone representation.
+:::
 
 These smart tags are particularly helpful for maintaining a chronological order in your file organization.
 
-:::info
-
-Each newly created file automatically receives a smart tag equivalent to **now**.
-:::
-
-For more advanced users, the **custom-date** smart tag allows you to add any custom date or time as a tag to your files and folders.
+The **custom-date** smart tag allows you to add any custom date or time as a tag to your files and folders.
 
 <CenteredVideo
     caption="Tagging with timestamps in TagSpaces Pro"
