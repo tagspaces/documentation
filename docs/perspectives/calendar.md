@@ -6,75 +6,112 @@ tags: [perspective]
 import { ProFeature, CenteredImage, CenteredVideo } from '@site/src/components/CommonBlocks';
 
 <ProFeature />
-The Calendar is a new perspective allowing you to places files and folder on a calender depending on the selected grouping filters.
 
-## Grouping filters
+The Calendar Perspective offers a powerful and intuitive way to organize your files and folders based on time. Instead of browsing through long lists or deep folder structures, you can view your content laid out on a calendar—making it perfect for tracking projects, managing events, reviewing timelines, or organizing content by date.
 
-This perspective currently supports four grouping filters which are described bellow.
+Depending on the selected grouping option, files and folders are automatically placed on the calendar, giving you a clear, time-based overview of your data.
+
+## Grouping Filters
+
+The Calendar Perspective currently supports four different grouping filters. These determine how files and folders are assigned to dates on the calendar.
+
 <CenteredImage
-    caption="Date and time groping filters"
-    src="/media/calendar/calendar-grouping-filters.avif"
-    showCaption
-  />
+  caption="Date and time grouping filters"
+  src="/media/calendar/calendar-grouping-filters.avif"
+  showCaption
+/>
 
-### By Date Tags
+### Group by Date Tags
 
-The first filter groups files and folders by date tags. Example date tag is `20260108` which represents the 8th of January 2026. [Date tags](/ui/taglibrary/#date-and-time-tagging) are available in the smart tags of the tag library and allow you to date and time stamp tag to files and folders.
+This option groups files and folders using **date tags**. A typical date tag looks like `20260108`, which represents **January 8, 2026**.
 
-### By Folder Name
+Date tags are available as **smart tags** in the Tag Library and allow you to precisely timestamp files and folders with dates and times.
 
-The second filter groups files and folder by the name of their parent folder if it represents a valid date, month or year such as:
+Learn more about date tags here: [Date and Time Tagging](/ui/taglibrary/#date-and-time-tagging)
 
-- `20260108` - for the 8th of January 2026
-- `202601` - for January 2026
-- `2026` - for the year 2026
+### Group by Folder Name
 
-### By Last Modified Date
+With this filter, files and folders are grouped based on the name of their **parent folder**, as long as the folder name represents a valid date, month, or year.
 
-This filter will group the files and folders by their date of last modification.
+Supported formats include:
 
-### By Creation Date
+- `20260108` – January 8, 2026
+- `202601` – January 2026
+- `2026` – The year 2026
 
-This filter will group the files and folders by their creation date.
+This is especially useful if your existing folder structure already follows a date-based naming convention.
+
+### Group by Last Modified Date
+
+This filter organizes files and folders according to the **last modified date**. It’s a great way to quickly see when content was last updated or to track recent activity.
+
+### Group by Creation Date
+
+This option groups files and folders by their **creation date**, helping you review when content was originally created.
 
 :::tip
-This filter is not available for object storage locations, because object storage usually do not have support for creation date.
+Creation dates are not available for object storage locations (such as S3), as these systems typically do not support creation timestamps.
 :::
 
 ## Views
 
-The following views are currently supported.
+Once your files are grouped, you can explore them using different calendar views—each offering a unique level of detail.
 
 ### Years View
 
-This view show a table where the rows represent the year and the columns represent months. Click on a table cell will list all the files and folders association with corresponding month. The number in the table is count of the associated files and folders. The color of the cell is also bound to the amount of the entries in this cell.
+The **Years View** shows an overview table where:
+
+- Rows represent years
+- Columns represent months
+
+Each cell displays the number of files and folders associated with that month. Darker colors indicate a higher number of entries. Clicking a cell reveals the related items.
 
 <CenteredImage
-    caption="Screenshot showing the years view in the calendar perspective"
-    src="/media/calendar/calendar-perspective-years-view.avif"
-    showCaption
-  />
+  caption="Years view in the Calendar Perspective"
+  src="/media/calendar/calendar-perspective-years-view.avif"
+  showCaption
+/>
 
 ### Year View
 
-This views represent a calendar for a given year, where the rows are the days of the week and the columns are grouped by months. Click on a calendar cell will list all the files and folders association with corresponding day. The number in the table is count of the associated files and folders. The color of the cell is also bound to the amount of the entries in this cell. With the arrow key on the left the years can switched.
+The **Year View** displays a full calendar for a single year:
+
+- Rows represent days of the week
+- Columns are grouped by months
+
+Each cell shows how many files and folders belong to a specific day. Color intensity reflects the number of entries. Use the navigation arrows on the left to switch between years.
 
 <CenteredImage
-    caption="Screenshot showing the year view in the calendar perspective"
-    src="/media/calendar/calendar-perspective-year-view.avif"
-    showCaption
-  />
+  caption="Year view in the Calendar Perspective"
+  src="/media/calendar/calendar-perspective-year-view.avif"
+  showCaption
+/>
 
 ### Month View
 
-This views is also a calendar but only for one month and here the columns represents the days of the week. The first number in every cell is the days of the month, the second number is count of files which are grouped in this day. Click on a calendar cell will list all the files and folders association with corresponding day. The color of the cell is also bound to the amount of the entries in this cell. With the arrow key on the left the month can switched.
+The **Month View** focuses on a single month:
+
+- Columns represent days of the week
+- Each cell shows the day of the month and the number of associated files
+
+Clicking a day displays all related files and folders. Use the navigation arrows on the left to move between months.
 
 <CenteredImage
-    caption="Screenshot showing the month view in the calendar perspective"
-    src="/media/calendar/calendar-perspective-month-view.avif"
-    showCaption
-  />
+  caption="Month view in the Calendar Perspective"
+  src="/media/calendar/calendar-perspective-month-view.avif"
+  showCaption
+/>
 
-## Persistence of the filter and views
+## Persistent Views and Filters
 
-The views and grouping filters are persisted per folder, this ensures that the next time you open certain directory with the calendar perspective the same view and grouping will be applied.
+Your selected **view** and **grouping filter** are saved per folder. This means that the next time you open the same folder using the Calendar Perspective, TagSpaces will automatically restore your preferred layout—saving you time and keeping your workflow consistent.
+
+## Why Use the Calendar Perspective?
+
+The Calendar Perspective makes it easy to:
+
+- Understand your files in a time-based context
+- Track progress and activity over days, months, or years
+- Navigate large collections of content more intuitively
+
+Whether you’re managing projects, reviewing archives, or organizing personal files, the Calendar Perspective gives you a clear and structured view of your data—right when it matters most.
