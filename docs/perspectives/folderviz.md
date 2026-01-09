@@ -9,9 +9,11 @@ import { ProFeature, CenteredImage, CenteredVideo } from '@site/src/components/C
 
 This perspective is a collection of views that apply information visualization techniques to analyze and represent files, folders and tags. While this perspective started as a showcase of TagSpaces' capabilities for developing custom solutions, some of its features may also be beneficial for end users.
 
-The perspective currently offers five views, accessible from the main toolbar located as usual on the top of the perspective. **Clicking** on a file or folder will display an overlay showing a thumbnail (if available) and additional details. Double-clicking on a folder will navigate to it, while **double-clicking** on a file will open it in the file preview area. **Click and drag** on the view will move the visualization. **Scrolling** with the mouse will zoom in and out.
+The perspective currently offers five views, accessible from the main toolbar located as usual on the top of the perspective. **Hovering** a file or folder will display an overlay showing a thumbnail (if available) and additional details. Clicking on a folder will navigate to it, while **clicking** on a file will open it in the file preview area. **Click and drag** on the view will move the visualization. **Scrolling** with the mouse will zoom in and out.
 
-Click on the **legend** elements on the top of the visualization will toggle the visibility of the corresponding entries in the graph.
+:::tip
+Your **selected view** is saved per folder. This means that the next time you open the same folder using the FolderViz Perspective, TagSpaces will automatically restore your preferred layout—saving you time and keeping your workflow consistent.
+:::
 
 In the **vertical menu** located in the top left part of the views you will find some useful commands, like redrawing the graph, changing its appearance or hiding the vertical menu in order to not have it on screenshots.
 
@@ -27,6 +29,14 @@ This shows an expanded, folder tree, similar to MindMap. While useful for visual
     showCaption
   />
 
+Clicking on the button marked with an arrow in the next screenshot will turn the rotate the tree to 90 degree .
+
+<CenteredImage
+    caption="Vertical folder tree view"
+    src="/media/folderviz/folderviz-folder-tree-vertical.avif"
+    showCaption
+  />
+
 ## Circular Folder Tree View
 
 Shows the same information like the folder tree view but in a circular tree.
@@ -37,13 +47,43 @@ Shows the same information like the folder tree view but in a circular tree.
     showCaption
   />
 
+## Tags Graph View
+
+The visualization show all the used tags with the tagged entries in a given location. Double-click on a tag will start a search for this tag and will show the files and folder tagged with it.
+
+Click on the **legend** elements (files, folders, links, tags) on the top of the visualization will toggle the visibility of the corresponding entries in the graph.
+
+<CenteredImage
+    caption="Screenshot of the tag graph view"
+    src="/media/folderviz/folderviz-tagsgraph.avif"
+    showCaption
+  />
+
+Clicking on the button marked with an arrow in the next screenshot will turn the graph into a circle. A click on the next two buttons will turn on and off the name of the tags and file/folder respectively.
+
+<CenteredImage
+    caption="Tags graph view rendered as circle"
+    src="/media/folderviz/folderviz-tagsgraph-round.avif"
+    showCaption
+  />
+
 ## Links Graph View
 
 This view uses the index created by the full-text search in a given location to show links between files and folder and their links to external website. The arrow connecting linked entries show the direction of the link. Only file and folder participating in a link will be displayed here.
 
+Click on the **legend** elements (files, folders, websites, tags) on the top of the visualization will toggle the visibility of the corresponding entries in the graph.
+
 <CenteredImage
-    caption="Screenshot of the links graph view"
+    caption="Standard view of the links graph"
     src="/media/folderviz/folderviz-linksgraph.avif"
+    showCaption
+  />
+
+Clicking on the button marked with an arrow in the next screenshot will turn the graph into a circle. A click on the next button will turn on and off the name of the nodes.
+
+<CenteredImage
+    caption="Round view lof the links graph"
+    src="/media/folderviz/folderviz-linksgraph-round.avif"
     showCaption
   />
 
@@ -53,16 +93,6 @@ This view uses the index created by the full-text search in a given location to 
 - The links are extracted from files in plain text, Markdown, HTML or PDF formats and from the description of any files or folder.
 - The links between the files and folder should be in the in the tagspaces' [link format](/linking) in order to be displayed here.
   :::
-
-## Tags Graph View
-
-The visualization show all the used tags with the tagged entries in a given location. Double-click on a tag will start a search for this tag and will show the files and folder tagged with it.
-
-<CenteredImage
-    caption="Screenshot of the tree graph view"
-    src="/media/folderviz/folderviz-tagsgraph.avif"
-    showCaption
-  />
 
 ## Treemap View
 
