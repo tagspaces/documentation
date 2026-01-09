@@ -11,15 +11,24 @@ The Calendar Perspective offers a powerful and intuitive way to organize your fi
 
 Depending on the selected grouping option, files and folders are automatically placed on the calendar, giving you a clear, time-based overview of your data.
 
+<CenteredImage
+  src="/media/calendar/calendar-lead-screenshot.avif"
+  showCaption
+/>
+
 ## Grouping Filters
 
-The Calendar Perspective currently supports four different grouping filters. These determine how files and folders are assigned to dates on the calendar.
+The Calendar Perspective currently supports four different grouping filters. These determine how files and folders are assigned to dates on the calendar. You can have more than one active filter, as shown in the next screenshot.
 
 <CenteredImage
   caption="Date and time grouping filters"
   src="/media/calendar/calendar-grouping-filters.avif"
   showCaption
 />
+
+:::tip
+Your selected **grouping filters** are saved per folder. This means that the next time you open the same folder using the Calendar Perspective, TagSpaces will automatically restore your preferred layout—saving you time and keeping your workflow consistent.
+:::
 
 ### Group by Date Tags
 
@@ -56,6 +65,16 @@ Creation dates are not available for object storage locations (such as S3), as t
 ## Views
 
 Once your files are grouped, you can explore them using different calendar views—each offering a unique level of detail.
+
+<CenteredImage
+  caption="Changing the views"
+  src="/media/calendar/calendar-changing-views.avif"
+  showCaption
+/>
+
+:::tip
+Your selected **view** is saved per folder. This means that the next time you open the same folder using the Calendar Perspective, TagSpaces will automatically restore your preferred layout—saving you time and keeping your workflow consistent.
+:::
 
 ### Years View
 
@@ -101,10 +120,6 @@ Clicking a day displays all related files and folders. Use the navigation arrows
   src="/media/calendar/calendar-perspective-month-view.avif"
   showCaption
 />
-
-## Persistent Views and Filters
-
-Your selected **view** and **grouping filter** are saved per folder. This means that the next time you open the same folder using the Calendar Perspective, TagSpaces will automatically restore your preferred layout—saving you time and keeping your workflow consistent.
 
 ## Why Use the Calendar Perspective?
 
