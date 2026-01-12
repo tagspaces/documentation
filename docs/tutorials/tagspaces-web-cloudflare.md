@@ -42,7 +42,7 @@ Extract the content of the **TagSpaces Web** or **TagSpaces Pro Web** package to
 Execute the following command and follow the instruction to create a new Cloudflare deployment.
 
 ```
-CLOUDFLARE_ACCOUNT_ID=YOUR_ACCOUNT_ID_HERE npx wrangler pages publish web
+CLOUDFLARE_ACCOUNT_ID=YOUR_ACCOUNT_ID_HERE npx wrangler pages deploy web
 ```
 
 Here **web** is the folder of the unzipped tagspaces' package.

@@ -19,7 +19,8 @@
 
 @font-face {
     font-family: NotoSansRegular;
-    src: url(/static/fonts/NotoSans-Regular.ttf)
+    src: url(/static/fonts/NotoSans-Regular.ttf);
+    font-display: swap;
 }
 
 /* @font-face {
@@ -29,11 +30,12 @@
 
 @font-face {
     font-family: Fredoka;
-    src: url(/static/fonts/fredoka.ttf)
+    src: url(/static/fonts/fredoka.ttf);
+    font-display: swap;
 }
 
 body {
-    font-family: NotoSansRegular,Arial
+    font-family: NotoSansRegular, "Arial", "Helvetica Neue", sans-serif;
 }
 
 .docusaurus-highlight-code-line {
