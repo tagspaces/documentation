@@ -6,145 +6,175 @@ tags: [perspective]
 
 import { ProFeature, CenteredImage } from '@site/src/components/CommonBlocks';
 
-This perspective is optimized for general browsing through file and folder structures while supporting common file management operations such as tagging, renaming, deleting, copying, and moving files and folders.
+The **Grid Perspective** is optimized for general browsing of files and folder structures. It supports common file management operations such as renaming, tagging, deleting, copying, and moving files and folders.
 
-The default view in TagSpaces presents content in a grid, making it the most common way of displaying folders.
+In TagSpaces, the Grid Perspective is the default view and the most commonly used way to display folders and their contents.
 
-![screenshot of the default perspective of the app](/media/grid/grid-lead.avif)
+![Screenshot of the default grid perspective](/media/grid/grid-lead.avif)
 
-### File Tile
+## File Tile
 
-Each tile in the grid represents the following information:
+Each file tile in the grid perspective displays the following information:
 
-- **(1)**: Displays tags added to the file.
-- **(2)**: Shows file description, if available.
-- **(3)**: Displays the file title (filename without extension or tags).
-- **(4)**: Shows the file extension, color-coded based on settings in the [File types tab](/ui/settings#file-types).
-- **(5)**: Indicates the last modified date of the file.
-- **(6)**: Shows the file size, hovering over it reveals the size in bytes.
-- **(7)**: Indicates file selection (with a green border).
-- **(8)**: Displays a file thumbnail, if available.
-- **(9)**: Highlights a [geo-tag](/ui/taglibrary/#geo-tagging) with a special icon.
+- **(1)** Tags assigned to the file
+- **(2)** File description, if available
+- **(3)** File title (filename without extension or tags)
+- **(4)** File extension, color-coded based on the settings in the [File Types tab](/ui/settings#file-types)
+- **(5)** Last modified date
+- **(6)** File size (hover to see the exact size in bytes)
+- **(7)** Selection indicator (highlighted with a colored border)
+- **(8)** File thumbnail, if available
+- **(9)** Indicator for a [geo-tag](/ui/taglibrary/#geo-tagging)
 
-![A tile of a file](/media/grid/file-tile.svg)
+![A tile representing a file](/media/grid/file-tile.svg)
 
 :::info
-<ProFeature /> Adding descriptions and geo-tags to a file is a feature available in the Pro versions of the app.
+<ProFeature /> Adding descriptions and geo-tags to files is available in the Pro versions of TagSpaces.
 :::
 
-### Folder Tile
+## Folder Tile
 
-Similar to file tiles, folder tiles display the following:
+Folder tiles display information similar to file tiles:
 
-- **(1)**: Shows tags added to the folder.
-- **(2)**: Displays the folder description, if available.
-- **(3)**: Shows the folder name and, if set, the [custom color](/folders/#folder-properties).
-- **(4)**: Displays a folder icon (instead of a file extension).
-- **(5)**: Displays a folder thumbnail, if available.
-- **(6)**: Shows selection status for the folder.
+- **(1)** Tags assigned to the folder
+- **(2)** Folder description, if available
+- **(3)** Folder name and optional [custom color](/folders/#folder-properties)
+- **(4)** Folder icon (instead of a file extension)
+- **(5)** Folder thumbnail, if available
+- **(6)** Selection indicator
 
 ![A tile representing a folder](/media/grid/folder-tile.svg)
 
 :::info
-<ProFeature /> Adding descriptions and thumbnails for folders is a feature available in the Pro versions of the app.
+<ProFeature /> Adding descriptions and custom thumbnails to folders is available in the Pro versions of TagSpaces.
 :::
 
-### Selecting Files
+## Selecting Files and Folders
 
-Files can be selected by holding the `CTRL` / `CMD` key and clicking on them. To select a range, hold `SHIFT`, click on the first file (_file 1_), then click on the second file (_file 2_). This selects all files between _file 1_ and _file 2_.
+You can select multiple files or folders using the following methods:
 
-To select or deselect all files, use the first button in the perspective's toolbar or press `CTRL+A` / `CMD+A`.
+- Hold `CTRL` / `⌘` and click to select individual entries
+- Hold `SHIFT`, click the first entry, then click another to select a range
+- Use **Select All** in the toolbar or press `CTRL+A` / `⌘+A`
 
 ![Folder with selected files and subfolders](/media/grid/folder-with-selected-entries.png)
 
+:::tip
+You can also select multiple entries by clicking on an empty area of the grid and dragging a selection rectangle. All entries inside the rectangle will be selected.
+:::
+
 ## Perspective Toolbar
 
-The toolbar at the top of the perspective contains the following buttons and sub-menus:
-
-- **(1) Open parent folder** - Navigates to the parent folder of the current folder, if within the current location. This action can also be achieved by pressing the **BACKSPACE** key.
-- **(2) Toggle File Selection** - Selects or deselects all files and folders in the perspective.
-- **(3) Open Folder Properties** - Opens the folder properties.
-- **(4) Add/Remove Tags** - Manages tags on selected files, applicable to multiple files simultaneously. Learn more in the [Tagging -> Tagging using context menus](/tagging#tag-operations-on-many-entries) section.
-- **(5) Copy/Move Entries** - Opens the **Move or Copy Entries** dialog to specify the target directory for moving or copying files.
-
 <CenteredImage
-    caption="The dialog for moving or copying files and folders"
-    src="/media/core/copy-move-files-dialog.avif"
-    showCaption
-    maxWidth={500}
+caption="Toolbar of the Grid Perspective"
+src="/media/grid/grid-toolbar.avif"
 />
 
-- **(6) Delete Files** - Opens a dialog to confirm the deletion of selected files.
-- **(7) Sort Files** - Opens a menu to sort files by the following options:
+The toolbar at the top of the perspective provides quick access to common actions:
 
-  - **Title** - Sorts alphabetically by name.
-  - **Size** - Sorts by file size.
-  - **Date Modified** - Sorts by last modified date.
-  - **First Tag** - Sorts alphabetically by the first tag.
-  - **File Ext.** - Sorts alphabetically by file extension.
-  - **Random** - Sorts files randomly, useful when using TagSpaces as a music player for random audio track playback.
+- **Parent Folder** – Navigates to the parent directory (also available via the `BACKSPACE` key)
+- **Select All** – Selects or deselects all visible entries
+- **Details** – Opens the properties of the current folder
+- **Sort Files** – Opens a sorting menu with the following options:
+
+  - **Title**
+  - **Size**
+  - **Date Modified**
+  - **First Tag**
+  - **File Extension**
+  - **Random** (useful for random playback of audio files)
 
   :::tip
-  Clicking a sorting option twice reverses the sort order. For random sorting, this regenerates a new random order.
+  Clicking the same sorting option again reverses the sort order. Selecting **Random** again generates a new random order.
   :::
 
   :::info
-  Sort order is preserved when navigating to a new folder.
+  The selected sort order is preserved when navigating between folders.
   :::
 
-- **(8) Export as CSV** - Feature is described [below](#export-files-as-csv).
-- **(9) Open Perspective Settings** - Opens the perspective settings dialog, described [below](#perspective-settings).
+- **Tags** – Manage tags for one or multiple selected entries  
+  See [Tag Operations on Multiple Entries](/tagging#tag-operations-on-many-entries).
+- **Copy / Move Entries** – Opens the dialog for copying or moving selected files and folders
+
+<CenteredImage
+caption="Dialog for moving or copying files and folders"
+src="/media/core/copy-move-files-dialog.avif"
+showCaption
+maxWidth={500}
+/>
+
+- **Delete** – Opens a confirmation dialog for the deletion of the selected files and folders
+- **Share Files** – Opens the file sharing dialog, available only for object storage locations
+- **Zoom In / Zoom Out** – Adjusts tile size
+- **Export as CSV** – Described [below](#export-files-as-csv)
+- **Perspective Settings** – Opens the settings dialog for this perspective
 
 ## File Context Menu
 
-Right-clicking a file opens the context menu with options for file management.
+Right-clicking a file opens the file context menu.
 
-![The context menu of a file](/media/grid/file-context-menu.png)
+<CenteredImage
+caption="The file context menu"
+src="/media/grid/file-context-menu.avif"
+showCaption
+maxWidth={600}
+/>
 
-- **Open File** - Splits the main area of TagSpaces, opening the file in the right pane. Learn more in the [Viewing Files](/viewing-files) section.
-- **Open Parent Folder** - Useful in search results to open the parent folder of a selected file.
-- **Open File Natively** - Opens the file in the default external application.
-- **Show in File Manager** - Opens the file in your operating system’s default file manager.
-- **Add/Remove Tags** - Opens a dialog to manage tags for the file.
+Available actions include:
+
+- **Open File** – Opens the file in the preview area
+- **Open Parent Folder** – Useful in search results
+- **Open File Natively** – Opens the file in the default external application
+- **Show in File Manager** - Opens the file in the default file manager of the operating system.
+- **Add / Remove Tags** - Opens a dialog to manage tags for the file.
 - **Rename File** - Opens a file renaming dialog.
-- **Duplicate File** - Creates a copy of the file, with tags for "copy" and timestamp (e.g., "20210831T1230").
-- **Move/Copy File** - Opens the move/copy dialog.
-- **Use as Thumbnail for the Current Folder** - Sets the file’s thumbnail as the folder thumbnail.
+- **Duplicate File** – Creates a copy with a timestamp and a “copy” tag
+- **Share Files** – Object storage only
+- **Move / Copy File** - Opens the move/copy dialog.
 - **Delete File** - Opens a deletion confirmation dialog.
-- **Copy Sharing Link** - Copies an internal sharing link for the file to your clipboard.
+- **Use as Thumbnail for Current Folder** - Sets the file’s thumbnail as the folder thumbnail.
+- **Use as Background Image** – Will show only if the selected files is an image, and will set this image as background for the current folder.
+- **Copy Sharing Link** - Copies an internal [sharing link](/sharing/#internal-sharing-for-files-and-folders) for the file in the clipboard.
+- **Download File** - will initiate the downloading of the file.
+- **File Details** – Shows properties in the preview area
 
 ## Folder Context Menu
 
-Right-clicking a folder opens its context menu for folder management.
+Right-clicking a folder opens its context menu.
 
-![The context menu of a folder](/media/grid/folder-context-menu.png)
+<CenteredImage
+caption="The folder context menu"
+src="/media/grid/folder-context-menu.avif"
+showCaption
+maxWidth={600}
+/>
+
+Menu options include:
 
 - **Open Folder** - Navigates to the selected directory.
 - **Open in New Window** - Opens the folder in a new TagSpaces window or tab (web version).
 - **Rename Folder** - Opens the folder renaming dialog.
-- **Move/Copy Folder** - Opens the dialog to move or copy the folder.
+- **Move / Copy Folder** - Opens the dialog to move or copy the folder.
 - **Delete Folder** - Opens a deletion confirmation dialog.
 - **Show in File Manager** - Opens the directory in the default file manager.
 - **Use as Thumbnail for Parent Folder** - Sets the folder’s thumbnail as the parent folder thumbnail.
 - **Copy Sharing Link** - Copies a link for internal sharing or linking.
-- **Add/Remove Tags** - Opens the dialog to manage folder tags.
-- **Folder Properties** - Opens the folder properties in the preview area.
+- **Add / Remove Tags** - Opens the dialog to manage folder tags.
+- **Folder Details** - Opens the folder properties in the preview area.
+
+## Current Folder Context Menu
+
+Right-clicking on an empty area in the Grid Perspective opens the context menu of the current folder.  
+This menu is identical to the one available via the folder navigator in the top navigation bar. See [Folder Menu](/ui/userinterface/#folder-menu).
 
 ## Perspective Settings
 
-Adjust the grid perspective settings in the dialog below.
+The Grid Perspective settings can be opened using the settings button on the right side of the toolbar.
 
-<CenteredImage
-    caption="Settings of the Grid Perspective"
-    src="/media/grid/grid-settings.avif"
-    showCaption
-    maxWidth={350}
-/>
+Available options include:
 
-Settings Options
-
-- **Show Folders** - Toggles folder visibility.
-- **Show Tags on Files and Folders** - Shows/hides tags as small colored circles.
+- **Show Folders** - Toggles visibility of the sub folders in the current folder.
+- **Show Tags on Files and Folders** - Toggles between showing all tags and much compacted tag preview, showing just the number of the applied tags and the color of the first and second tag if available.
 - **Show Descriptions for Files and Folders** - Shows/hides descriptions.
 - **Show Folder Details** - Shows/hides folder details.
 - **Toggle Thumbnail Modes** - Switches between "cover" and "contain" modes for thumbnails. "Cover" may crop thumbnails, while "contain" shows the entire image with possible transparent bars.
@@ -157,60 +187,84 @@ Settings Options
 - **Single Click Selects Only** - Selects the file without opening it.
 
 :::info
-Double-clicking always opens a file in the preview area or navigates to a folder.
-:::
-
-At the bottom of the dialog, you’ll find these options:
-
-- **Help** - Opens this page from the online documentation.
-- **Set as Default** - Saves the settings as the default for all folders with this perspective.
-- **Set for This Folder** - Saves the current settings for the folder, so these options will be applied upon opening.
-
-The dialog also indicates if the current folder has custom settings. You can reset them using the **Reset Custom Settings** button.
-
-### Example Configurations
-
-A common arrangement found in file browsing applications is the grid. The grid view offers a resizable grid with thumbnail previews of certain file formats, for quick and effective browsing. The files and folder are represented by user interface element called cards.
-
-The following screenshot shows the grid view in its **compact mode**. The thumbnails are in the so called **cover** mode, covering the whole area defined for the thumbnail. In order to achieve this effect this mode will more likely cut some of the border areas of the thumbnail's image. The folder details is turned on in the screenshot.
-![](/media/grid/grid-perspective.png)
-
-The next screenshot shows the grid view in its **large mode**. The thumbnails here are in the **contain** mode, which displays the whole thumbnail in the thumbnail area of the card, eventually causing transparent bars to appear on the left and right side of the thumb image. The folder details is turned off in the screenshot.
-![](/media/grid/grid-view-large-mode.png)
-
-## Drag to move within TagSpaces
-
-An alternative way to move files into another folder is to drag it icon onto a folder on the **Folder navigation** area on the left panel. When the folder lights up with a greenish hue, just release the dragged item, and the file will be immediately moved into that folder.
-
-:::tip
-You can access sub folders of any folder displayed in the hierarchy, by clicking the folder icon next to its name.
+Double-clicking always opens a file internally or navigates into a folder.
 :::
 
 <CenteredImage
-    caption="Moving or copying files to the folder tree"
-    src="/media/grid/drop-files-to-folder.avif"
-    showCaption
-  />
+caption="Grid Perspective settings dialog"
+src="/media/grid/grid-settings.avif"
+showCaption
+maxWidth={650}
+/>
 
-## Export files as CSV
+The settings configured in this dialog can apply either to the **Grid Perspective globally** or **only to the current folder**. For this reason, two separate buttons are available at the bottom of the dialog to persist your changes.
+
+- **Set as Default** – Saves the current settings as the default for all folders using the Grid Perspective.
+- **Set for This Folder** – Saves the current settings only for the active folder. These settings will be applied the next time the folder is opened.
+
+At the top of the dialog, an indicator shows whether the current folder has custom settings applied. These can be removed using the **Reset Custom Settings** button.
+
+When a folder has custom settings, the **Perspective Settings** button in the toolbar is highlighted, as shown in the previous screenshot.
+
+## Drag to Move Within TagSpaces
+
+You can move files by dragging them onto a folder in the **Folder Navigation** panel on the left.  
+When the destination folder highlights, release the mouse button to move the file.
+
+:::tip
+You can expand subfolders in the folder tree by clicking the arrow icon next to a folder name.
+:::
+
+<CenteredImage
+caption="Moving files using drag and drop"
+src="/media/grid/drop-files-to-folder.avif"
+showCaption
+/>
+
+## Export Files as CSV
 
 <ProFeature />
 
-With this feature you can export the list of file and folder from the current folder or from the current search results as CSV file. This will allow you to process the information annotations you have entered in TagSpaces such as tags and description in other tools. The export can be started by clicking on the button from the main toolbar of the default perspective, marked on the next screenshot.
+You can export files and folders from the current folder or search results as a CSV file. A CSV (Comma-Separated Values) file is a simple text file used to store tabular data, where each row represents a record and values are separated by commas (or other delimiters). This allows you to process metadata such as tags and descriptions in external tools (e.g. spreadsheets or databases).
 
 <CenteredImage
-    caption="Starting the CSV export from the toolbar of the perspective"
-    src="/media/grid/csv-export.avif"
-    showCaption
-  />
+caption="Starting the CSV export from the toolbar"
+src="/media/grid/csv-export.avif"
+showCaption
+/>
 
-The exported file contains the following columns:
+The exported CSV file contains the following columns:
 
 - **name** - name of the entry
-- **is file** - true if the entry is a file, false if it is folder
+- **is file** - `true` if the entry is a file, `false` if it is folder
 - **file extension** - only for files
 - **tags** - a semicolon separated list of tags
 - **size** - in bytes
 - **last modified date** - ISO8601 compatible timestamp of the last modification
 - **full path** - the full path to the current entry
-- **description** - the entry description in markdown format
+- **description** - the entry description in Markdown format
+
+## Example Views of the Grid Perspective
+
+### Compact Mode
+
+Shows a dense layout with thumbnails in **cover** mode. Folder details are enabled.
+
+![](/media/grid/grid-perspective.png)
+
+### Large Mode
+
+Shows larger tiles with thumbnails in **contain** mode. Folder details are disabled.
+
+![](/media/grid/grid-view-large-mode.png)
+
+### Wiki / Confluence View
+
+When folder descriptions are enabled, the folder description can act as a wiki-like page, with files listed below.
+
+![](/media/grid/grid-wiki-view.avif)
+
+## Conclusion
+
+The Grid Perspective is the most versatile and commonly used view in TagSpaces.  
+It balances powerful file management features with a clean visual presentation, making it suitable for everyday use as well as advanced workflows.

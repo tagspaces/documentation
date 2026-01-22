@@ -62,18 +62,25 @@ The file browsing area displays files from the active folder in various views (l
 - **(4)** - Opens [search](/search).
 - **(5)** - Displays parent folders as buttons, enabling navigation.
 - **(6)** - Displays the current folder's name, which opens the [folder menu](#folder-menu).
-- **(7)** - Switches the [perspective](/browsing-files) of the current folder.
+- **(7)** - Switch between different perspectives: [Grid](/perspectives/grid/), [List](/perspectives/list/), [Gallery](/perspectives/gallery/), [Mapique](/perspectives/mapique/), [Kanban](/perspectives/kanban/), [FolderViz](/perspectives/folderviz/) and [Calendar](/perspectives/calendar/).
 
 ### Folder Menu
 
-The folder menu includes options such as:
+This menu includes options such as:
 
 - Reload, rename, or delete the folder.
 - Open the folder in the operating system's file manager.
 - Create new files, subfolders, or add files.
 - Import macOS tags (only on macOS desktop app).
-- Switch between different perspectives: [Grid](/perspectives/grid/), [List](/perspectives/list/), [Gallery](/perspectives/gallery/), [Mapique](/perspectives/mapique/), [Kanban](/perspectives/kanban/).
-- Access folder [properties](/folders#folder-properties).
+- Add and remove tags
+- Access folder [details](/folders#folder-properties).
+
+<CenteredImage
+    caption="Current folder context menu"
+    src="/media/core/current-folder-context-menu.avif"
+    showCaption
+    maxWidth="250px"
+  />
 
 ## Preview Area
 
