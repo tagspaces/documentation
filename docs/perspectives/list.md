@@ -52,7 +52,7 @@ The functionalities of the list perspective are very similar to the **[grid pers
 
 ## Perspective Settings
 
-Perspective settings are described in the [grid perspective](/perspectives/grid/#perspective-settings).
+The settings of the list perspective are currently the same as settings of the grid perspective, which are documented [here](/perspectives/grid/#perspective-settings).
 
 <CenteredImage
     caption="Settings of the list perspective"

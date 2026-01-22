@@ -105,7 +105,7 @@ To sync `.ts` folders with cloud services like Dropbox or Google Drive, enable t
 
 ## Tag Operations on Multiple Entries
 
-To add or remove tags from multiple files or folders, first, select them by holding the CTRL/CMD key and clicking on the entries with the left mouse button. You can also use checkboxes in the list view.
+To add or remove tags from multiple files or folders, first, select them by holding the CTRL/⌘ key and clicking on the entries with the left mouse button. You can also use checkboxes in the list view.
 
 Once selected, right-click on the files and choose `Add / Remove Tags` from the context menu, or click the `Tags` button in the toolbar.
 

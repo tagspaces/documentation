@@ -21,7 +21,7 @@ If the file format of the currently opened files is supported for editing the **
     maxWidth={600}
   />
 
-Once in edit mode the `Edit` button will disappear and on its place two new buttons will be appear. Pressing the `Cancel` button will revert the changes and exit the edit mode. Pressing the `Save` button will respectively save the changes, which can be done also with the `CMD/CTRL+S` key combination. After saving the changes the file will remain in edit mode and you can continue its editing. If the file is changed you will see a black dot in front of the file extension, visible in the upper left corner of the next screenshot. Saving the changes will make the dot to disappear. The `Cancel` and `Save` button will be exchanged with an`Exit editing` button, which will open the file back with file viewer extension for this file type.
+Once in edit mode the `Edit` button will disappear and on its place two new buttons will be appear. Pressing the `Cancel` button will revert the changes and exit the edit mode. Pressing the `Save` button will respectively save the changes, which can be done also with the `⌘/CTRL+S` key combination. After saving the changes the file will remain in edit mode and you can continue its editing. If the file is changed you will see a black dot in front of the file extension, visible in the upper left corner of the next screenshot. Saving the changes will make the dot to disappear. The `Cancel` and `Save` button will be exchanged with an`Exit editing` button, which will open the file back with file viewer extension for this file type.
 
 <CenteredImage
     caption="Save changes"
@@ -65,7 +65,7 @@ The revisions are stored in a subfolder of the `.ts` folder, which is located in
 <ProFeature />
 
 The auto-save feature can be enabled individually for each editable file. When it is enabled, the application will save any changes you
-make automatically every 40 seconds. In the most editor extensions you can also save the file anytime manually by clicking the save button or by pressing the `CMD/CTRL+S` key combination.
+make automatically every 40 seconds. In the most editor extensions you can also save the file anytime manually by clicking the save button or by pressing the `⌘/CTRL+S` key combination.
 
 <CenteredImage
     caption="A switch for activation of the auto-save functionality for the current file"
