@@ -199,10 +199,10 @@ maxWidth={650}
 
 The settings configured in this dialog can apply either to the **Grid Perspective globally** or **only to the current folder**. For this reason, two separate buttons are available at the bottom of the dialog to persist your changes.
 
-- **Set as Default** – Saves the current settings as the default for all folders using the Grid Perspective.
-- **Set for This Folder** – Saves the current settings only for the active folder. These settings will be applied the next time the folder is opened.
+- **Set as default (2)** – Saves the current settings as the default for all folders using the Grid Perspective.
+- **Set for this folder (3)** – Saves the current settings only for the active folder. These settings will be applied the next time the folder is opened.
 
-At the top of the dialog, an indicator shows whether the current folder has custom settings applied. These can be removed using the **Reset Custom Settings** button.
+At the top of the dialog, an indicator shows whether the current folder has custom settings applied. These can be removed using the **Reset Custom Settings (1)** button.
 
 When a folder has custom settings, the **Perspective Settings** button in the toolbar is highlighted, as shown in the previous screenshot.
 

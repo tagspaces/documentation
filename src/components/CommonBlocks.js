@@ -117,13 +117,12 @@ export function ProFeature() {
           backgroundColor: "#1dd19f",
           color: "white",
           fontWeight: "bold",
-          fontStyle: "normal",
-          fontSize: 13,
-          paddingTop: 2,
+          fontSize: 11,
+          paddingTop: 1,
           paddingBottom: 2,
           paddingLeft: 5,
           paddingRight: 5,
-          borderRadius: 4,
+          borderRadius: 10,
         }}
       >
         PRO
