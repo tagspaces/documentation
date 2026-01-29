@@ -66,6 +66,8 @@ Once you select a model, a progress dialog will display the download status. Ple
 
 ## Folder AI Chat
 
+Every folder managed in TagSpaces can have it's own AI-chat, where the conversation history in kept in the folder itself.
+
 If Ollama is configured correctly, a new button will appear next to the perspective switcher in the folder area. Clicking it opens the **AI Chat** tab within the folder properties.
 
 <CenteredImage
@@ -99,6 +101,75 @@ As seen in the following video, you can drag and drop images (JPG and PNG format
     autoPlay
     showCaption
 />
+
+## Predefined AI Prompts
+
+In the **AI Chat** tab, you can create and manage custom AI prompts. These prompts help you quickly perform recurring tasks and standardize how AI assists you when working with files and folders.
+
+Typical use cases include:
+
+- Translating content into a specific language
+- Creating summaries in a chosen language
+- Correcting or improving text in a specific language
+- Extracting key points or action items from documents
+- Generating titles, tags, or short descriptions
+- Explaining complex technical content in simple terms
+- Creating meeting notes or documentation drafts
+
+Custom prompts are available from the **prompts dropdown menu**, which can be opened using the button on the left side of the AI prompt input field.
+
+<CenteredImage
+caption="Opening the AI prompts menu"
+src="/media/ai/ai-prompts-menu.avif"
+maxWidth={700}
+showCaption
+/>
+
+The menu lists all your saved prompts by name. Each prompt includes an **Edit** button on the right, allowing you to modify it.  
+At the top of the menu, you’ll also find a **Create Prompt** option for adding a new prompt.
+
+<CenteredImage
+caption="Dialog for editing AI prompts"
+src="/media/ai/ai-prompt-editor.avif"
+maxWidth={700}
+showCaption
+/>
+
+Each prompt must include a **title** and a **content** describing what the AI should do.  
+In the lower-left corner of the dialog, a **Delete** button allows you to remove the currently selected prompt.
+
+### Example Prompt Ideas
+
+Here are some practical examples you can use or adapt:
+
+- **Translate to English**  
+  *Translate the selected content into clear, natural English.*
+- **Summarize Document**  
+  *Create a concise summary of the selected text, highlighting the main ideas.*
+- **Extract Action Items**  
+  *List all action items and tasks mentioned in the text.*
+- **Generate Tags**  
+  *Suggest up to 5 relevant tags based on the content.*
+- **Improve Writing Style**  
+  *Rewrite the text to be more professional and concise.*
+- **Explain Like I’m Five**  
+  *Explain the content in very simple terms for a non-technical audience.*
+- **Create Documentation Draft**  
+  *Turn the content into structured technical documentation with headings.*
+
+### Best Practices for AI Prompts
+
+To get the best results from your AI prompts, consider the following tips:
+
+- **Be specific** – Clearly describe the desired output, tone, and language.
+- **Define the format** – Ask for bullet points, numbered lists, or paragraphs if needed.
+- **Limit the scope** – Focus on one task per prompt for more predictable results.
+- **Include language instructions** – Explicitly state the target language when translating or summarizing.
+- **Test and refine** – Adjust the prompt wording based on the results you get.
+
+:::info
+In future versions, we plan to add a description/comment field and the ability to select a preferred LLM model for each prompt.
+:::
 
 ## AI Features for Files
 
@@ -163,7 +234,7 @@ From this dialog, you can initiate the following tasks:
     - **Append analysis to description:** Toggles between appending the analysis results to the existing description or replacing it.
 ## Advanced Features
 
-### Custom Prompts for AI Features
+### Custom Prompts for the AI Features
 
 <ProFeature /> At the bottom of the AI settings tab, there is an **Advanced** section (closed by default). Expanding this section reveals text areas where you can adjust the system prompts used for various AI/LLM features. This is useful because different LLMs may produce better results with specific prompt structures.
 
