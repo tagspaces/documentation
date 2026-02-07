@@ -32,7 +32,7 @@ The extension can generate a mind map structure of the document based on its hea
 
 ![Screenshot of the markdown editor mind map](/media/extensions/md-editor-mindmap.png)
 
-### Diagrams (depracated)
+<!-- ### Diagrams (depracated)
 
 The editor supports presenting and editing of [mermaid](https://mermaid-js.github.io/mermaid/) based diagrams:
 
@@ -42,7 +42,7 @@ The editor supports presenting and editing of [mermaid](https://mermaid-js.githu
     posterUrl="/media/extensions/editor-md-mermaid-diagrams.png"
     autoPlay={false}
     showCaption
-/>
+/> -->
 
 ## Live Demo
 

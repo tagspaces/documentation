@@ -1,5 +1,9 @@
 # Markdown Viewer
 
+:::warning
+This is extension is deprecated since v6.9.0
+:::
+
 A TagSpaces extension that allows for the opening of markdown files.
 
 ## Features

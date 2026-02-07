@@ -5,8 +5,9 @@ A TagSpaces extension allowing you to open URL files created from web browsers o
 ## Features
 
 - Enables TagSpaces to be used as a bookmark management application.
+- Opening links from Windows' `.url` files, created for example, by the Favorite Manager of the Edge browser.
+- Opening links from Mac's `.webloc` files, create by Safari or Chrome on Mac.
 - Opening links from Ubuntu's `.desktop` files, created, for example, by dragging URLs from the Chrome browser.
-- Opening links from Windows' `.url` files, created, for example, by the Favorite Manager of Internet Explorer.
 - Opening links from Ubuntu's `.website` files.
 - With this extension, it is possible to use TagSpaces as a bookmark manager with support for tagging.
 
