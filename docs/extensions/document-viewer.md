@@ -4,9 +4,10 @@ A TagSpaces extension for previewing document files.
 
 ## Features
 
-- Preview files in DOCX format
+- Preview files in DOCX and ODT file formats
 - Export the content as an HTML file
 - Zoom in and out of the content
+- Search in the content
 
 ![general screenshot of the document viewer extension](/media/extensions/viewer-document-lead.png)
 

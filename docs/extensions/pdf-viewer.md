@@ -16,7 +16,7 @@ A TagSpaces extension allowing opening, searching, and navigating through PDF fi
 In order to save the annotations (text or drawing), you have to download the PDF document from the icon in the toolbar. Otherwise, by closing or changing the document, your changes will be lost.
 :::
 
-![Screenshot of the viewerPDF](/media/extensions/viewer-pdf-lead.png)
+![Screenshot of the viewerPDF](/media/extensions/viewer-pdf-lead.avif)
 
 ## Used Libraries
 

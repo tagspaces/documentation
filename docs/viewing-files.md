@@ -18,12 +18,13 @@ TagSpaces supports the previewing of many file types without requiring external 
 - [PDF Viewer](/extensions/pdf-viewer/) - Previews documents in PDF format.
 - [RTF Viewer](/extensions/rtf-viewer/) - Views rich text files in RTF format.
 - [Text Reader](/extensions/text-viewer/) - Previews plain text files, Markdown files, and various source code formats.
-- [Document Viewer](/extensions/document-viewer/) - Previews Word documents in DOCX format.
+- [Document Viewer](/extensions/document-viewer/) - Previews Word documents in DOCX and ODT format.
 - [Slides Viewer](/extensions/slides-viewer/) - Opens Reveal.js presentations.
 - [Spreadsheet Viewer](/extensions/spreadsheet-viewer/) - Previews spreadsheets in ODS, XLSX, and CSV formats.
 - [ZIP Viewer](/extensions/archive-viewer/) - Previews archives in ZIP format.
 - [3D Viewer](/extensions/3d-viewer/) - <ProFeature /> Previews 3D models in GLB, STL, and OBJ formats.
 - [Font Viewer](/extensions/font-viewer/) - <ProFeature /> Previews fonts in TTF, OTF, and WOFF formats.
+- [Contact Viewer](/extensions/contact-viewer/) - <ProFeature /> Previews contact in VCF format.
 
 TagSpaces is built with extensibility in mind, allowing new file viewers to be easily developed and integrated into the application.
 
