@@ -8,14 +8,23 @@ A TagSpaces extension allowing you to open eBooks or digital magazines in EPUB f
 
 - Previewing files in EPUB format
 - Automatically switch to two-fold mode by sufficient width
+- Readability options, for changing font type and adjusting line spacing and text size
 
+<CenteredImage
+    caption="eBook view with opened menu showing readability options"
+    src="/media/extensions/ebook-viewer.avif"
+    showCaption
+    maxWidth="750px"
+  />
+
+Short video showing the eBook viewer in action:
 <CenteredVideo
     caption="The EPUB viewer in action"
     src="/media/extensions/viewer-epub.mp4"
     posterUrl="/media/extensions/viewer-epub.jpg"
     maxWidth="100%"
     autoPlay
-    showCaption
+    showCaption={false}
   />
 
 ## Used Libraries
