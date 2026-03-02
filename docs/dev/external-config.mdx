@@ -383,19 +383,16 @@ window.ExtSearches = [
 
 ## Configuring custom map tile servers
 
-From version 3.10 TagSpaces can be pre-configured with custom map tile servers. The OpenStreetMap compatible tile servers can be even self hosted allowing you to work with maps without the need to be connect to the Internet.
+TagSpaces can be pre-configured with custom map tile servers. The OpenStreetMap compatible tile servers can be even self hosted allowing you to work with maps without the need to be connect to the Internet.
 
 ```js
 window.ExtMapTileServers = [
-  // a list of one or more external map tile server with their attributes
   {
-    uuid: "qer4123412ew", // an unique id of the map tile server
-    name: "Stamen Watercolor",
-    serverURL:
-      "https://stamen-tiles.a.ssl.fastly.net/watercolor/{z}/{x}/{y}.jpg",
-    serverInfo:
-      "Map tiles by Stamen Design - http://stamen.com, under CC BY 3.0. Data by OpenStreetMap, under CC BY SA.",
-  },
+    "uuid": "94cc9977-8b66-4f07-806e-110ae0d6b30e", // an unique id of the map tile server
+    "name": "Carto Light",
+    "serverURL": "https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png",
+    "serverInfo": "Map tiles by Carto, under CC BY 3.0. Data by OpenStreetMap, under ODbL." // Map attribution
+  }
 ];
 ```
 
@@ -548,7 +545,7 @@ Default value: <span style={{color: '#dcf3ec'}}>`'#dcf3ec'`</span>
 ### Set custom main color for the light theme
 
 ```js
-window.ExtLightThemeLightColor = "#1dd19f";
+window.ExtLightThemeMainColor = "#1dd19f";
 ```
 
 Possible value: any css color
