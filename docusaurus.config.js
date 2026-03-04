@@ -163,6 +163,10 @@ const config = {
               },
               {
                 label: "llms.txt",
+                href: "https://docs.tagspaces.org/llms.txt",
+              },
+              {
+                label: "llms-full.txt",
                 href: "https://docs.tagspaces.org/llms-full.txt",
               },
             ],
