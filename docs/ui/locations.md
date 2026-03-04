@@ -15,7 +15,11 @@ The **Location Manager** can be opened by clicking the case button (1) from the 
 
 Clicking on a location name again will load the subdirectories within that location. These subdirectories will be displayed in the **folder navigation area** (5).
 
-![Location manager](/media/location-manager.png)
+<CenteredImage
+    caption="Location manager"
+    src="/media/locations/location-manager.avif"
+    maxWidth="350px"
+/>
 
 Locations with a cloud icon (6) are in an AWS S3-compatible cloud storage. See [Object Storage Locations](#object-storage-locations) for more details.
 
