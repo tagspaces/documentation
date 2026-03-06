@@ -1,4 +1,8 @@
 /*
   X-Frame-Options: DENY
-  X-XSS-Protection: 1
   X-Content-Type-Options: nosniff
+  X-XSS-Protection: 1; mode=block
+  Strict-Transport-Security: max-age=63072000; includeSubDomains; preload
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: camera=(), microphone=(), geolocation=(), payment=()
+  Content-Security-Policy: default-src 'self'; img-src 'self' data: https:; media-src 'self' data: https:; connect-src 'self' https://cloud.ccm19.de/ https://plausible.io/; script-src 'self' 'unsafe-eval' 'unsafe-inline' https://cloud.ccm19.de/ https://plausible.io/; style-src 'self' 'unsafe-inline' https://cloud.ccm19.de/ https://plausible.io/; object-src 'none'; frame-ancestors 'none'; base-uri 'self'; form-action 'self'; frame-src 'self' https://ghbtns.com https://demo.tagspaces.com;
