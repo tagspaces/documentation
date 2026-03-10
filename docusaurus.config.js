@@ -57,6 +57,7 @@ const config = {
         removeDuplicateHeadings: true,
         // Generate individual markdown files following llmstxt.org specification
         generateMarkdownFiles: true,
+        // keepFrontMatter: ["title", "description"],
         // Control documentation order
         // includeOrder: [
         //   'getting-started/*',
