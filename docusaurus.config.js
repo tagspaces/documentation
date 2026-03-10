@@ -20,6 +20,25 @@ const config = {
     mermaid: true,
   },
   themes: ["@docusaurus/theme-mermaid"],
+  headTags: [
+    {
+      tagName: "script",
+      attributes: {
+        type: "application/ld+json",
+      },
+      innerHTML: JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        name: "TagSpaces Documentation",
+        url: "https://docs.tagspaces.org",
+        isPartOf: {
+          "@type": "WebSite",
+          url: "https://www.tagspaces.org",
+          name: "TagSpaces Official Website",
+        },
+      }),
+    },
+  ],
   plugins: [
     require.resolve("docusaurus-lunr-search"),
     [
