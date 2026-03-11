@@ -21,21 +21,68 @@ const config = {
   },
   themes: ["@docusaurus/theme-mermaid"],
   headTags: [
+    // ── Organization (entity identity — connects this site to TagSpaces GmbH) ──
     {
       tagName: "script",
-      attributes: {
-        type: "application/ld+json",
-      },
+      attributes: { type: "application/ld+json" },
+      innerHTML: JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "@id": "https://www.tagspaces.org/#organization",
+        name: "TagSpaces GmbH",
+        legalName: "TagSpaces GmbH",
+        url: "https://www.tagspaces.org",
+        logo: {
+          "@type": "ImageObject",
+          url: "https://www.tagspaces.org/content/logo.svg",
+        },
+        foundingDate: "2015",
+        email: "contact@tagspaces.org",
+        description:
+          "TagSpaces GmbH develops TagSpaces, a free and open-source file organizer and personal knowledge manager that works offline across Windows, macOS, Linux, and Android.",
+        sameAs: [
+          "https://en.wikipedia.org/wiki/TagSpaces",
+          "https://github.com/tagspaces/tagspaces",
+          "https://www.linkedin.com/company/tagspaces/",
+          "https://twitter.com/tagspaces",
+          "https://www.youtube.com/@tagspaces",
+          "https://fosstodon.org/@tagspaces",
+          "https://www.capterra.com/p/10008714/TagSpaces/",
+          "https://alternativeto.net/software/tagspaces/about/",
+        ],
+      }),
+    },
+    // ── WebSite (links subdomain to main site + enables search box) ──
+    {
+      tagName: "script",
+      attributes: { type: "application/ld+json" },
       innerHTML: JSON.stringify({
         "@context": "https://schema.org",
         "@type": "WebSite",
+        "@id": "https://docs.tagspaces.org/#website",
         name: "TagSpaces Documentation",
         url: "https://docs.tagspaces.org",
+        description:
+          "Official documentation for TagSpaces — covering installation, tagging, search, file management, perspectives, and tutorials.",
+        inLanguage: "en",
+        publisher: {
+          "@id": "https://www.tagspaces.org/#organization",
+        },
         isPartOf: {
           "@type": "WebSite",
+          "@id": "https://www.tagspaces.org/#website",
+          name: "TagSpaces",
           url: "https://www.tagspaces.org",
-          name: "TagSpaces Official Website",
         },
+        // potentialAction: {
+        //   "@type": "SearchAction",
+        //   target: {
+        //     "@type": "EntryPoint",
+        //     urlTemplate:
+        //       "https://docs.tagspaces.org/search?q={search_term_string}",
+        //   },
+        //   "query-input": "required name=search_term_string",
+        // },
       }),
     },
   ],
