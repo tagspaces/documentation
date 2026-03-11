@@ -1,5 +1,6 @@
 ---
 title: How to use AWS S3 buckets as locations
+description: Step-by-step guide for creating AWS S3 buckets, configuring CORS policies, and setting up IAM users to connect S3 storage as TagSpaces file locations.
 tags: [tutorial]
 ---
 

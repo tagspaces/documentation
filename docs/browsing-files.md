@@ -1,5 +1,6 @@
 ---
 title: Perspectives Overview
+description: Overview of TagSpaces file browsing perspectives including Grid, List, Gallery, Kanban, Calendar, Mapique, and FolderViz for flexible file management.
 tags: [perspective]
 ---
 

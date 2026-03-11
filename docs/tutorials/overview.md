@@ -1,7 +1,7 @@
 ---
-title: Overview
+title: Tutorials Overview
+description: Index of TagSpaces tutorials covering getting started, collaborative tagging, encryption, object storage providers, web hosting, Docker deployment, and enterprise setup.
 tags: [tutorial]
-draft: false
 ---
 
 import { ProFeature, CenteredImage, CenteredVideo } from '@site/src/components/CommonBlocks';

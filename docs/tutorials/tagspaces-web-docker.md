@@ -1,5 +1,6 @@
 ---
 title: Install TagSpaces Web with Docker
+description: Docker deployment guide for TagSpaces Lite Web and Pro Web using Alpine Linux and nginx containers for quick and reproducible self-hosted installations.
 tags: [tutorial]
 ---
 

@@ -1,5 +1,6 @@
 ---
 title: Search Overview
+description: Complete guide to TagSpaces search with AND, OR, NOT operators, full-text search, tag filtering, and indexed search for fast file discovery across locations.
 ---
 
 import VideoYT from '@site/src/components/VideoYT';
@@ -329,16 +330,6 @@ Stored searches are location-independent, meaning they can be executed on any lo
     maxWidth="700px"
     showCaption
   />
-
-<!-- ### Quick access from search bar
-
-Alternatively, stored searches can also be accessed from the dropdown menu located in the search bar, as seen in the next screenshot.
-
-<CenteredImage
-    caption="Accessing stored searches from the search bar"
-    src="/media/stored-search-quick-access.png"
-    showCaption
-  /> -->
 
 ### Export and import
 

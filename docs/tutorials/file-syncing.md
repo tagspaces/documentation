@@ -1,5 +1,6 @@
 ---
 title: Syncing files between TagSpaces installations
+description: Learn how to sync TagSpaces-tagged files between installations using Dropbox, Google Drive, OneDrive, Syncthing, and Cryptomator for encrypted file synchronization.
 tags: [tutorial]
 ---
 

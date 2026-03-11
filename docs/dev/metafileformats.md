@@ -1,5 +1,6 @@
 ---
 title: Specification of the meta file formats
+description: Technical specification of TagSpaces metadata file formats stored in .ts folders, including file meta, folder meta, and tag group JSON schemas.
 ---
 
 import { ProFeature, CenteredImage } from '@site/src/components/CommonBlocks';

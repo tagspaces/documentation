@@ -1,5 +1,6 @@
 ---
 title: Kanban Perspective
+description: TagSpaces Pro feature which transforms subfolders into Kanban board columns with draggable cards for visual task management and project tracking.
 tags: [perspective]
 ---
 

@@ -1,3 +1,8 @@
+---
+title: MHTML Viewer
+description: TagSpaces MHTML Viewer extension for opening MHTML web archives and EML email files with reader mode, source URL access, and text search.
+---
+
 # MHTML Viewer
 
 A TagSpaces extension allowing you to open MHTML and EML files.

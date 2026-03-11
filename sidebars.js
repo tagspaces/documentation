@@ -323,7 +323,6 @@ const sidebars = {
         "extensions/html-viewer",
         "extensions/3d-viewer",
         "extensions/image-viewer",
-        "extensions/md-viewer",
         "extensions/mhtml-viewer",
         "extensions/mindmap-viewer",
         "extensions/msg-viewer",

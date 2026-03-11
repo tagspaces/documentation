@@ -1,3 +1,8 @@
+---
+title: JSON Editor
+description: TagSpaces JSON Editor extension for visually editing JSON documents with expand/collapse nodes, undo/redo support, and drag-based data manipulation.
+---
+
 import { ProFeature, CenteredImage, CenteredVideo } from '@site/src/components/CommonBlocks';
 
 # JSON Editor

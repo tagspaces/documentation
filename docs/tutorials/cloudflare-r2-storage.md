@@ -1,5 +1,6 @@
 ---
 title: How to use Cloudflare R2 buckets as locations
+description: Tutorial for setting up Cloudflare R2 S3-compatible object storage without egress fees and connecting it to TagSpaces as a cost-effective cloud location.
 tags: [tutorial]
 draft: false
 ---
@@ -18,10 +19,10 @@ R2 integrates easily with many S3-compatible tools, including **TagSpaces**, all
 - Hosted on Cloudflare’s globally distributed infrastructure
 - Integrated with Cloudflare Workers and CDN
 
-<!-- **Limitations**
+**Limitations**
 
 - Limited region choices (as of now)
-- Requires Cloudflare account management for API keys and permissions -->
+- Requires Cloudflare account management for API keys and permissions
 
 After registration, you’ll see the **R2 Object Storage** dashboard, which lists your existing buckets.  
 From this screen, you can create new buckets and manage the **API tokens** needed to connect with TagSpaces.
@@ -45,10 +46,6 @@ Once created, go to the **bucket settings** page.
 Here you’ll find the **S3 API endpoint URL**, which will be required when setting up the connection in TagSpaces.
 
 <CenteredImage src="/media/cloudflare/bucket-settings.avif" caption="Bucket settings containing the S3 endpoint/API URL" showCaption/>
-
-<!-- The following screen shows your bucket contents and general overview information.
-
-<CenteredImage src="/media/cloudflare/bucket-content.avif" caption="Bucket containing some objects" showCaption/> -->
 
 ## Creating access tokens
 

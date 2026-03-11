@@ -1,3 +1,8 @@
+---
+title: Font Viewer
+description: TagSpaces Pro extension for previewing TTF, OTF, and WOFF font files with character glyph display using Opentype.js library.
+---
+
 import { ProFeature, CenteredImage, CenteredVideo } from '@site/src/components/CommonBlocks';
 
 # Font Viewer

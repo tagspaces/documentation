@@ -1,6 +1,8 @@
 ---
 title: Setup SabreDAV version
+description: Deprecated tutorial for self-hosted TagSpaces with SabreDAV as a lightweight WebDAV server alternative to Nextcloud, suitable for Raspberry Pi deployments.
 tags: [tutorial]
+draft: true
 ---
 
 :::caution

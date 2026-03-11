@@ -1,5 +1,6 @@
 ---
 title: Style Guide
+description: Style guide and formatting conventions for contributing to TagSpaces documentation, covering Markdown syntax, headings, code blocks, and component usage.
 sidebar_label: Style Guide
 ---
 

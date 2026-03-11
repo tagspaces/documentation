@@ -1,5 +1,6 @@
 ---
 title: Organizing Files and Folders with Tags
+description: Discover how to organize files and folders in TagSpaces using tags stored in filenames or sidecar files, enabling portable, vendor-independent metadata management.
 ---
 
 import { ProFeature, CenteredImage, CenteredVideo } from '@site/src/components/CommonBlocks';

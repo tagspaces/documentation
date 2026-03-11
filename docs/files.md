@@ -1,5 +1,6 @@
 ---
 title: Files Overview
+description: Learn how to manage files in TagSpaces using the Details, Description, Revisions, and Links panels, plus file menu actions for organizing and sharing content.
 ---
 
 import { ProFeature, CenteredImage } from '@site/src/components/CommonBlocks';

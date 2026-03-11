@@ -1,9 +1,11 @@
 ---
 title: Extension development guide
+description: Outdated developer guide for building TagSpaces viewer and editor extensions, including repository structure and development environment setup instructions.
+draft: true
 ---
 
 :::caution
-This guide is outdated, please use it with caution.
+This guide is outdated.
 :::
 
 This is an initial version of a guide intended to clarify the process of extension development for TagSpaces.

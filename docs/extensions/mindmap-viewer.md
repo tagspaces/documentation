@@ -1,3 +1,8 @@
+---
+title: Mindmap Viewer
+description: TagSpaces Mindmap Viewer extension for visualizing Markdown files as interactive mind maps using markmap.js with zoom and pan navigation.
+---
+
 import { ProFeature, CenteredImage, CenteredVideo } from '@site/src/components/CommonBlocks';
 
 # Mindmap Viewer

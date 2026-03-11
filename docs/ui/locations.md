@@ -1,5 +1,6 @@
 ---
 title: Locations Overview
+description: Learn how to add and manage TagSpaces file locations, connecting local folders and S3-compatible cloud storage as browsable file system locations.
 ---
 
 import VideoYT from '@site/src/components/VideoYT';

@@ -1,3 +1,8 @@
+---
+title: Edit Files
+description: Edit files in TagSpaces using built-in editors for HTML, Markdown, plain text, and JSON with WYSIWYG support and file revision history.
+---
+
 import { ProFeature, CenteredImage, CenteredVideo } from '@site/src/components/CommonBlocks';
 
 # Edit Files

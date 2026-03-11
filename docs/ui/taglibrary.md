@@ -1,5 +1,6 @@
 ---
 title: Tag Library
+description: Guide to the TagSpaces tag library for organizing tags into groups including Smart Tags, GTD, Priorities, Ratings, and custom tag groups for structured tagging.
 ---
 
 import { ProFeature, CenteredImage, CenteredVideo } from '@site/src/components/CommonBlocks';
@@ -258,8 +259,6 @@ When you apply a geo-location tag, a dialog will appear with an interactive map,
     showCaption
     maxWidth="100%"
 />
-
-<!-- The geo tag is a special kind of smart tag, available in TaSpaces **PRO**, that allows tagging files with precise geolocation coordinates. When You drag the tag "geo" on a file, the **Edit tag** popup window with the Geo Location tab will open, showing a map from OpenStreetmap. You can drop a pin anywhere, and move it around, it automatically becomes a tag in the format of `latitude+longitude`, e.g. `47.2792290+18.9843750` This tag will then be applied to the file and treated as a geo-smarttag by TagSpaces -->
 
 ### Editing Smart Tags
 

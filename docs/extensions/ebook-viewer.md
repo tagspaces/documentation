@@ -1,3 +1,8 @@
+---
+title: eBook Viewer
+description: TagSpaces eBook Viewer extension for reading EPUB ebooks with auto two-fold mode, adjustable font size, line spacing, and reading margin settings.
+---
+
 import { ProFeature, CenteredImage, CenteredVideo } from '@site/src/components/CommonBlocks';
 
 # eBook Viewer

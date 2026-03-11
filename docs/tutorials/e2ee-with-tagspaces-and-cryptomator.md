@@ -1,5 +1,6 @@
 ---
 title: E2E encryption with Cryptomator
+description: Tutorial for combining TagSpaces with Cryptomator for end-to-end encrypted note-taking on cloud storage as a privacy-first alternative to Evernote.
 tags: [encryption, tutorial]
 ---
 

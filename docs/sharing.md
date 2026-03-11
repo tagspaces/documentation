@@ -1,5 +1,6 @@
 ---
 title: Share files and folders
+description: Learn how to share files and folders in TagSpaces using internal sharing links for cloud-synced files and download links for object storage locations.
 ---
 
 import { ProFeature, EntFeature, CenteredImage, CenteredVideo, FullScreenImage } from '@site/src/components/CommonBlocks';

@@ -1,5 +1,6 @@
 ---
 title: Quick Access
+description: Explore the TagSpaces Quick Access section providing fast navigation to bookmarks, recently opened files, recent edits, stored searches, and frequently visited folders.
 ---
 
 import { ProFeature, CenteredImage, CenteredVideo } from '@site/src/components/CommonBlocks';

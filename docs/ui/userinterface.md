@@ -1,5 +1,6 @@
 ---
 title: User Interface Intro
+description: Introduction to the TagSpaces UI covering the left drawer, navigation bar, file browsing area, properties panel, and file preview pane.
 ---
 
 import { ProFeature, CenteredImage, CenteredVideo } from '@site/src/components/CommonBlocks';

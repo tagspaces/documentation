@@ -1,5 +1,6 @@
 ---
 title: Using TagSpaces with other users or on many devices
+description: Guide to using TagSpaces collaboratively across multiple users or devices by syncing tagged files via shared network folders or cloud storage services.
 tags: [tutorial]
 draft: false
 ---

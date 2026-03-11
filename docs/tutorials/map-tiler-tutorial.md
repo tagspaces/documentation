@@ -1,5 +1,6 @@
 ---
 title: Use custom map tile services in TagSpaces Pro
+description: Guide for configuring custom map tile services including MapTiler and self-hosted OpenStreetMap servers in the TagSpaces Pro Mapique Perspective.
 tags: [tutorial]
 ---
 

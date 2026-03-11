@@ -1,5 +1,6 @@
 ---
 title: About the docs
+description: Overview of the TagSpaces documentation structure, contribution guidelines, formatting conventions, and explanation of symbols used throughout the documentation.
 ---
 
 import { ProFeature } from '@site/src/components/CommonBlocks';

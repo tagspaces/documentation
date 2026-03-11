@@ -1,5 +1,6 @@
 ---
 title: Settings Overview
+description: Comprehensive guide to TagSpaces settings covering language, themes, default perspectives, tagging methods, thumbnail generation, tag colors, and advanced options.
 ---
 
 import { ProFeature, CenteredImage, FullScreenImage } from '@site/src/components/CommonBlocks';

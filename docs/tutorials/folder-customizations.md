@@ -1,5 +1,6 @@
 ---
 title: Customizing Folders
+description: Learn how to customize TagSpaces folders with default perspectives, custom thumbnails, and background colors to create tailored file-based applications.
 tags: [tutorial]
 ---
 

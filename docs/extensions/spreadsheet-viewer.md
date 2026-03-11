@@ -1,3 +1,8 @@
+---
+title: Spreadsheet Viewer
+description: TagSpaces Spreadsheet Viewer extension for previewing XLSX, ODS, and CSV files with sheet navigation, HTML export, and zoom using SheetJS.
+---
+
 # Spreadsheet Viewer
 
 A TagSpaces extension allowing you to preview the content of spreadsheet files.

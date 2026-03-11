@@ -1,5 +1,6 @@
 ---
 title: List Perspective
+description: TagSpaces List Perspective displays files in compact, default, or large list format showing name, tags, descriptions, size, and modification date.
 sidebar_label: List Perspective
 tags: [perspective]
 ---

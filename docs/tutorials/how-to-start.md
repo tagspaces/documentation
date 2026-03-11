@@ -1,9 +1,8 @@
 ---
 title: How to start
+description: Beginner's guide to TagSpaces covering first launch, understanding locations, and connecting local folders and cloud storage as browsable file system locations.
 tags: [tutorial]
 ---
-
-<!-- 🧭 TagSpaces as manager for personal data storage -->
 
 import { ProFeature, CenteredImage, CenteredVideo } from '@site/src/components/CommonBlocks';
 
@@ -32,8 +31,6 @@ TagSpaces never uploads your data anywhere by default. All your files stay where
 ## Understanding “Locations”
 
 A **location** is simply a folder from your computer, an external drive, or an S3-compatible cloud bucket.
-
-<!-- > 🔒 **Privacy Note:** TagSpaces reads and writes directly to your files — it does not upload or track any data. -->
 
 TagSpaces connect automatically some of your standard folders like the **Downloads**, **Documents**, **Music** and **Desktop**. The **Locations** are visible on the left area of the application window.
 
@@ -69,19 +66,7 @@ TagSpaces takes automatically the name of the chosen folder as name for the loca
 TagSpaces can connect to folders located on object storage. The object storage can be hosted on a [NAS](/tutorials/folders-as-objectstorage-with-s3proxy) or in the Cloud like on [AWS S3](/tutorials/s3-bucket-locations), [Contabo](/tutorials/contabo-storage) [Wasabi](/tutorials/wasabi-locations) or [Cloudflare R2](/tutorials/cloudflare-r2-storage).
 :::
 
- <!-- [Cloudflare R2](/tutorials/tagspaces-web-cloudflare) -->
-
 ---
-
-<!-- ## Navigating the Interface
-
-TagSpaces uses a clean, two-panel layout:
-
-- **Left panel:** lists your connected locations and tag groups
-- **Main area:** displays folder contents using a **perspective** (grid, list, gallery, kanban, etc.)
-- **Top bar:** provides search, sorting, and settings access
-
---- -->
 
 ## Tagging Your Files and Folders
 

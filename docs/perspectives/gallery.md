@@ -1,5 +1,6 @@
 ---
 title: Gallery Perspective
+description: TagSpaces Pro feature which provides a masonry image gallery with slideshow mode, full-screen viewing, and EXIF/IPTC metadata import for photo tagging.
 tags: [perspective]
 ---
 

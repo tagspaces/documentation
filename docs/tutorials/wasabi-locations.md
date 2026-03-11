@@ -1,5 +1,6 @@
 ---
 title: How to use Wasabi buckets as locations
+description: Learn how to create Wasabi S3-compatible storage buckets with no egress fees and connect them to TagSpaces for affordable cloud file management.
 tags: [tutorial]
 ---
 
@@ -115,19 +116,6 @@ The list of allowed actions in the previous JSON file is only a suggestion. The 
 
 Depending on your use-case you may want to access the bucket in a read-only mode, with the following policy you can achieve this.
 
-<!-- ```json
-{
-  "Version": "2012-10-17",
-  "Statement": [
-    {
-      "Sid": "VisualEditor0",
-      "Effect": "Allow",
-      "Action": ["s3:ListBucket", "s3:GetObject"],
-      "Resource": ["arn:aws:s3:::<BucketName>", "arn:aws:s3:::<BucketName>/*"]
-    }
-  ]
-}
-``` -->
 
 ```json
 {

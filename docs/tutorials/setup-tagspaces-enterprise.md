@@ -1,6 +1,7 @@
 ---
 id: setup-tagspaces-custom
 title: Setup TagSpaces Custom
+description: Setup guide for TagSpaces Custom enterprise edition using AWS Cognito authentication, S3 storage, DynamoDB configuration, and GraphQL API via AWS Amplify.
 tags: [tutorial]
 ---
 

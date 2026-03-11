@@ -1,5 +1,6 @@
 ---
 title: Mapique Perspective
+description: TagSpaces Pro feature which displays geo-tagged files on interactive OpenStreetMap maps for location-based photo organization and trip planning.
 tags: [perspective]
 ---
 

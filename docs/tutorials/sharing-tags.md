@@ -1,5 +1,6 @@
 ---
 title: Collaboratively using tags and tag groups
+description: Learn how to export and import TagSpaces tag groups for sharing tag libraries across users and devices to enable consistent collaborative file tagging workflows.
 tags: [tutorial]
 ---
 

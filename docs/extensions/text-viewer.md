@@ -1,3 +1,8 @@
+---
+title: Text Viewer
+description: TagSpaces Text Viewer extension for previewing any file as plain text, serving as a universal fallback viewer for all file formats.
+---
+
 # Text Viewer
 
 A TagSpaces extension allowing you to preview any kind of files as text.

@@ -1,5 +1,6 @@
 ---
 title: FolderViz Perspective
+description: TagSpaces Pro feature which provides folder trees, size trees, tag clouds, and file tree visualizations for analyzing folder structures and distributions.
 tags: [perspective]
 ---
 

@@ -1,5 +1,6 @@
 ---
 title: Bookmarks
+description: Learn how to bookmark files and folders in TagSpaces for quick access from the Quick Access panel to navigate your most important content efficiently.
 ---
 
 # Bookmark to files and folders

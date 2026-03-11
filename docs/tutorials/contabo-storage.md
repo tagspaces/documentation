@@ -1,5 +1,6 @@
 ---
 title: How to use Contabo to store your files
+description: Guide for creating GDPR-compliant Contabo object storage buckets with S3 credentials and integrating with TagSpaces as an affordable European storage option.
 tags: [tutorial]
 draft: false
 ---

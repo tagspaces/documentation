@@ -1,5 +1,6 @@
 ---
 title: Setup publicly available TagSpaces Web on Wasabi
+description: Guide for hosting TagSpaces Web application on a public Wasabi S3 bucket to serve a publicly accessible browser-based file management interface.
 tags: [tutorial]
 ---
 

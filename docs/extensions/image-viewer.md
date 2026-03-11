@@ -1,3 +1,8 @@
+---
+title: Image Viewer
+description: TagSpaces Image Viewer extension supporting JPG, PNG, GIF, SVG, BMP, WEBP, AVIF, and TIFF with zoom, rotate, flip, EXIF reading, and image export.
+---
+
 # Image Viewer
 
 A TagSpaces extension allowing you to open different kinds of image formats.

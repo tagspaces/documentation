@@ -1,5 +1,6 @@
 ---
 title: Web Clipping - Collect Everything Online
+description: Use the TagSpaces Web Clipper browser extension for Chrome, Firefox, and Edge to save web pages, screenshots, and bookmarks to your local file system.
 tags: [tutorial]
 ---
 

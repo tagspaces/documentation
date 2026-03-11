@@ -1,5 +1,6 @@
 ---
 title: Thumbnail Generation
+description: Learn about automatic thumbnail generation in TagSpaces for images, videos, PDFs, ebooks, and archives, cached in .ts folders for faster file browsing.
 ---
 
 import { ProFeature, CenteredImage, CenteredVideo } from '@site/src/components/CommonBlocks';

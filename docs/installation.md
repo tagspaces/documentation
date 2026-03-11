@@ -1,5 +1,6 @@
 ---
 title: Installing TagSpaces
+description: Step-by-step installation guide for TagSpaces on Windows, macOS, and Linux covering the free Lite edition and Pro versions for desktop and web deployments.
 ---
 
 import { ProFeature, CenteredImage } from '@site/src/components/CommonBlocks';
@@ -9,10 +10,6 @@ Here you will learn how to install TagSpaces on different operating systems.
 ## Getting the Application
 
 The free versions of TagSpaces are available for download from the [Downloads Section](https://www.tagspaces.org/downloads/) on the TagSpaces website. Here, you can quickly find the appropriate installer for your operating system (Windows, macOS, Linux, Android, Firefox, and Chrome).
-
-<!-- :::tip
-**Download the newest PRO release:** TagSpaces PRO customers should use the download links provided in their purchase confirmation email. These links will always point to the latest available PRO version.
-::: -->
 
 ### New Version Notification
 

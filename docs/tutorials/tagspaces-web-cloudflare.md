@@ -1,5 +1,6 @@
 ---
 title: Install TagSpaces Web on Cloudflare
+description: Step-by-step guide for deploying TagSpaces Web to Cloudflare Pages using Wrangler CLI for free static hosting with HTTPS and global CDN delivery.
 tags: [tutorial]
 ---
 

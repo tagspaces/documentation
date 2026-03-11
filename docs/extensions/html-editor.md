@@ -1,3 +1,8 @@
+---
+title: HTML Editor
+description: TagSpaces HTML Editor extension providing a WYSIWYG interface for editing HTML documents using Summernote with clipboard image pasting support.
+---
+
 # HTML Editor
 
 A TagSpaces extension allowing editing of HTML documents.

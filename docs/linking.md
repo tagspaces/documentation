@@ -1,5 +1,6 @@
 ---
 title: Link to files, folders and locations
+description: Discover how to create internal links between files, folders, and locations in TagSpaces for efficient cross-referencing and navigation within your file system.
 ---
 
 import { ProFeature, CenteredImage, CenteredVideo, FullScreenImage } from '@site/src/components/CommonBlocks';

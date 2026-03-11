@@ -1,5 +1,6 @@
 ---
 title: Deployment Strategies
+description: Visual overview of TagSpaces deployment architectures for desktop, web, and combined installations showing how infrastructure components connect.
 ---
 
 ## Deployment of the desktop app

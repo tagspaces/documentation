@@ -1,5 +1,6 @@
 ---
 title: How to use Garage buckets as locations
+description: Tutorial for self-hosting open-source Garage S3-compatible object storage on personal servers or NAS devices and connecting it to TagSpaces for private cloud storage.
 tags: [tutorial]
 draft: false
 ---

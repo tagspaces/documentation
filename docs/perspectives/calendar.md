@@ -1,5 +1,6 @@
 ---
 title: Calendar Perspective
+description: TagSpaces Pro feature which organizes files by date using tags, folder names, or file timestamps for chronological browsing and time-based retrieval.
 tags: [perspective]
 ---
 

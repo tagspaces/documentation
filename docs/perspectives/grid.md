@@ -1,5 +1,6 @@
 ---
 title: Grid Perspective
+description: TagSpaces Grid Perspective is the default file browser view showing files as tiles with thumbnails, tags, descriptions, and metadata for visual file management.
 sidebar_label: Grid Perspective
 tags: [perspective]
 ---

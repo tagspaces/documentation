@@ -1,5 +1,6 @@
 ---
 title: Folders Overview
+description: Explore TagSpaces folder management features including tags, descriptions, custom thumbnails, background colors, and default perspectives for organizing files.
 ---
 
 import { ProFeature, CenteredImage, CenteredVideo } from '@site/src/components/CommonBlocks';

@@ -1,10 +1,15 @@
+---
+title: Contact Editor
+description: TagSpaces Pro extension for displaying VCF vCard contact files with clickable email and phone fields and multi-contact support.
+---
+
 import { ProFeature, CenteredImage, CenteredVideo } from '@site/src/components/CommonBlocks';
 
-# Contact Viewer
+# Contact Editor
 
 <ProFeature />
 
-A TagSpaces extension for viewing VCF file format. A VCF (vCard File) is a standard file format used to store contact information such as names, phone numbers, email addresses, and other personal details. It is commonly used to exchange contacts between devices, email clients, and address book applications.
+A TagSpaces extension for viewing and editing files in VCF format. A VCF (vCard File) is a standard file format used to store contact information such as names, phone numbers, email addresses, and other personal details. It is commonly used to exchange contacts between devices, email clients, and address book applications.
 
 ## Features
 

@@ -1,5 +1,6 @@
 ---
 title: Create Files
+description: Learn how to create new files in TagSpaces including text, Markdown, HTML, and JSON formats with automatic timestamp tagging for unique file identification.
 ---
 
 import { ProFeature, CenteredImage, CenteredVideo } from '@site/src/components/CommonBlocks';
@@ -144,9 +145,6 @@ Opens the dialog for creating new folders, where beside the name you can choose 
     src="/media/editcreate/create-new-folder-dialog.avif"
     maxWidth="550px"
   />
-
-<!-- - **New Location** - Opens the dialog for creating a new location.
-- **New Window** - Opens a new application window -->
 
 ## Importing Files
 

@@ -1,3 +1,8 @@
+---
+title: Markdown Editor
+description: TagSpaces Markdown Editor with WYSIWYG editing, embedded images, emoji, tables, math expressions, text-to-speech, and mind map generation from headings.
+---
+
 import { CenteredImage, CenteredVideo } from '@site/src/components/CommonBlocks';
 
 # Markdown Editor
@@ -31,18 +36,6 @@ A TagSpaces extension allowing viewing and editing of Markdown files.
 The extension can generate a mind map structure of the document based on its header structure.
 
 ![Screenshot of the markdown editor mind map](/media/extensions/md-editor-mindmap.png)
-
-<!-- ### Diagrams (depracated)
-
-The editor supports presenting and editing of [mermaid](https://mermaid-js.github.io/mermaid/) based diagrams:
-
-<CenteredVideo
-    caption="Mermaid based diagrams in the markdown editor"
-    src="/media/extensions/editor-md-mermaid-diagrams.mp4"
-    posterUrl="/media/extensions/editor-md-mermaid-diagrams.png"
-    autoPlay={false}
-    showCaption
-/> -->
 
 ## Live Demo
 

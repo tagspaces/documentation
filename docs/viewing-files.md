@@ -1,5 +1,6 @@
 ---
 title: Preview and Print Files
+description: Preview and print files in TagSpaces using built-in viewers for images, PDFs, audio, video, documents, ebooks, 3D models, and archives without external apps.
 ---
 
 import { ProFeature, CenteredImage, CenteredVideo } from "@site/src/components/CommonBlocks";

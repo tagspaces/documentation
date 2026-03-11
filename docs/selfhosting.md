@@ -1,5 +1,7 @@
 ---
 title: Setup Self-hosted TagSpaces based on WebDAV
+description: Deprecated guide for setting up a self-hosted TagSpaces instance using WebDAV with Nextcloud or ownCloud as the backend storage solution.
+draft: true
 ---
 
 :::caution
