@@ -13,8 +13,8 @@ The Calendar Perspective offers a powerful and intuitive way to organize your fi
 Depending on the selected grouping option, files and folders are automatically placed on the calendar, giving you a clear, time-based overview of your data.
 
 <CenteredImage
+  caption="The user interface of the calendar perspective"
   src="/media/calendar/calendar-lead-screenshot.avif"
-  showCaption
 />
 
 ## Grouping Filters
