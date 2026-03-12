@@ -1,168 +1,523 @@
 ---
-title: Extension development guide
-description: Outdated developer guide for building TagSpaces viewer and editor extensions, including repository structure and development environment setup instructions.
-draft: true
+title: Extension Development Guide
+description: Complete guide for developing TagSpaces viewer and editor extensions — covers architecture, the postMessage API, React setup, testing, and contributing to the monorepo.
 ---
 
-import { TechArticleStructuredData } from '@site/src/components/StructuredData';
+import { CenteredImage } from '@site/src/components/CommonBlocks';
+import { TechArticleStructuredData } from '@site/src/components/StructuredData';
 
 <TechArticleStructuredData />
 
-:::caution
-This guide is outdated.
-:::
+TagSpaces supports three types of modular extensions: **viewers** (read-only file preview), **editors** (read/write file editing), and **perspectives** (custom file browsing views). All shipped extensions are hosted in the [tagspaces-extensions](https://github.com/tagspaces/tagspaces-extensions) monorepo on GitHub.
 
-This is an initial version of a guide intended to clarify the process of extension development for TagSpaces.
+This guide covers building a viewer or editor extension. For perspective development, refer to the source code of an existing perspective such as [grid](https://github.com/tagspaces/tagspaces) as perspectives are more tightly coupled to the main application.
+
+## How extensions work
+
+Extensions run inside a sandboxed **iframe** within TagSpaces. Communication between the host application and the extension happens exclusively through the browser's `postMessage` API. This isolation means extensions cannot access the file system directly — the host reads and delivers file content, and the extension posts changes back.
+
+```
+┌─────────────────────────────────────┐
+│           TagSpaces App             │
+│                                     │
+│  ┌──────────────────────────────┐   │
+│  │   Extension (sandboxed       │   │
+│  │   iframe)                    │   │
+│  │                              │   │
+│  │  window.addEventListener     │   │
+│  │    ('message', handler)      │   │
+│  └──────────┬───────────────────┘   │
+│             │  postMessage          │
+│             ▼                       │
+│        TagSpaces host               │
+└─────────────────────────────────────┘
+```
+
+The lifecycle of opening a file:
+
+1. User opens a file whose extension is assigned to your viewer/editor
+2. TagSpaces loads your extension's `index.html` in an iframe
+3. TagSpaces sends a `loadFile` message with the file content and metadata
+4. Your extension renders the content
+5. For editors: on save, your extension sends a `saveFile` message with the updated content
+
+## Extension types
+
+| Type | Can read | Can write | Example |
+|------|----------|-----------|---------|
+| Viewer | ✓ | ✗ | `image-viewer`, `pdf-viewer` |
+| Editor | ✓ | ✓ | `md-editor`, `text-editor` |
+| Perspective | — | — | Grid, Kanban, Gallery |
+
+## Two approaches to building extensions
+
+TagSpaces extensions come in two flavours depending on their complexity:
+
+| Approach | Build step | Examples | When to use |
+|----------|-----------|---------|-------------|
+| **Plain JavaScript** | None | `image-viewer`, `json-editor`, `text-viewer` | Wrapping an existing JS library, lightweight viewers |
+| **React + bundler** | npm run build | `md-editor`, `media-player`, `text-editor` | Rich editors, complex UI, MUI components |
+
+Both approaches use the same `index.html` entry point and the same postMessage API — the only difference is how the JavaScript is written and whether a build step is involved.
 
 ## Prerequisites
 
-Cloning the TagSpaces repository from Github
-
-    git clone https://github.com/tagspaces/tagspaces.git
+- Git
+- Node.js 18+ *(only needed for React extensions)*
 
 ## Setting up the development environment
 
-Using the script `checkoutextensions.sh` or `checkoutextensions.cmd` respectively for Linux and Windows.
+### 1. Clone the extensions repository
 
-For Windows users, please open your Command Prompt and execute the following command: checkoutextensions.cmd
-For Linux users, please open your Terminal and execute the following command: sh checkoutextensions.sh
-
-## Directory structure
-
-After running the checkout script your dev environment should have the following directory structure:
-
-```
-~ tagspaces-github-location
-├── data
-│   ├── assets
-│   │   └── ubuntu-font
-│   ├── chromium
-│   ├── cordova
-│   │   └── fastclick
-│   ├── electron - Electron framework core
-│   ├── ext
-│   │   ├── editorHTML -> tagspaces-github-location/extensions/editorHTML
-│   │   ├── ...
-│   │   ├── perspectiveGraph -> tagspaces-github-location/extensions/perspectiveGraph
-│   │   ├── ...
-│   │   ├── viewerAudioVideo -> tagspaces-github-location/extensions/viewerAudioVideo
-│   │   └── ...
-│   ├── js
-│   ├── libs
-│   │   ├── bootstrap
-│   │   ├── ...
-│   │   └── underscore
-│   ├── locales
-│   │   ├── de
-│   │   ├── ...
-│   │   └── zh_TW
-│   ├── _locales
-│   │   ├── de
-│   │   ├── ..
-│   │   └── zh_TW
-│   ├── mozilla
-│   ├── node_modules
-│   │   └── fs-extra
-│   ├── node-webkit
-│	   ├── locales
-│	   └── node_modules
-│	   	├── fs-extra
-│	   	└── trash
-├── docs
-├── extensions
-│   ├── editorHTML
-│   ├── ...
-│   ├── perspectiveGraph
-│   ├── ...
-│   ├── viewerAudioVideo
-│   └── ...
-└── node_modules
+```bash
+git clone https://github.com/tagspaces/tagspaces-extensions.git
+cd tagspaces-extensions
 ```
 
-Please note that after running the script all extension folders in `data/ext` are connected by symlinks to the extensions in the `extensions`. In this folder you will find cloned the repositories of all supported TagSpaces extension. This way you can make changes in for e.g. `extensions/viewerImage`, which will be immediately testable after running the application, because of the symlink.
+The repository is a monorepo. Each extension lives in its own subdirectory:
 
-## Extension initialization
+```
+tagspaces-extensions/
+├── image-viewer/       ← plain JS
+├── json-editor/        ← plain JS
+├── text-viewer/        ← plain JS
+├── md-editor/          ← React + Vite
+├── media-player/       ← React + Vite
+├── my-new-extension/   ← your extension goes here
+└── ...
+```
 
-On application loading TagSpaces is scanning the extension folder (e.g. `data/ext`) for available extensions. So basically it is searching every sub folder for a bower file. From the bower file TagSpaces is extractiong the id and the name of the extension, which are needed later. Currently on Firefox and Chrome the available extensions are fixed in settings and not resolved at runtime.
+### 2. Create your extension directory
 
-When a given extension is needed, TagSpaces is loading a file called `extension.js` from the folder of the extension. So this file is mandatory for every extension. It loads later with _requirejs_ further javascript, css or other types of files if needed.
+```bash
+mkdir my-extension
+cd my-extension
+```
 
-In the most extensions like [viewerImage] or [viewerMD] the `extension.js` is creating dynamically a new IFRAME elements which loads a file called `index.html`, where the image or markdown content is displayed or manipulated.
+## Extension structure
 
-## Messaging API
+### Plain JavaScript extension
 
-In order the extension to communication with TagSpaces the _Messaging API_ can be used. It is currently in definition phase and can be found unter [data/js/ext.api.js](https://github.com/tagspaces/tagspaces/blob/master/data/js/ext.api.js)
+No build step. TagSpaces loads `index.html` directly from the extension folder:
 
-## Structure of the extension
+```
+my-extension/
+├── package.json          ← manifest (no build scripts needed)
+├── index.html            ← entry point, loaded directly by TagSpaces
+├── extension.js          ← your vanilla JS code
+├── extension.css         ← optional styles
+├── libs/                 ← vendored third-party libraries
+│   └── some-library/
+└── locales/
+    ├── en/
+    │   └── ns.my-extension.json
+    └── de/
+        └── ns.my-extension.json
+```
 
-The following is the structure of a typical extension.
+### React extension (with build step)
 
-    .
-    ├── bower.json - A mandatory file
-    ├── .bowerrc - An optional file for specifying the location of the libraries (e.g. ./libs folder)
-    ├── extension.css
-    ├── extension.js - the app is searching on extension loading js file with this name.
-    ├── main.js -
-    ├── index.html
-    ├── libs
-    │   ├── exif-js
-    │   │   ├── bower.json
-    │   │   ├── ...
-    │   │   └── exif.js
-    │   ├── jquery
-    │   │   ├── bower.json
-    │   │   ├── dist
-    │   │   │   ├── jquery.js
-    │   │   │   └── jquery.min.js
-    │   │   └── MIT-LICENSE.txt
-    │   └── jquery.panzoom
-    │       ├── bower.json
-    │       ├── ...
-    │       └── dist
-    │           ├── ...
-    │           └── jquery.panzoom.min.js
-    ├── LICENSE.txt
-    ├── locales - location of the translated files from Transifex
-    │   ├── de_DE
-    │   │   └── ns.viewerImage.json
-    │   ├── ...
-    │   └── en_US
-    │       └── ns.viewerImage.json
-    └── README.md
+TagSpaces loads the compiled output from the `dist/` folder:
 
-## Recommended structure of the bower.json
+```
+my-extension/
+├── package.json          ← manifest and build config
+├── vite.config.js
+├── src/
+│   ├── App.jsx
+│   └── index.jsx
+├── dist/                 ← compiled output, loaded by TagSpaces
+│   └── index.html
+└── locales/
+    └── en/
+        └── ns.my-extension.json
+```
 
-TagSpaces uses Bower as a management tool for its extension. In this section you will find out how the mandatory bower.json should look like.
+## package.json
 
-```js {2}
+The `package.json` serves as both the npm manifest and the extension manifest. TagSpaces reads the `tagspaces` section to determine how to register your extension:
+
+```json
+{
+  "name": "my-extension",
+  "version": "1.0.0",
+  "description": "A TagSpaces extension for viewing XYZ files",
+  "license": "MIT",
+  "tagspaces": {
+    "extensionId": "my-extension",
+    "extensionName": "My Extension",
+    "extensionType": "viewer",
+    "fileTypes": [
+      {
+        "type": "XYZ Viewer",
+        "ext": ["xyz", "xyzx"],
+        "color": "#2196f3"
+      }
+    ]
+  },
+  "scripts": {
+    "build": "...",
+    "dev": "..."
+  }
+}
+```
+
+Key fields in the `tagspaces` section:
+
+| Field | Description |
+|-------|-------------|
+| `extensionId` | Unique identifier, matches the folder name |
+| `extensionName` | Human-readable name shown in the UI |
+| `extensionType` | `"viewer"` or `"editor"` |
+| `fileTypes` | Array of file type associations |
+| `fileTypes[].ext` | Array of file extensions this extension handles |
+
+## The postMessage API
+
+### Receiving a file (viewer and editor)
+
+When TagSpaces loads your extension and a file needs to be displayed, it sends a `loadFile` message. Listen for it in your `index.html` or entry script:
+
+```js
+window.addEventListener('message', (event) => {
+  const { command, payload } = event.data;
+
+  if (command === 'loadFile') {
+    const {
+      fileContent,   // string — the raw file content
+      filePath,      // string — full path to the file
+      fileName,      // string — filename with extension
+      fileType,      // string — MIME type
+      editMode,      // boolean — true when opened for editing
+    } = payload;
+
+    renderContent(fileContent);
+  }
+});
+```
+
+### Saving changes (editor only)
+
+When the user saves, post a `saveFile` message back to the parent:
+
+```js
+function saveFile(updatedContent) {
+  window.parent.postMessage(
     {
-      "name": "The Cool Name", <- The name of the extension, can contain spaces
-      "id": "viewerHTML", <- The id of the extension, should be the same as the folder where your ext. is located
-      "description": "A TagSpaces extension for ...", <- Short description of your extension
-      "type": "viewer", <- The type of your extension, could be: viewer, editor or perspective
-      "version": "1.0.0", <- The version of the extension
-      "dependencies": {
-        "jquery.panzoom": "~2.0.5"
+      command: 'saveFile',
+      payload: {
+        fileContent: updatedContent,
       },
-      "devDependencies": {},
-      "authors": [
-        "Your Name Here - http://your-optional-website-or-email.com"
-      ],
-      "keywords": [
-        "html",
-        "viewer"
-      ],
-      "license": "MIT",
-      "main": [
-        "extension.js"
-      ],
-      "ignore": [
-        "Gruntfile.js"
-      ],
-      "private": true
-    }
+    },
+    '*'
+  );
+}
 ```
+
+### Signaling that the extension is ready
+
+After your extension has initialised and is ready to receive the file, send a `contentLoaded` message so TagSpaces knows the iframe is ready:
+
+```js
+window.parent.postMessage({ command: 'contentLoaded' }, '*');
+```
+
+### Summary of available commands
+
+| Direction | Command | Description |
+|-----------|---------|-------------|
+| App → Extension | `loadFile` | Delivers file content and metadata |
+| Extension → App | `contentLoaded` | Extension is ready |
+| Extension → App | `saveFile` | Sends updated content back to be saved |
+| Extension → App | `setSearchQuery` | Request to highlight search terms |
+
+## Building a plain JavaScript extension
+
+Plain JS extensions are the simplest approach. The entire extension lives in a single `index.html` with libraries loaded from a local `libs/` folder or a CDN. There is no build step — what you write is what TagSpaces loads.
+
+### index.html
+
+The `index.html` loads your libraries and wires up the postMessage API:
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <link rel="stylesheet" href="libs/bootstrap/bootstrap.min.css" />
+  <link rel="stylesheet" href="extension.css" />
+</head>
+<body>
+  <div id="content"></div>
+
+  <script src="libs/i18next/i18next.min.js"></script>
+  <script src="libs/some-library/some-library.min.js"></script>
+  <script src="extension.js"></script>
+</body>
+</html>
+```
+
+### extension.js
+
+The main script handles the postMessage lifecycle:
+
+```js
+(function () {
+  'use strict';
+
+  // Signal readiness as soon as the script runs
+  window.parent.postMessage({ command: 'contentLoaded' }, '*');
+
+  // Listen for messages from TagSpaces
+  window.addEventListener('message', (event) => {
+    const { command, payload } = event.data;
+
+    if (command === 'loadFile') {
+      renderContent(payload.fileContent, payload.editMode);
+    }
+  });
+
+  function renderContent(content, editMode) {
+    const container = document.getElementById('content');
+    // Use your library to render content into container
+    container.textContent = content;
+  }
+})();
+```
+
+For an **editor**, add a save handler. A common pattern is wiring it to `Ctrl+S`:
+
+```js
+document.addEventListener('keydown', (e) => {
+  if ((e.ctrlKey || e.metaKey) && e.key === 's') {
+    e.preventDefault();
+    saveFile();
+  }
+});
+
+function saveFile() {
+  const updatedContent = getEditorContent(); // read from your library
+  window.parent.postMessage(
+    { command: 'saveFile', payload: { fileContent: updatedContent } },
+    '*'
+  );
+}
+```
+
+### package.json for a plain JS extension
+
+No `build` or `dev` scripts are needed — just the manifest:
+
+```json
+{
+  "name": "my-extension",
+  "version": "1.0.0",
+  "description": "A TagSpaces extension for viewing XYZ files",
+  "license": "MIT",
+  "tagspaces": {
+    "extensionId": "my-extension",
+    "extensionName": "My Extension",
+    "extensionType": "viewer",
+    "fileTypes": [
+      {
+        "type": "XYZ Viewer",
+        "ext": ["xyz"],
+        "color": "#2196f3"
+      }
+    ]
+  }
+}
+```
+
+### Common libraries used by plain JS extensions
+
+Most plain JS extensions share a common set of libraries, vendored into the `libs/` folder:
+
+| Library | Purpose |
+|---------|---------|
+| [Bootstrap](https://getbootstrap.com/) | Layout and base UI styling |
+| [i18next](https://www.i18next.com/) | Internationalization |
+| [Mark.js](https://markjs.io/) | Text search highlighting |
+| [DOMPurify](https://github.com/cure53/DOMPurify) | Sanitize HTML before rendering |
+
+Study `image-viewer` or `json-editor` in the monorepo as a complete reference for the plain JS pattern.
+
+## Building with React
+
+React extensions are suited for richer UIs. They require a build step but offer the full React/MUI ecosystem. A typical setup uses a bundler like Vite or webpack. Using Vite:
+
+```bash
+npm create vite@latest . -- --template react
+npm install
+```
+
+Update `vite.config.js` so the build output is a single HTML file that TagSpaces can load:
+
+```js
+import { defineConfig } from 'vite';
+import react from '@vitejs/plugin-react';
+
+export default defineConfig({
+  plugins: [react()],
+  build: {
+    outDir: 'dist',
+    rollupOptions: {
+      output: {
+        // Single entry point
+        inlineDynamicImports: true,
+      },
+    },
+  },
+  base: './',
+});
+```
+
+A minimal React viewer component wiring up the message API:
+
+```jsx
+import { useEffect, useState } from 'react';
+
+export default function App() {
+  const [content, setContent] = useState(null);
+
+  useEffect(() => {
+    const handler = (event) => {
+      const { command, payload } = event.data;
+      if (command === 'loadFile') {
+        setContent(payload.fileContent);
+      }
+    };
+    window.addEventListener('message', handler);
+    // Signal readiness
+    window.parent.postMessage({ command: 'contentLoaded' }, '*');
+    return () => window.removeEventListener('message', handler);
+  }, []);
+
+  if (!content) return <div>Loading...</div>;
+  return <pre>{content}</pre>;
+}
+```
+
+## Security considerations
+
+Extensions run in an iframe, providing a natural isolation boundary. 
+
+<!-- ### Host-enforced sandboxing (TagSpaces core)
+
+The TagSpaces application sets these attributes on the `<iframe>` element. Extension authors cannot override them — they are listed here for awareness and for core contributors:
+
+```html
+<iframe
+  sandbox="allow-scripts allow-downloads"
+  allow="camera 'none'; microphone 'none'; geolocation 'none'; payment 'none'"
+  src="extension/index.html"
+>
+```
+
+- **`sandbox="allow-scripts allow-downloads"`** — omitting `allow-same-origin` gives the iframe an opaque origin, blocking access to cookies, localStorage, IndexedDB, and cross-origin requests even if scripts are running
+- **Permissions Policy (`allow`)** — explicitly denies access to sensitive browser APIs regardless of what the extension scripts request -->
+
+### Extension-author controls
+
+The following practices should be applied in every extension.
+
+**Add a CSP meta tag to `index.html`**
+
+```html
+<meta http-equiv="Content-Security-Policy"
+  content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; connect-src 'none'; object-src 'none'">
+```
+
+- `connect-src 'none'` prevents the extension from making any outbound network requests — critical for a privacy-first app
+- `object-src 'none'` blocks legacy plugin content
+
+**Sanitise any HTML before rendering it**
+
+Never assign file content directly to `innerHTML`. Use [DOMPurify](https://github.com/cure53/DOMPurify) (already a standard dependency in plain JS extensions):
+
+```js
+// ✗ unsafe
+container.innerHTML = fileContent;
+
+// ✓ safe
+container.innerHTML = DOMPurify.sanitize(fileContent);
+```
+
+**Validate the postMessage sender**
+
+Always check that messages originate from the TagSpaces host before processing them:
+
+```js
+window.addEventListener('message', (event) => {
+  if (event.source !== window.parent) return; // ignore unexpected senders
+  const { command, payload } = event.data;
+  // ...
+});
+```
+
+**Avoid dynamic code execution**
+
+Do not use `eval()`, `new Function()`, or `setTimeout`/`setInterval` with string arguments. Use `'use strict'` at the top of every script.
 
 ## Internationalization
 
-For the internationalization of the extensions we use [Transifex](https://www.transifex.com/tagspaces/tagspaces/). For some extension we have already created translation file, like for [viewerImage](https://www.transifex.com/tagspaces/tagspaces/nsviewerimagejson/)
+Extensions use [i18next](https://www.i18next.com/) for translations. Translation files live in a `locales/` directory:
+
+```
+my-extension/
+└── locales/
+    ├── en/
+    │   └── ns.my-extension.json
+    └── de/
+        └── ns.my-extension.json
+```
+
+Translations are contributed via [Transifex](https://www.transifex.com/tagspaces/tagspaces/).
+
+## Testing your extension locally
+
+The easiest way to test is to point TagSpaces at your local build output. In TagSpaces Desktop:
+
+1. Build your extension: `npm run build`
+2. In TagSpaces settings → **File Types**, assign your extension to the target file extension
+3. Set the extension path to point to your local `dist/index.html`
+
+For web development, you can serve the `dist/` folder with any static server and open `index.html` directly in a browser, then simulate the `loadFile` message from the browser console:
+
+```js
+// Simulate TagSpaces sending a file to your extension
+window.dispatchEvent(new MessageEvent('message', {
+  data: {
+    command: 'loadFile',
+    payload: {
+      fileContent: 'Hello, world!',
+      filePath: '/test/hello.xyz',
+      fileName: 'hello.xyz',
+      editMode: false,
+    },
+  },
+}));
+```
+
+## Contributing your extension
+
+All official extensions are part of the [tagspaces-extensions](https://github.com/tagspaces/tagspaces-extensions) monorepo. To contribute:
+
+1. Fork the repository
+2. Add your extension in a new subdirectory following the structure for your chosen approach
+3. For **plain JS** extensions: ensure `index.html` works directly without any build step
+4. For **React** extensions: ensure `npm run build` produces a working `dist/index.html`
+5. Open a pull request with a description of what file types your extension handles
+
+## Reference: existing extensions
+
+Studying existing extensions is the fastest way to understand the patterns. Good starting points:
+
+| Extension | Approach | Type | Complexity | Good for learning |
+|-----------|----------|------|------------|-------------------|
+| [text-viewer](https://github.com/tagspaces/tagspaces-extensions/tree/main/text-viewer) | Plain JS | Viewer | Minimal | Basic message API wiring, no build step |
+| [image-viewer](https://github.com/tagspaces/tagspaces-extensions/tree/main/image-viewer) | Plain JS | Viewer | Medium | Vendoring libraries, EXIF handling |
+| [json-editor](https://github.com/tagspaces/tagspaces-extensions/tree/main/json-editor) | Plain JS | Editor | Medium | Plain JS editor, save flow |
+| [text-editor](https://github.com/tagspaces/tagspaces-extensions/tree/main/text-editor) | React | Editor | Medium | React + Monaco, save flow |
+| [media-player](https://github.com/tagspaces/tagspaces-extensions/tree/main/media-player) | React | Viewer | Medium | React + MUI + Vidstack |
+| [md-editor](https://github.com/tagspaces/tagspaces-extensions/tree/main/md-editor) | React | Editor | Advanced | React, rich WYSIWYG, Milkdown |

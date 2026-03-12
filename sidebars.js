@@ -476,7 +476,7 @@ const sidebars = {
         "tutorials/tagspaces-web-wasabi",
         "tutorials/folders-as-objectstorage-with-s3proxy",
         "tutorials/setup-minio-bucket-nas",
-        // "dev/extension-development-guide",
+        "dev/extension-development-guide",
         "tutorials/e2ee-with-tagspaces-and-cryptomator",
         "tutorials/map-tiler-tutorial",
         // "selfhosting",
