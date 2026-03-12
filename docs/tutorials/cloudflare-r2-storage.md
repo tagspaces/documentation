@@ -6,6 +6,9 @@ draft: false
 ---
 
 import { ProFeature, CenteredImage, CenteredVideo } from '@site/src/components/CommonBlocks';
+import TechArticleStructuredData from '@site/src/components/StructuredData';
+
+<TechArticleStructuredData />
 
 [Cloudflare](https://www.cloudflare.com/) is a globally distributed network platform known for its CDN, DNS, and security services.  
 Its **R2 Object Storage** is an affordable, S3-compatible storage solution designed for developers and small teams who want to store data in the cloud **without egress fees** — a major advantage compared to traditional cloud providers.

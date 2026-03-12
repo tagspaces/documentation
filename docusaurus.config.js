@@ -229,12 +229,14 @@ const config = {
                 href: "https://demo.tagspaces.com/",
               },
               {
-                label: "llms.txt",
-                href: "https://docs.tagspaces.org/llms.txt",
+                label: "Changelog",
+                href: "https://www.tagspaces.org/whatsnew",
               },
               {
-                label: "llms-full.txt",
-                href: "https://docs.tagspaces.org/llms-full.txt",
+                html: `
+                <a href="/llms.txt" class="footer__link-item">llms.txt</a>&nbsp;/
+                <a href="/llms-full.txt" class="footer__link-item">llms-full.txt</a> 
+                `
               },
             ],
           },

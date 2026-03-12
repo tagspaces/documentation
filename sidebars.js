@@ -471,6 +471,7 @@ const sidebars = {
         "tutorials/s3-bucket-locations",
         "tutorials/wasabi-locations",
         "tutorials/contabo-storage",
+        "tutorials/garage-storage",
         "tutorials/cloudflare-r2-storage",
         "tutorials/tagspaces-web-wasabi",
         "tutorials/folders-as-objectstorage-with-s3proxy",

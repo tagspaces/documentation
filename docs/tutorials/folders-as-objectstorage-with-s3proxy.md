@@ -4,6 +4,10 @@ description: Learn how to expose local folder as s3 object storage with S3Proxy
 tags: [tutorial]
 ---
 
+import TechArticleStructuredData from '@site/src/components/StructuredData';
+
+<TechArticleStructuredData />
+
 ## Introduction
 
 The web version of TagSpaces can be used currently only with object storage as a backend. Such is offered by a countless cloud provider, starting with AWS from Amazon, Wasabi or R2 from Cloudflare. This is great if your files are located in the Cloud, but what if you want to connect your files from your NAS or other local shares, you will need local object storage server. And here comes [S3Proxy](https://github.com/gaul/s3proxy) in place. It is a web server, which can be used to expose local folders as S3 compatible buckets.

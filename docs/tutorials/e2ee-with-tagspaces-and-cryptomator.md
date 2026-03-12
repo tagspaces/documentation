@@ -4,6 +4,10 @@ description: Tutorial for combining TagSpaces with Cryptomator for end-to-end en
 tags: [encryption, tutorial]
 ---
 
+import TechArticleStructuredData from '@site/src/components/StructuredData';
+
+<TechArticleStructuredData />
+
 Evernote's recent [change in its pricing plans](https://blog.evernote.com/blog/2016/06/28/changes-to-evernotes-pricing-plans/), restricting non-paying users to only two machines, have been an eye-opener to many. Even though the cloud-crazed hype is trying to convince us otherwise, with all the marketing tools at its disposal, keeping your private data in the cloud, and especially via vendor-locked solutions such as Evernote, had never been a good idea. With such vendor-locked, proprietary services, you do not own your own data, and have no control over its storage, meaning access to your own notes might be severely limited at any time, as it happened just recently.
 
 [TagSpaces](https://www.tagspaces.org/) had long been offering an alternative, self-hosted note-taking solution. Its capable RichText (HTML) and MarkDown editors and previewers can easily replace proprietary software, the plain, flat-file storage paradigm allows total control, and unrestricted access. With the help of third party cloud storage providers, such as Dropbox or Google Drive, you can also easily keep your notes in sync.

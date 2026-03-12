@@ -4,6 +4,10 @@ description: Step-by-step guide for deploying TagSpaces Web to Cloudflare Pages 
 tags: [tutorial]
 ---
 
+import TechArticleStructuredData from '@site/src/components/StructuredData';
+
+<TechArticleStructuredData />
+
 # Install TagSpaces Web on Cloudflare
 
 In this tutorial you will learn how to install TagSpaces Web or TagSpaces Pro Web on a **Cloudflare Pages**.

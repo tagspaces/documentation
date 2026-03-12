@@ -6,6 +6,9 @@ draft: false
 ---
 
 import { ProFeature, CenteredImage, CenteredVideo } from '@site/src/components/CommonBlocks';
+import TechArticleStructuredData from '@site/src/components/StructuredData';
+
+<TechArticleStructuredData />
 
 [Garage](https://garagehq.deuxfleurs.fr/) is an open-source distributed object storage system compatible with the **S3 API**.  
 It allows you to **self-host your own S3-compatible storage**, either on a personal server, a NAS, or even across multiple devices.

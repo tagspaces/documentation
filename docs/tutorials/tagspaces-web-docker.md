@@ -4,6 +4,10 @@ description: Docker deployment guide for TagSpaces Lite Web and Pro Web using Al
 tags: [tutorial]
 ---
 
+import TechArticleStructuredData from '@site/src/components/StructuredData';
+
+<TechArticleStructuredData />
+
 # Using TagSpaces with Docker
 
 This guide provides instructions for using **TagSpaces Lite Web** and **TagSpaces Pro Web** as Docker containers. The Docker container is based on [Alpine Linux](https://www.alpinelinux.org/) and uses [nginx](https://nginx.org/en/docs/) as the web server.

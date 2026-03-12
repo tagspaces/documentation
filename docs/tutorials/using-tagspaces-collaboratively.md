@@ -6,6 +6,9 @@ draft: false
 ---
 
 import { ProFeature, CenteredImage, CenteredVideo } from '@site/src/components/CommonBlocks';
+import TechArticleStructuredData from '@site/src/components/StructuredData';
+
+<TechArticleStructuredData />
 
 One of the most common questions we receive about **TagSpaces** is whether it supports file synchronization between devices.  
 Users often ask:

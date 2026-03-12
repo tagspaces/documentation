@@ -2,10 +2,12 @@
 title: How to use Contabo to store your files
 description: Guide for creating GDPR-compliant Contabo object storage buckets with S3 credentials and integrating with TagSpaces as an affordable European storage option.
 tags: [tutorial]
-draft: false
 ---
 
 import { ProFeature, CenteredImage, CenteredVideo } from '@site/src/components/CommonBlocks';
+import TechArticleStructuredData from '@site/src/components/StructuredData';
+
+<TechArticleStructuredData />
 
 [Contabo](https://contabo.com/de/object-storage/) offers affordable cloud infrastructure and storage solutions hosted in Germany and other EU locations. Currently (October 2025) they are offering 250 GB for roughly 3 € per month, which sound very reasonable. For users in the European Union or those concerned about **GDPR compliance**, Contabo provides a strong alternative to US-based cloud providers by keeping your data under strict EU privacy and data protection laws. Another advantage is the unlimited and free traffic for downloading and uploading files from/to the object storage.
 

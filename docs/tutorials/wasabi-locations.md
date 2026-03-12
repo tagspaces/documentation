@@ -5,6 +5,9 @@ tags: [tutorial]
 ---
 
 import { ProFeature, CenteredImage, CenteredVideo } from '@site/src/components/CommonBlocks';
+import TechArticleStructuredData from '@site/src/components/StructuredData';
+
+<TechArticleStructuredData />
 
 TagSpaces offers a way to connect S3 compatible object storage. Recently we figured out that this functionality works pretty well with the Wasabi cloud storage service and so I decided to write the following tutorial showing the steps needed to use TagSpaces with this service. [Wasabi](https://wasabi.com/cloud-storage-pricing/#three-info) is a affordable and reliable alternative to object storage offered by Amazon's AWS. By the time of writing the price is 5.99 $ per TB storage per month and they are not charging for download traffic(egress) or API calls. Which makes their offer in my opinion very attractive.
 
@@ -115,7 +118,6 @@ The list of allowed actions in the previous JSON file is only a suggestion. The 
 ### Read-only policy for a bucket
 
 Depending on your use-case you may want to access the bucket in a read-only mode, with the following policy you can achieve this.
-
 
 ```json
 {

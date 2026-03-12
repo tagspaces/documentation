@@ -5,6 +5,9 @@ tags: [tutorial]
 ---
 
 import { ProFeature, CenteredImage, CenteredVideo } from '@site/src/components/CommonBlocks';
+import TechArticleStructuredData from '@site/src/components/StructuredData';
+
+<TechArticleStructuredData />
 
 TagSpaces provides the ability to connect AWS S3 compatible object storage (buckets) as locations. This opens the app for many new capabilities and use cases. By enabling you to store files online, you can build and easily manage your own personal cloud storage.
 
