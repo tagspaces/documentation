@@ -4,6 +4,10 @@ description: Outdated developer guide for building TagSpaces viewer and editor e
 draft: true
 ---
 
+import { TechArticleStructuredData } from '@site/src/components/StructuredData';
+
+<TechArticleStructuredData />
+
 :::caution
 This guide is outdated.
 :::

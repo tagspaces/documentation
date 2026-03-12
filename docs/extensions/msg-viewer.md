@@ -3,6 +3,10 @@ title: MSG Viewer
 description: TagSpaces MSG Viewer extension for opening Microsoft Outlook MSG email files with HTML export and zoom functionality using msg.reader library.
 ---
 
+import { TechArticleStructuredData } from '@site/src/components/StructuredData';
+
+<TechArticleStructuredData />
+
 # MSG Viewer
 
 A TagSpaces extension allowing you to open email in MSG format.

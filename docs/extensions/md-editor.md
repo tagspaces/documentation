@@ -4,6 +4,10 @@ description: TagSpaces Markdown Editor with WYSIWYG editing, embedded images, em
 ---
 
 import { CenteredImage, CenteredVideo } from '@site/src/components/CommonBlocks';
+import { TechArticleStructuredData } from '@site/src/components/StructuredData';
+
+<TechArticleStructuredData />
+
 
 # Markdown Editor
 

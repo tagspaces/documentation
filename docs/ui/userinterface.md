@@ -4,6 +4,10 @@ description: Introduction to the TagSpaces UI covering the left drawer, navigati
 ---
 
 import { ProFeature, CenteredImage, CenteredVideo } from '@site/src/components/CommonBlocks';
+import { WebPageStructuredData } from '@site/src/components/StructuredData';
+
+<WebPageStructuredData />
+
 
 # User Interface Introduction
 

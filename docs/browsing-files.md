@@ -5,6 +5,10 @@ tags: [perspective]
 ---
 
 import { ProFeature, CenteredImage } from '@site/src/components/CommonBlocks';
+import { WebPageStructuredData } from '@site/src/components/StructuredData';
+
+<WebPageStructuredData />
+
 
 When you navigate to a folder in your active location, the files contained in the selected folder will be displayed in the main file browsing area of the user interface. TagSpaces offers flexible views to display your files. We call these views **perspectives**.
 

@@ -5,7 +5,7 @@ tags: [tutorial]
 ---
 
 import { ProFeature, CenteredImage, CenteredVideo } from '@site/src/components/CommonBlocks';
-import TechArticleStructuredData from '@site/src/components/StructuredData';
+import { TechArticleStructuredData } from '@site/src/components/StructuredData';
 
 <TechArticleStructuredData />
 

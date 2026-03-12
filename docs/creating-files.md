@@ -4,6 +4,10 @@ description: Learn how to create new files in TagSpaces including text, Markdown
 ---
 
 import { ProFeature, CenteredImage, CenteredVideo } from '@site/src/components/CommonBlocks';
+import { TechArticleStructuredData } from '@site/src/components/StructuredData';
+
+<TechArticleStructuredData />
+
 
 # Creating and Importing Files
 

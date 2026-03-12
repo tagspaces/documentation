@@ -4,6 +4,10 @@ description: Understand TagSpaces Pro workspaces for separating file locations a
 ---
 
 import { ProFeature, CenteredImage, FullScreenImage } from '@site/src/components/CommonBlocks';
+import { TechArticleStructuredData } from '@site/src/components/StructuredData';
+
+<TechArticleStructuredData />
+
 
 # Workspaces
 

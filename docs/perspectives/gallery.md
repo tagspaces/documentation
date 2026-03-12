@@ -4,6 +4,10 @@ description: TagSpaces Pro feature which provides a masonry image gallery with s
 tags: [perspective]
 ---
 
+import { WebPageStructuredData } from '@site/src/components/StructuredData';
+
+<WebPageStructuredData />
+
 import { ProFeature, EntFeature, CenteredImage } from '@site/src/components/CommonBlocks'
 
 <ProFeature />

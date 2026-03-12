@@ -4,6 +4,10 @@ description: Deprecated guide for setting up a self-hosted TagSpaces instance us
 draft: true
 ---
 
+import { TechArticleStructuredData } from '@site/src/components/StructuredData';
+
+<TechArticleStructuredData />
+
 :::caution
 Deprecated functionality: The here described functionality is not supported anymore.
 :::

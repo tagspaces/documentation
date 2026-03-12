@@ -4,6 +4,10 @@ description: TagSpaces Pro extension for previewing TTF, OTF, and WOFF font file
 ---
 
 import { ProFeature, CenteredImage, CenteredVideo } from '@site/src/components/CommonBlocks';
+import { TechArticleStructuredData } from '@site/src/components/StructuredData';
+
+<TechArticleStructuredData />
+
 
 # Font Viewer
 

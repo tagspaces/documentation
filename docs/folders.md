@@ -4,6 +4,10 @@ description: Explore TagSpaces folder management features including tags, descri
 ---
 
 import { ProFeature, CenteredImage, CenteredVideo } from '@site/src/components/CommonBlocks';
+import { TechArticleStructuredData } from '@site/src/components/StructuredData';
+
+<TechArticleStructuredData />
+
 
 Folders play an essential role in TagSpaces that goes beyond typical file grouping and organization. We have enhanced their functionality by adding tagging, description, custom background, thumbnail, wallpaper, and a default perspective. This allows you to turn every folder into a so-called **file-based app**, depending on the files stored within it.
 

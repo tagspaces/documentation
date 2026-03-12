@@ -4,6 +4,10 @@ description: TagSpaces JSON Editor extension for visually editing JSON documents
 ---
 
 import { ProFeature, CenteredImage, CenteredVideo } from '@site/src/components/CommonBlocks';
+import { TechArticleStructuredData } from '@site/src/components/StructuredData';
+
+<TechArticleStructuredData />
+
 
 # JSON Editor
 

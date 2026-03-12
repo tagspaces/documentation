@@ -4,6 +4,10 @@ description: TagSpaces Pro feature which displays geo-tagged files on interactiv
 tags: [perspective]
 ---
 
+import { WebPageStructuredData } from '@site/src/components/StructuredData';
+
+<WebPageStructuredData />
+
 import { ProFeature, EntFeature, CenteredImage, CenteredVideo } from '@site/src/components/CommonBlocks'
 
 <ProFeature />

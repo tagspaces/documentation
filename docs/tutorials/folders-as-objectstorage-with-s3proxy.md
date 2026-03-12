@@ -4,7 +4,7 @@ description: Learn how to expose local folder as s3 object storage with S3Proxy
 tags: [tutorial]
 ---
 
-import TechArticleStructuredData from '@site/src/components/StructuredData';
+import { TechArticleStructuredData } from '@site/src/components/StructuredData';
 
 <TechArticleStructuredData />
 

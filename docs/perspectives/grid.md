@@ -6,6 +6,10 @@ tags: [perspective]
 ---
 
 import { ProFeature, CenteredImage } from '@site/src/components/CommonBlocks';
+import { WebPageStructuredData } from '@site/src/components/StructuredData';
+
+<WebPageStructuredData />
+
 
 The **Grid Perspective** is optimized for general browsing of files and folder structures. It supports common file management operations such as renaming, tagging, deleting, copying, and moving files and folders.
 

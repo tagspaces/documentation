@@ -5,6 +5,9 @@ tags: [tutorial]
 ---
 
 import { ProFeature, CenteredImage } from '@site/src/components/CommonBlocks';
+import { TechArticleStructuredData } from '@site/src/components/StructuredData';
+
+<TechArticleStructedData />
 
 ## Introduction
 

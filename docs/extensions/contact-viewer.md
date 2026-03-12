@@ -4,6 +4,10 @@ description: TagSpaces Pro extension for displaying VCF vCard contact files with
 ---
 
 import { ProFeature, CenteredImage, CenteredVideo } from '@site/src/components/CommonBlocks';
+import { TechArticleStructuredData } from '@site/src/components/StructuredData';
+
+<TechArticleStructuredData />
+
 
 # Contact Editor
 

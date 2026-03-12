@@ -4,6 +4,10 @@ description: Comprehensive guide to TagSpaces settings covering language, themes
 ---
 
 import { ProFeature, CenteredImage, FullScreenImage } from '@site/src/components/CommonBlocks';
+import { WebPageStructuredData } from '@site/src/components/StructuredData';
+
+<WebPageStructuredData />
+
 
 # Settings
 

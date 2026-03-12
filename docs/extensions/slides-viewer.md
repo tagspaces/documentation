@@ -4,6 +4,10 @@ description: TagSpaces Slides Viewer extension for displaying Reveal.js HTML pre
 ---
 
 import { ProFeature, CenteredImage, CenteredVideo } from '@site/src/components/CommonBlocks';
+import { TechArticleStructuredData } from '@site/src/components/StructuredData';
+
+<TechArticleStructuredData />
+
 
 # Slides Viewer
 

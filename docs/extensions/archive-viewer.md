@@ -3,6 +3,10 @@ title: Archive Viewer
 description: TagSpaces Archive Viewer extension for browsing and previewing ZIP file contents using the jszip library, bundled with all TagSpaces editions.
 ---
 
+import { TechArticleStructuredData } from '@site/src/components/StructuredData';
+
+<TechArticleStructuredData />
+
 # Archive Viewer
 
 A TagSpaces extension allowing you to preview the content of ZIP files.

@@ -4,7 +4,7 @@ description: Learn how to setup TagSpaces Web on a web server.
 tags: [tutorial]
 ---
 
-import TechArticleStructuredData from '@site/src/components/StructuredData';
+import { TechArticleStructuredData } from '@site/src/components/StructuredData';
 
 <TechArticleStructuredData />
 

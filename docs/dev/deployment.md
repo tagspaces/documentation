@@ -3,6 +3,10 @@ title: Deployment Strategies
 description: Visual overview of TagSpaces deployment architectures for desktop, web, and combined installations showing how infrastructure components connect.
 ---
 
+import { TechArticleStructuredData } from '@site/src/components/StructuredData';
+
+<TechArticleStructuredData />
+
 ## Deployment of the desktop app
 
 ![Deployment desktop app](/media/swa/deployment-desktop-app.jpg)

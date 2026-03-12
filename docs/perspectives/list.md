@@ -6,6 +6,10 @@ tags: [perspective]
 ---
 
 import { ProFeature, CenteredImage } from '@site/src/components/CommonBlocks';
+import { WebPageStructuredData } from '@site/src/components/StructuredData';
+
+<WebPageStructuredData />
+
 
 This perspective is optimized for general browsing through files and folders and performing standard file and folder operations. It features three representation modes: compact, default, and large.
 

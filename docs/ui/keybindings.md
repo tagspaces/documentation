@@ -3,6 +3,10 @@ title: Key Bindings
 description: Complete reference of TagSpaces keyboard shortcuts for Windows, Linux, and Mac covering file operations, navigation, search, and document management.
 ---
 
+import { WebPageStructuredData } from '@site/src/components/StructuredData';
+
+<WebPageStructuredData />
+
 Keyboard shortcuts are combinations of two or more keys that you can use to perform a specific task that would typically require more than one mouse click. They are very useful and can make it easier to work with your software, saving you time and effort as you work with TagSpaces and other applications.
 
 To use a keyboard shortcut, hold down one or more keys while pressing the last key of the shortcut. For example, to use the shortcut **Ctrl** + **C** on Windows and Linux or **Command** - **C** on macOS, hold down **Ctrl** button, press **C** and then release both keys.

@@ -3,6 +3,10 @@ title: Command Line Tools
 description: Documentation for TagSpaces CLI tools for generating search indexes and thumbnails programmatically, suitable for automation scripts and CRON job integration.
 ---
 
+import { TechArticleStructuredData } from '@site/src/components/StructuredData';
+
+<TechArticleStructuredData />
+
 This is a set of command line tools which can create search index and thumbnails for folders used in the TagSpaces Desktop and Web apps. The source code for the tools is available on [GitHub](https://github.com/tagspaces/tagspaces-common/tree/develop/packages/tagspaces-shell)
 
 ## Installation

@@ -5,6 +5,10 @@ description: Learn how to add and manage TagSpaces file locations, connecting lo
 
 import VideoYT from '@site/src/components/VideoYT';
 import { ProFeature, CenteredImage, CenteredVideo } from '@site/src/components/CommonBlocks';
+import { WebPageStructuredData } from '@site/src/components/StructuredData';
+
+<WebPageStructuredData />
+
 
 # Locations
 

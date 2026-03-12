@@ -4,6 +4,10 @@ description: Technical specification of TagSpaces metadata file formats stored i
 ---
 
 import { ProFeature, CenteredImage } from '@site/src/components/CommonBlocks';
+import { TechArticleStructuredData } from '@site/src/components/StructuredData';
+
+<TechArticleStructuredData />
+
 
 In comparison to many other tools, TagSpaces uses external text files for saving the meta information for folders and files, instead of a database. Here you will find the specification of the formats used by these files and also some other useful information concerning these files.
 

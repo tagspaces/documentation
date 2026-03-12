@@ -4,6 +4,10 @@ description: Learn how to share files and folders in TagSpaces using internal sh
 ---
 
 import { ProFeature, EntFeature, CenteredImage, CenteredVideo, FullScreenImage } from '@site/src/components/CommonBlocks';
+import { TechArticleStructuredData } from '@site/src/components/StructuredData';
+
+<TechArticleStructuredData />
+
 
 You can share files in two ways, and here is how it can be done.
 

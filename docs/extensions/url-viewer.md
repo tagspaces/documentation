@@ -3,6 +3,10 @@ title: URL Editor
 description: TagSpaces bookmark editor extension for opening browser bookmark files (.url, .webloc, .desktop) enabling TagSpaces as a tag-powered bookmark manager.
 ---
 
+import { TechArticleStructuredData } from '@site/src/components/StructuredData';
+
+<TechArticleStructuredData />
+
 # Bookmark Editor
 
 A TagSpaces extension allowing you to open and edit bookmark files created from web browsers or bookmark managers.

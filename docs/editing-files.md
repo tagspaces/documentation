@@ -4,6 +4,10 @@ description: Edit files in TagSpaces using built-in editors for HTML, Markdown, 
 ---
 
 import { ProFeature, CenteredImage, CenteredVideo } from '@site/src/components/CommonBlocks';
+import { TechArticleStructuredData } from '@site/src/components/StructuredData';
+
+<TechArticleStructuredData />
+
 
 # Edit Files
 

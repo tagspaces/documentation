@@ -4,6 +4,10 @@ description: Preview and print files in TagSpaces using built-in viewers for ima
 ---
 
 import { ProFeature, CenteredImage, CenteredVideo } from "@site/src/components/CommonBlocks";
+import { TechArticleStructuredData } from '@site/src/components/StructuredData';
+
+<WebPageStructuredData />
+
 
 TagSpaces supports the previewing of many file types without requiring external viewers. The application includes several viewer extensions:
 

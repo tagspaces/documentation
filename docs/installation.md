@@ -4,6 +4,10 @@ description: Step-by-step installation guide for TagSpaces on Windows, macOS, an
 ---
 
 import { ProFeature, CenteredImage } from '@site/src/components/CommonBlocks';
+import { TechArticleStructuredData } from '@site/src/components/StructuredData';
+
+<TechArticleStructuredData />
+
 
 Here you will learn how to install TagSpaces on different operating systems.
 

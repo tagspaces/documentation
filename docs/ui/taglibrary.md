@@ -5,6 +5,10 @@ description: Guide to the TagSpaces tag library for organizing tags into groups 
 
 import { ProFeature, CenteredImage, CenteredVideo } from '@site/src/components/CommonBlocks';
 import VideoYT from '@site/src/components/VideoYT';
+import { WebPageStructuredData } from '@site/src/components/StructuredData';
+
+<WebPageStructuredData />
+
 
 The **Tag Library** in TagSpaces allows you to manage and organize tags, which you can use to categorize and label your files and folders. To access the tag library, click the tag icon (1) located in the vertical navigation bar on the far left side of the application.
 

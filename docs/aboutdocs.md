@@ -4,6 +4,10 @@ description: Overview of the TagSpaces documentation structure, contribution gui
 ---
 
 import { ProFeature } from '@site/src/components/CommonBlocks';
+import { WebPageStructuredData } from '@site/src/components/StructuredData';
+
+<WebPageStructuredData />
+
 
 # About this documentation
 

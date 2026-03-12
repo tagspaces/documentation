@@ -4,6 +4,10 @@ description: Learn about automatic thumbnail generation in TagSpaces for images,
 ---
 
 import { ProFeature, CenteredImage, CenteredVideo } from '@site/src/components/CommonBlocks';
+import { TechArticleStructuredData } from '@site/src/components/StructuredData';
+
+<TechArticleStructuredData />
+
 
 When a user opens a folder, the application automatically scans its contents and attempts to generate mini-previews, or thumbnails, for the files in the folder.
 

@@ -17,6 +17,7 @@ const config = {
     locales: ["en"],
   },
   markdown: {
+    format: 'mdx',
     mermaid: true,
   },
   themes: ["@docusaurus/theme-mermaid"],
@@ -53,38 +54,38 @@ const config = {
       }),
     },
     // ── WebSite (links subdomain to main site + enables search box) ──
-    {
-      tagName: "script",
-      attributes: { type: "application/ld+json" },
-      innerHTML: JSON.stringify({
-        "@context": "https://schema.org",
-        "@type": "WebSite",
-        "@id": "https://docs.tagspaces.org/#website",
-        name: "TagSpaces Documentation",
-        url: "https://docs.tagspaces.org",
-        description:
-          "Official documentation for TagSpaces — covering installation, tagging, search, file management, perspectives, and tutorials.",
-        inLanguage: "en",
-        publisher: {
-          "@id": "https://www.tagspaces.org/#organization",
-        },
-        isPartOf: {
-          "@type": "WebSite",
-          "@id": "https://www.tagspaces.org/#website",
-          name: "TagSpaces",
-          url: "https://www.tagspaces.org",
-        },
-        // potentialAction: {
-        //   "@type": "SearchAction",
-        //   target: {
-        //     "@type": "EntryPoint",
-        //     urlTemplate:
-        //       "https://docs.tagspaces.org/search?q={search_term_string}",
-        //   },
-        //   "query-input": "required name=search_term_string",
-        // },
-      }),
-    },
+    // {
+    //   tagName: "script",
+    //   attributes: { type: "application/ld+json" },
+    //   innerHTML: JSON.stringify({
+    //     "@context": "https://schema.org",
+    //     "@type": "WebSite",
+    //     "@id": "https://docs.tagspaces.org/#website",
+    //     name: "TagSpaces Documentation",
+    //     url: "https://docs.tagspaces.org",
+    //     description:
+    //       "Official documentation for TagSpaces — covering installation, tagging, search, file management, perspectives, and tutorials.",
+    //     inLanguage: "en",
+    //     publisher: {
+    //       "@id": "https://www.tagspaces.org/#organization",
+    //     },
+    //     isPartOf: {
+    //       "@type": "WebSite",
+    //       "@id": "https://www.tagspaces.org/#website",
+    //       name: "TagSpaces",
+    //       url: "https://www.tagspaces.org",
+    //     },
+    //     // potentialAction: {
+    //     //   "@type": "SearchAction",
+    //     //   target: {
+    //     //     "@type": "EntryPoint",
+    //     //     urlTemplate:
+    //     //       "https://docs.tagspaces.org/search?q={search_term_string}",
+    //     //   },
+    //     //   "query-input": "required name=search_term_string",
+    //     // },
+    //   }),
+    // },
   ],
   plugins: [
     require.resolve("docusaurus-lunr-search"),

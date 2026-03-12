@@ -4,7 +4,7 @@ description: Tutorial for combining TagSpaces with Cryptomator for end-to-end en
 tags: [encryption, tutorial]
 ---
 
-import TechArticleStructuredData from '@site/src/components/StructuredData';
+import { TechArticleStructuredData } from '@site/src/components/StructuredData';
 
 <TechArticleStructuredData />
 

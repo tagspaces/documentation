@@ -4,6 +4,10 @@ description: TagSpaces Pro extension for previewing GLB, GLTF, STL, and OBJ 3D m
 ---
 
 import { ProFeature, CenteredImage, CenteredVideo } from '@site/src/components/CommonBlocks';
+import { TechArticleStructuredData } from '@site/src/components/StructuredData';
+
+<TechArticleStructuredData />
+
 
 # 3D Viewer
 

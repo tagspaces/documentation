@@ -3,6 +3,10 @@ title: Document Viewer
 description: TagSpaces Document Viewer extension for previewing DOCX and ODT word-processing files with HTML export, zoom, and text search using mammoth.js.
 ---
 
+import { TechArticleStructuredData } from '@site/src/components/StructuredData';
+
+<TechArticleStructuredData />
+
 # Document Viewer
 
 A TagSpaces extension for previewing document files.

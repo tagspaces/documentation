@@ -5,6 +5,10 @@ description: Discover how to create internal links between files, folders, and l
 
 import { ProFeature, CenteredImage, CenteredVideo, FullScreenImage } from '@site/src/components/CommonBlocks';
 import VideoYT from '@site/src/components/VideoYT';
+import { TechArticleStructuredData } from '@site/src/components/StructuredData';
+
+<TechArticleStructuredData />
+
 
 <ProFeature />
 

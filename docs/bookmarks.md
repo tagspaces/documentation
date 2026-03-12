@@ -6,6 +6,10 @@ description: Learn how to bookmark files and folders in TagSpaces for quick acce
 # Bookmark to files and folders
 
 import { ProFeature, CenteredImage, CenteredVideo, FullScreenImage } from '@site/src/components/CommonBlocks';
+import { TechArticleStructuredData } from '@site/src/components/StructuredData';
+
+<TechArticleStructuredData />
+
 
 <ProFeature />
 

@@ -4,6 +4,10 @@ description: Learn how to manage files in TagSpaces using the Details, Descripti
 ---
 
 import { ProFeature, CenteredImage } from '@site/src/components/CommonBlocks';
+import { TechArticleStructuredData } from '@site/src/components/StructuredData';
+
+<TechArticleStructuredData />
+
 
 ## File Areas
 

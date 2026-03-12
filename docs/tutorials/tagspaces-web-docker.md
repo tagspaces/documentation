@@ -4,7 +4,7 @@ description: Docker deployment guide for TagSpaces Lite Web and Pro Web using Al
 tags: [tutorial]
 ---
 
-import TechArticleStructuredData from '@site/src/components/StructuredData';
+import { TechArticleStructuredData } from '@site/src/components/StructuredData';
 
 <TechArticleStructuredData />
 

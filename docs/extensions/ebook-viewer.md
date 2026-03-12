@@ -4,6 +4,10 @@ description: TagSpaces eBook Viewer extension for reading EPUB ebooks with auto 
 ---
 
 import { ProFeature, CenteredImage, CenteredVideo } from '@site/src/components/CommonBlocks';
+import { TechArticleStructuredData } from '@site/src/components/StructuredData';
+
+<TechArticleStructuredData />
+
 
 # eBook Viewer
 

@@ -4,6 +4,10 @@ description: TagSpaces Mindmap Viewer extension for visualizing Markdown files a
 ---
 
 import { ProFeature, CenteredImage, CenteredVideo } from '@site/src/components/CommonBlocks';
+import { TechArticleStructuredData } from '@site/src/components/StructuredData';
+
+<TechArticleStructuredData />
+
 
 # Mindmap Viewer
 

@@ -5,6 +5,10 @@ description: Complete guide to TagSpaces search with AND, OR, NOT operators, ful
 
 import VideoYT from '@site/src/components/VideoYT';
 import { ProFeature, CenteredImage, CenteredVideo } from '@site/src/components/CommonBlocks';
+import { TechArticleStructuredData } from '@site/src/components/StructuredData';
+
+<TechArticleStructuredData />
+
 
 In order to offer desktop search functionalities, TagSpaces provides a variety of search-related features, which are described in this section.
 

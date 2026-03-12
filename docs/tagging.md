@@ -4,6 +4,10 @@ description: Discover how to organize files and folders in TagSpaces using tags 
 ---
 
 import { ProFeature, CenteredImage, CenteredVideo } from '@site/src/components/CommonBlocks';
+import { TechArticleStructuredData } from '@site/src/components/StructuredData';
+
+<TechArticleStructuredData />
+
 
 ## Why Tagging?
 
