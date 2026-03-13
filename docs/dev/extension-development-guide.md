@@ -176,10 +176,15 @@ Key fields in the `tagspaces` section:
 
 ### Receiving a file (viewer and editor)
 
-When TagSpaces loads your extension and a file needs to be displayed, it sends a `loadFile` message. Listen for it in your `index.html` or entry script:
+When TagSpaces loads your extension and a file needs to be displayed, it sends a `loadFile` message. Capture `event.origin` on the first message so you can use it as the `targetOrigin` when posting back:
 
 ```js
+let trustedOrigin = null;
+
 window.addEventListener('message', (event) => {
+  if (event.source !== window.parent) return;
+  trustedOrigin = event.origin; // capture once for use in postMessage replies
+
   const { command, payload } = event.data;
 
   if (command === 'loadFile') {
@@ -198,7 +203,7 @@ window.addEventListener('message', (event) => {
 
 ### Saving changes (editor only)
 
-When the user saves, post a `saveFile` message back to the parent:
+When the user saves, post a `saveFile` message back using the captured `trustedOrigin`:
 
 ```js
 function saveFile(updatedContent) {
@@ -209,10 +214,14 @@ function saveFile(updatedContent) {
         fileContent: updatedContent,
       },
     },
-    '*'
+    trustedOrigin ?? '*'
   );
 }
 ```
+
+:::note
+When TagSpaces uses `sandbox` without `allow-same-origin` on the iframe, `event.origin` will be the string `"null"` (opaque origin). In that case `trustedOrigin ?? '*'` falls back to `'*'`, which is unavoidable — but the risk is mitigated because the opaque origin already prevents the iframe from making credentialed cross-origin requests or accessing the parent's storage.
+:::
 
 ### Signaling that the extension is ready
 
@@ -265,20 +274,24 @@ The main script handles the postMessage lifecycle:
 (function () {
   'use strict';
 
+  var trustedOrigin = null;
+
   // Signal readiness as soon as the script runs
   window.parent.postMessage({ command: 'contentLoaded' }, '*');
 
   // Listen for messages from TagSpaces
-  window.addEventListener('message', (event) => {
-    const { command, payload } = event.data;
+  window.addEventListener('message', function (event) {
+    if (event.source !== window.parent) return;
+    trustedOrigin = event.origin; // capture for replies
 
-    if (command === 'loadFile') {
-      renderContent(payload.fileContent, payload.editMode);
+    var data = event.data;
+    if (data.command === 'loadFile') {
+      renderContent(data.payload.fileContent, data.payload.editMode);
     }
   });
 
   function renderContent(content, editMode) {
-    const container = document.getElementById('content');
+    var container = document.getElementById('content');
     // Use your library to render content into container
     container.textContent = content;
   }
@@ -296,10 +309,10 @@ document.addEventListener('keydown', (e) => {
 });
 
 function saveFile() {
-  const updatedContent = getEditorContent(); // read from your library
+  var updatedContent = getEditorContent(); // read from your library
   window.parent.postMessage(
     { command: 'saveFile', payload: { fileContent: updatedContent } },
-    '*'
+    trustedOrigin ?? '*'
   );
 }
 ```
