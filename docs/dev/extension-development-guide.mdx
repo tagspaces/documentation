@@ -176,9 +176,9 @@ Key fields in the `tagspaces` section:
 
 ### Receiving a file (viewer and editor)
 
-When TagSpaces loads your extension and a file needs to be displayed, it sends a `loadFile` message. Capture `event.origin` on the first message so you can use it as the `targetOrigin` when posting back:
+When TagSpaces loads your extension and a file needs to be displayed, it sends a `loadDefaultTextContent` message. Capture `event.origin` on the first message so you can use it as the `targetOrigin` when posting back:
 
-```js
+{/* ```js
 let trustedOrigin = null;
 
 window.addEventListener('message', (event) => {
@@ -187,7 +187,7 @@ window.addEventListener('message', (event) => {
 
   const { command, payload } = event.data;
 
-  if (command === 'loadFile') {
+  if (command === 'loadDefaultTextContent') {
     const {
       fileContent,   // string — the raw file content
       filePath,      // string — full path to the file
@@ -199,7 +199,7 @@ window.addEventListener('message', (event) => {
     renderContent(fileContent);
   }
 });
-```
+``` */}
 
 ### Saving changes (editor only)
 
@@ -219,10 +219,6 @@ function saveFile(updatedContent) {
 }
 ```
 
-:::note
-When TagSpaces uses `sandbox` without `allow-same-origin` on the iframe, `event.origin` will be the string `"null"` (opaque origin). In that case `trustedOrigin ?? '*'` falls back to `'*'`, which is unavoidable — but the risk is mitigated because the opaque origin already prevents the iframe from making credentialed cross-origin requests or accessing the parent's storage.
-:::
-
 ### Signaling that the extension is ready
 
 After your extension has initialised and is ready to receive the file, send a `contentLoaded` message so TagSpaces knows the iframe is ready:
@@ -235,7 +231,7 @@ window.parent.postMessage({ command: 'contentLoaded' }, '*');
 
 | Direction | Command | Description |
 |-----------|---------|-------------|
-| App → Extension | `loadFile` | Delivers file content and metadata |
+| App → Extension | `loadDefaultTextContent` | Delivers file content and metadata |
 | Extension → App | `contentLoaded` | Extension is ready |
 | Extension → App | `saveFile` | Sends updated content back to be saved |
 | Extension → App | `setSearchQuery` | Request to highlight search terms |
@@ -285,7 +281,7 @@ The main script handles the postMessage lifecycle:
     trustedOrigin = event.origin; // capture for replies
 
     var data = event.data;
-    if (data.command === 'loadFile') {
+    if (data.command === 'loadDefaultTextContent') {
       renderContent(data.payload.fileContent, data.payload.editMode);
     }
   });
@@ -414,21 +410,6 @@ export default function App() {
 ## Security considerations
 
 Extensions run in an iframe, providing a natural isolation boundary. 
-
-<!-- ### Host-enforced sandboxing (TagSpaces core)
-
-The TagSpaces application sets these attributes on the `<iframe>` element. Extension authors cannot override them — they are listed here for awareness and for core contributors:
-
-```html
-<iframe
-  sandbox="allow-scripts allow-downloads"
-  allow="camera 'none'; microphone 'none'; geolocation 'none'; payment 'none'"
-  src="extension/index.html"
->
-```
-
-- **`sandbox="allow-scripts allow-downloads"`** — omitting `allow-same-origin` gives the iframe an opaque origin, blocking access to cookies, localStorage, IndexedDB, and cross-origin requests even if scripts are running
-- **Permissions Policy (`allow`)** — explicitly denies access to sensitive browser APIs regardless of what the extension scripts request -->
 
 ### Extension-author controls
 
