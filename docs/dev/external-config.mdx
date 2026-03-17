@@ -4,7 +4,7 @@ description: This document will describe how to deploy TagSpaces Pro and Custom 
 ---
 
 import { ProFeature, CenteredImage, CenteredVideo } from '@site/src/components/CommonBlocks';
-import { TechArticleStructuredData } from '@site/src/components/StructuredData';
+import { TechArticleStructuredData } from '@site/src/components/StructuredData';
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
@@ -16,28 +16,29 @@ import TabItem from '@theme/TabItem';
 
 This document will describe how to deploy TagSpaces Pro and Custom with predefined configuration such as custom logo and color, tag library or locations. The settings discussed here should be saved in a file called **extconfig.js** (for web) and **extconfig.json** (for desktop version), placed in the folder where the application is hosted.
 
+:::tip
+Each JSON example represents a complete `extconfig.json` file and can be copied directly. You can combine the content of many JSON files in order to achieve the desired configuration. See the examples at the end of this document for more details.
+:::
+
 ## Configuring a custom logo
 
 For exchanging the application logo the **ExtLogoURL** parameter should be used. A valid values can be an URL:
 
-<Tabs groupId="customLogo">
+<Tabs groupId="config">
   <TabItem value="js" label="extconfig.js">
 ```js
 window.ExtLogoURL = "https://www.tagspaces.org/content/text-logo.svg";
+// window.ExtLogoURL = "custom-logo.png"; // an example with relative path to the logo
 ```
   </TabItem>
   <TabItem value="json" label="extconfig.json">
 ```json
-"ExtLogoURL": "https://www.tagspaces.org/content/text-logo.svg";
+{
+  "ExtLogoURL": "custom-logo.png"
+}
 ```
   </TabItem>
 </Tabs>
-
-or a relative path the file containing the logo:
-
-```js
-window.ExtLogoURL = "custom-logo.png";
-```
 
 :::tip
 Images with up to **250 px** width and up to **50 px** height suits best in the user interface of the application. Valid image file formats are JPG, GIF, PNG and SVG.
@@ -46,18 +47,41 @@ Images with up to **250 px** width and up to **50 px** height suits best in the 
 ## Hiding TagSpaces' logo
 The following setting can be used in order to hide the TagSpaces' logo in the upper left part of the user interface.
 
+<Tabs groupId="config">
+  <TabItem value="js" label="extconfig.js">
 ```js
 window.ExtShowTSLogo = false;
 ```
+  </TabItem>
+  <TabItem value="json" label="extconfig.json">
+```json
+{
+  "ExtShowTSLogo": false
+}
+```
+  </TabItem>
+</Tabs>
 
 Possible values: `true`, `false`. Default value: `true`
 
 ## Hiding TagSpaces' version
 The following setting can be used in order to hide the TagSpaces' version in the upper left part of the user interface.
 
+<Tabs groupId="config">
+  <TabItem value="js" label="extconfig.js">
 ```js
 window.ExtShowTSVersion = false;
 ```
+  </TabItem>
+  <TabItem value="json" label="extconfig.json">
+```json
+{
+  "ExtShowTSVersion": false
+}
+```
+  </TabItem>
+</Tabs>
+
 
 Possible values: `true`, `false`. Default value: `true`
 
@@ -65,17 +89,39 @@ Possible values: `true`, `false`. Default value: `true`
 
 The property **ExtIsFirstRun** can be used for disabling the initial onboarding dialog and license confirmation.
 
+<Tabs groupId="config">
+  <TabItem value="js" label="extconfig.js">
 ```js
 window.ExtIsFirstRun = true;
 ```
+  </TabItem>
+  <TabItem value="json" label="extconfig.json">
+```json
+{
+  "ExtIsFirstRun": true
+}
+```
+  </TabItem>
+</Tabs>
 
 The default value is `true`.
 
 ## Disable the checking for new version on startup
 
+<Tabs groupId="config">
+  <TabItem value="js" label="extconfig.js">
 ```js
 window.ExtCheckForUpdatesOnStartup = false;
 ```
+  </TabItem>
+  <TabItem value="json" label="extconfig.json">
+```json
+{
+  "ExtCheckForUpdatesOnStartup": false
+}
+```
+  </TabItem>
+</Tabs>
 
 The default value is `true`.
 
@@ -83,9 +129,21 @@ The default value is `true`.
 
 The property **ExtDisplayMode** can be used for switching between the desktop and mobile mode of the app.
 
+<Tabs groupId="config">
+  <TabItem value="js" label="extconfig.js">
 ```js
 window.ExtDisplayMode = "mobile";
 ```
+  </TabItem>
+  <TabItem value="json" label="extconfig.json">
+```json
+{
+  "ExtDisplayMode": "mobile"
+}
+```
+  </TabItem>
+</Tabs>
+
 
 Possible values are `mobile` and `desktop`.
 
@@ -93,9 +151,21 @@ Possible values are `mobile` and `desktop`.
 
 The property **ExtUseSidecarsForFileTagging** can be used for switching between using the file rename method and using sidecar files for saving the tagging information.
 
+<Tabs groupId="config">
+  <TabItem value="js" label="extconfig.js">
 ```js
 window.ExtUseSidecarsForFileTagging = false;
 ```
+  </TabItem>
+  <TabItem value="json" label="extconfig.json">
+```json
+{
+  "ExtUseSidecarsForFileTagging": false
+}
+```
+  </TabItem>
+</Tabs>
+
 
 Possible values are `true` and `false`.
 
@@ -107,9 +177,20 @@ If the parameter is specified then this setting could not be changed in the TagS
 
 If the property **ExtUseOnlyTagsFromTagLibrary** is set to true, the user is forced to limit the tagging only with the predifined tags. The freely creation of tags during tagging is prohibeded this way.
 
+<Tabs groupId="config">
+  <TabItem value="js" label="extconfig.js">
 ```js
 window.ExtUseOnlyTagsFromTagLibrary = false;
 ```
+  </TabItem>
+  <TabItem value="json" label="extconfig.json">
+```json
+{
+  "ExtUseOnlyTagsFromTagLibrary": false
+}
+```
+  </TabItem>
+</Tabs>
 
 Possible values are `true` and `false`.
 
@@ -119,11 +200,22 @@ If the parameter is specified then this setting could not be changed in the TagS
 
 ## Specifying the location of the tags in the filename
 
-The property **ExtFilenameTagPlacedAtEnd** can be used to switching between placing the tags in the beginning of the filename or in the end. For example: `[tag1 tag2] filename.ext` vs. `filename [tag1 tag2].ext`. 
+The property **ExtFilenameTagPlacedAtEnd** can be used to switching between placing the tags in the beginning of the filename or in the end. For example: `[tag1 tag2] filename.ext` vs. `filename [tag1 tag2].ext`.
 
+<Tabs groupId="config">
+  <TabItem value="js" label="extconfig.js">
 ```js
 window.ExtFilenameTagPlacedAtEnd = true;
 ```
+  </TabItem>
+  <TabItem value="json" label="extconfig.json">
+```json
+{
+  "ExtFilenameTagPlacedAtEnd": true
+}
+```
+  </TabItem>
+</Tabs>
 
 Possible values are `true` and `false`. The default value is `true`.
 
@@ -133,17 +225,39 @@ Possible values are `true` and `false`. The default value is `true`.
 
 The installation of TagSpaces Web and TagSpaces Web Pro, do not show a button leading to a privacy policy by default. An URL to a custom privacy policy can be configured with this setting:
 
+<Tabs groupId="config">
+  <TabItem value="js" label="extconfig.js">
 ```js
 window.ExtPrivacyURL = "https://tagspacesweb.yourdomain.com/privacy/";
 ```
+  </TabItem>
+  <TabItem value="json" label="extconfig.json">
+```json
+{
+  "ExtPrivacyURL": "https://tagspacesweb.yourdomain.com/privacy/"
+}
+```
+  </TabItem>
+</Tabs>
 
 ### Custom imprint page URL
 
 The installation of TagSpaces Web and TagSpaces Web Pro, do not show a button leading to a imprint web page by default. An URL to a custom imprint page can be configured with this setting:
 
+<Tabs groupId="config">
+  <TabItem value="js" label="extconfig.js">
 ```js
-window.ExtImprintURL = "https://tagspacesweb.yourdomain.com/imprint/";
+window.ExtPrivacyURL = "https://tagspacesweb.yourdomain.com/imprint/";
 ```
+  </TabItem>
+  <TabItem value="json" label="extconfig.json">
+```json
+{
+  "ExtPrivacyURL": "https://tagspacesweb.yourdomain.com/imprint/"
+}
+```
+  </TabItem>
+</Tabs>
 
 ## Configuring custom locations
 
@@ -151,12 +265,14 @@ With this feature TagSpaces can be deployed with a set of predefined location, w
 
 This an example for connecting an AWS S3 bucket as location:
 
-```js title="extconfig.js"
+<Tabs groupId="config">
+  <TabItem value="js" label="extconfig.js">
+```js title="Example of object storage location"
 window.ExtLocations = [
   // a list containing one or many locations
   {
     uuid: "10565f09-c7fd-2333-fc67-a75db27rt5ba", // an inique id of the location
-    type: "1", // 1 defines the locations a cloud based
+    type: "1", // 1 defines the locations as hosted in an object storage
     name: "The name of the cloud location", // the name of the location
     path: "demo", // the path to sub folder in the location
     accessKeyId: "your_access_key", // the access key of the user
@@ -177,12 +293,45 @@ window.ExtLocations = [
   },
 ];
 ```
+  </TabItem>
+  <TabItem value="json" label="extconfig.json">
+```json title="Example of object storage location"
+{
+  "ExtLocations": [
+    {
+      "uuid": "10565f09-c7fd-2333-fc67-a75db27rt5ba",
+      "type": "1",
+      "name": "The name of the cloud location",
+      "path": "demo",
+      "accessKeyId": "your_access_key",
+      "secretAccessKey": "your_secret_key",
+      "bucketName": "demo-bucket",
+      "region": "eu-central-1",
+      "endpointURL": "https://nas34r:3000/minio",
+      "isNotEditable": true,
+      "isDefault": true,
+      "isReadOnly": true,
+      "disableIndexing": false,
+      "disableThumbnailGeneration": false,
+      "fullTextIndex": false,
+      "watchForChanges": false,
+      "maxIndexAge": 600000,
+      "persistTagsInSidecarFile": true,
+      "ignorePatternPaths": ["**/node_modules/**"]
+    }
+  ]
+}
+```
+  </TabItem>
+</Tabs>
 
 The following snipped is an example for connecting a local folder as location:
 
-```js
+
+<Tabs groupId="config">
+  <TabItem value="js" label="extconfig.js">
+```js title="Example of local location"
 window.ExtLocations = [
-  // an array containing one or many locations
   {
     uuid: "53453458-c7fd-2333-fc67-a75db27rt5ba", // an unique id of the location
     type: "0", // 0 defines the location as local
@@ -196,24 +345,55 @@ window.ExtLocations = [
   },
 ];
 ```
+  </TabItem>
+  <TabItem value="json" label="extconfig.json">
+```json title="Example of local location"
+{
+  "ExtLocations": [
+    {
+      "uuid": "53453458-c7fd-2333-fc67-a75db27rt5ba",
+      "type": "0",
+      "name": "The name of the local location",
+      "path": "/var/mnt/data/",
+      "isDefault": true,
+      "isReadOnly": true,
+      "disableIndexing": false,
+      "fullTextIndex": false,
+      "watchForChanges": false
+    }
+  ]
+}
+```
+  </TabItem>
+</Tabs>
+
 
 ### Disable the editing of the locations (deprecated)
 
 The editing of the locations can be disabled with the following property: **ExtLocationsReadOnly**
 
 :::tip
-
 This switch is not supported anymore. Now as soon as you have externally configured locations they are automatically read-only.
-
 :::
 
 ### Saving locations in the browser
 
 Turning on this property will force the app to store the configuration for the locations in the browser's local storage. In the desktop app this is enabled by default, but on the web based version it is turned off.
 
+<Tabs groupId="config">
+  <TabItem value="js" label="extconfig.js">
 ```js
 window.ExtSaveLocationsInBrowser = true;
 ```
+  </TabItem>
+  <TabItem value="json" label="extconfig.json">
+```json
+{
+  "ExtSaveLocationsInBrowser": true
+}
+```
+  </TabItem>
+</Tabs>
 
 Possible values are `true` and `false`. Default value is `false`
 
@@ -233,6 +413,8 @@ With this feature TagSpaces can be deployed with a set of predefined tags distri
 
 The following code snipped shows how to define one tag group containing one tag as a predefined tag library
 
+<Tabs groupId="config">
+  <TabItem value="js" label="extconfig.js">
 ```js
 window.ExtTagLibrary = [
   // an array containing one or many tag groups
@@ -256,6 +438,33 @@ window.ExtTagLibrary = [
   },
 ];
 ```
+  </TabItem>
+  <TabItem value="json" label="extconfig.json">
+```json
+{
+  "ExtTagLibrary": [
+    {
+      "uuid": "17882854-44a7-4b2d-a2b1-b022846ac41d",
+      "title": "Common Tags",
+      "color": "#008000",
+      "textcolor": "#ffffff",
+      "readOnly": true,
+      "children": [
+        {
+          "type": "plain",
+          "title": "book",
+          "description": "",
+          "color": "#008000",
+          "textcolor": "#ffffff"
+        }
+      ],
+      "expanded": true
+    }
+  ]
+}
+```
+  </TabItem>
+</Tabs>
 
 ### Including the tag library in the config
 
@@ -289,6 +498,8 @@ With this setting you can customize the file types grouping in the search.
 
 This is the current default configuration:
 
+<Tabs groupId="config">
+  <TabItem value="js" label="extconfig.js">
 ```js
 window.ExtSearchTypeGroups = {
   any: [''],
@@ -350,11 +561,80 @@ window.ExtSearchTypeGroups = {
   untagged: ['untagged'],
 };
 ```
+  </TabItem>
+  <TabItem value="json" label="extconfig.json">
+```json
+{
+  "ExtSearchTypeGroups": {
+    "any": [""],
+    "images": [
+      "jpg",
+      "jpeg",
+      "jfif",
+      "jif",
+      "jiff",
+      "png",
+      "gif",
+      "svg",
+      "webp",
+      "bmp",
+      "tga",
+      "tif",
+      "tiff",
+      "nef",
+      "cr2",
+      "dng",
+      "psd",
+      "avif",
+      "nef"
+    ],
+    "notes": ["md", "mdown", "txt", "html"],
+    "documents": [
+      "pdf",
+      "doc",
+      "docx",
+      "xls",
+      "xlsx",
+      "odt",
+      "ods",
+      "odp",
+      "pptx",
+      "numbers",
+      "potx",
+      "sldx",
+      "dotx"
+    ],
+    "audio": ["ogg", "mp3", "wav", "wave", "flac", "acc", "m4a", "opus"],
+    "video": ["ogv", "mp4", "webm", "m4v", "mkv", "avi", "3gp", "3g2", "mov"],
+    "archives": ["zip", "rar", "gz", "tgz", "arc", "7z"],
+    "bookmarks": ["url", "lnk", "sym", "desktop", "website"],
+    "ebooks": [
+      "epub",
+      "mobi",
+      "azw",
+      "prc",
+      "azw1",
+      "azw3",
+      "azw4",
+      "azw8",
+      "azk"
+    ],
+    "emails": ["eml", "msg"],
+    "folders": ["folders"],
+    "files": ["files"],
+    "untagged": ["untagged"]
+  }
+}
+```
+  </TabItem>
+</Tabs>
 
 ## Configuring custom search queries
 
 TagSpaces Pro can be pre-configured with predefined search queries.
 
+<Tabs groupId="config">
+  <TabItem value="js" label="extconfig.js">
 ```js
 window.ExtSearches = [
   // a list of search queries
@@ -395,11 +675,47 @@ window.ExtSearches = [
   },
 ];
 ```
+  </TabItem>
+  <TabItem value="json" label="extconfig.json">
+```json
+{
+  "ExtSearches": [
+    {
+      "uuid": "2123",
+      "title": "Some query name",
+      "textQuery": "",
+      "tagsAND": [
+        { "title": "tag1" },
+        { "title": "tag2" }
+      ],
+      "tagsOR": [],
+      "tagsNOT": [
+        { "title": "tag3" }
+      ],
+      "searchBoxing": "location",
+      "searchType": "fuzzy",
+      "forceIndexing": true,
+      "currentDirectory": "/home/username/Documents",
+      "fileTypes": ["md", "mdown", "txt", "html"],
+      "lastModified": "past7Days",
+      "fileSize": "sizeVerySmall",
+      "tagTimePeriodFrom": 1622505600000,
+      "tagTimePeriodTo": 1625090399999,
+      "maxSearchResults": 100,
+      "showUnixHiddenEntries": true
+    }
+  ]
+}
+```
+  </TabItem>
+</Tabs>
 
 ## Configuring custom map tile servers
 
 TagSpaces can be pre-configured with custom map tile servers. The OpenStreetMap compatible tile servers can be even self hosted allowing you to work with maps without the need to be connect to the Internet.
 
+<Tabs groupId="config">
+  <TabItem value="js" label="extconfig.js">
 ```js
 window.ExtMapTileServers = [
   {
@@ -410,6 +726,22 @@ window.ExtMapTileServers = [
   }
 ];
 ```
+  </TabItem>
+  <TabItem value="json" label="extconfig.json">
+```json
+{
+  "ExtMapTileServers": [
+    {
+      "uuid": "94cc9977-8b66-4f07-806e-110ae0d6b30e",
+      "name": "Carto Light",
+      "serverURL": "https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png",
+      "serverInfo": "Map tiles by Carto, under CC BY 3.0. Data by OpenStreetMap, under ODbL."
+    }
+  ]
+}
+```
+  </TabItem>
+</Tabs>
 
 :::tip
 Some example map tile servers can be found in the [OpenStreetMap Wiki](https://wiki.openstreetmap.org/wiki/Raster_tile_providers). Please consider the terms of usage of any given map service provider!
@@ -418,21 +750,46 @@ Some example map tile servers can be found in the [OpenStreetMap Wiki](https://w
 ## Configure the format of the geo tags
 The geo tags in can be in either in [Pluscode](https://en.wikipedia.org/wiki/Open_Location_Code) or in [MGRS](https://en.wikipedia.org/wiki/Military_Grid_Reference_System) formats.
 
+<Tabs groupId="config">
+  <TabItem value="js" label="extconfig.js">
 ```js
 window.ExtGeoTaggingFormat = "pluscodes";
 ```
+  </TabItem>
+  <TabItem value="json" label="extconfig.json">
+```json
+{
+  "ExtGeoTaggingFormat": "pluscodes"
+}
+```
+  </TabItem>
+</Tabs>
 
 Possible values: `pluscodes`, `mgrs`.
 
 ## Configure the boundaries of the default map
 With this parameter you can configure a map rectangle, which will be loaded by default in the Mapique perspective the current folder does contain any geo-tagged files or folders.
 
+<Tabs groupId="config">
+  <TabItem value="js" label="extconfig.js">
 ```js
 window.ExtDefaultMapBounds = {
-        southWest: { lat: 56, lng: -13 },
-        northEast: { lat: 29, lng: 50 },
-      }
+  southWest: { lat: 56, lng: -13 },
+  northEast: { lat: 29, lng: 50 },
+}
 ```
+  </TabItem>
+  <TabItem value="json" label="extconfig.json">
+```json
+{
+  "ExtDefaultMapBounds": {
+    "southWest": { "lat": 56, "lng": -13 },
+    "northEast": { "lat": 29, "lng": 50 }
+  }
+}
+```
+  </TabItem>
+</Tabs>
 
 The geo coordinates in the example above are the default ones, will open Europe in the map.
 
@@ -464,17 +821,39 @@ window.ExtSupportedFileTypes = [
 
 ### Show vertical panel on startup (deprecated)
 
+<Tabs groupId="config">
+  <TabItem value="js" label="extconfig.js">
 ```js
 window.ExtDefaultVerticalPanel = "none";
 ```
+  </TabItem>
+  <TabItem value="json" label="extconfig.json">
+```json
+{
+  "ExtDefaultVerticalPanel": "none"
+}
+```
+  </TabItem>
+</Tabs>
 
 Possible values: `none`, `taglibrary`, `locations`
 
 ### Show welcome panel
 
+<Tabs groupId="config">
+  <TabItem value="js" label="extconfig.js">
 ```js
 window.ExtShowWelcomePanel = true;
 ```
+  </TabItem>
+  <TabItem value="json" label="extconfig.json">
+```json
+{
+  "ExtShowWelcomePanel": true
+}
+```
+  </TabItem>
+</Tabs>
 
 Possible values: `true`, `false`. Default value: `true`.
 
@@ -482,9 +861,20 @@ Possible values: `true`, `false`. Default value: `true`.
 
 Smart tags are documented [here](/ui/taglibrary/#smart-tags).
 
+<Tabs groupId="config">
+  <TabItem value="js" label="extconfig.js">
 ```js
 window.ExtShowSmartTags = true;
 ```
+  </TabItem>
+  <TabItem value="json" label="extconfig.json">
+```json
+{
+  "ExtShowSmartTags": true
+}
+```
+  </TabItem>
+</Tabs>
 
 Possible values: `true`, `false`. Default value: `true`.
 
@@ -492,9 +882,20 @@ Possible values: `true`, `false`. Default value: `true`.
 
 The [location tags](/ui/taglibrary/#location-tags) are saved in the location's folder and not centrally in the applicaiton's configuration.
 
+<Tabs groupId="config">
+  <TabItem value="js" label="extconfig.js">
 ```js
 window.ExtUseLocationTags = true;
 ```
+  </TabItem>
+  <TabItem value="json" label="extconfig.json">
+```json
+{
+  "ExtUseLocationTags": true
+}
+```
+  </TabItem>
+</Tabs>
 
 Possible values: `true`, `false`. Default value: `false`.
 
@@ -502,19 +903,39 @@ Possible values: `true`, `false`. Default value: `false`.
 
 This setting provides a way to overwrite the author name which is by default the username of the operating system. The author name can be used in the templates.
 
+<Tabs groupId="config">
+  <TabItem value="js" label="extconfig.js">
 ```js
-window.ExtAuthor = '';
+window.ExtAuthor = 'Some name or abbreviation';
 ```
-
-Possible values: `true`, `false`. Default value: `true`.
+  </TabItem>
+  <TabItem value="json" label="extconfig.json">
+```json
+{
+  "ExtAuthor": "Some name or abbreviation"
+}
+```
+  </TabItem>
+</Tabs>
 
 ### Hide PRO features
 
 This setting provides a way to hide the PRO features, which make sense in the LITE version in order to reduce by visual complexity.
 
+<Tabs groupId="config">
+  <TabItem value="js" label="extconfig.js">
 ```js
 window.ExtHideProFeatures = true;
 ```
+  </TabItem>
+  <TabItem value="json" label="extconfig.json">
+```json
+{
+  "ExtHideProFeatures": true
+}
+```
+  </TabItem>
+</Tabs>
 
 Possible values: `true`, `false`. Default value: `false`.
 
@@ -523,17 +944,39 @@ Possible values: `true`, `false`. Default value: `false`.
 
 ### Choose startup theme
 
+<Tabs groupId="config">
+  <TabItem value="js" label="extconfig.js">
 ```js
 window.ExtTheme = "dark";
 ```
+  </TabItem>
+  <TabItem value="json" label="extconfig.json">
+```json
+{
+  "ExtTheme": "dark"
+}
+```
+  </TabItem>
+</Tabs>
 
 Possible values: `dark`, `light`.
 
 ### Open app with predefined perspective
 
+<Tabs groupId="config">
+  <TabItem value="js" label="extconfig.js">
 ```js
 window.ExtDefaultPerspective = "gallery";
 ```
+  </TabItem>
+  <TabItem value="json" label="extconfig.json">
+```json
+{
+  "ExtDefaultPerspective": "gallery"
+}
+```
+  </TabItem>
+</Tabs>
 
 Possible values are `default`, `gallery`, `mapique`.
 
@@ -541,9 +984,20 @@ Possible values are `default`, `gallery`, `mapique`.
 
 ### Set custom light color for the light theme
 
+<Tabs groupId="config">
+  <TabItem value="js" label="extconfig.js">
 ```js
 window.ExtLightThemeLightColor = "#dcf3ec";
 ```
+  </TabItem>
+  <TabItem value="json" label="extconfig.json">
+```json
+{
+  "ExtLightThemeLightColor": "#dcf3ec"
+}
+```
+  </TabItem>
+</Tabs>
 
 Possible value: any css color
 
@@ -551,9 +1005,20 @@ Default value: <span style={{color: '#dcf3ec'}}>`'#dcf3ec'`</span>
 
 ### Set custom main color for the light theme
 
+<Tabs groupId="config">
+  <TabItem value="js" label="extconfig.js">
 ```js
 window.ExtLightThemeMainColor = "#1dd19f";
 ```
+  </TabItem>
+  <TabItem value="json" label="extconfig.json">
+```json
+{
+  "ExtLightThemeMainColor": "#1dd19f"
+}
+```
+  </TabItem>
+</Tabs>
 
 Possible value: any css color
 
@@ -561,9 +1026,20 @@ Default value: <span style={{color: '#1dd19f'}}>`'#1dd19f'`</span>
 
 ### Set custom light color for the dark theme
 
+<Tabs groupId="config">
+  <TabItem value="js" label="extconfig.js">
 ```js
 window.ExtDarkThemeLightColor = "#56454e";
 ```
+  </TabItem>
+  <TabItem value="json" label="extconfig.json">
+```json
+{
+  "ExtDarkThemeLightColor": "#56454e"
+}
+```
+  </TabItem>
+</Tabs>
 
 Possible value: any css color
 
@@ -571,9 +1047,20 @@ Default value: <span style={{color: '#56454e'}}>`'#56454e'`</span>
 
 ### Set custom main color for the dark theme
 
+<Tabs groupId="config">
+  <TabItem value="js" label="extconfig.js">
 ```js
 window.ExtDarkThemeMainColor = "#ff9abe";
 ```
+  </TabItem>
+  <TabItem value="json" label="extconfig.json">
+```json
+{
+  "ExtDarkThemeMainColor": "#ff9abe"
+}
+```
+  </TabItem>
+</Tabs>
 
 Possible value: any css color
 
@@ -582,44 +1069,130 @@ Default value: <span style={{color: '#ff9abe'}}>`'#ff9abe'`</span>
 ## Custom prompts for AI functionalities
 
 ### Default question prompt
+
+<Tabs groupId="config">
+  <TabItem value="js" label="extconfig.js">
 ```js
 window.ExtDefaultSystemPrompt = "Given the following conversation and a follow up question, rephrase the follow up question to be a standalone question.   Chat History: {chat_history} Follow Up Input: {question} Standalone question:";
 ```
+  </TabItem>
+  <TabItem value="json" label="extconfig.json">
+```json
+{
+  "ExtDefaultSystemPrompt": "Given the following conversation and a follow up question, rephrase the follow up question to be a standalone question.   Chat History: {chat_history} Follow Up Input: {question} Standalone question:"
+}
+```
+  </TabItem>
+</Tabs>
 
 ### Prompt for summary generation
+
+<Tabs groupId="config">
+  <TabItem value="js" label="extconfig.js">
 ```js
 window.ExtSummarizePrompt = "Generate a concise summary {max_chars} in {language} language for the following text: {summarize_text}";
 ```
+  </TabItem>
+  <TabItem value="json" label="extconfig.json">
+```json
+{
+  "ExtSummarizePrompt": "Generate a concise summary {max_chars} in {language} language for the following text: {summarize_text}"
+}
+```
+  </TabItem>
+</Tabs>
 
 ### Prompt for generation of structured description for an image
+
+<Tabs groupId="config">
+  <TabItem value="js" label="extconfig.js">
 ```js
 window.ExtDescriptionFromImageStructuredPrompt = "Analyze this image and return a detailed JSON description including objects, scene, colors and any text detected. If you cannot determine certain details, leave those fields empty.";
 ```
+  </TabItem>
+  <TabItem value="json" label="extconfig.json">
+```json
+{
+  "ExtDescriptionFromImageStructuredPrompt": "Analyze this image and return a detailed JSON description including objects, scene, colors and any text detected. If you cannot determine certain details, leave those fields empty."
+}
+```
+  </TabItem>
+</Tabs>
 
 ### Prompt for generation of description for an image
+
+<Tabs groupId="config">
+  <TabItem value="js" label="extconfig.js">
 ```js
 window.ExtDescriptionFromImagePrompt = "Generate a concise description for this image {file_name} in {language} language.";
 ```
+  </TabItem>
+  <TabItem value="json" label="extconfig.json">
+```json
+{
+  "ExtDescriptionFromImagePrompt": "Generate a concise description for this image {file_name} in {language} language."
+}
+```
+  </TabItem>
+</Tabs>
 
 ### Prompt for generation of description for text
+
+<Tabs groupId="config">
+  <TabItem value="js" label="extconfig.js">
 ```js
 window.ExtDescriptionFromTextPrompt = "Generate a concise description {max_chars} in {language} language for this text: {input_text}.";
 ```
+  </TabItem>
+  <TabItem value="json" label="extconfig.json">
+```json
+{
+  "ExtDescriptionFromTextPrompt": "Generate a concise description {max_chars} in {language} language for this text: {input_text}."
+}
+```
+  </TabItem>
+</Tabs>
 
 ### Prompt for generating tags from image
+
+<Tabs groupId="config">
+  <TabItem value="js" label="extconfig.js">
 ```js
 window.ExtTagsFromImagePrompt = "Write the most important topics from the image description. The output TOPICS must be in parsable format like {keyword} without whitespace in braces.";
 ```
+  </TabItem>
+  <TabItem value="json" label="extconfig.json">
+```json
+{
+  "ExtTagsFromImagePrompt": "Write the most important topics from the image description. The output TOPICS must be in parsable format like {keyword} without whitespace in braces."
+}
+```
+  </TabItem>
+</Tabs>
 
 ### Prompt for generating tags from text
+
+<Tabs groupId="config">
+  <TabItem value="js" label="extconfig.js">
 ```js
 window.ExtTagsFromTextPrompt = "Extract important tags (single words please) and sort them by their importance from the following content: {input_text}";
 ```
+  </TabItem>
+  <TabItem value="json" label="extconfig.json">
+```json
+{
+  "ExtTagsFromTextPrompt": "Extract important tags (single words please) and sort them by their importance from the following content: {input_text}"
+}
+```
+  </TabItem>
+</Tabs>
 
 ## Custom templates for new files
 
 ### Default new file template
 
+<Tabs groupId="config">
+  <TabItem value="js" label="extconfig.js">
 ```js
 window.ExtDefaultFileTemplate = {
   id: 'default',
@@ -628,9 +1201,25 @@ window.ExtDefaultFileTemplate = {
   fileNameTmpl: 'note[{timestamp}]',
 };
 ```
+  </TabItem>
+  <TabItem value="json" label="extconfig.json">
+```json
+{
+  "ExtDefaultFileTemplate": {
+    "id": "default",
+    "name": "Default",
+    "content": "{createdInApp} ({date})",
+    "fileNameTmpl": "note[{timestamp}]"
+  }
+}
+```
+  </TabItem>
+</Tabs>
 
 ### Defining a set of templates for new files
 
+<Tabs groupId="config">
+  <TabItem value="js" label="extconfig.js">
 ```js
 window.ExtFileTemplates = [
   {
@@ -652,6 +1241,34 @@ window.ExtFileTemplates = [
     screenshotUrl: 'dataURL:...', // URL to a screenshot of the template
   }]
 ```
+  </TabItem>
+  <TabItem value="json" label="extconfig.json">
+```json
+{
+  "ExtFileTemplates": [
+    {
+      "id": "62342",
+      "name": "External Template 1",
+      "description": "Default template for new markdown files",
+      "type": "md",
+      "content": "{createdInApp} ({date}) by {author}",
+      "fileNameTmpl": "task[{timestamp}]",
+      "screenshotUrl": "dataURL:..."
+    },
+    {
+      "id": "72323",
+      "name": "External Template 2",
+      "description": "Default template for new text files",
+      "type": "txt",
+      "content": "{createdInApp} ({date})",
+      "fileNameTmpl": "issue[{timestamp}]",
+      "screenshotUrl": "dataURL:..."
+    }
+  ]
+}
+```
+  </TabItem>
+</Tabs>
 
 
 ## Embedding extconfig.js to packages
@@ -689,13 +1306,15 @@ Alternatively copy the `extconfig.json` directory to the installation folder, as
 ### For Linux
 - Extract the content of TagSpaces' TAR.GZ package to a folder e.g. your desktop
 - Copy the `extconfig.json` in the extracted folder
-- Zip the folder and redistribute  
+- Zip the folder and redistribute
 
-## Example configuration file
+## Example configuration files
 
 Here you will find the whole configuration file, so it can be easily copied and reused for your custom needs.
 
-```json{2}
+<Tabs groupId="config">
+  <TabItem value="js" label="extconfig.js">
+```js
 window.ExtLogoURL = "https://www.tagspaces.org/content/text-logo.svg";
 
 window.ExtIsFirstRun = false;
@@ -790,3 +1409,100 @@ window.ExtTagLibrary = [
   },
 ];
 ```
+  </TabItem>
+  <TabItem value="json" label="extconfig.json">
+```json
+{
+  "ExtLogoURL": "https://www.tagspaces.org/content/text-logo.svg",
+  "ExtIsFirstRun": false,
+  "ExtTheme": "dark",
+  "ExtLocations": [
+    {
+      "uuid": "10565f09-c7fd-2333-fc67-a75db27rt5ba",
+      "type": "1",
+      "name": "The name of the cloud location",
+      "path": "demo",
+      "accessKeyId": "your_access_key",
+      "secretAccessKey": "your_secret_key",
+      "bucketName": "demo-bucket",
+      "region": "eu-central-1",
+      "isDefault": false,
+      "isReadOnly": true,
+      "disableIndexing": false,
+      "fullTextIndex": false,
+      "watchForChanges": false
+    },
+    {
+      "uuid": "53453458-c7fd-2333-fc67-a75db27rt5ba",
+      "type": "0",
+      "name": "The name of the local location",
+      "path": "/var/mnt/data/",
+      "isDefault": true,
+      "isReadOnly": true,
+      "disableIndexing": false,
+      "fullTextIndex": false,
+      "watchForChanges": false
+    }
+  ],
+  "ExtTagLibrary": [
+    {
+      "uuid": "17882854-44a7-4b2d-a2b1-b022846ac41d",
+      "title": "Common Tags",
+      "color": "#008000",
+      "textcolor": "#ffffff",
+      "children": [
+        {
+          "id": "ff47282f-a7cc-474c-951f-4636d60c0529",
+          "type": "plain",
+          "title": "book",
+          "description": "",
+          "color": "#008000",
+          "textcolor": "#ffffff"
+        },
+        {
+          "id": "c3fa72f5-afde-4d2e-af14-bdebb6782a71",
+          "type": "plain",
+          "title": "article",
+          "description": "",
+          "color": "#008000",
+          "textcolor": "#ffffff"
+        }
+      ]
+    },
+    {
+      "uuid": "e21711da-ee78-4c83-bae3-e0007fe426a3",
+      "title": "Priorities",
+      "color": "#008000",
+      "textcolor": "#ffffff",
+      "children": [
+        {
+          "id": "dca64cf4-79e2-4450-a57b-b53d9d6b8ad3",
+          "type": "plain",
+          "title": "high",
+          "description": "",
+          "color": "#ff7537",
+          "textcolor": "#ffffff"
+        },
+        {
+          "id": "41dbf6ab-cf8f-4d88-bad1-f9baec83d48b",
+          "type": "plain",
+          "title": "medium",
+          "description": "",
+          "color": "#ffad46",
+          "textcolor": "#ffffff"
+        },
+        {
+          "id": "78fb6569-9970-4fdf-b6df-ec0daa6ea9b9",
+          "type": "plain",
+          "title": "low",
+          "description": "",
+          "color": "#7bd148",
+          "textcolor": "#ffffff"
+        }
+      ]
+    }
+  ]
+}
+```
+  </TabItem>
+</Tabs>
