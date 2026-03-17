@@ -5,6 +5,8 @@ description: This document will describe how to deploy TagSpaces Pro and Custom 
 
 import { ProFeature, CenteredImage, CenteredVideo } from '@site/src/components/CommonBlocks';
 import { TechArticleStructuredData } from '@site/src/components/StructuredData';
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
 
 <TechArticleStructuredData />
 
@@ -12,15 +14,24 @@ import { TechArticleStructuredData } from '@site/src/components/StructuredData'
 
 ## Introduction
 
-This document will describe how to deploy TagSpaces Pro and Custom with predefined configuration such as custom logo and color, tag library or locations. The settings discussed here should be saved in a file called **extconfig.js**, placed in the folder where the application is hosted.
+This document will describe how to deploy TagSpaces Pro and Custom with predefined configuration such as custom logo and color, tag library or locations. The settings discussed here should be saved in a file called **extconfig.js** (for web) and **extconfig.json** (for desktop version), placed in the folder where the application is hosted.
 
 ## Configuring a custom logo
 
 For exchanging the application logo the **ExtLogoURL** parameter should be used. A valid values can be an URL:
 
-```js title="Add custom logo"
+<Tabs groupId="customLogo">
+  <TabItem value="js" label="extconfig.js">
+```js
 window.ExtLogoURL = "https://www.tagspaces.org/content/text-logo.svg";
 ```
+  </TabItem>
+  <TabItem value="json" label="extconfig.json">
+```json
+"ExtLogoURL": "https://www.tagspaces.org/content/text-logo.svg";
+```
+  </TabItem>
+</Tabs>
 
 or a relative path the file containing the logo:
 
@@ -649,35 +660,35 @@ window.ExtFileTemplates = [
 
 - Open the TagSpaces' DMG package
 - Copy the content `TagSpaces.app` to a folder e.g. your desktop
-- Navigate to TagSpaces.app/Contents folder and copy there your `extconfig.js` file
+- Navigate to TagSpaces.app/Contents folder and copy there your `extconfig.json` file
 - Install TagSpaces.app to your Applications folder with simple drag and drop
 
 <CenteredImage
-    caption="Location of the extconfig.js in the macOS applcation's structure"
+    caption="Location of the extconfig.json in the macOS applcation's structure"
     src="/media/setup/macos-extconfig.avif"
         maxWidth="600px"
     showCaption
   />
 
-Allternatively you can copy the `extconfig.js` after the installation to this path: `/Applications/TagSpaces.app/Contents`
+Alternatively you can copy the `extconfig.json` after the installation to this path: `/Applications/TagSpaces.app/Contents`
 
 ### For Windows
 - Extract the content of TagSpaces' ZIP package to a folder e.g. your desktop
-- Copy the `extconfig.js` in the extracted folder
+- Copy the `extconfig.json` in the extracted folder
 - Zip the folder and redistribute
 
-Alternatively copy the `extconfig.js` directoy to the installation folder, as shown in the following screenshot. The path is usually `C:\Users\USERNAME\AppData\Local\Programs\TagSpaces`.
+Alternatively copy the `extconfig.json` directory to the installation folder, as shown in the following screenshot. The path is usually `C:\Users\USERNAME\AppData\Local\Programs\TagSpaces`.
 
-<CenteredImage
+{/* <CenteredImage
     caption="Location of the extconfig.js in the Windows applcation's structure"
     src="/media/setup/windows-extconfig.avif"
     maxWidth="600px"
     showCaption
-  />
+  /> */}
 
 ### For Linux
 - Extract the content of TagSpaces' TAR.GZ package to a folder e.g. your desktop
-- Copy the `extconfig.js` in the extracted folder
+- Copy the `extconfig.json` in the extracted folder
 - Zip the folder and redistribute  
 
 ## Example configuration file
