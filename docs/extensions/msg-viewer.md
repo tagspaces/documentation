@@ -9,7 +9,7 @@ import { TechArticleStructuredData } from '@site/src/components/StructuredData'
 
 # MSG Viewer
 
-A TagSpaces extension allowing you to open email in MSG format.
+A TagSpaces extension allowing you to open emails in MSG format.
 
 ## Features
 
