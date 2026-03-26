@@ -1,5 +1,5 @@
 ---
-title: Overview
+title: Workspaces
 description: Understand TagSpaces Pro workspaces for separating file locations and tag libraries by context such as work, personal projects, and hobbies to improve focus.
 ---
 
