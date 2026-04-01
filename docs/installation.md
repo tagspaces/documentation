@@ -4,225 +4,218 @@ description: Step-by-step installation guide for TagSpaces on Windows, macOS, an
 ---
 
 import { ProFeature, CenteredImage } from '@site/src/components/CommonBlocks';
-import { TechArticleStructuredData } from '@site/src/components/StructuredData';
+import { TechArticleStructuredData } from '@site/src/components/StructuredData';
 
 <TechArticleStructuredData />
 
+## Quick Reference
 
-Here you will learn how to install TagSpaces on different operating systems.
+| Platform              | Format                            | Download                                                                                                                 |
+| --------------------- | --------------------------------- | ------------------------------------------------------------------------------------------------------------------------ |
+| Windows               | `.exe` installer / `.zip` archive | [Downloads page](https://www.tagspaces.org/downloads/)                                                                   |
+| macOS (Apple Silicon) | `.dmg` / `.pkg`                   | [Downloads page](https://www.tagspaces.org/downloads/)                                                                   |
+| macOS (Intel)         | `.dmg` / `.pkg`                   | [Downloads page](https://www.tagspaces.org/downloads/)                                                                   |
+| Linux                 | `.deb` / `.AppImage` / `.tar.gz`  | [Downloads page](https://www.tagspaces.org/downloads/)                                                                   |
+| Chrome                | Browser extension                 | [Chrome Web Store](https://chrome.google.com/webstore/detail/tagspaces-web-clipper/ldalmgifdlgpiiadeccbcjojljeanhjk)     |
+| Edge                  | Browser extension                 | [Edge Add-ons](https://microsoftedge.microsoft.com/addons/detail/tagspaces-web-clipper/dinjgbhjngaockabnagbonbfinanjpdn) |
+| Firefox               | Browser add-on                    | [Firefox Add-ons](https://addons.mozilla.org/en-us/firefox/addon/tagspaces/)                                             |
 
-## Getting the Application
+## Downloading TagSpaces
 
-The free versions of TagSpaces are available for download from the [Downloads Section](https://www.tagspaces.org/downloads/) on the TagSpaces website. Here, you can quickly find the appropriate installer for your operating system (Windows, macOS, Linux, Android, Firefox, and Chrome).
+### TagSpaces Lite (Free)
 
-### New Version Notification
+The free version of TagSpaces is available from the [Downloads section](https://www.tagspaces.org/downloads/) on the TagSpaces website. Choose the appropriate installer for your operating system and follow the platform-specific instructions below.
 
-When a new version of the application is available, you will see a notification in the lower-left corner of the app. Clicking the **Get It Now** button will direct you to the [download page](https://www.tagspaces.org/downloads/), where you can obtain the latest **TagSpaces Lite** version.
+#### New version notification
+
+When a new version is available, a notification appears in the lower-left corner of the app. Clicking **Get It Now** will take you to the [download page](https://www.tagspaces.org/downloads/).
 
 <CenteredImage maxWidth={500} src="/media/core/new-version-available.png" caption="New version notification" showCaption/>
 
 :::tip
-If you prefer TagSpaces not to check for updates automatically, you can easily turn off this feature in the [settings](/ui/settings/#general).
+You can disable the automatic update check in [Settings > General](/ui/settings/#general).
 :::
 
-### Getting latest TagSpaces Pro version
+### TagSpaces Pro
 
-TagSpaces Pro users should use the links in their order confirmation email to access the latest version or follow this link: https://tagspacesstore.onfastspring.com/account. The link will open the webpage visible on the next screenshot.
+TagSpaces Pro users can download the latest version through their FastSpring account at https://tagspacesstore.onfastspring.com/account, or by using the link in their order confirmation email.
 
-<CenteredImage maxWidth={600} src="/media/setup/fastspring-email.avif" caption="Enter the email with which you have purchased the app" showCaption/>
+<CenteredImage maxWidth={600} src="/media/setup/fastspring-email.avif" caption="Enter the email used for your purchase" showCaption/>
 
-<CenteredImage maxWidth={600} src="/media/setup/fastspring-email-send.avif" caption="Confirmation screen that the email was send" showCaption/>
+<CenteredImage maxWidth={600} src="/media/setup/fastspring-email-send.avif" caption="Confirmation that the email was sent" showCaption/>
 
-In your email inbox you should find soon an email from FastSpring containing a link which will lead to a page listing all your TagSpaces subscriptions.
+After receiving the email from FastSpring, click the link to view your subscriptions.
 
-<CenteredImage maxWidth={600} src="/media/setup/fastspring-subscriptions.avif" caption="Subscriptions overview screen" showCaption/>
+<CenteredImage maxWidth={600} src="/media/setup/fastspring-subscriptions.avif" caption="Subscriptions overview" showCaption/>
 
-Clicking on **orders** will open the tab where you will find the download links, with the latest TagSpaces Pro version.
+Click **Orders** to access the download links for the latest TagSpaces Pro version.
 
-<CenteredImage maxWidth={600} src="/media/setup/fastspring-download-links.avif" caption="Download links" showCaption/>
+<CenteredImage maxWidth={600} src="/media/setup/fastspring-download-links.avif" caption="Download links for TagSpaces Pro" showCaption/>
 
-The following links should be available:
+The following downloads are typically available:
 
-- Download **tagspaces-pro-mac-arm64-6.5.2.dmg** - recommended for **macOS with Apple Silicon** (M1/M2/M3/..)
-- Download **tagspaces-pro-mac-x64-6.5.2.dmg** - recommended for **macOS on Intel** processors
-- Download **tagspaces-pro-mac-arm64-6.5.2.pkg**
-- Download **tagspaces-pro-mac-x64-6.5.2.pkg**
-- Download **tagspaces-pro-win-x64-6.5.2.exe** - recommended download for **Windows**
-- Download **tagspaces-pro-win-x64-6.5.2.zip**
-- Download **tagspaces-pro-linux-amd64-6.5.2.deb** - recommended download for **Ubuntu** and other **Debian based Linux** distributions
-- Download **tagspaces-pro-linux-x86_64-6.5.2.appimage** - recommended download for **non-Debian Linux** distributions
-- Download **tagspaces-pro-linux-x64-6.5.2.tar.gz**
+| Platform                           | Recommended download                        |
+| ---------------------------------- | ------------------------------------------- |
+| macOS (Apple Silicon M1/M2/M3/...) | `tagspaces-pro-mac-arm64-x.y.z.dmg`         |
+| macOS (Intel)                      | `tagspaces-pro-mac-x64-x.y.z.dmg`           |
+| Windows                            | `tagspaces-pro-win-x64-x.y.z.exe`           |
+| Linux (Debian/Ubuntu)              | `tagspaces-pro-linux-amd64-x.y.z.deb`       |
+| Linux (other distributions)        | `tagspaces-pro-linux-x86_64-x.y.z.appimage` |
+
+Additional formats (`.pkg`, `.zip`, `.tar.gz`) are also available for each platform.
 
 :::warning
-Due to a known issue, FastSpring may display the app version that was current at the time of your purchase. However, the download links always point to the latest available version.
+FastSpring may display the version number from the time of your purchase, but the download links always point to the latest available version.
 :::
 
-## Installation on Windows
+## Desktop Installation
 
-The Windows version of TagSpaces is distributed as either an `.exe` installer or a `.zip` archive file. The `.exe` file can be directly executed to start the installation. The `.zip` archive must be unzipped into a folder on your system. In the unpacked folder, you will find a file named `tagspaces.exe`, which can be executed with a double-click.
+### Windows
 
-The installer is signed with modern software certificates, ensuring authenticity. By a right click on installer and choosing **Properties**, you can check the certificate of the installer, see the screenshot for orientation.
+The Windows version is distributed as an `.exe` installer or a `.zip` archive.
 
-<CenteredImage maxWidth={600} src="/media/signed-windows-installer.png" caption="Screenshot showing how to check if the Windows installer is signed" showCaption/>
+- **`.exe` installer** — double-click to run the installation wizard. The installer is signed with a software certificate. You can verify the signature by right-clicking the file, choosing **Properties**, and checking the **Digital Signatures** tab.
+- **`.zip` archive** — extract to any folder and run `tagspaces.exe` from the unpacked directory.
+
+<CenteredImage maxWidth={600} src="/media/signed-windows-installer.png" caption="Verifying the digital signature of the Windows installer" showCaption/>
+
+### macOS
+
+Download the `.dmg` file matching your processor — **Apple Silicon** (`arm64`) or **Intel** (`x64`) — from the [downloads page](https://www.tagspaces.org/downloads/). Double-click the `.dmg` file in Finder to mount it, then drag **TagSpaces.app** to your Applications folder.
 
 :::tip
-The **profile** folder under Windows is located here: `C:\Users\Your_User_Name\AppData\Roaming\TagSpaces`
+Use Finder to open the `.dmg` file. Some third-party archive utilities may not unpack it correctly.
 :::
 
-### Updating the Windows version
+### Linux
 
-To update, replace the contents of your current installation with the contents from the zip file of a newer release. Your tag library and locations are stored in the user's home folder, so you won’t lose any data during the update process.
+The Linux version is available in three formats:
 
-## Installation on macOS
-
-For macOS, you can [download](https://www.tagspaces.org/downloads/) the 64-bit versions of TagSpaces for either Intel (e.g. _tagspaces-mac-**x64**-x.y.z.dmg_) or Apple Silicon (e.g. _tagspaces-mac-**arm64**-x.y.z.dmg_) processors. After downloading, double-click the zip file in Finder to properly unpack it. Some users have reported issues unpacking the app with third-party zip utilities, so it’s recommended to use Finder.
-
-:::tip
-The **profile** folder under macOS is located here: `~/Library/Application Support/TagSpaces`
-:::
-
-<!-- :::tip
-Sometimes macOS may block TagSpaces from opening with a double-click. To bypass this, right-click on the TagSpaces.app folder and choose **Open**, then click **Open** in the dialog that appears. This step is only required once.
-:::
-
-![Install confirmation macOS](/media/mac-install-confirmation.jpg)
-
-:::tip
-Alternatively, you can run this command in Terminal to avoid the "quarantine" warning:
-`xattr -d com.apple.quarantine /Applications/TagSpaces.app`
-::: -->
-
-### Updating the macOS version
-
-To update, replace the contents of your current installation with the files from the zip archive of the new release. Your tag library and locations are stored in the user's home folder, ensuring no data loss during updates.
-
-## Installation on Linux
-
-The Linux version of TagSpaces is available as a `tar.gz` archive, an `AppImage`, and a `.deb` file for Debian-based distributions like Ubuntu. All versions are available for download [here](https://www.tagspaces.org/downloads/).
-
-To install:
-
-- For the `tar.gz` file, unpack it into a folder on your system. In the unpacked folder, you’ll find a `tagspaces` executable, which can be run with a double-click or via terminal.
-- For the `.deb` package, double-click to install or use the following command:
+**`.deb` package** (Debian/Ubuntu) — install with:
 
 ```bash
 sudo dpkg -i tagspaces-linux-amd64-x.x.x.deb
 ```
 
-For the AppImage, make it executable first:
+**`.AppImage`** — make it executable, then double-click or run from terminal:
 
 ```bash
 chmod +x tagspaces-linux-x86_64-x.x.x.AppImage
+./tagspaces-linux-x86_64-x.x.x.AppImage
 ```
 
-Then, you can launch it with a double-click.
+**`.tar.gz` archive** — extract to any folder and run the `tagspaces` executable.
 
-:::tip
-The **profile** folder under Linux/Ubuntu is located here: `~/.config/TagSpaces`
-:::
+## Updating the Desktop App
 
-### Updating the Linux version
+Your tag library and location configurations are stored in the [profile folder](#profile-folder-locations), so they are preserved across updates. No data is lost during the update process.
 
-To update the **tar.gz** version, replace the contents of your current installation with the files from the new release. Your tag library and locations are persisted in the user's home folder. For distribution packages, simply reinstall over the current version.
+### Windows
 
-## Installation on Android
+- **`.exe` installer** — run the new installer; it will update the existing installation.
+- **`.zip` archive** — replace the contents of your current installation folder with the files from the new zip.
 
-:::caution
-The Android version is meanwhile **deprecated**, we still are still releasing new versions, but we are not actively developing the app anymore.
-:::
+### macOS
 
-A version of the Android app is available as an [APK file](https://www.tagspaces.org/downloads/) in the download section of our website.
+Replace the existing `TagSpaces.app` in your Applications folder with the new version from the `.dmg` file.
 
-To install the APK file, follow these steps on your Android phone:
+### Linux
 
-1. Go to **Settings**.
-2. Open the **Security & privacy** option.
-3. Scroll down and find **Install from unknown apps**. If it’s not there, try looking under **More**.
-4. You should see a list of apps. Find your browser (e.g., Firefox or Chrome).
-5. Tap on your browser and choose **Allow from this source**.
+- **`.deb` package** — reinstall with `sudo dpkg -i` using the new package file.
+- **`.AppImage`** — replace the old `.AppImage` file with the new one (remember to `chmod +x` it).
+- **`.tar.gz` archive** — replace the contents of your current installation folder with the files from the new archive.
 
-If the above steps do not work, try the following:
+## Profile Folder Locations
 
-1. Go to **Settings**.
-2. Open **Apps & Notifications** and select **Configure apps**.
-3. Scroll down and tap on **Advanced options** or **Special app access**.
-4. Scroll to the bottom and find the **Install unknown apps** option.
-5. Select your browser, tap on it, and enable **Allow from this source**.
+The profile folder stores your tag library, location configurations, and application settings.
 
-Once these steps are done, download and install the APK from our [download section](https://www.tagspaces.org/downloads) using your configured browser.
+| Operating System | Path                                            |
+| ---------------- | ----------------------------------------------- |
+| Windows          | `C:\Users\<username>\AppData\Roaming\TagSpaces` |
+| macOS            | `~/Library/Application Support/TagSpaces`       |
+| Linux            | `~/.config/TagSpaces`                           |
 
-:::caution
-**Risks of installing apps outside the Play Store:** Installing apps from outside the Google Play Store can expose your phone to potential security risks, including viruses. Always ensure you are downloading from trusted sources.
-:::
+## Browser Extensions
 
-## Installing the Firefox Browser Extension
+TagSpaces offers browser extensions for clipping web content. For detailed usage instructions, see the [Web Clipper documentation](/web-clipper).
 
-Download the [TagSpaces Add-on for Firefox](https://addons.mozilla.org/en-us/firefox/addon/tagspaces/). Open the **Add-ons tab** in Firefox from the main menu by clicking on the puzzle icon, or simply type `Ctrl+Shift+A` (or `Command+Shift+A` on macOS). In the new tab, go to the settings dropdown next to the search bar and select **Install Add-on From File...**. Choose the downloaded file and follow the instructions.
+### Chrome
 
-Once installed, you can start the add-on from the TagSpaces icon in the top-right corner of your browser or through **Tools > TagSpaces** in the main menu.
+Install the [TagSpaces Web Clipper](https://chrome.google.com/webstore/detail/tagspaces-web-clipper/ldalmgifdlgpiiadeccbcjojljeanhjk) from the Chrome Web Store. Updates are installed automatically.
 
-> **Updating the Firefox Add-on:** Once a newer version of the Firefox add-on is approved by Mozilla, it will automatically be installed on your Firefox browser.
+### Edge
 
-## Installing the Chrome Browser Extension
+Install the [TagSpaces Web Clipper](https://microsoftedge.microsoft.com/addons/detail/tagspaces-web-clipper/bfcjlplgoigofgpaecmepefaikhanaok) from the Edge Add-ons store. Once installed, launch it from the TagSpaces icon in the toolbar. Updates are installed automatically.
 
-You can install the Chrome extension directly from the [Chrome Web Store](https://chrome.google.com/webstore/detail/tagspaces-web-clipper/ldalmgifdlgpiiadeccbcjojljeanhjk).
+### Firefox
 
-> **Updating the Chrome Extension:** Once a new version of the Chrome extension is published on the Chrome Web Store, it will be automatically installed on your Chrome browser.
+Install the [TagSpaces Add-on](https://addons.mozilla.org/en-us/firefox/addon/tagspaces/) from Firefox Add-ons. Once installed, launch it from the TagSpaces icon in the toolbar or via **Tools > TagSpaces**. Updates are installed automatically once approved by Mozilla.
 
-## Running in Portable Mode
+## Portable Mode
 
-The Windows, macOS and Linux versions of TagSpaces can run in "portable mode," allowing you to use the application from a USB stick or other portable devices. In this mode, all configuration data (such as tags, tag groups, and location connections) is stored in a folder called `tsprofile` within the same directory where the application is started, rather than in the home directory of the operating system.
+The Windows, macOS, and Linux versions of TagSpaces can run in portable mode, storing all configuration in a `tsprofile` folder next to the application instead of in the system profile folder. This is useful for running TagSpaces from a USB stick or other portable devices.
 
-### On Windows and Linux
+### Windows and Linux
 
-To start the portable mode, use the `tagspacesp.cmd` script on Windows or `tagspacesp` on Linux. These scripts are usually found in the unpacked application folder. On Linux, you may need to make the script executable by running:
+Use the portable launcher script included in the application folder:
 
-```bash
-chmod +x tagspacesp
-```
+- **Windows:** `tagspacesp.cmd`
+- **Linux:** `tagspacesp` (you may need to run `chmod +x tagspacesp` first)
 
-If the files are not included in the distributed packages, they can be downloaded from the following locations:
+If the scripts are not included in your package, download them here:
 
 - [tagspacesp (Linux)](https://raw.githubusercontent.com/tagspaces/tagspaces/develop/resources/tagspacesp)
 - [tagspacesp.cmd (Windows)](https://raw.githubusercontent.com/tagspaces/tagspaces/develop/resources/tagspacesp.cmd)
 
-Once downloaded, place these files in the same directory where the TagSpaces executable is located.
+Place the downloaded script in the same directory as the TagSpaces executable.
 
-### On macOS
+### macOS
 
-Extract the content of the DMG files, to the place where you want to have the portable version, e.g. a USB stick. Open the command line for this folder and run:
+Extract the `.dmg` contents to your desired location (e.g. a USB stick), then run:
 
 ```bash
 ./TagSpaces.app/Contents/MacOS/TagSpaces -p
 ```
 
-This will start the app in portable mode and create the `tsprofile` folder in the current folder. All the setting for the portable version will be stored in this folder.
+This starts the app in portable mode and creates the `tsprofile` folder in the current directory.
 
-### Updating the Portable Version
+### Updating a Portable Installation
 
-To update a portable version of TagSpaces (e.g., on a USB stick), you simply need to replace the existing files and directories with the updated ones from the new installation package. Since the tag library and locations are stored in the `tsprofile` folder during portable mode, special care should be taken to preserve this folder during the update. Follow these steps to upgrade:
-
-1. Rename your existing `tagspaces` folder (e.g., to `tagspaces_old`).
-2. Extract the new TagSpaces zip file, which will create a fresh `tagspaces` folder.
-3. Copy or move the `tsprofile` folder from the old `tagspaces_old` directory into the newly created `tagspaces` folder.
+1. Rename your existing `tagspaces` folder (e.g. to `tagspaces_old`).
+2. Extract the new TagSpaces package, creating a fresh `tagspaces` folder.
+3. Copy the `tsprofile` folder from the old directory into the new one.
 
 :::caution
-**Important:** Do **not** delete the `tsprofile` folder as it contains crucial data for your portable TagSpaces setup.
+Do **not** delete the `tsprofile` folder — it contains all your configuration data for the portable installation.
 :::
 
-### Portable Mode with the AppImage Package (Linux Only)
+### AppImage Portable Mode (Linux)
 
-The AppImage package offers another way to run TagSpaces in portable mode. AppImages are a distribution format that allows applications to run on various Linux distributions. This package format has its own [portable mode](https://docs.appimage.org/user-guide/portable-mode.html), which can be activated by creating an empty folder with the same name as your AppImage file, followed by `.config`.
-
-For example, if your AppImage file is named `tagspaces-linux-x86_64-6.0.2.AppImage`, create an empty folder called `tagspaces-linux-x86_64-6.0.2.AppImage.config` in the same directory. This structure would look like:
+The AppImage format has its own [portable mode](https://docs.appimage.org/user-guide/portable-mode.html). Create an empty folder with the same name as your AppImage file plus `.config`:
 
 ```bash
 tagspaces-linux-x86_64-6.0.2.AppImage
 tagspaces-linux-x86_64-6.0.2.AppImage.config
 ```
 
-From this point on, TagSpaces will store all configuration information in the `.config` folder instead of the default config folder in the user’s home directory. This setup allows you to run the application from, for example, a USB stick with the same configuration on different computers.
+TagSpaces will then store all configuration in the `.config` folder instead of `~/.config/TagSpaces`, allowing you to carry the app and its settings together on portable media.
 
-## TagSpaces Command Line Tool
+## Android (Deprecated)
 
-This section has been moved [here](/dev/command-line-tools).
+:::caution
+The Android version is **deprecated**. New versions are still released, but the app is no longer actively developed.
+:::
+
+An APK file is available in the [download section](https://www.tagspaces.org/downloads/) of the TagSpaces website.
+
+To install the APK, you need to allow installation from unknown sources:
+
+1. Go to **Settings > Security & privacy**.
+2. Find **Install from unknown apps** (may be under **Advanced** or **Special app access**).
+3. Select your browser and enable **Allow from this source**.
+
+Then download and install the APK using your browser.
+
+:::caution
+**Risks of installing apps outside the Play Store:** Installing APKs from outside the Google Play Store can expose your device to security risks. Only install from trusted sources.
+:::

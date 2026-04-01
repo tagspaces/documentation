@@ -63,7 +63,7 @@ The file browsing area displays files from the active folder in various views (l
 
 - **(1)** - Toggles the [left drawer](#left-drawer).
 - **(2)** - The toolbar of the current [perspective](/browsing-files).
-- **(3)** - Navigate to the previously file or folder.
+- **(3)** - Navigate to the previous file or folder.
 - **(4)** - Opens [search](/search).
 - **(5)** - Displays parent folders as buttons, enabling navigation.
 - **(6)** - Displays the current folder's name, which opens the [folder menu](#folder-menu).
@@ -100,10 +100,10 @@ When a file is opened, the main UI splits into two areas, with the right side be
 
 - **(1) Title Area** - displays the file's name, tags and extension, with options to [bookmark](/bookmarks) it.
 - **(2) Navigate & Close** - navigate between files in the current folder or search results, close the current file or folder.
-- **(3) Tab Switch** - between entry properties, entry [description](/folders#folder-description), [file revisions](/editing-files#file-revisions), [ai chat](/ai#ai-chat-in-folders) and links. A click on the tab title of the current tab will close it, providing more space for the file preview.
+- **(3) Tab Switch** - between entry properties, entry [description](/folders#folder-description), [file revisions](/editing-files#file-revisions), [ai chat](/ai#folder-ai-chat) and links. A click on the tab title of the current tab will close it, providing more space for the file preview.
 - **(4) Editing options** - the edit mode for certain file type can be enabled here. A toggle for **auto-saving** changes in the currently edited file is located also in this area.
 - **(5) Entry Properties** - if opened it displays the properties of the currently opened [file](/files#file-details) or [folder](/folders#folder-properties).
-- **(6) Preview & Edit Area** - displays the a preview of the current file. Some text based files like TXT, Markdown or HTML can be edited here.
+- **(6) Preview & Edit Area** - displays a preview of the current file. Some text based files like TXT, Markdown or HTML can be edited here.
 
 ## Dark Mode and Themes
 

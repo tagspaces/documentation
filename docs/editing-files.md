@@ -8,7 +8,6 @@ import { TechArticleStructuredData } from '@site/src/components/StructuredData'
 
 <TechArticleStructuredData />
 
-
 # Edit Files
 
 Besides opening and viewing files, TagSpaces can also edit specific file formats. Just like [File Browser Perspectives](/browsing-files/#switching-perspectives), and [File Preview extensions](/viewing-files/), the different types of **File Editors** are also **modular extensions**, making TagSpaces' file editing capabilities extendable. Currently three editor extensions ship bundled with the application:
@@ -19,7 +18,11 @@ Besides opening and viewing files, TagSpaces can also edit specific file formats
 
 - [**Text Editor**](/extensions/text-editor/) - This editor opens all other text-based file formats, and unknown file types alike. For `.txt` and miscellaneous files, it behaves as a simple editor, with added syntax highlighting capabilities for common programming languages.
 
-- [**JSON Editor**](/extensions/json-editor/) - An interactive visual editor for editing and manipulating `JSON` files.
+- [**JSON Editor**](/extensions/json-editor/) - An interactive visual editor for manipulating `JSON` files.
+
+- [**Contact Editor**](/extensions/contact-viewer/) - An interactive visual editor for manipulating `VCF` files.
+
+- [**Bookmark Editor**](/extensions/url-viewer/) - An interactive visual editor for manipulating `URL` files.
 
 If the file format of the currently opened files is supported for editing the **EDIT button** will appear in the top right corner of the application. Clicking on this button will activate the edit mode for this file.
 

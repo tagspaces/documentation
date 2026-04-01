@@ -13,8 +13,8 @@ A TagSpaces extension allowing you to open MHTML and EML files.
 
 ## Features
 
-- Viewing of MHTML/MHT files - MHTML is a [file format](https://tools.ietf.org/html/rfc2557) for saving web pages with all the images and styling information in one single file. Saving in MHTML format is natively supported by [Chrome™](/web-clipper#enabling-the-saving-of-webpages-as-mhtml) and Internet Explorer™ browsers.
-- Viewing of EML files - EML is a file format for saving emails. It is the default email export format of email apps such as Thunderbird™ or Google Mail™.
+- Viewing of MHTML/MHT files - MHTML is a [file format](https://tools.ietf.org/html/rfc2557) for saving web pages with all the images and styling information in one single file. Saving in MHTML format is natively supported by [Chrome](/web-clipper#enabling-the-saving-of-webpages-as-mhtml) and Edge browsers.
+- Viewing of EML files - EML is a file format for saving emails. It is the default email export format of email apps such as Thunderbird or Google Mail.
 - Reader mode, extracting only the main part of the document by stripping header, footer, and navigation if available.
 - Showing the creation date of the file.
 - Opening the source URL of an MHTML file.
@@ -29,7 +29,7 @@ Dialog showing the scraping details, with the ability to open the original URL i
 
 ### Showing email exported in EML format
 
-![Screenshot of the MHTML viewer extension](/media/extensions/viewer-mhtml-emlpreview.png)
+![Screenshot of the MHTML viewer extension](/media/extensions/mhtml-eml-viewer.avif)
 
 ## Used Libraries
 

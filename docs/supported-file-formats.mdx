@@ -5,10 +5,9 @@ description: Complete reference of file formats supported in TagSpaces for viewi
 
 import Link from "@docusaurus/Link";
 import { ProFeature } from "@site/src/components/CommonBlocks";
-import { WebPageStructuredData } from '@site/src/components/StructuredData';
+import { WebPageStructuredData } from "@site/src/components/StructuredData";
 
 <WebPageStructuredData />
-
 
 The following table lists the supported files types for viewing and editing of files in TagSpaces.
 
@@ -24,7 +23,9 @@ The following table lists the supported files types for viewing and editing of f
       <th>Extension</th>
     </thead>
     <tr>
-      <td>STL <ProFeature /></td>
+      <td>
+        STL <ProFeature />
+      </td>
       <td>yes</td>
       <td>yes, after opening the file</td>
       <td>no</td>
@@ -33,7 +34,9 @@ The following table lists the supported files types for viewing and editing of f
       </td>
     </tr>
     <tr>
-      <td>OBJ <ProFeature /></td>
+      <td>
+        OBJ <ProFeature />
+      </td>
       <td>yes</td>
       <td>yes, after opening the file</td>
       <td>no</td>
@@ -42,7 +45,9 @@ The following table lists the supported files types for viewing and editing of f
       </td>
     </tr>
     <tr>
-      <td>GLB <ProFeature /></td>
+      <td>
+        GLB <ProFeature />
+      </td>
       <td>yes</td>
       <td>yes, after opening the file</td>
       <td>no</td>
@@ -51,7 +56,9 @@ The following table lists the supported files types for viewing and editing of f
       </td>
     </tr>
     <tr>
-      <td>GLTF <ProFeature /></td>
+      <td>
+        GLTF <ProFeature />
+      </td>
       <td>yes</td>
       <td>yes, after opening the file</td>
       <td>no</td>
@@ -485,8 +492,11 @@ The following table lists the supported files types for viewing and editing of f
     <tr>
       <td>URL</td>
       <td>yes</td>
-      <td title="Only when created by the TagSpaces Web Clipper extension">yes</td>
-      <td>no</td>
+      <td>
+        yes, only when created by the{" "}
+        <Link to="/web-clipper">TagSpaces Web Clipper</Link> extension
+      </td>
+      <td>yes</td>
       <td>
         <Link to="/extensions/url-viewer">URL Viewer</Link>
       </td>
@@ -495,7 +505,7 @@ The following table lists the supported files types for viewing and editing of f
       <td>DESKTOP</td>
       <td>yes</td>
       <td>no</td>
-      <td>no</td>
+      <td>yes</td>
       <td>
         <Link to="/extensions/url-viewer">URL Viewer</Link>
       </td>
@@ -551,12 +561,14 @@ The following table lists the supported files types for viewing and editing of f
       </td>
     </tr>
     <tr>
-      <td>VCF</td>
+      <td>
+        VCF <ProFeature />
+      </td>
       <td>yes</td>
       <td>no</td>
-      <td>no</td>
+      <td>yes</td>
       <td>
-        <Link to="/extensions/contact-viewer">MSG Viewer</Link>
+        <Link to="/extensions/contact-viewer/">Contact Editor</Link>
       </td>
     </tr>
   </table>
@@ -576,7 +588,7 @@ The following table lists the supported files types for viewing and editing of f
     <tr>
       <td>ZIP</td>
       <td>yes</td>
-      <td title="The largest image in the archive is used as screenshot">yes</td>
+      <td>yes, the largest image in the archive is used as screenshot</td>
       <td>no</td>
       <td>
         <Link to="/extensions/archive-viewer">Archive Viewer</Link>
@@ -597,7 +609,9 @@ The following table lists the supported files types for viewing and editing of f
       <th>Extension</th>
     </thead>
     <tr>
-      <td>TTF <ProFeature /></td>
+      <td>
+        TTF <ProFeature />
+      </td>
       <td>yes</td>
       <td>yes, after opening the file</td>
       <td>no</td>
@@ -606,7 +620,9 @@ The following table lists the supported files types for viewing and editing of f
       </td>
     </tr>
     <tr>
-      <td>WOFF <ProFeature /></td>
+      <td>
+        WOFF <ProFeature />
+      </td>
       <td>yes</td>
       <td>yes, after opening the file</td>
       <td>no</td>
@@ -615,7 +631,9 @@ The following table lists the supported files types for viewing and editing of f
       </td>
     </tr>
     <tr>
-      <td>OTF <ProFeature /></td>
+      <td>
+        OTF <ProFeature />
+      </td>
       <td>yes</td>
       <td>yes, after opening the file</td>
       <td>no</td>
@@ -671,6 +689,15 @@ The following table lists the supported files types for viewing and editing of f
       <td>yes</td>
       <td>
         <Link to="/extensions/json-editor">JSON Editor</Link>
+      </td>
+    </tr>
+    <tr>
+      <td>YAML</td>
+      <td>yes</td>
+      <td>no</td>
+      <td>yes</td>
+      <td>
+        <Link to="/extensions/text-editor">Text Editor</Link>
       </td>
     </tr>
     <tr>
