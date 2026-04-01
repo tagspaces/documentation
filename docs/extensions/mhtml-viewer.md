@@ -1,6 +1,7 @@
 ---
 title: MHTML Viewer
 description: TagSpaces MHTML Viewer extension for opening MHTML web archives and EML email files with reader mode, source URL access, and text search.
+tags: [extension]
 ---
 
 import { TechArticleStructuredData } from '@site/src/components/StructuredData';

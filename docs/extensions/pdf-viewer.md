@@ -1,6 +1,7 @@
 ---
 title: PDF Viewer
 description: TagSpaces PDF Viewer for viewing PDFs with annotation tools, text highlighting, search, page thumbnails, table of contents, and printing via PDF.js.
+tags: [extension]
 ---
 
 import { TechArticleStructuredData } from '@site/src/components/StructuredData';

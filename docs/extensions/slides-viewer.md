@@ -1,13 +1,13 @@
 ---
 title: Slides Viewer
 description: TagSpaces Slides Viewer extension for displaying Reveal.js HTML presentations with embedded slide content.
+tags: [extension]
 ---
 
 import { ProFeature, CenteredImage, CenteredVideo } from '@site/src/components/CommonBlocks';
 import { TechArticleStructuredData } from '@site/src/components/StructuredData';
 
 <TechArticleStructuredData />
-
 
 # Slides Viewer
 

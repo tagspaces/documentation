@@ -1,6 +1,7 @@
 ---
 title: Markdown Editor
 description: TagSpaces Markdown Editor with WYSIWYG editing, frontmatter support, embedded images, emoji, tables, math expressions, text-to-speech, and mind map generation from headings.
+tags: [extension]
 ---
 
 import { CenteredImage, CenteredVideo } from '@site/src/components/CommonBlocks';

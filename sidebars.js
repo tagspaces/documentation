@@ -340,10 +340,10 @@ const sidebars = {
       label: "Developer Documentation",
       items: [
         "dev/external-config",
-        "dev/deployment",
-        "dev/extension-development-guide",
         "dev/command-line-tools",
+        "dev/extension-development-guide",
         "dev/metafileformats",
+        "dev/deployment",
       ],
     },
     "web-clipper",

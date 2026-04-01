@@ -1,13 +1,13 @@
 ---
 title: Contact Editor
 description: TagSpaces Pro extension for displaying VCF vCard contact files with clickable email and phone fields and multi-contact support.
+tags: [extension]
 ---
 
 import { ProFeature, CenteredImage, CenteredVideo } from '@site/src/components/CommonBlocks';
 import { TechArticleStructuredData } from '@site/src/components/StructuredData';
 
 <TechArticleStructuredData />
-
 
 # Contact Editor
 

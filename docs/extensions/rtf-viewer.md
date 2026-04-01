@@ -1,6 +1,7 @@
 ---
 title: RTF Viewer
 description: TagSpaces RTF Viewer extension for previewing Rich Text Format documents with HTML export and zoom support using the rtf.js open-source library.
+tags: [extension]
 ---
 
 import { TechArticleStructuredData } from '@site/src/components/StructuredData';

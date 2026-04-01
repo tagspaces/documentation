@@ -1,6 +1,7 @@
 ---
 title: HTML Viewer
 description: TagSpaces HTML Viewer extension for rendering local HTML files with zoom, search, print, reader mode, and display of web clipper metadata.
+tags: [extension]
 ---
 
 import { TechArticleStructuredData } from '@site/src/components/StructuredData';

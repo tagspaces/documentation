@@ -1,6 +1,7 @@
 ---
 title: Media Player
 description: TagSpaces Media Player extension for playing audio and video files with fullscreen mode, auto-play next file, and advanced playback via Vidstack.
+tags: [extension]
 ---
 
 import { TechArticleStructuredData } from '@site/src/components/StructuredData';

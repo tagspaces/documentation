@@ -1,6 +1,7 @@
 ---
 title: Markdown Viewer
 description: Deprecated TagSpaces Markdown Viewer extension for previewing Markdown files with theme selection, text search, HTML export, zoom, and print.
+tags: [extension]
 ---
 
 import { TechArticleStructuredData } from '@site/src/components/StructuredData';

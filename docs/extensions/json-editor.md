@@ -1,13 +1,13 @@
 ---
 title: JSON Editor
 description: TagSpaces JSON Editor extension for visually editing JSON documents with expand/collapse nodes, undo/redo support, and drag-based data manipulation.
+tags: [extension]
 ---
 
 import { ProFeature, CenteredImage, CenteredVideo } from '@site/src/components/CommonBlocks';
 import { TechArticleStructuredData } from '@site/src/components/StructuredData';
 
 <TechArticleStructuredData />
-
 
 # JSON Editor
 
@@ -54,7 +54,6 @@ Each field has some useful controls that can help manipulate and rearrange JSON 
 - On the left edge, there is a drag handle, allowing for easy movement of each row (**1**).
 
 - Next to the drag handle is an **Action Menu Button** (**2**), which opens the **Action Menu** (**3**), offering useful actions on each field, such as:
-
   - You can choose or change the **Type** of the field, choosing from _Auto_, _Object_, _Array_, or _String_.
   - You can **Insert** an _Array_, _Object_, or _String_ inside any field (there is also an _Auto_ mode for insertion). Inserting will place the new field **before** the selected field.
   - When selecting the **Action Menu** on the last member of an _Object_ or _Array_, you can also **Append** the same categories, which will place the new field **after** the last item.

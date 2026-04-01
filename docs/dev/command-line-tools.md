@@ -1,7 +1,7 @@
 ---
 title: Command Line Tools
 description: Documentation for the TagSpaces CLI (tscmd) for tagging, describing, indexing, generating thumbnails, and cleaning metadata — designed for automation and AI agentic workflows.
-tags: [developer]
+tags: [developer, tool]
 ---
 
 import { ProFeature, CenteredImage, CenteredVideo } from '@site/src/components/CommonBlocks';

@@ -1,6 +1,7 @@
 ---
 title: Text Editor
 description: TagSpaces Text Editor powered by Monaco Editor for editing code and text files with syntax highlighting, adjustable font size, and word wrap support.
+tags: [extension]
 ---
 
 import { TechArticleStructuredData } from '@site/src/components/StructuredData';

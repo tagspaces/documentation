@@ -1,6 +1,7 @@
 ---
 title: Text Viewer
 description: TagSpaces Text Viewer extension for previewing any file as plain text, serving as a universal fallback viewer for all file formats.
+tags: [extension]
 ---
 
 import { TechArticleStructuredData } from '@site/src/components/StructuredData';
