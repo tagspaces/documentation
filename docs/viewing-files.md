@@ -41,7 +41,7 @@ You can assign different viewer extensions to specific file extensions via the s
 
 ![settings tab file types](/media/settings/settings-tab-file-types.svg)
 
-## Settings as default application for certain file types
+## Setting TagSpaces as default application for certain file types
 
 The desktop application registers on installation the app as default viewer for MD (markdown), HTML, TXT and URL files types. In addition to that TagSpaces can be made manually in the operating system the default viewer for every supported [file type](/supported-file-formats/).
 

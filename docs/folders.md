@@ -13,9 +13,9 @@ Folders play an essential role in TagSpaces that goes beyond typical file groupi
 
 ## Folder Areas
 
-The in top area of a folder you can switch between the following sub-areas:
+In the top area of a folder you can switch between the following sub-areas:
 
-- **[Details](#folder-properties)** - opens the folder properties, see more bellow.
+- **[Details](#folder-properties)** - opens the folder properties, see more below.
 - **[Description](#folder-description)** - opens the area where you can add description for this folder.
 - **[Revisions](#folder-revisions)** - opens the area listing all the versions of the folder's description.
 - **[AI Chat](#folder-ai-chat)** - this is the place for the folder's own AI chat, this tab is visible only if the AI functionality is enabled.
@@ -162,7 +162,7 @@ The background image can be changed in the folder properties, where you can open
 An image in the clipboard can be used as background for a folder after pasting it in this dialog with `cmd/ctrl+v`
 :::
 
-Some wallpapers are bundled with the application, but you can also choose an image from your hard drive. In the dialog, you also can also clear any previously selected wallpapers.
+Some wallpapers are bundled with the application, but you can also choose an image from your hard drive. In the dialog, you can also clear any previously selected wallpapers.
 
 :::info
 If the folder is on an S3 bucket, the wallpaper file will be uploaded there.

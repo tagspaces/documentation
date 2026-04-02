@@ -12,7 +12,7 @@ import { WebPageStructuredData } from '@site/src/components/StructuredData';
 
 When you navigate to a folder in your active location, the files contained in the selected folder will be displayed in the main file browsing area of the user interface. TagSpaces offers flexible views to display your files. We call these views **perspectives**.
 
-Perspectives are modular extensions that allow more flexibility, easier development, and customizability. TagSpaces is delivered by default with two perspective, while additional perspectives can be found in the PRO products. This is a list of all currently available :
+Perspectives are modular extensions that allow more flexibility, easier development, and customizability. TagSpaces is delivered by default with two perspectives, while additional perspectives are available in the PRO products. Here is a list of all currently available perspectives:
 
 - [Grid Perspective](/perspectives/grid/) - Presents files and folders in a grid format, suitable for tagging and file management. It is the **default** perspective built into TagSpaces.
 - [List Perspective](/perspectives/list/) - Presents files in a list format, suitable for tagging and file management.

@@ -21,7 +21,7 @@ To create a new file in TagSpaces, you have several options. The easiest way is 
     maxWidth="350px"
   />
 
-This opens the content creation menu, where you can choose from the actions described bellow.
+This opens the content creation menu, where you can choose from the actions described below.
 
 **Timestamp as Default Tag**
 
@@ -65,7 +65,7 @@ Creates a plain text file with the `.txt` extension.
 
 ## New Markdown File
 
-Creates a text file with the `.md` extension, which ill allow you to add content [Markdown](https://en.wikipedia.org/wiki/Markdown) format.
+Creates a text file with the `.md` extension, which will allow you to add content in [Markdown](https://en.wikipedia.org/wiki/Markdown) format.
 
 <CenteredImage
     caption="Dialog for creating markdown files"
@@ -82,7 +82,7 @@ The file name follows this format: `note[20191113T164613].md` (or `.html` or `.t
 
 ## New Link File
 
-Create a URL file, which contain a link to a web site. This files are supported natively on Mac and Windows. There are suitable for creating bookmarks.
+Creates a URL file containing a link to a website. These files are supported natively on macOS and Windows. They are suitable for creating bookmarks.
 
 <CenteredImage
     caption="Create new file with the plus button"

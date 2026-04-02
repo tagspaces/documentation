@@ -11,9 +11,9 @@ import { TechArticleStructuredData } from '@site/src/components/StructuredData'
 
 ## File Areas
 
-The in top area of a file you can switch between the following sub-areas:
+In the top area of a file you can switch between the following sub-areas:
 
-- **[Details](#file-details)** - opens the file properties, see more bellow.
+- **[Details](#file-details)** - opens the file properties, see more below.
 - **[Description](#file-description)** - opens the area where you can add description for this file (opened in the screenshot bellow).
 - **[Revisions](#file-revisions)** - visible only for editable files, display a list of all file changes.
 - **[Links](#file-links)** - a place where you can see all incoming and outgoing links for this file.

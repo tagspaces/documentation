@@ -81,9 +81,9 @@ Each workspace can have its own **tag groups**, keeping your tags organized by c
 - In a **Work** workspace: `clientA`, `invoice`, `meeting`.
 - In a **Personal** workspace: `travel`, `recipes`, `health`.
 
-Switching workspaces also switches which tag groups are visible. If there are no tag groups assigned to the current workspace, all tag group will be displayed.
+Switching workspaces also switches which tag groups are visible. If there are no tag groups assigned to the current workspace, all tag groups will be displayed.
 
-You can assign a workspace to a tag group in the properties of a given tag group. In the **edit tag group** dialog, you will find a dropdown, with which you can assign the current tag group to a workspace. The **plus button** in this dropdown will the workspace creation dialog. The **minus button** will disconnect the workspace from the tag group.
+You can assign a workspace to a tag group in the properties of a given tag group. In the **edit tag group** dialog, you will find a dropdown, with which you can assign the current tag group to a workspace. The **plus button** in this dropdown will open the workspace creation dialog. The **minus button** will disconnect the workspace from the tag group.
 
 <CenteredImage
     caption="Screenshot of the tag group properties dialog, where you can assign workspace to a tag group"
@@ -98,7 +98,7 @@ You can assign a workspace to a tag group in the properties of a given tag group
 
 You can assign **locations** (folders or drives) to specific workspaces. This ensures you’ll only see the relevant locations when working in a given workspace.
 
-In order to do this, you have to open the properties of a given location, from the location's context menu. In the **More properties** area, you will find a dropdown, with which you can assign the current location to a workspace. The **plus button** in this dropdown will the workspace creation dialog. The **minus button** will disconnect the workspace from the location.
+In order to do this, you have to open the properties of a given location, from the location's context menu. In the **More properties** area, you will find a dropdown, with which you can assign the current location to a workspace. The **plus button** in this dropdown will open the workspace creation dialog. The **minus button** will disconnect the workspace from the location.
 
 <CenteredImage
     caption="Screenshot of the location properties dialog, where you can assign workspace to a location"
@@ -126,6 +126,6 @@ In order to do this, you have to open the properties of a given location, from t
 
 ## Related Topics
 
-- [Managing Locations](/ui/locations.md)
-- [Using Tag Groups](/ui/taglibrary.md)
-- [Organizing Files with Tags](/tagging.md)
+- [Managing Locations](/ui/locations)
+- [Using Tag Groups](/ui/taglibrary)
+- [Organizing Files with Tags](/tagging)

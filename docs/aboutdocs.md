@@ -11,7 +11,7 @@ import { WebPageStructuredData } from '@site/src/components/StructuredData';
 
 # About this documentation
 
-This documentation is work in progress, the articles are being updated on a regular base.
+This documentation is work in progress, the articles are being updated regularly.
 
 ## Documentation structure
 
