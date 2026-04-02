@@ -15,8 +15,11 @@ A TagSpaces extension for opening mind maps based on markdown with the help of m
 
 ## Features
 
-- Preview mind maps
-- Zoom in and out with the mouse wheel and menu
+- Visualize markdown heading structure as an interactive mind map
+- Zoom in and out with the mouse wheel or toolbar controls
+- Pan the view by clicking and dragging
+- Collapse and expand branches by clicking on nodes
+- Automatic layout and positioning of nodes
 
 ![Screenshot of the mind map viewer](/media/extensions/mindmap-viewer-lead.png)
 
@@ -31,7 +34,7 @@ This extension thankfully relies on the following great libraries:
 
 ## Installation
 
-This extension is packaged with the new version of TagSpaces (after version 5.2).
+This extension is packaged with every version of TagSpaces.
 
 ## Source Code
 

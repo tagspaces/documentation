@@ -14,8 +14,10 @@ A TagSpaces extension allowing you to preview the content of ZIP files.
 
 ## Features
 
-- Listing the content of ZIP files
-- Previewing the content of the files in the ZIP container
+- Browse the file and folder structure inside ZIP archives
+- Preview individual files directly within the archive without extracting
+- View file metadata (name, size, compressed size, last modified date)
+- Navigate nested folder hierarchies inside the archive
 
 ![Screenshot of the viewerZIP](/media/extensions/viewer-zip-lead.png)
 

@@ -16,7 +16,7 @@ A TagSpaces extension allowing you to open eBooks or digital magazines in EPUB f
 ## Features
 
 - Previewing files in EPUB format
-- Automatically switch to two-fold mode by sufficient width
+- Automatically switches to two-page mode when the window is wide enough
 - Readability options, for changing font type and adjusting line spacing and text size
 
 <CenteredImage

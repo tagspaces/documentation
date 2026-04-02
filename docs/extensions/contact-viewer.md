@@ -20,7 +20,7 @@ A TagSpaces extension for viewing and editing files in VCF format. A VCF (vCard 
 - Preview of VCF files
 - Click on an email will open your default email program
 - Click on a phone number will trigger the phone calling function of your device (if available)
-- These files can contain one or many contact, all of them will be displayed
+- These files can contain one or many contacts, all of them will be displayed
 - Search in the contact's content
 
 <CenteredImage

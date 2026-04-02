@@ -15,7 +15,15 @@ A TagSpaces extension allowing viewing and editing of JSON documents.
 
 ## Features
 
-- Open and edit JSON documents graphically.
+- Graphical tree-based editing of JSON documents
+- Expand and collapse nodes for easy navigation of large files
+- Undo and redo support
+- Search within the JSON structure
+- Drag and drop to rearrange fields
+- Insert, duplicate, and remove fields from the action menu
+- Sort object keys and array items (ascending/descending)
+- Change field types (Auto, Object, Array, String)
+- Print the JSON document
 
 <CenteredImage
     caption="Screenshot of JSON editor"

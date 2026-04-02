@@ -298,4 +298,4 @@ If you want to extend this extension, please follow our general [extension devel
 
 ## License
 
-[MIT](https://github.com/tagspa ces/tagspaces-extensions/blob/main/html-editor/LICENSE.txt)
+[MIT](https://github.com/tagspaces/tagspaces-extensions/blob/main/html-editor/LICENSE.txt)

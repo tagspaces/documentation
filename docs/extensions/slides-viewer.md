@@ -15,7 +15,11 @@ A TagSpaces extension for opening slides in HTML format created with reveal.js. 
 
 ## Features
 
-- Preview reveal.js slides
+- Preview HTML presentations created with [reveal.js](https://revealjs.com/)
+- Navigate between slides using arrow keys or on-screen controls
+- Full-screen presentation mode
+- Support for vertical slide stacks (nested slides)
+- Zoom into slide content
 
 <CenteredVideo
     caption="Video showing the extension in action"
@@ -38,7 +42,7 @@ This extension thankfully relies on the following great libraries:
 
 ## Installation
 
-This extension is packaged with the new version of TagSpaces (after version 5.2).
+This extension is packaged with every version of TagSpaces.
 
 ## Source Code
 
