@@ -207,7 +207,7 @@ const sidebars = {
     },
     {
       type: "category",
-      label: "AI",
+      label: "AI Chat & LLM Integration",
       items: [
         "ai",
         {
@@ -234,8 +234,8 @@ const sidebars = {
     },
     {
       type: "category",
-      label: "Sharing, Linking & Web Clipper",
-      items: ["sharing", "linking"],
+      label: "Linking & Sharing",
+      items: ["linking", "sharing"],
     },
     {
       type: "category",
