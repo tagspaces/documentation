@@ -31,7 +31,7 @@ First you will need to install **Cryptomator**, which is as easy as downloading 
 To connect a new vault:
 
 - Open Cryptomator
-- Click on the "+" icon on the lover left corner, and
+- Click on the "+" icon on the lower left corner, and
 - Select "Create new vault"
 - In the file chooser, navigate to the local folder that is synced with your preferred cloud service
 - And type a name for your vault.

@@ -19,11 +19,11 @@ After creating the account and successful login, you need to create your first b
 
 ![Create a bucket in wasabi](wasabi-locations/create-bucket.png)
 
-After clicking the "NEXT" button you will see the a page where you can enable some optional feature such logging or object locking.
+After clicking the "NEXT" button you will see a page where you can enable some optional features such as logging or object locking.
 
 ![Set options for the wasabi bucket](wasabi-locations/create-bucket-properties.png)
 
-When finish the bucket creation wizard the newly created bucket will appear in the bucket section.
+When you finish the bucket creation wizard the newly created bucket will appear in the bucket section.
 
 ## Create an access policy
 
@@ -236,7 +236,7 @@ In order to do this, you have to open the user's section in Wasabi console and c
 
 ![Creating a new user](wasabi-locations/create-user.png)
 
-In the dialog which wll appear, you have to enter the user's name, click on the "Programmatic (create API key)" checkbox and press "NEXT". In the following section you can add the user to a group, which goes beyond the scope of this tutorial. So clicking one more time on the "NEXT" button will give you the ability to select the policy we have create in the previous section. This is very important step, since without a policy the user will have no rights on the bucket.
+In the dialog which will appear, you have to enter the user's name, click on the "Programmatic (create API key)" checkbox and press "NEXT". In the following section you can add the user to a group, which goes beyond the scope of this tutorial. So clicking one more time on the "NEXT" button will give you the ability to select the policy we have create in the previous section. This is very important step, since without a policy the user will have no rights on the bucket.
 
 ![Select policy](wasabi-locations/select-policy.png)
 

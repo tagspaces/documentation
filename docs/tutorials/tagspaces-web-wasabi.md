@@ -25,7 +25,7 @@ If you need a solution, where TagSpaces is accessible behind a login, you may ta
 
 ## Hosting the TagSpaces web app
 
-In order to have the TagSpaces Web application on the Internet, you will need a place or service which will host the application's file. In our case this will be a S3 bucket which which we will create in the folloing steps.
+In order to have the TagSpaces Web application on the Internet, you will need a place or service which will host the application's file. In our case this will be a S3 bucket which we will create in the following steps.
 
 - Login to Wasabi console and go Buckets section
 - Click on the **Create Bucket** on the top right corner and give the following information:
@@ -57,9 +57,9 @@ In order to have the TagSpaces Web application on the Internet, you will need a 
 ```
 
 - Extract the content of the TagSpaces Web package to a folder on your computer
-- Clicking on the **Uplad Files** button and drag the content of the **web** folder to the area which will appear.
+- Clicking on the **Upload Files** button and drag the content of the **web** folder to the area which will appear.
 - After the content of the folder is analysed you have to confirm the upload process.
-- Once the upload is ready you TagSpaces Web application will be available unter this url:
+- Once the upload is ready your TagSpaces Web application will be available under this URL:
 
   https://my-tagspaces.s3.us-west-2.wasabisys.com/index.html
 
@@ -106,7 +106,7 @@ Do not forget to adjust the name of the buckets in the **Resource** section to r
 
 ### Create read-only user
 
-Go to the user's section and creata a new user, by clicking on the **Create User** button. You can the user **my-ts-admin**.
+Go to the user's section and create a new user, by clicking on the **Create User** button. You can the user **my-ts-admin**.
 
 Choose the **TagSpacesReadOnlyPolicy** policy in the creation wizard for this user, as shown in the following screenshot.
 
@@ -181,7 +181,7 @@ Depending on your needs you can reduce the granted actions in the policy above.
 
 ### Create admin user
 
-Go to the user's section and creata a new user, by clicking on the **Create User** button. You can the user **my-ts-admin**.
+Go to the user's section and create a new user, by clicking on the **Create User** button. You can the user **my-ts-admin**.
 
 Choose the **TagSpacesAdminPolicy** policy in the creation wizard for this user, as shown in the following screenshot.
 

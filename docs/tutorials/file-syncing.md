@@ -16,7 +16,7 @@ Here is a short list of services which can be used for syncing tagged files and 
 
 or other P2P projects like:
 
-- [Syncthink](https://syncthing.net/) - a good tutorial explaining details about the TagSpaces/Synching setup can be found on [Medium](https://attilaorosz.medium.com/syncronise-your-offline-notes-across-all-devices-without-the-cloud-1e82fa53d1f1)
+- [Syncthing](https://syncthing.net/) - a good tutorial explaining details about the TagSpaces/Synching setup can be found on [Medium](https://attilaorosz.medium.com/syncronise-your-offline-notes-across-all-devices-without-the-cloud-1e82fa53d1f1)
 - Bittorentsync/Resilio
 
 E2E Encryption can be achieved with [Cryptomator](https://cryptomator.org/). You can details about how to setup in this [tutorial](/tutorials/e2ee-with-tagspaces-and-cryptomator).

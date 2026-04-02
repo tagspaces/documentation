@@ -207,4 +207,4 @@ SSL certificates are needed for both your TagSpaces installation and the object 
 
 ### Installing a self-signed SSL certificate
 
-TBD
+For development or intranet use, you can generate a self-signed SSL certificate and configure nginx to use it. See the [nginx SSL documentation](https://nginx.org/en/docs/http/configuring_https_servers.html) for details.

@@ -73,7 +73,7 @@ Accessing the bucket with the credentials from your main account is not recommen
 As first step the [AWS IAM](https://console.aws.amazon.com/iam/) service should be opened.
 ![Open IAM service](/media/aws/aws-iam-start.png)
 
-Here you can click on the **Users** section, ash shown in the screenshot.
+Here you can click on the **Users** section, as shown in the screenshot.
 ![IAM service overview](/media/aws/aws-iam-overview.png)
 
 Then you have to click on the **Add user** button, in order to start the user creation process.
@@ -88,7 +88,7 @@ In the next steps you have to set the permission for this user, by creating a cu
 In newly opened browser tab with the policy editor, click on the JSON section.
 ![Create user policy in IAM](/media/aws/aws-iam-policy-creation.png)
 
-There you can enter and adjust your policies. The following JSON snipped, is a policy for a user who can just list and retrieve object (read-only user) from the **your-bucket-name** bucket. You should adjust the name of the bucket to suite your setup.
+There you can enter and adjust your policies. The following JSON snippet is a policy for a user who can just list and retrieve object (read-only user) from the **your-bucket-name** bucket. You should adjust the name of the bucket to suite your setup.
 
 Policy for read-only user:
 
@@ -181,7 +181,7 @@ Once you are ready and have attached the newly created policy to the user, you c
 
 ## Step 4 - Upload files to the bucket
 
-The easies way to upload files to your bucket is to use the build upload functionality, as seen in the next screenshot. But first you should create a folder in the bucket, which will serve as a root folder. You can name if for example _rootfolder_.
+The easiest way to upload files to your bucket is to use the build upload functionality, as seen in the next screenshot. But first you should create a folder in the bucket, which will serve as a root folder. You can name if for example _rootfolder_.
 
 ![Create S3 bucket root folder](/media/aws/aws-s3-create-rootfolder.png)
 
