@@ -44,27 +44,6 @@ const sidebars = {
       type: "category",
       label: "Tagging",
       items: [
-        "ui/taglibrary",
-        {
-          type: "link",
-          label: "Smart Tags",
-          href: "/ui/taglibrary/#smart-tags",
-        },
-        {
-          type: "link",
-          label: "Tagging with Timestamps",
-          href: "/ui/taglibrary/#custom-timestamp-tagging",
-        },
-        {
-          type: "link",
-          label: "Geo-tagging",
-          href: "/ui/taglibrary/#geo-tagging",
-        },
-        {
-          type: "link",
-          label: "Location Tags",
-          href: "/ui/taglibrary/#location-tags",
-        },
         "tagging",
         {
           type: "link",
@@ -85,6 +64,27 @@ const sidebars = {
           type: "link",
           label: "Tagging Multiple Entries",
           href: "/tagging/#tag-operations-on-multiple-entries",
+        },
+        "ui/taglibrary",
+        {
+          type: "link",
+          label: "Smart Tags",
+          href: "/ui/taglibrary/#smart-tags",
+        },
+        {
+          type: "link",
+          label: "Tagging with Timestamps",
+          href: "/ui/taglibrary/#custom-timestamp-tagging",
+        },
+        {
+          type: "link",
+          label: "Geo-tagging",
+          href: "/ui/taglibrary/#geo-tagging",
+        },
+        {
+          type: "link",
+          label: "Location Tags",
+          href: "/ui/taglibrary/#location-tags",
         },
       ],
     },

@@ -8,12 +8,9 @@ import { TechArticleStructuredData } from '@site/src/components/StructuredData'
 
 <TechArticleStructuredData />
 
-
 ## Why Tagging?
 
 Tagging is a versatile approach to organizing files and folders. Unlike predefined categories, tagging lets users label items with words that reflect their personal understanding. It enhances searching and helps categorize files like songs, books, documents, and more in a user-defined way. Tags are personal, providing the freedom to define and group files as you see fit.
-
-Tagging is more than just organization; it's a way of expressing your thoughts and emotions. Instead of conforming to someone else's categories, you define what matters to you. Think of it as a form of personal expression or even a type of "freedom of speech."
 
 One of the core functionalities in TagSpaces is the ability to add tags to files and folders. Unlike other products, **TagSpaces does not rely on a central database for storing tags**. Instead, it offers two alternative methods, which are described in the following sections.
 
@@ -45,13 +42,31 @@ This method embeds tags directly into the file name. For example, adding the tag
 
 - **File Path Length Limitations:** Some operating systems (like Windows) restrict the file path length to around 256 characters, which can limit how many tags you can add.
 
-<CenteredImage src="/media/filename-tagging.png" caption="Tags embedded in file names" />
+<!-- <CenteredImage src="/media/filename-tagging.png" caption="Tags embedded in file names" /> -->
+
+```
+Filename [tag1 tag2].extension
+│       │  │    │  │ │       │
+│       │  │    │  │ └───────┴──── File extension (3–4 chars)
+│       │  │    │  │
+│       │  │    │  └────────────── Closing bracket "]"
+│       │  │    │                    marks end of tag area
+│       │  │    │
+│       │  │    └───────────────── A tag ("tag2")
+│       │  │
+│       │  ├────────────────────── Opening bracket "["
+│       │  │                        marks begin of tag area
+│       │  │
+│       │  └────────────────────── A tag ("tag1" ) and mandatory space
+│       │                          used for tag separation
+│       │
+│       └───────────────────────── Optional space for visual separation of the title
+│
+└───────────────────────────────── Original filename / title
+                                   describing the file's content
+```
 
 Once embedded in the name of file, the tag stick there and can be removed only by file renaming. **This makes the tagging "durable" and portable**. The tags embedded in the name of a file "survives" synchronization across cloud platforms such as Dropbox and Google Drive and can be read by TagSpaces or any other file searching software on Windows, macOS or Linux.
-
-:::tip
-File name tagging may run into limitations due to file path length restrictions on certain operating systems like Windows.
-:::
 
 ### Storing Tags in Sidecar Files
 
@@ -121,7 +136,7 @@ This will open a popup dialog for managing tags.
 The options in the dialog are:
 
 - **Clean all tags:** Removes all tags from the selected files.
-- **Remove tags:** Removes the specified tags. You have to manually enter the tags which you want to be remove from the selected files.
+- **Remove tags:** Removes the specified tags. You have to manually enter the tags which you want to remove from the selected files.
 - **Add tags:** Adds the specified tags to the selected files.
 
 ### Adding Multiple Tags at Once
@@ -161,26 +176,3 @@ This actions is supported in the details of files and folders and can be initiat
 
 This action is supported in the [grid](/perspectives/grid) and [list](/perspectives/list) perspectives.
 <CenteredImage src="/media/tagging/tagging-dnd-entry-to-entry.avif" caption="Tagging with drag-and-drop from a folder to another" maxWidth={650}/>
-
-<!-- ## Tagging using keyboard shortcuts
-Another quick way to tag files is to set keyboard shortcuts to often-used tags. To specify a shortcut, click on a tag in the **Tag Library**, and select *Edit Tag* from the context menu
-
-![](media/edit-tag-context.png)
-
-You will then be presented with the **Edit tag** popup dialogue, in which you can specify the keyboard shortcut under **Key Binding**
-
-![](media/edit-tag-popup.png)
-Tag that has a keyboard shortcut assigned, are marked with a little keyboard icon in the tag library
-
-![](media/edit-tag-keyboard.png)
-
-Shortcuts can be single characters, key combinations, or sequences of two or more characters.
-* To specify a single key shortcut, type that key into the box. E.g. to set the key `a` as a shortcut for a tag, simply type the letter 'a' and press OK.
-* For key combinations, type all keys separated by a plus sign (`+`). E.g. to specify `Ctrl+Shift+a` (to be pressed simultaneously) as a shortcut, just type "ctrl+shift+a".
-    > For combinations to work, you do not need to use modifier keys. `a+g+6` is as valid a combination as would e.g. `ctrl+shift+6` be
-* To use character sequences, type each character, separated by a single whitespace. for example, when you set `a b c` as a shortcut, you would need to type the letters 'a', 'b' and 'c' after one another to tag a file. You do not need to do this quickly, as long as you do not press anything else, the sequence will be recognised. This feature can be quite useful for users, who experience difficulties pressing certain key combinations.
-    > Modifier keys, such as `Ctrl`, `Shift`, etc, **can** be used in sequential combinations. Specifying e.g. `ctrl a` would make a shortcut of pressing `Ctrl` followed by `a`. pressing the keys simultaneously would not work in this case.
-
-Using keyboard shortcuts can also work on multiple files. If you select more than one file, the tag bound to the key(s) or key combination you press will be applied to all of them.
-
-> Keyboard shortcuts can **not** be used to remove tags, only to assign them. -->
