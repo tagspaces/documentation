@@ -11,7 +11,7 @@ Keyboard shortcuts are combinations of two or more keys that you can use to perf
 
 To use a keyboard shortcut, hold down one or more keys while pressing the last key of the shortcut. For example, to use the shortcut **Ctrl** + **C** on Windows and Linux or **Command** - **C** on macOS, hold down **Ctrl** button, press **C** and then release both keys.
 
-TagSpaces like a much of modern software also provides a range of keyboard shortcuts for better experience with it. Please find the list of the currently supported keyboard shortcuts bellow.
+TagSpaces like a much of modern software also provides a range of keyboard shortcuts for better experience with it. Please find the list of the currently supported keyboard shortcuts below.
 
 ## Default keybindings
 

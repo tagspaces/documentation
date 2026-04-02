@@ -174,7 +174,7 @@ This feature is not supported anymore.
 
 <ProFeature />
 
-This feature is useful for network drives or folders synced with services like Dropbox, where changes (e.g.file/folder creations, renames or deletion) occur in the background while TagSpaces is running. When enabled, TagSpaces automatically reflects these changes in its interface.
+This feature is useful for network drives or folders synced with services like Dropbox, where changes (e.g. file/folder creations, renames, or deletions) occur in the background while TagSpaces is running. When enabled, TagSpaces automatically reflects these changes in its interface.
 
 :::caution
 This feature is unavailable for cloud-based locations (e.g., AWS S3).
@@ -241,7 +241,7 @@ This features allows you to share with you peers pre-configured locations. This 
 The process of exporting and importing location configuration is demonstrated in the following video.
 
 <CenteredVideo
-    caption="Exporting location configuration and importing in on another installation"
+    caption="Exporting location configuration and importing it on another installation"
     src="/media/locations/export-import-locations.mp4"
     posterUrl="/media/locations/export-import-locations-poster.avif"
     maxWidth="100%"

@@ -106,7 +106,7 @@ Learn more about changing the default tag background and text colors in the [set
 
 ### Adding tags to a tag group
 
-In this dialog you can enter a comma or space separated word which will added as tags to the tag group, for the which this dialog wa opened.
+In this dialog you can enter comma- or space-separated words which will be added as tags to the tag group for which this dialog was opened.
 <CenteredImage
     caption="Dialog for creating tags"
     src="/media/taglibrary/tag-creation-dialog.avif"
