@@ -9,21 +9,21 @@ import { TechArticleStructuredData } from '@site/src/components/StructuredData'
 <TechArticleStructuredData />
 
 
-In comparison to many other tools, TagSpaces uses external text files for saving the meta information for folders and files, instead of a database. Here you will find the specification of the formats used by these files and also some other useful information concerning these files.
+Unlike many other tools, TagSpaces uses external text files instead of a database for saving metadata about folders and files. This page documents the JSON formats used by these files. It is intended for developers, extension authors, and advanced users who need to understand or manipulate TagSpaces metadata programmatically.
 
 ## Role of the meta folder
 
-The folder containing the meta information for given folder is called `.ts`. The dot in front of the name makes this folder automatically hidden for Unix based file systems like Linux or MacOS. On Windows we set explicitly the a flag to make this folder hidden. Every folder managed in TagSpaces will have its own meta folder.
+The folder containing the meta information for given folder is called `.ts`. The dot in front of the name makes this folder automatically hidden on Unix-based file systems like Linux and macOS. On Windows, a flag is set explicitly to make this folder hidden. Every folder managed in TagSpaces will have its own meta folder.
 
 The meta folder contains the following files:
 
 - **[tsm.json](#folder-meta-description-format)** - contains the meta information for the parent folder of the `.ts` folder
-- **tsi.json** - contains the search index for the parent folder it is a root of a location
+- **tsi.json** - contains the search index for the parent folder if it is the root of a location
 - **tst.jpg** - is the thumbnail file of the parent folder
 - **tsb.jpg** - is the background image file of the parent folder
-- **[tsl.jpg](#format-of-the-location-specific-tag-groups)** - contains location specific tag groups, if the parent folder is the root of a location
-- **file1.ext.jpg** - every file in the parent folder can have a thumbnail which is saved in this file (if the main fail is called `document.pdf` the thumbnail file will be named `document.pdf.jpg`)
-- **[file1.ext.json](#file-meta-description-format)** - every file in the parent folder can have its own meta information which is save in this files (the main file is called `file.ext`)
+- **[tsl.json](#format-of-the-location-specific-tag-groups)** - contains location-specific tag groups, if the parent folder is the root of a location
+- **file1.ext.jpg** - every file in the parent folder can have a thumbnail which is saved in this file (if the main file is called `document.pdf` the thumbnail file will be named `document.pdf.jpg`)
+- **[file1.ext.json](#file-meta-description-format)** - every file in the parent folder can have its own meta information which is saved in this file (for a file called `file.ext`)
 
 ## File meta description format
 
@@ -189,7 +189,9 @@ The meta information is saved in JSON format, which has the following format:
 }
 ```
 
-> **Note** In the JSON examples on this page, you will find sometimes a description after the these characters `//`. These are not part of the format and are used only for clarification purposes.
+:::info
+In the JSON examples on this page, comments after `//` characters are used for clarification only. They are not part of the actual JSON format, which does not support comments.
+:::
 
 ## Format of the tag library export
 
@@ -208,7 +210,7 @@ The meta information is persisted in JSON format, which has the following format
     // a list of one or more tag groups
     {
       "created_date": "1728677734620", // the time when this tag group was created
-      "uuid": "5d8e8305a3ba4fa394fdbb13823dce6d", //  an universally unique of the tag group
+      "uuid": "5d8e8305a3ba4fa394fdbb13823dce6d", // a universally unique identifier of the tag group
       "title": "TestTG", // the name of the tag group
       "color": "#fa573cff", // the default color of the tags in this tag group
       "textcolor": "white", // the default text color of the tags in this tag group
@@ -216,10 +218,9 @@ The meta information is persisted in JSON format, which has the following format
         // a list of one or more tags in the current tag group
         {
           "title": "tag1", // the name of the tag
-          "description": "", // maybe used in the future
+          "description": "some description", // optional description of the tag
           "color": "#fa573cff", // the color of the tag
-          "textcolor": "white", // the text color of the tag
-          "description": "some description" // description of the tag
+          "textcolor": "white" // the text color of the tag
         },
         {
           "title": "tag2",
@@ -254,7 +255,7 @@ The meta information is persisted in JSON format, which has the following format
 
 <ProFeature />
 
-The locations can be exported from one TagSpaces Pro installation and imported in another. The format of the exported file is presented in this section. The example bellow specified one local and two location pointing object storages. The second one is AWS S3 object storage, while the third one is pointing to MinIO server.
+The locations can be exported from one TagSpaces Pro installation and imported in another. The format of the exported file is presented in this section. The example below specifies one local location and two locations pointing to object storages. The second one is AWS S3 object storage, while the third one is pointing to MinIO server.
 
 ```json title="Example location export file in JSON format"
 {
@@ -270,7 +271,7 @@ The locations can be exported from one TagSpaces Pro installation and imported i
       "isDefault": true, // specifies if this location is the default one, which loads after starting the app
       "isReadOnly": false, // specified is the location should be in read-only mode
       "disableIndexing": false, // if "true" the app will try to find an existing search index and use it for the searches, by "false" the app will create the index on every search (unless the last created index in the current browser session is not expired see maxIndexAge property)
-      "disableThumbnailGeneration": false, // disables the process of thumbnail generation, usefull for S3 buckets, where you do not want to dowload the folder content in order to generate thumbnails
+      "disableThumbnailGeneration": false, // disables the process of thumbnail generation, useful for S3 buckets where you do not want to download the folder content in order to generate thumbnails
       "creationDate": 1743859126680, // the creation time of the location
       "lastEditedDate": 1744891863809,
       "fullTextIndex": false, // activated the full-text search for TXT, MD and HTML files
@@ -374,7 +375,7 @@ TagSpaces Pro offers the possibility to export previously saved search queries. 
 Since version 3.11 TagSpaces supports tags which are specific for a given location. The tags resides in a file called `tsl.json`, which should be located in the `.ts` folder of the current location.
 
 ```{5}
-~ /some7TagSpaces/location/folder
+~ /some/TagSpaces/location/folder
 ├── subfolder_2
 ├── .ts
 │   ├── tsm.json
@@ -383,7 +384,7 @@ Since version 3.11 TagSpaces supports tags which are specific for a given locati
 └── file4.docx
 ```
 
-The format of these files is similar to the format of the produced by exporting your [tag library](#format-of-the-tag-library-export). So basically you can take such exports rename them to tsl.json and put them in .ts folder. After reloading them by clicking the "Reload Location Tags"-menuitem the tag-groups should appear in the Tag Library. Tag groups imported from locations will have the location name in brackets as seen the following screenshot.
+The format of this file is the same as the [tag library export format](#format-of-the-tag-library-export). You can take an exported tag library file, rename it to `tsl.json`, and place it in the `.ts` folder of a location's root. After clicking **Reload Location Tags** in the tag library menu, the tag groups will appear in the Tag Library with the location name in brackets, as shown in the following screenshot.
 
 <CenteredImage
     caption="Reload location tags"
@@ -400,7 +401,7 @@ The format of these files is similar to the format of the produced by exporting 
     // a list of one or more tag groups
     {
       "created_date": "1740474629766", // the time when this tag group was created
-      "uuid": "2e0c46f0-3a1b-4902-a930-58a0a1a170f8", //  an universally unique of the tag group
+      "uuid": "2e0c46f0-3a1b-4902-a930-58a0a1a170f8", // a universally unique identifier of the tag group
       "title": "TestTagGroup", // the name of the tag group
       "readOnly": "true", // specifies if the tag group can be edited
       "color": "#fa573cff", // the default color of the tags in this tag group
