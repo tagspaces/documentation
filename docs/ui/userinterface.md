@@ -8,7 +8,6 @@ import { WebPageStructuredData } from '@site/src/components/StructuredData';
 
 <WebPageStructuredData />
 
-
 # User Interface Introduction
 
 TagSpaces opens as a single-window application designed to maximize space usage, whether on large screens or small mobile displays. Its user interface follows Google's Material Design guidelines, making it adaptable and consistent across operating systems and platforms.

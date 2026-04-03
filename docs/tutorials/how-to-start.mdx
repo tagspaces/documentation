@@ -1,11 +1,15 @@
 ---
-title: How to start
+title: First Steps
 description: Beginner's guide to TagSpaces covering first launch, understanding locations, and connecting local folders and cloud storage as browsable file system locations.
 tags: [tutorial]
 ---
 
-import { ProFeature, CenteredImage, CenteredVideo } from '@site/src/components/CommonBlocks';
-import { TechArticleStructuredData } from '@site/src/components/StructuredData';
+import {
+  ProFeature,
+  CenteredImage,
+  CenteredVideo,
+} from "@site/src/components/CommonBlocks";
+import { TechArticleStructuredData } from "@site/src/components/StructuredData";
 
 <TechArticleStructuredData />
 
@@ -37,7 +41,11 @@ A **location** is simply a folder from your computer, an external drive, or an S
 
 TagSpaces connect automatically some of your standard folders like the **Downloads**, **Documents**, **Music** and **Desktop**. The **Locations** are visible on the left area of the application window.
 
-<CenteredImage src="/media/how-to-start/default-locations.avif" caption="Default locations in the location manager" showCaption/>
+<CenteredImage
+  src="/media/how-to-start/default-locations.avif"
+  caption="Default locations in the location manager"
+  showCaption
+/>
 
 The standard locations are fully optional you can remove them or create new locations pointing to folders which contain files you want to manage in TagSpaces.
 
@@ -45,25 +53,45 @@ The standard locations are fully optional you can remove them or create new loca
 
 1. Click the **“New button”** on the top left part of the main screen, and the choose **New Location** from the menu.
 
-<CenteredImage src="/media/how-to-start/open-create-location-dialog.avif" caption="Opening the dialog for creating new locations" showCaption/>
+<CenteredImage
+  src="/media/how-to-start/open-create-location-dialog.avif"
+  caption="Opening the dialog for creating new locations"
+  showCaption
+/>
 
 2. Click the folder icon to to choose a folder from your file system, which will be the root of your location.
 
-<CenteredImage src="/media/how-to-start/choosing-folder.avif" caption="Choose the folder for the location" showCaption/>
+<CenteredImage
+  src="/media/how-to-start/choosing-folder.avif"
+  caption="Choose the folder for the location"
+  showCaption
+/>
 
 3. Choosing the folder from your file system
 
-<CenteredImage src="/media/how-to-start/choosing-location-folder.avif" caption="Choosing the root folder for your location from your file system" showCaption/>
+<CenteredImage
+  src="/media/how-to-start/choosing-location-folder.avif"
+  caption="Choosing the root folder for your location from your file system"
+  showCaption
+/>
 
 4. Give the location a recognizable name.
 
-<CenteredImage src="/media/how-to-start/adjusting-location.avif" caption="Giving a suitable name for your location" showCaption/>
+<CenteredImage
+  src="/media/how-to-start/adjusting-location.avif"
+  caption="Giving a suitable name for your location"
+  showCaption
+/>
 
 TagSpaces takes automatically the name of the chosen folder as name for the location. You can change this name to something else in this dialog.
 
 5. Now you can browse, tag, and organize all files inside that location directly within TagSpaces.
 
-<CenteredImage src="/media/how-to-start/listing-location.avif" caption="Giving a suitable name for your location" showCaption/>
+<CenteredImage
+  src="/media/how-to-start/listing-location.avif"
+  caption="Giving a suitable name for your location"
+  showCaption
+/>
 
 :::info Connecting cloud locations
 TagSpaces can connect to folders located on object storage. The object storage can be hosted on a [NAS](/tutorials/folders-as-objectstorage-with-s3proxy) or in the Cloud like on [AWS S3](/tutorials/s3-bucket-locations), [Contabo](/tutorials/contabo-storage) [Wasabi](/tutorials/wasabi-locations) or [Cloudflare R2](/tutorials/cloudflare-r2-storage).
@@ -82,13 +110,13 @@ The following video how you can apply tags to files and folder:
 - By using the tagging dialog to add and remove tags
 
 <CenteredVideo
-    src="/media/videos/file-and-folder-tagging.mp4"
-    videoAutoplay={false}
-    posterUrl="/media/videos/file-and-folder-tagging.jpg"
-    maxWidth="100%"
-    autoPlay
-    caption="Video showing various ways to apply tags to files and folders"
-    showCaption
+  src="/media/videos/file-and-folder-tagging.mp4"
+  videoAutoplay={false}
+  posterUrl="/media/videos/file-and-folder-tagging.jpg"
+  maxWidth="100%"
+  autoPlay
+  caption="Video showing various ways to apply tags to files and folders"
+  showCaption
 />
 
 You can group tags by category in [tag groups](/ui/taglibrary#tag-groups) — for example:  

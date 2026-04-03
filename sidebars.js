@@ -10,7 +10,16 @@ const sidebars = {
     {
       type: "category",
       label: "Getting Started",
-      items: ["tutorials/how-to-start", "installation", "ui/userinterface"],
+      items: [
+        "installation",
+        "tutorials/how-to-start",
+        "ui/userinterface",
+        {
+          type: "link",
+          label: "Upgrading TagSpaces Pro",
+          href: "/installation/#tagspaces-pro",
+        },
+      ],
     },
     {
       type: "category",
