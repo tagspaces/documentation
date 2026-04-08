@@ -1,6 +1,6 @@
 ---
 title: Web Clipping - Collect Everything Online
-description: Use the TagSpaces Web Clipper browser extension for Chrome, Firefox, and Edge to save web pages, screenshots, and bookmarks to your local file system.
+description: Use the TagSpaces Web Clipper browser extension for Chrome, Firefox, Edge, Brave, and Opera to save web pages, markdown, screenshots, and bookmarks to your local file system.
 tags: [tutorial, tool]
 ---
 
@@ -12,7 +12,7 @@ import { TechArticleStructuredData } from '@site/src/components/StructuredData'
 
 To provide an easy way to collect web content such as web pages, articles, PDF documents, bookmarks, places, and screenshots, we have created the TagSpaces Web Clipper browser extension. Unlike other web clipping software, our extension saves content locally on the user's hard drive as plain files, offering full control over the saved files.
 
-The extension is available for [Chrome](https://chrome.google.com/webstore/detail/tagspaces-web-clipper/ldalmgifdlgpiiadeccbcjojljeanhjk), [Firefox](https://addons.mozilla.org/en-US/firefox/addon/tagspaces/), and [Microsoft Edge](https://microsoftedge.microsoft.com/addons/detail/tagspaces-web-clipper/dinjgbhjngaockabnagbonbfinanjpdn).
+The extension is available for [Chrome](https://chrome.google.com/webstore/detail/tagspaces-web-clipper/ldalmgifdlgpiiadeccbcjojljeanhjk), [Firefox](https://addons.mozilla.org/en-US/firefox/addon/tagspaces/), [Microsoft Edge](https://microsoftedge.microsoft.com/addons/detail/tagspaces-web-clipper/dinjgbhjngaockabnagbonbfinanjpdn), and other Chromium-based browsers like **Brave** and **Opera** (install from the [Chrome Web Store](https://chrome.google.com/webstore/detail/tagspaces-web-clipper/ldalmgifdlgpiiadeccbcjojljeanhjk) ).
 
 <CenteredVideo
     caption="Demonstration of content collection with the web clipper"
@@ -37,12 +37,12 @@ Before creating any file, the user can change the file's title and add tags to i
 />
 
 :::tip
-The basic functionalities described in the following sections are completely decoupled from the TagSpaces desktop application and can be used with any other application that supports HTML, MHTML, PNG, PDF, or URL files.
+The basic functionalities described in the following sections are completely decoupled from the TagSpaces desktop application and can be used with any other application that supports HTML, Markdown, MHTML, PNG, PDF, or URL files.
 :::
 
 ### Save Content as HTML
 
-The `Save Editable Page` button saves the current webpage as a single file, including embedded images and styling, in HTML format. There are two modes available:
+The `Save Editable Page` button saves the current webpage as a single file, including embedded images and styling, in HTML format. There are two basic extraction modes available:
 
 - **Simplified Mode:** Automatically extracts the webpage's main content without clutter like ads or navigation, useful for clipping articles (uses [Mozilla's Readability](https://github.com/mozilla/readability) library).
 - **Full Mode:** Saves all original text and image content of the webpage.
@@ -50,12 +50,36 @@ The `Save Editable Page` button saves the current webpage as a single file, incl
 HTML files can be opened with any web browser. TagSpaces also has a built-in [viewer](/extensions/html-viewer/) and [editor](/extensions/html-editor/) for HTML files, allowing users to add comments or highlight important information.
 
 :::info
-The javascript code in the crate HTML-file is removed in order to prevent unwanted behavior on opening the file with other programs.
+JavaScript code in the created HTML file is removed to prevent unwanted behavior when opening the file with other programs.
+:::
+
+### Save Content as Markdown
+
+By switching the extraction type to **Markdown** in the extension popup, the `Save Editable Page` button saves the webpage content as a `.md` file instead of HTML. The HTML-to-Markdown conversion is powered by the [Turndown](https://github.com/mixmark-io/turndown) library.
+
+This is useful for creating clean, editable notes from web articles that can be opened in any text editor or in TagSpaces' built-in [Markdown editor](/extensions/md-editor).
+
+When the **front matter** option is enabled in the extension settings, a YAML metadata block is automatically added to the top of the markdown file:
+
+```yaml
+---
+url: "https://example.com/article"
+date: "2026-04-08T12:34:56.789Z"
+tags:
+  - "tag1"
+  - "tag2"
+---
+```
+
+This front matter preserves the source URL, clipping date, and any tags you added, making the file self-contained and easy to process with static site generators or note-taking tools.
+
+:::info
+The markdown extraction mode is marked as experimental. Results may vary depending on the complexity of the webpage.
 :::
 
 ### Save Content as MHTML
 
-Available only on Chromium-based browsers like Chrome and Edge, the `Save Complete Page` button saves the webpage in MHTML format, preserving the original design as much as possible.
+Available only on Chromium-based browsers (Chrome, Edge, Brave, Opera), the `Save Complete Page` button saves the webpage in MHTML format, preserving the original design as much as possible.
 
 On some browsers, MHTML saving is not enabled by default. Learn how to activate it [here](#enabling-the-saving-of-webpages-as-mhtml).
 
@@ -90,6 +114,7 @@ The TagSpaces Web Clipper also includes several advanced features:
 - **Geo Coordinates Extraction:** For URLs from mapping services like OpenStreetMap or Google Maps, the extension extracts geo coordinates and converts them to a geo tag, embedded in the file name.
 - **Plus Codes Support:** The geo tag can be converted to [Open Location Code](https://github.com/google/open-location-code) or Plus Codes, which provide a simpler and more readable representation of geo coordinates (used in Google Maps).
 - **Automated Tagging:** When saving a screenshot, the domain of the webpage, current date, and the "screenshot" tag are automatically added to the file, making search and organization easier within TagSpaces and other applications.
+- **Auto-Tag Extraction:** The extension can extract tags from page metadata (meta keywords, article tags, category URLs, and JSON-LD data) and populate the tags field automatically. A **Clear Tags** button is available to quickly remove all extracted or manually entered tags.
 
 <CenteredImage
     caption="A screenshot showing the extracted geo location as Plus Code"
@@ -101,8 +126,12 @@ The browser extension seamlessly integrates with the TagSpaces desktop applicati
 
 ## Extension Options
 
-Currently the extension has only one setting, with which the embedding of a web page screenshot in URL and HTML files can be disabled.
-The following screenshots show how to access the extension preferences in the Chrome and Firefox browsers.
+The extension options can be accessed in several ways:
+
+**In Chrome, Edge, Brave, and Opera:**
+- Click the **settings button** inside the extension popup
+- Right-click the extension icon in the toolbar and choose **Options**
+- Open the browser's extension management page and click **Details** → **Extension options**
 
 <CenteredImage
     caption="Extensions options in Chrome"
@@ -110,17 +139,34 @@ The following screenshots show how to access the extension preferences in the Ch
     showCaption
 />
 
+**In Firefox:**
+- Click the **settings button** inside the extension popup
+- Open the Firefox Add-ons Manager (`about:addons`), find the TagSpaces Web Clipper, and click **Preferences**
+
 <CenteredImage
     caption="Extensions preferences in Firefox"
     src="/media/webclipper/web-clipper-firefox-preferences.avif"
     showCaption
 />
 
-## Adjustments for Chrome-based Browsers
+The following settings are available:
+
+- **Embed screenshot in saved files** — when enabled, a screenshot of the visible area is embedded in HTML and URL files. This screenshot is used as a thumbnail in TagSpaces. Enabled by default.
+- **Embed images as data URLs** — when enabled, images on the page are converted to data URLs and embedded directly in saved HTML and Markdown files, making them fully self-contained. Enabled by default. Disable this to reduce file size if you don't need offline image access.
+- **Add YAML front matter to Markdown files** — when enabled, saved Markdown files include a YAML metadata block at the top containing the source URL, clipping date, and tags. Enabled by default.
+- **Auto-extract tags from page metadata** — when enabled, the extension automatically extracts tags from the page's meta keywords, article tags, category URLs, and JSON-LD structured data, and populates the tags field in the popup. Disabled by default.
+
+:::info
+The auto-tag extraction feature is experimental. Extracted tags depend on the metadata provided by the website.
+:::
+
+## Adjustments for Chromium-based Browsers
+
+The following adjustments apply to Chrome, Edge, Brave, Opera, and other Chromium-based browsers.
 
 ### Enabling Webpage Saving as MHTML
 
-Follow these steps to enable MHTML saving in Chrome and Chromium browsers:
+Follow these steps to enable MHTML saving in Chromium-based browsers:
 
 1. Open Chrome/Chromium.
 2. Navigate to `chrome://flags`.
