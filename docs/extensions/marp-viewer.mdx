@@ -1,0 +1,121 @@
+---
+title: Marp Viewer
+description: TagSpaces extension for viewing Marp markdown presentations (.marp) with slide navigation, zoom, math rendering, syntax highlighting, and print support.
+tags: [extension]
+---
+
+import {
+  CenteredImage,
+  CenteredVideo,
+} from "@site/src/components/CommonBlocks";
+import ImageSlider from "@site/src/components/ImageSlider";
+import { TechArticleStructuredData } from "@site/src/components/StructuredData";
+
+<TechArticleStructuredData />
+
+# Marp Viewer
+
+The Marp Viewer extension allows you to open and present `.marp` files in TagSpaces. These files use the [Marp](https://marp.app/) format — a markdown-based presentation ecosystem that lets you create slide decks from plain text.
+
+If you use Marp CLI, VS Code Marp extension, or any other Marp-compatible tool to author presentations, you can preview them directly in TagSpaces without leaving your file manager.
+
+<ImageSlider
+  height={740}
+  showCaption={true}
+  items={[
+    {
+      imageAlt: "Marp slide with markdown syntax rendering",
+      imageUrl: "/media/extensions/marp-viewer-1.avif",
+    },
+    {
+      imageAlt: "Marp slide with custom background image",
+      imageUrl: "/media/extensions/marp-viewer-2.avif",
+    },
+    {
+      imageAlt:
+        "Marp slide with latex math rendering and syntax highlighted code block",
+      imageUrl: "/media/extensions/marp-viewer-3.avif",
+    },
+    {
+      imageAlt: "Marp slide with custom background colors",
+      imageUrl: "/media/extensions/marp-viewer-4.avif",
+    },
+  ]}
+/>
+
+## What is Marp?
+
+Marp (Markdown Presentation Ecosystem) is an open-source tool for creating presentations from markdown files. A `.marp` file is a standard markdown document with YAML frontmatter directives that control slide separation, themes, and layout. Slides are separated by `---` horizontal rules.
+
+```markdown
+---
+marp: true
+theme: default
+---
+
+# First Slide
+
+Content for the first slide
+
+---
+
+# Second Slide
+
+- Bullet points
+- With **markdown** formatting
+- And `code` snippets
+```
+
+## Features
+
+- View `.marp` markdown presentations as formatted slides
+- Navigate between slides using arrow keys, Space, Page Up/Down, Home/End, or by clicking the left/right margin areas
+- Slide counter showing current position (e.g. "3 / 12")
+- Zoom in and out (30%–500%) with persistent zoom level
+- 16:9 aspect ratio slides with responsive scaling
+- Full markdown rendering including **bold**, _italic_, lists, tables, images, and links
+- Syntax highlighting for code blocks (powered by highlight.js)
+- Mathematical equations via KaTeX and MathJax
+- HTML content support within slides
+- Text search within the presentation
+- Print support with clean output — all slides rendered for printing in landscape layout
+- Light and dark theme support
+
+## Keyboard Shortcuts
+
+| Action         | Key                            |
+| -------------- | ------------------------------ |
+| Next slide     | `→`, `↓`, `Space`, `Page Down` |
+| Previous slide | `←`, `↑`, `Page Up`            |
+| First slide    | `Home`                         |
+| Last slide     | `End`                          |
+
+## Used Libraries
+
+This extension relies on the following libraries:
+
+- [Marp Core](https://github.com/marp-team/marp-core) — the official Marp rendering engine
+- [Marpit](https://marpit.marp.app/) — the foundational slide framework
+- [highlight.js](https://highlightjs.org/) — syntax highlighting for code blocks
+- [KaTeX](https://katex.org/) — fast math rendering
+- [markdown-it](https://github.com/markdown-it/markdown-it) — markdown parser
+- [Bootstrap](https://getbootstrap.com/)
+- [i18next](https://www.i18next.com/)
+- [mark.js](https://markjs.io/) — text search highlighting
+- [DOMPurify](https://github.com/cure53/DOMPurify) — HTML sanitization
+
+## Installation
+
+This extension is packaged with every version of TagSpaces.
+
+## Source Code
+
+The source code of this extension is freely available on [GitHub](https://github.com/tagspaces/tagspaces-extensions/tree/main/marp-viewer).
+
+## Development
+
+If you want to extend this extension, please follow the [extension development guide](/dev/extension-development-guide).
+
+## License
+
+[MIT](https://github.com/tagspaces/tagspaces-extensions/blob/main/marp-viewer/LICENSE.txt)

@@ -176,6 +176,7 @@ const sidebars = {
             "extensions/document-viewer",
             "extensions/rtf-viewer",
             "extensions/slides-viewer",
+            "extensions/marp-viewer",
           ],
         },
         {
@@ -183,6 +184,7 @@ const sidebars = {
           label: "Archives & Other",
           items: [
             "extensions/archive-viewer",
+            "extensions/canvas-viewer",
             "extensions/mindmap-viewer",
             "extensions/contact-viewer",
             "extensions/font-viewer",
