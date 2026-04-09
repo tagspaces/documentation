@@ -1,2 +1,3 @@
 User-agent: *
+Allow: /
 Sitemap: https://docs.tagspaces.org/sitemap.xml
