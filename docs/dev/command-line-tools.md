@@ -37,8 +37,11 @@ This makes the `tscmd` command available globally.
 | `tscmd tag`         | Add tags to files and folders                |
 | `tscmd describe`    | Set descriptions on files and folders        |
 | `tscmd indexer`     | Generate a search index for a folder         |
+| `tscmd search`      | Query an existing index for matching files   |
 | `tscmd thumbgen`    | Generate thumbnails for a folder             |
 | `tscmd metacleaner` | Remove orphaned sidecar files and thumbnails |
+
+All commands that take a directory argument accept **multiple directories** in a single invocation — for example `tscmd indexer /path/a /path/b /path/c`.
 
 ## Tagging Files and Folders
 
@@ -106,13 +109,103 @@ Descriptions are stored in `.ts/` sidecar files and are visible in the TagSpaces
 
 ## Search Index Generation
 
-Create a full-text search index for a folder and all its subfolders:
+Create a search index for a folder and all its subfolders:
 
 ```bash
 tscmd indexer /path/to/folder/
 ```
 
-The generated index is stored as `.ts/tsi.json` and is used by TagSpaces for fast search operations. This is especially useful for large file collections or locations on object storage where on-the-fly indexing would be too slow.
+By default the index stores file and folder metadata only (tags, descriptions, sizes, timestamps). To also extract textual content from files for full-text search, add `--fulltext`:
+
+```bash
+tscmd indexer --fulltext /path/to/folder/
+```
+
+The extracted content covers plain text (`.txt`, `.md`, `.marp`), HTML (`.htm`, `.html`, `.xhtml`, `.shtml`, `.mhtml`), email (`.eml`), web shortcuts (`.url`, `.website`, `.webloc`, `.desktop`), tabular/contacts (`.csv`, `.vcf`), documents (`.pdf`, `.docx`, `.odt`), spreadsheets (`.xlsx`, `.ods`), presentations (`.pptx`, `.odp`), and ebooks (`.epub`).
+
+Index multiple folders in one call:
+
+```bash
+tscmd indexer /path/to/folder1 /path/to/folder2
+```
+
+### Options
+
+| Option            | Description                                                                |
+| ----------------- | -------------------------------------------------------------------------- |
+| `-f, --fulltext`  | Extract full-text content from files                                       |
+| `-l, --links`     | Also extract outbound links from file content (requires `--fulltext`)      |
+| `--force`         | Force a full re-index (skip incremental; rebuilds from scratch)            |
+
+### Incremental indexing
+
+Running `tscmd indexer` a second time on the same folder only re-processes files whose size or modification time changed, and prunes entries for files that were deleted. The command prints a summary line like:
+
+```
+  incremental: +3 ~1 -2 =1247
+```
+
+…meaning 3 files were added, 1 modified, 2 removed, and 1247 kept unchanged. Use `--force` to bypass the incremental path and rebuild everything.
+
+After each run the CLI prints counts (files, folders, total size), full-text stats (files with text, token count) when `--fulltext` was used, and the elapsed time.
+
+### Output files
+
+The index is split into two files inside `.ts/`:
+
+| File            | Content                                                           |
+| --------------- | ----------------------------------------------------------------- |
+| `tsi.json`      | Metadata index — tags, sizes, timestamps, descriptions            |
+| `tsft.jsonl`    | Full-text content (one JSON object per line), only when `-f` used |
+
+Splitting the content keeps `tsi.json` small for fast loads, and lets the full-text file be streamed or partially re-read. Both files are used transparently by TagSpaces Desktop and Web.
+
+## Searching the Index
+
+Query an existing index:
+
+```bash
+tscmd search /path/to/folder -q "quarterly report"
+```
+
+The `search` command reads `.ts/tsi.json` (and `.ts/tsft.jsonl` when the query contains free-text terms) and prints matching entries. It does not touch the filesystem beyond reading these index files, so it is fast and safe to run repeatedly.
+
+### Query syntax
+
+The `-q` string mixes free-text terms with tag prefixes:
+
+- Bare words — matched against filename, path, description, and extracted full-text
+- `+tag` — entry must carry this tag (AND)
+- `-tag` — entry must not carry this tag (NOT)
+- `|tag` — entry carries at least one of these tags (OR)
+
+Example combining all four:
+
+```bash
+tscmd search /documents -q "invoice +finance -draft |urgent"
+```
+
+### Options
+
+| Option              | Description                                                                                          |
+| ------------------- | ---------------------------------------------------------------------------------------------------- |
+| `-q, --query`       | Query string (see syntax above)                                                                      |
+| `-t, --tags`        | Additional tags to match (AND logic, merged with `+tag` from `-q`)                                   |
+| `--type`            | File-type group: `any`, `images`, `documents`, `notes`, `audio`, `video`, `archives`, `bookmarks`, `ebooks`, `emails`, `folders`, `files`, `untagged` |
+| `-s, --search-type` | Match accuracy: `fuzzy` (default), `semistrict`, or `strict`                                         |
+| `-n, --max-results` | Maximum number of results (default: 100)                                                             |
+
+Narrow results to images tagged `vacation` but not `private`:
+
+```bash
+tscmd search /photos --type images -q "+vacation -private"
+```
+
+Strict substring search with no fuzzy matching:
+
+```bash
+tscmd search /notes -q "API key" -s strict
+```
 
 ## Thumbnail Generation
 
@@ -181,9 +274,12 @@ tscmd tag /downloads/team-photo.jpg -t team event berlin
 echo "Quarterly financial report covering Q1 2026 revenue and expenses" \
   | tscmd describe /downloads/report-q1.pdf -d -
 
-# Generate thumbnails and search index for the organized folder
+# Generate thumbnails and a full-text search index for the organized folder
 tscmd thumbgen /downloads/
-tscmd indexer /downloads/
+tscmd indexer --fulltext /downloads/
+
+# Later, query the index
+tscmd search /downloads/ -q "quarterly +finance"
 ```
 
 ### Example: batch processing with pipes
@@ -212,12 +308,13 @@ done
 
 All metadata generated by tscmd is stored in `.ts/` subdirectories:
 
-| File                                                                     | Content                                    |
-| ------------------------------------------------------------------------ | ------------------------------------------ |
-| [`.ts/filename.json`](/dev/metafileformats#file-meta-description-format) | Tags and description for a file            |
-| [`.ts/tsm.json`](/dev/metafileformats#folder-meta-description-format)    | Tags and description for the parent folder |
-| `.ts/filename.jpg`                                                       | Thumbnail for a file                       |
-| `.ts/tsi.json`                                                           | Search index for the folder                |
+| File                                                                     | Content                                                       |
+| ------------------------------------------------------------------------ | ------------------------------------------------------------- |
+| [`.ts/filename.json`](/dev/metafileformats#file-meta-description-format) | Tags and description for a file                               |
+| [`.ts/tsm.json`](/dev/metafileformats#folder-meta-description-format)    | Tags and description for the parent folder                    |
+| `.ts/filename.jpg`                                                       | Thumbnail for a file                                          |
+| `.ts/tsi.json`                                                           | Metadata index for the folder (tags, sizes, timestamps)       |
+| `.ts/tsft.jsonl`                                                         | Extracted full-text content, one JSON object per line         |
 
 These files are automatically recognized by TagSpaces Desktop and Web applications.
 

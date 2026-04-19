@@ -5,20 +5,20 @@ description: Complete guide to TagSpaces search with AND, OR, NOT operators, ful
 
 import VideoYT from '@site/src/components/VideoYT';
 import { ProFeature, CenteredImage, CenteredVideo } from '@site/src/components/CommonBlocks';
-import { TechArticleStructuredData } from '@site/src/components/StructuredData';
+import { TechArticleStructuredData } from '@site/src/components/StructuredData';
 
 <TechArticleStructuredData />
 
 
 In order to offer desktop search functionalities, TagSpaces provides a variety of search-related features, which are described in this section.
 
-With the search functionality, you are able to find files and folders by their name, tags, and other properties. The search algorithm considers different weights for the following properties of the [indexed](#indexing) entries:
+With the search functionality, you are able to find files and folders by their name, tags, and other properties. The search algorithm considers different weights for the following properties of the [indexed](#indexing) entries, with the file or folder name being the strongest signal:
 
 - The name of the file or the folder
-- The tags (with tag descriptions) assigned to the file or the folder
 - The description added to the file or the folder
-- The name of the parent directory of a given file is also considered by the search algorithm. For example, if you are searching for photos from your vacation in the USA and the folder where these files are located contains the word USA (e.g., '20160301 vacation usa'), the search will list all the files located directly in this folder.
-- <ProFeature /> The content of TXT, MD, and HTML files if the [full-text search](#full-text-search) is activated for the current location.
+- The path of the file, including the names of the parent directories. For example, if you are searching for photos from your vacation in the USA and the folder where these files are located contains the word USA (e.g., `20160301 vacation usa`), the search will list all the files located directly in this folder.
+- The tags (and their descriptions) assigned to the file or the folder
+- <ProFeature /> The content of supported text and office files if the [full-text search](#full-text-search) is activated for the current location.
 
 ## Open the search
 
@@ -51,9 +51,9 @@ The **advanced search options**, visible in the next screenshot, can be accessed
 
 The search query consists of two parts. The first one is just a simple free text that is searched in the index. The second component is a list of tags. Here, you can define a more precise query by including and excluding tags. You can use the following shortcuts to add, remove, or exclude certain tags:
 
-- `+` - Will add the tag to the **Must contain all of the tags** field - logical AND
-- `|` - Will add the tag to the **At least one tag** field - logical OR
-- `-` - Will add the tag to the **None of these tags** field - logical exclusion
+- `+` - Will add the tag to the **Must contain all of the tags** field — logical **AND**
+- `|` - Will add the tag to the **At least one tag** field — logical **OR**
+- `-` - Will add the tag to the **None of these tags** field — logical **NOT**
 
 The tags specified here will be visible in the search options described in the previous [paragraph](#search-for-tagged-entries).
 
@@ -68,12 +68,24 @@ The tags specified here will be visible in the search options described in the p
 
 Example search queries:
 
-- **"+usa +beach -sunset jpg"** - Will find all files and folders having `jpg` in the name and having the `usa` and `beach` tags but not the `sunset` tag.
-- **"|beach |sunset"** - Will find all files and folders having the tags `beach` or `sunset`.
+- **`+usa +beach -sunset jpg`** — files and folders with `jpg` in the name or content, tagged with `usa` **and** `beach`, but **not** `sunset`.
+- **`|beach |sunset`** — files and folders tagged with `beach` **or** `sunset` (at least one).
+- **`project discussion`** — files where **both** `project` **and** `discussion` appear (the default is fuzzy matching — see [Search accuracy](#search-accuracy) for strict variants).
+- **`"quarterly report"`** — files containing the exact phrase. Double quotes keep the words together.
+
+### Pasting a complex query
+
+You can compose the entire query externally and paste it into the search box in one go, for example:
+
+```
+project notes +work +urgent -draft |client-a
+```
+
+When the pasted (or fully typed) input contains a text term together with any tag prefix (`+`, `-`, or `|`), TagSpaces recognizes every token, creates the corresponding tag chips, and routes the remaining words into the free-text part. Pressing `ENTER` immediately runs the search.
 
 ### Search query composition
 
-As usual, the search can be opened by the `CTRL+SHIFT+F` (`⌘+SHIFT+F` on Mac) key binding. The opened dropdown has two sections. The first is called **Actions**, which will be described below, and the second is **Search query composition**. This allows you to easily compose complex search queries, combining or excluding tags, choosing file size limits, types, and details.
+The opened dropdown has two sections. The first is **Actions**, described below, and the second is **Search query composition**, which lets you compose complex queries by combining tags with filters for file type, size, dates, scope, and accuracy.
 
 <CenteredImage
   caption="Query composition in the search box"
@@ -83,14 +95,17 @@ As usual, the search can be opened by the `CTRL+SHIFT+F` (`⌘+SHIFT+F` on Mac) 
 
 The following commands are currently supported:
 
-- **AND tag** - Typing `+` will show the list of all tags in the dropdown so you can select tags that should be present in every file or folder in the search results.
-- **NOT tag** - Typing `|` will show the list of all tags in the dropdown so you can select tags that may be present in files or folders in the search results, e.g., files tagged with "tag1" or "tag2."
-- **OR tag** - Typing `-` will show the list of all tags in the dropdown so you can select tags that should be excluded from the search results.
-- **File type** - Typing `t:` will present a list of supported file type groups, helping to narrow down the search results to documents, images, etc.
-- **File size** - Typing `s:` will present a list of predefined file sizes.
-- **Last modified** - Typing `lm:` will present a list of predefined points back in time.
-- **Search scope** - Typing `sc:` will allow you to choose from the following search scopes: current folder, current location, global search in all locations.
-- **Search accuracy** - Typing `a:` will allow you to toggle the search accuracy between fuzzy, semi-strict, or strict.
+- **AND tag** — Typing `+` shows the tag suggestions; select to require the tag on every result.
+- **OR tag** — Typing `|` shows the tag suggestions; select to allow results tagged with at least one of them.
+- **NOT tag** — Typing `-` shows the tag suggestions; select to exclude results with that tag.
+- **File type** — Typing `t:` presents supported file type groups to narrow results (documents, images, notes, etc.).
+- **File size** — Typing `si:` presents predefined size buckets.
+- **Last modified** — Typing `lm:` presents predefined time windows.
+- **Date created** — Typing `cd:` presents predefined creation-date windows.
+- **Search scope** — Typing `sc:` lets you pick between current folder, current location, or global search.
+- **Search accuracy** — Typing `a:` toggles between fuzzy, semistrict, or strict matching.
+
+The chip row reorders itself for clarity: scope and accuracy chips come first (they are search-wide modifiers), filter chips (type, size, dates) in the middle, and tag chips last.
 
 ### App actions
 
@@ -109,17 +124,37 @@ In the search menu, you can also start some common actions just by using your ke
 
 The search algorithm can be required to deliver results for the following search scopes:
 
-- **Location** - will deliver results from the current location. This is the default scope.
-- **Folder** - will deliver results for the current folder, including all sub-folders.
-- **Global** - will search in all configured locations. You can find more in the [Global Search](#global-search) section.
+- **Location** — will deliver results from the current location. This is the default scope.
+- **Folder** — will deliver results for the current folder, including all sub-folders.
+- **Global** — will search in all configured locations. You can find more in the [Global Search](#global-search) section.
 
 ### Search accuracy
 
-The following three types of searches are supported:
+Three search accuracy modes are supported. In every mode, a query with multiple words behaves as a logical **AND** — every term must match somewhere in the entry. Quote a phrase with `"..."` to keep words together as a single term.
 
-- **Fuzzy** - will deliver broader search results, tolerating typos in the search query.
-- **Strict** - will deliver exact search results.
-- **Semi-strict** - similar to strict but case insensitive.
+- **Fuzzy** (default) — tolerant matching that forgives typos and incomplete words. Fuzzy mode also enables an advanced query syntax (powered by [Fuse.js extended search](https://www.fusejs.io/examples.html#extended-search)) that lets you fine-tune the results.
+
+  White space acts as an **AND** operator, while a single pipe (`|`) character acts as an **OR** operator. To escape white space, use double quotes — e.g. `="vacation photos"` for an exact-match phrase.
+
+  | Token | Match type | Description |
+  |---|---|---|
+  | `report` | fuzzy-match | Items that fuzzy match `report` |
+  | `=invoice` | exact-match | Items that are exactly `invoice` |
+  | `'budget` | include-match | Items that include `budget` |
+  | `!draft` | inverse-exact-match | Items that do not include `draft` |
+  | `^meeting` | prefix-exact-match | Items that start with `meeting` |
+  | `!^archive` | inverse-prefix-exact-match | Items that do not start with `archive` |
+  | `.pdf$` | suffix-exact-match | Items that end with `.pdf` |
+  | `!.tmp$` | inverse-suffix-exact-match | Items that do not end with `.tmp` |
+
+- **Strict** — case-sensitive, no fuzziness. Each term must appear verbatim in one of the searched fields.
+- **Semistrict** — like strict but case-insensitive. `Report` also matches `report` or `REPORT`.
+
+Starting with version 6.11, strict and semistrict queries also support multi-word AND semantics and `"quoted phrases"`, matching how fuzzy mode already worked.
+
+:::tip
+The default fuzzy matching is tuned to forgive typos but reject unrelated short-string collisions. If a search feels too strict for your data, switch to `a: fuzzy` (the default) — strict and semistrict are only meant for exact-lookup workflows.
+:::
 
 ### Search for tagged entries
 
@@ -136,7 +171,7 @@ To support detailed search for tags, the user interface for entering them is spl
 In the file type dropdown, you can specify which types of files to search. The file types are grouped into the following sections:
 
 - **Pictures and Photos**: e.g., JPG, PNG, GIF
-- **Documents**: e.g., PDF, ODF, DOCX, EXL
+- **Documents**: e.g., PDF, ODF, DOCX, XLSX
 - **Notes**: e.g., MD, TXT, HTML
 - **Audio files**: e.g., OGG, MP3, WAV
 - **Video files**: e.g., WEBM, OGV, MP4
@@ -211,17 +246,85 @@ This filter limits search results to files and folders that have date-time tags 
 
 This filter is planned.
 
+## Full-text search
+
+<ProFeature />
+
+With full-text indexing enabled on a location, TagSpaces extracts the readable text of your files during indexing and makes it searchable by any keyword it contains.
+
+You can activate this feature for each location individually in the **Edit Location** dialog. Once activated, the next indexing pass will pull the text out of supported files and merge it into the index.
+
+<CenteredImage
+    caption="Enabling full-text indexing"
+    src="/media/locations/enable-fulltext-search.avif"
+    maxWidth="500px"
+    showCaption
+  />
+
+### Supported file types
+
+| Category | Extensions | Notes |
+|---|---|---|
+| Plain text | `.txt`, `.md`, `.marp` | Markdown and [Marp](https://marp.app/) presentations |
+| HTML family | `.htm`, `.html`, `.xhtml`, `.shtml`, `.mhtml` | Body text extracted, scripts/styles stripped |
+| Email | `.eml` | Headers and body treated as plain text |
+| Web shortcuts | `.url`, `.website`, `.webloc`, `.desktop` | URL, name, and description fields |
+| Tabular | `.csv` | Cell values, commas and semicolons treated as separators |
+| Contacts | `.vcf` (vCard) | Name, email, organisation, title, phones, etc. |
+| Documents | `.docx`, `.pdf` | Word documents and searchable PDFs (OCR must be done before) |
+| Spreadsheets | `.xlsx`, `.ods` | Shared strings and inline cell values |
+| Presentations | `.pptx`, `.odp` | Slide text, speaker notes, slide layouts |
+| OpenDocument text | `.odt` | Body, styles, metadata |
+| Ebooks | `.epub` | All XHTML chapter files inside the archive |
+
+### Embedded images and attachments
+
+Screenshots embedded as `data:image/...` URLs in Markdown or HTML, inline base64 icons in `.url` / `.webloc` files, and `PHOTO` fields in vCards are stripped out **before** the text is indexed. This keeps `tsft.jsonl` (the fulltext index file) small, keeps indexing fast, and keeps searches relevant.
+
+Binary attachments inside MHTML, EPUB, or Office archives are ignored for the same reason — only the readable content goes into the index.
+
+### Chinese, Japanese, Korean
+
+CJK text has no spaces between words, so TagSpaces indexes it as **overlapping character bigrams** in addition to individual characters. The query `中国` will find documents containing `中国`, `美国中国人`, and similar runs. Single-character CJK queries (e.g., `中`) are also supported — the outer Latin one-character-query gate doesn't apply to CJK.
+
+### The split index format
+
+Since version 6.11, the fulltext content is stored in a separate `tsft.jsonl` file alongside the main `tsi.json` metadata index. Consequences for users:
+
+- **Searches that don't need fulltext** (tag filters, filenames, etc.) load only `tsi.json` — much faster.
+- **Fulltext is loaded on demand** the first time you run a text search in a given session.
+- **The regular index stays small** even when fulltext indexing is enabled on huge locations.
+
+Older indexes are read transparently: a location last indexed with the previous monolithic format will be upgraded to the split format the next time the index is rebuilt.
+
+:::caution
+Activating full-text search on locations with many large files increases initial indexing time and disk usage for the index. [Incremental indexing](#indexing) mitigates this on subsequent runs — only new or modified files are re-processed.
+:::
+
 ## Indexing
 
-TagSpaces has an integrated file and folder search functionality based on an **index**, which is created when you hit the search button. By default, the index is valid for 10 minutes. This time can be adjusted individually in the properties of each [location](/ui/locations/#local-locations). The idea is that some locations may contain files that do not change often, so a longer validity period, like 1 month, can be applied.
+TagSpaces has an integrated file and folder search based on an **index**. The index is created the first time you run a search on a location and refreshed automatically when it becomes older than the location's configured maximum age (10 minutes by default). This maximum age can be adjusted individually in the properties of each [location](/ui/locations/#local-locations) — locations that rarely change can safely use an age of a week or a month.
 
-If your location contains a large number of files (>50,000), it is recommended to split it into two or more locations or to [disable the indexing](/ui/locations#local-locations).
+### Incremental indexing
 
-If you decide to disable automatic indexing, you should manually update the index regularly to maintain working and accurate search functionality. The index can be updated in the following ways:
+Starting with version 6.11, re-indexing is incremental by default. On the second and any subsequent run, TagSpaces first performs a lightweight walk of the directory tree that only reads file timestamps and sizes, then:
 
-- In the menu of each location in the location manager, there is an item called "Refresh Location Index."
-- All indexes can be updated at once from the search menu with the option "Update all location indexes."
-- Create the index manually with the [command line tools](/dev/command-line-tools).
+- **Unchanged** files are kept from the existing index as-is (including their extracted text).
+- **New** files are indexed from scratch.
+- **Modified** files (different mtime or size) are re-extracted.
+- **Deleted** files are removed from the index.
+
+Re-indexing a 50,000-file location typically takes a few seconds instead of minutes when most files haven't changed. You can force a full re-index any time from the search menu ("Update all location indexes") or with the `--force` flag on the [command-line tool](/dev/command-line-tools).
+
+### Large locations and manual updates
+
+If your location contains a very large number of files (>50,000), it is recommended to split it into two or more locations or to [disable automatic indexing](/ui/locations#local-locations).
+
+When automatic indexing is disabled, the index can be refreshed in the following ways:
+
+- In the menu of each location in the location manager, there is an item called **Refresh Location Index**.
+- All indexes can be updated at once from the search menu with the option **Update all location indexes**.
+- Create or refresh the index manually with the [command-line tools](/dev/command-line-tools).
 
 <CenteredImage
     caption="Updating indexes for all locations"
@@ -241,37 +344,9 @@ By default, TagSpaces limits the number of search results to 1,000 files and fol
     showCaption
   />
 
-## Full text search
-
-<ProFeature />
-
-TagSpaces PRO supports full text search for text (.TXT), markdown (.MD), HTML and searchable PDF files. You can activate this feature for each location individually in the "Edit Location" dialog, as seen in the following screenshot. Once activated (see the screenshot below), during the indexing of a given location, the application will extract the text content of the supported files and create a keyword list that will be considered in the search algorithm.
-
-:::caution
-On locations with many large text files, activating this feature may slow down the application's performance, so be careful where you activate it.
-:::
-
-These file formats are currently supported:
-
-- **HTML** - files in HTML format, used for rich text notes.
-- **MD** - markdown files.
-- **TXT** - plain text files.
-- **PDF** - searchable PDF documents (already OCR-ed).
-
-<CenteredImage
-    caption="Enabling full-text indexing"
-    src="/media/locations/enable-fulltext-search.avif"
-    maxWidth="500px"
-    showCaption
-  />
-
-:::caution
-This feature is still in beta and could lead to performance issues if you have many or large text files.
-:::
-
 ## Global search
 
-TagSpaces Pro offers searching across all locations, called "Global search." It works on both local and remote S3-based locations. You can activate this feature by clicking the _Global_ button in the search area, as shown in the following screenshot.
+TagSpaces Pro offers searching across all locations, called **Global search**. It works on both local and remote S3-based locations. You can activate this feature by clicking the _Global_ button in the search area, as shown in the following screenshot.
 
 <CenteredImage
     caption="Activating the global search"
@@ -280,12 +355,12 @@ TagSpaces Pro offers searching across all locations, called "Global search." It 
     showCaption
   />
 
-Once in _Global search_ mode, you will see an additional option called "Force re-indexing all locations." Activating this checkbox will force TagSpaces to create a new index for each location before searching in it. This option delivers the most accurate search results but may take more time, especially when re-indexing remote locations or locations with many files.
+Once in _Global search_ mode, you will see an additional option called **Force re-indexing all locations**. Activating this checkbox will force TagSpaces to create a new index for each location before searching in it. This option delivers the most accurate search results but may take more time, especially when re-indexing remote locations or locations with many files. Incremental indexing still applies — only new or changed files are re-processed unless you also pass `--force`.
 
-All other search settings work the same as in single location searches. The [search result limit](#limiting-the-search-results) applies here; once the limit is reached, TagSpaces will stop the search and not continue searching the remaining locations.
+All other search settings work the same as in single-location searches. The [search result limit](#limit-the-search-results) applies here; once the limit is reached, TagSpaces will stop the search and not continue searching the remaining locations.
 
 :::info
-If you are in the context of a given [workspace](/workspaces), the global search will deliver only result from the location assigned to the current workspace.
+If you are in the context of a given [workspace](/workspaces), the global search will deliver only results from the locations assigned to the current workspace.
 :::
 
 ## Search history
