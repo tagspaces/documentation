@@ -221,20 +221,6 @@ To include PDF thumbnail generation, add the `-p` flag:
 tscmd thumbgen -p /path/to/folder/
 ```
 
-### Prerequisites for thumbnail genaration
-
-The [sharp](https://sharp.pixelplumbing.com/install) library must be installed globally:
-
-```bash
-npm install -g sharp
-```
-
-Set the `NODE_PATH` environment variable to point to the global npm modules:
-
-```bash
-export NODE_PATH=$(npm root --quiet -g)
-```
-
 Thumbnails are stored in the `.ts/` subdirectory alongside the source files.
 
 ## Cleaning Obsolete Metadata
