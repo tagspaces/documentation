@@ -14,7 +14,7 @@ A TagSpaces extension allowing you to open different kinds of image formats.
 
 ## Features
 
-- Opening of the following image formats: JPG, PNG, GIF, SVG, BMP, WEBP, ICO, TIFF, AVIF, TGA
+- Opening of the following image formats: JPG, PNG, GIF, SVG, BMP, WEBP, ICO, TIFF, TGA
 - Preview of these formats: CR2, NEF, DNG, PSD
 - Zooming, flipping, and rotating of the current image
 - Different background colors of the viewer for better contrast
