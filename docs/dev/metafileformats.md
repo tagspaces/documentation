@@ -8,7 +8,6 @@ import { TechArticleStructuredData } from '@site/src/components/StructuredData'
 
 <TechArticleStructuredData />
 
-
 Unlike many other tools, TagSpaces uses external text files instead of a database for saving metadata about folders and files. This page documents the JSON formats used by these files. It is intended for developers, extension authors, and advanced users who need to understand or manipulate TagSpaces metadata programmatically.
 
 ## Role of the meta folder
@@ -178,7 +177,7 @@ The meta information is saved in JSON format, which has the following format:
       },
       {
         "uuid": "f3b6b54e394849d59a9a77ebeaed8a5a",
-        "name": "file2.mp4"
+        "name": "file2.md"
       },
       {
         "uuid": "eead6bac508f4634abde93921fc11a37",
