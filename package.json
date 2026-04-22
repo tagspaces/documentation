@@ -16,7 +16,8 @@
     "optipng": "optipng media/*png",
     "clear": "docusaurus clear",
     "write-translations": "docusaurus write-translations",
-    "write-heading-ids": "docusaurus write-heading-ids"
+    "write-heading-ids": "docusaurus write-heading-ids",
+    "toavif": "magick mogrify -format avif -quality 95 -type truecolor -alpha on"
   },
   "dependencies": {
     "@docusaurus/core": "3.9.2",
