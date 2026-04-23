@@ -56,16 +56,17 @@ Click **Orders** to access the download links for the latest TagSpaces Pro versi
 
 The following downloads are typically available:
 
-| Platform                           | Recommended download                        |
-| ---------------------------------- | ------------------------------------------- |
-| macOS (Apple Silicon M1/M2/M3/...) | `tagspaces-pro-mac-arm64-x.y.z.dmg`         |
-| macOS (Intel)                      | `tagspaces-pro-mac-x64-x.y.z.dmg`           |
-| Windows (x64)                      | `tagspaces-pro-win-x64-x.y.z.exe`           |
-| Windows (arm64)                    | `tagspaces-pro-win-arm64-x.y.z.exe`         |
-| Linux x64 (Debian/Ubuntu)          | `tagspaces-pro-linux-amd64-x.y.z.deb`       |
-| Linux x64 (other distributions)    | `tagspaces-pro-linux-x86_64-x.y.z.appimage` |
-| Linux arm64 (Debian/Ubuntu)        | `tagspaces-pro-linux-arm64-x.y.z.deb`       |
-| Linux arm64 (other distributions)  | `tagspaces-pro-linux-arm64-x.y.z.tar.gz`    |
+| Platform                           | Recommended download                      |
+| ---------------------------------- | ----------------------------------------- |
+| macOS (Apple Silicon M1/M2/M3/...) | `tagspaces-pro-mac-arm64-x.y.z.dmg`       |
+| macOS (Intel)                      | `tagspaces-pro-mac-x64-x.y.z.dmg`         |
+| Windows (x64)                      | `tagspaces-pro-win-x64-x.y.z.exe`         |
+| Linux x64 (Debian/Ubuntu)          | `tagspaces-pro-linux-amd64-x.y.z.deb`     |
+| Linux x64 (other distributions)    | `tagspaces-pro-linux-x86_64-x.y.z.tar.gz` |
+
+<!-- | Windows (arm64) | `tagspaces-pro-win-arm64-x.y.z.exe` |
+| Linux arm64 (Debian/Ubuntu) | `tagspaces-pro-linux-arm64-x.y.z.deb` |
+| Linux arm64 (other distributions) | `tagspaces-pro-linux-arm64-x.y.z.tar.gz` | -->
 
 Additional formats (`.pkg`, `.zip`, `.tar.gz`) are also available for each platform.
 
@@ -107,11 +108,11 @@ Use Finder to open the `.dmg` file. Some third-party archive utilities may not u
 
 TagSpaces is published for **x64** (`amd64` / `x86_64`) and **arm64** (`aarch64`) architectures. The available formats differ slightly between the two:
 
-| Format       | x64 | arm64 |
-| ------------ | --- | ----- |
-| `.deb`       | ✓   | ✓     |
-| `.tar.gz`    | ✓   | ✓     |
-| `.AppImage`  | ✓   | —     |
+| Format      | x64 | arm64 |
+| ----------- | --- | ----- |
+| `.deb`      | ✓   | ✓     |
+| `.tar.gz`   | ✓   | ✓     |
+| `.AppImage` | ✓   | —     |
 
 **`.deb` package** (Debian / Ubuntu — recommended) — install with `apt` so missing runtime dependencies (for example `libxss1`) are pulled in automatically:
 
