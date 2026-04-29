@@ -273,6 +273,7 @@ const sidebars = {
           label: "File Templates",
           href: "/ui/settings/#file-templates",
         },
+        "maptiles",
         {
           type: "link",
           label: "Key Bindings",

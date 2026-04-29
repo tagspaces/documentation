@@ -1,7 +1,7 @@
 ---
 title: Mapique Perspective
 description: TagSpaces Pro feature which displays geo-tagged files on interactive OpenStreetMap maps for location-based photo organization and trip planning.
-tags: [perspective]
+tags: [perspective, mapique]
 ---
 
 import { WebPageStructuredData } from '@site/src/components/StructuredData';
@@ -39,6 +39,8 @@ An optional topological map is provided by [OpenTopoMap](https://opentopomap.org
     src="/media/mapique/geotagged-files-topomap.avif"
     showCaption
   />
+
+Additional map tile servers — including custom commercial or self-hosted ones — can be configured. See [Map Tile Servers](/maptiles) for details on adding, switching, or self-hosting tile servers.
 
 ## User Interface
 
