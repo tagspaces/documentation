@@ -340,6 +340,7 @@ const sidebars = {
           items: [
             "tutorials/e2ee-with-tagspaces-and-cryptomator",
             "tutorials/map-tiler-tutorial",
+            "tutorials/claude-code-second-brain",
             // "tutorials/folder-customizations",
             // "tutorials/ai-chat-management",
           ],

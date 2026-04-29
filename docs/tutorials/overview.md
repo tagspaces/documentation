@@ -16,6 +16,7 @@ import { ProFeature, CenteredImage, CenteredVideo } from '@site/src/components/C
 ## Advanced topics
 
 - [Synchronize Your Offline Notes Across All Devices Without the Cloud](https://attilaorosz.medium.com/syncronise-your-offline-notes-across-all-devices-without-the-cloud-1e82fa53d1f1)
+- [Connecting Claude Code to TagSpaces (AI Second Brain)](/tutorials/claude-code-second-brain/)
 - [End to end encryption with Cryptomator](/tutorials/e2ee-with-tagspaces-and-cryptomator/)
 - [Use custom map tile services in TagSpaces Pro](/tutorials/map-tiler-tutorial/)
 - [Exporting and organizing photos from Flickr](https://www.tagspaces.org/blog/organize-flickr-export/)
