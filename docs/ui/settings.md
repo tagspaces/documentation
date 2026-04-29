@@ -8,7 +8,6 @@ import { WebPageStructuredData } from '@site/src/components/StructuredData';
 
 <WebPageStructuredData />
 
-
 # Settings
 
 To access the settings dialog, click on the gears icon located at the bottom-left part of the app.
@@ -189,4 +188,5 @@ Find out more about this tab in the [AI section](/ai/#ai-configuration) of the d
 <CenteredImage
 caption="Ollama connected in TagSpaces"
 src="/media/settings/settings-ai.avif"
+maxWidth={700}
 />
