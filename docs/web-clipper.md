@@ -97,6 +97,14 @@ If you select text and images on the webpage, the `Clip Selection` button saves 
 
 The `Take Screenshot` button saves a screenshot of the visible area of the webpage as a PNG file.
 
+### Save a Full-Page Screenshot
+
+The `Full-Page Screenshot` button captures the **entire page** — including content below the fold — and saves it as a single tall PNG file. Useful when you want to archive the visual design of a page in full, not just whatever happened to be on screen.
+
+The clipper produces this by scrolling the page in viewport-sized steps, capturing each section, and stitching the images together. To avoid duplicated header bars, navigation menus, and cookie banners in the result, **fixed and sticky elements are hidden after the first capture** and restored when the run finishes. Long pages can take several seconds because the browser limits how often a tab can be captured (no more than two captures per second), so the clipper paces itself accordingly.
+
+The resulting file is auto-tagged with `screenshot` and the page's domain, the same way the regular screenshot is.
+
 ### Save Bookmark
 
 The `Create Bookmark` button creates a URL file containing the current webpage's URL, useful for saving only the link rather than the entire page.
