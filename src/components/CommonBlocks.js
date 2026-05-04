@@ -1,7 +1,6 @@
 import React from "react";
 import useBaseUrl from "@docusaurus/useBaseUrl";
 import Link from "@docusaurus/Link";
-import { makeStyles } from "@mui/styles";
 import MUTooltip from "@mui/material/Tooltip";
 import Modal from "@mui/material/Modal";
 import DialogContent from "@mui/material/DialogContent";
@@ -85,18 +84,21 @@ export function FAQ({ data }) {
   );
 }
 
-const useStylesBootstrap = makeStyles((theme) => ({
-  tooltip: {
-    fontSize: 14,
-    backgroundColor: "#59595a",
-  },
-  //  arrow: {},
-}));
-
 export function Tooltip(props) {
-  const classes = useStylesBootstrap();
   return (
-    <MUTooltip classes={classes} arrow placement="top" {...props}></MUTooltip>
+    <MUTooltip
+      arrow
+      placement="top"
+      componentsProps={{
+        tooltip: {
+          sx: {
+            fontSize: 14,
+            backgroundColor: "#59595a",
+          },
+        },
+      }}
+      {...props}
+    />
   );
 }
 
