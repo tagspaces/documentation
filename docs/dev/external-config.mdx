@@ -1125,6 +1125,33 @@ Possible value: any css color
 
 Default value: <span style={{color: '#ff9abe'}}>`'#ff9abe'`</span>
 
+### Set the default folder color
+
+The **ExtDefaultFolderColor** property sets the accent color used for folders across the application — folder cells in the Grid, List, Kanban, Calendar, Mapique and FolderViz perspectives, as well as the folder icon in the title bar of the entry container.
+
+<Tabs groupId="config">
+  <TabItem value="js" label="extconfig.js">
+```js
+window.ExtDefaultFolderColor = "#a466aa";
+```
+  </TabItem>
+  <TabItem value="json" label="extconfig.json">
+```json
+{
+  "ExtDefaultFolderColor": "#a466aa"
+}
+```
+  </TabItem>
+</Tabs>
+
+Possible value: any css color
+
+Default value: <span style={{color: '#a466aa'}}>`'#a466aa'`</span>
+
+:::tip
+When this property is set, the matching "Default folder color" picker in **Settings → General** becomes read-only — the deployer's value wins over any color the user previously chose. Removing the property from `extconfig` returns control to the user's persisted preference.
+:::
+
 ## Custom prompts for AI functionalities
 
 ### Default question prompt
