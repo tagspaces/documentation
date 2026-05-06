@@ -961,7 +961,26 @@ window.ExtTheme = "dark";
 
 Possible values: `dark`, `light`.
 
-### Open app with predefined perspective
+## Configuring perspectives
+
+Perspectives are the different views available for the directory pane —
+Grid, List, Gallery, Mapique, Kanban, FolderViz, Calendar, plus any
+external perspectives shipped as packages. The settings below let
+deployers pre-select which perspective opens by default and restrict
+the set of perspectives the user can switch between.
+
+Possible perspective IDs: `grid`, `list`, `gallery`, `mapique`,
+`kanban`, `folderviz`, `calendar`. External perspectives (shipped as
+packages under `@tagspacespro/extensions/<name>`) declare their own
+ID via the `tsextension.id` field in their `package.json`.
+
+### Open app with a predefined perspective
+
+The **ExtDefaultPerspective** property pins which perspective is used
+as the initial view for newly opened folders that don't yet have a
+per-folder preference recorded in their `.ts/tsm.json` metadata. The
+user can still change the perspective interactively; this only sets
+the starting point for fresh folders.
 
 <Tabs groupId="config">
   <TabItem value="js" label="extconfig.js">
@@ -978,7 +997,47 @@ window.ExtDefaultPerspective = "gallery";
   </TabItem>
 </Tabs>
 
-Possible values are `default`, `gallery`, `mapique`.
+Default: `grid`.
+
+### Restricting the available perspectives
+
+The **ExtEnabledPerspectives** property is a whitelist of perspective
+IDs that the application will expose to the user. When set:
+
+- The perspective switcher in the toolbar shows only the listed IDs.
+- The Settings → Perspectives tab renders the rows but the toggles
+  become read-only with a "configured by your administrator" tooltip;
+  any value the user previously persisted is overridden on every load.
+- IDs not present in the whitelist are hidden from the switcher even
+  if they would normally appear (for example Pro perspectives in a Pro
+  build).
+- Unknown IDs in the array are silently ignored.
+
+<Tabs groupId="config">
+  <TabItem value="js" label="extconfig.js">
+```js
+window.ExtEnabledPerspectives = ["grid", "list", "kanban"];
+```
+  </TabItem>
+  <TabItem value="json" label="extconfig.json">
+```json
+{
+  "ExtEnabledPerspectives": ["grid", "list", "kanban"]
+}
+```
+  </TabItem>
+</Tabs>
+
+:::tip
+Precedence: `ExtEnabledPerspectives` always wins over the user's own
+toggles. Removing the property from `extconfig` returns control to the
+user's persisted preferences.
+:::
+
+When this property is **not** set, the user owns the toggles in the
+Settings → Perspectives tab and the switcher reflects whatever the
+user enabled there. The default state is "all built-in perspectives
+enabled" plus any external perspectives the build includes.
 
 ## Custom color for the default themes
 
