@@ -54,6 +54,10 @@ Click **Orders** to access the download links for the latest TagSpaces Pro versi
 
 <CenteredImage maxWidth={600} src="/media/setup/fastspring-download-links.avif" caption="Download links for TagSpaces Pro" showCaption/>
 
+:::info
+FastSpring may display the version number from the time of your purchase, but the download links always point to the latest available version.
+:::
+
 The following downloads are typically available:
 
 | Platform                           | Recommended download                      |
@@ -69,10 +73,6 @@ The following downloads are typically available:
 | Linux arm64 (other distributions) | `tagspaces-pro-linux-arm64-x.y.z.tar.gz` | -->
 
 Additional formats (`.pkg`, `.zip`, `.tar.gz`) are also available for each platform.
-
-:::warning
-FastSpring may display the version number from the time of your purchase, but the download links always point to the latest available version.
-:::
 
 ## Desktop Installation
 
