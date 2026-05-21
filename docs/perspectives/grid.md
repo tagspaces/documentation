@@ -129,13 +129,14 @@ Available actions include:
 
 - **Open File** – Opens the file in the preview area
 - **Open Parent Folder** – Useful in search results
-- **Open File Natively** – Opens the file in the default external application
+- **Open File Natively** – Opens the file in the default external application of your operating system.
+- **Open with** – A sub-menu listing the external applications registered on your system for this file type, so you can pick a non-default opener (e.g. a specific editor or viewer) in one click without leaving TagSpaces.
 - **Show in File Manager** - Opens the file in the default file manager of the operating system.
 - **Add / Remove Tags** - Opens a dialog to manage tags for the file.
 - **Rename File** - Opens a file renaming dialog.
 - **Duplicate File** – Creates a copy with a timestamp and a “copy” tag
 - **Share Files** – Object storage only
-- **Move / Copy File** - Opens the move/copy dialog.
+- **Move / Copy File** - Opens the move/copy dialog. The dialog surfaces your **recent target folders** at the top, so frequently used destinations are one click away.
 - **Delete File** - Opens a deletion confirmation dialog.
 - **Use as Thumbnail for Current Folder** - Sets the file’s thumbnail as the folder thumbnail.
 - **Use as Background Image** – Will show only if the selected files is an image, and will set this image as background for the current folder.
@@ -159,7 +160,7 @@ Menu options include:
 - **Open Folder** - Navigates to the selected directory.
 - **Open in New Window** - Opens the folder in a new TagSpaces window or tab (web version).
 - **Rename Folder** - Opens the folder renaming dialog.
-- **Move / Copy Folder** - Opens the dialog to move or copy the folder.
+- **Move / Copy Folder** - Opens the dialog to move or copy the folder, with quick access to your recent target folders.
 - **Delete Folder** - Opens a deletion confirmation dialog.
 - **Show in File Manager** - Opens the directory in the default file manager.
 - **Use as Thumbnail for Parent Folder** - Sets the folder’s thumbnail as the parent folder thumbnail.

@@ -38,6 +38,7 @@ The built-in markdown editor provides a WYSIWYG editing experience for `.md` and
 - Reading aloud the text content of the document (text-to-speech)
 - Visualizing the heading structure as a mind map
 - Copy and paste markdown content from other sources
+- Inserting [links to other files and folders](/linking#inserting-links-with-the-file-picker) in the vault via the integrated file/folder picker — as `ts://` internal links or as relative paths (since v6.12)
 
 :::tip
 Type `/` on a new line to open a menu showing all available markdown elements — headings, lists, images, tables, quotes, code blocks, and more.

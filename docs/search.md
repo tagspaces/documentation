@@ -18,7 +18,8 @@ With the search functionality, you are able to find files and folders by their n
 - The description added to the file or the folder
 - The path of the file, including the names of the parent directories. For example, if you are searching for photos from your vacation in the USA and the folder where these files are located contains the word USA (e.g., `20160301 vacation usa`), the search will list all the files located directly in this folder.
 - The tags (and their descriptions) assigned to the file or the folder
-- <ProFeature /> The content of supported text and office files if the [full-text search](#full-text-search) is activated for the current location.
+- The content of supported plain-text files (`.txt`, `.md`, `.html`, source code, etc.) if [full-text search](#full-text-search) is activated for the current location. Plain-text full-text search is a free feature since version 6.12.
+- <ProFeature /> The content of supported office and document formats (PDF, DOCX, ODT, XLSX, PPTX, EPUB, …) when full-text search is activated on the location.
 
 ## Open the search
 
@@ -248,9 +249,9 @@ This filter is planned.
 
 ## Full-text search
 
-<ProFeature />
-
 With full-text indexing enabled on a location, TagSpaces extracts the readable text of your files during indexing and makes it searchable by any keyword it contains.
+
+Since version 6.12, full-text search across **plain-text formats** (TXT, MD, HTML, CSV, source code, etc.) is part of the free Lite edition. Indexing the **office and document formats** listed in the [supported types](#supported-file-types) table (PDF, DOCX, ODT, XLSX, PPTX, EPUB, …) remains a <ProFeature /> capability.
 
 You can activate this feature for each location individually in the **Edit Location** dialog. Once activated, the next indexing pass will pull the text out of supported files and merge it into the index.
 
@@ -263,6 +264,8 @@ You can activate this feature for each location individually in the **Edit Locat
 
 ### Supported file types
 
+Categories marked with <ProFeature /> require TagSpaces Pro; the others are free since version 6.12.
+
 | Category | Extensions | Notes |
 |---|---|---|
 | Plain text | `.txt`, `.md`, `.marp` | Markdown and [Marp](https://marp.app/) presentations |
@@ -271,11 +274,11 @@ You can activate this feature for each location individually in the **Edit Locat
 | Web shortcuts | `.url`, `.website`, `.webloc`, `.desktop` | URL, name, and description fields |
 | Tabular | `.csv` | Cell values, commas and semicolons treated as separators |
 | Contacts | `.vcf` (vCard) | Name, email, organisation, title, phones, etc. |
-| Documents | `.docx`, `.pdf` | Word documents and searchable PDFs (OCR must be done before) |
-| Spreadsheets | `.xlsx`, `.ods` | Shared strings and inline cell values |
-| Presentations | `.pptx`, `.odp` | Slide text, speaker notes, slide layouts |
-| OpenDocument text | `.odt` | Body, styles, metadata |
-| Ebooks | `.epub` | All XHTML chapter files inside the archive |
+| Documents <ProFeature /> | `.docx`, `.pdf` | Word documents and searchable PDFs (OCR must be done before) |
+| Spreadsheets <ProFeature /> | `.xlsx`, `.ods` | Shared strings and inline cell values |
+| Presentations <ProFeature /> | `.pptx`, `.odp` | Slide text, speaker notes, slide layouts |
+| OpenDocument text <ProFeature /> | `.odt` | Body, styles, metadata |
+| Ebooks <ProFeature /> | `.epub` | All XHTML chapter files inside the archive |
 
 ### Embedded images and attachments
 

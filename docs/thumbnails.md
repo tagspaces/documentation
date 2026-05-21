@@ -42,3 +42,7 @@ The generated thumbnails are stored in the `.ts` folder located within each fold
 ## Thumbnails on S3 Locations
 
 When you upload files to an S3 location, TagSpaces will attempt to generate thumbnails during the upload process.
+
+## UNC Paths on Windows
+
+Starting with version 6.12, thumbnail generation and lookup work reliably for files located on **UNC paths** (`\\server\share\...`) on Windows. Files served from a Samba share, a NAS exposed via SMB, or any other UNC mount will get the same thumbnail treatment as files on a local drive — the generated thumbnails are stored in the `.ts` folder on the share itself.

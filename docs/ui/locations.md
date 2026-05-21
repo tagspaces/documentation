@@ -76,11 +76,15 @@ Local locations include the following properties:
 - **Location Name**: The display name in the Location Manager.
 - **Location Path**: The file path on your computer.
 - **Startup Location**: Enable this to load the location automatically at application startup. Only one location can be set as a startup location.
-- **Enable full-text search for TXT, MD, and HTML files** <ProFeature />: Indexes the content of text, markdown, and HTML files.
+- **Enable full-text search for TXT, MD, and HTML files**: Indexes the content of text, markdown, and HTML files (free since version 6.12). Full-text indexing of office formats (PDF, DOCX, ODT, XLSX, …) on the same location requires <ProFeature />.
 - **Watch for external changes** <ProFeature />: Monitors the folder and its subfolders for external changes (e.g., file creation or deletion).
 
 :::caution
 Connecting network drives (e.g., NAS systems) is not recommended due to potential performance issues from network speed and large file counts.
+:::
+
+:::info
+Starting with version 6.12, **symbolic links** (created on Linux/macOS with `ln -s` or with `mklink` / junctions on Windows) inside a location are followed transparently. A file or folder behind a symlink browses, indexes, tags, and links the same way as a regular entry.
 :::
 
 Clicking on `More Properties` reveals additional options:

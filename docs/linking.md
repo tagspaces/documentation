@@ -35,6 +35,26 @@ Once copied, you can paste the link into:
 - The **search box** to navigate directly to the linked entry
 - An external application (email, chat) to share with other TagSpaces users
 
+## Inserting Links with the File Picker
+
+Starting with version 6.12, links to other files and folders can be built directly with a **file/folder picker dialog**, instead of copying paths by hand. The picker resolves the target into a `ts://` link or a relative path depending on the context, and inserts it at the cursor.
+
+<CenteredImage
+    caption="Utilizing the file chooser dialog for creating link"
+    src="/media/core/file-chooser-dialog.avif"
+    showCaption
+    maxWidth={600}
+/>
+
+The picker is available from:
+
+- The **description editor** of any file or folder — open the description, choose "insert link", pick the target, and the link is inserted into the Markdown of the description.
+- The **[Markdown editor extension](/extensions/md-editor/)** when editing `.md` and `.mdx` files.
+- The **[HTML editor extension](/extensions/html-editor/)** when editing `.html` files.
+- The standalone **create link dialog**.
+
+Relative-link navigation (`./other.md`, `../folder/`) resolves consistently across all surfaces, so a link built with the picker behaves the same whether it lives in a description, a Markdown note, or an HTML document.
+
 ## Relative Path Links in Markdown and HTML
 
 In addition to sharing links `ts://`, you can use **relative paths** to link between markdown and HTML files. This works the same way as linking in a static website or wiki — the path is resolved relative to the current file's location.

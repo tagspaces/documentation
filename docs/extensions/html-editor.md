@@ -193,6 +193,8 @@ The first button will open a dialog that allows you to add a hyperlink to the te
 
 If you select some text to apply the link to before pressing the button, the selection will automatically populate the _Text to display_ field. If you made no selection, you will need to specify a text to be displayed. If you leave the field empty and start typing a URL, it will automatically populate the text to display field, which you can later modify.
 
+Since version 6.12, the dialog also offers a **file/folder picker** for linking to other entries in the vault. Picking a target inserts either a `ts://` internal link or a relative path automatically — see [Inserting Links with the File Picker](/linking#inserting-links-with-the-file-picker) for the full surface.
+
 To edit or remove links, you can just click inside the link and use the buttons that appear on the popup.
 
 ![](/media/extensions/html-editor/edit-link.png)
