@@ -302,11 +302,7 @@ tagspaces-linux-x86_64-6.0.2.AppImage.config
 
 TagSpaces will then store all configuration in the `.config` folder instead of `~/.config/TagSpaces`, allowing you to carry the app and its settings together on portable media.
 
-## Android (Deprecated)
-
-:::caution
-The Android version is **deprecated**. New versions are still released, but the app is no longer actively developed.
-:::
+## Android
 
 An APK file is available in the [download section](https://www.tagspaces.org/downloads/) of the TagSpaces website.
 
