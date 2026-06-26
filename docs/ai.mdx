@@ -1,6 +1,6 @@
 ---
 title: AI Functionality
-description: Learn how to use AI features in TagSpaces powered by Ollama for local, offline text and image analysis without sending data to external cloud services.
+description: Learn how to use AI features in TagSpaces powered by local AI providers such as Ollama, LM Studio and llama.cpp for offline text and image analysis without sending data to external cloud services.
 ---
 
 import { Summarize } from '@mui/icons-material';
@@ -12,14 +12,16 @@ import { TechArticleStructuredData } from '@site/src/components/StructuredData';
 
 Starting with version 6.1, TagSpaces can connect to [Ollama](https://ollama.com/) as an external AI service provider. Ollama is **locally installed, offline** software that enables you to run AI models (LLMs - Large Language Models) directly on your computer.
 
+In addition to Ollama, TagSpaces can connect to any **OpenAI-compatible** local AI server — for example [LM Studio](https://lmstudio.ai/) or [llama.cpp](https://github.com/ggml-org/llama.cpp). These expose the standard OpenAI API (the `/v1/chat/completions` and `/v1/models` endpoints), so the same TagSpaces AI features work regardless of which server you run. You can configure several providers at once and switch the active one at any time.
+
 :::tip Disclaimer
-TagSpaces does not include its own AI engine or large language models (LLMs). It relies entirely on external AI software like Ollama. **All AI features are disabled by default.**
+TagSpaces does not include its own AI engine or large language models (LLMs). It relies entirely on external AI software like Ollama or LM Studio. **All AI features are disabled by default.**
 :::
 
 ## Prerequisites
 
-- A modern PC with a recent Nvidia/AMD graphics card or a Mac with an Apple Silicon processor. Ollama also works on standard CPUs, though performance may be slower.
-- [Download](https://ollama.com/download) and install the Ollama software.
+- A modern PC with a recent Nvidia/AMD graphics card or a Mac with an Apple Silicon processor. These tools also work on standard CPUs, though performance may be slower.
+- A local AI provider installed — for example [Ollama](https://ollama.com/download), [LM Studio](https://lmstudio.ai/) or [llama.cpp](https://github.com/ggml-org/llama.cpp).
 - At least 10 GB of free hard drive space for the LLMs.
 
 ## AI Configuration
@@ -28,7 +30,16 @@ To configure these features, navigate to the **AI** tab in the Settings. Here, y
 
 ### Adding an AI Engine
 
-After installing Ollama, you can connect it to TagSpaces by clicking the **Add AI Engine** button.
+After installing your AI provider, you can connect it to TagSpaces by clicking the **Add AI Engine** button. A menu lets you pick a provider preset:
+
+| Preset | Type | Default URL |
+| --- | --- | --- |
+| **Ollama** | Ollama native | `http://localhost:11434` |
+| **LM Studio** | OpenAI-compatible | `http://localhost:1234/v1` |
+| **llama.cpp** | OpenAI-compatible | `http://localhost:8080/v1` |
+| **OpenAI-compatible** | OpenAI-compatible (custom URL) | *(empty — enter your own)* |
+
+Each preset simply pre-fills a name and the provider's default URL — you can edit both afterwards. Use the **OpenAI-compatible** preset for any other server that speaks the OpenAI API (e.g. vLLM, Jan or a remote endpoint).
 
 <CenteredImage
 caption="Add Ollama as AI engine"
@@ -36,7 +47,7 @@ src="/media/ai/settings-add-ollama.avif"
 maxWidth="750px"
 />
 
-If everything is set up correctly, you will see a new section labeled "Ollama" with a green indicator, confirming that Ollama is running in the background. If there are connection issues, the indicator will turn red.
+If everything is set up correctly, you will see a new section for the provider with a green indicator, confirming that it is running in the background. If there are connection issues, the indicator will turn red.
 
 <CenteredImage
 caption="Ollama connected in TagSpaces"
@@ -44,7 +55,26 @@ src="/media/ai/setting-ollama-running.avif"
 maxWidth="750px"
 />
 
-By default, the configuration assumes the Ollama service is running on your local machine at `http://localhost:11434`. However, it can also run on another computer within your network. You can add multiple Ollama configurations using the **Add AI Engine** button and select the active one using the **Default AI Engine** dropdown.
+A provider can run on your local machine or on another computer within your network. You can add multiple configurations using the **Add AI Engine** button and select the active one using the **Default AI Engine** dropdown.
+
+### Connecting OpenAI-compatible providers (LM Studio, llama.cpp, …) {#openai-compatible-providers}
+
+For an OpenAI-compatible provider, the **Engine URL** is the OpenAI *base URL*, which includes the `/v1` path — for example `http://localhost:1234/v1` for LM Studio or `http://localhost:8080/v1` for llama.cpp's `llama-server`. Entering just the host (e.g. `http://localhost:1234`) also works; TagSpaces normalizes it.
+
+There are two differences compared to Ollama:
+
+- **Models are managed in the provider's own application.** Unlike Ollama, TagSpaces cannot download or delete models for these servers, so the *Installable Models* and *Install Custom Model* options described below are not shown. Load the models you want in LM Studio (or the `lms` CLI), or place the GGUF files where `llama-server` expects them, and they will appear in the model dropdowns.
+- **LM Studio requires CORS to be enabled.** Because TagSpaces runs in a browser context, the local server must send the appropriate CORS headers. Ollama allows local connections by default, but LM Studio does not — until CORS is enabled the status indicator stays red even though the server is running.
+
+:::warning Enable CORS for LM Studio
+If the LM Studio status indicator stays red while the server is clearly running, enable CORS on its local server. You can do this from LM Studio's **Developer / Local Server** settings (look for an "Enable CORS" toggle), or start the server from the command line with the flag:
+
+```bash
+lms server start --cors
+```
+
+Then press the refresh button next to the Engine URL in TagSpaces. The indicator should turn green and the model dropdown should populate.
+:::
 
 ### Downloading Models
 
@@ -52,7 +82,11 @@ The next step is to download a suitable model (LLM). TagSpaces can be configured
 
 Models can be downloaded and selected via the **Default model for text-based tasks** and **Default model for image-based tasks** dropdowns.
 
-As shown in the screenshot below, the dropdown menu is divided into three sections:
+:::note
+In-app model downloading is available for **Ollama** only. For OpenAI-compatible providers (LM Studio, llama.cpp, …) you manage the models in the provider's own application, and the dropdowns list whatever models that server currently exposes — see [Connecting OpenAI-compatible providers](#openai-compatible-providers) above.
+:::
+
+As shown in the screenshot below, for Ollama the dropdown menu is divided into three sections:
 1.  **Downloaded Models:** Lists models already installed (empty on a new Ollama installation).
 2.  **Installable Models:** Lists popular models you can easily download to test the AI functionality.
 3.  **Install Custom Model:** Allows you to enter the name of a specific custom model you wish to download. You can browse the full library of available models [here](https://ollama.com/search).
