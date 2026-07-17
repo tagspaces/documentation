@@ -342,6 +342,7 @@ const sidebars = {
             "tutorials/e2ee-with-tagspaces-and-cryptomator",
             "tutorials/map-tiler-tutorial",
             "tutorials/claude-code-second-brain",
+            "tutorials/nas-index-tscmd-windows",
             // "tutorials/folder-customizations",
             // "tutorials/ai-chat-management",
           ],
