@@ -366,6 +366,7 @@ const sidebars = {
       label: "About",
       items: [
         "aboutdocs",
+        "accessibility",
         {
           type: "link",
           label: "Documentation tags",
