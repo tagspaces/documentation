@@ -27,10 +27,6 @@ TagSpaces ships with several light and dark color themes. The application can al
 
 TagSpaces is built with standard user interface components, which are exposed to the accessibility frameworks of the underlying platforms (UI Automation on Windows, VoiceOver/NSAccessibility on macOS, AT-SPI on Linux). We are continuously improving accessible names, structure and focus visibility throughout the application.
 
-## Subtitles in the media player
-
-The built-in media player can display subtitle tracks for video files, which supports users with limited hearing.
-
 <!-- ## Conformance reporting
 
 An Accessibility Conformance Report (based on the VPAT®, Revised Section 508 edition) for TagSpaces Lite and TagSpaces Pro is available upon request — please contact us at [contact@tagspaces.org](mailto:contact@tagspaces.org). -->
