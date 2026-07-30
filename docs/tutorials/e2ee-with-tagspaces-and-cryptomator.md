@@ -36,14 +36,14 @@ To connect a new vault:
 - In the file chooser, navigate to the local folder that is synced with your preferred cloud service
 - And type a name for your vault.
 
-Once you're done, your new vault should show up on the side pane of Cryptomator's main screen. The vault is now there but not functional, until you set up a password. this password will be used to generate the encryption keys, ensuring that you can easily encrypt/decrypt any file in the vault on ,multiple computers.
+Once you're done, your new vault should show up on the side pane of Cryptomator's main screen. The vault is now there but not functional, until you set up a password. this password will be used to generate the encryption keys, ensuring that you can easily encrypt/decrypt any file in the vault on multiple computers.
 
 - Enter, and confirm a new password
 - And press "Create Vault"
 
 ![new vault added](./e2ee-cryptomator/cryptomator-new-vault-added.png)
 
-Now your new vault is ready to use. To unlock it, you need to enter your password. In the "More options menu underneath, you can change the drive name to whatever you like, and opt to save your password, so that you will not need to enter it on the local machine, each time you want to unlock it. This might be good for single user computers, but you should remember it's always a security risk to store your passwords.
+Now your new vault is ready to use. To unlock it, you need to enter your password. In the "More options menu underneath", you can change the drive name to whatever you like, and opt to save your password, so that you will not need to enter it on the local machine, each time you want to unlock it. This might be good for single user computers, but you should remember it's always a security risk to store your passwords.
 
 ![unlock encrypted vault](./e2ee-cryptomator/cryptomator-unlock-vault.png)
 
@@ -55,7 +55,7 @@ You can also lock the vault any time from within Cryptomator by pressing "Lock"
 
 This will unmount the drive and make the vault's contents unacceptable to anyone locally. When you unlock the vault, you will have full access again.
 
-If open the folder where your vault is stored, you will only find encrypted data, inaccessible from outside Cryptomator's virtual device.
+If you open the folder where your vault is stored, you will only find encrypted data, inaccessible from outside Cryptomator's virtual device.
 
 ### Adding it to TagSpaces
 
