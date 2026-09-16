@@ -9,7 +9,6 @@ import { WebPageStructuredData } from '@site/src/components/StructuredData';
 
 <WebPageStructuredData />
 
-
 # Locations
 
 A **location** is a folder on your local file system, serving as a root for listing subfolders, files, and documents. Typical locations could be folders where you collect your photos, store documents, ebooks, or music.
@@ -80,7 +79,7 @@ Local locations include the following properties:
 - **Watch for external changes** <ProFeature />: Monitors the folder and its subfolders for external changes (e.g., file creation or deletion).
 
 :::caution
-Connecting network drives (e.g., NAS systems) is not recommended due to potential performance issues from network speed and large file counts.
+Connecting network drives (e.g., NAS systems) is not recommended due to potential performance issues from network speed and large file counts. Connecting network drives is not possible in the iOS and Android apps.
 :::
 
 :::info
